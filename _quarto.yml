@@ -18,7 +18,7 @@ website:
   navbar:
     pinned: true
     search: true
-    logo: "images/micro_hex.png"
+    logo: "images/io_hex.png"
     right:
       - syllabus.qmd
       - schedule.qmd

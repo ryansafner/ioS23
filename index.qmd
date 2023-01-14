@@ -1,7 +1,8 @@
 ---
 title: "<strong>Industrial Organization</strong>"
 subtitle: "<strong>ECON 326 • Spring 2023 • Hood College</strong>"
-details: "<strong>Learn the common tools and techniques that economists use to model the world around you</strong><br><br>By the end of this course, you will:<ol><li>Understand key economic models of perfect competition, monopoly, monopolistic competition, oligopoly (Bertrand, Cournot, and Stackelberg competition), and contestable markets</li><li> Apply models of competition to different industries and regulatory regimes</li><li>Simulate strategic and game theoretic interactions and apply them to industry behavior</li></ol>"
+details: >
+  <strong>Learn the key models and tools to understand how different industries are organized, perform, and are regulated</strong><br><br>By the end of this course, you will:<ol><li>Apply key economic models of markets: perfect competition, monopoly, monopolistic competition, oligopoly (Bertrand, Cournot, and Stackelberg competition), and contestable markets</li><li>Identify key concepts and legal regimes in antitrust and regulation</li><li>Simulate strategic and game theoretic interactions and apply them to industry behavior</li></ol>
 toc: false
 sidebar: false
 page-layout: full
@@ -35,6 +36,6 @@ format:
 
 :::
 ```{r echo=FALSE}
-knitr::include_graphics(here::here("images", "io_flowchart_blankbg.png"), error = FALSE)
+knitr::include_graphics(here::here("images", "io_flowchart.png"), error = FALSE)
 ```
 :::

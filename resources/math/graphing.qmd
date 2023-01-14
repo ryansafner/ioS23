@@ -1,0 +1,234 @@
+---
+title: "Graphing Linear Equations"
+execute:
+  freeze: auto
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+#| label: setup
+library(tidyverse)
+update_geom_defaults("label", list(family = "Fira Sans Condensed"))
+update_geom_defaults("text", list(family = "Fira Sans Condensed"))
+
+theme_guide <- theme_classic() + 
+  theme(
+    text = element_text(family = "Fira Sans Condensed", size = 18)
+  )
+
+```
+
+## Slope-Intercept Form
+
+```{r}
+ggplot(data = tibble(x = 1:10), aes(x = x))+
+  geom_abline(slope = -1, intercept = 8, color = "blue", size = 2)+
+  geom_segment(x = 0, xend = 4, y = 4, yend = 4, linetype = "dashed", color = "gray")+
+  geom_segment(x = 4, xend = 4, y = 4, yend = 0, linetype = "dashed", color = "gray")+
+  annotate(geom = "point", x = 4, y = 4)+
+  
+  geom_segment(x = 5, xend = 5, y = 3, yend = 2, linetype = "dashed", color = "red")+
+  geom_segment(x = 5, xend = 6, y = 2, yend = 2, linetype = "dashed", color = "red")+
+  
+  annotate(geom = "text",
+           x = 4.65, y = 2.5,
+           label = expression(a == frac(Delta*y, Delta*x)), color = "red")+
+  
+  annotate(geom = "text",
+           x = 4, y = 4.45,
+           label = expression(paste("(", x[i], ",", y[i], ")")))+
+  
+  annotate(geom = "label",
+           x = 2, y = 6,
+           label = expression(y==a*x+b),
+           color = "blue")+
+
+  scale_x_continuous(breaks = c(0,4,8),
+                     labels = c("0", expression(x[i]), expression(b/a)),
+                     lim = c(0,9),
+                     expand = c(0,0))+
+  scale_y_continuous(breaks = c(4,8),
+                     labels = c(expression(y[i]), "b"),
+                     lim = c(0,9),
+                     expand = c(0,0))+
+  labs(x = "x",
+       y = "y")+
+  theme_guide
+```
+
+- A linear function of two variables can be written in *slope-intercept form*:
+$$y=ax+b$$
+  - $y$ is the **dependent variable** (on the vertical axis)
+  - $x$ is the **independent variable** (on the horizontal axis)
+  - $a$ is the **slope** of the line
+    - $a = \frac{\text{rise}}{\text{run}} = \frac{\text{change in }y}{\text{change in }x} = \frac{\Delta x}{\Delta y}$
+    - you may have been taught the slope as “$m$”, this is just personal taste, but again, get used to using different letters!
+  - $b$ is the **vertical-intercept**, a constant number where the line crosses the vertical axis
+    - if $y$ is the dependent variable, this is the “$y$-intercept”, $y$ where $x=0$
+- Any point on the line has an $x$-coordinate and $y$-coordinate $(x_i,y_i)$
+
+## Other Forms
+
+- A linear function can equivalently be expressed in the following form:
+$$a_1x_1+a_2x_2=c$$
+  - $x_2$ is the **dependent variable** (on the vertical axis)
+  - $x_1$ is the **independent variable** (on the horizontal axis)
+  - $c$ is a constant
+
+- This is a valid equation, but is difficult to visualize in the traditional graph as above. Simply solve for the dependent variable on the vertical axis $(x_2$ as if you were solving for $y)$:
+
+```{r}
+ggplot(data = tibble(x = 1:10), aes(x = x))+
+  geom_abline(slope = -1, intercept = 8, color = "blue", size = 2)+
+  geom_segment(x = 0, xend = 4, y = 4, yend = 4, linetype = "dashed", color = "gray")+
+  geom_segment(x = 4, xend = 4, y = 4, yend = 0, linetype = "dashed", color = "gray")+
+  annotate(geom = "point", x = 4, y = 4)+
+  
+  geom_segment(x = 5, xend = 5, y = 3, yend = 2, linetype = "dashed", color = "red")+
+  geom_segment(x = 5, xend = 6, y = 2, yend = 2, linetype = "dashed", color = "red")+
+  
+  annotate(geom = "text",
+           x = 4.5, y = 2.5,
+           label = expression(slope == frac(a[1], a[2])), color = "red")+
+  
+  annotate(geom = "text",
+           x = 4, y = 4.45,
+           label = expression(paste("(", x[1], ",", y[2], ")")))+
+
+  annotate(geom = "label",
+           x = 2, y = 6,
+           label = expression(x[2]==frac(c,a[2])-frac(a[1],a[2])*x[1]),
+           color = "blue")+
+
+  scale_x_continuous(breaks = c(0,4,8),
+                     labels = c("0", expression(x[1]), expression(c/a[1])),
+                     lim = c(0,9),
+                     expand = c(0,0))+
+  scale_y_continuous(breaks = c(4,8),
+                     labels = c(expression(x[2]), expression(c/a[2])),
+                     lim = c(0,9),
+                     expand = c(0,0))+
+  labs(x = expression(x[1]),
+       y = expression(x[2]))+
+  theme_guide
+```
+
+\begin{align*}
+a_1x_1+a_2x_2=c && \text{Original}\\
+a_2x_2=c-a_1x_1  && \text{Subtracting }x_1 \text{ term}\\
+x_2 = \frac{c}{a_2}-\frac{a_1}{a_2}x_1 && \text{Dividing by }a_2 \\
+\end{align*}
+
+  - The vertical intercept is $\frac{c}{a_2}$
+  - The horizontal intercept is $\frac{c}{a_1}$
+  - The slope is $-\frac{a_1}{a_2}$
+
+- This is extremely useful for dealing with constraints in constrained optimization problems: [**budget constraints**](/content/1.2-content) and [**isocost lines**](/content/2.2-content)
+
+## Drawing a Graph From an Equation
+
+If we already have a linear equation that we would like to graph, we can follow these steps:
+
+1. Take the equation and plug in two values, e.g. if we have:
+
+$$p = \frac{1}{2}q + 4$$
+  
+2. We can find two points on the graph. The easiest one to find is the vertical-intercept, where the line crosses the vertical axis, where $q=0$, so plug in $q=0$:
+
+\begin{align*}
+p &= \frac{1}{2}(0)+4\\
+p &= 4 \\ \end{align*}
+
+Thus, one point is $(0,4)$. Note that the constant in the function itself is the $p-intercept$! So one valid point will always be $(0,b)$!
+
+3. For our second point, let's plug in $q=2$:
+
+\begin{align*}
+p &= \frac{1}{2}(2)+4\\
+p &= 5 \\ \end{align*}
+
+Thus, another point is $(2,5)$
+
+4. Now, plot the two points on the graph, and connect them with a line
+
+```{r}
+points <- tribble(
+  ~x, ~y,
+  0, 4,
+  2, 5
+)
+
+ggplot(data = points, aes(x = x, y = y))+
+  geom_abline(slope = 0.5, intercept = 4, color = "blue", size = 2)+
+  geom_point(size = 2)+
+  annotate(geom = "label",
+           x = 8, y = 8,
+           label = expression(y==0.5*x+4),
+           color = "blue")+
+  scale_x_continuous(breaks = seq(0,10,1),
+                     lim = c(0,10.25),
+                     expand = c(0,0))+
+  scale_y_continuous(breaks = seq(0,10,1),
+                     lim = c(0,10.25),
+                     expand = c(0,0))+
+  labs(x = "x",
+       y = "y")+
+  ggthemes::theme_pander(base_family = "Fira Sans Condensed")+
+  coord_cartesian(clip = "off")
+```
+
+*Note*: A quick shortcut to plot a line is to find the vertical intercept and plot that, and then find the next point using the slope. Here, start our line at 4 on the vertical axis, and then, as the slope is $\frac{1}{2}$, for every one unit increase in $q$, $p$ increases by $\frac{1}{2}$. Our second point, (2,5), is a 2 unit increase in $q$ resulting in a $1$ unit increase in $p$.
+
+## Finding an Equation from a Graph
+
+```{r}
+points2 <- tribble(
+  ~x, ~y,
+  1, 6,
+  3, 2
+)
+
+ggplot(data = points2, aes(x = x, y = y))+
+  geom_abline(slope = -2, intercept = 8, color = "blue", size = 2)+
+  geom_point(size = 2)+
+  scale_x_continuous(breaks = seq(0,10,1),
+                     lim = c(0,10.25),
+                     expand = c(0,0))+
+  scale_y_continuous(breaks = seq(0,10,1),
+                     lim = c(0,10.25),
+                     expand = c(0,0))+
+  labs(x = "x",
+       y = "y")+
+  ggthemes::theme_pander(base_family = "Fira Sans Condensed")
+```
+In order to find the equation of an existing line, we follow these steps:
+
+1. First, take two points on the line and find the slope, $a$, between them. Let's pick $(1,6)$ and $(3,2)$.
+
+\begin{align*}
+\text{Slope} &= \frac{rise}{run} \\
+&= \frac{(p_2-p_1)}{(q_2-q_1)}\\
+&= \frac{(2-6)}{(3-1)}\\
+&= \frac{-4}{2}\\
+&= -2\\ \end{align*}
+
+
+There is a shortcut that we can use to find the slope faster by eye-balling the graph: When $q$ changes by 1, how many units does $p$ change? If we move from (1,6) to (2,5), $q$ increases by 1, but $p$ falls by 2. So the slope is $-2$. For every one unit increase in $q$, $p$ changes by -2.
+
+2. Now with the slope, we need to find the vertical intercept, or $b$, we solve this by plugging in the slope and any point on the graph, we will use (1,6):
+
+\begin{align*}
+		p &= aq+b\\
+		(6) &= -2(1)+b\\
+		6 &= -2+b\\
+		8 &= b\\
+	\end{align*}
+
+Note, there is another easy way to eye-ball what this value is. It is simply that $p$ value where $q=0$, or at what $p$ value the graph crosses the vertical axis. We can see it is at 8.
+
+3. Thus, we have the slope and the intercept, so our equation is:
+$$
+p = -2q+8	
+$$

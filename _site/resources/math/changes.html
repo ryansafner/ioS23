@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>ECON 326 — Industrial Organization - Rates of Change</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/io_hex.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="ECON 326 — Industrial Organization - Rates of Change">
+<meta property="og:description" content="If \(y\) changes from \(y_1 \rightarrow y_2\), the difference, \(\Delta y = y_2-y_1\)">
+<meta property="og:site-name" content="ECON 326 — Industrial Organization">
+<meta name="twitter:title" content="ECON 326 — Industrial Organization - Rates of Change">
+<meta name="twitter:description" content="If \(y\) changes from \(y_1 \rightarrow y_2\), the difference, \(\Delta y = y_2-y_1\)">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/micro_hex.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">ECON 326 — Industrial Organization</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../syllabus.html">
+ <span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../schedule.html">
+ <span class="menu-text">Schedule</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../content/index.html">
+ <span class="menu-text">Content</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../assignments/index.html">
+ <span class="menu-text">Assignments</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../resources/index.html">
+ <span class="menu-text">Resources</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#elasticity" id="toc-elasticity" class="nav-link active" data-scroll-target="#elasticity">Elasticity</a></li>
+  <li><a href="#derivatives-calculus" id="toc-derivatives-calculus" class="nav-link" data-scroll-target="#derivatives-calculus">Derivatives (Calculus)</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Rates of Change</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="cell">
+
+</div>
+<p>If <span class="math inline">\(y\)</span> changes from <span class="math inline">\(y_1 \rightarrow y_2\)</span>, the <strong>difference</strong>, <span class="math inline">\(\Delta y = y_2-y_1\)</span></p>
+<ul>
+<li><span class="math inline">\(\Delta y\)</span> is shorthand that means “change in <span class="math inline">\(y\)</span>”, NOT <span class="math inline">\(\Delta * y\)</span> (it’s not an entity itself)</li>
+<li>In calculus, the change in <span class="math inline">\(y\)</span> is often written formally as <span class="math inline">\(dy\)</span></li>
+</ul>
+<p>We can express the <strong>relative difference</strong>, comparing the difference with the original value of <span class="math inline">\(y_1\)</span> as: <span class="math display">\[\text{relative change in y}=\frac{y_2-y_1}{y_1}=\frac{\Delta y}{y_1}  \]</span></p>
+<ul>
+<li>e.g.&nbsp;if <span class="math inline">\(y_1=3\)</span> and <span class="math inline">\(y_2=3.02\)</span>, then the relative change in <span class="math inline">\(y\)</span> is: <span class="math display">\[\frac{y_2-y_1}{y_1}=\frac{3.02-3}{3}=0.0067\]</span></li>
+</ul>
+<p>It’s most common to talk about the <strong>percentage change</strong> in <span class="math inline">\(y\)</span> (<span class="math inline">\(\% \Delta y\)</span>), also called the <strong>growth rate</strong> of <span class="math inline">\(y\)</span>, which is 100 times the relative change: <span class="math display">\[\text{percentage change in y}=\% \Delta y = \frac{y_2-y_1}{y_1}=\frac{\Delta y}{y_1}*100\%\]</span></p>
+<ul>
+<li>e.g.&nbsp;if <span class="math inline">\(y_1=3\)</span> and <span class="math inline">\(y_2=3.02\)</span>, then the percentage change in <span class="math inline">\(y\)</span> is: <span class="math display">\[\frac{y_2-y_1}{y_1}*100=\frac{3.02-3}{3}*100=0.67\%\]</span>
+<ul>
+<li>Just move the decimal point over two digits to the right to get a percentage</li>
+<li>This is most common when we measure inflation, GDP growth rates, etc.</li>
+</ul></li>
+</ul>
+<p><a href="#Exponents-and-Logarithms">Natural logarithms</a> <span class="math inline">\((\ln)\)</span> are very helpful in approximating percentage changes from <span class="math inline">\(y_1\)</span> to <span class="math inline">\(y_2\)</span> because: <span class="math display">\[100*(\ln(y_2)-\ln(y_1))=\% \Delta y = \text{percentage change in y}\]</span></p>
+<section id="elasticity" class="level2">
+<h2 class="anchored" data-anchor-id="elasticity">Elasticity</h2>
+<p>Using logs and percentage changes helps us talk about <strong>elasticity</strong>, an extremely useful concept with vast applications all over economics. Elasticity measures the percentage change in one variable (<span class="math inline">\(y\)</span>) as a response to a 1% change in another (<span class="math inline">\(x\)</span>) at a particular value of <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. <span class="math display">\[\epsilon_{yx} = \frac{\% \Delta y}{\% \Delta x}=\cfrac{(\frac{\Delta y}{y})}{(\frac{\Delta x}{x})}    =\frac{\Delta y}{\Delta x}*\frac{x}{y}\]</span></p>
+<ul>
+<li>Interpretation: A 1% change in <span class="math inline">\(x\)</span> will lead to a <span class="math inline">\(\epsilon_{yx}\)</span>% change in <span class="math inline">\(y\)</span></li>
+</ul>
+<p>For example, the <strong>price elasticity of demand</strong> measures the percentage change in quantity demanded to a 1% change in price (at a particular price point), note here: <span class="math inline">\(x=P\)</span> and <span class="math inline">\(y=q\)</span>: <span class="math display">\[\epsilon_D = \frac{\%\Delta q}{\%\Delta p} =  \cfrac{\frac{\Delta q}{q}}{\frac{\Delta p}{p}} =\frac{\Delta q}{\Delta p}*\frac{p}{q}\]</span></p>
+<ul>
+<li>Note that <span class="math inline">\(\frac{\Delta q}{\Delta p}\)</span> is <span class="math inline">\(\frac{1}{slope}\)</span> of the demand curve (which is <span class="math inline">\(\frac{\Delta p}{\Delta q}\)</span>)</li>
+<li>Note though we would technically multiply by <span class="math inline">\(\frac{100}{100}\)</span> to get percentage change, this term obviously is just 1. Elasticity is unitless.</li>
+<li>Note also that on a graph we usually express <span class="math inline">\(q\)</span> as our independent variable and <span class="math inline">\(p\)</span> as our dependent variable</li>
+</ul>
+</section>
+<section id="derivatives-calculus" class="level2">
+<h2 class="anchored" data-anchor-id="derivatives-calculus">Derivatives (Calculus)</h2>
+<p>Often, <span class="math inline">\(\Delta y\)</span> refers to a <em>very small</em> change in <span class="math inline">\(y\)</span>, a <strong>marginal change</strong> in <span class="math inline">\(y\)</span>. A <strong>rate of change</strong> is the ratio of two changes, such as the change between <span class="math inline">\(x\)</span> and <span class="math inline">\(y=f(x)\)</span>: <span class="math display">\[\frac{\Delta f(x)}{\Delta x} = \frac{f(x + \Delta x)-f(x)}{\Delta x}\]</span></p>
+<ul>
+<li>This measures how <span class="math inline">\(f(x)\)</span> changes as <span class="math inline">\(x\)</span> changes</li>
+<li>If <span class="math inline">\(\Delta\)</span> is <em>infinitesimally small</em>, then we have expressed the <strong>(first) derivative of <span class="math inline">\(f(x)\)</span> with respect to <span class="math inline">\(x\)</span></strong>, written variously as <span class="math inline">\(f'(x)\)</span> or <span class="math inline">\(\frac{df(x)}{dx}\)</span> <span class="math display">\[\frac{d f(x)}{d x} = \lim_ {\Delta x \to 0} \frac{f(x + \Delta x)-f(x)}{\Delta x}\]</span></li>
+</ul>
+<p>The derivative of a linear function <span class="math inline">\((y=ax+b)\)</span> is a constant (i.e.&nbsp;the slope), <span class="math inline">\(a\)</span> <span class="math display">\[\frac{d f(x)}{d x} = a\]</span></p>
+<p>The derivative of the first derivative is the <strong>second derivative</strong> of a function <span class="math inline">\(f(x)\)</span> with respect to <span class="math inline">\(x\)</span>, denoted <span class="math inline">\(f''(x)\)</span> or <span class="math inline">\(\frac{d^2f(x)}{dx^2}\)</span></p>
+<ul>
+<li>The second derivative measures the <em>curvature</em> of a function</li>
+<li>It used for proving when a function has reached a maximum or minimum, or is concave or convex (often used in <a href="optimization">#Nonlinear-Functions-&amp;-Optimization</a>)</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Content <i class="fa-brands fa-creative-commons" aria-hidden="true"></i> 2023 by <a href="https://www.ryansafner.com">Ryan Safner</a> <br> All content licensed under a <i class="fa-brands fa-creative-commons" aria-hidden="true"></i> <i class="fa-brands fa-creative-commons-by" aria-hidden="true"></i> <i class="fa-brands fa-creative-commons-nc" aria-hidden="true"></i> <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0)</a></div>   
+    <div class="nav-footer-right">Made with <i class="fa-brands fa-r-project" aria-hidden="true"></i> and <a href="https://quarto.org/">Quarto</a><br> <a href="https://www.github.com/ryansafner/microS23">View the source at <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a></div>
+  </div>
+</footer>
+
+
+
+</body></html>

@@ -1,0 +1,76 @@
+---
+title: "Preliminary Survey on Math Background"
+---
+
+```{r}
+#| label: setup
+#| include: false
+#| echo: false
+#| warning: false
+library(tidyverse)
+library(kableExtra)
+```
+
+::: callout-warning
+Please complete this by next class.
+:::
+
+This is an *ungraded* and *anonymous* survey for me to evaluate the distribution of your math and statistics backgrounds. Please complete all problems to the best of your ability. Your responses will help me craft the course to see which material we need to focus on at greater length, especially review material.
+
+<!--**Please submit your answers in [this Google Form](https://forms.gle/yKVogojLYo2izddR8)**. Feel free to download the PDF and work out the problems on paper first.
+-->
+
+<p style="text-align:center"><a target="_blank" href="/files/assignment/00-preliminary-survey-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> Download PDF</a></span> <a target="_blank" href="/files/assignment/00-preliminary-survey-answers.html"><span class="btn btn-primary btn-lg"><i class="far fa-life-ring"></i> Answer Key</a></span></p>
+
+# Question 1
+
+Draw a graph of the following linear equation, $R=4-\frac{1}{2}W$. Plot $W$ on the vertical axis and $R$ on the horizontal axis.
+
+# Question 2
+
+Draw a continuous function which begins at the origin, increases at a *decreasing* rate, reaches an inflection point, and then increases at an *increasing* rate. Show where each part of the function is concave or convex.
+
+# Question 3
+
+Solve the system of equations for $x$ and $y$: 
+
+$$\begin{align*}
+2x+y&=20\\
+4x-3y&=10\\
+\end{align*}$$
+
+# Question 4 
+
+*Simplify* the following equation: 
+
+$$Z=\frac{0.5X^{-0.5} Y^{0.5}}{0.5X^{0.5}Y^{-0.5}}$$
+
+# Question 5 
+
+For the function $f(x) = 3x^2+2x-7$: 
+
+a. Take the derivative of $f(x)$, i.e. $f'(x)$. 
+b. In English, describe what the derivative of $f(x)$ means.
+c. Evaluate $f'(4)$. In English, describe what this means. 
+
+# Question 6
+
+Find the maximum value of the function:
+
+$$f(x)=-2x^2+16x$$
+
+# Question 7 
+
+Explain what a tangency on a curve means. What is true about the tangent line?
+
+# Question 8 
+
+On a scale of 1 (worst) to 10 (best), rate your algebra skills (i.e. solving equations, graphing lines, working with fractions, etc.). 
+
+# Question 9 
+
+Have you had any experience with calculus?
+
+# Question 10
+
+On a scale of 1 (least) to 10 (most), how anxious are you about this class? Feel free to elaborate any specific anxieties -- it will make it more likely that I can specifically address them!

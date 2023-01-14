@@ -1,0 +1,90 @@
+---
+title: "Schedule"
+sidebar: false
+toc: false
+page-layout: full
+---
+
+This page contains all of the following resources for each class meeting:
+
+- <i class="fas fa-info-circle"></i>  Content materials contains suggested readings, more details about assignments, math appendices, and other helpful resources. I suggest you view these before each class.
+- <i class="fas fa-chalkboard-teacher"></i> **Slides** are "[Xaringan](https://github.com/yihui/xaringan)" presentations that can be opened in any browser (You can find a downloadable PDF in each **content** page)
+- <i class="fas fa-dumbbell"></i> **Practice** problems we work on together in class to prepare for homeworks and exams
+- <i class="fas fa-laptop-code"></i> **Assignments** are listed with due dates
+
+Please note that the lesson numbers, topics, and titles (e.g. 1.1) are *my* design, and do not match up with the textbook!
+
+Relevant materials, if applicable will be posted before class meets and become colored links.
+
+```{r packages-data, include=FALSE}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(glue)
+```
+
+```{r, eval = T, echo = F, warning = F, message = F}
+sched <- read_csv('data/schedule.csv', show_col_types = FALSE) %>%
+    mutate(unit = fct_inorder(unit)) %>%
+    mutate(date = as.Date(date, format = "%a %b %d")) %>%
+    mutate(var_title = ifelse(!is.na(assignment),
+                              glue('<span class="content-title">{title}</span>'),
+                              glue('{title}'))) %>%
+    mutate(var_content = ifelse(!is.na(content),
+                                glue('<a href="{content}.qmd"><i class="fas fa-info-circle fa-lg"></i></a>'),
+                                glue('<font color="#e9ecef"><i class="fas fa-info-circle fa-lg"></i></font>'))) %>%
+    mutate(var_slides = ifelse(!is.na(slides),
+                                glue('<a href="{slides}.html"><i class="fas fa-chalkboard-teacher"></i></a>'),
+                                glue('<font color="#e9ecef"><i class="fas fa-chalkboard-teacher"></i></font>'))) %>%
+    mutate(var_assignment = ifelse(!is.na(assignment),
+                                glue('<a href="{assignment}.qmd"><i class="fas fa-laptop-code"></i></a>'),
+                                glue('<font color="#e9ecef"><i class="fas fa-laptop-code"></i></font>'))) %>%
+    mutate(col_date = ifelse(!is.na(date),
+                             glue('{format(date, "%a %b %d")}'),
+                             glue(""))) %>%
+    mutate(col_title = glue('{var_title}')) %>%
+    mutate(col_content = var_content,
+           col_assignment = var_assignment)
+```
+
+```{r, eval = F, echo = F}
+sched %>%
+    select(unit, ` ` = col_date, Title = col_title, Content = col_content,
+           Assignment = col_assignment) %>%
+  kbl(escape = FALSE, align = "lllccc", table.attr = 'class="schedule-table"') %>% 
+  kable_styling()
+```
+
+```{r, echo = F}
+nested_sched <- sched %>%
+    select(unit, ` ` = col_date, Title = col_title, Content = col_content,
+           Slides = var_slides, Assignment = col_assignment) %>%
+  group_by(unit) %>%
+  nest()
+```
+
+```{r, echo = F, warning = F, message = F}
+show_table <- function(unit_id) {
+  # Add heading
+  cat(as.character(paste("\n\n###", nested_sched$unit[[unit_id]], "\n\n")))
+  
+  # Make table
+  tbl <- nested_sched$data[[unit_id]] %>% 
+    #select(-subgroup) %>% 
+    kbl(escape = FALSE, align = "rlcccc", table.attr = 'class="schedule-table"') %>%
+    kable_styling() #%>% 
+    #column_spec(1, width = "20%", extra_css = "padding-right: 20px;") %>% 
+    #column_spec(2, width = "50%") %>% 
+    #column_spec(3:5, width = "10%") %>% 
+  
+  cat(tbl)
+}
+```
+
+```{r, echo = F, results = "asis"}
+purrr::walk(seq(1, nrow(nested_sched)), ~show_table(.x))
+```
+
+<!-- Page apparently loads fa icons if I include one.. 
+
+{{< fa battery-half size=2xl >}}-->

@@ -1,0 +1,366 @@
+[
+  {
+    "objectID": "assignments/00-preliminary-survey.html",
+    "href": "assignments/00-preliminary-survey.html",
+    "title": "Preliminary Survey on Math Background",
+    "section": "",
+    "text": "Warning\n\n\n\nPlease complete this by next class.\n\n\nThis is an ungraded and anonymous survey for me to evaluate the distribution of your math and statistics backgrounds. Please complete all problems to the best of your ability. Your responses will help me craft the course to see which material we need to focus on at greater length, especially review material.\n\n\n Download PDF  Answer Key\n\n\nQuestion 1\nDraw a graph of the following linear equation, \\(R=4-\\frac{1}{2}W\\). Plot \\(W\\) on the vertical axis and \\(R\\) on the horizontal axis.\n\n\nQuestion 2\nDraw a continuous function which begins at the origin, increases at a decreasing rate, reaches an inflection point, and then increases at an increasing rate. Show where each part of the function is concave or convex.\n\n\nQuestion 3\nSolve the system of equations for \\(x\\) and \\(y\\):\n\\[\\begin{align*}\n2x+y&=20\\\\\n4x-3y&=10\\\\\n\\end{align*}\\]\n\n\nQuestion 4\nSimplify the following equation:\n\\[Z=\\frac{0.5X^{-0.5} Y^{0.5}}{0.5X^{0.5}Y^{-0.5}}\\]\n\n\nQuestion 5\nFor the function \\(f(x) = 3x^2+2x-7\\):\n\nTake the derivative of \\(f(x)\\), i.e. \\(f'(x)\\).\nIn English, describe what the derivative of \\(f(x)\\) means.\nEvaluate \\(f'(4)\\). In English, describe what this means.\n\n\n\nQuestion 6\nFind the maximum value of the function:\n\\[f(x)=-2x^2+16x\\]\n\n\nQuestion 7\nExplain what a tangency on a curve means. What is true about the tangent line?\n\n\nQuestion 8\nOn a scale of 1 (worst) to 10 (best), rate your algebra skills (i.e. solving equations, graphing lines, working with fractions, etc.).\n\n\nQuestion 9\nHave you had any experience with calculus?\n\n\nQuestion 10\nOn a scale of 1 (least) to 10 (most), how anxious are you about this class? Feel free to elaborate any specific anxieties – it will make it more likely that I can specifically address them!"
+  },
+  {
+    "objectID": "assignments/index.html",
+    "href": "assignments/index.html",
+    "title": "Assignment Details",
+    "section": "",
+    "text": "On this page, you can find more information about each individual assignment, as well as the assignments themselves.\nUse this tool to help calculate your overall course grade using existing assignment grades, as well as forecast “what if” scenarios.\nPlease refer to the syllabus for more information about grades."
+  },
+  {
+    "objectID": "assignments/index.html#homeworks",
+    "href": "assignments/index.html#homeworks",
+    "title": "Assignment Details",
+    "section": "Homeworks",
+    "text": "Homeworks\nThere will be several problem sets (one at the end of each lesson). Problem sets will be a combination of math/statistical theory & application problems and problems that require use of R with real data. You may collaborate with other students to work on problem sets, but each person must turn in an individual problem set. Problem sets are due one week from the class period where we finish a lesson, and must emailed to me by the start of class (so please type or, if you must, hand write and scan them)."
+  },
+  {
+    "objectID": "assignments/index.html#exams",
+    "href": "assignments/index.html#exams",
+    "title": "Assignment Details",
+    "section": "Exams",
+    "text": "Exams\nThis class will have two (2) exams."
+  },
+  {
+    "objectID": "assignments/index.html#midterm-exam",
+    "href": "assignments/index.html#midterm-exam",
+    "title": "Assignment Details",
+    "section": "Midterm Exam",
+    "text": "Midterm Exam\nAfter we have finished linear regression, there will be a midterm constituting a combination of multiple choice, problem, and short answer questions. This will cover the content we discuss in class, my lectures, and the readings. The midterm provides feedback both to you and to me that ensures everyone is progressing on schedule and comprehending the material. This is critical, as the rest of the course will build off of this foundation."
+  },
+  {
+    "objectID": "assignments/index.html#final-exam",
+    "href": "assignments/index.html#final-exam",
+    "title": "Assignment Details",
+    "section": "Final Exam",
+    "text": "Final Exam\nOn the college-determined date, we will have a comprehensive, closed-book, in-class final exam."
+  },
+  {
+    "objectID": "assignments/problem-sets.html",
+    "href": "assignments/problem-sets.html",
+    "title": "Problem Sets",
+    "section": "",
+    "text": "There will be several problem sets (typically 5-6) spaced throughout the semester. Typically, after we cover a major concept or set of tools, I will assign a problem set to practice this material."
+  },
+  {
+    "objectID": "assignments/problem-sets.html#logistics-submitting-on-blackboard",
+    "href": "assignments/problem-sets.html#logistics-submitting-on-blackboard",
+    "title": "Problem Sets",
+    "section": "Logistics: Submitting on Blackboard",
+    "text": "Logistics: Submitting on Blackboard\nPlease type your answers to the following questions in a document and save as a PDF1 to upload on Blackboard under Assignments. You may handwrite answers if you will be able to scan/photograph & convert them to a single PDF, if they are easily readable, but this is not preferred. See my guide to making a PDF - an essential skill in the modern world. If you are handwriting answers, you may print the pdf above and write on it, or just write on a piece of paper (we only need your answers, not the questions).\nFor the few questions that ask you to draw a graph, try to do so on your computer (use MS Paint, the drawing tools in MS Word or MS Powerpoint, plot points in MS Excel, drawing/notetaking apps, etc.), and save it as an image to include on your homework document. Again, they need not be perfect or to scale, just show that you understand the broad idea. Being able to understand and sketch the graphs is still a very important and useful skill! If all else fails, I will be lenient in grading graph questions if you are unable to technologically include a graph.\nYou may work together (and I highly encourage that) but you must turn in your own answers."
+  },
+  {
+    "objectID": "assignments/problem-sets.html#grading",
+    "href": "assignments/problem-sets.html#grading",
+    "title": "Problem Sets",
+    "section": "Grading",
+    "text": "Grading\nYour TA, under my supervision, will grade homeworks 70% for completion, and for the remaining 30%, and one question will be graded for accuracy - so it is best that you try every problem, even if you are unsure how to complete it accurately.\nFeel free to ask both me and your TA, or come to office hours, if you have any questions or need any help."
+  },
+  {
+    "objectID": "content/1.1-content.html#overview",
+    "href": "content/1.1-content.html#overview",
+    "title": "1.1 — The Tools of Microeconomics — Class Content",
+    "section": " Overview",
+    "text": "Overview\nWelcome to ECON 306 — Microeconomic Analysis! Today’s lesson will be an overview of the content and the assignments of the course. Please read and familiarize yourself with the syllabus.\nThis is not just a “syllabus day,” as we need to hit the ground running, but today will give you a “big picture” look at this semester, and how to use microeconomic analysis, by focusing on the two main tools/models: optimization and equilibrium. We will dive right into optimization models next class."
+  },
+  {
+    "objectID": "content/1.1-content.html#readings",
+    "href": "content/1.1-content.html#readings",
+    "title": "1.1 — The Tools of Microeconomics — Class Content",
+    "section": " Readings",
+    "text": "Readings\nToday is introductory, but you may look at Chapter 1 if you wish, to remind you about the use of models in economics. Otherwise, please heed this timeless message:\n\n\nA message to students from the Doggfather himself, @SnoopDogg pic.twitter.com/wsSANYv8u6\n\n— Ryan Briggs (@ryancbriggs) August 12, 2020\n\n\nPlease note going forward, the lesson numbers and topics (e.g. 1.1) on this website are my design, and will not match up with the textbook!\n\nOptional/Referenced Readings\n\n de Rohan, Anuschka, 2003, “Why Dolphins are Deep Thinkers”, The Guardian\n Katzen et. al, 2021, The nematode worm C. elegans chooses between bacterial foods exactly as if maximizing economic utility, BioRxiv\n Loch-Temzelides, Ted, 2021, “Walrasian equilibrium behavior in nature”, PNAS 118(27)\n Serrano, Jody, 2021, These Monkeys Understand Economics and Intentionally Steal High-Ticket Items to Barter for Better Food, Study Finds, Gizmodo"
+  },
+  {
+    "objectID": "content/1.1-content.html#slides",
+    "href": "content/1.1-content.html#slides",
+    "title": "1.1 — The Tools of Microeconomics — Class Content",
+    "section": " Slides",
+    "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
+  },
+  {
+    "objectID": "content/1.1-content.html#assignments",
+    "href": "content/1.1-content.html#assignments",
+    "title": "1.1 — The Tools of Microeconomics — Class Content",
+    "section": " Assignments",
+    "text": "Assignments\n\nPreliminary Math Survey Due Next Class\nPlease take the preliminary survey on your math background by next class. This will help us all have a productive semester together."
+  },
+  {
+    "objectID": "content/index.html",
+    "href": "content/index.html",
+    "title": "Overview",
+    "section": "",
+    "text": "These content pages provide the readings, lecture slide (in html and printable PDF), appendices, and other useful materials for each class. Each lesson covers approximately one class meeting.\nPlease note that the lesson numbers, topics, and titles (e.g. 1.1) are my design, and do not match up with the textbook!"
+  },
+  {
+    "objectID": "credits.html",
+    "href": "credits.html",
+    "title": "Credits",
+    "section": "",
+    "text": "Nobody produces something like this without a lot of inspiration and guidance from those who have already done this before. Here, I try to give credit where it is due, and slowly begin to document how I made everything, for those who eventually want to do what I did.\nThis website is written in R Markdown, built with Hugo, pushed to Github, and hosted by Netlify.\nThe theme is based on Academia-hugo, which I modified.\nThe inspiration for making individual course websites, along with the basic structure, comes from the incomparable Andrew Heiss. See his website for examples, as well as a number of helpful tutorials. Sadly, I had to figure out how these websites work on my own, and attempted to document my process in the README of this repository for those interested. One day I may make a guide.\nThe course hex sticker I made via hexSticker, and keep all of my course hex stickers in this repository."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ECON 326 — Industrial Organization",
+    "section": "",
+    "text": "Industrial Organization\n        \n        \n            ECON 326 • Spring 2023 • Hood College\n        \n        \n            Learn the common tools and techniques that economists use to model the world around youBy the end of this course, you will: ¶  ¶  ¶ Understand key economic models of perfect competition, monopoly, monopolistic competition, oligopoly (Bertrand, Cournot, and Stackelberg competition), and contestable markets ¶  ¶  ¶ Apply models of competition to different industries and regulatory regimes ¶  ¶  ¶ Simulate strategic and game theoretic interactions and apply them to industry behavior ¶  ¶ \n        \n    \n    \n      \n        \n        \n        \n      \n    \n\n\n\n\n\nInstructor\n\n   Dr. Ryan Safner\n   114 Rosenstock\n   Office Hours: MW 1:30-2:30PM\n   safner@hood.edu\n\n\n\nCourse details\n\n   2:00—3:25 PM\n   Rosenstock 101\n   Jan 24—May 8, 2023\n   Slack"
+  },
+  {
+    "objectID": "resources/appendices/index.html",
+    "href": "resources/appendices/index.html",
+    "title": "ECON 326 — Industrial Organization",
+    "section": "",
+    "text": "List of Appendices\n1.1 Appendix"
+  },
+  {
+    "objectID": "resources/index.html",
+    "href": "resources/index.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Look here over the course of the semester for resources, links, and tips on how to succeed in the course, how to write well, and other things of interest related to econometrics, data analysis, managing your workflow, and using R."
+  },
+  {
+    "objectID": "resources/math/changes.html",
+    "href": "resources/math/changes.html",
+    "title": "Rates of Change",
+    "section": "",
+    "text": "If \\(y\\) changes from \\(y_1 \\rightarrow y_2\\), the difference, \\(\\Delta y = y_2-y_1\\)\nWe can express the relative difference, comparing the difference with the original value of \\(y_1\\) as: \\[\\text{relative change in y}=\\frac{y_2-y_1}{y_1}=\\frac{\\Delta y}{y_1}  \\]\nIt’s most common to talk about the percentage change in \\(y\\) (\\(\\% \\Delta y\\)), also called the growth rate of \\(y\\), which is 100 times the relative change: \\[\\text{percentage change in y}=\\% \\Delta y = \\frac{y_2-y_1}{y_1}=\\frac{\\Delta y}{y_1}*100\\%\\]\nNatural logarithms \\((\\ln)\\) are very helpful in approximating percentage changes from \\(y_1\\) to \\(y_2\\) because: \\[100*(\\ln(y_2)-\\ln(y_1))=\\% \\Delta y = \\text{percentage change in y}\\]"
+  },
+  {
+    "objectID": "resources/math/changes.html#elasticity",
+    "href": "resources/math/changes.html#elasticity",
+    "title": "Rates of Change",
+    "section": "Elasticity",
+    "text": "Elasticity\nUsing logs and percentage changes helps us talk about elasticity, an extremely useful concept with vast applications all over economics. Elasticity measures the percentage change in one variable (\\(y\\)) as a response to a 1% change in another (\\(x\\)) at a particular value of \\(x\\) and \\(y\\). \\[\\epsilon_{yx} = \\frac{\\% \\Delta y}{\\% \\Delta x}=\\cfrac{(\\frac{\\Delta y}{y})}{(\\frac{\\Delta x}{x})}    =\\frac{\\Delta y}{\\Delta x}*\\frac{x}{y}\\]\n\nInterpretation: A 1% change in \\(x\\) will lead to a \\(\\epsilon_{yx}\\)% change in \\(y\\)\n\nFor example, the price elasticity of demand measures the percentage change in quantity demanded to a 1% change in price (at a particular price point), note here: \\(x=P\\) and \\(y=q\\): \\[\\epsilon_D = \\frac{\\%\\Delta q}{\\%\\Delta p} =  \\cfrac{\\frac{\\Delta q}{q}}{\\frac{\\Delta p}{p}} =\\frac{\\Delta q}{\\Delta p}*\\frac{p}{q}\\]\n\nNote that \\(\\frac{\\Delta q}{\\Delta p}\\) is \\(\\frac{1}{slope}\\) of the demand curve (which is \\(\\frac{\\Delta p}{\\Delta q}\\))\nNote though we would technically multiply by \\(\\frac{100}{100}\\) to get percentage change, this term obviously is just 1. Elasticity is unitless.\nNote also that on a graph we usually express \\(q\\) as our independent variable and \\(p\\) as our dependent variable"
+  },
+  {
+    "objectID": "resources/math/changes.html#derivatives-calculus",
+    "href": "resources/math/changes.html#derivatives-calculus",
+    "title": "Rates of Change",
+    "section": "Derivatives (Calculus)",
+    "text": "Derivatives (Calculus)\nOften, \\(\\Delta y\\) refers to a very small change in \\(y\\), a marginal change in \\(y\\). A rate of change is the ratio of two changes, such as the change between \\(x\\) and \\(y=f(x)\\): \\[\\frac{\\Delta f(x)}{\\Delta x} = \\frac{f(x + \\Delta x)-f(x)}{\\Delta x}\\]\n\nThis measures how \\(f(x)\\) changes as \\(x\\) changes\nIf \\(\\Delta\\) is infinitesimally small, then we have expressed the (first) derivative of \\(f(x)\\) with respect to \\(x\\), written variously as \\(f'(x)\\) or \\(\\frac{df(x)}{dx}\\) \\[\\frac{d f(x)}{d x} = \\lim_ {\\Delta x \\to 0} \\frac{f(x + \\Delta x)-f(x)}{\\Delta x}\\]\n\nThe derivative of a linear function \\((y=ax+b)\\) is a constant (i.e. the slope), \\(a\\) \\[\\frac{d f(x)}{d x} = a\\]\nThe derivative of the first derivative is the second derivative of a function \\(f(x)\\) with respect to \\(x\\), denoted \\(f''(x)\\) or \\(\\frac{d^2f(x)}{dx^2}\\)\n\nThe second derivative measures the curvature of a function\nIt used for proving when a function has reached a maximum or minimum, or is concave or convex (often used in #Nonlinear-Functions-&-Optimization)"
+  },
+  {
+    "objectID": "resources/math/equations.html",
+    "href": "resources/math/equations.html",
+    "title": "Solving Systems of (Linear) Equations",
+    "section": "",
+    "text": "To solve a system of simultaneous linear equations, there must be as many equations as there are variables:\n\\[\\begin{align*}\n12x+4y&=36 \\\\\n6x-3y&=3 \\\\\n\\end{align*}\\]\nThere are two methods we can use to solve this system:"
+  },
+  {
+    "objectID": "resources/math/equations.html#substitution",
+    "href": "resources/math/equations.html#substitution",
+    "title": "Solving Systems of (Linear) Equations",
+    "section": "Substitution",
+    "text": "Substitution\nFirst, we take one equation and solve for one of the variables. Here, we take the first, and solve for \\(x\\):\n\\[\\begin{align*}\n        12x+4y&=36\\\\\n        12x&=36-4y\\\\\n        x&=3-\\frac{1}{3}y\\\\\n        \\end{align*}\\]\nNow we take this value and plug it into the other equation:\n\\[\\begin{align*}\n        6x-3y&=3\\\\\n        6(3-\\frac{1}{3}y)-3y&=3\\\\\n            18-2y-3y&=3\\\\\n            18-5y&=3\\\\\n            -5y&=-15\\\\\n            y&=3\\\\\n        \\end{align*}\\]\nNow that we know the value of one variable, plug it into either of the original equations to solve for the value of the other variable:\n\\[\\begin{align*}\n        12x+4y&=36\\\\\n        12x+4(3)&=36\\\\\n        12x+12&=36\\\\\n        12x&=24\\\\\n        x&=2\\\\\n        \\end{align*}\\]\nWe should verify that our variables are correct, so plug \\(x\\) and \\(y\\) into each equation and make sure it is true. Let’s start with the first equation:\n\\[\\begin{align*}\n        12x+4y&=36\\\\\n        12(2)+4(3)&=36\\\\\n        24+12&=36 \\checkmark \\\\\n        \\end{align*}\\]\nWe can do the same with the other equation:\n\\[\\begin{align*}\n        6x-3y&=3\\\\\n        6(2)-3(3)&=3\\\\\n        12-9&=3 \\checkmark \\\\\n        \\end{align*}\\]"
+  },
+  {
+    "objectID": "resources/math/equations.html#elimination",
+    "href": "resources/math/equations.html#elimination",
+    "title": "Solving Systems of (Linear) Equations",
+    "section": "Elimination",
+    "text": "Elimination\nWe will multiply the equations by constants to make the coefficients of one variable equal. Here, let us try to make the coefficients in front of each equation’s \\(x\\) equal.\n\\[\\begin{align*}\n        [12x+4y&=36]*6\\\\\n        [6x-3y&=3]*12\\\\\n    \\end{align*}\\]\nTo do so, we will multiply the first equation by 6, and the second equation by 12. (We multiply each equation by the coefficient in front of the other equation’s \\(x\\) variable):\n\\[\\begin{align*}\n        72x+24y&=216\\\\\n        72x-36y&=36\n    \\end{align*}\\]\nNow we subtract the second equation from the first, which should get rid of \\(x\\):\n\\[\\begin{align*}\n        72x+24y&=216\\\\\n        -[72x-36y&=36]\\\\    \n    \\end{align*}\\]\nBe careful to distribute the minus sign carefully:\n\\[\\begin{align*}\n        [72x-72x]+[24y-(-36y)]&=[216-36]\\\\\n        60y&=180\\\\\n        y&=3\\\\\n    \\end{align*}\\]\nNow that we have the value of one variable, plug it in to either equation.\n\\[\\begin{align*}\n        12x+4y&=36\\\\\n        12x+4(3)&=36\\\\\n        12x+12&=36\\\\\n        12x&=24\\\\\n        x&=2\\\\\n        \\end{align*}\\]\nNow that we have both variables, we can plug them in to each equation to double check them, same as before."
+  },
+  {
+    "objectID": "resources/math/exponents.html",
+    "href": "resources/math/exponents.html",
+    "title": "Exponents & Logarithms",
+    "section": "",
+    "text": "Exponents are defined as:\n\n\\(b^n=\\underbrace{b \\times b \\times ... \\times b}_{n}\\), where base \\(b\\) is multiplied by itself \\(n\\) times\n\\(b^0=1\\) (for \\(b \\neq 0\\))\n\nThere are some common rules for exponents, assuming \\(x\\) and \\(y\\) are real numbers, \\(m\\) and \\(n\\) are integers, and \\(a\\) and \\(b\\) are rational:\n\n\\(x^{-n}=\\frac{1}{x^n}\\)\n\ne.g. \\(x^{-3} = \\frac{1}{x^3}\\)\n\n\\(x^{\\frac{1}{n}}=\\sqrt[n]{x}\\)\n\ne.g. \\(x^{\\frac{1}{2}} = \\sqrt{x}\\)\n\n\\(x^{(\\frac{m}{n})}=(x^{\\frac{1}{n}})^m\\)\n\ne.g. \\(8^{\\frac{4}{3}} = (8^\\frac{1}{3})^4=2^4=16\\)\n\n\\(x^{a}x^b=x^{a+b}\\)\n\ne.g. \\(x^2x^3=x^5\\)\n\n\\(\\frac{x^a}{x^b}=x^{a-b}\\)\n\ne.g. \\(\\frac{x^2}{x^3}=x^{-1}=\\frac{1}{x}\\)\n\n\\((\\frac{x}{y})^a=\\frac{x^a}{y^a}\\)\n\ne.g. \\((\\frac{x}{y})^2=\\frac{x^2}{y^2}\\)\n\n\\((xy)^a=x^ay^a\\)\n\ne.g. \\((xy)^2=x^2y^2\\)\n\n\nLogarithms are the exponents in the expressions above, the inverse of exponentiation\n\nIf \\(b^y=x\\), then \\(log_b(x)= y\\)\n\n\\(y\\) is the number you must raise \\(b\\) to in order to get \\(x\\)\ne.g. \\(2^6=64 = \\underbrace{(2*2*2*2*2*2)}_{\\text{6 times}}\\) so \\(log_2(64)=6\\)\n\n\nWe often use the natural logarithm (ln) with base \\(e=2.718...\\) in many math, statistics, and economic applications\n\nIf \\(e^y=x\\), then \\(\\ln(x) = y\\)\n\nThere are a number of highly useful rules for natural logs:\n\n\\(\\ln(xy)=\\ln(x)+\\ln(y)\\)\n\ne.g. \\(\\ln(2*3)=\\ln(2)+\\ln(3)\\)\n\n\\(\\ln(\\frac{x}{y})=\\ln(x)-\\ln(y)\\)\n\ne.g. \\(\\ln(\\frac{2}{3})=\\ln(2)-\\ln(3)\\)\n\n\\(\\ln(x^a)=a*\\ln(x)\\)\n\ne.g. \\(\\ln(x^2)=2\\ln(x)\\)"
+  },
+  {
+    "objectID": "resources/math/functions.html#functions",
+    "href": "resources/math/functions.html#functions",
+    "title": "Functions",
+    "section": "Functions",
+    "text": "Functions\nA function is simply a rule that assigns a unique value of a dependent variable (e.g. \\(f(x)\\)) to each value of an independent variable (e.g. \\(x\\)): \\(x \\rightarrow f(x)\\)\n\nSomething is not a function if it assigns multiple values of \\(y\\) for the same value of \\(x\\) (e.g. on a graph, a vertical line)\nWe can relate any independent variable (e.g. \\(x\\)) to any dependent variable (e.g. \\(y\\)) so get comfortable using variables other than \\(x\\) and \\(y\\)!\n\nIn its general form a function can be written as:\n\\[q = q(p)\\]\n\n“Quantity (\\(q\\)) is a function of price (\\(p\\))”\nThis expresses that there is a relationship between \\(q\\) and \\(p\\), it doesn’t tell us the specific form of that relationship\n\n\\(q\\) is the dependent or “endogenous” variable, its value is determined by \\(p\\)\n\\(p\\) is the independent or “exogenous” variable, its value is given and not dependent on other variables\nThe specific form of this function might be:\n\n\n\\[q = 100-6p\\]\n\nThe numbers 100 and 6 are known as parameters, they are parts of the quantitative relationship between quantity and price (the variables) that do not change\nIf we have values of \\(p\\), we can find the value of \\(q(p)\\):\n\nWhen \\(p=10\\) \\[\\begin{align*}\n  q(p)&=100-6p\\\\\n  q(10)&=100-6(10)\\\\\n  q(10)&=100-60\\\\\n  q(10)&=40\\\\\n\\end{align*}\\]\nWhen \\(p=5\\): \\[\\begin{align*}\n  q(p)&=100-6p\\\\\n  q(5)&=100-6(5)\\\\\n  q(5)&=100-30\\\\\n  q(5)&=70\\\\  \n\\end{align*}\\]\n\n\nMultivariate functions have multiple independent variables, such as:\n\\[q=f(k,l)\\]\n\n“Output (\\(q\\)) is a function of both capital (\\(k\\)) and labor (\\(l\\))”\nIn economics, we often restrict the domain and range of functions to positive real numbers, \\(\\mathbb{R}_+\\), since prices and quantities are never negative in the real world\n\nDomain: the set of \\(x\\)-values\nRange: the set of \\(y\\)-values determined by the function"
+  },
+  {
+    "objectID": "resources/math/functions.html#inverse-functions",
+    "href": "resources/math/functions.html#inverse-functions",
+    "title": "Functions",
+    "section": "Inverse Functions",
+    "text": "Inverse Functions\n\nMany functions have a useful inverse, where we switch the independent variable and dependent variable\n\nFor example, if we have the demand function: \\[q=100-6p\\] we may want find the inverse demand function, an equation where \\(p\\) is the dependent variable, rather than \\(q\\) (this is how we normally graph Supply and Demand functions!)\nTo do this, we need to solve the above equation for \\(p\\): \\[\n\\begin{align*}\n        q&=100-6p &&\\text{The original equation}\\\\\n        q+6p&=100 && \\text{Add } 6p \\text{ to both sides}\\\\\n        6p&=100-q && \\text{Subtract } q \\text{ from both sides}\\\\\n        p&=\\frac{100}{6}-\\frac{1}{6}q && \\text{Divide both sides by 6}\\\\\n\\end{align*}\n\\]"
+  },
+  {
+    "objectID": "resources/math/functions.html#functions-with-fractions",
+    "href": "resources/math/functions.html#functions-with-fractions",
+    "title": "Functions",
+    "section": "Functions with Fractions",
+    "text": "Functions with Fractions\n\nMany people are rusty on a few useful algebra rules we will need, one being how to deal with fractions in equations\nTo get rid of a fraction, multiply both sides of the equation by the fraction’s reciprocal (swap the numerator and denominator), which will yield just 1\n\n\\[\\begin{align*}\n        100&=\\frac{1}{4}x & & \\text{The equation to be solved for} x\\\\\n        \\frac{4}{1} \\big(\\frac{100}{1}\\big) &=\\frac{4}{1}\\bigg(\\frac{1}{4}x\\bigg) && \\text{Multiplying by the reciprocal of } \\frac{1}{4} \\text{, which is } \\frac{4}{1} \\\\\n        \\frac{400}{1}&=\\frac{4}{4}x & & \\text{Cross multiplying fractions}\\\\\n        400 & = x & & \\text{Simplifying}\\\\  \n        \\end{align*}\\]\n\nAlternatively (if possible), re-imagining the fraction as a decimal may help:\n\n\\[\\begin{align*}\n        100&=\\frac{1}{4}x && \\text{The original equation}\\\\\n        100&=0.25x && \\text{Converting to a decimal}\\\\\n        400 & = x && \\text{Dividing both sides by }0.25\\\\   \n        \\end{align*}\\]\n\nAdd fractions by finding a common denominator:\n\n\\[\\begin{align*}\n    \\frac{4}{3} &+ \\frac{2}{5}\\\\\n    \\bigg(\\frac{4 \\times 5}{3 \\times 5}\\bigg) &+ \\bigg(\\frac{2 \\times 3}{5 \\times 3}\\bigg)\\\\\n     \\frac{20}{15}&+\\frac{6}{15}\\\\\n    &= \\frac{26}{15}\\\\\n    \\end{align*}\\]\n\nMultiply fractions straight across the numerator and denominator \\[\n\\frac{4}{3} \\times \\frac{2}{5}=\\frac{4 \\times 2}{3 \\times 5}=\\frac{8}{15}\n\\]"
+  },
+  {
+    "objectID": "resources/math/graphing.html#slope-intercept-form",
+    "href": "resources/math/graphing.html#slope-intercept-form",
+    "title": "Graphing Linear Equations",
+    "section": "Slope-Intercept Form",
+    "text": "Slope-Intercept Form\n\n\n\n\n\n\nA linear function of two variables can be written in slope-intercept form: \\[y=ax+b\\]\n\n\\(y\\) is the dependent variable (on the vertical axis)\n\\(x\\) is the independent variable (on the horizontal axis)\n\\(a\\) is the slope of the line\n\n\\(a = \\frac{\\text{rise}}{\\text{run}} = \\frac{\\text{change in }y}{\\text{change in }x} = \\frac{\\Delta x}{\\Delta y}\\)\nyou may have been taught the slope as “\\(m\\)”, this is just personal taste, but again, get used to using different letters!\n\n\\(b\\) is the vertical-intercept, a constant number where the line crosses the vertical axis\n\nif \\(y\\) is the dependent variable, this is the “\\(y\\)-intercept”, \\(y\\) where \\(x=0\\)\n\n\nAny point on the line has an \\(x\\)-coordinate and \\(y\\)-coordinate \\((x_i,y_i)\\)"
+  },
+  {
+    "objectID": "resources/math/graphing.html#other-forms",
+    "href": "resources/math/graphing.html#other-forms",
+    "title": "Graphing Linear Equations",
+    "section": "Other Forms",
+    "text": "Other Forms\n\nA linear function can equivalently be expressed in the following form: \\[a_1x_1+a_2x_2=c\\]\n\n\\(x_2\\) is the dependent variable (on the vertical axis)\n\\(x_1\\) is the independent variable (on the horizontal axis)\n\\(c\\) is a constant\n\nThis is a valid equation, but is difficult to visualize in the traditional graph as above. Simply solve for the dependent variable on the vertical axis \\((x_2\\) as if you were solving for \\(y)\\):\n\n\n\n\n\n\n\\[\\begin{align*}\na_1x_1+a_2x_2=c && \\text{Original}\\\\\na_2x_2=c-a_1x_1  && \\text{Subtracting }x_1 \\text{ term}\\\\\nx_2 = \\frac{c}{a_2}-\\frac{a_1}{a_2}x_1 && \\text{Dividing by }a_2 \\\\\n\\end{align*}\\]\n\nThe vertical intercept is \\(\\frac{c}{a_2}\\)\nThe horizontal intercept is \\(\\frac{c}{a_1}\\)\nThe slope is \\(-\\frac{a_1}{a_2}\\)\nThis is extremely useful for dealing with constraints in constrained optimization problems: budget constraints and isocost lines"
+  },
+  {
+    "objectID": "resources/math/graphing.html#drawing-a-graph-from-an-equation",
+    "href": "resources/math/graphing.html#drawing-a-graph-from-an-equation",
+    "title": "Graphing Linear Equations",
+    "section": "Drawing a Graph From an Equation",
+    "text": "Drawing a Graph From an Equation\nIf we already have a linear equation that we would like to graph, we can follow these steps:\n\nTake the equation and plug in two values, e.g. if we have:\n\n\\[p = \\frac{1}{2}q + 4\\]\n\nWe can find two points on the graph. The easiest one to find is the vertical-intercept, where the line crosses the vertical axis, where \\(q=0\\), so plug in \\(q=0\\):\n\n\\[\\begin{align*}\np &= \\frac{1}{2}(0)+4\\\\\np &= 4 \\\\ \\end{align*}\\]\nThus, one point is \\((0,4)\\). Note that the constant in the function itself is the \\(p-intercept\\)! So one valid point will always be \\((0,b)\\)!\n\nFor our second point, let’s plug in \\(q=2\\):\n\n\\[\\begin{align*}\np &= \\frac{1}{2}(2)+4\\\\\np &= 5 \\\\ \\end{align*}\\]\nThus, another point is \\((2,5)\\)\n\nNow, plot the two points on the graph, and connect them with a line\n\n\n\n\n\n\nNote: A quick shortcut to plot a line is to find the vertical intercept and plot that, and then find the next point using the slope. Here, start our line at 4 on the vertical axis, and then, as the slope is \\(\\frac{1}{2}\\), for every one unit increase in \\(q\\), \\(p\\) increases by \\(\\frac{1}{2}\\). Our second point, (2,5), is a 2 unit increase in \\(q\\) resulting in a \\(1\\) unit increase in \\(p\\)."
+  },
+  {
+    "objectID": "resources/math/graphing.html#finding-an-equation-from-a-graph",
+    "href": "resources/math/graphing.html#finding-an-equation-from-a-graph",
+    "title": "Graphing Linear Equations",
+    "section": "Finding an Equation from a Graph",
+    "text": "Finding an Equation from a Graph\n\n\n\n\n\nIn order to find the equation of an existing line, we follow these steps:\n\nFirst, take two points on the line and find the slope, \\(a\\), between them. Let’s pick \\((1,6)\\) and \\((3,2)\\).\n\n\\[\\begin{align*}\n\\text{Slope} &= \\frac{rise}{run} \\\\\n&= \\frac{(p_2-p_1)}{(q_2-q_1)}\\\\\n&= \\frac{(2-6)}{(3-1)}\\\\\n&= \\frac{-4}{2}\\\\\n&= -2\\\\ \\end{align*}\\]\nThere is a shortcut that we can use to find the slope faster by eye-balling the graph: When \\(q\\) changes by 1, how many units does \\(p\\) change? If we move from (1,6) to (2,5), \\(q\\) increases by 1, but \\(p\\) falls by 2. So the slope is \\(-2\\). For every one unit increase in \\(q\\), \\(p\\) changes by -2.\n\nNow with the slope, we need to find the vertical intercept, or \\(b\\), we solve this by plugging in the slope and any point on the graph, we will use (1,6):\n\n\\[\\begin{align*}\n        p &= aq+b\\\\\n        (6) &= -2(1)+b\\\\\n        6 &= -2+b\\\\\n        8 &= b\\\\\n    \\end{align*}\\]\nNote, there is another easy way to eye-ball what this value is. It is simply that \\(p\\) value where \\(q=0\\), or at what \\(p\\) value the graph crosses the vertical axis. We can see it is at 8.\n\nThus, we have the slope and the intercept, so our equation is: \\[\np = -2q+8   \n\\]"
+  },
+  {
+    "objectID": "resources/math/nonlinear.html",
+    "href": "resources/math/nonlinear.html",
+    "title": "Nonlinear Functions & Optimization",
+    "section": "",
+    "text": "A function is non-linear if it is curved, i.e. not a straight line. Nonlinear functions’ slopes may be different for different values of the independent variable.\nThe slope at any particular point of the function is is its first derivative, the rate of instantaneous change.\nMost applications in economics pertain to marginal magnitudes\nWe can describe a curved function as being either convex or concave with respect to the origin (0,0)\nIn simplest terms, a function is concave between two points \\(a, b\\) if a straight line connecting \\(a\\) and \\(b\\) lies beneath the function itself \\[\\color{red}{f[(t a)+(1-t)b]} > t f(a) + (1-t) f(b)\\text{ for }0 < t < 1\\]\nIn simplest terms, a function is convex between two points \\(a, b\\) if a straight line connecting \\(a\\) and \\(b\\) lies above the function itself \\[\\color{blue}{f[(w a)+(1-w)b]} < w f(a) + (1-w) f(b) \\quad \\text{ for }0 < w < 1\\] - The weighted average (dotted line) of \\(a\\) and \\(b\\) is above the function - A function is also convex at a point if its second derivative is positive\nA function switches between convex and concave at an inflection point (point C in the example above) - Here, the second derivative (in addition to the first) is equal to 0"
+  },
+  {
+    "objectID": "resources/math/nonlinear.html#optimization",
+    "href": "resources/math/nonlinear.html#optimization",
+    "title": "Nonlinear Functions & Optimization",
+    "section": "Optimization",
+    "text": "Optimization\nFor most curves, we often want to find the value where the function reaches its maximum or minimum (in general, these are types of “extrema”) along some interval\n\n\n\n\n\nFormally, a function reaches a maximum at \\(x^*\\) if \\(f(x^*) \\geq f(x)\\) for all \\(x\\); or a minimum at \\(x^*\\) if \\(f(x^*) \\leq f(x)\\) for all \\(x\\) - In the graph above, the function reaches a maximum at \\(x_1\\) and a minimum at \\(x_2\\)\nThe maximum or minimum of a function occurs where the slope (first derivative) is zero, known in calculus as the “first-order condition” \\[\\frac{df(x^*)}{dx} = 0\\]\n\nTo distinguish between maxima and minima, we have the “second-order condition”\n\nA minimum occurs when the second derivative of the function is positive, and the curve is convex \\[\\frac{d^2f(x^*)}{dx^2} > 0\\]\nA maximum occurs when the second derivative of the function is negative, and the curve is concave \\[\\frac{d^2f(x^*)}{dx^2} < 0\\]\nAn inflection point occurs where the second derivative of the function is zero\nAll three are known as “critical points”\n\n\nThis is often useful for unconstrained optimization, e.g. finding the quantity of output that maximizes profits\nNote, if we have a multivariate function \\(y=f(x_1, x_2)\\) and want to find the maximum or minimum (\\(x_1^\\star, x_2^\\star\\)), the first order conditions (FOC, plural) are where all the partial derivatives (derivative with respect to \\(x_1\\) and derivative with respect to \\(x_2\\)) are zero \\[\\begin{align*}\n\\frac{\\partial f(x_1^*, x_2^*)}{\\partial x_1} &= 0 \\\\\n\\frac{\\partial f(x_1^*, x_2^*)}{\\partial x_2} &= 0 \\\\\n\\end{align*}\\] There are second order conditions as well, to demonstrate whether an extremum is a maximum or minimum, but they are too complex to discuss here.\nOften we want to find the maximum or minimum of a function over some restricted values of \\((x_1, x_2)\\), known as constrained optimization. This is one of the most important modeling tools in microeconomics, and will show up in many contexts.\n\nWe want to find the maximum of some function:\n\n\\[\\begin{align*}\n\\max_{x_1, x_2} f(x_1, x_2)\\\\\n\\text{subject to } g(x_1, x_2)=c \\\\\n\\end{align*}\\]\n\n\\(f(x_1, x_2)\\) is the “objective function” we wish to maximize (or minimize)\n\\(g(x_1, x_2)=c\\) is the “constraint” that limits us within some specified set of \\(x_1\\) and \\(x_2\\) values\n\nMuch of microeconomic modeling is about figuring out what an agent’s objective is (e.g. maximize profits, maximize utility, minimize costs) and what their constraints are (e.g. budget, time, output).\nThere are several ways to solve a constrained optimization problem (see Appendix to Ch. 5 in textbook), the most frequent (but requiring calculus) is Lagrangian multiplier method.\nGraphically, the solution to a constrained optimization problem is the point where a curve (objective function) and a line (constraint) are tangent to one another: they just touch, but do not intersect (e.g. at point A below).\n\n\n\n\n\nAt the point of tangency (A), the slope of the curve (objective function) is equal to the slope of the line (constraint)\n\nThis is extremely useful and is always the solution to simple constrained optimization problems, e.g.\n\ne.g. maximizing utility subject to income\ne.g. minimizing cost subject to a certain level of output\n\nWe can find the equation of the tangent line using point slope form \\[y-y_1=m(x-x_1)\\]\nWe need to know the slope \\(m\\), which we would know from the slope of the function at that point\nWe know \\((x_1, y_1\\)) is the point of tangency"
+  },
+  {
+    "objectID": "resources/pdfs.html",
+    "href": "resources/pdfs.html",
+    "title": "How to Make a PDF",
+    "section": "",
+    "text": "There are many good apps out there that will allow you to take photos and convert them to PDFs. This is actually a better method than using your computer (described below), since theses apps optimize your photos for PDFs (using your computer to convert will often result in very large PDF file sizes!). Here are a few apps you can use:\n\nScannable 1\nTurboscan \nImage to PDF Converter Free \nPDF Converter Pro \nSimple Scan \n\nPersonally, I use Scannable — primarily because of its association with Evernote, if you wanted a recommendation. But note it does not exist on Android. I also have successfully used Turboscan in the past.\nAdditionally, as Hood students, you all have Onedrive, you can use the app on your phone to scan documents with photos and convert them to PDFs."
+  },
+  {
+    "objectID": "resources/pdfs.html#using-images-sent-to-your-computer",
+    "href": "resources/pdfs.html#using-images-sent-to-your-computer",
+    "title": "How to Make a PDF",
+    "section": "Using Images Sent to Your Computer",
+    "text": "Using Images Sent to Your Computer\nMost modern versions of operating system have a built-in tool in the File Viewer (or Finder) menus, after clicking on one or multiple files, to create a PDF from the files.\nSo first take photos on your smartphone of your written work (one photo per page). Please try to frame your photos properly! Put your paper flat on a solid surface (table, desk, the floor, etc). Get the whole page within the borders of the photo, and not too much background. I don’t need to see half of your desk or bed as you are taking the photo! Take a look at it and make sure it is legible.\nNext, get the photos onto your computer (whether by Airdrop, email to yourself, Dropbox, etc.). Finally, depending on your OS, convert the files to a PDF:\n1. On a Windows PC\nOpen the folder where your photos are currently, in the File Explorer. Select all of the photos, and right click, and select Print. In the dialog box that pops up, select Microsoft Print to PDF in the Printer box, and then click Print. This will save it as a .pdf file in that folder. See more information.\n2. On a Mac\nAs I use a Mac, I will show you how Mac OS has a neat feature built into Finder, which allows converting multiple files into a single PDF file as a Quick Action. I have written two pages in a notebook and taken two separate pictures of them, and airdropped them onto my computer.\n\n\n\nHere is the  example PDF.\n3. On Linux\nIf you use Linux, I assume you know your way around a computer well enough to make a PDF! 🤖"
+  },
+  {
+    "objectID": "resources/quotes.html",
+    "href": "resources/quotes.html",
+    "title": "Quotes About Economics",
+    "section": "",
+    "text": "“Whether we like it or not, it is a fact that economics cannot remain an esoteric branch of knowledge accessible only to small groups of scholars and specialists. Economics deals with society’s fundamental problems; it concerns everyone and belongs to all. It is the main and proper study of every citizen.”\n\n — Ludwig von Mises\n\n“The task of the economist is not to plan utopias, but to criticize reality”\n\n — Joan Robinson\n\n“The first lesson of economics is scarcity: There is never enough of anything to satisfy all those who want it. The first lesson of politics is to disregard the first lesson of economics.”\n\n — Thomas Sowell\n\n“The ideas of economists and political philosophers, both when they are right and when they are wrong, are more powerful than is commonly understood. Indeed the world is ruled by little else. Practical men, who believe themselves to be quite exempt from any intellectual influence, are usually the slaves of some defunct economist. Madmen in authority, who hear voices in the air, are distilling their frenzy from some academic scribbler of a few years back. I am sure that the power of vested interests is vastly exaggerated compared with the gradual encroachment of ideas.”\n\n — John Maynard Keynes\n\n“There are no solutions, there are only tradeoffs.”\n\n — Thomas Sowell\n\n“The problem is that most of what a student is likely to read or hear about international economics is nonsense. [T]he most important thing to teach our undergrads about trade is how to detect that nonsense. That is, our primary mission should be to vaccinate the minds of our undergraduates against the misconceptions that are so predominant in what passes for educated discussion about international trade.”\n\n — Paul Krugman"
+  },
+  {
+    "objectID": "resources/tips.html",
+    "href": "resources/tips.html",
+    "title": "Tips for Success in This Course",
+    "section": "",
+    "text": "Take notes. On paper. Yes. Studies show that using pen and paper trump taking notes on a device. The main reason is because you cannot possibly write down everything I am saying by hand. This forces you to selectively filter my lecture to its most essential and important components – an integral part of the learning and retention process. If you are taking notes on a laptop, you become a court stenographer, thoughtlessly transcribing everything I am saying. At the other extreme, do not assume everything is written in my lecture slides. My lecture slides are visuals and cues to organize the content both for me and for you. I try hard to make sure that I have few words on slides, and even fewer answers to problems.\n\nMy suggestion: print out my lecture slides in advance (or follow along on your device) and take additional notes by hand.\n\nAt least skim all of the readings. I give out readings for a reason, and that reason is not to bore you or waste your time. The truth is, as a beginner, you can’t rely on heuristics or memory to “fill in the blanks.” You need the readings to provide context to what I am saying in class. I cannot help you if you are not going to try. Any professor also will lose patience at short notice when it’s discovered you haven’t done the reading.\nDo the homeworks (if there are any). You might be surprised that I need to say this, but I do. Students that do not do the homeworks do poorly on exams, which often are similar to homework questions. Homeworks are the best practice for exams, they give you a sense of the relevant content areas that might come up, the type and style of questions that I ask, and you often get answer keys to help you “get inside my head” and study from. There is no good reason why you should have a low homework grade.\nWork on assignments together and study together. Recognize that you are not in this alone, and other students are just as anxious or uncertain as you are. More surprisingly, other students probably have some answers you are looking for, and you may have answers for some of their problems! You will learn better when you collaborate with others similar to you. More importantly, you don’t truly understand something unless you can explain it to others.1 As a wise woman once told me “whomever is doing the talking is doing the learning.”\nLearn how to learn. The most important skill you learn in college is how to learn. Taking a course on a subject will not make you an expert on that subject. It a) helps you recognize that you do not know everything on that subject, and this prevents you from actively saying stupid things; and b) gives you enough context and skills to figure out how to actually fill those gaps. This is the actual skill that’s relevant in the real world.2\n\n\n\n\n\nFootnotes\n\n\nYes, that means I am doing a ton of learning every time I teach!↩︎\nYes, Google is your best friend. But you do not yet know how to ask the right questions, or understand what constitutes good answers.↩︎"
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "This page contains all of the following resources for each class meeting:\n\n Content materials contains suggested readings, more details about assignments, math appendices, and other helpful resources. I suggest you view these before each class.\n Slides are “Xaringan” presentations that can be opened in any browser (You can find a downloadable PDF in each content page)\n Practice problems we work on together in class to prepare for homeworks and exams\n Assignments are listed with due dates\n\nPlease note that the lesson numbers, topics, and titles (e.g. 1.1) are my design, and do not match up with the textbook!\nRelevant materials, if applicable will be posted before class meets and become colored links.\n\n\n\n\n\n\n\n\n\n\n\n\n\nI. Models of Markets\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nTue Jan 24\n\n\n1.1 — Introduction\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Jan 26\n\n\n1.2 — Technology and Costs\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Jan 31\n\n\n1.3 — Perfect Competition I\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Feb 02\n\n\n1.4 — Perfect Competition II\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Feb 07\n\n\n1.5 — Monopoly I\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Feb 09\n\n\n1.6 — Monopoly II\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Feb 14\n\n\n1.7 — Pricing\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Feb 16\n\n\n1.8 — Factors Markets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Feb 21\n\n\n1.9 — Monopolistic Competition\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nII. Oligopoly\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nThu Feb 23\n\n\n2.1 — Cartels\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Feb 28\n\n\n2.2 — Bertrand Competition\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Mar 02\n\n\n2.3 — Cournot Competition\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Mar 07\n\n\n2.4 — Stackelberg Competition\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Mar 09\n\n\n2.5 — Sequential Games\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Mar 21\n\n\n2.6 — Contestability & Entrepreneurship\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMidterm Exam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIII. Theory of the Firm\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nThu Mar 23\n\n\n3.1 — The Division of Labor\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Mar 28\n\n\n3.2 — The Firm as Nexus of Contracts\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Mar 30\n\n\n3.3 — Asset Specificity & Vertical Integration\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Apr 04\n\n\n3.4 — Contractual Restraints & Property Rights\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIV. Regulation & Applications\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nThu Apr 06\n\n\n4.1 — Measuring Market Power\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Apr 11\n\n\n4.2 — Antitrust I\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Apr 13\n\n\n4.3 — Antitrust II\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Apr 18\n\n\n4.4 — Antitrust III\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Apr 20\n\n\n4.5 — Natural Monopoly Regulation\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Apr 25\n\n\n4.6 — TBD\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Apr 27\n\n\n4.7 — TBD\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue May 02\n\n\n4.8 — TBD\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu May 04\n\n\n4.9 — TBD\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPaper"
+  },
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Dr. Ryan Safner\n   114 Rosenstock\n   Office Hours: MW 1:30-2:30PM\n   safner@hood.edu\n\n\n\n\n\n   2:00—3:25 PM\n   Rosenstock 101\n   Jan 24—May 8, 2023\nDownload PDF (section 1)  Download PDF (section 2)\nMicroeconomic Analysis is a collection of analytical tools for modeling and understanding how decisions made by agents (individuals and firms) in a context of market institutions lead to social coordination and the creation of value. This toolkit is the analytical foundation for exploring all fields and applications of economics as a social science, has many practical applications in business, finance, politics, and insights into any realm of human endeavors. Economics, after all, is the study of human action. At the intermediate level, these concepts are made more rigorous through the use of mathematical models, but we will first and foremost lay the theoretical foundations with economic intuition. As such, this class assumes you have met the required prerequisite courses by taking principles of microeconomics (ECON 206).\nI reserve the right to change any part of this syllabus and course, at my discretion, with proper advance warning."
+  },
+  {
+    "objectID": "syllabus.html#books",
+    "href": "syllabus.html#books",
+    "title": "Syllabus",
+    "section": "Books",
+    "text": "Books\n\nGoolsbee, Austan, Steven Levitt, and Chad Syverson, 2012, Microeconomics 2nd ed, USA: Worth Publishers, ISBN: 978-1464187025\n\nYou are welcome to purchase the book by other means (e.g. Amazon, half.com, etc). I have no financial stake in requiring you to purchase this book. You are welcome to use previous version of the book, but carefully verify the reading assignments, as the material may be different across versions."
+  },
+  {
+    "objectID": "syllabus.html#attendence",
+    "href": "syllabus.html#attendence",
+    "title": "Syllabus",
+    "section": "Attendence",
+    "text": "Attendence\nYour day-to-day classroom attendance is not graded. My philosophy is that you are all adults and must take ownership of your own learning or else you will not succeed. Some assignments may require in-class participation for credit, and an (unexcused) absence may be detrimental to your grade. Attending class is one of the strongest predictors of success.\nHowever, as required under Hood College’s “Promise of Fall Plan,” (Ch. 2-C) your classroom attendance will be recorded at every class meeting. This is primarily to facilitate contact tracing.\nIf you know you will be absent, you are not required to let me know, but it is polite to give notice (Note if I do not reply to an email of yours letting me know, I am probably busy but will still see it and appreciate your email). Your absence will be noted and recorded for the purposes stated above. If, however, we have an assignment due in class, you must notify me ahead of time in order to make alternate arrangements to still receive credit. Hasty ex-post attempts to notify me will generate little sympathy."
+  },
+  {
+    "objectID": "syllabus.html#late-assignments",
+    "href": "syllabus.html#late-assignments",
+    "title": "Syllabus",
+    "section": "Late Assignments",
+    "text": "Late Assignments\nI will accept late assignments, but will subtract a specified amount of points as a penalty. Even if it is the last week of the semester, I encourage you to turn in late work: some points are better than no points!\nHomeworks: If you turn in a homework after it is due but before it is graded or the answer key posted, I generally will not take off any points. However, if you turn in a homework after the answer key is posted, I will automatically deduct 20 points (so the maximum grade you can earn on it is an 80).\nExams: If you know that you will be unable to complete an in-class exam as scheduled for a legitimate reason, please notify me at least one week in advance, and we will schedule a make-up exam date. Failure to do so, including desperate attempts to make arrangements only after the exam will result in a grade of 0 and little sympathy.\nOp-eds: Starting at the deadline, I will take off 1 point for every hour that your Op-ed is late.\nI reserve the right to re-weight assignments for students whom I believe are legitimately unable to complete a particular assignment."
+  },
+  {
+    "objectID": "syllabus.html#grading",
+    "href": "syllabus.html#grading",
+    "title": "Syllabus",
+    "section": "Grading",
+    "text": "Grading\nI will try my best to post grades on Blackboard’s Grading Center and return graded assignments to you within about one week of you turning them in. There will be exceptions. Where applicable, I will post answer keys once I know most homeworks are turned in (see Late Assignments above for penalties). Blackboard’s Grading Center is the place to look for your most up-to-date grades. See also my  Grade Calculator app where you can calculate your overall grade using existing assignment grades and forecast “what if” scenarios."
+  },
+  {
+    "objectID": "syllabus.html#communication-email-slack-and-virtual-office-hours",
+    "href": "syllabus.html#communication-email-slack-and-virtual-office-hours",
+    "title": "Syllabus",
+    "section": "Communication: Email, Slack, and Virtual Office Hours",
+    "text": "Communication: Email, Slack, and Virtual Office Hours\nStudents must regularly monitor their Hood email accounts to receive important college information, including messages related to this class. Email through the Blackboard system is my main method of communicating announcements and deadlines regarding your assignments. Please do not reply to any automated Blackboard emails - I may not recieve it!. My Hood email (safner@hood.edu) is the best means of contacting me. I will do my best to respond within 24 hours. If I do not reply within 48 hours, do not take it personally, and feel free to send a follow up email in the very likely event that I genuinely did not see your original message.\nOur slack channel is available to all students and faculty in Economics and Business. I have invited all of my classes and advisees. It will not be extended to non-Business/Economics students or faculty. All users must use their hood emails and true first and last names. Each course has its own channel, exclusive for verified students in the course, and myself, by my invite only. As a third party platform, you agree to its Terms of Service. I have created this space as a way to stay connected, to help one another, and to foster community. Behaviors such as posting inappropriate content, harassing others, or engaging in academic dishonesty, to be determined solely at my discretion, will result in one warning, the content will be deleted, and subsequent behavior will result in a ban.\nIn addition to in-person office hours, you can also make an appointment for “office hours” on Zoom. You can join in with video, audio, and/or chat, whichever you feel comfortable with. Of course, if you are not available during those times, we can schedule our own time if you prefer this method over email or Slack. If you want to go over material from class, please have specific questions you want help with. I am not in the business of giving private lectures (particularly if you missed class without a valid excuse).\nWatch this excellent and accurate video explaining office hours:"
+  },
+  {
+    "objectID": "syllabus.html#netiquette",
+    "href": "syllabus.html#netiquette",
+    "title": "Syllabus",
+    "section": "Netiquette",
+    "text": "Netiquette\nWhen using Zoom and Slack, please follow appropriate internet etiquette (“Netiquette”). Written communications, like blog posts or use of the Zoom chat, lacks important nonverbal cues (such as body language, tone of voice, sarcasm, etc).\nAbove all else, please respect one another and think/reread carefully about how others may see your post before you submit a comment. You are expected to disagree and have different opinions, this is inherently valuable in a discussion. Please be civil and constructive in responding to others’ comments: writing “have you considered ‘X’?” is a lot more helpful to all involved than just writing “well you’re just wrong.”\nPosting content that is wilfully incindiary, illegal, or that constitutes academic dishonesty (such as plagarism) will automatically earn a grade of 0 and may be elevated to other authorities on campus.\nWhen using the chat function on Zoom or public Slack channels, please treat it as official course communications, even though I may not be grading it. It may be a quick and informal tool - don’t feel you need to worry about spelling or perfect grammar - but please try to avoid too informal “text-speak” (i.e. say “That’s good for you” instead of “thas good 4 u”)."
+  },
+  {
+    "objectID": "syllabus.html#privacy",
+    "href": "syllabus.html#privacy",
+    "title": "Syllabus",
+    "section": "Privacy",
+    "text": "Privacy\nMaryland law requires all parties consent for a conversation or meeting to be recorded. If you join in, and certainly if you participate, you are consenting to be recorded. However, as described below, videos are not accessible beyond our class.\nLive lectures are recorded on Zoom and posted to Blackboard via Panopto, a secure course management system for video. Among other nice features (such as multiple video screens, close captioning, and time-stamped search functions!), Panopto is authenticated via your Blackboard credentials, ensuring that our course videos are not accessible to the open internet.\n\nFor the privacy of your peers, and to foster an environment of trust and academic freedom to explore ideas, do not record our course lectures or discussions. You are already getting my official copies.\nThe Family Educational Rights and Privacy Act prevents me from disclosing or discussing any student information, including grades and records about student performance. If the student is at least 18 years of age, parents (or spouses) do not have a right to obtain this information, except with consent by the student.\nMany of you may be tuning in remotely, living with parents, and may have occasional interruptions due to sharing a space. This is normal and fine, but know that I will protect your privacy and not discuss your performance when parents (or anyone other than you, for that matter) are present, without your explicit consent."
+  },
+  {
+    "objectID": "syllabus.html#enrollment",
+    "href": "syllabus.html#enrollment",
+    "title": "Syllabus",
+    "section": "Enrollment",
+    "text": "Enrollment\nStudents are responsible for verifying their enrollment in this class. The last day to add or drop this class with no penalty is Wednesday, September 1. Be aware of important dates."
+  },
+  {
+    "objectID": "syllabus.html#honor-code",
+    "href": "syllabus.html#honor-code",
+    "title": "Syllabus",
+    "section": "Honor Code",
+    "text": "Honor Code\nHood College has an Academic Honor Code which requires all members of this community to maintain the highest standards of academic honesty and integrity. Cheating, plagiarism, lying, and stealing are all prohibited. All violations of the Honor Code are taken seriously, will be reported to appropriate authority, and may result in severe penalties, including expulsion from the college. See here for more detailed information."
+  },
+  {
+    "objectID": "syllabus.html#van-halen-and-mms",
+    "href": "syllabus.html#van-halen-and-mms",
+    "title": "Syllabus",
+    "section": "Van Halen and M&Ms",
+    "text": "Van Halen and M&Ms\nWhen you have completed reading the syllabus, email me a picture of the band Van Halen and a picture of a bowl of M&Ms. If you do this before the date of the first exam, you will get bonus points on the exam. If 75-100% of the class does this, you each get 2 points. If 50-75% of the class does this, you each get 4 points. If 25-50% of the class does this, you each get 6 points. If 0-25% of the class does this, you each get 8 points. Yes, you read this correctly."
+  },
+  {
+    "objectID": "syllabus.html#accessibility-equity-and-accommodations",
+    "href": "syllabus.html#accessibility-equity-and-accommodations",
+    "title": "Syllabus",
+    "section": "Accessibility, Equity, and Accommodations",
+    "text": "Accessibility, Equity, and Accommodations\nCollege courses can, and should, be challenging and bring you out of your comfort zone in a safe and equitable environment. If, however, you feel at any point in the semester that certain assignments or aspects of the course will be disproportionately uncomfortable or burdensome for you due to any factor beyond your control, please come see me or email me. I am a very understanding person and am happy to work out a solution together. I reserve the right to modify and reweight assignments at my sole discretion for students that I belive would legitimately be at a disadvantage, through no fault of their own, to complete them as described.\nIf you are unable to afford required textbooks or other resources for any reason, come see me and we can find a solution that works for you.\nThis course is intended to be accessible for all students, including those with mental, physical, or cognitive disabilities, illness, injuries, impairments, or any other condition that tends to negatively affect one’s equal access to education. If at any point in the term, you find yourself not able to fully access the space, content, and experience of this course, you are welcome to contact me to discuss your specific needs. I also encourage you to contact the Office of Accessibility Services (301-696-3421). If you have a diagnosis or history of accommodations in high school or previous postsecondary institutions, Accessibility Services can help you document your needs and create an accommodation plan. By making a plan through Accessibility Services, you can ensure appropriate accommodations without disclosing your condition or diagnosis to course instructors."
+  },
+  {
+    "objectID": "syllabus.html#acbsp-information",
+    "href": "syllabus.html#acbsp-information",
+    "title": "Syllabus",
+    "section": "ACBSP Information",
+    "text": "ACBSP Information\n\nHood College is an accredited member of the Accreditation Council for Business Schools and Programs (ACBSP), an organization devoted to enhancing business education. In receiving and maintaining this accreditation, the faculty has made a commitment to the continuous improvement, innovation, and scholarship of the Department of Economics and Management. For you, this means that your educational experience undergoes ongoing validation to ensure it meets the most rigorous international standards of business education. Only a select group of institutions have received this status and it is an attribute of Hood for which you should take great pride.\nPragmatically, our accreditation means that we will engage in the ongoing use of measures, both quantitative and qualitative in nature, to assess the performance of our students and the program. We ask that you take very seriously the surveys and other measurement devices we will use – your best work and honest response will help us best assess and improve our program."
+  }
+]

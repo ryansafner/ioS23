@@ -1,0 +1,176 @@
+---
+title: "Problem Set 6"
+author: "ECON 306 Fall 2022"
+date: "**UNGRADED**: For Final Exam Practice Only"
+output:
+  pdf_document:
+    dev: cairo_pdf
+    latex_engine: xelatex
+header-includes:
+- \usepackage{amsmath}
+- \usepackage{multirow, multicol, booktabs}
+
+mainfont: "Fira Sans Condensed"
+monofont: "Fira Code"
+mathfont: "Fira Sans"
+fontsize: 11pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE)
+library(tidyverse)
+```
+
+# Concepts and Critical Thinking
+
+Please answer the following questions briefly (1-3 sentences). Use examples as necessary. Be sure to label graphs fully, if appropriate.
+
+1. Compare and contrast the features of
+
+- i. perfect competition
+- ii. monopoly
+- iii. oligopoly
+- iv. monopolistic competition
+
+Rank each of the above 4 market structures (from smallest/lowest to largest/highest) in terms of:
+
+- i. the number of firms
+- ii. long-run market price
+- iii. equilibrium industry output
+- iv. consumer surplus
+- v. long-run economic profits
+- vi. deadweight loss
+
+\clearpage
+
+2. Indicate based on the given information whether an industry is likely **perfectly competitive**, **monopolistically competitive**, an **oligopoly**, or a **monopoly**:
+
+- Fairfax, Virginia has three movie theaters
+- Restaurants in the greater Piedmont area, with many different cuisines to choose from
+- All of Connecticut gets its electricity from Connecticut Light & Power company
+- Laptops, where you can choose from many different brands (Acer, Asus, Gateway, Toshiba, Sony, HP, Dell, IBM, Lenovo, etc) and each is slightly different
+- Wheat in the U.S., provided by many small farmers, with each farmer's wheat being identical to every other farmer's wheat
+- The music industry, where Universal, Sony, EMI, and Warner account for 87% of the market 
+\clearpage
+
+3. Indicate which good is more likely to have a **higher markup** for firms with market power in these industries, and why:
+
+- Alcohol or jewelry
+- Prescription drugs or televisions
+- Gym memberships or school supplies
+- Doughnuts or bread
+- Popcorn in a movie theater or popcorn from a street vendor
+
+
+\vspace{3in}
+
+4. Describe the conditions required to make a market *contestable.* Describe and compare the Nash equilibrium of a contestable market with a pure monopoly, and with perfect competition.
+
+
+\vspace{3in}
+
+5. Explain what a cartel is, and comment on their stability.
+
+\clearpage
+
+# Problems
+
+Show all work for calculations. You may lose points, even if correct, for missing work. Be sure to label graphs fully, if appropriate.
+
+6. Consider the following *Entry game* in normal form. Suppose there are two firms, each of whom can choose to Enter a market, or Stay Out. If both firms enter, they split the market, each earning $50. If both stay out, each firm earns $0. If one enters and the other stays out, the entrant can act as a monopolist and earns $100, with the other firm earning $0.
+
+![](../images/entrygame1.png)
+
+What is the Nash Equilibrium of this game?
+
+
+\clearpage 
+
+7. Suppose you are a restaurant in a **monopolistically competitive** industry. Your firm has a constant marginal and average cost at \$4 per unit.
+
+```{r, echo=F, message=F, warning= F, fig.height=4}
+demand<-function(x){10-x}
+mc<-function(x){4}
+mr<-function(x){10-2*x}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=mr, geom="line", size=2, color = "purple")+
+    geom_label(aes(x=4,y=mr(4)), color = "purple", label="MR(q)", size = 5)+
+  stat_function(fun=demand, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=9,y=demand(9)), color = "blue", label="Demand", size = 5)+
+  stat_function(fun=mc, geom="line", size=2, color = "red")+
+    geom_label(aes(x=8,y=mc(8)), color = "red", label="MC(q)=AC(q)", size = 5)+
+  #geom_segment(x=2800, xend=2800, y=0, yend=160, size=1, linetype="dotted")+
+  #geom_segment(x=0, xend=2800, y=160, yend=160, size=1, linetype="dotted")+
+  #geom_label(x=2800,y=75,label="q*=2800")+
+  #geom_label(x=1400,y=160,label="p*=$160")+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     labels=scales::dollar,
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(fill=F)+
+  labs(x = "Quantity",
+       y = "Price")+
+  theme_classic(base_size=14)
+```
+
+a. If this were a perfectly competitive market, what would be the market price and equilibrium quantity?
+b. Calculate the (i) consumer surplus, (ii) profit, and (iii) deadweight loss at this price and quantity. Show these on the graph.
+c. Now suppose this firm has market power from a barrier to entry, and can operate like a monopolist. What price and quantity does it set?
+d. Calculate the (i) consumer surplus, (ii) profit, and (iii) deadweight loss at this price and quantity. Show these on the graph.
+e. Now suppose that the firm had earned this market power via rent-seeking. From its lobbying efforts, it had convinced the local government to require all new restaurants to get a special license, making it harder for new entrants to compete in the market. What was the most that this firm was willing to spend on lobbying in order to get the license requirement?
+f. If there are 10 identical (in terms of costs and size, if not food or brand) restaurants in the industry, and all engage in maximal rent-seeking to obtain the license, what is the true total cost of market power in this market to society?
+
+\clearpage
+
+8. You are a producer of smartphones and have some market power. You have a cost structure: 
+
+$$\begin{aligned}
+C(q)&=10q^2+200q+1000\\
+MC(q)&=20q+200\\
+\end{aligned}$$
+
+You estimate the demand for your smartphones to be: 
+$$q=100-0.2p$$
+where $q$ is millions of smartphones.
+
+a. Find the function for your marginal revenues.
+b. How many smartphones should you produce, and at what price, to maximize your profit?
+c. What is the cost per smartphone at the quantity you are producing?
+d. What is your total profit?
+e. What would be the lowest possible price you would need to charge to break even?
+f. How much of your price is markup over marginal cost?
+g. Calculate the elasticity of demand at your profit-maximizing price.
+
+\clearpage
+
+9. Suppose that the market demand for bentonite is given by
+$$q = 40 - 0.5p$$
+
+where $q$ tons of bentonite per day and $p$ is the price per ton. Bentonite is produced by a monopolist at a constant marginal and average total cost of $10 per ton.
+
+a. Find the marginal revenue curve for the monopolist.
+b. Find the profit-maximizing level of output and price.
+c. How much profit does the monopolist earn?
+d. How much of the price is markup over marginal cost?
+e. Calculate the elasticity of demand at the profit-maximizing price.
+
+\clearpage
+
+10. **Optional: Section 1 (M/W) covered price discrimination in 4.3 but we did not do any example problems. There will be no calculation problems requiring this on the final exam for either section.**
+Consider a boat rental firm on a popular beach that has a constant average and marginal cost of $30 per boat hire. It has estimated that demand from Locals $(L)$ and demand from Tourists $(T)$ are:
+$$\begin{aligned}
+q_L&=40-0.4p\\
+q_T&=25-0.1p\\
+\end{aligned}$$
+
+a. Suppose it must charge a single price to all customers. Find the profit-maximizing quantity, price, and the total profits.
+b. How much of the price is markup?
+c. What is the price elasticity of demand at this price?
+d. Now suppose the firm is able to segment the market and charge different prices to Tourists and Locals. Find the profit-maximizing quantity, price, and the total profits.
+e. For each segment of the market: how much of the price is markup, and what is the price elasticity of demand at the optimal price? How did the price for each segment change from the single price (Part A), and why?

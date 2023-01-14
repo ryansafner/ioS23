@@ -1,0 +1,40 @@
+---
+title: "<strong>Industrial Organization</strong>"
+subtitle: "<strong>ECON 326 • Spring 2023 • Hood College</strong>"
+details: "<strong>Learn the common tools and techniques that economists use to model the world around you</strong><br><br>By the end of this course, you will:<ol><li>Understand key economic models of perfect competition, monopoly, monopolistic competition, oligopoly (Bertrand, Cournot, and Stackelberg competition), and contestable markets</li><li> Apply models of competition to different industries and regulatory regimes</li><li>Simulate strategic and game theoretic interactions and apply them to industry behavior</li></ol>"
+toc: false
+sidebar: false
+page-layout: full
+course-logo: /images/io_hex.png
+format:
+  html:
+    template-partials:
+      - html/home/title-block.html
+---
+
+::: home
+
+::: {.grid .course-details}
+::: {.g-col-6}
+### Instructor
+
+- {{< fa user >}} &nbsp; [{{< var instructor.name >}}]({{< var instructor.url >}})
+-   {{< fa university >}} &nbsp; {{< var instructor.office >}}
+-   {{< fa clock >}} &nbsp; {{< var instructor.officehours >}}
+- {{< fa envelope >}} &nbsp; <a href="mailto:{{< var instructor.email >}}">{{< var instructor.email >}}</a>
+:::
+
+::: {.g-col-6}
+### Course details
+
+- {{< fa clock >}} &nbsp; {{< var course.time >}}
+- {{< fa location-dot >}} &nbsp; {{< var course.location >}}
+- {{< fa calendar-alt >}} &nbsp; {{< var course.dates >}}
+-   {{< fa brands slack >}} &nbsp; [Slack](%7B%7B%3C%20var%20course.slack%20%3E%7D%7D)
+:::
+
+:::
+```{r echo=FALSE}
+knitr::include_graphics(here::here("images", "io_flowchart_blankbg.png"), error = FALSE)
+```
+:::

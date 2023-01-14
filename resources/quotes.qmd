@@ -1,0 +1,29 @@
+---
+title: Quotes About Economics
+execute:
+  freeze: auto
+---
+
+> “Whether we like it or not, it is a fact that economics cannot remain an esoteric branch of knowledge accessible only to small groups of scholars and specialists. Economics deals with society's fundamental problems; it concerns everyone and belongs to all. It is the main and proper study of every citizen.”
+
+<br> [— Ludwig von Mises]{style="float:right"}
+
+> “The task of the economist is not to plan utopias, but to criticize reality”
+
+<br> [— Joan Robinson]{style="float:right"}
+
+> “The first lesson of economics is scarcity: There is never enough of anything to satisfy all those who want it. The first lesson of politics is to disregard the first lesson of economics.”
+
+<br> [— Thomas Sowell]{style="float:right"}
+
+> “The ideas of economists and political philosophers, both when they are right and when they are wrong, are more powerful than is commonly understood. Indeed the world is ruled by little else. Practical men, who believe themselves to be quite exempt from any intellectual influence, are usually the slaves of some defunct economist. Madmen in authority, who hear voices in the air, are distilling their frenzy from some academic scribbler of a few years back. I am sure that the power of vested interests is vastly exaggerated compared with the gradual encroachment of ideas.”
+
+<br> [— John Maynard Keynes]{style="float:right"}
+
+> “There are no solutions, there are only tradeoffs.”
+
+<br> [— Thomas Sowell]{style="float:right"}
+
+> “The problem is that most of what a student is likely to read or hear about international economics is nonsense. [T]he most important thing to teach our undergrads about trade is how to detect that nonsense. That is, our primary mission should be to vaccinate the minds of our undergraduates against the misconceptions that are so predominant in what passes for educated discussion about international trade.”
+
+<br> [— Paul Krugman]{style="float:right"}

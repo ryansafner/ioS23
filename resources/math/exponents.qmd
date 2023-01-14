@@ -1,0 +1,62 @@
+---
+title: "Exponents & Logarithms"
+execute:
+  freeze: auto
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+#| label: setup
+library(tidyverse)
+update_geom_defaults("label", list(family = "Fira Sans Condensed"))
+update_geom_defaults("text", list(family = "Fira Sans Condensed"))
+
+theme_guide <- theme_classic() + 
+  theme(
+    text = element_text(family = "Fira Sans Condensed", size = 18)
+  )
+
+```
+
+**Exponents** are defined as:
+
+- $b^n=\underbrace{b \times b \times ... \times b}_{n}$, where base $b$ is multiplied by itself $n$ times
+- $b^0=1$ (for $b \neq 0$)
+
+There are some common rules for exponents, assuming $x$ and $y$ are real numbers, $m$ and $n$ are integers, and $a$ and $b$ are rational:
+
+1. $x^{-n}=\frac{1}{x^n}$
+    - e.g. $x^{-3} = \frac{1}{x^3}$
+2. $x^{\frac{1}{n}}=\sqrt[n]{x}$
+    - e.g. $x^{\frac{1}{2}} = \sqrt{x}$
+3. $x^{(\frac{m}{n})}=(x^{\frac{1}{n}})^m$
+    - e.g. $8^{\frac{4}{3}} = (8^\frac{1}{3})^4=2^4=16$
+4. $x^{a}x^b=x^{a+b}$
+    - e.g. $x^2x^3=x^5$
+5. $\frac{x^a}{x^b}=x^{a-b}$
+    - e.g. $\frac{x^2}{x^3}=x^{-1}=\frac{1}{x}$
+6. $(\frac{x}{y})^a=\frac{x^a}{y^a}$
+    - e.g. $(\frac{x}{y})^2=\frac{x^2}{y^2}$
+7. $(xy)^a=x^ay^a$
+    - e.g. $(xy)^2=x^2y^2$
+
+**Logarithms** are the exponents in the expressions above, the inverse of exponentiation
+
+- If $b^y=x$, then $log_b(x)= y$
+  - $y$ is the number you must raise $b$ to in order to get $x$
+  - e.g. $2^6=64 = \underbrace{(2*2*2*2*2*2)}_{\text{6 times}}$ so $log_2(64)=6$
+
+We often use the **natural logarithm (ln)** with base $e=2.718...$ in many math, statistics, and economic applications
+
+- If $e^y=x$, then $\ln(x) = y$
+
+There are a number of highly useful rules for natural logs:
+
+1. $\ln(xy)=\ln(x)+\ln(y)$
+    - e.g. $\ln(2*3)=\ln(2)+\ln(3)$
+2. $\ln(\frac{x}{y})=\ln(x)-\ln(y)$
+    - e.g. $\ln(\frac{2}{3})=\ln(2)-\ln(3)$
+3. $\ln(x^a)=a*\ln(x)$
+    - e.g. $\ln(x^2)=2\ln(x)$

@@ -1,0 +1,9 @@
+---
+title: "Overview"
+editor: visual
+---
+
+These content pages provide the readings, lecture slide (in html and printable PDF), appendices, and other useful materials for each class. Each lesson covers approximately one class meeting.
+
+Please note that the lesson numbers, topics, and titles (e.g. 1.1) are *my* design, and do not match up with the textbook!
+---

@@ -1,0 +1,117 @@
+---
+title: "Functions"
+execute:
+  freeze: auto
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+#| label: setup
+library(tidyverse)
+update_geom_defaults("label", list(family = "Fira Sans Condensed"))
+update_geom_defaults("text", list(family = "Fira Sans Condensed"))
+
+theme_guide <- theme_classic() + 
+  theme(
+    text = element_text(family = "Fira Sans Condensed", size = 18)
+  )
+```
+
+## Functions
+
+A *function* is simply a rule that assigns a unique value of a dependent variable (e.g. $f(x)$) to each value of an independent variable (e.g. $x$): $x \rightarrow f(x)$
+
+- Something is *not* a function if it assigns *multiple* values of $y$ for the same value of $x$ (e.g. on a graph, a vertical line)
+- We can 	relate any *independent* variable (e.g. $x$) to any *dependent* variable (e.g. $y$) **so get comfortable using variables other than $x$ and $y$!**
+
+In its general form a function can be written as:
+
+$$q = q(p)$$
+
+- “Quantity ($q$) is a function of price ($p$)”
+- This expresses that there is a relationship between $q$ and $p$, it doesn't tell us the *specific* form of that relationship
+  - $q$ is the dependent or “endogenous” variable, its value is determined by $p$
+  - $p$ is the independent or “exogenous” variable, its value is given and not dependent on other variables
+  - The specific form of this function might be:
+  
+$$q = 100-6p$$
+
+- The numbers 100 and 6 are known as **parameters**, they are parts of the quantitative relationship between quantity and price (the variables) that do not change
+- If we have values of $p$, we can find the value of $q(p)$:
+    - When $p=10$
+\begin{align*}
+		q(p)&=100-6p\\
+		q(10)&=100-6(10)\\
+		q(10)&=100-60\\
+		q(10)&=40\\	
+\end{align*}
+    - When $p=5$:
+\begin{align*}
+		q(p)&=100-6p\\
+		q(5)&=100-6(5)\\
+		q(5)&=100-30\\
+		q(5)&=70\\	
+\end{align*}
+
+
+**Multivariate** functions have multiple independent variables, such as:
+
+$$q=f(k,l)$$
+
+- “Output ($q$) is a function of both capital ($k$) and labor ($l$)”
+
+- In economics, we often restrict the *domain* and *range* of functions to positive real numbers, $\mathbb{R}_+$, since prices and quantities are never negative in the real world
+  - *Domain*: the set of $x$-values
+  - *Range*: the set of $y$-values determined by the function
+
+## Inverse Functions
+
+- Many functions have a useful *inverse*, where we switch the independent variable and dependent variable
+  - For example, if we have the demand function:
+$$q=100-6p$$
+we may want find the **inverse demand function**, an equation where $p$ is the dependent variable, rather than $q$ (this is how we normally graph Supply and Demand functions!) 
+  - To do this, we need to solve the above equation for $p$:
+$$
+\begin{align*}
+			q&=100-6p &&\text{The original equation}\\
+			q+6p&=100 && \text{Add } 6p \text{ to both sides}\\
+			6p&=100-q && \text{Subtract } q \text{ from both sides}\\
+			p&=\frac{100}{6}-\frac{1}{6}q && \text{Divide both sides by 6}\\
+\end{align*}
+$$
+
+## Functions with Fractions
+
+- Many people are rusty on a few useful algebra rules we will need, one being how to deal with fractions in equations
+- To get rid of a fraction, multiply both sides of the equation by the fraction's *reciprocal* (swap the numerator and denominator), which will yield just 1
+
+\begin{align*}
+		100&=\frac{1}{4}x & & \text{The equation to be solved for} x\\
+		\frac{4}{1} \big(\frac{100}{1}\big) &=\frac{4}{1}\bigg(\frac{1}{4}x\bigg) && \text{Multiplying by the reciprocal of } \frac{1}{4} \text{, which is } \frac{4}{1} \\
+		\frac{400}{1}&=\frac{4}{4}x & & \text{Cross multiplying fractions}\\
+		400 & = x & & \text{Simplifying}\\	
+		\end{align*}
+
+- Alternatively (if possible), re-imagining the fraction as a decimal may help:
+
+\begin{align*}
+		100&=\frac{1}{4}x && \text{The original equation}\\
+		100&=0.25x && \text{Converting to a decimal}\\
+		400 & = x && \text{Dividing both sides by }0.25\\	
+		\end{align*}
+
+- *Add* fractions by finding a common denominator:
+
+\begin{align*}
+	\frac{4}{3} &+ \frac{2}{5}\\
+	\bigg(\frac{4 \times 5}{3 \times 5}\bigg) &+ \bigg(\frac{2 \times 3}{5 \times 3}\bigg)\\
+	 \frac{20}{15}&+\frac{6}{15}\\
+	&= \frac{26}{15}\\
+	\end{align*}
+
+- *Multiply* fractions straight across the numerator and denominator
+$$
+\frac{4}{3} \times \frac{2}{5}=\frac{4 \times 2}{3 \times 5}=\frac{8}{15}
+$$

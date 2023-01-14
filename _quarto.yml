@@ -1,0 +1,96 @@
+project:
+  type: website
+  render:
+    - "*.qmd"
+    - "!slides/" # don't knit slides when website is updated
+    - "!files/"
+  resources:
+    - "files/"
+    - "slides/"
+    - "images/"
+
+website:
+  title: "ECON 326 — Industrial Organization"
+  favicon: "images/io_hex.png"
+  open-graph: true
+  twitter-card: true
+  image: "images/io_hex.png"
+  navbar:
+    pinned: true
+    search: true
+    logo: "images/micro_hex.png"
+    right:
+      - syllabus.qmd
+      - schedule.qmd
+      - text: Content
+        href: content/index.qmd
+      - text: Assignments
+        href: assignments/index.qmd
+      - text: Resources
+        href: resources/index.qmd
+  sidebar:
+    - title: "Content"
+      style: "docked"
+      search: false
+      contents:
+        - section: "Overview"
+          contents: 
+            - content/index.qmd
+        - section: "I. Rational Choice Theory: Consumers"
+          contents: 
+            - text: "1.1 — The Tools of Microeconomics"
+              href: content/1.1-content.qmd
+
+    - title: "Assignments"
+      style: "docked"
+      search: false
+      contents:
+        - section: "Assignments"
+          contents:
+            - assignments/index.qmd
+        - section: "Problem Sets"
+          contents:
+            - text: "Instructions"
+              href: assignments/problem-sets.qmd
+        - section: "Exams"
+          contents:
+
+    - title: "Resources"
+      style: "docked"
+      search: true
+      contents:
+        - text: "Overview"
+          href: resources/index.qmd
+        - section: "Appendices"
+          contents:
+        - section: "Computing Guides"
+          contents:
+          - href: resources/pdfs.qmd
+            text: "How to Make a PDF"
+        - section: "Advice"
+          contents:
+          - href: resources/tips.qmd
+            text: "Tips for Success"
+        - text: "Quotes About Economics"
+          href: resources/quotes.qmd
+
+  page-footer:
+    left: |
+      Content {{< fa brands creative-commons >}} {{< var course.copyright_year >}} by [{{< var instructor.name_no_title >}}]({{< var instructor.url >}}) <br>
+      All content licensed under a {{< fa brands creative-commons >}}
+      {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-nc >}}
+      [Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/)
+    right: |
+      Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)<br>
+      [View the source at {{< fa brands github >}} GitHub]({{< var course.github >}})
+
+format:
+  html:
+    theme:
+      - cosmo
+      - html/custom.scss
+    css: styles.css
+    toc: true
+
+editor: visual
+

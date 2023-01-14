@@ -1,0 +1,30 @@
+author: Ryan Safner
+
+instructor:
+  name: Dr. Ryan Safner
+  name_no_title: Ryan Safner
+  email: safner@hood.edu
+  url: "https://www.ryansafner.com"
+  twitter: ryansafner
+  github: ryansafner
+  office: "114 Rosenstock"
+  officehours: "Office Hours: MW 1:30-2:30PM"
+
+course:
+  number: "ECON 3026"
+  semester: "Spring 2023"
+  days: "TuTh"
+  time: "2:00—3:25 PM"
+  location: "Rosenstock 101"
+  dates: "Jan 24—May 8, 2023"
+  github: "https://www.github.com/ryansafner/microS23"
+  url: "https://microS23.classes.ryansafner.com"
+  copyright_year: "2023"
+
+university:
+  name: Hood College
+  url: "https://www.hood.edu"
+
+school:
+  name: George B. Delaplaine, Jr. School of Business
+  url: "https://www.hood.edu/academics/departments/george-b-delaplaine-jr-school-business"

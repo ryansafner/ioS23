@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://use.typekit.net/iyt8rru.css");
+
+$primary:       #5E81AC;
+
+$font-family-sans-serif:      Fira Sans Condensed, sans-serif !default;
+$font-family-serif:           Fira Sans Condensed, serif !default;  /* Not actually a serif font but whatever */
+$font-family-monospace:       Fira Mono !default; /* https://fonts.adobe.com/fonts/fira-mono#fonts-section /* 
+$headings-font-weight:        700 !default;
+
+/*--$toc-font-size: 1.1rem;
+$sidebar-font-size: 1.1rem;
+$sidebar-font-size-section: 0.9rem;
+--*/ 
+
+$link-color: #e64173;
+$link-hover-color: #236192;
+
+
+/*-- scss:rules --*/
+h1 {
+  color: $primary;
+  font-weight: bold;
+}
+h2 {
+  color: $primary;
+  font-weight: bold;
+  border-bottom: none;
+}
+
+ul,
+ol {
+  font-family: $font-family-serif;
+}
+
+// Home page stuff
+.title-block {
+  margin: 1em 0;
+  border-bottom: 3px solid $gray-200;
+  padding-bottom: 1em;
+}
+
+.course-details {
+  margin: 0 0 1em;
+  border-bottom: 3px solid $gray-200;
+  padding-bottom: 1em;
+}
+
+.course-details h3 {
+  margin-top: 0;
+}
+
+.course-title {
+  font-size: 3.6rem;
+  margin-top: 0;
+}
+
+.course-subtitle {
+  font-size: 1.7rem;
+}
+
+.course-meta {
+  font-size: 1.2rem;
+  color: $gray-600;
+}
+
+.course-details ul {
+  list-style: none;
+  text-indent: -0.7rem;
+  padding-left: 1.4rem;
+}
+
+.contact-policy p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.course-details-smaller li {
+  font-size: 1rem;
+}
+
+.course-details-smaller h3 {
+  font-size: 1.4rem;
+}
+
+
+// Footer stuff
+.nav-footer-left {
+  text-align: left;
+}
+
+.nav-footer-right {
+  text-align: right;
+}
+
+
+// Schedule stuff
+.content-title {
+  font-weight: 700;
+}
+
+.content-note {
+  font-size: 0.8rem;
+  display: block;
+}
+
+.schedule-page h3 {
+  text-align: center;
+  margin-top: 3rem;
+  border-bottom: 3px solid $orange;
+  padding-bottom: 0.5rem;
+}
+
+
+.download-btn {
+  padding-top: 0.25rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.navbar{
+  font-weight: 700;
+}
+
+.newthought {
+  font-weight: 800; /* CHANGED FROM 600 */
+  text-transform: uppercase;
+  font-size: 0.9em;
+}

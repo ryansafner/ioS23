@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>1.1 — The Tools of Microeconomics</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ryan Safner" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/hygge.css" rel="stylesheet" />
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
+    <script src="libs/xaringanExtra-progressBar/progress-bar.js"></script>
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+class: title-slide
+
+# 1.1 — The Tools of Microeconomics
+
+## ECON 306 • Microeconomic Analysis • Fall 2022
+
+### Ryan Safner&lt;br&gt; Associate Professor of Economics &lt;br&gt; &lt;a href="mailto:safner@hood.edu"&gt;&lt;i class="fa fa-paper-plane fa-fw"&gt;&lt;/i&gt;safner@hood.edu&lt;/a&gt; &lt;br&gt; &lt;a href="https://github.com/ryansafner/microF22"&gt;&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;ryansafner/microF22&lt;/a&gt;&lt;br&gt; &lt;a href="https://microF22.classes.ryansafner.com"&gt; &lt;i class="fa fa-globe fa-fw"&gt;&lt;/i&gt;microF22.classes.ryansafner.com&lt;/a&gt;&lt;br&gt;
+---
+
+class: inverse
+
+# Outline
+
+### [The Tools of Microeconomics](#18)
+### [Incentives](#22)
+### [Equilibrium](#33)
+### [Real Talk: The Math](#46)
+### [About This Course](#58)
+
+---
+
+# About Me
+
+.left-column[
+.center[
+![](../images/meinfrontofsmith.jpg)
+
+.smallest[
+Edinburgh, 2019
+]
+]
+]
+
+.right-column[
+.smallest[
+
+- Ph.D (Economics) — George Mason University, 2015
+
+- B.A. (Economics) — University of Connecticut, 2011
+
+- 7th year teaching at Hood
+
+- Specializations:
+  - Law and Economics
+  - Austrian Economics
+
+- Research interests
+  - modeling innovation &amp; economic growth
+  - political economy &amp; economic history of intellectual property
+
+]
+]
+
+---
+
+# What's Keeping Me Busy
+
+.center[
+![:scale 100%](../images/miles2022.png)
+]
+
+---
+# *Micro*-economics
+
+.center[
+![:scale 70%](../images/microeconomics.jpg)
+]
+
+---
+
+# Micro- vs. Macro-economics
+
+.pull-left[
+
+- What is “an economy?”
+
+- Where do aggregates (“GDP”, “unemployment”, &amp; “inflation”) come from? 
+
+- .hi[Micro]: [modeling] .hi-purple[Choices] and .hi-purple[consequences]
+
+- .hi[Macro]: [modeling] .hi-purple[Systemic interaction] of choosers &amp; .hi-purple[emergent behavior]
+
+]
+
+.pull-right[
+![:scale 100%](../images/macroeconomics.jpg)
+]
+
+---
+
+# Where You Are Now
+
+.pull-left[
+- .hi-purple[Basic concepts] of markets, individuals (consumers &amp; firms), economies:
+    - ECON 205: Principles of Macroeconomics
+    - ECON 206: Principles of Microeconomics
+
+- .hi-purple[Modeling] markets, individuals (consumers &amp; firms), economies
+    - ECON 306: Microeconomic Analysis
+    - ECON 305: Macroeconomic Analysis&lt;sup&gt;†&lt;/sup&gt;
+]
+
+.pull-right[
+.center[
+![](../images/choices.jpg)
+]
+.footnote[&lt;sup&gt;.magenta[†]&lt;/sup&gt; Required for ECON majors only. Calculus I required.]
+
+]
+
+---
+
+# Economists Speak a Foreign Language...
+
+.pull-left[
+
+- Terms you “know” from ordinary life mean .hi-purple[very different things] to economists:
+
+&gt; Cost, efficiency, welfare, competition, marginal, equilibrium, profit, public good, discrimination, elasticity
+
+- Using these words’ “ordinary” meanings can lead to *wrong* economic conclusions!
+
+- You will need to .hi-purple[“relearn”] the economic meanings of these words
+]
+
+.pull-right[
+
+.center[
+![](../images/leo_point.PNG)
+]
+]
+
+---
+
+# ...But You Can Learn It
+
+.pull-left[
+
+- You’ll need to master a new vocabulary:
+
+&gt; marginal rate of substitution, marginal cost, consumer surplus, allocative efficiency, externality
+
+- Avoid excessive jargon, but these concepts are useful to explain reality! 
+
+]
+
+.pull-right[
+
+.center[
+![](../images/translate.jpg)
+]
+]
+
+---
+
+# Don't Think You Know It Already!
+
+.pull-left[
+
+- Everyone thinks they are *already* an economist and can speak this foreign language
+
+- Be humble!
+
+- Economics is *often* common sense, but reached via deep analytical thinking
+
+]
+
+.pull-right[
+
+.center[
+![:scale 100%](../images/imaneconomistmeme.jpg)
+]
+]
+
+---
+
+# And Tread Cautiously
+
+.pull-left[
+- But be careful, *a little bit of knowledge* is a dangerous thing!
+
+- An application of the famous [“Dunning-Kreuger effect”](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect) in social psychology
+
+]
+
+.pull-right[
+.center[
+![](../images/Mountstupid.png)
+
+.source[Source: [SMBC](https://www.smbc-comics.com/?id=2475)]
+]
+]
+
+---
+
+# Economics `\(\neq\)` Business or $$$
+
+.center[
+![:scale 80%](../images/tweetmoney.png)
+]
+
+---
+
+# Economics `\(\neq\)` Business or $$$
+
+.center[
+![:scale 65%](../images/tweetmoney2.png)
+]
+
+---
+
+# Economics Can Be Difficult
+
+.pull-left[
+
+- Economics is hard!
+
+- We are literally retraining and rewiring your brain to see the world in a new way
+
+- If you “don't get it” you can't just try to memorize a bunch of facts
+
+]
+
+.pull-right[
+
+.center[
+![](../images/badtime.jpg)
+]
+]
+
+---
+
+# Economics Can Be Difficult
+
+.pull-left[
+
+- Not trying to scare you! (I'd rather say this now than after the Exam)
+  - .hi-purple[Grades don't reflect your worth as a person!]
+
+- .hi[Comparative advantage]: nobody can be good at everything!
+  - I'm awful at accounting, chemistry, etc. 
+
+]
+
+.pull-right[
+
+.center[
+![](../images/absoluteadvantage.jpg)
+]
+]
+
+---
+
+# The Uses of Economics
+
+.pull-left[
+
+- Most of you will not become professional economists — that's OK
+  - Economics is a .hi-purple[liberal art], useful to you even if it's not your career
+
+- Understand .hi-turquoise[“how the world works”]
+
+]
+
+.pull-right[
+
+.center[
+![](../images/economics1.jpg)
+]
+]
+
+---
+
+# The Uses of Economics
+
+.pull-left[
+
+- A great .hi-purple[bullshit-detector], especially about self-interested, squishy, or political statements
+
+- People love to forget that we have to make tradeoffs
+  - “Economics puts parameters on people's utopias”
+
+]
+
+.pull-right[
+
+.center[
+![:scale 100%](../images/ronburgundydontbelieve.gif)
+]
+]
+
+---
+
+class: inverse, center, middle
+
+# The Tools of Microeconomics
+
+---
+
+# Economics as a *Way of Thinking*
+
+.pull-left[
+
+- Economics is a .hi-purple[way of thinking] based on a few core ideas:
+]
+
+---
+
+# Economics as a *Way of Thinking*
+
+.pull-left[
+
+- Economics is a .hi-purple[way of thinking] based on a few core ideas:
+
+- .hi[People respond to incentives]
+    - Money, punishment, taxes and subsidies, risk of injury, reputation, profits, sex, effort, morals
+
+]
+
+.pull-right[
+
+.center[
+![:scale 70%](../images/incentive2.jpg)
+]
+]
+
+---
+
+# Economics as a *Way of Thinking*
+
+.pull-left[
+
+- Economics is a .hi-purple[way of thinking] based on a few core ideas:
+
+- .hi[People respond to incentives]
+    - Money, punishment, taxes and subsidies, risk of injury, reputation, profits, sex, effort, morals
+
+- .hi[Environments adjust until they are in equilibrium]
+    - People adjust their choices until optimal, given others’ actions
+]
+
+.pull-right[
+
+.center[
+![:scale 70%](../images/incentive2.jpg)
+
+![:scale 70%](../images/equilibriumbalance.png)
+]
+]
+
+---
+
+class: inverse, center, middle
+
+# Incentives
+
+---
+
+# Incentives Example: Subway I
+
+.center[
+![:scale 50%](../images/nycsubway.png)
+
+The NYC Subway bans dogs unless they can be [“enclosed in a container”](https://cityroom.blogs.nytimes.com/2009/09/30/answers-about-exploring-new-york-with-your-dog/?_r=0)
+]
+
+---
+
+# Incentives Example: Subway II
+
+.center[
+![:scale 40%](../images/dogsubway2.jpg) ![:scale 27%](../images/dogsubway1.jpg)
+
+Pictures [Source](https://www.rover.com/blog/nyc-subway-dogs-fs/)
+]
+
+---
+
+# Incentives Example: Rat Bounty
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+Some governments pay bounties to reduce pest populations such as rats.
+
+.green[**Example**]: Suppose the government were to pay $250 for every rat tail turned in. 
+]
+
+--
+
+.center[
+![:scale 45%](../images/ratfarming.jpg)
+]
+
+---
+
+# Incentives: Even Dolphins Understand I
+
+.center[
+![:scale 70%](../images/dolphinincentives.png)
+]
+
+.source[July 2 2003, [“Why Dolphins are Deep Thinkers”](https://www.theguardian.com/science/2003/jul/03/research.science), *The Guardian*]
+
+---
+
+# Incentives: Even Dolphins Understand II
+
+.center[
+![](../images/dolphinincentives2.png)
+]
+
+.source[July 2 2003, [“Why Dolphins are Deep Thinkers”](https://www.theguardian.com/science/2003/jul/03/research.science), *The Guardian*]
+
+---
+
+# Incentives: Monkeys Too
+
+.center[
+![:scale 60%](../images/monkeystemple.png)
+]
+
+.source[January 17, 2021, [These Monkeys Understand Economics and Intentionally Steal High-Ticket Items to Barter for Better Food, Study Finds](https://gizmodo.com/these-monkeys-understand-economics-and-intentionally-st-1846078932?utm_medium=sharefromsite&amp;utm_source=_facebook), *Gizmodo*]
+
+---
+
+# In Fact a Lot of the Natural World Behaves Economically
+
+.pull-left[
+.center[
+![:scale 75%](../images/walrasianequilibriumnature.png)
+]
+.source[Loch-Temzelides, Ted, 2021, [“Walrasian equilibrium behavior in nature”](https://www.pnas.org/content/118/27/e2020961118), *PNAS* 118(27)]
+]
+
+.pull-right[
+.center[
+![:scale 65%](../images/nematodesutilitymax.png)
+]
+.source[Katzen et al., 2021, [“The nematode worm *C. elegans* chooses between bacterial foods exactly as if maximizing economic utility”](https://www.biorxiv.org/content/10.1101/2021.04.25.441352v2) *bioRxiv*]
+]
+
+---
+
+# Takeaways About Incentives I
+
+.pull-left[
+
+- People respond to (changes in) incentives
+
+- People have goals they seek to attain
+
+- Making one alternative more costly `\(\neq\)` people *stop* pursuing their goals
+
+- People will seek (less preferred) *alternative* methods to attain goals
+
+- .hi-purple[Unintended consequences]!
+
+] 
+
+.pull-right[
+
+.center[
+![:scale 80%](../images/green_vehicles.PNG)
+]
+]
+
+---
+
+# Takeaways About Incentives II
+
+.center[
+&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;Whenever I am working on policy decisions I think of this image... 🚴
+♂️ &lt;a href="https://t.co/GE3yyDmjs0"&gt;pic.twitter.com/GE3yyDmjs0&lt;/a&gt;&lt;/p&gt;&amp;mdash; Councillor Peter Fortune (@PeterTFortune) &lt;a href="https://twitter.com/PeterTFortune/status/1159176114230763520?ref_src=twsrc%5Etfw"&gt;August 7, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+]
+
+---
+
+class: inverse, center, middle
+
+# Equilibrium
+
+---
+
+# Equilibrium Example I
+
+.pull-left[
+.center[
+![](../images/eq1.png)
+]
+]
+
+.pull-right[
+
+- Suppose 2 roads connect Frederick and Washington
+
+- 100 cars commute
+
+- Local road travel time: 30 min + 1 min/car
+
+- Highway travel time: 1 hour (always)
+]
+
+---
+
+# Equilibrium Example I
+
+.pull-left[
+.center[
+![](../images/eq1.png)
+]
+]
+
+.pull-right[
+
+- Suppose 2 roads connect Frederick and Washington
+
+- 100 cars commute
+
+- Local road travel time: 30 min + 1 min/car
+
+- Highway travel time: 1 hour (always)
+
+- Assume people .hi[optimize]: choose road to **minimize travel time** between cities
+]
+
+---
+
+# Equilibrium Example II
+
+.pull-left[
+.center[
+![](../images/eq2.png)
+]
+]
+
+.pull-right[
+
+- Suppose 2 roads connect Frederick and Washington
+
+- 100 cars commute
+
+- Local road travel time: 30 min + 1 min/car
+
+- Highway travel time: 1 hour (always)
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Scenario I**:] There are **less than 30 cars** on the local road
+]
+]
+
+---
+
+# Equilibrium Example III
+
+.pull-left[
+.center[
+![](../images/eq3.png)
+]
+]
+
+.pull-right[
+
+- Suppose 2 roads connect Frederick and Washington
+
+- 100 cars commute
+
+- Local road travel time: 30 min + 1 min/car
+
+- Highway travel time: 1 hour (always)
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Scenario II**:] There are **more than 30 cars** on the local road
+]
+]
+
+---
+
+# Equilibrium Example IV
+
+.pull-left[
+.center[
+![](../images/eq4.png)
+]
+]
+
+.pull-right[
+
+- Suppose 2 roads connect Frederick and Washington
+
+- 100 cars commute
+
+- Local road travel time: 30 min + 1 min/car
+
+- Highway travel time: 1 hour (always)
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Equilibrium**:] How many cars are on each road? (Why?)
+]
+]
+
+---
+
+# Equilibrium Example V
+
+.pull-left[
+.center[
+![](../images/eq5.png)
+]
+]
+
+.pull-right[
+.smaller[
+- .hi-turquoise[Suppose the State *doubles the capacity* of the local road]
+
+- Local road travel time: .hi-purple[30 min + 0.5 min/car]
+
+- Highway travel time: 1 hour (always)
+]
+]
+
+---
+
+# Equilibrium Example V
+
+.pull-left[
+.center[
+![](../images/eq5.png)
+]
+]
+
+.pull-right[
+.smaller[
+- .hi-turquoise[Suppose the State *doubles the capacity* of the local road]
+
+- Local road travel time: .hi-purple[30 min + 0.5 min/car]
+
+- Highway travel time: 1 hour (always)
+
+- .hi-green[Will this reduce travel time?]
+
+- Yes! says the State:
+    - 30 cars use the local road, takes 1 hour
+    - With wider road it takes 45 min!
+]
+]
+
+---
+
+# Equilibrium Example V
+
+.pull-left[
+.center[
+![](../images/eq5.png)
+]
+]
+
+.pull-right[
+
+.smaller[
+- .hi-turquoise[Suppose the State *doubles the capacity* of the local road]
+
+- Local road travel time: .hi-purple[30 min + 0.5 min/car]
+
+- Highway travel time: 1 hour (always)
+
+- .hi-green[Will this reduce travel time?]
+
+- Yes! says the State:
+    - 30 cars use the local road, takes 1 hour
+    - With wider road it takes 45 min!
+
+- .hi[Is this an equilibrium?]
+]
+]
+
+---
+
+# In the Long Run...(&amp; Repeating the Same Mistake)
+
+.center[
+&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;1970: One more lane will fix it.&lt;br&gt;1980: One more lane will fix it.&lt;br&gt;1990: One more lane will fix it.&lt;br&gt;2000: One more lane will fix it.&lt;br&gt;2010: One more lane will fix it.&lt;br&gt;2020: ?&lt;a href="https://t.co/NjS1IPORG2"&gt;pic.twitter.com/NjS1IPORG2&lt;/a&gt;&lt;br&gt;via &lt;a href="https://twitter.com/avelezig?ref_src=twsrc%5Etfw"&gt;@avelezig&lt;/a&gt;&lt;/p&gt;&amp;mdash; Urban Planning &amp;amp; Mobility 🚲🚶
+♂️🚆 (@urbanthoughts11) &lt;a href="https://twitter.com/urbanthoughts11/status/1191295205187686400?ref_src=twsrc%5Etfw"&gt;November 4, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt; 
+]
+
+---
+
+# Comparative Statics
+
+- .hi[Comparative statics]: examining changes in equilibria cased by an external change (in incentives, constraints, etc.)
+
+&lt;img src="1.1-slides_files/figure-html/unnamed-chunk-1-1.png" width="864" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Optimization and Equilibrium
+
+.pull-left[
+- If people can .hi-purple[learn] and .hi-purple[change] their behavior, they will tend to **switch** to a higher-valued option
+
+- If there are no alternatives that are better, a person is at an .hi[optimum]
+
+- Everyone is at an optimum `\(\iff\)` the system is in .hi[equilibrium]
+]
+
+.pull-right[
+.center[
+![:scale 70%](../images/incentive2.jpg)
+
+![:scale 70%](../images/equilibriumbalance.png)
+]
+]
+
+
+---
+
+# Economics Is Broader Than You Think
+
+.center[
+![:scale 82%](../images/cooleconbooks.png)
+]
+
+---
+
+class: inverse, center, middle
+
+# Real Talk: The Math
+
+---
+
+# Real Talk
+
+.center[
+![:scale 60%](../images/opengatemath1.jpg)
+]
+
+---
+
+# Real Talk
+
+.center[
+![:scale 60%](../images/opengatemath2.jpg)
+]
+
+---
+
+# Real Talk
+
+.center[
+![:scale 60%](../images/opengatemath3.jpg)
+]
+
+---
+
+# Real Talk
+
+.pull-left[
+.center[
+![](../images/mathsurvey.png)
+]
+]
+
+.pull-right[
+
+- Complete the [.hi-purple[preliminary math survey]](https://microF22.classes.ryansafner.com/assignments/00-preliminary-survey)
+
+- Help me help you with the math!
+
+]
+
+---
+
+# Why We Model I
+
+.pull-left[
+
+- Economists often “speak” in models that explain and predict human behavior
+
+- The pure language of models is mathematics
+    - things that are universally true, deducible from axioms, can easily spot errors
+    - often equations and graphs
+    - this is what scares students most about economics 
+
+]
+
+.pull-right[
+.center[
+![](../images/maths.jpg)
+]
+]
+
+---
+
+# Why We Model II
+
+.pull-left[
+
+- Economists use conceptual models: fictional constructions to logically examine consequences
+
+- Very different from other sciences
+    - No social experiments
+    - Purposive, strategic human beings 
+    - Introspective understanding
+
+]
+
+.pull-right[
+.center[
+![](../images/imagination.png)
+]
+]
+
+---
+
+# The Two Major Models of Economics as a “Science”
+
+.pull-left[
+
+## Optimization
+
+- Agents have .hi[objectives] they value
+
+- Agents face .hi[constraints]
+
+- Make .hi[tradeoffs] to maximize objectives within constraints
+
+.center[
+![](../images/optimize.jpeg)
+]
+]
+
+--
+
+.pull-right[
+
+## Equilibrium
+
+- Agents .hi[compete] with others over **scarce** resources
+
+- Agents .hi[adjust] behaviors based on prices
+
+- .hi[Stable outcomes] when adjustments stop
+
+.center[
+![](../images/equilibriumbalance.png)
+]
+
+]
+
+---
+
+# A Hint That Will *Almost* Never Fail You
+
+.pull-left[
+
+- **The answer to 95% of questions in this course:** .hi[where marginal benefit equals marginal cost]
+  - What’s the benefit? What’s the cost?
+  - Interpretation from math `\(\rightarrow\)` English
+
+- In practice: .hi-purple[where slopes (rates of change) of two things are equal]
+]
+
+.pull-right[
+.center[
+![](../images/economics1.jpg)
+]
+]
+
+---
+
+# Remember: All Models are Wrong!
+
+.pull-left[
+.bg-washed-red.b--dark-red.ba.bw2.br3.shadow-5.ph4.mt5[
+.red[**Caution**:] Don't conflate models with reality!
+]
+- Models **are not** reality. They help us **understand** reality.
+
+&gt; “All models lie. The art is telling useful lies.” - George Box
+
+]
+
+.pull-right[
+.center[
+![](../images/citymodel.jpg)
+]
+]
+
+---
+
+# Economics Uses, but Is Not Limited to, Math
+
+.center[
+![:scale 80%](../images/econ_math_venn.png)
+]
+---
+
+class: inverse, middle, center
+# About This Course
+
+---
+
+# Learning Goals
+
+By the end of this course, you will: 
+
+1. apply the models of microeconomics (constrained optimization and equilibrium) towards explaining real world behavior of individuals, firms, and governments
+
+2. explore the effects of economic and political processes on market performance (competition, market prices, profits and losses, property rights, entrepreneurship, market power, market failures, public policy, government failures)
+
+3. apply the economic way of thinking to real world issues in writing
+
+---
+
+# Assignments
+
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt;  &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Assignment &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Percent &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Opinion-Editorial &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 20% &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; n &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Homeworks (Average) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 20% &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Exams &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 20% each &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+
+# Your “Textbook”
+
+.center[
+![:scale 40%](../images/microtextbook.jpg)
+]
+
+---
+
+# Course Website
+
+.center[
+![:scale 65%](../images/micro_website_F22.png)
+
+[microF22.classes.ryansafner.com](https://microF22.classes.ryansafner.com)
+]
+
+---
+
+# Logistics
+
+.pull-left[
+.smallest[
+
+- Office hours: MW 1:30—2:30 PM &amp; by appt
+  - Office: 114 Rosenstock
+
+- <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#5E81AC;overflow:visible;position:relative;"><path d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"/></svg> Slack channel `#c-econ-306-micro`
+
+- Teaching Assistant(s): TBD
+  - grade HWs &amp; hold office hours
+
+- See the [resources page](http://microF22.classes.ryansafner.com/resources) for tips for success and more helpful resources
+]
+]
+
+.pull-right[
+.center[
+![](../images/learning.png)
+]
+]
+
+---
+
+class: inverse, center, middle
+
+# You Can Do This
+
+# And I Am Here To Help You
+
+---
+
+# Roadmap for the Semester
+
+.center[
+![:scale 100%](../images/micro_flowchart_blankbg.png)
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

@@ -437,7 +437,7 @@ th, td { padding: 5px; }
 
 .remark-slide-content {
   background-color: #ffffff ; /* #23373B; */
-  background-image: url(../images/micro_hex.png);
+  background-image: url(../images/io_hex.png);
   background-position: 99% 1%;
   background-size: 7%;
   color: #000000;
@@ -480,11 +480,11 @@ th, td { padding: 5px; }
 }
 
 /* .blankgray-content > h1 {
-  color: #236192;
+  color: #314f4f;
 } */
 
 .inverse {
-  background-color: #236192; /* #236192; */
+  background-color: #314f4f; /* #314f4f; */
   text-shadow: none;
 }
 
@@ -494,7 +494,7 @@ th, td { padding: 5px; }
   font-size: 48px;
   margin-top: 0px;
   margin-left: -00px;
-  color: #236192; /* #56B4E9 ; FAFAFA */
+  color: #314f4f; /* #56B4E9 ; FAFAFA */
 }
 
 .inverse > h1 {
@@ -532,8 +532,8 @@ color: #23373B;
 }
 
 .title-slide {
-  background-color: #236192;
-  background-image: url(../images/micro_hex.png);
+  background-color: #314f4f;
+  background-image: url(../images/io_hex.png);
   background-position: 99% 90%;
   background-size: 25%;
 }

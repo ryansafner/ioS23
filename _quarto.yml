@@ -36,9 +36,9 @@ website:
         - section: "Overview"
           contents: 
             - content/index.qmd
-        - section: "I. Rational Choice Theory: Consumers"
+        - section: "I. Models of Markets"
           contents: 
-            - text: "1.1 — The Tools of Microeconomics"
+            - text: "1.1 — Introduction to I.O."
               href: content/1.1-content.qmd
 
     - title: "Assignments"

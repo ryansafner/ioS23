@@ -70,7 +70,7 @@ class: inverse
 
 ### [What is Industrial Organization About?](#5)
 ### [Motivations for this Semester](#37)
-### [About This Course](#46)
+### [About This Course](#47)
 
 ---
 
@@ -855,6 +855,14 @@ ggplot(data = profits)+
 
 .center[
 ![:scale 95%](https://www.dropbox.com/s/oy0owy8v6o443i8/antitrust2.png?raw=1)
+]
+
+---
+
+# Is New Antitrust Action Necessary? 
+
+.center[
+![:scale 95%](../images/googleantitrustsuit.png)
 ]
 
 ---

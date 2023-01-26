@@ -1,0 +1,1682 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>1.2 — Technology and Cost</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ryan Safner" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/hygge.css" rel="stylesheet" />
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
+    <script src="libs/xaringanExtra-progressBar/progress-bar.js"></script>
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+class: title-slide
+
+# 1.2 — Technology and Cost
+
+## ECON 326 • Industrial Organization • Spring 2023
+
+### Ryan Safner&lt;br&gt; Associate Professor of Economics &lt;br&gt; &lt;a href="mailto:safner@hood.edu"&gt;&lt;i class="fa fa-paper-plane fa-fw"&gt;&lt;/i&gt;safner@hood.edu&lt;/a&gt; &lt;br&gt; &lt;a href="https://github.com/ryansafner/ioS23"&gt;&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;ryansafner/ioS23&lt;/a&gt;&lt;br&gt; &lt;a href="https://ioS23.classes.ryansafner.com"&gt; &lt;i class="fa fa-globe fa-fw"&gt;&lt;/i&gt;ioS23.classes.ryansafner.com&lt;/a&gt;&lt;br&gt;
+---
+
+class: inverse
+
+# Outline
+
+### [Short Run Production Concepts](#27)
+### [Costs in the Short Run](#37)
+### [Costs in the Long Run](#65)
+### [Revenues](#75)
+
+---
+
+# This Black Box We Call "Firms"
+
+.pull-left[
+
+- .hi[Firm] is a mere .hi-purple[production process]:
+  - a bundle of technology, physical assets, and individuals
+
+- Synonymous with .hi[production function]
+
+- Fully replicable
+
+- We'll explore (and explode) this much later
+]
+
+.pull-right[
+.center[
+![:scale 70%](../images/inputoutput.png)
+]
+]
+
+---
+
+# What Do Firms Do? I
+
+.pull-left[
+
+- We'll assume “the firm” is the agent to model:
+
+- So what do firms do? 
+
+- How would we set up an optimization model:
+
+1. **Choose:** .hi-blue[ &lt; some alternative &gt;]
+
+2. **In order to maximize:** .hi-green[&lt; some objective &gt;]
+
+3. **Subject to:** .hi-red[&lt; some constraints &gt;]
+
+]
+
+.pull-right[
+
+.center[
+![:scale 100%](../images/thefirm.JPG)
+]
+]
+
+---
+
+# What Do Firms Do? II
+
+.pull-left[
+.smaller[
+- Firms convert some goods to other goods: 
+]
+]
+
+.pull-right[
+.center[
+![:scale 70%](../images/inputoutput.jpg)
+]
+]
+
+---
+
+# What Do Firms Do? II
+
+.pull-left[
+.smaller[
+- Firms convert some goods to other goods: 
+
+- **Inputs**: `\(x_1, x_2, \cdots, x_n\)`
+  - &lt;span class="green"&gt;**Examples**: worker efforts, warehouse space, electricity, loans, oil, cardboard, fertilizer, computers, software programs, etc&lt;span&gt;
+  ]
+]
+
+.pull-right[
+.center[
+![:scale 70%](../images/inputoutput.jpg)
+]
+]
+
+---
+# What Do Firms Do? II
+
+.pull-left[
+.smaller[
+- Firms convert some goods to other goods: 
+
+- **Inputs**: `\(x_1, x_2, \cdots, x_n\)`
+  - &lt;span class="green"&gt;**Examples**: worker efforts, warehouse space, electricity, loans, oil, cardboard, fertilizer, computers, software programs, etc&lt;span&gt;
+  
+- **Output**: `\(q\)`
+  - &lt;span class="green"&gt;**Examples**: gas, cars, legal services, mobile apps, vegetables, consulting advice, financial reports, etc&lt;span&gt;
+]
+]
+
+.pull-right[
+.center[
+![:scale 70%](../images/inputoutput.jpg)
+]
+]
+
+---
+
+# What Do Firms Do? III
+
+.pull-left[
+- .hi[Technology] or a .hi[production function]: rate at which firm can convert specified **inputs** `\((x_1, x_2, \cdots, x_n)\)` into **output** `\((q)\)`
+`$$q=f(x_1, x_2, \cdots, x_n)$$`
+
+]
+
+.pull-right[
+.center[
+![:scale 70%](../images/inputoutput.jpg)
+]
+]
+
+---
+
+# Production Function as Recipe
+
+.pull-left[
+.center[The production function
+
+![](../images/recipe1.PNG)
+]
+]
+
+.pull-right[
+.center[The production algorithm
+
+![](../images/recipe2.PNG)
+]
+
+]
+
+---
+
+# Factors of Production I
+
+`$$q=A \,f(t,l,k)$$`
+
+.pull-left[
+.smaller[
+- Economists typically classify inputs, called the .hi[“factors of production” (FOP)]:
+
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Factor &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Owned By &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Earns &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Land (t) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Landowners &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Rent &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Labor (l) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Laborers &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Wages &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Capital (k) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Capitalists &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Interest &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+.smallest[
+- `\(A\)`: .b["total factor productivity"] (ideas/knowledge/institutions)
+
+]
+]
+.pull-right[
+.center[
+![](../images/factors.jpg)
+]
+
+]
+
+---
+
+# Factors of Production II
+
+`$$q=f(l,k)$$`
+
+.pull-left[
+
+- We will assume just two inputs: labor `\(l\)` and capital `\(k\)`
+
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Factor &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Owned By &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Earns &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Labor (l) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Laborers &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Wages &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Capital (k) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Capitalists &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Interest &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+]
+
+.pull-right[
+.center[
+![](../images/factors.jpg)
+]
+
+]
+
+---
+
+# What Does a Firm Maximize?
+
+.pull-left[
+
+- We assume firms .hi-purple[maximize profit `\\((\pi)\\)`]
+
+- Not true for all firms
+    - &lt;span class="green"&gt;**Examples**: non-profits, charities, civic associations, government agencies, criminal organizations, etc&lt;/span&gt;
+
+- Even profit-seeking firms may also want to maximize *additional* things
+    - &lt;span class="green"&gt;**Examples**: goodwill, sustainability, social responsibility, etc &lt;/span&gt;
+
+]
+
+.pull-right[
+
+.center[
+![](../images/gnomes.png)
+]
+]
+
+---
+
+# Profits Have a Bad Rap These Days
+
+.center[
+![:scale 80%](../images/peopleoverprofits.jpg)
+]
+
+---
+
+# What is Profit?
+
+.pull-left[
+
+- In economics, .hi-purple[profit] is simply **benefits minus (opportunity) costs**
+
+]
+
+.pull-right[
+.center[
+![](../images/profitloss2.jpg)
+]
+]
+
+---
+
+# What is Profit?
+
+.pull-left[
+
+- In economics, .hi-purple[profit] is simply **benefits minus (opportunity) costs**
+
+- Suppose firm sells **output** `\(q\)` at price `\(p\)`
+
+]
+
+.pull-right[
+.center[
+![](../images/profitloss2.jpg)
+]
+]
+
+
+---
+
+# What is Profit?
+
+.pull-left[
+
+- In economics, .hi-purple[profit] is simply **benefits minus (opportunity) costs**
+
+- Suppose firm sells **output** `\(q\)` at price `\(p\)`
+
+- It can buy each **input** `\(x_i\)` at an associated price `\(p_i\)`, i.e.
+    - labor `\(l\)` at wage rate `\(w\)`
+    - capital `\(k\)` at rental rate `\(r\)`
+
+]
+
+.pull-right[
+.center[
+![](../images/profitloss2.jpg)
+]
+]
+
+---
+
+# What is Profit?
+
+.pull-left[
+
+- In economics, .hi-purple[profit] is simply **benefits minus (opportunity) costs**
+
+- Suppose firm sells **output** `\(q\)` at price `\(p\)`
+
+- It can buy each **input** `\(x_i\)` at an associated price `\(p_i\)`, i.e.
+    - labor `\(l\)` at wage rate `\(w\)`
+    - capital `\(k\)` at rental rate `\(r\)`
+
+- The profit of selling `\(q\)` units and using inputs `\(l,k\)` is:
+
+]
+
+.pull-right[
+.center[
+![](../images/profitloss2.jpg)
+]
+]
+
+---
+
+# Who Gets the Profits? I
+
+.pull-left[
+`$$\pi=\underbrace{pq}_{revenues}-\underbrace{(wl+rk)}_{costs}$$`
+
+]
+
+.pull-right[
+.center[
+![](../images/riskprofit.jpg)
+]
+]
+
+---
+
+# Reminder from Macroeconomics: “The Circular Flow”
+
+.center[
+![:scale 60%](../images/circularflow.png)
+]
+
+---
+
+# Who Gets the Profits? I
+
+.pull-left[
+`$$\pi=\underbrace{pq}_{revenues}-\underbrace{(wl+rk)}_{costs}$$`
+
+- .hi-purple[The firm's costs are all of the factor-owner's incomes!]
+    - Landowners, laborers, creditors are all paid rent, wages, and interest, respectively
+
+]
+
+.pull-right[
+.center[
+![](../images/riskprofit.jpg)
+]
+]
+
+---
+
+# Who Gets the Profits? I
+
+.pull-left[
+`$$\pi=\underbrace{pq}_{revenues}-\underbrace{(wl+rk)}_{costs}$$`
+
+- Profits are the .hi-purple[residual value] leftover after paying all factors
+
+- Profits are income for the .hi[residual claimant(s)] of the production process (i.e. **owner(s)** of a firm):
+    - Entrepreneurs
+    - Shareholders
+
+]
+
+.pull-right[
+.center[
+![](../images/riskprofit.jpg)
+]
+]
+
+---
+
+# Who Gets the Profits? II
+
+.pull-left[
+`$$\pi=\underbrace{pq}_{revenues}-\underbrace{(wl+rk)}_{costs}$$`
+
+- Residual claimants have incentives to maximize firm's profits, as this *maximizes their own income*
+
+- Entrepreneurs and shareholders are the only participants in production that are *not* guaranteed an income!
+    - Starting and owning a firm is inherently **risky**!
+
+]
+
+.pull-right[
+.center[
+![](../images/tightrope.jpg)
+]
+]
+---
+
+# People Overestimate Profits
+
+.center[
+![:scale 52%](../images/profitmargins.png)
+]
+
+.source[Source: [American Enterprise Institute](https://www.aei.org/carpe-diem/the-public-thinks-the-average-company-makes-a-36-profit-margin-which-is-about-5x-too-high-part-ii/)]
+
+---
+
+# Profits and Entrepreneurship: A Preview
+
+.pull-left[
+
+- In markets, production must face the .hi[profit test]:
+    - &lt;span class="hi-purple"&gt;Is consumer's willingness to pay `\(&gt;\)` opportunity cost of inputs?&lt;/span&gt;
+
+- Profits are an indication that **value is being created for society**
+
+- Losses are an indication that **value is being destroyed for society**
+
+- Survival in markets *requires* firms continually create value &amp; earn profits
+]
+
+.pull-right[
+
+.center[
+![](../images/feedback.png)
+]
+]
+
+---
+
+# The Firm's Optimization Problem I
+
+.pull-left[
+
+- So what do firms do? 
+
+1. **Choose:** .hi-blue[ &lt; some alternative &gt;]
+
+2. **In order to maximize:** .hi-green[&lt; profits &gt;]
+
+3. **Subject to:** .hi-red[&lt; technology &gt;]
+
+- We've so far assumed they maximize profits and they are limited by their technology
+
+]
+
+.pull-right[
+
+.center[
+![](../images/management.jpg)
+]
+]
+
+---
+
+# The Firm's Optimization Problem II
+
+.pull-left[
+- What do firms **choose**? (Not an easy answer)
+
+- Prices?
+    - Depends on the market the firm is operating in!
+    - Study of &lt;span class="hi"&gt;industrial organization&lt;/span&gt;
+    
+- Essential question: .hi-turquoise[how competitive is a market?] This will influence what firms (can) do
+]
+
+.pull-right[
+.center[
+![](../images/marketpower.jpg)
+]
+]
+
+---
+
+class: inverse, center, middle
+
+# Short-Run Production Concepts
+
+---
+
+# Marginal Products
+
+.pull-left[
+- The .hi[marginal product] of an input is the *additional* output produced by *one more unit* of that input (*holding all other inputs constant*)
+
+- Like marginal utility
+
+- Similar to marginal utilities, I will give you the marginal product equations
+
+]
+
+.pull-right[
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-3-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Marginal Product of Labor
+
+.pull-left[
+
+- .hi[Marginal product of labor `\\((MP_l)\\)`]: additional output produced by adding one more unit of labor (holding `\(k\)` constant)
+`$$MP_l = \frac{\Delta q}{\Delta l}$$`
+
+- `\(MP_l\)` is slope of `\(TP\)` at each value of `\(l\)`! 
+  - Note: via calculus: `\(\frac{\partial q}{\partial l}\)`
+]
+
+.pull-right[
+
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-4-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-5-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Marginal Product of Capital
+
+.pull-left[
+
+- .hi[Marginal product of capital `\\((MP_k)\\)`]: additional output produced by adding one more unit of capital (holding `\(l\)` constant)
+`$$MP_k = \frac{\Delta q}{\Delta k}$$`
+
+- `\(MP_k\)` is slope of `\(TP\)` at each value of `\(k\)`! 
+  - Note: via calculus: `\(\frac{\partial q}{\partial k}\)`
+
+- Note we don't consider capital in the short run!
+
+]
+
+.pull-right[
+
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-6-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-7-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Diminishing Returns
+
+.pull-left[
+
+- .hi-purple[Law of Diminishing Returns]: adding more of one factor of production **holding all others constant** will result in successively lower increases in output
+
+- In order to increase output, firm will need to increase *all* factors!
+
+
+]
+
+.pull-right[
+
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-8-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-9-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Diminishing Returns
+
+.pull-left[
+
+- .hi-purple[Law of Diminishing Returns]: adding more of one factor of production **holding all others constant** will result in successively lower increases in output
+
+- In order to increase output, firm will need to increase *all* factors!
+
+.center[
+![:scale 70%](../images/toomanycooks.jpg)
+]
+
+]
+
+.pull-right[
+
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-10-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-11-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Average Product of Labor (and Capital)
+
+.pull-left[
+
+- .hi[Average product of labor `\\((AP_l)\\)`]: total output per worker
+`$$AP_l = \frac{q}{l}$$`
+
+- A measure of *labor productivity*
+
+- .hi[Average product of capital `\\((AP_k)\\)`]: total output per unit of capital
+`$$AP_k = \frac{q}{k}$$`
+]
+
+.pull-right[
+
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-12-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-13-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+class: inverse, center, middle
+
+# The Firm's Problem: Long Run
+
+---
+
+# The Long Run
+
+.pull-left[
+
+- In the long run, *all* factors of production are .hi-purple[variable]
+
+`$$q=f(k,l)$$`
+
+- Can build more factories, open more storefronts, rent more space, invest in machines, etc.
+
+- So the firm can choose both `\(l\)` *and* `\(k\)`
+
+]
+
+.pull-right[
+
+.center[
+![](../images/chooselocations.jpg)
+]
+]
+
+---
+
+# The Firm's Problem
+
+.pull-left[
+.smallest[
+- Based on what we've discussed, we can fill in a constrained optimization model for the firm
+  - .hi-turquoise[But don't write this one down just yet!]
+
+- The **firm's problem** is: 
+
+1. **Choose:** .hi-blue[ &lt; inputs and output &gt;]
+
+2. **In order to maximize:** .hi-green[&lt; profits &gt;]
+
+3. **Subject to:** .hi-red[&lt; technology &gt;]
+
+- It's actually much easier to break this into **2 stages**.
+]
+
+.pull-right[
+
+.center[
+![](../images/management.jpg)
+]
+]
+
+---
+
+# Production Costs are Opportunity Costs
+
+.pull-left[
+
+- Remember, .hi[economic costs] are broader than the common conception of “cost”
+  - .hi-purple[Accounting cost]: monetary cost
+  - .hi[Economic cost]: value of next best alternative use of resources given up (i.e. .hi[opportunity cost])
+
+]
+
+.pull-right[
+.center[
+![:scale 70%](../images/costrevenue.jpg)
+
+![:scale 70%](../images/disappear.jpg)
+]
+]
+
+---
+
+# Production Costs are Opportunity Costs
+
+.pull-left[
+
+- This leads to the difference between:
+  - .hi-purple[Accounting profit]: revenues minus accounting costs
+  - .hi[Economic profit]: revenues minus accounting + .ul[opportunity] costs
+
+- A really difficult concept to think about!
+]
+
+.pull-right[
+.center[
+![:scale 70%](../images/costrevenue.jpg)
+
+![:scale 70%](../images/disappear.jpg)
+]
+]
+
+---
+
+# Production Costs are Opportunity Costs
+
+.pull-left[
+
+- Another helpful perspective:
+  - .hi-purple[Accounting cost]: what you **historically** paid for a resource
+  - .hi[Economic cost]: what you can **currently** get in the market for a selling a resource (it’s value in *alternative* uses)
+
+]
+
+.pull-right[
+.center[
+![:scale 70%](../images/costrevenue.jpg)
+
+![:scale 70%](../images/disappear.jpg)
+]
+]
+
+---
+
+# A Reminder: It's Demand all the Way Down!
+
+.pull-left[
+
+- .hi-red[Supply] is actually .hi-blue[Demand] in disguise!
+
+- An .hi[(opportunity) cost] to buy (scarce) inputs for production because **other people** .hi-blue[demand] those same inputs to consume or produce **other valuable things**!
+  - Price necessary to **pull them out of other valuable productive uses** in the economy!
+]
+
+.pull-right[
+
+.center[
+![](../images/disappear.jpg)
+]
+]
+
+---
+
+# Production Costs are Opportunity Costs
+
+.pull-left[
+
+- Because resources are scarce, and have rivalrous uses, .hi-turquoise[how do we know we are using resources efficiently??]
+
+- In functioning markets, .hi-purple[the market price measures the opportunity cost of using a resource for an alternative use]
+
+- Firms not only pay for direct use of a resource, but also indirectly compensate society for *“pulling the resource out”* of alternate uses in the economy!
+
+]
+
+.pull-right[
+.center[
+![:scale 70%](../images/costrevenue.jpg)
+
+![:scale 70%](../images/disappear.jpg)
+]
+]
+
+---
+
+# Production Costs are Opportunity Costs
+
+.pull-left[
+- Every choice incurs an opportunity cost
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Examples**]:
+.smallest[
+- If you start a business, you may give up your salary at your current job
+- If you invest in a factory, you give up other investment opportunities
+- If you use an office building you own, you cannot rent it to other people
+- If you hire a skilled worker, you must pay them a high enough salary to deter them from working for other firms
+]
+]
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/disappear.jpg)
+]
+]
+
+
+---
+
+# Opportunity Costs vs. Sunk Costs
+
+.pull-left[
+
+- Opportunity cost is a *forward-looking* concept
+
+- Choices made in the *past* with *non-recoverable* costs are called .hi[sunk costs]
+
+- Sunk costs *should not* enter into future decisions
+
+- Many people have difficulty letting go of unchangeable past decisions: .hi-purple[sunk cost fallacy]
+
+]
+
+.pull-left[
+.center[
+![](../images/sunkcost.jpg)
+]
+]
+
+---
+
+# Common Sunk Costs in Business
+
+.pull-left[
+
+- Licensing fees, long-term lease contracts
+
+- Specific capital (with no alternative use): uniforms, menus, signs
+
+- Research &amp; Development spending
+
+- Advertising spending
+
+]
+
+.pull-right[
+
+.center[
+![](../images/sunkcost.jpg)
+]
+]
+---
+
+# The Accounting vs. Economic Point of View I
+
+.pull-left[
+
+- Helpful to consider two points of view:
+
+1. .hi-purple[“Accounting point of view”]: are you taking in more cash than you are spending?
+
+2. .hi[“Economic point of view”]: is your product you making the *best social* use of your resources
+  - i.e. are there higher-valued uses of your resources you are keeping them out of?
+
+]
+
+.pull-right[
+.center[
+![:scale 70%](../images/costrevenue.jpg)
+
+![:scale 70%](../images/disappear.jpg)
+]
+]
+
+---
+# The Accounting vs. Economic Point of View II
+
+.pull-left[
+.smaller[
+- .hi-turquoise[Implications for society]: are consumers *best* off with you using scarce resources (with alternative uses!) to produce your current product?
+
+- Remember: .hi-turquoise[this is an .ul[*economics*] course, not a *business* course]!
+  - .hi-purple[Economists are pro-market, *not* pro-business!]
+  - What might be good/bad for **one** business might have bad/good *consequences* for society!
+]
+]
+
+.pull-right[
+.center[
+![:scale 70%](../images/costrevenue.jpg)
+
+![:scale 70%](../images/disappear.jpg)
+]
+]
+
+---
+
+class: inverse, center, middle
+# Costs in the Short Run
+
+---
+
+# Costs in the Short Run
+ 
+- .hi[Total cost function, `\\(C(q)\\)`] relates output `\(q\)` to the total cost of production `\(C\)`&lt;sup&gt;.magenta[†]&lt;/sup&gt;
+
+`$$C(q)=f+VC(q)$$`
+
+--
+
+- Two kinds of short run costs:
+
+**1.** .hi[Fixed costs, `\\(f\\)`] are costs that do not vary with output
+  - Only true in the short run! (Consider this the cost of maintaining your capital)
+
+--
+
+**2.** .hi[Variable costs, `\\(VC(q)\\)`] are costs that vary with output (notice the variable in them!)
+  - Typically, the more production of `\(q\)`, the higher the cost
+  - e.g. firm is hiring *additional* labor
+
+.source[&lt;sup&gt;.magenta[†]&lt;/sup&gt; Assuming that (i) firms are always choosing input combinations that minimize total cost and (ii) input prices are constant. See more in [today’s appendix](/resources/appendices/2.4-appendix.html).]
+---
+
+# Fixed vs. Variable costs: Examples
+
+.pull-left[
+.center[
+![](../images/airline.jpg)
+]
+]
+
+.pull-right[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[.hi-green[Example]: Airlines
+
+**Fixed costs**: the aircraft, regulatory approval
+
+**Variable costs**: providing one more flight
+]
+]
+---
+
+# Fixed vs. Variable costs: Examples
+
+.pull-left[
+.center[
+![:scale 100%](../images/carfactory.jpg)
+]
+]
+
+.pull-right[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[.hi-green[Example]: Car Factory
+
+**Fixed costs**: the factory, machines in the factory
+
+**Variable costs**: producing one more car
+]
+]
+
+---
+
+# Fixed vs. Variable costs: Examples
+
+.pull-left[
+.center[
+![](../images/starbuckscounter.jpg)
+]
+]
+
+.pull-right[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[.hi-green[Example]: Starbucks
+
+**Fixed costs**: the retail space, espresso machines
+
+**Variable costs**: selling one more cup of coffee
+]
+]
+
+---
+
+# Fixed vs. Sunk costs
+
+.pull-left[
+.smallest[
+- Diff. between .hi[fixed] vs. .hi-purple[sunk] costs?
+
+- .hi-purple[Sunk costs] are a *type* of .hi[fixed cost] that are *not* avoidable or recoverable
+
+- Many .hi[fixed costs] can be avoided or changed in the long run
+
+- Common .hi[fixed], but *not* .hi-purple[sunk], costs:
+  - rent for office space, durable equipment, operating permits (that are renewed)
+
+- When deciding to *stay* in business, .hi[fixed costs] matter, .hi-purple[sunk costs] do not!
+]
+]
+
+.pull-right[
+.center[
+![](../images/sunkcost.jpg)
+]
+]
+---
+
+# Cost Functions: Example, Visualized
+
+.pull-left[
+
+.tiny[
+| `\(q\)` | `\(f\)` | `\(VC(q)\)` | `\(C(q)\)` |
+|----:|----:|--------:|-------:|
+| `\(0\)` | `\(10\)` | `\(0\)` | `\(10\)` |
+| `\(1\)` | `\(10\)` | `\(2\)` | `\(12\)` |
+| `\(2\)` | `\(10\)` | `\(6\)` | `\(16\)` |
+| `\(3\)` | `\(10\)` | `\(12\)` | `\(22\)` |
+| `\(4\)` | `\(10\)` | `\(20\)` | `\(30\)` |
+| `\(5\)` | `\(10\)` | `\(30\)` | `\(40\)` |
+| `\(6\)` | `\(10\)` | `\(42\)` | `\(52\)` |
+| `\(7\)` | `\(10\)` | `\(56\)` | `\(66\)` |
+| `\(8\)` | `\(10\)` | `\(72\)` | `\(82\)` |
+| `\(9\)` | `\(10\)` | `\(90\)` | `\(100\)` |
+| `\(10\)` | `\(10\)` | `\(110\)` | `\(120\)` |
+
+]
+]
+
+.pull-right[
+
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-14-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Average Costs
+
+- .hi[Average Fixed Cost]: fixed cost per unit of output:
+
+`$$AFC(q)=\frac{f}{q}$$`
+
+--
+
+- .hi[Average Variable Cost]: variable cost per unit of output:
+
+`$$AVC(q)=\frac{VC(q)}{q}$$`
+
+--
+
+- .hi[Average (Total) Cost]: (total) cost per unit of output:
+
+`$$AC(q)=\frac{C(q)}{q}$$`
+
+---
+
+# Marginal Cost
+
+- .hi[Marginal Cost] is the change in total cost for each additional unit of output produced:
+
+`$$MC(q) = \frac{\Delta C(q)}{\Delta q}$$`
+
+- Calculus: first derivative of the cost function
+
+- .hi-purple[Marginal cost is the *primary* cost that matters in making decisions]
+  - All other costs are driven by marginal costs
+  - This is the main cost that firms can “see”
+
+---
+
+# Average and Marginal Costs: Visualized
+
+.center[
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-15-1.png" width="1008" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Relationship Between Marginal and Average
+
+.pull-left[
+.smallest[
+- Mathematical relationship between a marginal &amp; an average value
+
+- If .red[marginal] `\(&lt;\)` .orange[average], then .orange[average] `\(\downarrow\)`
+
+]
+]
+
+.pull-right[
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-16-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Relationship Between Marginal and Average
+
+.pull-left[
+.smallest[
+- Mathematical relationship between a marginal &amp; an average value
+
+- If .red[marginal] `\(&lt;\)` .orange[average], then .orange[average] `\(\downarrow\)`
+
+- If .red[marginal] `\(&gt;\)` .orange[average], then .orange[average] `\(\uparrow\)`
+]
+]
+
+.pull-right[
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-17-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+
+# Relationship Between Marginal and Average
+
+.pull-left[
+.smallest[
+- Mathematical relationship between a marginal &amp; an average value
+
+- If .red[marginal] `\(&lt;\)` .orange[average], then .orange[average] `\(\downarrow\)`
+
+- If .red[marginal] `\(&gt;\)` .orange[average], then .orange[average] `\(\uparrow\)`
+
+- When .red[marginal] `\(=\)` .orange[average], .orange[average] is **maximized/minimized**
+
+]
+]
+
+.pull-right[
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-18-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Relationship Between Marginal and Average
+
+.pull-left[
+
+.smallest[
+- Mathematical relationship between a marginal &amp; an average value
+
+- If .red[marginal] `\(&lt;\)` .orange[average], then .orange[average] `\(\downarrow\)`
+
+- If .red[marginal] `\(&gt;\)` .orange[average], then .orange[average] `\(\uparrow\)`
+
+- When .red[marginal] `\(=\)` .orange[average], .orange[average] is **maximized/minimized**
+  - .hi-purple[When MC(q)=AC(q), AC(q) is at a *minimum*] (break-even price)
+  - .hi-purple[When MC(q)=AVC(q), AVC(q) is at a *minimum*] (shut-down price)
+    
+]
+]
+.pull-right[
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-19-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+class: inverse, center, middle
+# Costs in the Long Run
+
+---
+
+# Costs in the Long Run
+
+.pull-left[
+
+- .hi[Long run]: firm can change all factors of production &amp; vary scale of production
+
+- .hi-purple[Long run average cost, LRAC(q)]: cost per unit of output when the firm can change *both* `\(l\)` and `\(k\)` to make more `\(q\)`
+
+- .hi-purple[Long run marginal cost, LRMC(q)]: change in long run total cost as the firm produce an additional unit of `\(q\)` (by changing *both* `\(l\)` and/or `\(k\)`)
+
+]
+
+.pull-right[
+
+.center[
+![](../images/chooselocations.jpg)
+]
+]
+
+
+---
+
+# Average Cost in the Long Run
+
+.pull-left[
+
+- .hi[Long run]: firm can choose `\(k\)` (factories, locations, etc)
+
+- Separate short run average cost (SRAC) curves for each amount of `\(k\)` potentially chosen
+
+]
+
+.pull-right[
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-20-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Average Cost in the Long Run
+
+.pull-left[
+
+- .hi[Long run]: firm can choose `\(k\)` (factories, locations, etc)
+
+- Separate short run average cost (SRAC) curves for each amount of `\(k\)` potentially chosen
+
+- .hi-purple[Long run average cost (LRAC)] curve “envelopes” the lowest (optimal) regions of all the SRAC curves!
+
+.smallest[
+&gt; “Subject to producing the optimal amount of output, choose l and k to minimize cost”
+]
+]
+
+.pull-right[
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-21-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Long Run Costs &amp; Scale Economies I
+
+.pull-left[
+.center[
+![](../images/scaleup.png)
+]
+]
+
+.pull-right[
+.quitesmall[
+- Further important properties about costs based on .hi[scale economies] of production: change in **average costs** when output is increased (scaled)
+
+- .hi-purple[Economies of scale]: average costs .hi-turquoise[fall] with more output
+  - High fixed costs `\(AFC &gt; AVC(q)\)` low variable costs
+
+- .hi-purple[Diseconomies of scale]: average costs .hi-turquoise[rise] with more output
+  - Low fixed costs `\(AFC &lt; AVC(q)\)` high variable costs
+  
+- .hi-purple[Constant economies of scale]: average costs .hi-turquoise[don’t change] with more output
+  - Firm at minimum average cost (optimal plant size), called .hi[minimum efficient scale (MES)]
+]
+]
+
+---
+
+# Long Run Costs &amp; Scale Economies II
+
+.pull-left[
+
+- .hi[Minimum Efficient Scale]: `\(q\)` with the lowest `\(AC(q)\)`
+  - “optimal firm size”
+
+]
+
+.pull-right[
+
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-22-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Long Run Costs &amp; Scale Economies II
+
+.pull-left[
+
+- .hi[Minimum Efficient Scale]: `\(q\)` with the lowest `\(AC(q)\)`
+  - “optimal firm size”
+
+- .hi-green[Economies of Scale]: `\(\uparrow q\)`, `\(\downarrow AC(q)\)`
+
+]
+
+.pull-right[
+
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-23-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Long Run Costs &amp; Scale Economies II
+
+.pull-left[
+
+- .hi[Minimum Efficient Scale]: `\(q\)` with the lowest `\(AC(q)\)`
+  - “optimal firm size”
+
+- .hi-green[Economies of Scale]: `\(\uparrow q\)`, `\(\downarrow AC(q)\)`
+
+- .hi-red[Diseconomies of Scale]: `\(\uparrow q\)`, `\(\uparrow AC(q)\)`
+
+]
+
+.pull-right[
+
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-24-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+---
+
+# Long Run Costs &amp; Scale Economies III
+
+.pull-left[
+
+- Can measure economies of scale `\((S)\)`:
+
+`$$S(q) = \frac{AC(q)}{MC(q)}$$`
+  - `\(S&gt;1\)`: economies of scale at `\(q\)`
+  - `\(S&lt;1\)`: diseconomies of scale at `\(q\)`
+  - `\(S=1\)`: minimum efficient scale at `\(q\)`
+]
+
+.pull-right[
+
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-25-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Economies of Scope
+
+.pull-left[
+
+- We often assume .hi[single-product plants/firms], but in reality most firms/plants are .hi[multi-product]
+
+- .hi[Economies of Scope]: cost of producing multiple products (e.g. `\(q_1\)` and `\(q_2\)`) in a single plant exceeds costs of producing a single product in each plant
+
+`$$C(q_1,q_2) &lt; C(q_1,0)+C(0,q_2)$$`
+]
+
+.pull-right[
+.center[
+![](../images/coca_cola_products.png)
+]
+]
+
+---
+
+class: inverse, center, middle
+
+# Revenues
+
+---
+
+# Revenues for Firms in *Competitive* Industries I
+
+.pull-left[
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-26-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+&lt;img src="1.2-slides_files/figure-html/industry-graph-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Revenues for Firms in *Competitive* Industries I
+
+.pull-left[
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-27-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-28-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+--
+
+- .blue[Demand for a firm’s product] is **perfectly elastic** at the market price
+
+--
+
+- Where did the .red[supply curve] come from? You’ll know today
+
+---
+
+# Revenues for Firms in *Competitive* Industries II
+
+.pull-left[
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-29-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+- .hi[Total Revenue] `\(R(q)=pq\)`
+]
+
+---
+
+# Average and Marginal Revenues
+
+- .hi[Average Revenue]: revenue per unit of output
+`$$AR(q)=\frac{R}{q}$$`
+  - `\(AR(q)\)` is **by definition** equal to the price! (Why?)
+
+--
+
+- .hi[Marginal Revenue]: change in revenues for each additional unit of output sold:
+`$$\color{#e64173}{MR(q) = \frac{\Delta R(q)}{\Delta q}}$$`
+  - Calculus: first derivative of the revenues function
+  - .hi-purple[For a .ul[*competitive*] firm (only), MR(q) = p, i.e. the price!]
+
+---
+
+# Average and Marginal Revenues: Example
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: A firm sells bushels of wheat in a very competitive market. The current market price is .blue[$10/bushel].
+]
+
+--
+
+.pull-left[
+
+For the 1&lt;sup&gt;st&lt;/sup&gt; bushel sold:
+
+- What is the total revenue? 
+
+- What is the average revenue?
+
+]
+
+--
+
+.pull-right[
+For the 2&lt;sup&gt;nd&lt;/sup&gt; bushel sold:
+
+- What is the total revenue?
+
+- What is the average revenue?
+
+- What is the marginal revenue?
+]
+
+---
+
+# Total Revenue, Example: Visualized
+
+.pull-left[
+
+.quitesmall[
+| `\(q\)` | `\(R(q)\)` |
+|----:|-------:|
+| `\(0\)` | `\(0\)` |
+| `\(1\)` | `\(10\)` |
+| `\(2\)` | `\(20\)` |
+| `\(3\)` | `\(30\)` |
+| `\(4\)` | `\(40\)` |
+| `\(5\)` | `\(50\)` |
+| `\(6\)` | `\(60\)` |
+| `\(7\)` | `\(70\)` |
+| `\(8\)` | `\(80\)` |
+| `\(9\)` | `\(90\)` |
+| `\(10\)` | `\(100\)` |
+
+]
+]
+
+.pull-right[
+
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-30-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Average and Marginal Revenue, Example: Visualized
+
+.pull-left[
+
+.quitesmall[
+
+| `\(q\)` | `\(R(q)\)` | `\(AR(q)\)` | `\(MR(q)\)` |
+|----:|-------:|--------:|--------:|
+| `\(0\)` | `\(0\)` | `\(-\)` | `\(-\)` |
+| `\(1\)` | `\(10\)` | `\(10\)` | `\(10\)` |
+| `\(2\)` | `\(20\)` | `\(10\)` | `\(10\)` |
+| `\(3\)` | `\(30\)` | `\(10\)` | `\(10\)` |
+| `\(4\)` | `\(40\)` | `\(10\)` | `\(10\)` |
+| `\(5\)` | `\(50\)` | `\(10\)` | `\(10\)` |
+| `\(6\)` | `\(60\)` | `\(10\)` | `\(10\)` |
+| `\(7\)` | `\(70\)` | `\(10\)` | `\(10\)` |
+| `\(8\)` | `\(80\)` | `\(10\)` | `\(10\)` |
+| `\(9\)` | `\(90\)` | `\(10\)` | `\(10\)` |
+| `\(10\)` | `\(100\)` | `\(10\)` | `\(10\)` |
+
+]
+]
+
+.pull-right[
+
+&lt;img src="1.2-slides_files/figure-html/unnamed-chunk-31-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

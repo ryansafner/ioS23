@@ -40,6 +40,8 @@ website:
           contents: 
             - text: "1.1 — Introduction to I.O."
               href: content/1.1-content.qmd
+            - text: "1.2 — Technology and Cost"
+              href: content/1.2-content.qmd
 
     - title: "Assignments"
       style: "docked"

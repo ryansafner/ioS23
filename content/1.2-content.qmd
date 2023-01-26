@@ -1,0 +1,53 @@
+---
+title: "1.2 — Technology and Cost — Class Content"
+execute:
+  freeze: auto
+---
+
+```{r, echo = F}
+source(here::here("slides", "slide-links.R"))
+```
+
+::: {.callout-note appearance=minimal}
+# Meeting Date
+*Thursday, January 26, 2023*
+:::
+
+<!--::: callout-warning
+# Upcoming Assignment
+Please complete the [preliminary survey](/assignments/00-preliminary-survey.qmd) by next class.
+:::-->
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+We begin our review/extension of basic production concepts from microeconomics. Today we focus primarily on production functions and costs. These will be relevant regardless of what kind of market structure we are looking at.  
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+### Recommended Readings
+
+- <i class="fas fas fa-book"></i> Ch. 2.1-2.2, 3.1 in [Church & Ware, 2000](https://works.bepress.com/jeffrey_church/23/)
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides. 
+
+::: callout-tip
+You can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+:::
+
+I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+```{r}
+#| echo: false
+#| output: asis
+
+slide_links("1.2-slides")
+```
+
+<!--## <i class="fas fa-laptop-code"></i> Assignments
+
+### Preliminary Math Survey Due Next Class
+
+Please take the [preliminary survey](/assignment/00-preliminary-survey) on your math background by next class. This will help us all have a productive semester together.
+-->

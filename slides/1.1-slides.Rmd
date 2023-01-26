@@ -862,7 +862,7 @@ ggplot(data = profits)+
 # Is New Antitrust Action Necessary? 
 
 .center[
-![:scale 75%](../images/googleantitrustsuit.png)
+![:scale 65%](../images/googleantitrustsuit.png)
 ]
 
 ---

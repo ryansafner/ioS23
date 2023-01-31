@@ -69,7 +69,7 @@ class: inverse
 
 ---
 
-# Recall: The Firm's Two Problems
+# The Firm Optimization Problem: Two Approaches
 
 .pull-left[
 .smallest[
@@ -1139,27 +1139,3 @@ $$\begin{cases}
 p=MC(q) & \text{if } p \geq AVC \\
 q=0 & \text{If } p < AVC\\ \end{cases}$$
 ]
-
----
-
-# Summary:
-
-**1. Choose $q^*$ such that $MR(q)=MC(q)$**
-
---
-
-**2. Profit $\pi=q[p-AC(q)]$**
-
---
-
-**3. Shut down if $p<AVC(q)$**
-
---
-
-.center[
-Firm's short run (inverse) supply:
-]
-
-$$\begin{cases}
-p=MC(q) & \text{if } p \geq AVC\\
-q=0 & \text{If } p < AVC\\ \end{cases}$$

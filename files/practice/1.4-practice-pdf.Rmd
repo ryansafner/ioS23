@@ -1,6 +1,6 @@
 ---
-title: "1.4 — Utility Maximization - Practice Problems"
-author: "ECON 306"
+title: "1.4 — Perfect Competition — Practice Problems"
+author: "ECON 326 — Spring 2023"
 date: ""
 output: pdf_document
 ---
@@ -9,34 +9,27 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-### 1. Suppose you can watch movies in the theater ($t$) and streaming at home ($s$), and earn utility according to the utility function: 
-$$u(t,s)=4ts$$
-
-Where your marginal utilities are: 
+A firm has short-run costs given by:
 $$\begin{aligned}
-MU_t&=4s\\
-MU_s&=4t\\ \end{aligned}$$
+C(q)&=q^2+1\\
+MC(q)&=2q\\ \end{aligned}$$
 
-#### a. Put $t$ on the horizontal axis and $s$ on the vertical axis. Write an equation for $MRS_{t,s}$ 
+### 1. Write an equation for fixed costs, $f$.
 
-#### b. Would bundles of $(2,2)$ and $(1,4)$ be on the same indifference curve?
+### 2. Write an equation for variable costs, $VC(q)$.
 
-#### c. Sketch this indifference curve. 
+### 3. Write an equation for average fixed costs, $AFC(q)$.
 
-\clearpage
+### 4. Write an equation for average variable costs, $AVC(q)$.
 
-### 2. You can get utility from consuming Soda $(s)$ and Hot dogs $(h)$, according to the utility function:
+### 5. Write an equation for average (total) costs, $AC(q)$.
 
-$$u(s,h)=\sqrt{sh}$$
+### 6. Suppose the firm is in a competitive market, and the current market price is $4, how many units of output maximize profits?
 
-The marginal utilities are:
+### 7. How much profit will this firm earn?
 
-$$\begin{aligned}
-MU_s&=0.5s^{-0.5}h^{0.5}	\\
-MU_h&=0.5s^{0.5}h^{-0.5} \\ \end{aligned}$$
+### 8. Below what market price would the firm shut down in the short run if it were earning losses? 
 
-You have an income of $12, the price of Soda is $2, and the price of a Hot dog is $3. Put Soda on the horizontal axis and Hot dogs on the vertical axis.
+### 9. At what market price would the firm break even $(\pi=0)$?
 
-### a. What is your utility-maximizing bundle of Soda and Hot dogs?
-
-### b. How much utility does this provide?
+### 10. Write out the equation for the firm's short run supply curve and long run supply curve.

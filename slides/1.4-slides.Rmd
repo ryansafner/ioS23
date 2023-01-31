@@ -178,26 +178,6 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 ---
 
-# Firm Supply Decisions in the Short Run vs. Long Run
-
-.pull-left[
-.center[
-![:scale 75%](../images/perfectcompetitionentrymeme.jpg)
-]
-
-]
-
---
-
-.pull-right[
-.center[
-![:scale 55%](../images/perfectcompetitionsnapchat.png)
-]
-]
-
----
-
-
 # Firm's Long Run Supply: Visualizing
 
 .pull-left[
@@ -356,7 +336,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 ---
 
-# Production Rules, Updated:
+# Profit Maximization Rules for Firms:
 
 .pull-left[
 .smaller[
@@ -365,8 +345,26 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 **2. Profit $\pi=q[p-AC(q)]$**
 
 **3. Shut down in _short run_ if $p<AVC(q)$**
+$$AVC(q)_{min} = MC(q)$$
 
-.slate[**4. Exit in _long run_ if `\\(p<AC(q)\\)`**]
+.center[
+Firm’s .red[short run supply curve]:
+]
+$$\begin{cases}
+p=MC(q) & \text{if } p \geq AVC \\
+q=0 & \text{If } p < AVC\\ \end{cases}$$
+
+
+**4. Exit in _long run_ if `\\(p<AC(q)\\)`**
+
+$$AC_{min}(q) = MC(q)$$
+
+.center[
+Firm’s .red[long run supply curve]:
+]
+$$\begin{cases}
+p=MC(q) & \text{if } p \geq AC \\
+q=0 & \text{If } p < AC\\ \end{cases}$$
 
 ]
 ]
@@ -1062,6 +1060,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 - .hi-purple[The marginal firm earns normal economic profit (of zero)]
   - Otherwise, if $p>AC(q)$ for that firm, would induce *more* entry into industry!
 
+- Generalized, .hi[No-Profitable Entry Condition]: in equilibrium, no firm can earn positive profits by entering the industry
 ]
 
 ---
@@ -1442,6 +1441,37 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 ![](../images/disappear.jpg)
 ]
+]
+
+---
+
+# Example
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.smallest[
+.green[**Example**]: Daniel’s Midland Archers has the following cost structure for producing archery bows:
+
+
+$$\begin{align*}
+C(q) &= 2q^2+3q+50\\
+MC(q) &=4q+3\\
+\end{align*}$$
+
+Suppose the market is very competitive and the current market price is $15.
+]
+
+]
+
+.quitesmall[
+1. How many bows should the firm produce?
+
+2. How much profit will it earn per day?
+
+3. At what price would the firm break even?
+
+4. At what price should the firm shut down in the short run?
+
+5. Write equations for firm’s short-run supply curve and long-run supply curve.
 ]
 
 ---

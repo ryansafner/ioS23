@@ -42,7 +42,10 @@ website:
               href: content/1.1-content.qmd
             - text: "1.2 — Technology and Cost"
               href: content/1.2-content.qmd
-
+            - text: "1.3 — Perfect Competition I"
+              href: content/1.3-content.qmd
+            - text: "1.4 — Perfect Competition II"
+              href: content/1.4-content.qmd
     - title: "Assignments"
       style: "docked"
       search: false

@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>1.3 — Perfect Competition I</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ryan Safner" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/hygge.css" rel="stylesheet" />
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
+    <script src="libs/xaringanExtra-progressBar/progress-bar.js"></script>
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+class: title-slide
+
+# 1.3 — Perfect Competition I
+
+## ECON 326 • Industrial Organization • Spring 2023
+
+### Ryan Safner&lt;br&gt; Associate Professor of Economics &lt;br&gt; &lt;a href="mailto:safner@hood.edu"&gt;&lt;i class="fa fa-paper-plane fa-fw"&gt;&lt;/i&gt;safner@hood.edu&lt;/a&gt; &lt;br&gt; &lt;a href="https://github.com/ryansafner/ioS23"&gt;&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;ryansafner/ioS23&lt;/a&gt;&lt;br&gt; &lt;a href="https://ioS23.classes.ryansafner.com"&gt; &lt;i class="fa fa-globe fa-fw"&gt;&lt;/i&gt;ioS23.classes.ryansafner.com&lt;/a&gt;&lt;br&gt;
+---
+
+class: inverse
+
+# Outline
+
+### [Short Run Production Concepts](#27)
+### [Costs in the Short Run](#37)
+### [Costs in the Long Run](#65)
+### [Revenues](#75)
+
+---
+
+# Recall: The Firm's Two Problems
+
+.pull-left[
+.smallest[
+1&lt;sup&gt;st&lt;/sup&gt; Stage: .hi[firm's profit maximization problem]: 
+
+1. **Choose:** .hi-blue[ &lt; output &gt;]
+
+2. **In order to maximize:** .hi-green[&lt; profits &gt;]
+
+2&lt;sup&gt;nd&lt;/sup&gt; Stage: .hi[firm's cost minimization problem]: 
+
+1. **Choose:** .hi-blue[ &lt; inputs &gt;]
+
+2. **In order to _minimize_:** .hi-green[&lt; cost &gt;]
+
+3. **Subject to:** .hi-red[&lt; producing the optimal output &gt;]
+
+- Minimizing costs `\(\iff\)` maximizing profits
+]
+]
+
+.pull-right[
+
+.center[
+![](../images/management.jpg)
+]
+]
+
+---
+
+# Visualizing Total Profit As `\(R(q)-C(q)\)`
+
+.pull-left[
+
+- `\(\color{green}{\pi(q)}=\color{blue}{R(q)}-\color{red}{C(q)}\)`
+
+]
+
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-1-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Visualizing Total Profit As `\(R(q)-C(q)\)`
+
+.pull-left[
+
+- `\(\color{green}{\pi(q)}=\color{blue}{R(q)}-\color{red}{C(q)}\)`
+
+]
+
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-2-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Visualizing Total Profit As `\(R(q)-C(q)\)`
+
+.pull-left[
+
+- `\(\color{green}{\pi(q)}=\color{blue}{R(q)}-\color{red}{C(q)}\)`
+
+- Graph: find `\(q^*\)` to max `\(\pi \implies q^*\)` where max distance between `\(R(q)\)` and `\(C(q)\)`
+
+]
+
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-3-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Visualizing Total Profit As `\(R(q)-C(q)\)`
+
+.pull-left[
+
+- `\(\color{green}{\pi(q)}=\color{blue}{R(q)}-\color{red}{C(q)}\)`
+
+- Graph: find `\(q^*\)` to max `\(\pi \implies q^*\)` where max distance between `\(R(q)\)` and `\(C(q)\)`
+
+- Slopes must be equal:
+`$$\color{blue}{MR(q)}=\color{red}{MC(q)}$$`
+
+
+]
+
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-4-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Visualizing Total Profit As `\(R(q)-C(q)\)`
+
+.pull-left[
+
+- `\(\color{green}{\pi(q)}=\color{blue}{R(q)}-\color{red}{C(q)}\)`
+
+- Graph: find `\(q^*\)` to max `\(\pi \implies q^*\)` where max distance between `\(R(q)\)` and `\(C(q)\)`
+
+- Slopes must be equal:
+`$$\color{blue}{MR(q)}=\color{red}{MC(q)}$$`
+
+.smallest[
+- At `\(q^*=5\)`:
+  - `\(\color{blue}{R(q)=50}\)`
+  - `\(\color{red}{C(q)=40}\)`
+  - `\(\color{green}{\pi(q)=10}\)`
+]
+]
+
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-5-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Visualizing Profit Per Unit As `\(MR(q)\)` and `\(MC(q)\)`
+
+.pull-left[
+
+- At low output `\(q&lt;q^*\)`, can increase `\(\pi\)` by producing *more*: `\(\color{blue}{MR(q)}&gt;\color{red}{MC(q)}\)`
+
+]
+
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-6-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Visualizing Profit Per Unit As `\(MR(q)\)` and `\(MC(q)\)`
+
+.pull-left[
+
+- At high output `\(q&gt;q^*\)`, can increase `\(\pi\)` by producing *less*: `\(\color{blue}{MR(q)}&lt;\color{red}{MC(q)}\)`
+
+]
+
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-7-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Visualizing Profit Per Unit As `\(MR(q)\)` and `\(MC(q)\)`
+
+.pull-left[
+
+- `\(\pi\)` is *maximized* where `\(\color{blue}{MR(q)}=\color{red}{MC(q)}\)`
+
+]
+
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-8-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+class: inverse, center, middle
+
+# Comparative Statics
+
+---
+
+# If Market Price Changes I
+
+.pull-left[
+
+- Suppose the market price **increases**
+
+- Firm (always setting .blue[MR]=.red[MC]) will respond by **producing more**  
+
+]
+
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-9-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# If Market Price Changes II
+
+.pull-left[
+
+- Suppose the market price **decreases**
+
+- Firm (always setting .blue[MR]=.red[MC]) will respond by **producing less**  
+
+]
+
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-10-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# The Firm’s Supply Curve
+
+.pull-left[
+
+- .hi-purple[The firm’s marginal cost curve is its supply curve]&lt;sup&gt;.magenta[‡]&lt;/sup&gt;
+`$$\color{red}{p=MC(q)}$$`
+  - How it will supply the optimal amount of output in response to the market price
+  - .hi-purple[Firm always sets its price equal to its marginal cost]
+
+]
+
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-11-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.footnote[&lt;sup&gt;.magenta[‡]&lt;/sup&gt; Mostly...there is an important **exception** we will see shortly!]
+
+---
+
+class: inverse, center, middle 
+
+# Calculating Profit
+
+---
+
+# Calculating (Average) Profit as AR(q)-AC(q)
+
+.pull-left[
+
+- Profit is 
+`$$\pi(q)=R(q)-C(q)$$`
+
+]
+
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-12-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Calculating (Average) Profit as AR(q)-AC(q)
+
+.pull-left[
+
+- Profit is 
+`$$\pi(q)=R(q)-C(q)$$`
+
+- Profit per unit can be calculated as:
+`$$\begin{align*}
+\frac{\pi(q)}{q}&amp;=\color{blue}{AR(q)}-\color{orange}{AC(q)}\\
+&amp;=\color{blue}{p}-\color{orange}{AC(q)}\\
+\end{align*}$$`
+
+]
+
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-13-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+# Calculating (Average) Profit as AR(q)-AC(q)
+
+.pull-left[
+
+- Profit is 
+`$$\pi(q)=R(q)-C(q)$$`
+
+- Profit per unit can be calculated as:
+`$$\begin{align*}
+\frac{\pi(q)}{q}&amp;=\color{blue}{AR(q)}-\color{orange}{AC(q)}\\
+&amp;=\color{blue}{p}-\color{orange}{AC(q)}\\
+\end{align*}$$`
+
+- Multiply by `\(q\)` to get total profit:
+`$$\pi(q)=q\left[\color{blue}{p}-\color{orange}{AC(q)} \right]$$`
+
+]
+
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-14-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Calculating (Average) Profit as AR(q)-AC(q)
+
+.pull-left[
+
+- At market price of .blue[p* = $10]
+
+- At q* = 5 (per unit):
+
+- At q* = 5 (totals):
+
+]
+
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-15-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Calculating (Average) Profit as AR(q)-AC(q)
+
+.pull-left[
+
+- At market price of .blue[p* = $10]
+
+- At q* = 5 (per unit):
+  - .blue[AR(5) = $10/unit]
+
+- At q* = 5 (totals):
+  - .blue[R(5) = $50]
+]
+
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-16-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Calculating (Average) Profit as AR(q)-AC(q)
+
+.pull-left[
+
+- At market price of .blue[p* = $10]
+
+- At q* = 5 (per unit):
+  - .blue[AR(5) = $10/unit]
+  - .orange[AC(5) = $7/unit]
+
+- At q* = 5 (totals):
+  - .blue[R(5) = $50]
+  - .red[C(5) = $35]
+]
+
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-17-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Calculating (Average) Profit as AR(q)-AC(q)
+
+.pull-left[
+
+- At market price of .blue[p* = $10]
+
+- At q* = 5 (per unit):
+  - .blue[AR(5) = $10/unit]
+  - .orange[AC(5) = $7/unit]
+  - .green[A`\\(\pi\\)`(5) = $3/unit]
+
+- At q* = 5 (totals):
+  - .blue[R(5) = $50]
+  - .red[C(5) = $35]
+  - .green[`\\(\pi\\)` = $15]
+]
+
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-18-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Calculating (Average) Profit as AR(q)-AC(q)
+
+.pull-left[
+
+- At market price of .blue[p* = $2]
+
+- At q* = 1 (per unit):
+
+- At q* = 1 (totals):
+
+]
+
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-19-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Calculating (Average) Profit as AR(q)-AC(q)
+
+.pull-left[
+
+- At market price of .blue[p* = $2]
+
+- At q* = 1 (per unit):
+  - .blue[AR(1) = $2/unit]
+
+- At q* = 1 (totals):
+  - .blue[R(1) = $2]
+]
+
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-20-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Calculating (Average) Profit as AR(q)-AC(q)
+
+.pull-left[
+
+- At market price of .blue[p* = $2]
+
+- At q* = 1 (per unit):
+  - .blue[AR(1) = $2/unit]
+  - .orange[AC(1) = $10/unit]
+
+- At q* = 1 (totals):
+  - .blue[R(1) = $2]
+  - .red[C(1) = $10]
+
+]
+
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-21-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Calculating (Average) Profit as AR(q)-AC(q)
+
+.pull-left[
+
+- At market price of .blue[p* = $2]
+
+- At q* = 1 (per unit):
+  - .blue[AR(1) = $2/unit]
+  - .orange[AC(1) = $10/unit]
+  - .green[A`\\(\pi\\)`(1) = -$8/unit]
+
+- At q* = 1 (totals):
+  - .blue[R(1) = $2]
+  - .red[C(1) = $10]
+  - .green[`\\(\pi\\)`(1) = -$8]
+]
+
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-22-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+class: inverse, center, middle
+
+# Short-Run Shut-Down Decisions
+
+---
+
+# Short-Run Shut-Down Decisions
+
+.pull-left[
+
+- What if a firm's profits at `\(q^*\)` are **negative** (i.e. it earns **losses**)?
+
+- .hi-purple[Should it produce at all?]
+
+]
+
+.pull-right[
+.center[
+![:scale 90%](../images/emptywarehouse.jpg)
+]
+]
+
+---
+
+# Short-Run Shut-Down Decisions
+
+.pull-left[
+
+- Suppose firm chooses to produce **nothing** `\((q=0)\)`:
+
+- If it has **fixed costs** `\((f&gt;0)\)`, its profits are:
+
+`$$\begin{align*}
+\pi(q)&amp;=pq-C(q)\\
+\end{align*}$$`
+
+]
+
+.pull-right[
+.center[
+![:scale 90%](../images/emptywarehouse.jpg)
+]
+]
+
+---
+
+# Short-Run Shut-Down Decisions
+
+.pull-left[
+
+- Suppose firm chooses to produce **nothing** `\((q=0)\)`:
+
+- If it has **fixed costs** `\((f&gt;0)\)`, its profits are:
+
+`$$\begin{align*}
+\pi(q)&amp;=pq-\color{red}{C(q)}\\
+\pi(q)&amp;=pq-\color{red}{f-VC(q)}\\
+\end{align*}$$`
+
+]
+
+.pull-right[
+.center[
+![:scale 90%](../images/emptywarehouse.jpg)
+]
+]
+
+---
+
+# Short-Run Shut-Down Decisions
+
+.pull-left[
+
+- Suppose firm chooses to produce **nothing** `\((q=0)\)`:
+
+- If it has **fixed costs** `\((f&gt;0)\)`, its profits are:
+
+`$$\begin{align*}
+\pi(q)&amp;=pq-C(q)\\
+\pi(q)&amp;=pq-f-VC(q)\\
+\pi(0)&amp;=-f\\
+\end{align*}$$`
+
+i.e. it (still) pays its fixed costs
+]
+
+.pull-right[
+.center[
+![:scale 90%](../images/emptywarehouse.jpg)
+]
+]
+
+---
+
+# Short-Run Shut-Down Decisions 
+
+.pull-left[
+- A firm should choose to produce **no output** `\((q=0)\)` only when:  
+
+`$$\begin{align*}
+\pi \text{ from producing} &amp;&lt; \pi \text{ from not producing}\\
+\end{align*}$$`
+
+]
+
+---
+
+# Short-Run Shut-Down Decisions 
+
+.pull-left[
+- A firm should choose to produce **no output** `\((q=0)\)` only when:  
+
+`$$\begin{align*}
+\pi \text{ from producing} &amp;&lt; \pi \text{ from not producing}\\
+\pi(q) &amp;&lt; -f \\
+\end{align*}$$`
+]
+
+---
+
+# Short-Run Shut-Down Decisions 
+
+.pull-left[
+- A firm should choose to produce **no output** `\((q=0)\)` only when:  
+
+`$$\begin{align*}
+\pi \text{ from producing} &amp;&lt; \pi \text{ from not producing}\\
+\pi(q) &amp;&lt; -f \\
+pq-VC(q)-f &amp;&lt;-f\\
+\end{align*}$$`
+
+]
+
+---
+
+# Short-Run Shut-Down Decisions 
+
+.pull-left[
+- A firm should choose to produce **no output** `\((q=0)\)` only when:  
+
+`$$\begin{align*}
+\pi \text{ from producing} &amp;&lt; \pi \text{ from not producing}\\
+\pi(q) &amp;&lt; -f \\
+pq-VC(q)-f &amp;&lt;-f\\
+pq-VC(q) &amp;&lt; 0\\
+\end{align*}$$`
+
+]
+
+---
+
+# Short-Run Shut-Down Decisions 
+
+.pull-left[
+- A firm should choose to produce **no output** `\((q=0)\)` only when:  
+
+`$$\begin{align*}
+\pi \text{ from producing} &amp;&lt; \pi \text{ from not producing}\\
+\pi(q) &amp;&lt; -f \\
+pq-VC(q)-f &amp;&lt;-f\\
+pq-VC(q) &amp;&lt; 0\\
+pq &amp;&lt; VC(q)\\
+\end{align*}$$`
+
+]
+
+---
+
+# Short-Run Shut-Down Decisions 
+
+.pull-left[
+- A firm should choose to produce **no output** `\((q=0)\)` only when:  
+
+`$$\begin{align*}
+\pi \text{ from producing} &amp;&lt; \pi \text{ from not producing}\\
+\pi(q) &amp;&lt; -f \\
+pq-VC(q)-f &amp;&lt;-f\\
+pq-VC(q) &amp;&lt; 0\\
+pq &amp;&lt; VC(q)\\
+\color{red}{p} &amp; \color{red}{&lt;} \color{red}{AVC(q)}\\
+\end{align*}$$`
+
+- .hi[Shut down price]: firm will shut down production *in the short run* when `\(p&lt;AVC(q)\)`
+
+]
+
+.pull-right[
+.center[
+![:scale 90%](../images/shutitdown.jpg)
+]
+]
+
+---
+
+class: inverse, center, middle
+
+# The Firm’s Short Run Supply Decision
+
+---
+
+# The Firm’s Short Run Supply Decision
+
+.pull-left[
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-23-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# The Firm's Short Run Supply Decision
+
+.pull-left[
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-24-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# The Firm's Short Run Supply Decision
+
+.pull-left[
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-25-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# The Firm's Short Run Supply Decision
+
+.pull-left[
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-26-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+]
+
+---
+
+# The Firm's Short Run Supply Decision
+
+.pull-left[
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-27-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+]
+
+---
+
+# The Firm's Short Run Supply Decision
+
+.pull-left[
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-28-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+.center[
+Firm’s .red[short run supply curve]:
+]
+`$$\begin{cases}
+p=MC(q) &amp; \text{if } p \geq AVC \\
+q=0 &amp; \text{If } p &lt; AVC\\ \end{cases}$$`
+]
+
+---
+
+# The Firm's Short Run Supply Decision
+
+.pull-left[
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-29-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+.center[
+Firm’s .red[short run supply curve]:
+]
+`$$\begin{cases}
+p=MC(q) &amp; \text{if } p \geq AVC \\
+q=0 &amp; \text{If } p &lt; AVC\\ \end{cases}$$`
+]
+
+---
+
+# Summary:
+
+**1. Choose `\(q^*\)` such that `\(MR(q)=MC(q)\)`**
+
+--
+
+**2. Profit `\(\pi=q[p-AC(q)]\)`**
+
+--
+
+**3. Shut down if `\(p&lt;AVC(q)\)`**
+
+--
+
+.center[
+Firm's short run (inverse) supply:
+]
+
+`$$\begin{cases}
+p=MC(q) &amp; \text{if } p \geq AVC\\
+q=0 &amp; \text{If } p &lt; AVC\\ \end{cases}$$`
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

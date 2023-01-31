@@ -1,0 +1,1697 @@
+---
+title: "1.4 — Perfect Competition II"
+author: 'Ryan Safner'
+#date:
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    seal: false
+    css: [custom.css, "hygge"] #, metropolis, metropolis-fonts
+    nature:
+      beforeInit: ["macros.js", "https://platform.twitter.com/widgets.js"] # first is for rescaling images , second is for embedding tweets, https://github.com/yihui/xaringan/issues/100
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+    includes:
+      in_header: header.html # for font awesome, used in title  
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo=F,
+                      message=F,
+                      warning=F,
+                      fig.retina = 3,
+                      fig.align = "center")
+library("tidyverse")
+library("ggrepel")
+library("fontawesome")
+xaringanExtra::use_tile_view()
+xaringanExtra::use_tachyons()
+xaringanExtra::use_freezeframe()
+xaringanExtra::use_progress_bar()
+
+update_geom_defaults("label", list(family = "Fira Sans Condensed"))
+update_geom_defaults("text", list(family = "Fira Sans Condensed"))
+
+set.seed(256)
+
+theme_slides <- theme_light() + 
+  theme(
+    text = element_text(family = "Fira Sans", size = 24)
+  )
+
+```
+
+class: title-slide
+
+# 1.4 — Perfect Competition II
+
+## ECON 326 • Industrial Organization • Spring 2023
+
+### Ryan Safner<br> Associate Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/ioS23"><i class="fa fa-github fa-fw"></i>ryansafner/ioS23</a><br> <a href="https://ioS23.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>ioS23.classes.ryansafner.com</a><br>
+---
+
+class: inverse
+
+# Outline
+
+### [Short Run Production Concepts](#27)
+### [Costs in the Short Run](#37)
+### [Costs in the Long Run](#65)
+### [Revenues](#75)
+
+---
+
+class: inverse, center, middle
+
+# Firm's *Long Run* Supply Decisions
+
+---
+
+# Firm Decisions in the Long Run I
+
+.pull-left[
+
+```{r, fig.retina=3}
+mc<-function(x){2*x}
+ac<-function(x){x+9/x}
+avc<-function(x){x}
+
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=mc, geom="line", size=2, color = "red")+
+    geom_label(aes(x=9.5,y=mc(9.5)), color = "red", label="MC(q)", size = 4)+
+  stat_function(fun=ac, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=9.5,y=ac(9.5)), color = "orange", label="AC(q)", size = 4)+
+  stat_function(fun=avc, geom="line", size=2, color = "brown")+
+    geom_label(aes(x=9.5,y=avc(9.5)), color = "brown", label="AVC(q)", size = 4)+
+  # break even line
+  geom_hline(yintercept=6, size=1, linetype="dashed")+
+  geom_label(x=9,y=6, label="Break-even Price", size =5, color="orange")+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,20,2),
+                     labels=scales::dollar,
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  labs(x = "Output, q",
+       y = "$/Unit")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+
+```
+
+]
+
+.pull-right[
+
+- $\color{orange}{AC(q)_{min}}$ at a market price of $6
+  - Firm earns .hi[“normal” economic profits]
+
+- At any market price **below** $6.00, firm earns **losses**
+  - Short Run: firm shuts down if $p<\color{brown}{AVC(q)}$
+
+- At any market price **above** $6.00, firm earns .hi[“supernormal” profits] (>0)
+
+]
+
+---
+
+# Firm Supply Decisions in the Short Run vs. Long Run
+
+.pull-left[
+- .hi-purple[Short run]: firms that shut down $(q^*=0)$ stuck in market, incur fixed costs $\pi=-f$
+]
+
+
+.pull-right[
+.center[
+]
+]
+
+---
+
+# Firm Supply Decisions in the Short Run vs. Long Run
+
+.pull-left[
+- .hi-purple[Short run]: firms that shut down $(q^*=0)$ stuck in market, incur fixed costs $\pi=-f$
+
+- .hi-purple[Long run]: firms earning losses $(\pi < 0)$ can .hi[exit] the market and earn $\pi=0$
+  - No more fixed costs, firms can sell/abandon $f$ at $q^*=0$
+]
+
+
+.pull-right[
+.center[
+![](../images/goingoutofbusiness.jpg)
+]
+]
+
+---
+
+# Firm Supply Decisions in the Short Run vs. Long Run
+
+.pull-left[
+- .hi-purple[Short run]: firms that shut down $(q^*=0)$ stuck in market, incur fixed costs $\pi=-f$
+
+- .hi-purple[Long run]: firms earning losses $(\pi < 0)$ can .hi[exit] the market and earn $\pi=0$
+  - No more fixed costs, firms can sell/abandon $f$ at $q^*=0$
+
+- Entrepreneurs not *currently* in market can .hi[enter] and produce, if entry would earn them $\pi>0$
+]
+
+
+.pull-right[
+.center[
+![](../images/goingoutofbusiness.jpg)
+
+![:scale 75%](../images/entry.jpg)
+]
+]
+
+---
+
+# Firm Supply Decisions in the Short Run vs. Long Run
+
+.pull-left[
+.center[
+![:scale 75%](../images/perfectcompetitionentrymeme.jpg)
+]
+
+]
+
+--
+
+.pull-right[
+.center[
+![:scale 55%](../images/perfectcompetitionsnapchat.png)
+]
+]
+
+---
+
+
+# Firm's Long Run Supply: Visualizing
+
+.pull-left[
+
+```{r, fig.retina=3}
+marginal<-function(x){3*x^2-8*x+8}
+average<-function(x){x^2-4*x+8+10/x}
+averagev<-function(x){x^2-4*x+8}
+price1<-function(x){10}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_rect(xmin=0, xmax=7, ymin=0, ymax=4, fill="red", alpha=0.3)+
+  stat_function(fun=marginal, geom="line", size=2, color = "red")+
+    geom_label(aes(x=3.25,y=marginal(3.5)), color = "red", label=expression(MC(q)), size = 3)+
+  stat_function(fun=averagev, geom="line", size=2, color = "brown")+
+    geom_label(aes(x=5,y=averagev(5)), color = "brown", label=expression(AVC(q)), size = 3)+
+  stat_function(fun=average, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=5.5,y=average(5.5)), color = "orange", label=expression(AC(q)), size = 3)+
+    scale_x_continuous(breaks=NULL,
+                       limits=c(0,7),
+                       expand=c(0,0))+
+  scale_y_continuous(breaks=NULL,
+                     limits=c(0,20),
+                     expand=c(0,0))+
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+  labs(x = "Output, q",
+       y = "Per-Unit Costs ($)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
+  
+  geom_hline(yintercept=8, size=1, linetype="dashed")+
+  geom_label(x=6,y=8, label="Break Even Price", size =5, color="orange")+
+  geom_hline(yintercept=4, size=1, linetype="dashed")+
+  geom_label(x=6,y=4, label="Shut Down Price", size =5, color="brown")+
+  geom_segment(x=0,xend=0,y=0,yend=4, color="red", size=5)+
+  geom_segment(x=0,xend=2,y=4,yend=4, color="red", size=3.5)+
+  stat_function(fun=marginal, xlim=c(2,10), geom="line", size=3.5, color = "red")+
+    geom_label(aes(x=3,y=marginal(3)), color = "red", label="SUPPLY", size = 5)
+```
+]
+
+.pull-right[
+
+.hi-red[When `\\(p<AVC\\)`]
+
+- Profits are *negative*
+
+- .hi-purple[Short run]: **shut down** production
+  - Firm loses more $\pi$ by producing than by not producing
+
+- .hi-purple[Long run]: firms in industry **exit** the industry
+  - *No* new firms will *enter* this industry
+]
+
+---
+
+# Firm's Long Run Supply: Visualizing
+
+.pull-left[
+
+```{r, fig.retina=3}
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_rect(xmin=0, xmax=7, ymin=0, ymax=4, fill="red", alpha=0.3)+
+  geom_rect(xmin=0, xmax=7, ymin=4, ymax=8, fill="yellow", alpha=0.3)+
+  stat_function(fun=marginal, geom="line", size=2, color = "red")+
+    geom_label(aes(x=3.25,y=marginal(3.5)), color = "red", label=expression(MC(q)), size = 3)+
+  stat_function(fun=averagev, geom="line", size=2, color = "brown")+
+    geom_label(aes(x=5,y=averagev(5)), color = "brown", label=expression(AVC(q)), size = 3)+
+  stat_function(fun=average, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=5.5,y=average(5.5)), color = "orange", label=expression(AC(q)), size = 3)+
+    scale_x_continuous(breaks=NULL,
+                       limits=c(0,7),
+                       expand=c(0,0))+
+  scale_y_continuous(breaks=NULL,
+                     limits=c(0,20),
+                     expand=c(0,0))+
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+  labs(x = "Output, q",
+       y = "Per-Unit Costs ($)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
+  
+  geom_hline(yintercept=8, size=1, linetype="dashed")+
+  geom_label(x=6,y=8, label="Break Even Price", size =5, color="orange")+
+  geom_hline(yintercept=4, size=1, linetype="dashed")+
+  geom_label(x=6,y=4, label="Shut Down Price", size =5, color="brown")+
+  geom_segment(x=0,xend=0,y=0,yend=4, color="red", size=5)+
+  geom_segment(x=0,xend=2,y=4,yend=4, color="red", size=3.5)+
+  stat_function(fun=marginal, xlim=c(2,10), geom="line", size=3.5, color = "red")+
+    geom_label(aes(x=3,y=marginal(3)), color = "red", label="SUPPLY", size = 5)
+```
+]
+
+.pull-right[
+
+.hi-yellow[When `\\(AVC<p<AC\\)`]
+
+- Profits are *negative*
+
+- .hi-purple[Short run]: **continue** production
+  - Firm loses *less* $\pi$ by producing than by *not* producing
+
+- .hi-purple[Long run]: firms in industry **exit** the industry
+  - *No* new firms will *enter* this industry
+]
+
+---
+
+# Firm's Long Run Supply: Visualizing
+
+.pull-left[
+
+```{r, fig.retina=3}
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_rect(xmin=0, xmax=7, ymin=0, ymax=4, fill="red", alpha=0.3)+
+  geom_rect(xmin=0, xmax=7, ymin=4, ymax=8, fill="yellow", alpha=0.3)+
+  geom_rect(xmin=0, xmax=7, ymin=8, ymax=20, fill="green", alpha=0.3)+
+  stat_function(fun=marginal, geom="line", size=2, color = "red")+
+    geom_label(aes(x=3.25,y=marginal(3.5)), color = "red", label=expression(MC(q)), size = 3)+
+  stat_function(fun=averagev, geom="line", size=2, color = "brown")+
+    geom_label(aes(x=5,y=averagev(5)), color = "brown", label=expression(AVC(q)), size = 3)+
+  stat_function(fun=average, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=5.5,y=average(5.5)), color = "orange", label=expression(AC(q)), size = 3)+
+    scale_x_continuous(breaks=NULL,
+                       limits=c(0,7),
+                       expand=c(0,0))+
+  scale_y_continuous(breaks=NULL,
+                     limits=c(0,20),
+                     expand=c(0,0))+
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+  labs(x = "Output, q",
+       y = "Per-Unit Costs ($)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
+  
+  geom_hline(yintercept=8, size=1, linetype="dashed")+
+  geom_label(x=6,y=8, label="Break Even Price", size =5, color="orange")+
+  geom_hline(yintercept=4, size=1, linetype="dashed")+
+  geom_label(x=6,y=4, label="Shut Down Price", size =5, color="brown")+
+  geom_segment(x=0,xend=0,y=0,yend=4, color="red", size=5)+
+  geom_segment(x=0,xend=2,y=4,yend=4, color="red", size=3.5)+
+  stat_function(fun=marginal, xlim=c(2,10), geom="line", size=3.5, color = "red")+
+    geom_label(aes(x=3,y=marginal(3)), color = "red", label="SUPPLY", size = 5)
+```
+]
+
+.pull-right[
+
+.hi-green[When `\\(AC<p\\)`]
+
+- Profits are *positive*
+
+- .hi-purple[Short run]: **continue** production
+  - Firm earning profits
+
+- .hi-purple[Long run]: firms in industry **stay** in industry
+  - **New** firms will **enter** this industry
+]
+
+---
+
+# Production Rules, Updated:
+
+.pull-left[
+.smaller[
+**1. Choose $q^*$ such that $MR(q)=MC(q)$**
+
+**2. Profit $\pi=q[p-AC(q)]$**
+
+**3. Shut down in _short run_ if $p<AVC(q)$**
+
+.slate[**4. Exit in _long run_ if `\\(p<AC(q)\\)`**]
+
+]
+]
+
+.pull-right[
+.center[
+![](../images/management.jpg)
+]
+]
+
+---
+
+class: inverse, center, middle
+
+# Market Entry and Exit
+
+---
+
+# Exit, Entry, and Long Run Industry Equilibrium I
+
+.pull-left[
+
+- Now we must combine .hi-purple[optimizing] *individual* firms with *market-wide* adjustment to .hi-purple[equilibrium]
+
+- Since $\pi = [p-AC(q)]q$, in the **long run**, profit-seeking firms will:
+]
+
+.pull-right[
+]
+
+---
+
+# Exit, Entry, and Long Run Industry Equilibrium I
+
+.pull-left[
+
+- Now we must combine .hi-purple[optimizing] *individual* firms with *market-wide* adjustment to .hi-purple[equilibrium]
+
+- Since $\pi = [p-AC(q)]q$, in the **long run**, profit-seeking firms will:
+  - .hi-purple[Enter] markets where $p>AC(q)$
+]
+
+.pull-right[
+.center[
+![:scale 75%](../images/entry.jpg)
+]
+]
+
+---
+
+# Exit, Entry, and Long Run Industry Equilibrium I
+
+.pull-left[
+
+- Now we must combine .hi-purple[optimizing] *individual* firms with *market-wide* adjustment to .hi-purple[equilibrium]
+
+- Since $\pi = [p-AC(q)]q$, in the **long run**, profit-seeking firms will:
+  - .hi-purple[Enter] markets where $p>AC(q)$
+  - .hi-purple[Exit] markets where $p<AC(q)$
+]
+
+.pull-right[
+.center[
+![:scale 75%](../images/entry.jpg)
+
+![](../images/goingoutofbusiness.jpg)
+]
+]
+
+---
+
+# Exit, Entry, and Long Run Industry Equilibrium II
+
+.pull-left[
+
+- .hi-purple[Long-run equilibrium]: entry and exit ceases when .hi-purple[`\\(p=AC(q)\\)`] for all firms, implying .hi-purple[normal economic profits] of .hi-purple[`\\(\pi=0\\)`]
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/breakeven.jpg)
+]
+]
+
+---
+
+# Exit, Entry, and Long Run Industry Equilibrium II
+
+.pull-left[
+
+- .hi-purple[Long-run equilibrium]: entry and exit ceases when .hi-purple[`\\(p=AC(q)\\)`] for all firms, implying .hi-purple[normal economic profits] of .hi-purple[`\\(\pi=0\\)`]
+
+- .hi-turquoise[Long run economic profits for all firms in a _competitive_ industry are 0]
+
+- Firms must earn an *accounting* profit to stay in business
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/breakeven.jpg)
+
+]
+]
+
+---
+
+class: inverse, center, middle
+
+# Deriving the Industry Supply Curve
+
+---
+
+# The Industry Supply Curve
+
+- .hi[Industry supply curve]: horizontal sum of all individual firms' supply curves
+  - recall: $(MC(q)$ curve above $AVC_{min})$ (shut down price)
+
+- To keep it simple on the following slides:
+  - assume no fixed costs, so $AC(q)=AVC(q)$
+  - then industry supply curve is sum of individual $MC(q)$ curves above $AC(q)_{min}$
+
+---
+
+# Industry Supply Curves (Identical Firms)
+
+.tri-left[
+
+```{r, fig.retina=3, fig.height=4.5}
+mc<-function(x){2*x}
+ac<-function(x){x+9/x}
+avc<-function(x){x}
+
+
+industry_1<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=mc, geom="line", size=2, color = "red")+
+    geom_label(aes(x=9.5,y=mc(9.5)), color = "red", label="MC(q)", size = 4)+
+  stat_function(fun=ac, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=9.5,y=ac(9.5)), color = "orange", label="AC(q)", size = 4)+
+  # break even line
+  geom_hline(yintercept=6, size=1, linetype="dashed")+
+  geom_label(x=9,y=6, label="Break-even Price", size =5, color="orange")+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,20,2),
+                     labels=scales::dollar,
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  labs(x = "Output, q",
+       y = "$/Unit")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+industry_1+labs(title="Firm 1")
+```
+]
+
+.tri-middle[
+```{r, fig.retina=3, fig.height=4.5}
+industry_1+labs(title="Firm 2")
+```
+]
+
+.tri-right[
+```{r, fig.retina=3, fig.height=4.5}
+market_demand<-function(x){20-x}
+market_supply<-function(x){x}
+
+industry_tot<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=market_supply, xlim=c(6,20), geom="line", size=3, color = "red")+
+  geom_segment(x=0,xend=0,y=0,yend=6, color="red", size=5)+
+  geom_segment(x=0,xend=6,y=6,yend=6, color="red", size=3.5)+
+  geom_label(aes(x=18,y=market_supply(18)), color = "red", label="Industry Supply", size = 4)+
+      scale_x_continuous(breaks=seq(0,20,2),
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,20,2),
+                     labels=scales::dollar,
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  labs(x = "Output, q",
+       y = "$/Unit",
+       title = "Industry")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+industry_tot
+```
+
+]
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+--
+
+.smallest[
+- .red[Industry supply curve] is the horizontal sum of all individual firm's supply curves
+  - Which are each firm's marginal cost curve above its breakeven price
+]
+
+---
+
+# Industry Supply Curves (Identical Firms)
+
+.tri-left[
+
+```{r, fig.retina=3, fig.height=4.5}
+industry_1+
+  geom_hline(yintercept=10, size=2, color="blue")+
+  geom_label(x=9,y=10,label = "MR(q)", color="blue", size =4)+
+  labs(title="Firm 1")
+```
+]
+
+.tri-middle[
+```{r, fig.retina=3, fig.height=4.5}
+industry_1+
+  geom_hline(yintercept=10, size=2, color="blue")+
+  geom_label(x=9,y=10,label = "MR(q)", color="blue", size =4)+
+  labs(title="Firm 2")
+```
+]
+
+.tri-right[
+```{r, fig.retina=3, fig.height=4.5}
+industry_tot+
+  stat_function(fun=market_demand, geom="line", size=3, color = "blue")+
+    geom_label(aes(x=18,y=market_demand(18)), color = "blue", label="Industry Demand", size = 4)+
+  geom_segment(x=10,xend=10,y=0,yend=10, size=1, linetype="dashed")+
+  geom_segment(x=0,xend=10,y=10,yend=10, size=1, linetype="dashed")
+```
+
+]
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+.smallest[
+- .blue[Industry demand curve] (where equal to supply) sets market price, demand for firms
+]
+
+---
+
+# Industry Supply Curves (Identical Firms)
+
+.tri-left[
+
+```{r, fig.retina=3, fig.height=4.5}
+industry_1+
+  geom_hline(yintercept=10, size=2, color="blue")+
+  geom_label(x=9,y=10,label = "MR(q)", color="blue", size =4)+
+  geom_segment(x=5,xend=5,y=0,yend=10, size=1, linetype="dashed")+
+  geom_segment(x=0,xend=5,y=7.30,yend=7.30, size=1, linetype="dashed")+
+  geom_rect(xmin=0,xmax=5,ymin=7.3,ymax=10, fill="green", alpha=0.25)+
+  labs(title="Firm 1")
+```
+]
+
+.tri-middle[
+```{r, fig.retina=3, fig.height=4.5}
+industry_1+
+  geom_hline(yintercept=10, size=2, color="blue")+
+  geom_hline(yintercept=10, size=2, color="blue")+
+  geom_label(x=9,y=10,label = "MR(q)", color="blue", size =4)+
+  geom_segment(x=5,xend=5,y=0,yend=10, size=1, linetype="dashed")+
+  geom_segment(x=0,xend=5,y=7.30,yend=7.30, size=1, linetype="dashed")+
+  geom_rect(xmin=0,xmax=5,ymin=7.3,ymax=10, fill="green", alpha=0.25)+
+  labs(title="Firm 2")
+```
+]
+
+.tri-right[
+```{r, fig.retina=3, fig.height=4.5}
+industry_tot+
+  stat_function(fun=market_demand, geom="line", size=3, color = "blue")+
+    geom_label(aes(x=18,y=market_demand(18)), color = "blue", label="Industry Demand", size = 4)+
+  geom_segment(x=10,xend=10,y=0,yend=10, size=1, linetype="dashed")+
+  geom_segment(x=0,xend=10,y=10,yend=10, size=1, linetype="dashed")
+```
+
+]
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+.smallest[
+
+- **Short Run**: each firm is earning .hi-green[profits] $p>AC(q)$
+
+- **Long run**: induces entry by firm 3, firm 4, $\cdots$, firm $n$
+]
+--
+.smallest[
+- .hi[Long run industry equilibrium]:
+]
+---
+
+# Industry Supply Curves (Identical Firms)
+
+.tri-left[
+
+```{r, fig.retina=3, fig.height=4.5}
+industry_1+
+  geom_hline(yintercept=6, size=2, color="blue")+
+  geom_label(x=9,y=6,label = "MR(q)", color="blue", size =4)+
+  geom_segment(x=3,xend=3,y=0,yend=6, size=1, linetype="dashed")+
+  labs(title="Firm 1")
+```
+]
+
+.tri-middle[
+```{r, fig.retina=3, fig.height=4.5}
+industry_1+
+  geom_hline(yintercept=6, size=2, color="blue")+
+  geom_label(x=9,y=6,label = "MR(q)", color="blue", size =4)+
+  geom_segment(x=3,xend=3,y=0,yend=6, size=1, linetype="dashed")+
+  labs(title="Firm 2")
+```
+]
+
+.tri-right[
+```{r, fig.retina=3, fig.height=4.5}
+market_supply_2<-function(x){0.5*x-1}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=market_supply_2, xlim=c(14,20), geom="line", size=3, color = "red")+
+  geom_segment(x=0,xend=0,y=0,yend=6, color="red", size=5)+
+  geom_segment(x=0,xend=14,y=6,yend=6, color="red", size=3.5)+
+  geom_label(aes(x=18,y=market_supply_2(18)), color = "red", label="Industry Supply", size = 4)+
+      scale_x_continuous(breaks=seq(0,20,2),
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,20,2),
+                     labels=scales::dollar,
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  labs(x = "Output, q",
+       y = "$/Unit",
+       title = "Industry")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
+  stat_function(fun=market_demand, geom="line", size=3, color = "blue")+
+    geom_label(aes(x=18,y=market_demand(18)), color = "blue", label="Industry Demand", size = 4)+
+  geom_segment(x=14,xend=14,y=0,yend=6, size=1, linetype="dashed")
+```
+
+]
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+.smallest[
+- **Short Run**: each firm is earning .hi-green[profits] $p>AC(q)$
+
+- **Long run**: induces entry by firm 3, firm 4, $\cdots$, firm $n$
+
+- .hi[Long run industry equilibrium]: $p=AC(q)_{min}$, $\pi=0$ at $p=$ $6; supply becomes more **elastic**
+]
+---
+
+class: inverse, center, middle
+
+# Economic Rents, Profits, & Competition
+
+---
+
+# Back to Zero Economic Profits
+
+.pull-left[
+- Recall, we've essentially defined a .hi-purple[firm] as a completely .hi[replicable recipe] (.hi[production function]) of resources
+
+$$q=f(L,K)$$
+
+- **“Any idiot”** can enter market, buy required $(L,K)$ at prices $(w,r)$, produce $q^*$ at market price $p$ and earn the market rate of $\pi$
+
+]
+
+.pull-right[
+.center[
+![:scale 70%](../images/inputoutput.png)
+]
+]
+
+---
+
+# Back to Zero Economic Profits
+
+.pull-left[
+
+- Zero long run economic profit $\neq$ industry *disappears*, just **stops growing**
+
+- Less attractive to entrepreneurs & start ups to enter than other, more profitable industries
+
+- These are **mature** industries (again, often commodities), the backbone of the economy, just not *sexy*!
+
+]
+
+.pull-right[
+.center[
+![](../images/commodities.png)
+]
+]
+
+---
+
+# Back to Zero Economic Profits
+
+.pull-left[
+
+- All factors are paid their market price
+  - i.e. their .hi-purple[opportunity cost] — what they could earn *elsewhere* in economy
+
+- Firms earn .hi-purple[normal market rate of return]
+  - No *excess* rewards (economic profits) to attract *new* resources into the industry, nor *losses* to push resources out of industry
+  
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/breakeven.jpg)
+
+]
+]
+
+---
+
+# Back to Zero Economic Profits
+
+.pull-left[
+
+- But we've so far been imagining a market where every firm is *identical*, just a recipe “any idiot” can copy
+
+- What about if firms have *different* technologies or costs?
+  
+]
+
+.pull-right[
+.center[
+![:scale 70%](../images/inputoutput.png)
+]
+]
+
+---
+
+# Industry Supply Curves (*Different* Firms) I
+
+.pull-left[
+.smaller[
+- Firms have **.ul[different] technologies/costs** due to relative differences in:
+  - Managerial talent
+  - Worker talent
+  - Location
+  - First-mover advantage
+  - Technological secrets/IP
+  - License/permit access
+  - Political connections
+  - Lobbying
+
+- Let's derive .hi-red[industry supply curve] again, and see how this may affect profits
+]
+]
+
+.pull-right[
+.center[
+![](../images/competerents.jpg)
+]
+]
+
+---
+
+# Industry Supply Curves (*Different* Firms) II
+
+.tri-left[
+
+```{r, fig.retina=3, fig.height=4.5}
+industry_1+labs(title="Firm 1 (Lower Cost)")
+```
+]
+
+.tri-middle[
+```{r, fig.retina=3, fig.height=4.5}
+mc_worse<-function(x){2*x+4}
+ac_worse<-function(x){x+9/x+4}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=mc_worse, geom="line", size=2, color = "red")+
+    geom_label(aes(x=9.5,y=mc_worse(9.5)), color = "red", label="MC(q)", size = 4)+
+  stat_function(fun=ac_worse, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=9.5,y=ac_worse(9.5)), color = "orange", label="AC(q)", size = 4)+
+  # break even line
+  geom_hline(yintercept=10, size=1, linetype="dashed")+
+  geom_label(x=9,y=10, label="Break-even Price", size =5, color="orange")+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,20,2),
+                     labels=scales::dollar,
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  labs(x = "Output, q",
+       y = "$/Unit",
+       title = "Firm 2 (Higher Cost)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+.tri-right[
+```{r, fig.retina=3, fig.height=4.5}
+market_demand_rents<-function(x){16-0.8*x}
+
+market_supply_rents_points<-tribble(
+  ~x, ~y,
+  0,6,
+  3,6,
+  4,8,
+  8,10,
+  10,12,
+  12,14,
+  14,16,
+  16,18,
+  18,20
+)
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_path(data=market_supply_rents_points, aes(x=x,y=y), size=3, color = "red")+
+  geom_segment(x=0,xend=0,y=0,yend=6, color="red", size=5)+
+  geom_label(x=16,y=18, color = "red", label="Industry Supply", size = 4)+
+      scale_x_continuous(breaks=seq(0,20,2),
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,20,2),
+                     labels=scales::dollar,
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  labs(x = "Output, q",
+       y = "$/Unit",
+       title = "Industry")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+
+]
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+--
+
+- .red[Industry supply curve] is the horizontal sum of all individual firm's supply curves
+  - Which are each firm's marginal cost curve above its breakeven price
+
+---
+
+# Industry Supply Curves (*Different* Firms) II
+
+.tri-left[
+
+```{r, fig.retina=3, fig.height=4.5}
+industry_1+
+  geom_hline(yintercept=10, size=2, color="blue")+
+  geom_hline(yintercept=10, size=2, color="blue")+
+  geom_label(x=9,y=10,label = "MR(q)", color="blue", size =4)+
+  geom_segment(x=5,xend=5,y=0,yend=10, size=1, linetype="dashed")+
+  geom_segment(x=0,xend=5,y=7.30,yend=7.30, size=1, linetype="dashed")+
+  geom_rect(xmin=0,xmax=5,ymin=7.3,ymax=10, fill="green", alpha=0.25)+
+  labs(title="Firm 1 (Lower Cost)")
+```
+]
+
+.tri-middle[
+```{r, fig.retina=3, fig.height=4.5}
+mc_worse<-function(x){2*x+4}
+ac_worse<-function(x){x+9/x+4}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=mc_worse, geom="line", size=2, color = "red")+
+    geom_label(aes(x=9.5,y=mc_worse(9.5)), color = "red", label="MC(q)", size = 4)+
+  stat_function(fun=ac_worse, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=9.5,y=ac_worse(9.5)), color = "orange", label="AC(q)", size = 4)+
+  # break even line
+  geom_hline(yintercept=10, size=1, linetype="dashed")+
+  geom_label(x=9,y=10, label="Break-even Price", size =5, color="orange")+
+  
+geom_hline(yintercept=10, size=2, color="blue")+
+  geom_hline(yintercept=10, size=2, color="blue")+
+  geom_label(x=9,y=10,label = "MR(q)", color="blue", size =4)+
+  geom_segment(x=3,xend=3,y=0,yend=10, size=1, linetype="dashed")+
+ scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,20,2),
+                     labels=scales::dollar,
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  labs(x = "Output, q",
+       y = "$/Unit",
+       title = "Firm 2 (Higher Cost)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+.tri-right[
+```{r, fig.retina=3, fig.height=4.5}
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_path(data=market_supply_rents_points, aes(x=x,y=y), size=3, color = "red")+
+  geom_segment(x=0,xend=0,y=0,yend=6, color="red", size=5)+
+  geom_label(x=16,y=18, color = "red", label="Industry Supply", size = 4)+
+  stat_function(fun=market_demand_rents, geom="line", size=3, color = "blue")+
+    geom_label(aes(x=18,y=market_demand_rents(18)), color = "blue", label="Industry Demand", size = 4)+
+  geom_segment(x=8,xend=8,y=0,yend=10, size=1, linetype="dashed")+
+  geom_segment(x=0,xend=8,y=10,yend=10, size=1, linetype="dashed")+
+      scale_x_continuous(breaks=seq(0,20,2),
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,20,2),
+                     labels=scales::dollar,
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  labs(x = "Output, q",
+       y = "$/Unit",
+       title = "Industry")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+
+]
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+--
+
+.smallest[
+- .blue[Industry demand curve] (where equal to supply) sets market price, demand for firms
+]
+--
+
+.smallest[
+- .hi[Long run industry equilibrium]: $p=AC(q)_{min}$, $\pi=0$ for .hi-purple[marginal (highest cost) firm] (Firm 2)
+]
+
+--
+
+.smallest[
+- Firm 1 (lower cost) appears to be earning .hi-green[profits]...(we’ll come back to this)
+]
+
+---
+
+# Economic Rents and Zero Economic Profits I
+
+.pull-left[
+.center[
+![:scale 80%](../images/rentvictory.jpg)
+]
+]
+
+.pull-right[
+- .hi-purple[**Long-run equilibrium** `\\(p=AC(q)_{min}\\)` of the _marginal (highest-cost)_ firm]
+
+- .hi-purple[The marginal firm earns normal economic profit (of zero)]
+  - Otherwise, if $p>AC(q)$ for that firm, would induce *more* entry into industry!
+
+]
+
+---
+
+# Economic Rents and Zero Economic Profits I
+
+.pull-left[
+.center[
+![:scale 80%](../images/rentvictory.jpg)
+]
+]
+
+.pull-right[
+- .hi-purple[“Inframarginal” (lower-cost)] firms are using resources that earn .hi[economic rents]
+  - returns **higher** than their opportunity cost (what is needed to bring them into *this* industry)
+
+- Economic rents arise from **relative differences** between resources
+
+]
+
+---
+
+# Economic Rent
+
+.pull-left[
+.center[
+![](../images/moneyontrees.png)
+]
+]
+
+.pull-right[
+- .hi[Economic rent]: a return or payment for a resource above its normal market return (opportunity cost)
+
+- Has no allocative effect on resources, entirely “inframarginal”
+
+- A windfall return that resource owners get for free
+
+]
+
+---
+
+# Sources of Economic Rents 
+
+.pull-left[
+.center[
+![:scale 80%](../images/rentvictory.jpg)
+]
+]
+
+.pull-right[
+- .hi-purple[Some factors are relatively scarce _in the whole economy_]
+  - (talent, location, secrets, IP, licenses, being first, political favoritism)
+
+]
+
+---
+
+# Firms Using Resources with Economic Rents 
+
+.pull-left[
+.center[
+![:scale 80%](../images/rentvictory.jpg)
+]
+]
+
+.pull-right[
+- **Inframarginal** firms that employ these scarce factors gain a .hi-green[short-run profits] from having lower costs/higher productivity
+
+- ...But what will happen to the prices for their scarce factors over time? 
+
+]
+
+---
+
+# Economic Rents Examples
+
+.pull-left[
+.center[
+![:scale 70%](../images/jobsiphone.jpg)
+]
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/starbuckscounter.jpg)
+]
+]
+
+---
+
+# Economic Rents and Zero Economic Profits
+
+.pull-left[
+.center[
+![:scale 80%](../images/rentvictory.jpg)
+]
+]
+
+.pull-right[
+.smallest[
+- In a competitive market, over the long run, **profits are dissipated through competition**
+  - Rival firms willing to pay for the scarce factor to gain an advantage
+
+- Competition over acquiring the scarce factors **pushes up their prices**
+  - i.e. higher costs to firms of using the factor!
+
+- .hi-purple[Rents are included in the opportunity cost (price) for inputs over long run]
+  - Must pay a factor enough to keep it *out of other uses*
+]
+
+]
+
+---
+
+# Economic Rents and Zero Economic Profits
+
+.pull-left[
+.center[
+![:scale 80%](../images/rents.jpg)
+]
+]
+
+.pull-right[
+
+- From the firm’s perspective, over the long-run, .hi-purple[rents are included in the price (opportunity cost) of the scarce factor]
+  - Must pay a factor enough to keep it out of other uses
+
+- Firm .ul[does not earn the rents], they raise firm's costs and squeeze profits to zero!
+
+]
+
+---
+
+# Economic Rents Reduce Firms’ Profits Over Long Run
+
+.tri-left[
+
+```{r, fig.retina=3, fig.height=4.5}
+industry_1+
+  geom_hline(yintercept=10, size=2, color="blue")+
+  geom_hline(yintercept=10, size=2, color="blue")+
+  geom_label(x=9,y=10,label = "MR(q)", color="blue", size =4)+
+  geom_segment(x=5,xend=5,y=0,yend=10, size=1, linetype="dashed")+
+  geom_segment(x=0,xend=5,y=7.30,yend=7.30, size=1, linetype="dashed")+
+  geom_rect(xmin=0,xmax=5,ymin=7.3,ymax=10, fill="green", alpha=0.25)+
+  labs(title="Firm 1 (Lower Cost)")
+```
+]
+
+.tri-middle[
+```{r, fig.retina=3, fig.height=4.5}
+mc_worse<-function(x){2*x+4}
+ac_worse<-function(x){x+9/x+4}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=mc_worse, geom="line", size=2, color = "red")+
+    geom_label(aes(x=9.5,y=mc_worse(9.5)), color = "red", label="MC(q)", size = 4)+
+  stat_function(fun=ac_worse, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=9.5,y=ac_worse(9.5)), color = "orange", label="AC(q)", size = 4)+
+  # break even line
+  geom_hline(yintercept=10, size=1, linetype="dashed")+
+  geom_label(x=9,y=10, label="Break-even Price", size =5, color="orange")+
+  
+geom_hline(yintercept=10, size=2, color="blue")+
+  geom_hline(yintercept=10, size=2, color="blue")+
+  geom_label(x=9,y=10,label = "MR(q)", color="blue", size =4)+
+  geom_segment(x=3,xend=3,y=0,yend=10, size=1, linetype="dashed")+
+ scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,20,2),
+                     labels=scales::dollar,
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  labs(x = "Output, q",
+       y = "$/Unit",
+       title = "Firm 2 (Higher Cost)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+.tri-right[
+```{r, fig.retina=3, fig.height=4.5}
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_path(data=market_supply_rents_points, aes(x=x,y=y), size=3, color = "red")+
+  geom_segment(x=0,xend=0,y=0,yend=6, color="red", size=5)+
+  geom_label(x=16,y=18, color = "red", label="Industry Supply", size = 4)+
+  stat_function(fun=market_demand_rents, geom="line", size=3, color = "blue")+
+    geom_label(aes(x=18,y=market_demand_rents(18)), color = "blue", label="Industry Demand", size = 4)+
+  geom_segment(x=8,xend=8,y=0,yend=10, size=1, linetype="dashed")+
+  geom_segment(x=0,xend=8,y=10,yend=10, size=1, linetype="dashed")+
+      scale_x_continuous(breaks=seq(0,20,2),
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,20,2),
+                     labels=scales::dollar,
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  labs(x = "Output, q",
+       y = "$/Unit",
+       title = "Industry")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+
+]
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+.smallest[
+
+- **Short Run**: firm that possesses scarce rent-generating factors has lower costs, perhaps .green[short-run profits]
+]
+
+---
+
+# Economic Rents Reduce Firms’ Profits Over Long Run
+
+.tri-left[
+
+```{r, fig.retina=3, fig.height=4.5}
+ac_worse_2<-function(x){x+6/(x-2.5)+2.75}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=mc, geom="line", size=2, color = "red")+
+    geom_label(aes(x=9.5,y=mc(9.5)), color = "red", label="MC(q)", size = 4)+
+  stat_function(fun=ac_worse_2, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=9.5,y=ac_worse_2(9.5)), color = "orange", label="AC(q)", size = 4)+
+  # break even line
+  geom_hline(yintercept=10, size=1, linetype="dashed")+
+  geom_label(x=9,y=10, label="Break-even Price", size =5, color="orange")+
+  
+geom_hline(yintercept=10, size=2, color="blue")+
+  geom_hline(yintercept=10, size=2, color="blue")+
+  geom_label(x=9,y=10,label = "MR(q)", color="blue", size =4)+
+  geom_segment(x=5,xend=5,y=0,yend=10, size=1, linetype="dashed")+
+ scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,20,2),
+                     labels=scales::dollar,
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  labs(x = "Output, q",
+       y = "$/Unit",
+       title = "Firm 1 (No Longer Lower Cost)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+.tri-middle[
+```{r, fig.retina=3, fig.height=4.5}
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=mc_worse, geom="line", size=2, color = "red")+
+    geom_label(aes(x=9.5,y=mc_worse(9.5)), color = "red", label="MC(q)", size = 4)+
+  stat_function(fun=ac_worse, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=9.5,y=ac_worse(9.5)), color = "orange", label="AC(q)", size = 4)+
+  # break even line
+  geom_hline(yintercept=10, size=1, linetype="dashed")+
+  geom_label(x=9,y=10, label="Break-even Price", size =5, color="orange")+
+  
+geom_hline(yintercept=10, size=2, color="blue")+
+  geom_hline(yintercept=10, size=2, color="blue")+
+  geom_label(x=9,y=10,label = "MR(q)", color="blue", size =4)+
+  geom_segment(x=3,xend=3,y=0,yend=10, size=1, linetype="dashed")+
+ scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,20,2),
+                     labels=scales::dollar,
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  labs(x = "Output, q",
+       y = "$/Unit",
+       title = "Firm 2 (Higher Cost)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+.tri-right[
+```{r, fig.retina=3, fig.height=4.5}
+market_supply_rents_GONE_points <- tribble(
+  ~x, ~y,
+  0, 10,
+  8, 10,
+  10, 12,
+  12, 14,
+  14, 16,
+  16, 18,
+  18, 20
+)
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_path(data=market_supply_rents_GONE_points, aes(x=x,y=y), size=3, color = "red")+
+  geom_segment(x=0,xend=0,y=0,yend=10, color="red", size=5)+
+  geom_label(x=14,y=18, color = "red", label="Industry Supply", size = 4)+
+  stat_function(fun=market_demand_rents, geom="line", size=3, color = "blue")+
+    geom_label(aes(x=18,y=market_demand_rents(18)), color = "blue", label="Industry Demand", size = 4)+
+  geom_segment(x=8,xend=8,y=0,yend=10, size=1, linetype="dashed")+
+      scale_x_continuous(breaks=seq(0,20,2),
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,20,2),
+                     labels=scales::dollar,
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  labs(x = "Output, q",
+       y = "$/Unit",
+       title = "Industry")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+
+]
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+.smallest[
+- **Short Run**: firm that possesses scarce rent-generating factors has lower costs, perhaps .green[short-run profits]
+
+- **Long run**: competition over those factors pushes up their prices, **raising costs to firm**, until its profits go to zero as well
+  - Increase in *fixed* cost (scarce factor), raising .orange[AC(q)], which now includes rents (more info [in appendix](resources/appendices/2.6-appendix/#economic-rents))
+]
+
+---
+
+# Economic Rents Go To Resource Owners
+
+.pull-left[
+.center[
+![:scale 80%](../images/lebronjames2.jpg)
+]
+]
+
+.pull-right[
+
+- .hi-purple[Owners of scarce factors] (workers, landowners, inventors, etc) .hi-purple[earn the rents as higher income for their services] (wages, land rent, interest, royalties, etc).
+
+- Often induces competition to supply alternative factors, which *may* dissipate the rents (to zero)
+  - More workers invest in becoming talented, try to create new inventions, build new land, etc. 
+
+]
+
+---
+
+# Recall: Accounting vs. Economic Point of View
+
+.pull-left[
+.smallest[
+- Recall .hi-purple[“economic point of view”]:
+
+- Producing *your* product pulls scarce resources *out of other productive uses* in the economy
+
+- .hi-turquoise[Profits attract resources]: pulled out of other (less valuable) uses
+
+- .hi-turquoise[Losses repel resources]: pulled away to other (more valuable) uses
+
+- .hi-turquoise[Zero profits keep resources where they are]
+  - Implies .hi-purple[society is using resources optimally]
+]
+]
+
+.pull-right[
+.center[
+![](../images/costrevenue.jpg)
+
+![](../images/disappear.jpg)
+]
+]
+
+---
+
+class: inverse, center, middle
+
+# Welfare Effects of Perfect Competition
+
+---
+
+# Market-Clearing Prices
+
+.pull-left[
+
+- Supply and demand set the market-clearing price for all units exchanged (bought and sold)
+
+]
+
+.pull-right[
+
+```{r, fig.retina=3}
+demand_1=function(x){10-x}
+supply_1=function(x){x}
+
+changes<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=demand_1, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=9,y=demand_1(9)), color = "blue", label="Demand 1", size = 5)+
+  stat_function(fun=supply_1, geom="line", size=2, color = "red")+
+    geom_label(aes(x=9,y=supply_1(9)), color = "red", label="Supply 1", size = 5)+
+  geom_segment(x=0, xend=5, y=5, yend=5, size=1, linetype="dotted")+
+  geom_segment(x=5, xend=5, y=0, yend=5, size=1, linetype="dotted")+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)),
+                     labels = function(x){paste("$", x, sep="")})+
+  labs(x = "Quantity (q)",
+       y = "Price (p)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+
+changes
+```
+
+]
+
+---
+
+# Consumer Surplus I
+
+.pull-left[
+
+- .hi-blue[Demand function] measures how much you would *hypothetically* be willing to pay for various quantities
+  - "reservation price"
+
+- You often *actually* pay (the market-clearing price, $p^*)$ a lot less than your reservation price
+
+- The difference is .hi[consumer surplus]
+
+$$CS=WTP-p^*$$
+
+]
+
+.pull-right[
+
+```{r, fig.retina=3}
+
+cs_1<-tribble(
+  ~x, ~y,
+  0, 10,
+  0, 5,
+  5, 5
+)
+
+cs<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=demand_1, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=9,y=demand_1(9)), color = "blue", label="Demand = Max WTP", size = 5)+
+  geom_segment(x=0, xend=5, y=5, yend=5, size=1, linetype="dotted")+
+  geom_segment(x=5, xend=5, y=0, yend=5, size=1, linetype="dotted")+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)),
+                     labels = function(x){paste("$", x, sep="")})+
+  labs(x = "Quantity (q)",
+       y = "Price (p)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+
+cs+geom_polygon(data=cs_1, aes(x=x,y=y), fill="blue", alpha=0.5)
+```
+
+]
+
+---
+
+# Consumer Surplus II
+
+.pull-left[
+
+$$\begin{align*}
+CS&=\frac{1}{2}bh\\
+CS&=\frac{1}{2}(5-0)(\$10-\$5)\\
+CS&=\$12.50\\
+\end{align*}$$
+
+]
+
+.pull-right[
+
+```{r, fig.retina=3}
+cs+geom_polygon(data=cs_1, aes(x=x,y=y), fill="blue", alpha=0.5)
+```
+
+]
+
+---
+
+# Producer Surplus I
+
+.pull-left[
+
+- .hi-red[Supply function] measures how much you would *hypothetically* be willing to accept to sell various quantities
+  - "reservation price"
+
+- You often *actually* receive (the market-clearing price, $p^*)$ a lot more than your reservation price
+
+- The difference is .hi[producer surplus]
+
+$$PS=p^*-WTA$$
+
+]
+
+.pull-right[
+
+```{r, fig.retina=3}
+
+ps_1<-tribble(
+  ~x, ~y,
+  0, 0,
+  0, 5,
+  5, 5
+)
+
+ps<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=supply_1, geom="line", size=2, color = "red")+
+    geom_label(aes(x=9,y=supply_1(9)), color = "red", label="Supply = Min WTA", size = 5)+
+  geom_segment(x=0, xend=5, y=5, yend=5, size=1, linetype="dotted")+
+  geom_segment(x=5, xend=5, y=0, yend=5, size=1, linetype="dotted")+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)),
+                     labels = function(x){paste("$", x, sep="")})+
+  labs(x = "Quantity (q)",
+       y = "Price (p)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+
+ps+geom_polygon(data=ps_1, aes(x=x,y=y), fill="red", alpha=0.5)
+```
+
+]
+
+---
+
+# Market Efficiency in Competitive Equilibrium I
+
+.pull-left[
+
+- .hi[Allocative efficiency]: resources are allocated to highest-valued uses
+  - Goods produced up to the point where $MB=MC$ $(p=MC)$
+
+- All potential gains from trade are fully exhausted
+]
+
+.pull-right[
+
+```{r, fig.retina=3}
+Demand=function(x){10-x}
+Supply=function(x){x}
+
+eq<-tribble(
+  ~letter, ~x, ~y,
+  "A", 5, 5
+)
+
+CS<-tibble(x=c(0,0,5),
+           y=c(5,10,5))
+
+PS<-tibble(x=c(0,0,5),
+           y=c(0,5,5))
+
+p<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=Demand, geom="line", size=2, color = "blue")+
+  stat_function(fun=Supply, geom="line", size=2, color = "red")+
+  geom_label(aes(x=9,y=Demand(9)), color = "blue", label="Demand", size = 6)+
+  geom_label(aes(x=9,y=Supply(9)), color = "red", label="Supply", size = 6)+
+  geom_segment(aes(x=0, xend=5, y=5, yend=5),size=1, linetype="dotted")+
+  geom_segment(aes(x=5, xend=5, y=5, yend=0),size=1, linetype="dotted")+
+  geom_polygon(data=CS, aes(x=x,y=y), fill="blue", alpha=0.5)+ #CS
+  geom_polygon(data=PS, aes(x=x,y=y), fill="red", alpha=0.5)+ #PS
+  geom_label(aes(x=1.5, y= 3), label="PS", color="red", size =6)+
+  geom_label(aes(x=1.5, y= 7), label="CS", color="blue", size =6)+
+  geom_point(data = eq,
+             mapping=aes(x=x, y=y),
+             size = 4)+
+  geom_text_repel(data = eq,
+             mapping=aes(x=x, y=y,
+             label = letter),
+             size = 6)+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(fill=F)+
+  labs(x = "Quantity",
+       y = "Price")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+p
+```
+
+
+]
+
+---
+
+# Market Efficiency in Competitive Equilibrium II
+
+.pull-left[
+
+- .hi-purple[Economic surplus] = .blue[Consumer surplus] + .red[Producer surplus]
+
+- Maximized in competitive equilibrium
+
+- Resources flow away from those who value them the lowest to those that value them the highest
+
+- .hi-purple[The social value of resources is **maximized** by allocating them to their highest valued uses!]
+
+]
+
+.pull-right[
+
+```{r, fig.retina=3}
+p
+```
+
+]

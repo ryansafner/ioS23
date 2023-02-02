@@ -42,7 +42,7 @@ I suggest printing the slides beforehand and using them to take additional notes
 #| echo: false
 #| output: asis
 
-slide_links("1.3-slides")
+slide_links("1.4-slides")
 ```
 
 <!--## <i class="fas fa-laptop-code"></i> Assignments

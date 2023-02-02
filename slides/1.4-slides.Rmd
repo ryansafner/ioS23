@@ -1476,6 +1476,97 @@ Suppose the market is very competitive and the current market price is $15.
 
 ---
 
+# Example: Visualized
+
+```{r}
+mc<-function(x){4*x+3}
+ac<-function(x){2*x+3+50/x}
+avc<-function(x){2*x+3}
+afc<-function(x){50/x}
+
+ex <- ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=mc, geom="line", size=2, color = "red")+
+    geom_label(aes(x=9.5,y=mc(9.5)), color = "red", label=expression(MC(q)), size = 3)+
+  stat_function(fun=avc, geom="line", size=2, color = "brown")+
+    geom_label(aes(x=9.5,y=avc(9.5)), color = "brown", label=expression(AVC(q)), size = 3)+
+  stat_function(fun=ac, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=9.5,y=ac(9.5)), color = "orange", label=expression(AC(q)), size = 3)+
+  geom_hline(yintercept = 15, size = 2, color = "blue")+
+  geom_label(x = 9.5, y = 15, size = 3, color = "blue", label = "p=AR=MR")+
+    scale_x_continuous(breaks=seq(0,10,1),
+                       limits=c(0,10),
+                       expand=c(0,0))+
+  scale_y_continuous(breaks=seq(0,50,5),
+                     limits=c(0,50),
+                     expand=c(0,0))+
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+  labs(x = "Output, q",
+       y = "Per-Unit Costs ($)")+
+  theme_bw(base_size=14, base_family = "Fira Sans Condensed")
+ex
+```
+
+---
+
+# Example: Visualized
+
+```{r}
+ex + geom_rect(xmin = 0, xmax = 3, ymin = 15, ymax = ac(3), fill = "black", alpha = 0.5)+
+  geom_segment(x = 0, xend = 3, y = ac(3), yend = ac(3), size = 1, linetype = "dotted")+
+  geom_segment(x = 3, xend = 3, y = 0, yend = ac(3), size = 1, linetype = "dotted")
+```
+
+---
+
+# Example: Visualized
+
+```{r}
+ex + geom_rect(xmin = 0, xmax = 3, ymin = 15, ymax = ac(3), fill = "black", alpha = 0.5)+
+  geom_segment(x = 0, xend = 3, y = ac(3), yend = ac(3), size = 1, linetype = "dotted")+
+  geom_segment(x = 3, xend = 3, y = 0, yend = ac(3), size = 1, linetype = "dotted") +
+  geom_hline(yintercept=23, size=1, linetype="dashed")+
+  geom_label(x=8.5,y=23, label="Break Even Price= $23.00", size =3, color="orange")+
+  geom_hline(yintercept=3, size=1, linetype="dashed")+
+  geom_label(x=8.5,y=3, label="Shut Down Price= $3.00", size =3, color="brown")
+
+```
+
+
+---
+
+# Example: Visualized
+
+```{r}
+ex + 
+  geom_hline(yintercept=23, size=1, linetype="dashed")+
+  geom_label(x=8.5,y=23, label="Break Even Price= $23.00", size =3, color="orange")+
+  geom_hline(yintercept=3, size=1, linetype="dashed")+
+  geom_label(x=8.5,y=3, label="Shut Down Price= $3.00", size =3, color="brown")+
+    geom_segment(x=0,xend=0,y=0,yend=3, color="purple", size=5)+
+  stat_function(fun=mc, geom="line", size=3.5, color = "purple")+
+    geom_label(aes(x=3,y=mc(3)), color = "purple", label="SR SUPPLY", size = 5)
+
+```
+
+---
+
+# Example: Visualized
+
+```{r}
+ex + 
+  geom_hline(yintercept=23, size=1, linetype="dashed")+
+  geom_label(x=8.5,y=23, label="Break Even Price= $23.00", size =3, color="orange")+
+  geom_hline(yintercept=3, size=1, linetype="dashed")+
+  geom_label(x=8.5,y=3, label="Shut Down Price= $3.00", size =3, color="brown")+
+  geom_segment(x=0,xend=0,y=0,yend=23, color="purple", size=5)+
+  geom_segment(x=0,xend=5,y=23,yend=23, color="purple", size=3.5)+
+  stat_function(fun=mc, xlim=c(5,10), geom="line", size=3.5, color = "purple")+
+    geom_label(aes(x=2,y=23), color = "purple", label="LR SUPPLY", size = 5)
+
+```
+
+---
+
 class: inverse, center, middle
 
 # Welfare Effects of Perfect Competition

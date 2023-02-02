@@ -1,5 +1,5 @@
 # knit Rmd slides to html
-rmarkdown::render("slides/1.1-slides.Rmd")
+rmarkdown::render("slides/1.4-slides.Rmd")
 
 # make-pdfs
 pagedown::chrome_print(input = "https://ios23.classes.ryansafner.com/slides/1.4-slides.html",

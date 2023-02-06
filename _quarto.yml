@@ -46,6 +46,10 @@ website:
               href: content/1.3-content.qmd
             - text: "1.4 — Perfect Competition II"
               href: content/1.4-content.qmd
+            - text: "1.5 — Monopoly I"
+              href: content/1.5-content.qmd
+            - text: "1.6 — Monopoly II"
+              href: content/1.6-content.qmd
     - title: "Assignments"
       style: "docked"
       search: false

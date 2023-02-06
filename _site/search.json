@@ -140,6 +140,62 @@
     "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
   },
   {
+    "objectID": "content/1.5-content.html#overview",
+    "href": "content/1.5-content.html#overview",
+    "title": "1.5 — Monopoly I — Class Content",
+    "section": " Overview",
+    "text": "Overview\nWe begin looking at monopoly by discussing how a monopolist (as compared to a price-taking firm) chooses both its output and its price to maximize profits."
+  },
+  {
+    "objectID": "content/1.5-content.html#readings",
+    "href": "content/1.5-content.html#readings",
+    "title": "1.5 — Monopoly I — Class Content",
+    "section": " Readings",
+    "text": "Readings\n\nRecommended Readings\nThis is a part of our review of major production concepts from Microeconomics. You can consider looking at the following in the textbook if you are rusty or want to know more about these concepts:\n\n Ch. 2.1-2.2, 3.1 in Church & Ware, 2000"
+  },
+  {
+    "objectID": "content/1.5-content.html#slides",
+    "href": "content/1.5-content.html#slides",
+    "title": "1.5 — Monopoly I — Class Content",
+    "section": " Slides",
+    "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
+  },
+  {
+    "objectID": "content/1.5-content.html#appendix",
+    "href": "content/1.5-content.html#appendix",
+    "title": "1.5 — Monopoly I — Class Content",
+    "section": "Appendix",
+    "text": "Appendix\n\nPrice Elasticity of Demand Refresher\nPrice elasticity of demand measures how much (in %) quantity demanded changes in response to a (1%) change in price.\n\\[\\begin{align*}\n\\epsilon_{q,p} &= \\frac{\\% \\Delta q}{\\% \\Delta p}\\\\\n&= \\cfrac{\\left(\\frac{\\Delta q}{q}\\right)}{\\left(\\frac{\\Delta p}{p}\\right)}\\\\\n&= \\frac{\\Delta q}{\\Delta p} \\times \\frac{p}{q}\\\\\n&= \\frac{1}{slope} \\times \\frac{p}{q}\\\\\n\\end{align*}\\]\n\n\n\n\n\n\n\n\n\n\n“Elastic”\n“Unit Elastic”\n“Inelastic”\n\n\n\n\nIntuitively:\nLarge response\nProportionate response\nLittle response\n\n\nMathematically:\n\\(\\vert \\epsilon_{q_D,p}\\vert > 1\\)\n\\(\\vert \\epsilon_{q_D,p}\\vert = 1\\)\n\\(\\vert \\epsilon_{q_D,p} \\vert < 1\\)\n\n\n\nNumerator \\(>\\) Denominator\nNumerator \\(=\\) Denominator\nNumerator \\(<\\) Denominator\n\n\nA 1% change in \\(p\\)\nMore than 1% change in \\(q_D\\)\n1% change in \\(q_D\\)\nLess than 1% change in \\(q_D\\)\n\n\n\nPrice elasticity of demand changes along the demand curve:\n\n\n\n\n\n\nDeterminants of Price Elasticity\n\nWhat determines how responsive your buying behavior is to a price change?\n\n\nMore (fewer) substitutes \\(\\implies\\) more (less) elastic\n\nLarger categories of products (less elastic) vs. specific brand (more elastic)\nNecessities (less elastic) vs. luxuries (more elastic)\nLarge (more elastic) vs. small (less elastic) portion of budget\n\nMore (less) time to adjust \\(\\implies\\) more (less) elastic\n\n\n\n\nDerivation of the Lerner Index\nMarginal revenue is strongly related to the price elasticity of demand, which is \\(E_{D}=\\frac{\\Delta q}{\\Delta p} \\times \\frac{p}{q}\\)1\nWe derived marginal revenue (in the slides) as: \\[MR(q)=p+\\frac{\\Delta p}{\\Delta q}q\\]\nFirms will always maximize profits where:\n\\[\\begin{align*}\nMR(q)&=MC(q) && \\text{Profit-max output}\\\\\np+\\bigg(\\frac{\\Delta p}{\\Delta q}\\bigg)q&=MC(q) && \\text{Definition of } MR(q)\\\\\np+\\bigg(\\frac{\\Delta p}{\\Delta q}\\bigg) q \\times \\frac{p}{p}&=\\frac{MR(q)}{p} && \\text{Multiplying the left by } \\frac{p}{p} \\text{ (i.e. 1)}\\\\\np+\\underbrace{\\bigg(\\frac{\\Delta p}{\\Delta q}\\times \\frac{q}{p} \\bigg)}_{\\frac{1}{\\epsilon}} \\times p &=MC(q) && \\text{Rearranging the left}\\\\\np+\\frac{1}{\\epsilon} \\times p &=MC(q) && \\text{Recognize price elasticity } \\epsilon=\\frac{\\Delta q}{\\Delta p} \\times \\frac{p}{q}\\\\\np &=MC(q) - \\frac{1}{\\epsilon} p && \\text{Subtract  }\\frac{1}{\\epsilon}p \\text{ from both sides}\\\\\np-MC(q) &= -\\frac{1}{\\epsilon} p && \\text{Subtract  }MC(q) \\text{ from both sides}\\\\\n\\frac{p-MC(q)}{p} &= -\\frac{1}{\\epsilon} && \\text{Divide both sides by  }p\\\\\n        \\end{align*}\\]\nThe left side gives us the fraction of price that is markup \\(\\left(\\frac{p-MC(q)}{p}\\right)\\), and the right side shows this is inversely related to price elasticity of demand."
+  },
+  {
+    "objectID": "content/1.6-content.html#overview",
+    "href": "content/1.6-content.html#overview",
+    "title": "1.6 — Monopoly II — Class Content",
+    "section": " Overview",
+    "text": "Overview\nWe continue looking at monopoly and see what are the economic consequences of monopoly."
+  },
+  {
+    "objectID": "content/1.6-content.html#readings",
+    "href": "content/1.6-content.html#readings",
+    "title": "1.6 — Monopoly II — Class Content",
+    "section": " Readings",
+    "text": "Readings\n\nRecommended Readings\nThis is a part of our review of major production concepts from Microeconomics. You can consider looking at the following in the textbook if you are rusty or want to know more about these concepts:\n\n Ch. 2.1-2.2, 3.1 in Church & Ware, 2000"
+  },
+  {
+    "objectID": "content/1.6-content.html#slides",
+    "href": "content/1.6-content.html#slides",
+    "title": "1.6 — Monopoly II — Class Content",
+    "section": " Slides",
+    "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
+  },
+  {
+    "objectID": "content/1.6-content.html#appendix",
+    "href": "content/1.6-content.html#appendix",
+    "title": "1.6 — Monopoly II — Class Content",
+    "section": "Appendix",
+    "text": "Appendix\n\nPrice Elasticity of Demand Refresher\nPrice elasticity of demand measures how much (in %) quantity demanded changes in response to a (1%) change in price.\n\\[\\begin{align*}\n\\epsilon_{q,p} &= \\frac{\\% \\Delta q}{\\% \\Delta p}\\\\\n&= \\cfrac{\\left(\\frac{\\Delta q}{q}\\right)}{\\left(\\frac{\\Delta p}{p}\\right)}\\\\\n&= \\frac{\\Delta q}{\\Delta p} \\times \\frac{p}{q}\\\\\n&= \\frac{1}{slope} \\times \\frac{p}{q}\\\\\n\\end{align*}\\]\n\n\n\n\n\n\n\n\n\n\n“Elastic”\n“Unit Elastic”\n“Inelastic”\n\n\n\n\nIntuitively:\nLarge response\nProportionate response\nLittle response\n\n\nMathematically:\n\\(\\vert \\epsilon_{q_D,p}\\vert > 1\\)\n\\(\\vert \\epsilon_{q_D,p}\\vert = 1\\)\n\\(\\vert \\epsilon_{q_D,p} \\vert < 1\\)\n\n\n\nNumerator \\(>\\) Denominator\nNumerator \\(=\\) Denominator\nNumerator \\(<\\) Denominator\n\n\nA 1% change in \\(p\\)\nMore than 1% change in \\(q_D\\)\n1% change in \\(q_D\\)\nLess than 1% change in \\(q_D\\)\n\n\n\nPrice elasticity of demand changes along the demand curve:\n\n\n\n\n\n\nDeterminants of Price Elasticity\n\nWhat determines how responsive your buying behavior is to a price change?\n\n\nMore (fewer) substitutes \\(\\implies\\) more (less) elastic\n\nLarger categories of products (less elastic) vs. specific brand (more elastic)\nNecessities (less elastic) vs. luxuries (more elastic)\nLarge (more elastic) vs. small (less elastic) portion of budget\n\nMore (less) time to adjust \\(\\implies\\) more (less) elastic\n\n\n\n\nDerivation of the Lerner Index\nMarginal revenue is strongly related to the price elasticity of demand, which is \\(E_{D}=\\frac{\\Delta q}{\\Delta p} \\times \\frac{p}{q}\\)1\nWe derived marginal revenue (in the slides) as: \\[MR(q)=p+\\frac{\\Delta p}{\\Delta q}q\\]\nFirms will always maximize profits where:\n\\[\\begin{align*}\nMR(q)&=MC(q) && \\text{Profit-max output}\\\\\np+\\bigg(\\frac{\\Delta p}{\\Delta q}\\bigg)q&=MC(q) && \\text{Definition of } MR(q)\\\\\np+\\bigg(\\frac{\\Delta p}{\\Delta q}\\bigg) q \\times \\frac{p}{p}&=\\frac{MR(q)}{p} && \\text{Multiplying the left by } \\frac{p}{p} \\text{ (i.e. 1)}\\\\\np+\\underbrace{\\bigg(\\frac{\\Delta p}{\\Delta q}\\times \\frac{q}{p} \\bigg)}_{\\frac{1}{\\epsilon}} \\times p &=MC(q) && \\text{Rearranging the left}\\\\\np+\\frac{1}{\\epsilon} \\times p &=MC(q) && \\text{Recognize price elasticity } \\epsilon=\\frac{\\Delta q}{\\Delta p} \\times \\frac{p}{q}\\\\\np &=MC(q) - \\frac{1}{\\epsilon} p && \\text{Subtract  }\\frac{1}{\\epsilon}p \\text{ from both sides}\\\\\np-MC(q) &= -\\frac{1}{\\epsilon} p && \\text{Subtract  }MC(q) \\text{ from both sides}\\\\\n\\frac{p-MC(q)}{p} &= -\\frac{1}{\\epsilon} && \\text{Divide both sides by  }p\\\\\n        \\end{align*}\\]\nThe left side gives us the fraction of price that is markup \\(\\left(\\frac{p-MC(q)}{p}\\right)\\), and the right side shows this is inversely related to price elasticity of demand."
+  },
+  {
     "objectID": "content/index.html",
     "href": "content/index.html",
     "title": "Overview",

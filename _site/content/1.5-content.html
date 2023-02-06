@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ECON 326 — Industrial Organization - 1.3 — Perfect Competition I — Class Content</title>
+<title>ECON 326 — Industrial Organization - 1.5 — Monopoly I — Class Content</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -61,13 +61,14 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="ECON 326 — Industrial Organization - 1.3 — Perfect Competition I — Class Content">
-<meta property="og:description" content="We begin our review/extension of perfect competition by looking at how firms maximize profits in the short run.">
+<meta property="og:title" content="ECON 326 — Industrial Organization - 1.5 — Monopoly I — Class Content">
+<meta property="og:description" content="We begin looking at monopoly by discussing how a monopolist (as compared to a price-taking firm) chooses both its output and its price to maximize profits.">
 <meta property="og:site-name" content="ECON 326 — Industrial Organization">
-<meta name="twitter:title" content="ECON 326 — Industrial Organization - 1.3 — Perfect Competition I — Class Content">
-<meta name="twitter:description" content="We begin our review/extension of perfect competition by looking at how firms maximize profits in the short run.">
+<meta name="twitter:title" content="ECON 326 — Industrial Organization - 1.5 — Monopoly I — Class Content">
+<meta name="twitter:description" content="We begin looking at monopoly by discussing how a monopolist (as compared to a price-taking firm) chooses both its output and its price to maximize profits.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -117,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">1.3 — Perfect Competition I — Class Content</h1>
+      <h1 class="quarto-secondary-nav-title">1.5 — Monopoly I — Class Content</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -165,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/1.3-content.html" class="sidebar-item-text sidebar-link active">1.3 — Perfect Competition I</a>
+  <a href="../content/1.3-content.html" class="sidebar-item-text sidebar-link">1.3 — Perfect Competition I</a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -175,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/1.5-content.html" class="sidebar-item-text sidebar-link">1.5 — Monopoly I</a>
+  <a href="../content/1.5-content.html" class="sidebar-item-text sidebar-link active">1.5 — Monopoly I</a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -200,6 +201,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#recommended-readings" id="toc-recommended-readings" class="nav-link" data-scroll-target="#recommended-readings">Recommended Readings</a></li>
   </ul></li>
   <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides"><i class="fas fa-chalkboard-teacher"></i> Slides</a></li>
+  <li><a href="#appendix" id="toc-appendix" class="nav-link" data-scroll-target="#appendix">Appendix</a>
+  <ul class="collapse">
+  <li><a href="#price-elasticity-of-demand-refresher" id="toc-price-elasticity-of-demand-refresher" class="nav-link" data-scroll-target="#price-elasticity-of-demand-refresher">Price Elasticity of Demand Refresher</a></li>
+  <li><a href="#derivation-of-the-lerner-index" id="toc-derivation-of-the-lerner-index" class="nav-link" data-scroll-target="#derivation-of-the-lerner-index">Derivation of the Lerner Index</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -208,7 +214,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">1.3 — Perfect Competition I — Class Content</h1>
+<h1 class="title d-none d-lg-block">1.5 — Monopoly I — Class Content</h1>
 </div>
 
 
@@ -236,7 +242,7 @@ Meeting Date
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><em>Tuesday, January 31, 2023</em></p>
+<p><em>Tuesday, February 7, 2023</em></p>
 </div>
 </div>
 <!--::: callout-warning
@@ -245,12 +251,13 @@ Please complete the [preliminary survey](/assignments/00-preliminary-survey.qmd)
 :::-->
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview"><i class="fas fa-info-circle fa-lg"></i> Overview</h2>
-<p>We begin our review/extension of perfect competition by looking at how firms maximize profits in the short run.</p>
+<p>We begin looking at monopoly by discussing how a monopolist (as compared to a price-taking firm) chooses both its output and its price to maximize profits.</p>
 </section>
 <section id="readings" class="level2">
 <h2 class="anchored" data-anchor-id="readings"><i class="fas fa-book-reader fa-lg"></i> Readings</h2>
 <section id="recommended-readings" class="level3">
 <h3 class="anchored" data-anchor-id="recommended-readings">Recommended Readings</h3>
+<p>This is a part of our review of major production concepts from Microeconomics. You can consider looking at the following in the textbook if you are rusty or want to know more about these concepts:</p>
 <ul>
 <li><i class="fas fas fa-book"></i> Ch. 2.1-2.2, 3.1 in <a href="https://works.bepress.com/jeffrey_church/23/">Church &amp; Ware, 2000</a></li>
 </ul>
@@ -274,22 +281,120 @@ Tip
 </div>
 <p>I suggest printing the slides beforehand and using them to take additional notes in class (<em>not everything</em> is in the slides)!</p>
 <p style="text-align:center;">
-<a target="_blank" href="../slides/1.3-slides.html"><img src="../slides/1.3-slides.png" alt="1.3-slides"></a>
+<a target="_blank" href="../slides/1.5-slides.html"><img src="../slides/1.5-slides.png" alt="1.5-slides"></a>
 </p>
 <p style="text-align:center;">
-<a class="btn btn-primary btn-lg" target="_blank" href="../slides/1.3-slides.pdf"><i class="fas fa-file-pdf"></i> Download as PDF</a>
+<a class="btn btn-primary btn-lg" target="_blank" href="../slides/1.5-slides.pdf"><i class="fas fa-file-pdf"></i> Download as PDF</a>
 </p>
-<!--## <i class="fas fa-laptop-code"></i> Assignments
+</section>
+<section id="appendix" class="level2">
+<h2 class="anchored" data-anchor-id="appendix">Appendix</h2>
+<section id="price-elasticity-of-demand-refresher" class="level3">
+<h3 class="anchored" data-anchor-id="price-elasticity-of-demand-refresher">Price Elasticity of Demand Refresher</h3>
+<p><strong>Price elasticity of demand</strong> measures <em>how much</em> (in %) quantity demanded changes in response to a (1%) change in price.</p>
+<p><span class="math display">\[\begin{align*}
+\epsilon_{q,p} &amp;= \frac{\% \Delta q}{\% \Delta p}\\
+&amp;= \cfrac{\left(\frac{\Delta q}{q}\right)}{\left(\frac{\Delta p}{p}\right)}\\
+&amp;= \frac{\Delta q}{\Delta p} \times \frac{p}{q}\\
+&amp;= \frac{1}{slope} \times \frac{p}{q}\\
+\end{align*}\]</span></p>
+<table class="table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 19%">
+<col style="width: 28%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>“Elastic”</th>
+<th>“Unit Elastic”</th>
+<th>“Inelastic”</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Intuitively</strong>:</td>
+<td><em>Large</em> response</td>
+<td>Proportionate response</td>
+<td><em>Little</em> response</td>
+</tr>
+<tr class="even">
+<td><strong>Mathematically</strong>:</td>
+<td><span class="math inline">\(\vert \epsilon_{q_D,p}\vert &gt; 1\)</span></td>
+<td><span class="math inline">\(\vert \epsilon_{q_D,p}\vert = 1\)</span></td>
+<td><span class="math inline">\(\vert \epsilon_{q_D,p} \vert &lt; 1\)</span></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Numerator <span class="math inline">\(&gt;\)</span> Denominator</td>
+<td>Numerator <span class="math inline">\(=\)</span> Denominator</td>
+<td>Numerator <span class="math inline">\(&lt;\)</span> Denominator</td>
+</tr>
+<tr class="even">
+<td><strong>A 1% change in <span class="math inline">\(p\)</span></strong></td>
+<td>More than 1% change in <span class="math inline">\(q_D\)</span></td>
+<td>1% change in <span class="math inline">\(q_D\)</span></td>
+<td>Less than 1% change in <span class="math inline">\(q_D\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Price elasticity of demand changes along the demand curve:</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="1.5-content_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<section id="determinants-of-price-elasticity" class="level4">
+<h4 class="anchored" data-anchor-id="determinants-of-price-elasticity">Determinants of Price Elasticity</h4>
+<blockquote class="blockquote">
+<p>What determines how responsive your buying behavior is to a price change?</p>
+</blockquote>
+<ul>
+<li>More (fewer) <strong>substitutes</strong> <span class="math inline">\(\implies\)</span> more (less) elastic
+<ul>
+<li>Larger categories of products (less elastic) vs.&nbsp;specific brand (more elastic)</li>
+<li><strong>Necessities</strong> (less elastic) vs.&nbsp;<strong>luxuries</strong> (more elastic)</li>
+<li>Large (more elastic) vs.&nbsp;small (less elastic) <strong>portion of budget</strong></li>
+</ul></li>
+<li>More (less) <strong>time to adjust</strong> <span class="math inline">\(\implies\)</span> more (less) elastic</li>
+</ul>
+</section>
+</section>
+<section id="derivation-of-the-lerner-index" class="level3">
+<h3 class="anchored" data-anchor-id="derivation-of-the-lerner-index">Derivation of the Lerner Index</h3>
+<p>Marginal revenue is strongly related to the <strong>price elasticity of demand</strong>, which is <span class="math inline">\(E_{D}=\frac{\Delta q}{\Delta p} \times \frac{p}{q}\)</span><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>We derived marginal revenue (in the slides) as: <span class="math display">\[MR(q)=p+\frac{\Delta p}{\Delta q}q\]</span></p>
+<p>Firms will always maximize profits where:</p>
+<p><span class="math display">\[\begin{align*}
+MR(q)&amp;=MC(q) &amp;&amp; \text{Profit-max output}\\
+p+\bigg(\frac{\Delta p}{\Delta q}\bigg)q&amp;=MC(q) &amp;&amp; \text{Definition of } MR(q)\\
+p+\bigg(\frac{\Delta p}{\Delta q}\bigg) q \times \frac{p}{p}&amp;=\frac{MR(q)}{p} &amp;&amp; \text{Multiplying the left by } \frac{p}{p} \text{ (i.e. 1)}\\
+p+\underbrace{\bigg(\frac{\Delta p}{\Delta q}\times \frac{q}{p} \bigg)}_{\frac{1}{\epsilon}} \times p &amp;=MC(q) &amp;&amp; \text{Rearranging the left}\\
+p+\frac{1}{\epsilon} \times p &amp;=MC(q) &amp;&amp; \text{Recognize price elasticity } \epsilon=\frac{\Delta q}{\Delta p} \times \frac{p}{q}\\
+p &amp;=MC(q) - \frac{1}{\epsilon} p &amp;&amp; \text{Subtract  }\frac{1}{\epsilon}p \text{ from both sides}\\
+p-MC(q) &amp;= -\frac{1}{\epsilon} p &amp;&amp; \text{Subtract  }MC(q) \text{ from both sides}\\
+\frac{p-MC(q)}{p} &amp;= -\frac{1}{\epsilon} &amp;&amp; \text{Divide both sides by  }p\\
+        \end{align*}\]</span></p>
+<p>The left side gives us the fraction of price that is markup <span class="math inline">\(\left(\frac{p-MC(q)}{p}\right)\)</span>, and the right side shows this is inversely related to price elasticity of demand. <!--## <i class="fas fa-laptop-code"></i> Assignments
 
 ### Preliminary Math Survey Due Next Class
 
 Please take the [preliminary survey](/assignment/00-preliminary-survey) on your math background by next class. This will help us all have a productive semester together.
--->
+--></p>
 
 
 </section>
+</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>I sometimes simplify it as <span class="math inline">\(E_{D}=\frac{1}{slope} \times \frac{p}{q}\)</span>, where “slope” is the slope of the inverse demand curve (graph), since the slope is <span class="math inline">\(\frac{\Delta p}{\Delta q} = \frac{rise}{run}\)</span>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -1,0 +1,141 @@
+---
+title: "1.6 — Monopoly II — Class Content"
+execute:
+  freeze: auto
+---
+
+```{r, echo = F}
+source(here::here("slides", "slide-links.R"))
+```
+
+::: {.callout-note appearance=minimal}
+# Meeting Date
+*Thursday, February 9, 2023*
+:::
+
+<!--::: callout-warning
+# Upcoming Assignment
+Please complete the [preliminary survey](/assignments/00-preliminary-survey.qmd) by next class.
+:::-->
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+We continue looking at monopoly and see what are the economic consequences of monopoly.
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+### Recommended Readings
+
+This is a part of our review of major production concepts from Microeconomics. You can consider looking at the following in the textbook if you are rusty or want to know more about these concepts:   
+
+- <i class="fas fas fa-book"></i> Ch. 2.1-2.2, 3.1 in [Church & Ware, 2000](https://works.bepress.com/jeffrey_church/23/)
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides. 
+
+::: callout-tip
+You can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+:::
+
+I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+```{r}
+#| echo: false
+#| output: asis
+
+slide_links("1.6-slides")
+```
+
+## Appendix
+
+### Price Elasticity of Demand Refresher
+
+**Price elasticity of demand** measures *how much* (in %) quantity demanded changes in response to a (1%) change in price.
+
+$$\begin{align*}
+\epsilon_{q,p} &= \frac{\% \Delta q}{\% \Delta p}\\
+&= \cfrac{\left(\frac{\Delta q}{q}\right)}{\left(\frac{\Delta p}{p}\right)}\\
+&= \frac{\Delta q}{\Delta p} \times \frac{p}{q}\\
+&= \frac{1}{slope} \times \frac{p}{q}\\
+\end{align*}$$
+
+
+|                 | "Elastic" | "Unit Elastic" | "Inelastic" |
+|-----------------|-----------|----------------|------------|
+| **Intuitively**:    | *Large* response | Proportionate response | *Little* response |
+| **Mathematically**: | $\vert \epsilon_{q_D,p}\vert > 1$ | $\vert \epsilon_{q_D,p}\vert = 1$ | $\vert \epsilon_{q_D,p} \vert < 1$ |
+|                 | Numerator $>$ Denominator | Numerator $=$ Denominator | Numerator $<$ Denominator |
+| **A 1% change in $p$** | More than 1% change in $q_D$ | 1% change in $q_D$ | Less than 1% change in $q_D$ | 
+
+Price elasticity of demand changes along the demand curve:
+
+```{r, fig.retina=3, echo=F, warning = F, message = F}
+library(tidyverse)
+library(ggrepel)
+demand=function(x){10-x}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=demand, geom="line", size=2, color = "blue")+
+  geom_label(aes(x=1,y=demand(1)), color = "blue", label="Demand", size = 6)+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)),
+                     labels = function(x){paste("$", x, sep="")})+
+  # line at 5,5 
+  geom_segment(aes(x=0,xend=5, y=5, yend=5), linetype="dashed")+
+  geom_segment(aes(x=5,xend=5, y=5, yend=0), linetype="dashed")+
+  
+  geom_label_repel(aes(x=0, y=10), color="purple", label=expression(epsilon == infinity))+
+  geom_label_repel(aes(x=2.5, y=7.5), color="purple", label=expression(paste(epsilon > 1, ": Elastic")))+
+  geom_label_repel(aes(x=5, y=5), color="purple", label=expression(paste(epsilon == 1, ": Unit Elastic")))+
+  geom_label_repel(aes(x=7.5, y=2.5), color="purple", label=expression(paste(epsilon < 1, ": Inelastic")))+
+  geom_label_repel(aes(x=10, y=0), color="purple", label=expression(epsilon == 0))+
+  #coord_cartesian(clip="off")+
+  labs(x = "Quantity of x",
+       y = "Price of x")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+
+#### Determinants of Price Elasticity
+
+> What determines how responsive your buying behavior is to a price change?
+
+- More (fewer) **substitutes** $\implies$ more (less) elastic
+  - Larger categories of products (less elastic) vs. specific brand (more elastic)
+  - **Necessities** (less elastic) vs. **luxuries** (more elastic)
+  - Large (more elastic) vs. small (less elastic) **portion of budget**
+
+- More (less) **time to adjust** $\implies$ more (less) elastic
+
+
+### Derivation of the Lerner Index
+
+Marginal revenue is strongly related to the **price elasticity of demand**, which is $E_{D}=\frac{\Delta q}{\Delta p} \times \frac{p}{q}$^[I sometimes simplify it as $E_{D}=\frac{1}{slope} \times \frac{p}{q}$, where "slope" is the slope of the inverse demand curve (graph), since the slope is $\frac{\Delta p}{\Delta q} = \frac{rise}{run}$.]
+
+We derived marginal revenue (in the slides) as:
+$$MR(q)=p+\frac{\Delta p}{\Delta q}q$$
+
+Firms will always maximize profits where: 
+
+$$\begin{align*}
+MR(q)&=MC(q) && \text{Profit-max output}\\
+p+\bigg(\frac{\Delta p}{\Delta q}\bigg)q&=MC(q) && \text{Definition of } MR(q)\\
+p+\bigg(\frac{\Delta p}{\Delta q}\bigg) q \times \frac{p}{p}&=\frac{MR(q)}{p} && \text{Multiplying the left by } \frac{p}{p} \text{ (i.e. 1)}\\
+p+\underbrace{\bigg(\frac{\Delta p}{\Delta q}\times \frac{q}{p} \bigg)}_{\frac{1}{\epsilon}} \times p &=MC(q) && \text{Rearranging the left}\\
+p+\frac{1}{\epsilon} \times p &=MC(q) && \text{Recognize price elasticity } \epsilon=\frac{\Delta q}{\Delta p} \times \frac{p}{q}\\
+p &=MC(q) - \frac{1}{\epsilon} p && \text{Subtract  }\frac{1}{\epsilon}p \text{ from both sides}\\
+p-MC(q) &= -\frac{1}{\epsilon} p && \text{Subtract  }MC(q) \text{ from both sides}\\
+\frac{p-MC(q)}{p} &= -\frac{1}{\epsilon} && \text{Divide both sides by  }p\\
+		\end{align*}$$
+
+The left side gives us the fraction of price that is markup $\left(\frac{p-MC(q)}{p}\right)$, and the right side shows this is inversely related to price elasticity of demand.
+<!--## <i class="fas fa-laptop-code"></i> Assignments
+
+### Preliminary Math Survey Due Next Class
+
+Please take the [preliminary survey](/assignment/00-preliminary-survey) on your math background by next class. This will help us all have a productive semester together.
+-->

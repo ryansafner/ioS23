@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>1.5 — Monopoly I</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ryan Safner" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/hygge.css" rel="stylesheet" />
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
+    <script src="libs/xaringanExtra-progressBar/progress-bar.js"></script>
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+class: title-slide
+
+# 1.5 — Monopoly I
+
+## ECON 326 • Industrial Organization • Spring 2023
+
+### Ryan Safner&lt;br&gt; Associate Professor of Economics &lt;br&gt; &lt;a href="mailto:safner@hood.edu"&gt;&lt;i class="fa fa-paper-plane fa-fw"&gt;&lt;/i&gt;safner@hood.edu&lt;/a&gt; &lt;br&gt; &lt;a href="https://github.com/ryansafner/ioS23"&gt;&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;ryansafner/ioS23&lt;/a&gt;&lt;br&gt; &lt;a href="https://ioS23.classes.ryansafner.com"&gt; &lt;i class="fa fa-globe fa-fw"&gt;&lt;/i&gt;ioS23.classes.ryansafner.com&lt;/a&gt;&lt;br&gt;
+---
+
+
+class: inverse
+
+# Outline
+
+### [Market Power](#3)
+
+### [Marginal Revenue](#14)
+
+### [Price Elasticity &amp; Price Mark Up](#30)
+
+### [Profit Maximization Rules, Redux](#35)
+
+---
+
+class: inverse, center, middle
+
+# Market Power
+
+---
+
+# Imperfect Competition
+
+.center[
+![](../images/comp_spectrum_1.png)
+]
+
+---
+
+# Imperfect Competition
+
+.center[
+![](../images/comp_spectrum_2.png)
+]
+
+---
+
+# Imperfect Competition
+
+.center[
+![](../images/comp_spectrum_3.png)
+]
+
+---
+
+# Imperfect Competition
+
+.center[
+![](../images/comp_spectrum_4.png)
+]
+
+---
+
+# Competitive Markets, Recap
+
+.pull-left[
+.smallest[
+- For competitive markets, modeled firms as .hi[“price-takers”]: so many of them selling identical products, no one could affect price `\(p\)`
+  - `\(p^\star\)` must be market price, but **choose `\(q^\star\)` to maximize `\(\pi\)`**
+
+- (Long-run) Equilibrium: .hi-purple[Marginal cost pricing] for all firms, which is .hi-purple[allocatively efficient] for *society*
+  - `\(p=MC\)`
+  - `\(MSB=MSC\)`
+
+- Over long-run, .hi[free entry and exit] push prices to equal (average &amp; marginal) costs and pushed economic profits to zero
+]
+]
+
+.pull-right[
+.center[
+![](../images/commodities.png)
+]
+]
+
+---
+
+# Market Power
+
+.left-column[
+.center[
+![:scale 80%](../images/smith.png)
+.smallest[
+Adam Smith
+
+1723-1790
+]
+]
+]
+.right-column[
+
+.smaller[
+&gt; “People of the same trade seldom meet together, even for merriment and diversion, but the conversation ends in a conspiracy against the public, or in some contrivance to raise prices. It is impossible indeed to prevent such meetings, by any law which either could be executed, or would be consistent with liberty and justice. But though the law cannot hinder people of the same trade from sometimes assembling together, it ought to do nothing to facilitate such assemblies; much less to render them necessary.” (Book I, Chapter X Part II).
+
+]
+
+.source[Smith, Adam, 1776, [*An Enquiry into the Nature and Causes of the Wealth of Nations*](https://www.econlib.org/library/Smith/smWN.html)]
+
+]
+
+---
+
+# Market Power vs. Competition
+
+.pull-left[
+.smaller[
+- All sellers *would like to* raise prices and extract more revenue from consumers
+
+- .hi-purple[Competition] from other sellers (and potential .hi-purple[entrants]) drives prices to equal costs &amp; economic profits to zero
+  - Firm in competitive market raising `\(p&gt;MC(q)\)` would lose *all* of its customers!
+
+- .hi[Market power]: ability to raise `\(p&gt;MC(q)\)` (and *not* lose *all* customers)
+]
+]
+.pull-right[
+.center[
+![](../images/perfectcompetitionentrymeme.jpg)
+]
+]
+
+---
+
+# Market Power vs. Competition
+
+.left-column[
+.center[
+![:scale 80%](../images/smith.png)
+.smallest[
+Adam Smith
+
+1723-1790
+]
+]
+]
+.right-column[
+
+.smaller[
+&gt; “The pretence that [monopolies] are necessary for the better government of the trade, is without any foundation. The real and effectual discipline which is exercised over a [producer], is not that of his [monopoly], but that of his customers. It is the fear of losing their employment which restrains his frauds and corrects his negligence. An exclusive [monopoly] necessarily weakens the force of this discipline,” (Book I, Chapter X Part II).
+
+]
+
+.source[Smith, Adam, 1776, [*An Enquiry into the Nature and Causes of the Wealth of Nations*](https://www.econlib.org/library/Smith/smWN.html)]
+
+]
+
+---
+# Modeling Firms with Market Power
+
+.pull-left[
+
+- Firms with market power behave *differently* than firms in a competitive market
+  - **Today**: understanding how to model that different behavior
+
+- Start with simple assumption of a *single* seller: .hi[monopoly] (easiest to model)
+
+- **Next class:**
+  - *causes* of market power
+  - *consequences* of market power
+
+]
+
+.pull-right[
+.center[
+![](../images/monopolyman2.jpg)
+]
+]
+
+---
+
+# Modeling Firms with Market Power
+
+.pull-left[
+.smallest[
+- A firm with market power is a .hi-purple[“price-searcher”]
+  - Firms with market power **search** for **both** `\((q^\star,p^\star)\)` that **maximizes** `\(\pi\)`
+
+- With a .hi[monopoly] model, we can safely ignore the effects that *other* sellers have on one firm’s behavior
+  - A convenient starting point
+  - Later, will need .hi-purple[game theory] to deal with other firms’ interactions
+]
+]
+.pull-right[
+.center[
+![:scale 100%](../images/monopolyman3.jpg)
+]
+]
+
+---
+
+# The Monopolist's Problem
+
+.pull-left[
+
+- The .hi[*monopolist’s* profit maximization problem]:
+
+1. **Choose:** .blue[ &lt; output and price: `\\((q^\star, p^\star)\\)` &gt;]
+
+2. **In order to maximize:** .green[&lt; profits: `\\(\pi\\)` &gt;]
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/monopolyman3.jpg)
+]
+]
+
+---
+
+class: inverse, center, middle
+
+# Marginal Revenues
+
+---
+
+# Market Power and Revenues I
+
+.pull-left[
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-1-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+- Firms are constrained by relationship between quantity and price that consumers are willing to pay
+
+- .hi-blue[Market (inverse) demand] describes maximum price consumers are willing to pay for a given quantity
+
+- Implications:
+  - Even a monopoly can’t set a price “as high as it wants”
+  - Even a monopoly can still earn losses!
+
+]
+
+---
+
+# Market Power and Revenues II
+
+.pull-left[
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-2-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+- As firm chooses to produce more `\(q\)`, must lower the price on *all* units to sell them
+
+]
+
+---
+
+# Market Power and Revenues II
+
+.pull-left[
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-3-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+- As firm chooses to produce more `\(q\)`, must lower the price on *all* units to sell them
+
+- .red[Price effect `\\((q \Delta p)\\)`]: lost revenue from lowering price on all sales .red[`\\((\$2 \times -2)\\)`]
+
+]
+
+---
+
+# Market Power and Revenues II
+
+.pull-left[
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-4-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+- As firm chooses to produce more `\(q\)`, must lower the price on *all* units to sell them
+
+- .red[Price effect `\\((q \Delta p)\\)`]: lost revenue from lowering price on all sales .red[`\\((\$2 \times -2)\\)`]
+
+- .green[Output effect `\\((p \Delta q)\\)`]: gained revenue from increase in sales .green[`\\((\$14 \times 1)\\)`]
+
+]
+
+---
+
+# Market Power and Revenues II
+
+.pull-left[
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-5-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+- As firm chooses to produce more `\(q\)`, must lower the price on *all* units to sell them
+
+- .red[Price effect `\\((q \Delta p)\\)`]: lost revenue from lowering price on all sales .red[`\\((\$2 \times -2)\\)`]
+
+- .green[Output effect `\\((p \Delta q)\\)`]: gained revenue from increase in sales .green[`\\((\$14 \times 1)\\)`]
+
+.smallest[
+| q | p | R(q) | Change |
+|---:|---:|---:|---:|
+| 2 | $16 | $32 |    |
+| 3 | $14 | $42 | +$10 |
+]
+]
+
+---
+
+
+# Marginal Revenue I
+
+- If a firm increases output, `\(\Delta q\)`,  revenues would change by:
+
+.center[
+
+`\(\Delta R(q)=\)`.green[`\\(p \Delta q\\)`] `\(+\)` .red[`\\(q \Delta p\\)`]
+
+]
+
+--
+
+- .green[Output effect]: increases number of units sold `\((\Delta q)\)` times price `\(p\)` per unit
+
+--
+
+- .red[Price effect]: lowers price per unit `\((\Delta p)\)` on *all* units sold `\((q)\)`
+
+--
+
+- Divide both sides by `\(\Delta q\)` to get .hi-purple[Marginal Revenue, `\\(MR(q)\\)`]:
+
+`$$\frac{\Delta R(q)}{\Delta q}=\color{#6A5ACD}{MR(q)=p+\frac{\Delta p}{\Delta q}q}$$`
+
+--
+
+.small[
+- Compare: demand for a **competitive** firm is perfectly elastic: `\(\color{#6A5ACD}{\frac{\Delta p}{\Delta q}=0}\)`, so we saw `\(\color{#6A5ACD}{MR(q)=p}\)`!
+]
+
+---
+
+# Marginal Revenue II
+
+.smallest[
+- If we have a linear inverse demand function of the form
+`$$\color{#e64173}{p=a+bq}$$`
+  - `\(a\)` is the choke price (intercept)
+  - `\(b\)` is the slope
+]
+
+--
+
+.smallest[
+- Marginal revenue again is defined as:
+`$$MR(q)=p+\color{#44C1C4}{\frac{\Delta p}{\Delta q}}q$$`
+]
+
+--
+
+.smallest[
+- Recognize that `\(\color{#44C1C4}{\frac{\Delta p}{\Delta q}} = \left(\frac{rise}{run} \right)\)` is the slope, `\(b\)`, 
+
+]
+
+--
+
+.smallest[
+`$$\begin{align*}
+MR(q)&amp;=p+(\color{#44C1C4}{b})q\\
+MR(q)&amp;=(\color{#e64173}{a+bq})+bq\\
+\mathbf{\color{#6A5ACD}{MR(q)}}&amp;=\color{#6A5ACD}{\mathbf{a+2bq}}\\
+\end{align*}$$`
+
+]
+
+---
+
+# Marginal Revenue III
+
+.pull-left[
+
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-6-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+`$$\begin{align*}
+\color{#0047AB}{p(q)}&amp;\color{#0047AB}{=a+bq}\\
+\color{#6A5ACD}{MR(q)}&amp;\color{#6A5ACD}{=a+2bq}\\
+\end{align*}$$`
+
+- **Marginal revenue starts at same intercept as Demand `\((a)\)` with twice the slope `\((2b)\)`**
+
+- Don’t forget the slopes `\((b)\)` are always negative!
+]
+
+---
+
+# Marginal Revenue: Example
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: Suppose the market demand is given by:
+
+`$$q=12.5-0.25p$$`
+]
+
+1. Find the function for a monopolist’s marginal revenue curve.
+
+2. Calculate the monopolist’s marginal revenue if the firm produces 6 units, and 7 units.
+
+---
+
+class: inverse, center, middle
+
+# Price Elasticity &amp; Price Mark Up
+
+---
+
+# Revenues and Price Elasticity of Demand
+
+.pull-left[
+
+.smallest[
+| Demand Price Elasticity | .purple[MR(q)] | .green[R(q)] |
+|------------------|---------|--------|
+| `\(\vert \epsilon \vert &gt;1\)` Elastic | Positive | Increasing |
+| `\(\vert \epsilon \vert =1\)` Unity | 0 | Maximized |
+| `\(\vert \epsilon \vert &lt;1\)` Inelastic | Negative | Decreasing |
+
+- Strong relationship between .hi-purple[price elasticity of demand] and revenues
+
+- .hi-turquoise[Monopolists *only* produce where demand is elastic, with positive MR(q)!]
+  - See appendix in [today’s appendix](/resources/appendices/4.1-appendix/#monopolists-only-produce-where-demand-is-elastic-proof) for a proof
+
+]
+
+]
+
+.pull-right[
+
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-7-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-8-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Market Power and Mark Up
+
+.pull-left[
+.smallest[
+- Perfect competition: `\(p=MC(q)\)` (.hi[allocatively efficient])
+
+- .hi[Market power] defined as firm(s)’ ability to .hi-purple[mark up] `\(p&gt;MC(q)\)`
+  - (Even a monopolist’s market power is constrained by market demand!)
+
+- .hi-purple[Size of markup depends on **price elasticity of demand**]
+  - `\(\downarrow\)` price elasticity: `\(\uparrow\)` markup
+
+&gt; i.e. the *less* responsive to prices consumers are, the *higher* the price the firm can charge
+
+]
+]
+
+.pull-right[
+.center[
+![](../images/markup.jpg)
+]
+]
+
+---
+
+# The Lerner Index and Inverse Elasticity Rule I
+
+.pull-left[
+.smaller[
+- .hi[Lerner Index] measures market power as % of firm's price that is .hi-purple[markup] above `\(MC(q)\)`
+
+`$$L=\frac{p-MC(q)}{p} = -\frac{1}{\epsilon}$$`
+  - i.e. `\(L \times 100\%\)` of firm’s price is markup
+
+- `\(L=0 \implies\)` perfect competition
+  - 0% of price is markup, since `\(p=MC(q)\)`
+- As `\(L\rightarrow 1 \implies\)` more market power
+  - 100% of price is markup
+
+]
+
+]
+
+.pull-right[
+.center[
+![](../images/markup.jpg)
+]
+
+.footnote[See [today's appendix](/resources/appendices/4.1-appendix/#derivation-of-the-lerner-index) for the derivation.]
+
+]
+
+---
+
+# The Lerner Index and Inverse Elasticity Rule II
+
+.center[
+.smallest[
+.hi-purple[The more (less) elastic a good, the less (more) the optimal markup]: `\(L=\frac{p-MC(q)}{p}=-\frac{1}{\epsilon}\)`
+]
+]
+.pull-left[
+
+.center[
+.smallest[
+Demand *Less* Elastic at `\(p^*\)`
+]
+]
+
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-9-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+.center[
+.smallest[
+Demand *More* Elastic at `\(p^*\)`
+]
+]
+
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-10-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+class: inverse, center, middle
+
+# Profit Maximization Rules, Redux
+
+---
+
+# Visualizing Total Profit As R(q)-C(q)
+
+
+.pull-left[
+
+- `\(\color{green}{\pi(q)}=\color{blue}{R(q)}-\color{red}{C(q)}\)`
+
+]
+
+.pull-right[
+
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-11-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+
+---
+
+# Visualizing Total Profit As R(q)-C(q)
+
+
+.pull-left[
+
+- `\(\color{green}{\pi(q)}=\color{blue}{R(q)}-\color{red}{C(q)}\)`
+
+]
+
+.pull-right[
+
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-12-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Visualizing Total Profit As R(q)-C(q)
+
+.pull-left[
+
+- `\(\color{green}{\pi(q)}=\color{blue}{R(q)}-\color{red}{C(q)}\)`
+
+- Graph: find `\(q^*\)` to max `\(\pi \implies q^*\)` where max distance between `\(R(q)\)` and `\(C(q)\)`
+
+]
+
+.pull-right[
+
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-13-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Visualizing Total Profit As R(q)-C(q)
+
+.pull-left[
+
+- `\(\color{green}{\pi(q)}=\color{blue}{R(q)}-\color{red}{C(q)}\)`
+
+- Graph: find `\(q^*\)` to max `\(\pi \implies q^*\)` where max distance between `\(R(q)\)` and `\(C(q)\)`
+
+- Slopes must be equal:
+`$$\color{blue}{MR(q)}=\color{red}{MC(q)}$$`
+
+
+]
+
+.pull-right[
+
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-14-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Visualizing Total Profit As R(q)-C(q)
+
+.pull-left[
+
+- `\(\color{green}{\pi(q)}=\color{blue}{R(q)}-\color{red}{C(q)}\)`
+
+- Graph: find `\(q^*\)` to max `\(\pi \implies q^*\)` where max distance between `\(R(q)\)` and `\(C(q)\)`
+
+- Slopes must be equal:
+`$$\color{blue}{MR(q)}=\color{red}{MC(q)}$$`
+
+.smallest[
+- At `\(q^*=5\)`:
+  - `\(\color{blue}{R(q)=75}\)`
+  - `\(\color{red}{C(q)=40}\)`
+  - `\(\color{green}{\pi(q)=35}\)`
+]
+]
+
+.pull-right[
+
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-15-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Visualizing Marginal Profit As MR(q)-MC(q)
+
+.pull-left[
+
+- At low output `\(q&lt;q^*\)`, can increase `\(\pi\)` by producing *more*
+
+- `\(\color{#6A5ACD}{MR(q)}&gt;\color{#D7250E}{MC(q)}\)`
+
+]
+
+.pull-right[
+
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-16-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Visualizing Marginal Profit As MR(q)-MC(q)
+
+.pull-left[
+
+- At high output `\(q&gt;q^*\)`, can increase `\(\pi\)` by producing *less*
+
+- `\(\color{#6A5ACD}{MR(q)}&lt;\color{#D7250E}{MC(q)}\)`
+
+]
+
+.pull-right[
+
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-17-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Visualizing Marginal Profit As MR(q)-MC(q)
+
+.pull-left[
+
+- `\(\pi\)` is *maximized* where `\(\color{#6A5ACD}{MR(q)}=\color{#D7250E}{MC(q)}\)`
+
+]
+
+.pull-right[
+
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-18-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Profit-Maximizing Price and Quantity (Graph)
+
+.pull-left[
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-19-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+- Profit-maximizing quantity is always `\(q^\star\)` where .purple[`\\(MR(q)\\)`] `\(=\)` .red[`\\(MC(q)\\)`]
+
+]
+
+---
+
+# Profit-Maximizing Price and Quantity (Graph)
+
+.pull-left[
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-20-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+- Profit-maximizing quantity is always `\(q^\star\)` where .purple[`\\(MR(q)\\)`] `\(=\)` .red[`\\(MC(q)\\)`]
+
+- But monopolist faces *entire* .blue[market demand]
+  - Can charge as high `\(p^\star\)` as consumers are WTP .blue[Market Demand]
+
+]
+---
+
+# Profit-Maximizing Price and Quantity (Graph)
+
+.pull-left[
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-21-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+- Profit-maximizing quantity is always `\(q^\star\)` where .purple[`\\(MR(q)\\)`] `\(=\)` .red[`\\(MC(q)\\)`]
+
+- But monopolist faces *entire* .blue[market demand]
+  - Can charge as high `\(p^\star\)` as consumers are WTP .blue[Market Demand]
+
+- .orange[Break even price] `\(p=AC(q)_{min}\)`
+
+]
+
+---
+
+# Profit-Maximizing Price and Quantity (Graph)
+
+.pull-left[
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-22-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+- Profit-maximizing quantity is always `\(q^\star\)` where .purple[`\\(MR(q)\\)`] `\(=\)` .red[`\\(MC(q)\\)`]
+
+- But monopolist faces *entire* .blue[market demand]
+  - Can charge as high `\(p^\star\)` as consumers are WTP .blue[Market Demand]
+
+- .orange[Break even price] `\(p=AC(q)_{min}\)`
+
+- .brown[Shut-down price] `\(p=AVC(q)_{min}\)`
+
+]
+
+---
+
+# Summing Up Monopolist’s Supply Decisions
+
+1. Produce the optimal amount of output `\(q^*\)` where `\(MR(q)=MC(q)\)`
+
+--
+
+2. **Raise price to maximum consumers are WTP: `\(p^*=Demand(q^*)\)`**
+
+--
+
+3. Calculate profit with average cost: `\(\pi=[p-AC(q)]q\)`
+
+--
+
+4. Shut down in the *short run* if `\(p&lt;AVC(q)\)`
+  - Minimum of AVC curve where `\(MC(q)=AVC(q)\)`
+
+--
+
+5. Exit in the *long run* if `\(p&lt;AC(q)\)`
+  - Minimum of AC curve where `\(MC(q)=AC(q)\)`
+
+---
+
+# The Profit Maximizing Quantity &amp; Price: Example
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: Consider the market for iPhones. Suppose Apple's costs are:
+
+`$$\begin{align*}
+	C(q)&amp;=2.5q^2+25,000\\
+	MC(q)&amp;=5q\\
+	\end{align*}$$`
+	
+The demand for iPhones is given by (quantity is in millions of iPhones):
+
+`$$q=300-0.2p$$`
+]
+
+.smallest[
+1. Find Apple's profit-maximizing quantity and price.
+2. How much total profit does Apple earn?
+3. How much of Apple's price is markup over (marginal) cost?
+4. What is the price elasticity of demand at Apple's profit-maximizing output?
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

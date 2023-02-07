@@ -30,6 +30,14 @@ This is a part of our review of major production concepts from Microeconomics. Y
 
 - <i class="fas fas fa-book"></i> Ch. 2.1-2.2, 3.1 in [Church & Ware, 2000](https://works.bepress.com/jeffrey_church/23/)
 
+## <i class="fas fa-dumbbell"></i> Practice
+
+Today you will be working on practice problems:
+
+- [<i class="fas fa-file-pdf"></i> Practice Problems](../files/practice/1.5-practice-pdf.pdf)
+<!-- [<i class="fas fa-file-pdf"></i> Answer Key](../files/practice/1.4-practice-answers-pdf.pdf)-->
+
+
 ## <i class="fas fa-chalkboard-teacher"></i> Slides
 
 Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides. 

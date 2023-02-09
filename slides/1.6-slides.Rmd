@@ -384,7 +384,7 @@ ggplot(data=tibble(x=1:10), aes(x=x))+
 # Market Power: The Good, the Bad, and the Ugly
 
 .pull-left[
-.smaller[
+.smallest[
 - No market is perfectly competitive, but **that does not .ul[necessarily] imply market failure**
   - Static vs. dynamic benefits of markets
 
@@ -680,92 +680,7 @@ m + annotate("segment", x = 8, xend = 4, y = 0.5, yend = 0.5, colour = "black", 
 
 ---
 
-
-# The Bad of Monopoly: DWL II
-
-.pull-left[
-
-```{r, fig.retina=3}
-mc<-function(x){2}
-demand<-function(x){10-x}
-mr<-function(x){10-2*x}
-
-CS<-tibble(x=c(0,0,8),
-           y=c(10,2,2))
-
-CS_2<-tibble(x=c(0,0,4),
-           y=c(10,6,6))
-dwl<-tibble(x=c(4,4,8),
-           y=c(6,2,2))
-mr<-function(x){10-2*x}
-
-#line_colors <- c("Supply" = "red", "Demand" = "blue")
-#surplus_colors <-c("Consumer" = "blue", "Producer" = "red")
-
-m<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
-  
-  # surpluses
-  geom_polygon(data=CS_2, aes(x=x,y=y), fill="blue",alpha=0.5)+
-  geom_rect(xmin=0,xmax=4,ymin=2,ymax=6,fill="green", alpha=0.25)+ #profit
-  geom_polygon(data=dwl, aes(x=x,y=y), fill="black",alpha=0.5)+ #dwl
-  
-  # surplus labels
-  geom_text(aes(x=1.5, y= 4), label="Profit", color="white", size =5)+
-  geom_text(aes(x=1.5, y= 7.5), label="CS", color="white", size =5)+
-  geom_text(aes(x=5.5, y= 3.5), label="DWL", color="white", size =5)+
-  
-  # lines 
-  stat_function(fun=demand, geom="line", size=2, color = "blue")+
-    geom_label(aes(x=9,y=demand(9)), color = "blue", label="Demand", size = 5)+
-  stat_function(fun=mr, geom="line", size=2, color = "purple")+
-    geom_label(aes(x=4.5,y=mr(4.5)), color = "purple", label=expression(MR(q)), size = 5)+
-  stat_function(fun=mc, geom="line", size=2, color = "red")+
-    geom_label(aes(x=6,y=mc(6)), color = "red", label=expression(MC(q)==AC(q)), size = 5)+
-  
-  # optimal dots
-  geom_segment(x=0, xend=4, y=6, yend=6, size=1, linetype="dotted")+
-  geom_segment(x=8, xend=8, y=0, yend=2, size=1, linetype="dotted")+
-  geom_segment(x=4, xend=4, y=0, yend=6, size=1, linetype="dotted")+
-  
-  #geom_point(x=4,y=6, size=3)+
-
-  scale_x_continuous(breaks=c(0,4,8),
-                       labels=c(0,expression(q[m]),expression(q[c])),
-                     limits=c(0,10),
-                     expand=expand_scale(mult=c(0,0.1)))+
-  scale_y_continuous(breaks=c(0,2,6),
-                       labels=c(0,expression(p[c]),expression(p[m])),
-                     limits=c(0,10),
-                     expand=expand_scale(mult=c(0,0.1)))+
-
-  guides(fill=F)+
-  labs(x = "Quantity",
-       y = "Price")+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=16)
-
-m + annotate("segment", x = 8, xend = 4, y = 0.5, yend = 0.5, colour = "black", size=2, alpha=1, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))+
-  annotate("segment", x = 0.5, xend = 0.5, y = 2, yend = 6, colour = "black", size=2, alpha=1, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))
-```
-
-]
-
-.pull-right[
-
-- A **monopolist** would face *entire* industry demand and set $(q_m,p_m)$:
-  - Set .purple[`\\(MR(q)\\)`] $=$ .red[`\\(MC(q)\\)`]: $q_m$
-  - Raise $p$ to .blue[max. WTP (Demand)]: $p_m$
-
-- .hi-purple[Restricts output and raises price], compared to competitive market
-
-- Earns .hi-green[monopoly profits (`\\(p>AC\\)`)] 
-
-- Loss of .hi-blue[consumer surplus]
-
-]
-
----
-
-# The Bad of Monopoly: DWL IV
+# The Bad of Monopoly: DWL III
 
 .pull-left[
 
@@ -1485,7 +1400,7 @@ class: inverse, center, middle
   - otherwise, profits would get competed away by new entrants
   - markets become competitive over time as entrepreneurs enter & produce substitutes
 
-- .hi-purple[How easy is it to enter and compete with existing firm?]
+- .hi-purple[How easy is it to enter and compete with incumbent firm?]
 
 ]
 
@@ -1507,7 +1422,7 @@ class: inverse, center, middle
 - Key corporate strategy: .hi-turquoise[entry deterrence]
   - Silicon Valley talks about “moats”
 
-- Public policy concerns: entry barriers impede competition and thus efficiency 
+- Public policy concerns: entry barriers impede competition and thus efficiency; (but may be benefits in some cases)
 ]
 
 .pull-right[
@@ -1851,8 +1766,10 @@ class: inverse, center, middle
 
 .quitesmall[
 - For alleged economic reasons, .hi[patent] (for ideas and inventions) and .hi[copyright] (for expressions) laws exist
+  - owners can sue competitors for **infringement**
 
 - Grant *temporary* monopoly to recover fixed costs & provide incentive to undertake (risky and expensive) research/creativity
+  - similar to natural monopoly!
 
 - A *tradeoff* between incentives & access
 
@@ -1895,6 +1812,22 @@ class: inverse, center, middle
 .quitesmall[
 > “Whoever establishes any private express for the conveyance of letters or packets, or in any manner causes or provides for the conveyance of the same by regular trips or at stated periods over any post route which is or may be established by law...shall be fined...or imprisoned...or both.” ([18 U.S.C. $\S$ 1696](https://www.law.cornell.edu/uscode/text/18/1696))
 
+]
+]
+
+---
+
+# Entry Regulation
+
+.pull-left[
+.center[
+![](../images/cab.png)
+]
+]
+
+.pull-right[
+.center[
+![](../images/usflightroutes.png)
 ]
 ]
 

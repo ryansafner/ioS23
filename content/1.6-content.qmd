@@ -28,7 +28,11 @@ We continue looking at monopoly and see what are the economic consequences of mo
 
 This is a part of our review of major production concepts from Microeconomics. You can consider looking at the following in the textbook if you are rusty or want to know more about these concepts:   
 
-- <i class="fas fas fa-book"></i> Ch. 2.1-2.2, 3.1 in [Church & Ware, 2000](https://works.bepress.com/jeffrey_church/23/)
+- <i class="fas fas fa-book"></i> Ch. 2.1-2.2, 3.1, 4.1—4.2, 4.4-4.5 in [Church & Ware, 2000](https://works.bepress.com/jeffrey_church/23/)
+
+- [<i class="fas fa-file-pdf"></i> Harberger (1954), "Monopoly and Resource Allocation"](/readings/Harberger-1954.pdf)
+- [<i class="fas fa-file-pdf"></i> Tullock (1967), "The Welfare Cost of Tariffs, Monopolies, and Theft"](/readings/Tullock-1967.pdf)
+- [<i class="fas fa-file-pdf"></i> Mitchell (2012), "The Pathology of Privilege"](/readings/Mitchell-2012.pdf)
 
 ## <i class="fas fa-chalkboard-teacher"></i> Slides
 

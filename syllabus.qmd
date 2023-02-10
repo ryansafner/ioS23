@@ -216,6 +216,14 @@ Students are responsible for verifying their enrollment in this class. The last 
 
 Hood College has an Academic Honor Code which requires all members of this community to maintain the highest standards of academic honesty and integrity. Cheating, plagiarism, lying, and stealing are all prohibited.  All violations of the Honor Code are taken seriously, will be reported to appropriate authority, and may result in severe penalties, including expulsion from the college. See [here](http://hood.smartcatalogiq.com/en/2016-2017/Catalog/The-Spirit-of-Hood/The-Academic-Honor-Code-and-Code-of-Conduct) for more detailed information.
 
+### ChatGPT
+
+The rise of ChatGPT and other large language models has made it incredibly easy to look up information and write content. This emerging capability will inevitably run up against existing (nearing obsolete) policies regarding academic integrity. Learning to leverage AI is an emerging skill, and one that can help you enhance your productivity. 
+
+In the end, *you are ultimately responsible for all the content that you submit for assignments* in this course. If it is clear that you simply submitted the results of a ChatGPT prompt for an assignment (and new tools are emerging to accurately detect his), you will earn a grade of zero. If it is clear that this is a frequent issue and you are applying no effort to your assignment beyond ChatGPT prompts, you will be reported for violations of the Academic Honor Code.
+
+Beware the limits of ChatGPT and other LLM-based AIs: low-quality prompts will give you low quality results, and ones that are obvious that the content was written by an LLM. The writing style and type of information that it outputs is fairly easy to detect among an expert in the field (i.e. me, if you ask it questions about economics, especially my assignments). Do not trust everything it says, it can pass off facts and arguments as authoritative. I have given it prompts and it gave me answers that it completely fabricated. 
+
 ## Van Halen and M&Ms {.unlisted}
 
 When you have completed reading the syllabus, email me a picture of the band Van Halen and a picture of a bowl of M&Ms. If you do this *before* the date of the first exam, you will get bonus points on the exam. If 75-100% of the class does this, you each get 2 points. If 50-75% of the class does this, you each get 4 points. If 25-50% of the class does this, you each get 6 points. If 0-25% of the class does this, you each get 8 points. Yes, you read this correctly.

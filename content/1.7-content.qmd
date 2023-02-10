@@ -1,0 +1,54 @@
+---
+title: "1.7 — Pricing Strategies — Class Content"
+execute:
+  freeze: auto
+---
+
+```{r, echo = F}
+source(here::here("slides", "slide-links.R"))
+```
+
+::: {.callout-note appearance=minimal}
+# Meeting Date
+*Tuesday, February 14, 2023*
+:::
+
+<!--::: callout-warning
+# Upcoming Assignment
+Please complete the [preliminary survey](/assignments/00-preliminary-survey.qmd) by next class.
+:::-->
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+Today we look at how firms price their products when they have market power (that is to say, how most firms in reality price their products). 
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+### Recommended Readings
+
+This is a part of our review of major production concepts from Microeconomics. You can consider looking at the following in the textbook if you are rusty or want to know more about these concepts:   
+
+- <i class="fas fas fa-book"></i> Ch. 5 in [Church & Ware, 2000](https://works.bepress.com/jeffrey_church/23/)
+
+- [<i class="fas fa-podcast"></i> *NPR Planet Money* 416: “Why The Price of Coke Didn't Change For 70 years”](https://www.npr.org/2019/05/01/719213730/episode-416-why-the-price-of-coke-didnt-change-for-70-years)
+- [<i class="fas fa-podcast"></i> *NPR Planet Money* 653: “The anti-store”](https://www.npr.org/sections/money/2015/09/25/443519599/episode-653-the-anti-store)
+- [<i class="fas fa-podcast"></i> *NPR Planet Money* 633: “The Birth and Death of the Price Tag”](https://www.npr.org/sections/money/2015/06/17/415287577/episode-633-the-birth-and-death-of-the-price-tag)
+
+- [<i class="fab fa-youtube"></i> Why Trains are so Expensive](https://www.youtube.com/watch?v=fwjwePe-HmA)
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides. 
+
+::: callout-tip
+You can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+:::
+
+I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+```{r}
+#| echo: false
+#| output: asis
+
+slide_links("1.7-slides")
+```

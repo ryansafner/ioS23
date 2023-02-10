@@ -50,6 +50,10 @@ website:
               href: content/1.5-content.qmd
             - text: "1.6 — Monopoly II"
               href: content/1.6-content.qmd
+            - text: "1.7 — Pricing Strategies"
+              href: content/1.7-content.qmd
+            - text: "1.8 — Factor Markets"
+              href: content/1.8-content.qmd
     - title: "Assignments"
       style: "docked"
       search: false

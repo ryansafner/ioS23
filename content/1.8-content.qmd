@@ -1,0 +1,44 @@
+---
+title: "1.8 — Factor Markets — Class Content"
+execute:
+  freeze: auto
+---
+
+```{r, echo = F}
+source(here::here("slides", "slide-links.R"))
+```
+
+::: {.callout-note appearance=minimal}
+# Meeting Date
+*Thursday, February 16, 2023*
+:::
+
+<!--::: callout-warning
+# Upcoming Assignment
+Please complete the [preliminary survey](/assignments/00-preliminary-survey.qmd) by next class.
+:::-->
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+Today we cover markets for factors of production (e.g. land, labor, capital, supplies, etc). We discuss what determines prices in these markets, and how they vary with monopoly power and monopsony power (a buyer with market power).
+
+We focus primarily on labor markets as the main factor market, and all of us are participants in labor markets. However, the analysis can be applied to any market for an input to production.
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides. 
+
+::: callout-tip
+You can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+:::
+
+I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+```{r}
+#| echo: false
+#| output: asis
+
+slide_links("1.8-slides")
+```

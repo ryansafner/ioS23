@@ -36,6 +36,14 @@ This is a part of our review of major production concepts from Microeconomics. Y
 
 - [<i class="fab fa-youtube"></i> Why Trains are so Expensive](https://www.youtube.com/watch?v=fwjwePe-HmA)
 
+## <i class="fas fa-dumbbell"></i> Practice
+
+Today you will be working on practice problems:
+
+- [<i class="fas fa-file-pdf"></i> Practice Problems](../files/practice/1.7-practice-pdf.pdf)
+<!-- [<i class="fas fa-file-pdf"></i> Answer Key](../files/practice/1.7-practice-answers-pdf.pdf)-->
+
+
 ## <i class="fas fa-chalkboard-teacher"></i> Slides
 
 Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides. 

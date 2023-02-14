@@ -1,5 +1,5 @@
 ---
-title: "4.7 — Pricing Strategies — Practice Problems"
+title: "1.7 — Pricing Strategies — Practice Problems"
 author: "ECON 326 — Spring 2023"
 date: ""
 output: pdf_document

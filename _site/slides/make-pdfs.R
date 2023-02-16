@@ -1,16 +1,14 @@
 # knit Rmd slides to html
-rmarkdown::render("slides/1.6-slides.Rmd")
+rmarkdown::render("slides/1.7-slides.Rmd")
 
 # make-pdfs
-pagedown::chrome_print(input = "https://ios23.classes.ryansafner.com/slides/1.6-slides.html",
-                       output = "slides/1.6-slides.pdf",
+pagedown::chrome_print(input = "https://ios23.classes.ryansafner.com/slides/1.7-slides.html",
+                       output = "slides/1.7-slides.pdf",
                        timeout = 300)
 
 # create png of first slide
-pagedown::chrome_print(input = "https://ios23.classes.ryansafner.com/slides/1.6-slides.html",
-                       output = "slides/1.6-slides.png",
+pagedown::chrome_print(input = "https://ios23.classes.ryansafner.com/slides/1.8-slides.html",
+                       output = "slides/1.8-slides.png",
                        selector = "div.remark-slide",
                        format = "png",
                        timeout = 300)
-
-

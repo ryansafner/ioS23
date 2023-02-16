@@ -58,13 +58,13 @@ class: inverse
 
 ### [Labor Supply Decisions](#12)
 
-### [Labor Market for Competitive Firm](#26)
+### [Labor Market for Competitive Firm](18)
 
-### [Labor Market for a Monopoly](#41)
+### [Labor Market for a Monopoly](#33)
 
-### [Monopsony Power](#45)
+### [Monopsony Power](#37)
 
-### [Monopoly Power in Labor Markets: Unions](#65)
+### [Monopoly Power in Labor Markets: Unions](#59)
 
 ---
 
@@ -927,7 +927,10 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 # Example
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
-.green[**Example**]: Victoria’s Tours is a travel company that offers guided tours of nearby mountain biking trails. Its marginal revenue product of labor is given by $MRP_L = 1,000 – 40l$, where $l$ is the number of tour-guide weeks it hires and $MRP_L$ is measured in dollars per tour-guide week. The going market wage for tour guides is $600 per tour-guide week.
+.green[**Example**]: Victoria’s Tours is a travel company that offers guided tours of nearby mountain biking trails. Its marginal revenue product of labor is given by
+$$MRP_L = 1,000 – 40L$$
+
+where $L$ is the number of tour-guide weeks it hires and $MRP_L$ is measured in dollars per tour-guide week. The going market wage for tour guides is $600 per tour-guide week.
 
 ]
 
@@ -1435,18 +1438,81 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 ---
 
-# Monopsony Depends on Price Elasticity of Supply
+# Monopsony Example II
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.smallest[
+.green[**Example**]: Now suppose that Victoria’s Tours is the *only* travel company that offers guided tours in the broader region. Its marginal revenue product of labor over the whole region, is given by
+$$MRP_L = 1,000 – 4L$$
+
+where $L$ is the number of tour-guide weeks it hires and $MRP_L$ is measured in dollars per tour-guide week. 
+
+The market (inverse) supply of local tour guide labor is equal to $$w=200+4L$$
+]
+]
+
+.smallest[
+
+1. If this market were competitive, what would the equilibrium number of workers and the market wage be?
+
+2. As a monopsonist, how many workers will Victoria's Tours hire, and what will they pay them? 
+
+]
+
+---
+
+# Monopsony Example II
+
+```{r}
+vic_demand = function(L){1000-4*L}
+vic_supply = function(L){200+4*L}
+vic_ML=function(L){200+8*L}
+#q_choke<-(a/b)
+#MR_choke<-(a/(2*b))
+vic_dwl <- tribble(
+  ~x, ~y,
+  66.67, 466.67,
+  66.67, 733.33,
+  100,600
+)
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_polygon(data = vic_dwl, aes(x = x, y = y), fill = "black", alpha = 0.4)+
+  stat_function(fun=vic_supply, geom="line", size=2, color="red")+
+  geom_label(x=160,y=vic_supply(160), color = "red", label="Supply")+
+  stat_function(fun=vic_ML, geom="line", size=2, color="darkred")+
+  geom_label(x=80,y=vic_ML(80), color = "darkred", label="MC(L)")+
+  stat_function(fun=vic_demand, geom="line", color="blue", size=2)+
+  geom_label(x=200,y=vic_demand(200), color = "blue", label="Demand = MRPL")+
+    scale_x_continuous(breaks = seq(0,250,10),
+                       limits = c(0,250),
+                       expand = c(0,0))+
+  scale_y_continuous(breaks=seq(0,1000,100),
+                     limits = c(0,1000),
+                     labels = scales::dollar_format(),
+                     expand = c(0,0))+
+  geom_segment(x = 0, xend = 100, y = 600, yend = 600, linetype = "dotted")+
+  geom_segment(x = 100, xend = 100, y = 600, yend = 0, linetype = "dotted")+
+  geom_segment(x = 0, xend = 66.67, y = 466.67, yend = 466.67, linetype = "dotted")+
+  geom_segment(x = 66.67, xend = 66.67, y = 733.33, yend = 0, linetype = "dotted")+
+  labs(x = "Labor (L)",
+       y = "Wage (w)")+
+  theme_bw(base_family = "Fira Sans Condensed", base_size=12)
+```
+
+---
+
+# Monopsony Power Depends on Price Elasticity
 
 .center[
 .smallest[
-.hi-purple[The more (less) elastic labor supply, the less (more) monopsony power (and DWL)]
+.hi-purple[The more (less) elastic labor *supply*, the less (more) monopsony power (and DWL)]
 ]
 ]
 .pull-left[
 
 .center[
 .smallest[
-*Less* Elastic Labor Supply Curve
+*Less* Elastic .red[Labor Supply Curve]
 ]
 ]
 ```{r, fig.align="center", fig.height=5.5}
@@ -1495,7 +1561,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 .center[
 .smallest[
-*More* Elastic Labor Supply Curve
+*More* Elastic .red[Labor Supply Curve]
 ]
 ]
 

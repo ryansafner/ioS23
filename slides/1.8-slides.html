@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>1.8 — Factor Markets</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ryan Safner" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/hygge.css" rel="stylesheet" />
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+class: title-slide
+
+# 1.8 — Factor Markets
+
+## ECON 326 • Industrial Organization • Spring 2023
+
+### Ryan Safner&lt;br&gt; Associate Professor of Economics &lt;br&gt; &lt;a href="mailto:safner@hood.edu"&gt;&lt;i class="fa fa-paper-plane fa-fw"&gt;&lt;/i&gt;safner@hood.edu&lt;/a&gt; &lt;br&gt; &lt;a href="https://github.com/ryansafner/ioS23"&gt;&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;ryansafner/ioS23&lt;/a&gt;&lt;br&gt; &lt;a href="https://ioS23.classes.ryansafner.com"&gt; &lt;i class="fa fa-globe fa-fw"&gt;&lt;/i&gt;ioS23.classes.ryansafner.com&lt;/a&gt;&lt;br&gt;
+
+---
+class: inverse
+
+# Outline
+
+### [Labor Supply Decisions](#12)
+
+### [Labor Market for Competitive Firm](#26)
+
+### [Labor Market for a Monopoly](#41)
+
+### [Monopsony Power](#45)
+
+### [Monopoly Power in Labor Markets: Unions](#65)
+
+---
+
+# Returning to Firms
+
+.pull-left[
+- Recall a firm uses technology that buys inputs, transforms them, and sells output
+`$$q=f(k,l)$$`
+  - We classified inputs into the .hi[factors of production]: land, labor, capital
+
+- We *assumed* fixed factor prices
+  - show up in total cost `\(=wL+rK\)`
+
+- Where do they come from? .hi[Factor markets]
+]
+
+.pull-right[
+.center[
+![:scale 70%](../images/inputoutput.png)
+]
+]
+
+---
+
+# Circular Flow
+
+.center[
+![:scale 60%](../images/circularflow.png)
+]
+
+---
+
+# Firms’ Payments to Factors are Income To Households
+
+.quitesmall[
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Income Type &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Amount (2016) &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Percent &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Salaries and wages &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $7217 Bn &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 68.45% &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Taxable pensions and annuities &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $694 Bn &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6.58% &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Partnership and S corporation net income &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $629 Bn &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5.97% &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Capital gains less losses &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $621 Bn &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5.89% &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Business net income &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $389 Bn &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.69% &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Taxable Social Security benefits &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $286 Bn &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.71% &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Taxable IRA distributions &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $258 Bn &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.45% &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Ordinary dividends &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $254 Bn &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.41% &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Total rental and royalty net income &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $98 Bn &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.93% &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Taxable interest &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $97 Bn &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.92% &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+.source[Source: [Tax Foundation, 2018](https://taxfoundation.org/sources-of-personal-income-2016/)]
+
+---
+
+# Firms’ Payments to Factors are Income To Households
+
+.pull-left[
+.center[
+![](../images/Sources-of-Personal-Income-2016-Update-1.png)
+]
+]
+
+.pull-right[
+.center[
+![](../images/FF612-chart-2.png)
+]
+]
+
+.source[Source: [Tax Foundation, 2018](https://taxfoundation.org/sources-of-personal-income-2016/)]
+
+---
+
+# Supply and Demand in Factor Markets
+
+.pull-left[
+
+- The price of a factor is governed by the same market forces as output:
+
+- .hi-red[Supply of Factor]: willingness of factor owners to accept and sell/rent their services to firms
+  - landowners, workers, capitalists, resource owners, suppliers
+
+- .hi-blue[Demand for Factor]: willingness of firms to pay for/hire factor services
+]
+
+.pull-right[
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-2-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Factor Market Prices and Opportunity Costs
+
+.pull-left[
+
+- .hi[Factor price represents **opportunity cost** of hiring a factor for an alternative use]
+  - Firms not only pay for direct use of a factor, but also indirectly for *not using* it in an alternate process!
+
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/disappear.jpg)
+]
+]
+---
+
+# Factor Market Prices and Opportunity Costs
+
+.pull-left[
+
+- .green[**Example**]: a producer of hammers buys steel, pays (the opportunity cost) for "taking" the steel away from alternative uses
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/disappear.jpg)
+]
+]
+
+---
+
+# Factor Market Prices and Opportunity Costs
+
+.pull-left[
+
+- .green[**Example**]: e.g. salary for a skilled worker must be high enough to keep them at their current firm, and not be attracted to other firms/industries
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/disappear.jpg)
+]
+]
+
+---
+
+# Example Factor Market: Labor Markets
+
+.pull-left[
+- Empirically, about 70% of total cost of production comes from labor
+
+- We’ll focus just on the .hi[market for labor] as an example factor market
+
+- Can do the same for *any* factor market 
+  - (e.g. capital, land, materials, etc.)
+]
+
+.pull-right[
+.center[
+![](../images/labormarket.jpg)
+]
+]
+
+---
+
+class: inverse, center, middle
+
+# Labor Supply Decisions
+
+---
+
+# Labor Supply Decisions
+
+.pull-left[
+
+- The .red[Supply of Labor] comes from **individual decisions to work**
+
+- Labor is considered a .hi[disutility] (a .hi[bad])
+  - **Opportunity cost** of labor is .hi[leisure]
+  - But, labor generates .hi-purple[income] for .hi-purple[consumption] (a good)
+
+- Tradeoff: if you work more, you get more income, but less leisure
+]
+
+.pull-right[
+.center[
+![:scale 50%](../images/labor2.png)
+
+![:scale 50%](../images/freedom.jpg)
+]
+]
+
+---
+
+# Modeling Labor Supply Decisions: A Change In Wages
+
+.pull-left[
+
+- We often see “backward-bending” labor supply curves
+
+- Depends on whether income or substitution effect dominates
+]
+.pull-right[
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-3-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# A Brief Digression on Economic Rents I
+
+.pull-left[
+
+- Recall .hi-red[market supply] is the **minimum willingness to accept**, the minimum price necessary to bring a resource to market (its opportunity cost)
+
+- But all (equivalent) labor is paid the *market wage*, `\(w^*\)` determined by market labor supply and labor demand
+
+]
+
+.pull-right[
+
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-4-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# A Brief Digression on Economic Rents II
+
+.pull-left[
+
+- Some workers would have accepted a job for less than `\(w^*\)`
+
+- These inframarginal workers earn .hi[economic rent] in excess of what is needed to bring them into the market (their opportunity cost)
+
+]
+
+.pull-right[
+
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-5-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# A Brief Digression on Economic Rents III
+
+.pull-left[
+
+- Consider a factor (such as land) for which the supply is perfectly inelastic (e.g. a fixed supply)
+
+- Then the **entire value of the land is economic rent**!
+
+- .hi-purple[The *less* elastic the supply of a factor, the *more* economic rent it generates!]
+
+]
+
+.pull-right[
+
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-6-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+class: inverse, center, middle
+
+# Labor Market for a Competitive Firm
+
+---
+
+
+# Derived Demand in Factor Markets
+
+.pull-left[
+- Demand for factors is a .hi-purple[“derived demand”]:
+  - Firm only demands inputs to the extent they **contribute to producing sellable output**
+
+- Firm faces a .hi-purple[tradeoff] when **hiring more labor**, as more labor `\(\Delta L\)` creates:
+  1. .hi[Marginal Benefit]: Increases output and thus revenue
+  2. .hi[Marginal Cost]: Increases costs
+]
+
+.pull-right[
+.center[
+![](../images/firms.png)
+]
+]
+
+---
+
+# Marginal Revenue Product (of Labor)
+
+- Hiring more labor increases new output (i.e. labor's .hi-purple[`\\(MP_L\\)`])
+  - [Recall](https://ios23.classes.ryansafner.com/content/1.2-content/): `\(MP_L=\frac{\Delta q}{\Delta L}\)`, where `\(q\)` is units of output
+
+--
+
+- Additional output generates new revenues (i.e. labor's .hi-purple[`\\(MR(q)\\)`])
+  - Recall: `\(MR(q)=\frac{\Delta R(q)}{\Delta q}\)`, where `\(R(q)\)` is total revenue
+--
+
+- Hiring more labor, on the **margin**, generates a **benefit**, called the .hi-blue[marginal revenue product of labor, `\\(MRP_L\\)`]:
+`$$MRP_L=MP_L* MR(q)$$`
+  - i.e. the number of new products a new worker makes times the revenue earned by selling the new products
+
+
+---
+
+# Marginal Revenue Product for *Competitive* Firms
+
+.pull-left[
+
+- This is the .hi-blue[Firm's Demand for Labor]:
+
+`$$MRP_L=MP_L* MR(q)$$`
+
+- For a firm in a .hi[competitive (output) market], firm's `\(MR(q)=p\)`, hence:
+
+`$$MRP_L=MP_L*p$$`
+where `\(p\)` is the price of the firm's *output*
+
+]
+
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-7-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Marginal Revenue Product for *Competitive* Firms
+
+.pull-left[
+
+`$$MRP_L=MP_L* p$$`
+
+- Marginal benefit of hiring labor, `\(MRP_L\)` **falls** with more labor used
+    - production exhibits **diminishing marginal returns to labor**!
+
+- .hi[Choke price for labor demand]: price too high for firm to purchase any labor
+
+]
+
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-8-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+---
+
+# A Competitive *Factor* Market
+
+.pull-left[
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-9-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-10-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+- If the .hi[*factor* market is competitive], labor supply available to an individual firm is *perfectly elastic* at the market price of labor `\((w^*)\)`
+
+---
+
+# Labor Supply and Firm's Demand for Labor
+
+.pull-left[
+
+- We've seen a falling `\(MRP_L\)`, the marginal benefit of hiring labor
+
+- .hi[Marginal cost of hiring labor], `\(w\)`, remains constant
+  - so long as firm is not a big purchaser (has no market power) in the labor market 
+
+]
+
+.pull-right[
+
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-11-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+
+---
+
+# Labor Supply and Firm's Demand for Labor
+
+.pull-left[
+- At low amounts of labor, .blue[marginal benefit] `\(\color{#0047AB}{MRP_L} &gt; \color{#D7250E}{w}\)` .red[marginal cost]
+
+- Firm will hire more labor
+
+]
+
+.pull-right[
+
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-12-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Labor Supply and Firm's Demand for Labor
+
+.pull-left[
+
+- At high amounts of labor, .blue[marginal benefit] `\(\color{#0047AB}{MRP_L} &lt; \color{#D7250E}{w}\)` .red[marginal cost]
+
+- Firm will hire less labor
+
+]
+
+.pull-right[
+
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-13-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Labor Supply and Firm's Demand for Labor
+
+.pull-left[
+
+- Firm hires `\(L^*\)` optimal amount of labor where `\(w=MRP_L\)` 
+
+- i.e. .red[marginal cost] of labor `\(=\)` .blue[marginal benefit] of labor
+
+]
+
+.pull-right[
+
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-14-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Labor Supply and Firm's Demand for Labor
+
+.pull-left[
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-15-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-16-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+
+---
+
+# Labor Supply and Firm's Demand for Labor
+
+.pull-left[
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-17-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-18-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.smaller[
+- If market supply of labor decreases (increases), wages increase (decrease) &amp; firms hire fewer (more) workers
+]
+
+---
+
+# Example
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: Victoria’s Tours is a travel company that offers guided tours of nearby mountain biking trails. Its marginal revenue product of labor is given by `\(MRP_L = 1,000 – 40l\)`, where `\(l\)` is the number of tour-guide weeks it hires and `\(MRP_L\)` is measured in dollars per tour-guide week. The going market wage for tour guides is $600 per tour-guide week.
+
+]
+
+1. What is the optimal amount of labor for Victoria’s Tours to hire?
+
+2. At and above what market wage would Victoria’s Tours not want to hire *any* labor?
+
+3. What is the *most* labor Victoria’s Tours would ever hire, given its marginal revenue product? 
+
+---
+
+class: inverse, center, middle
+
+# Labor Demand for a Monopoly 
+
+---
+
+# Labor Demand for Competitive vs. Monopolist Firm
+
+.pull-left[
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-19-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+- Recall a firm's demand for labor: `\(\color{blue}{MRP_L= MP_L * MR(q)}\)`
+
+- A firm in a **competitive _output_ industry** has its `\(MR(q)=p\)`
+  - So we saw its .hi-blue[Labor Demand], `\(MRP_L = MP_L * p\)`
+
+]
+
+---
+
+# Labor Demand for Competitive vs. Monopolist Firm
+
+.pull-left[
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-20-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+- Recall if firm is a **monopolist** in its **output** industry, its `\(MR(q) &lt; p\)`
+  - So its .hi-blue[Labor Demand], `\(MRP_L = MRP_L * MR(q)\)`
+
+- Since `\(MR(q) &lt; p\)`, .hi-purple[a monopoly in its output industry will always have lower demand for labor], and thus, .hi-purple[hire less labor than a competitive firm]
+  - Monopoly produces less output, so wants fewer inputs!
+]
+
+---
+
+# Labor Demand for Competitive vs. Monopolist Firm
+
+.pull-left[
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-21-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+- This is about the competitiveness of the **output** or .hi-purple[“downstream”] market
+
+- Here, both competitive firm and monopolist in downstream markets face the same perfectly elastic .hi-red[labor supply]
+  - We've assumed no market power in the **input** or .hi-purple[“upstream”] market (for labor)
+
+- We next consider market power in the upstream (labor) market...
+]
+
+---
+
+class: inverse, center, middle
+
+# Monopsony Power
+
+---
+
+# Monopsony
+
+.pull-left[
+
+- What if the firm has .hi-purple[market power in a factor market]?
+
+- Consider extreme example: .hi[monopsony]: a factor market with a **single buyer**
+
+]
+
+.pull-right[
+.center[
+![](../images/monopolyman.jpg)
+]
+]
+
+---
+
+# Monopsony and Market Supply of Labor
+
+.pull-left[
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-22-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+- Market power in *hiring* labor implies that the firm faces the **whole market factor supply curve** for labor
+
+- Market supply is upward sloping
+
+- .hi-red[Factor (inverse) supply] describes minimum price workers are willing to accept to work
+
+]
+
+---
+
+# Monopsony and Market Supply of Labor
+
+.pull-left[
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-23-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+- As firm chooses to hire more `\(L\)`, must raise wages on *all* workers to hire them
+
+]
+
+---
+
+# Monopsony and Market Supply of Labor
+
+.pull-left[
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-24-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+- As firm chooses to hire more `\(L\)`, must raise wages on *all* workers to hire them
+
+- .green[Output effect]: increased cost from increased number of workers
+
+]
+
+---
+
+# Monopsony and Market Supply of Labor
+
+.pull-left[
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-25-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+- As firm chooses to hire more `\(L\)`, must raise wages on *all* workers to hire them
+
+- .green[Output effect]: increased cost from increased number of workers
+
+- .red[Price effect]: increased cost from raising wage for all workers
+
+]
+
+---
+# Monopsony and Marginal Cost of Labor I
+
+- If monopsonist wants to hire more labor, `\(\Delta L\)`, its labor cost `\(C(L)\)` would change by:
+
+.center[
+
+`\(\Delta C(L)=\)`.green[`\\(w \Delta L\\)`] `\(+\)` .red[`\\(L \Delta w\\)`]
+
+]
+
+--
+
+- .green[Output effect]: increases number of labor hired `\((\Delta L)\)` times wage `\(w\)` per worker
+
+--
+
+- .red[Price effect]: raises wage per worker `\((\Delta w)\)` on *all* workers hired `\((L)\)`
+
+--
+
+- Divide both sides by `\(\Delta L\)` to get .hi-purple[Marginal Cost of Labor, `\\(MC(L)\\)`]:
+
+`$$\frac{\Delta C(L)}{\Delta L}=\color{#6A5ACD}{MC(L)=w+\frac{\Delta w}{\Delta L}L}$$`
+
+--
+
+.small[
+- Compare: supply for a **price-taking** firm is perfectly elastic: `\(\color{#6A5ACD}{\frac{\Delta w}{\Delta L}}=0\)`, so we saw `\(\color{#6A5ACD}{MC(L)=w}\)`!
+]
+
+---
+
+# Monopsony and Marginal Cost of Labor II
+
+.smallest[
+- If we have a linear inverse supply function for labor of the form
+`$$\color{#e64173}{w=a+bL}$$`
+  - `\(a\)` is the choke price (intercept)
+  - `\(b\)` is the slope
+]
+
+--
+
+.smallest[
+- Marginal cost of labor again is defined as:
+`$$MC(L)=w+\color{#44C1C4}{\frac{\Delta w}{\Delta L}}L$$`
+]
+
+--
+
+.smallest[
+- Recognize that `\(\color{#44C1C4}{\frac{\Delta w}{\Delta L}}\)` is the slope, `\(b\)`, `\(\left(\frac{rise}{run} \right)\)`
+]
+--
+
+.smallest[
+`$$\begin{align*}
+MC(L)&amp;=w+(\color{#44C1C4}{b})L\\
+MC(L)&amp;=(\color{#e64173}{a+bL})+bL\\
+\color{#6A5ACD}{MC(L)}&amp;=\color{#6A5ACD}{a+2bL}\\
+\end{align*}$$`
+]
+
+---
+
+# Monopsony and Marginal Cost of Labor IV
+
+.pull-left[
+
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-26-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+`$$\begin{align*}
+\color{#D7250E}{w(L)}&amp;\color{#D7250E}{=a+bL}\\
+\color{#8b1a1a}{MC(L)}&amp;\color{#8b1a1a}{=a+2bL}\\
+\end{align*}$$`
+
+- Marginal cost of labor starts at same intercept as Supply (average cost of labor) `\((a)\)` with twice the slope `\((2b)\)`
+
+.tiny[
+Note: If these past few slides have sounded familiar, this is the [exact same process](/slides/1.5-slides#18) by which we derived a *monopolist*’s marginal *revenue* curve!
+]
+]
+
+---
+
+# Monopsony's Hiring Decisions 
+
+.pull-left[
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-27-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+- Optimal quantity is where `\(MC=MR\)`
+  - Firm's `\(MC(L)=MRP_L\)`
+
+]
+
+---
+
+# Monopsony's Hiring Decisions 
+
+.pull-left[
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-28-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+- Optimal quantity is where `\(MC=MR\)`
+  - Firm's `\(MC(L)=MRP_L\)`
+
+- Monopsonist faces *entire* .hi-red[market supply]
+  - Can lower wages as low as workers’ minimum WTA (Supply)
+
+]
+
+---
+
+# Monopsonist’s Hiring Decisions 
+
+.pull-left[
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-29-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+- Optimal quantity is where `\(MC=MR\)`
+  - Firm's `\(MC(L)=MRP_L\)`
+
+- Monopsonist faces *entire* .hi-red[market supply]
+  - Can lower wages as low as workers' minimum WTA (Supply)
+
+- Compared to a competitive labor market `\((L_c,w_c)\)`, .hi-purple[monopsonist hires fewer workers and pays them lower wages] `\((L_m,w_m)\)`; creates **deadweight loss**
+]
+
+---
+
+# Monopsony Depends on Price Elasticity of Supply
+
+.center[
+.smallest[
+.hi-purple[The more (less) elastic labor supply, the less (more) monopsony power (and DWL)]
+]
+]
+.pull-left[
+
+.center[
+.smallest[
+*Less* Elastic Labor Supply Curve
+]
+]
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-30-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+.center[
+.smallest[
+*More* Elastic Labor Supply Curve
+]
+]
+
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-31-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+class: inverse, center, middle
+
+# Monopoly Power in Labor Markets: Unions
+
+---
+
+# Monopoly Power in Labor Markets: Unions
+
+.pull-left[
+&lt;img src="1.8-slides_files/figure-html/unnamed-chunk-32-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+- If **seller**/s of labor (workers) has market power, can act like a **monopolist** on the labor market
+
+- .hi-green[Example]: A labor union
+
+- Faces entire market demand for labor, and thus its marginal revenue curve too
+
+- Acts like a monopolist, restricts `\(L_u &lt; L_c\)` to push up `\(w_u &gt; w_c\)`
+]
+
+---
+
+# The Problem of Bilateral Monopoly
+
+.pull-left[
+
+- What if **both** sides of the market **have market power**?
+  - A downstream .hi-blue[monopsonist buyer] vs. an upstream .hi-red[monopolist seller]
+
+- This is the problem of .hi[bilateral monopoly]
+  - We’ll examine later this semester
+  - One solution is .hi-purple[vertical integration]: merge into a single firm across both markets
+]
+
+.pull-right[
+.center[
+![](../images/negotiation.jpg)
+]
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "ocean",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

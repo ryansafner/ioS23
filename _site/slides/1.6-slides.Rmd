@@ -1,6 +1,6 @@
 ---
 title: "1.6 — Consequences and Causes of Market Power"
-author: 'Ryan Safner<br> Associate Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/microS22"><i class="fa fa-github fa-fw"></i>ryansafner/microS22</a><br> <a href="https://microS22.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>microS22.classes.ryansafner.com</a><br>'
+author: 'Ryan Safner'
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -47,9 +47,9 @@ class: title-slide
 
 # 1.6 — Consequences & Sources of Power
 
-## ECON 306 • Microeconomic Analysis • Fall 2022
+## ECON 306 • Industrial Organization • Spring 2023
 
-### Ryan Safner<br> Associate Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/microF22"><i class="fa fa-github fa-fw"></i>ryansafner/microF22</a><br> <a href="https://microF22.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>microF22.classes.ryansafner.com</a><br>
+### Ryan Safner<br> Associate Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/ioS23"><i class="fa fa-github fa-fw"></i>ryansafner/ioS23</a><br> <a href="https://ioS23.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>ioS23.classes.ryansafner.com</a><br>
 
 ---
 

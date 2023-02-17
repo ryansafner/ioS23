@@ -65,6 +65,8 @@ website:
           contents:
             - text: "Instructions"
               href: assignments/problem-sets.qmd
+            - text: "Problem Set 1"
+              href: assignments/01-problem-set.qmd
         - section: "Exams"
           contents:
 

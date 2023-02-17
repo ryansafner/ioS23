@@ -1,0 +1,163 @@
+---
+title: "Problem Set 1"
+execute: 
+  freeze: auto
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+```
+
+::: {.callout-warning appearance="minimal"}
+Due by 11:59 PM Thursday February 23 via by Blackboard Assignments
+:::
+
+Please read the [instructions](https://ios23.classes.ryansafner.com/assignments/problem-sets) for completing homeworks.
+
+<p style="text-align:center;"><a class="btn btn-primary btn-lg" target="_blank" href="/files/assignment/01-problem-set-pdf.pdf"><i class="fas fa-file-pdf"></i> Download as PDF</a> <a class="btn btn-primary btn-lg" target="_blank" href="/files/assignment/01-problem-set-docx.docx"><i class="fa-regular fa-file-word"></i> Download as .docx</a></p>
+
+<!--## Answers
+
+<p style="text-align:center"><a target="_blank" href="/files/assignment/01-problem-set-answers.html"><span class="btn btn-primary btn-lg"><i class="far fa-life-ring"></i> Answers</a> <a target="_blank" href="/files/assignment/01-problem-set-answers-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> Answers (PDF)</a> </p>-->
+
+# Competitive Markets
+
+## Question 1
+
+In a competitive industry, why are economic profits normal (zero) in the long run? What about if firms are not identical, and have different costs?
+
+## Question 2
+
+Assume that consumers view tax preparation services as undifferentiated among producers, and that there are hundreds of companies offering tax preparation. The current market equilibrium price is $120. Amy's Audits is a local tax preparation firm that has a daily short-run cost structure given by:
+
+$$\begin{align*}
+C(q)&=100+4q^2\\
+MC(q)&=8q\\
+\end{align*}$$
+
+### Part A
+How many tax returns should Amy prepare each day if her goal is to maximize profits?
+
+### Part B
+How much profit will she earn each day?
+
+### Part C
+At what market price would she break even?
+
+### Part D
+Below what hypothetical price would she shut down in the short run?
+
+### Part E
+Sketch a graph and be sure to label everything you found in parts A-D. 
+
+### Part F
+What is Amy's supply curve in the *short run*? Write a function or describe it via the graph in E.
+
+### Part G
+What is Amy's supply curve in the *long run*? Write a function or describe it via the graph in E.
+
+# Monopoly
+
+## Question 3
+
+What is the difference between allocative (in)efficiency, productive (in)efficiency, rent-seeking, and X-inefficiency?
+
+## Question 4
+
+Sketch a graph of a monopoly with no fixed costs, and constant equivalent average & marginal costs. Label all of the following:
+
+- The equilibrium quantity and price if the market were competitive
+- The profit-maximizing quantity and price for the monopoly
+- The consumer surplus, producer surplus, and deadweight loss under monopoly
+
+## Question 5
+
+Explain what the goal of price discrimination is for a firm — *how* does price discrimination assist in maximizing profits? What are the conditions required for a firm to engage in price discrimination? What are the different types of price discrimination, and how does each work (briefly)?
+
+## Question 6
+You are a monopoly producer of tablets. You have a cost structure: 
+
+$$\begin{align*}
+C(q)&=10q^2+200q+1000\\
+MC(q)&=20q+200\\
+\end{align*}$$
+
+You estimate the demand for your tablets to be: 
+$$q=100-0.2p$$
+where $q$ is millions of tablets. 
+
+### Part A
+Find the function for your marginal revenues.
+
+### Part B
+How many tablets should you produce, and at what price, to maximize your profit?
+
+### Part C
+What is the cost per tablets at the quantity you are producing?
+
+### Part D
+What is your total profit?
+
+### Part E
+What would be the lowest possible price you would need to charge to break even?
+
+### Part F
+How much of your price is markup over marginal cost?
+
+### Part G
+Calculate the elasticity of demand at your profit-maximizing price. 
+
+## Question 7
+
+Consider a boat rental firm on a popular beach that has a constant average and marginal cost of $30 per boat hire. It has estimated that demand from Locals $(L)$ and demand from Tourists $(T)$ are:
+$$\begin{align*}
+q_L&=40-0.4p\\
+q_T&=25-0.1p\\
+\end{align*}$$
+
+### Part A
+
+Suppose it must charge a single price to all customers. Find the profit-maximizing quantity, price, and the total profits.
+
+### Part B
+
+How much of the price is markup?
+
+### Part C
+
+What is the price elasticity of demand at this price?
+
+### Part D
+
+Now suppose the firm is able to segment the market and charge different prices to Tourists and Locals. Find the profit-maximizing quantity, price, and the total profits.
+
+### Part E
+
+For each segment of the market: how much of the price is markup, and what is the price elasticity of demand at the optimal price? How did the price for each segment change from the single price (Part A), and why?
+
+
+# Factor Markets & Monopsony
+
+## Question 8 
+
+Carl's Coal Mining operates in a remote area. Because of its location, it has monopsony power in the local labor market for miners. Its marginal revenue product of labor is
+$$MRP_L = 400-5L$$
+where $L$ is the total number of miners. The labor supply curve of local miners is
+$$w = 5L-50$$
+where $w$ is the wage (in $1000's per miner).
+
+### Part A
+
+Write a function for the marginal cost of labor.
+
+### Part B
+
+What quantity of workers will the mine hire, and what wage will it pay its workers?
+
+### Part C
+
+What would the quantity of workers be, and what would the wage be, if there was competition among other local mines for labor?
+
+### Part D
+
+Sketch a graph of this market, and be sure to label all of your findings (and show the Deadweight Loss) from Parts A-C.

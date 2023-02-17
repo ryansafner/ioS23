@@ -1,0 +1,109 @@
+---
+title: "Problem Set 1"
+author: "ECON 326 - Industrial Organization - Spring 2023"
+date: "Due by 11:59 PM Thursday February 23 via Blackboard Assignments"
+output: pdf_document
+header-includes:
+- \usepackage{amsmath}
+- \usepackage{multirow, multicol, booktabs}
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE)
+```
+
+# Competitive Markets
+
+1. In a competitive industry, why are economic profits normal (zero) in the long run? What about if firms are not identical, and have different costs?
+
+\clearpage
+
+2. Assume that consumers view tax preparation services as undifferentiated among producers, and that there are hundreds of companies offering tax preparation. The current market equilibrium price is $120. Amy's Audits is a local tax preparation firm that has a daily short-run cost structure given by:
+
+$$\begin{aligned}
+C(q)&=100+4q^2\\
+MC(q)&=8q\\
+\end{aligned}$$
+
+where $q$ is the number of tax returns per day.
+
+a. How many tax returns should Amy prepare each day if her goal is to maximize profits?
+b. How much profit will she earn each day?
+c. At what market price would she break even?
+d. Below what hypothetical price would she shut down in the short run?
+e. Sketch a graph and be sure to label everything you found in parts A-D.
+f. What is Amy's supply curve in the *short run*? Write a function or describe it via the graph in E.
+g. What is Amy's supply curve in the *long run*? Write a function or describe it via the graph in E.
+
+\clearpage
+
+# Monopoly
+
+3. What is the difference between allocative (in)efficiency, productive (in)efficiency, rent-seeking, and X-inefficiency?
+
+\vspace{3in}
+
+4. Sketch a graph of a monopoly with no fixed costs, and constant equivalent average & marginal costs. Label all of the following:
+
+- The equilibrium quantity and price if the market were competitive
+- The profit-maximizing quantity and price for the monopoly
+- The consumer surplus, producer surplus, and deadweight loss under monopoly
+
+\clearpage
+
+5. Explain what the goal of price discrimination is for a firm — *how* does price discrimination assist in maximizing profits? What are the conditions required for a firm to engage in price discrimination? What are the different types of price discrimination, and how does each work (briefly)?
+
+
+\clearpage 
+
+6. You are a monopoly producer of tablets. You have a cost structure: 
+
+$$\begin{aligned}
+C(q)&=10q^2+200q+1000\\
+MC(q)&=20q+200\\
+\end{aligned}$$
+
+You estimate the demand for your tablets to be: 
+$$q=100-0.2p$$
+where $q$ is millions of tablets. 
+
+a. Find the function for your marginal revenues.
+b. How many tablets should you produce, and at what price, to maximize your profit?
+c. What is the cost per tablets at the quantity you are producing?
+d. What is your total profit?
+e. What would be the lowest possible price you would need to charge to break even?
+f. How much of your price is markup over marginal cost?
+g. Calculate the elasticity of demand at your profit-maximizing price. 
+
+\clearpage
+
+7. Consider a boat rental firm on a popular beach that has a constant average and marginal cost of $30 per boat hire. It has estimated that demand from Locals $(L)$ and demand from Tourists $(T)$ are:
+$$\begin{aligned}
+q_L&=40-0.4p\\
+q_T&=25-0.1p\\
+\end{aligned}$$
+
+a. Suppose it must charge a single price to all customers. Find the profit-maximizing quantity, price, and the total profits.
+b. How much of the price is markup?
+c. What is the price elasticity of demand at this price?
+d. Now suppose the firm is able to segment the market and charge different prices to Tourists and Locals. Find the profit-maximizing quantity, price, and the total profits.
+e. For each segment of the market: how much of the price is markup, and what is the price elasticity of demand at the optimal price? How did the price for each segment change from the single price (Part A), and why?
+
+
+\clearpage
+
+# Factor Markets & Monopsony
+
+8. Carl's Coal Mining operates in a remote area. Because of its location, it has monopsony power in the local labor market for miners. Its marginal revenue product of labor is
+$$MRP_L = 400-5L$$
+where $L$ is the total number of miners. The labor supply curve of local miners is
+$$w = 5L-50$$
+where $w$ is the wage (in $1000's per miner).
+
+a. Write a function for the marginal cost of labor.
+b. What quantity of workers will the mine hire, and what wage will it pay its workers?
+c. What would the quantity of workers be, and what would the wage be, if there was competition among other local mines for labor?
+d. Sketch a graph of this market, and be sure to label all of your findings (and show the Deadweight Loss) from Parts A-C.

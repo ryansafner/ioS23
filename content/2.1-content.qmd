@@ -1,0 +1,58 @@
+---
+title: "2.1 — Imperfect Competition & Collusion — Class Content"
+execute:
+  freeze: auto
+---
+
+```{r, echo = F}
+source(here::here("slides", "slide-links.R"))
+```
+
+::: {.callout-note appearance=minimal}
+# Meeting Date
+*Tuesday, February 21, 2023*
+:::
+
+::: callout-warning
+# Upcoming Assignment
+[Problem Set 1](/assignment/01-problem-set) (1.1-1.8) is due by 11:59 PM Thursday February 23 on Blackboard Assignments.
+:::
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+Today we return to finish our tour of industrial organization, i.e. the types of markets by competitiveness.
+
+We first cover monopolistic competition, a much more realistic model of most firms in the real world, where firms have some market power, but are not the only producer in their industry. To model them, we blend elements of monopoly with elements of perfect competition. In the short-run, we model the firm as a monopoly acting like any monopolist would, but in the long run, there is free entry and exit, so other entrants reduce the demand for any one firm’s product (and make it more elastic) so that firms’ economic profits go to zero.
+
+We finally start oligopoly, where there are a small number of firms with market power that interact strategically. While some industries in the real world are indeed dominated by a small number of firms, this type of model is applicable well beyond industries with a small number of firms, as to understand the strategic nature of firm decisions, we introduce game theory into our models.
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+- <i class="fas fas fa-book"></i> Ch. 11.1-11.2, 7 in [Church & Ware, 2000](https://works.bepress.com/jeffrey_church/23/)
+
+Chapter 11 covers product differentiation models more fully than we will cover in this course (e.g. Address models, Hotelling model, etc.). We will briefly cover the basics of monopolistic competition but then focus the rest of the semester on Oligopoly. 
+
+Chapter 7 covers the basics of static game theory. For now, we will only need basic concepts like Nash Equilibrium.
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides. 
+
+::: callout-tip
+You can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+:::
+
+I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+```{r}
+#| echo: false
+#| output: asis
+
+slide_links("2.1-slides")
+```
+
+## <i class="fas fa-laptop-code"></i> Assignments
+
+### Problem Set 1 Due Thursday February 23
+
+[Problem Set 1](/assignment/01-problem-set) (1.1-1.8) is due by 11:59 PM Thursday February 23 on Blackboard Assignments.

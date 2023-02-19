@@ -54,6 +54,12 @@ website:
               href: content/1.7-content.qmd
             - text: "1.8 — Factor Markets"
               href: content/1.8-content.qmd
+        - section: "II. Oligopoly & Static Game Theory"
+          contents: 
+            - text: "1.1 — Imperfect Competition & Collusion"
+              href: content/2.1-content.qmd
+            - text: "2.2 — Cournot Competition"
+              href: content/2.2-content.qmd
     - title: "Assignments"
       style: "docked"
       search: false

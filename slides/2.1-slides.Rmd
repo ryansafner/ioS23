@@ -1241,7 +1241,3 @@ Source: [NPR Planet Money](https://www.npr.org/sections/money/2015/06/24/4171879
 .tiny[<sup>.magenta[†]</sup> *Without* price-discrimination. Price-discrimination will increase output, increase profits, decrease consumer surplus, decrease deadweight loss
 
 <sup>.magenta[‡]</sup> A cartel is $n$ firms that *act* as a joint monopolist, but each gets (for simplicity)  $\frac{1}{n}$ of the total profits.]
-
-.smallest[
-You may find [this visualization](https://ryansafner.shinyapps.io/cournot_n_firms/) (for ECON 326) useful (interpret “Bertrand” as perfect competition and “Cournot” as oligopoly)
-]

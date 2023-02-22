@@ -35,7 +35,7 @@ This is a part of our review of major production concepts from Microeconomics. Y
 Today you will be working on practice problems:
 
 - [<i class="fas fa-file-pdf"></i> Practice Problems](../files/practice/1.5-practice-pdf.pdf)
-- [<i class="fas fa-file-pdf"></i> Answer Key](../files/practice/1.5-practice-answers.pdf)
+- [<i class="fas fa-file-pdf"></i> Answer Key](../files/practice/1.5-practice-answers.html)
 
 
 ## <i class="fas fa-chalkboard-teacher"></i> Slides

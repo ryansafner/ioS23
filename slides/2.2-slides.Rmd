@@ -78,7 +78,7 @@ Three canonical models of Oligopoly
 # Cournot Competition on Moblab
 
 .center[
-![:scale 80%](../images/cournotmoblab.png)
+![:scale 80%](../images/cournot_moblab.png)
 ]
 
 ---
@@ -96,7 +96,7 @@ Three canonical models of Oligopoly
 
 .pull-right[
 .center[
-![:scale 100%](../images/cournotmoblab.png)
+![:scale 100%](../images/cournot_moblab.png)
 ]
 ]
 
@@ -115,7 +115,7 @@ Three canonical models of Oligopoly
 
 .pull-right[
 .center[
-![:scale 100%](../images/cournotmoblab.png)
+![:scale 100%](../images/cournot_moblab.png)
 ]
 ]
 

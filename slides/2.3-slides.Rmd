@@ -1,0 +1,1073 @@
+---
+title: "2.2 — Cournot Competition"
+author: 'Ryan Safner'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    seal: false
+    css: [custom.css, "hygge"] #, metropolis, metropolis-fonts
+    nature:
+      beforeInit: ["macros.js", "https://platform.twitter.com/widgets.js"] # first is for rescaling images , second is for embedding tweets, https://github.com/yihui/xaringan/issues/100
+      highlightStyle: ocean #rainbow #monokai rainbow solarized-light #tomorrow-night -blue -eighties zenburn
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+    includes:
+      in_header: header.html # for font awesome, used in title  
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo=F,
+                      message=F,
+                      warning=F,
+                      fig.retina = 3,
+                      fig.align = "center")
+library("tidyverse")
+library("mosaic")
+library("ggrepel")
+library("fontawesome")
+xaringanExtra::use_tile_view()
+xaringanExtra::use_tachyons()
+xaringanExtra::use_freezeframe()
+
+update_geom_defaults("label", list(family = "Fira Sans Condensed"))
+update_geom_defaults("text", list(family = "Fira Sans Condensed"))
+
+set.seed(256)
+```
+
+
+class: title-slide
+
+# 2.2 — Cournot Competition
+
+## ECON 326 • Industrial Organization • Spring 2023
+
+### Ryan Safner<br> Associate Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/ioS23"><i class="fa fa-github fa-fw"></i>ryansafner/ioS23</a><br> <a href="https://ioS23.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>ioS23.classes.ryansafner.com</a><br>
+
+---
+
+# Models of Oligopoly
+
+.pull-left[
+Three canonical models of Oligopoly
+
+1. .hi[Bertrand competition]
+  - Firms **simultaneously** compete on **price**
+2. .hi[Cournot competition]
+  - Firms **simultaneously** compete on **quantity**
+3. .hi[Stackelberg competition]
+  - Firms **sequentially** compete on **quantity**
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/chessknights.jpg)
+]
+]
+
+---
+
+# Cournot Competition on Moblab
+
+.center[
+![:scale 80%](../images/cournotmoblab.png)
+]
+
+---
+
+# Cournot Competition on Moblab
+
+.pull-left[
+- Each of you is a firm selling identical scooters
+- Each season, each firm chooses its quantity to produce
+- You pay a cost for each you produce (identical across all firms)
+- Market price depends on *total* industry output
+    - More total output $\implies$ lower market price
+    - Market price is revealed after all firms have chosen their output
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/cournotmoblab.png)
+]
+]
+
+---
+
+# Cournot Competition on Moblab
+
+.pull-left[
+- We will play 4 times:
+    1. You are the only firm (monopoly)
+    2. You will be matched with another firm (duopoly)
+    3. You will be matched with 2 other firms (triopoly)
+    4. The entire class is competing in the same market 
+- Each instance will have 3 rounds 
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/cournotmoblab.png)
+]
+]
+
+---
+
+class: inverse, center, middle
+
+# Cournot's Model
+
+---
+
+# Cournot
+
+.left-column[
+.center[
+![:scale 80%](../images/Cournot.jpg)
+
+.smaller[
+Antoine Augustin Cournot
+
+1801-1877
+]
+]
+]
+
+.right-column[
+.smallest[
+- 1838 *Researches on the Mathematical Principles of the Theory of Wealth*
+
+- First writer to:
+  - ✅ use and advocate mathematics for study of political economy
+  - ✅ relate demand and supply as functions of price and quantity
+  - ✅ draw a demand and supply graph
+  - ✅ use marginal analysis to find profit-maximizing output: where marginal revenue $=$ marginal cost
+
+- Sadly, no influence in his lifetime, but enormous consequence on neoclassical economics
+
+]
+
+.source[Cournot, Antoine Augustin, 1838, *Researches on the Mathematical Principles of the Theory of Wealth*]
+
+]
+
+---
+# Cournot's Model
+
+.left-column[
+.center[
+![:scale 80%](../images/Cournot.jpg)
+
+.smaller[
+Antoine Augustin Cournot
+
+1801-1877
+]
+]
+]
+.right-column[
+- Chapter V “Of Monopoly”, studies a monopoly supplier of mineral water who prices to maximize profit
+  - $MR = MC$
+]
+
+---
+
+# Cournot's Model
+
+.left-column[
+.center[
+![:scale 80%](../images/Cournot.jpg)
+
+.smaller[
+Antoine Augustin Cournot
+
+1801-1877
+]
+]
+]
+.right-column[
+.smallest[
+> “Let us now imagine two proprietors and two springs of which qualities are identical and which on account of their similar positions supply the same market in competition.”
+
+> “In this case the price is necessarily the same for each proprietor.”
+
+> “If $p$ is the price, $D=F(p)$ the total sales, $D_1$ the sales from the spring (1), and $D_2$ the sales from the spring (2), then $D_1+D_2=D$.”
+
+]
+
+- Chapter VII “Of Competition of Producers”
+]
+
+
+---
+
+# Cournot's Model
+
+.left-column[
+.center[
+![:scale 80%](../images/Cournot.jpg)
+
+.smaller[
+Antoine Augustin Cournot
+
+1801-1877
+]
+]
+]
+.right-column[
+.smallest[
+
+> “If, to begin with, we neglect the cost of production, the respective incomes of the proprietors will be $pD_1$ and $pD_2$ and...each of them independently will seek to make this income as large as possible.”
+
+> “[But] [p]roprietor (1) can have no direct influence on the determination of $D_2$.”
+
+> “All that he can do when $D_2$ has been determined by proprietor (2) is to choose for $D_1$ the value which is best for him. This he will be able to accomplish by properly adjusting his price...except as proprietor (2), who seeing himself forced to accept his price and this value of $D_2$, may adopt a new value for $D_2$ more favorable ot his interests than the preceding one.”
+
+]
+
+- Chapter VII “Of Competition of Producers”
+]
+
+---
+
+# Cournot Competition
+
+.left-column[
+.center[
+![:scale 80%](../images/Cournot.jpg)
+
+.smaller[
+Antoine Augustin Cournot
+
+1801-1877
+]
+]
+]
+.right-column[
+
+- We use modern game theory and Nash equilibrium to make Cournot’s model a **static game** (for now)
+
+- .hi[“Cournot competition”]: two (or more) firms compete on **quantity** to sell the **same good**
+
+- Firms set their quantities **simultaneously**
+
+- Firms' joint output determines the market price faced by all firms
+]
+
+---
+
+# Cournot Competition: Mechanics
+
+.pull-left[
+
+- Suppose two firms (.red[1] and .blue[2]), each have an identical constant cost $$MC(q)=AC(q)=c$$
+
+- .red[Firm 1] and .blue[Firm 2] simultaneously set quantities, $\color{red}{q_1}$ and $\color{blue}{q_2}$
+
+- Total market demand is given by
+
+$$\begin{align*}
+P&=a-bQ\\
+Q&=\color{red}{q_1}+\color{blue}{q_2}\\
+\end{align*}$$
+]
+
+.pull-right[
+.center[
+![](../images/cokepepsi.jpg)
+]
+]
+
+---
+
+# Cournot Competition: Mechanics
+
+.pull-left[
+
+- .red[Firm 1's] profit is given by:
+
+$$\begin{align*}
+\color{red}{\pi_1}&=\color{red}{q_1}(P-c)\\
+\color{red}{\pi_1}&=\color{red}{q_1}(a-b(\color{red}{q_1}+\color{blue}{q_2})-c)\\
+\end{align*}$$
+
+- And, symmetrically same for .blue[firm 2]
+
+- **Note each firm's profits depend (in part) on the output of the other firm!** 
+]
+
+.pull-right[
+.center[
+![](../images/cokepepsi.jpg)
+]
+]
+
+---
+
+# Residual Demand
+
+- Consider the demand each firm faces to be a .hi-purple[residual demand]
+
+--
+
+- e.g. for .red[firm 1], it's (residual) demand is:
+
+--
+
+$$\begin{align*}
+p&=a-b(\color{red}{q_1}+\color{blue}{q_2})\\
+p&=\underbrace{(a-b\color{blue}{q_2})}_{intercept}-\underbrace{b}_{slope}\color{red}{q_1}\\
+\end{align*}$$
+
+--
+
+- .blue[Firm 2] will produce some amount, $\color{blue}{q_2}$. 
+
+--
+
+- .red[Firm 1] takes this as given, to find its own residual demand
+  - Intercept: $a-b\color{blue}{q_2}$
+  - Slope: $b$ (coefficient in front of $\color{red}{q_1})$
+
+---
+
+# Residual Demand
+
+.pull-left[
+```{r}
+Demand_fake<-function(x){10-x}
+Demand_residual<-function(x){8-x}
+
+ggplot(tibble(x=c(0,10)), aes(x=x))+
+  stat_function(fun=Demand_fake, geom="line", size=2, color="blue")+
+    stat_function(fun=Demand_residual, geom="line", size=2, color="darkblue", linetype = "dashed")+
+  annotate(geom = "label", x = 9, y = Demand_fake(9) , label = "Market Demand",color = "blue", size = 4) +
+    annotate(geom = "label", x = 5, y = Demand_residual(5) , label = "Demand for Firm 1",color = "darkblue", size = 4) +
+
+  annotate("segment", x = 5, xend = 3, y = 5, yend = 5, color = "purple", size=2, alpha=0.9, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))+
+    annotate(geom = "label", x = 4, y =5 , label = expression(q[2]), color = "purple", size = 4)+ 
+
+  scale_x_continuous(breaks = NULL,
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,8,10),
+                     labels = c(0,expression(a-(b*q[2])), expression(a)),
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
+  labs(x = expression(paste("Firm 1's quantity, ", q[1])),
+       y = expression("Market Price, p"))
+```
+
+]
+
+.pull-right[
+- .blue[Firm 2] will produce some amount, $\color{blue}{q_2}$. 
+
+- .red[Firm 1] will take this as a given, a constant
+
+- .red[Firm 1]'s choice variable is $\color{red}{q_1}$, *given* $\color{blue}{q_2}$
+]
+
+---
+
+# Cournot Competition: Example
+
+.content-box-green[
+.hi-green[Example]: Assume Coke $(c)$ and Pepsi $(p)$ are the only two cola producers, each with a constant MC=AC=$0.50. The market (inverse) demand curve is given by:
+$$\begin{align*}
+P&=5-0.05Q\\
+Q&=q_{c}+q_{p}\\
+\end{align*}$$
+
+]
+
+--
+
+$$P=5-0.05Q$$
+
+--
+
+$$P=5-0.05q_{c}-0.05q_{p}$$
+
+---
+
+# Cournot Competition: Example 
+
+$$P=5-0.05q_{c}-0.05q_{p}$$
+
+--
+
+- Firms maximize profit (as always), by setting $q^*: MR(q)=MC(q)$
+
+---
+
+# Cournot Competition: Example 
+
+$$P=\underbrace{5-0.05q_{p}}_{intercept}-\underbrace{0.05}_{slope}q_{c}$$
+
+- Firms maximize profit (as always), by setting $q^*: MR(q)=MC(q)$
+
+- Solve for Coke’s MR(q) first:
+  - Take $q_{p}$ as given, a constant
+  - Recall MR is twice the slope of demand
+  
+--
+
+$$MR_{c}=5-0.05q_{p}-0.10q_{c}$$
+
+---
+
+# Cournot Competition: Example 
+
+- Solve for $q^*$ for each firm (where $MR(q)=MC(q))$, we derive each firm's .hi[reaction function] or .hi[best response function] to the other firm's output
+
+- Symmetric marginal costs and marginal revenues
+
+--
+
+$$\begin{align*}
+q_{c}^*&=45-0.5q_{p}\\
+q_{p}^*&=45-0.5q_{c}\\
+\end{align*}$$
+
+---
+
+# Coke's Reaction Curve
+
+.pull-left[
+```{r}
+Coke=function(x){45-0.5*x}
+
+coke<-ggplot(tibble(x=c(0,10)), aes(x=x))+
+  stat_function(fun=Coke, geom="line", size=2, color="red")+
+    annotate(geom = "label", x = 65, y = Coke(65) , label = "Coke's RF",color = "red", size = 4) +
+  scale_x_continuous(breaks = seq(0,100,10),
+                     limits = c(0,100),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = seq(0,100,10),
+                     limits = c(0,100),
+                     expand=c(0,0))+
+  theme_light(base_family = "Fira Sans Condensed", base_size=20)+
+  labs(x = expression(paste("Pepsi's Output, ", q[P]), sep=" "),
+       y = expression(paste("Coke's Output, ", q[C]), sep=" "))
+coke
+```
+]
+
+.pull-right[
+
+We can graph .hi-red[Coke]'s .hi-purple[reaction curve] to .hi-blue[Pepsi]'s output
+
+]
+
+---
+
+# Coke's Reaction Curve
+
+.pull-left[
+```{r}
+coke+
+  geom_segment(x=40,xend=40,y=0,yend=Coke(40), size=1, linetype="dotted", color="blue")+
+  geom_segment(x=0,xend=40,y=Coke(40),yend=Coke(40), size=1, linetype="dotted", color="red")
+
+```
+]
+
+.pull-right[
+
+We can graph .hi-red[Coke]'s .hi-purple[reaction curve] to .hi-blue[Pepsi]'s output
+
+- e.g. if .hi-blue[Pepsi] produces .hi-blue[40], .hi-red[Coke]'s best response is .hi-red[25]
+
+]
+
+---
+
+# Coke's Reaction Curve
+
+.pull-left[
+```{r}
+coke+
+  geom_segment(x=40,xend=40,y=0,yend=Coke(40), size=1, linetype="dotted", color="blue")+
+  geom_segment(x=0,xend=40,y=Coke(40),yend=Coke(40), size=1, linetype="dotted", color="red")+
+  geom_segment(x=20,xend=20,y=0,yend=Coke(20), size=1, linetype="dotted", color="blue")+
+  geom_segment(x=0,xend=20,y=Coke(20),yend=Coke(20), size=1, linetype="dotted", color="red")
+
+```
+]
+
+.pull-right[
+
+We can graph .hi-red[Coke]'s .hi-purple[reaction curve] to .hi-blue[Pepsi]'s output
+
+- e.g. if .hi-blue[Pepsi] produces .hi-blue[40], .hi-red[Coke]'s best response is .hi-red[25]
+- e.g. if .hi-blue[Pepsi] produces .hi-blue[20], .hi-red[Coke]'s best response is .hi-red[35]
+
+]
+
+---
+
+# Pepsi's Reaction Curve
+
+.pull-left[
+```{r}
+Pepsi=function(x){90-2*x}
+
+pepsi<-ggplot(tibble(x=c(0,10)), aes(x=x))+
+  stat_function(fun=Pepsi, geom="line", size=2, color="blue")+
+    annotate(geom = "label", x = 15, y = Pepsi(15) , label = "Pepsi's RF",color = "blue", size = 4) +
+  scale_x_continuous(breaks = seq(0,100,10),
+                     limits = c(0,100),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = seq(0,100,10),
+                     limits = c(0,100),
+                     expand=c(0,0))+
+  theme_light(base_family = "Fira Sans Condensed", base_size=20)+
+  labs(x = expression(paste("Pepsi's Output, ", q[P]), sep=" "),
+       y = expression(paste("Coke's Output, ", q[C]), sep=" "))
+pepsi
+```
+]
+
+.pull-right[
+
+We can graph .hi-blue[Pepsi]'s .hi-purple[reaction curve] to .hi-red[Coke]'s output
+
+]
+
+---
+
+# Pepsi's Reaction Curve
+
+.pull-left[
+```{r}
+pepsi+
+  geom_segment(x=25,xend=25,y=0,yend=40, size=1, linetype="dotted", color="blue")+
+  geom_segment(x=0,xend=25,y=40,yend=40, size=1, linetype="dotted", color="red")
+
+```
+]
+
+.pull-right[
+
+We can graph .hi-blue[Pepsi]'s .hi-purple[reaction curve] to .hi-red[Coke]'s output
+
+- e.g. if .hi-red[Coke] produces .hi-red[40], .hi-blue[Pepsi]'s best response is .hi-blue[25]
+
+]
+
+---
+
+# Pepsi's Reaction Curve
+
+.pull-left[
+```{r}
+pepsi+
+  geom_segment(x=25,xend=25,y=0,yend=40, size=1, linetype="dotted", color="blue")+
+  geom_segment(x=0,xend=25,y=40,yend=40, size=1, linetype="dotted", color="red")+
+  geom_segment(x=35,xend=35,y=0,yend=20, size=1, linetype="dotted", color="blue")+
+  geom_segment(x=0,xend=35,y=20,yend=20, size=1, linetype="dotted", color="red")
+
+```
+]
+
+.pull-right[
+
+We can graph .hi-blue[Pepsi]'s .hi-purple[reaction curve] to .hi-red[Coke]'s output
+
+- e.g. if .hi-red[Coke] produces .hi-red[40], .hi-blue[Pepsi]'s best response is .hi-blue[25]
+- e.g. if .hi-red[Coke] produces .hi-red[20], .hi-blue[Pepsi]'s best response is .hi-blue[35]
+
+]
+
+---
+
+# Cournot-Nash Equilibrium, Graphically
+
+.pull-left[
+```{r}
+coke+
+  stat_function(fun=Pepsi, geom="line", size=2, color="blue")+
+    annotate(geom = "label", x = 15, y = Pepsi(15) , label = "Pepsi's RF",color = "blue", size = 4) +
+  geom_segment(x=30,xend=30,y=0,yend=30, size=1, linetype="dotted", color="blue")+
+  geom_segment(x=0,xend=30,y=30,yend=30, size=1, linetype="dotted", color="red")+
+  geom_point(x=30,y=30,size=5,color="purple")+
+  annotate(geom = "label", x = 40, y = 40 , label = "Cournot-Nash Equilibrium",color = "purple", size = 5)
+```
+]
+
+.pull-right[
+
+Combine both curves on the same graph
+
+- .hi-purple[Cournot-Nash Equilibrium]: $$\big( \color{red}{20}, \color{blue}{20} \big)$$
+    - Where both reaction curves intersect
+
+- Both are playing mutual best response to one another 
+
+]
+
+---
+
+# Cournot-Nash Equilibrium, Algebraically
+
+- .hi-purple[Cournot-Nash Equilibrium] algebraically: plug one firm's reaction function into the other's
+
+--
+
+$$\begin{align*}
+q_{c}^*&=30-0.5q_{p}\\
+q_{p}^*&=30-0.5q_{c}\\
+\end{align*}$$
+
+--
+
+- The market demand again was
+
+$$P=200-3q_{c}-3q_{p}$$
+
+---
+
+# Cournot-Nash Equilibrium, Algebraically
+
+- Both firms produce 20
+
+--
+
+$$\begin{align*}
+P&=200-3(20)-3(20)\\
+P&=\$80\\
+\end{align*}$$
+
+--
+
+- Find profit for each firm:
+
+--
+
+$$\begin{align*}
+\pi_{c}&=q_{c}(P-c)\\
+\pi_{c}&=20(80-20)\\
+\pi_{c}&=1,200\\
+\end{align*}$$
+
+- Symmetrically for Pepsi, $\pi_{p}=1,200$
+
+---
+
+# Cournot-Nash Equilibrium, The Market
+
+```{r}
+Demand_market<-function(x){5-0.05*x}
+MR_market<-function(x){5-0.10*x}
+MC_market<-function(x){0.50}
+
+CS_1<-tribble(
+  ~x, ~y,
+  0, 2,
+  0, 5,
+  60, 2
+)
+
+DWL_1<-tribble(
+  ~x, ~y,
+  60, 2,
+  60, 0.5,
+  90, 0.5
+)
+
+ggplot(tibble(x=c(0,10)), aes(x=x))+
+  geom_polygon(data=CS_1, aes(x=x,y=y), fill="blue",alpha=0.5)+ #cs
+  geom_rect(xmin=0, xmax=60, ymin=0.5, ymax=2, fill="green", alpha=0.5)+ # pi
+  geom_polygon(data=DWL_1, aes(x=x,y=y), fill="black",alpha=0.5)+ #dwl
+  stat_function(fun=Demand_market, geom="line", size=2, color="blue")+
+  annotate(geom = "label", x = 50, y = Demand_market(50) , label = "Market Demand",color = "blue", size = 4) +
+
+      stat_function(fun=MC_market, geom="line", size=2, color="red")+
+  annotate(geom = "label", x = 70, y = MC_market(70) , label = "MC(q)=AC(q)",color = "red", size = 4) +
+
+  geom_segment(x=60,xend=60,y=0,yend=2,linetype="dotted", size =1)+
+  geom_segment(x=0,xend=60,y=2,yend=2,linetype="dotted", size =1)+
+
+    geom_point(x=60,y=2,size=5,color="purple")+
+  annotate(geom = "label", x = 75, y = 2 , label = "Cournot-Nash Equilibrium",color = "purple", size = 4)+
+  
+  scale_x_continuous(breaks = seq(0,100,10),
+                     limits = c(0,100),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = seq(0,5,1),
+                     labels = scales::dollar,
+                     limits = c(0,5),
+                     expand=c(0,0))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
+  labs(x = "Industry Output, Q",
+       y = "Market Price, p",
+       title = "Cola Industry")
+```
+
+---
+
+# Cournot Collusion
+
+- Suppose now both firms .hi-purple[collude] to act like a monopolist, who sets the entire market:
+
+$$\begin{align*}
+MR&=MC\\
+5-0.1Q&=0.50\\
+45&=Q^*\\
+\end{align*}$$
+
+--
+
+- The monopoly price will then be:
+
+$$\begin{align*}
+P&=5-0.05(45)\\
+P&=\$2.75\\
+\end{align*}$$
+
+--
+
+- Total profit will then be:
+
+$$\Pi=45(\$2.75-\$0.50)=\$101.25$$
+
+with $50.625 going to each firm
+
+---
+
+# Cournot Collusion
+
+.pull-left[
+```{r}
+coke+
+  stat_function(fun=Pepsi, geom="line", size=2, color="blue")+
+    annotate(geom = "label", x = 15, y = Pepsi(15) , label = "Pepsi",color = "blue", size = 4) +
+  geom_segment(x=30,xend=30,y=0,yend=30, size=1, linetype="dotted", color="blue")+
+  geom_segment(x=0,xend=30,y=30,yend=30, size=1, linetype="dotted", color="red")+
+  geom_point(x=30,y=30,size=5,color="purple")+
+  annotate(geom = "label", x = 40, y = 40 , label = "Cournot-Nash Equilibrium",color = "purple", size = 5)+
+  geom_point(x=22.5,y=22.5,size=5,color="orange")+
+  annotate(geom = "label", x = 15, y = 15 , label = "Collusion",color = "orange", size = 5)+
+    geom_segment(x=22.5,xend=22.5,y=0,yend=22.5, size=1, linetype="dotted", color="orange")+
+  geom_segment(x=0,xend=22.5,y=22.5,yend=22.5, size=1, linetype="dotted", color="orange")+
+  geom_segment(x = 0, xend = 45, y = 45, yend = 0, size = 1, linetype = "dashed")
+
+
+```
+]
+
+.pull-right[
+
+- .hi-purple[Cournot Competition]: each firm produces 30 and earns $45.00
+
+- .hi-orange[Collusion/Monopoly]: each firm produces 22.5 and earns $50.63
+
+]
+
+---
+
+# Cournot Collusion
+
+.pull-left[
+```{r}
+coke+
+  stat_function(fun=Pepsi, geom="line", size=2, color="blue")+
+    annotate(geom = "label", x = 15, y = Pepsi(15) , label = "Pepsi",color = "blue", size = 4) +
+  geom_segment(x=30,xend=30,y=0,yend=30, size=1, linetype="dotted", color="blue")+
+  geom_segment(x=0,xend=30,y=30,yend=30, size=1, linetype="dotted", color="red")+
+  geom_point(x=30,y=30,size=5,color="purple")+
+  annotate(geom = "label", x = 40, y = 40 , label = "Cournot-Nash Equilibrium",color = "purple", size = 5)+
+  geom_point(x=22.5,y=22.5,size=5,color="orange")+
+  annotate(geom = "label", x = 15, y = 15 , label = "Collusion",color = "orange", size = 5)+
+    geom_segment(x=22.5,xend=22.5,y=0,yend=22.5, size=1, linetype="dotted", color="orange")+
+  geom_segment(x=0,xend=22.5,y=22.5,yend=22.5, size=1, linetype="dotted", color="orange")+
+  geom_segment(x = 0, xend = 45, y = 45, yend = 0, size = 1, linetype = "dashed")
+
+
+```
+]
+
+.pull-right[
+
+- .hi-purple[Cournot Competition]: each firm produces 30 and earns $45.00
+
+- .hi-orange[Collusion/Monopoly]: each firm produces 22.5 and earns $50.63 
+
+- .hi-turquoise[But is collusion a Nash equilibrium?]
+]
+
+---
+
+# Cournot Collusion
+
+.pull-left[
+```{r}
+coke+
+  geom_point(x=22.5,y=22.5,size=5,color="orange")+
+  annotate(geom = "label", x = 15, y = 15 , label = "Collusion",color = "orange", size = 5)+
+    geom_segment(x=22.5,xend=22.5,y=0,yend=Coke(22.5), size=1, linetype="dotted", color="blue")+
+  geom_segment(x=0,xend=22.5,y=Coke(22.5),yend=Coke(22.5), size=1, linetype="dotted", color="red")
+```
+]
+
+.pull-right[
+
+- Read either firm's reaction curve at the collusive outcome
+
+- Suppose .red[Coke] knows .blue[Pepsi] is producing .blue[22.5] (as per the cartel agreement)
+
+- .red[Coke]'s best response to .blue[Pepsi]'s .blue[22.5] is to produce .red[33.75]
+
+]
+
+---
+
+# Cournot Collusion
+
+- This (cheating the agreement) would bring market price to
+$$\begin{align*}
+P&=5-0.05(q_{c}+q_{p})\\
+P&=5-0.05*(\color{red}{33.75}+\color{blue}{22.50})\\
+P&=5-0.05*(56.25)\\
+P&=\$2.1875\\
+\end{align*}$$
+
+--
+
+.pull-left[
+- .red[Coke]'s profit would be:
+
+$$\begin{align*}
+\pi_{c}&=\color{red}{q_{c}}(P-c)\\
+\pi_{c}&=\color{red}{33.75}(2.1875-0.50)\\
+\pi_{c}&=\$56.95\\
+\end{align*}$$
+
+]
+
+--
+
+.pull-right[
+- .blue[Pepsi]'s profit would be:
+
+$$\begin{align*}
+\pi_{p}&=\color{blue}{Pq_{p}}(P-c)\\
+\pi_{p}&=\color{blue}{22.5}(2.1875-0.50)\\
+\pi_{p}&=\$37.97\\
+\end{align*}$$
+
+]
+
+---
+
+# Cournot Collusion, The Market
+
+```{r}
+CS_2<-tribble(
+  ~x, ~y,
+  0, 2.75,
+  0, 5,
+  45, 2.75
+)
+
+DWL_2<-tribble(
+  ~x, ~y,
+  45, 0.5,
+  45, 2.75,
+  90, 0.5
+)
+
+ggplot(tibble(x=c(0,10)), aes(x=x))+
+  geom_polygon(data=CS_2, aes(x=x,y=y), fill="blue",alpha=0.5)+ #cs
+  geom_rect(xmin=0, xmax=45, ymin=0.5, ymax=2.75, fill="green", alpha=0.5)+ # pi
+  geom_polygon(data=DWL_2, aes(x=x,y=y), fill="black",alpha=0.5)+ #dwl
+  stat_function(fun=Demand_market, geom="line", size=2, color="blue")+
+    stat_function(fun=MR_market, geom="line", size=2, color="purple")+
+  annotate(geom = "label", x = 70, y = Demand_market(70) , label = "Market Demand",color = "blue", size = 4) +
+    annotate(geom = "label", x = 35, y = MR_market(35) , label = "MR(q)",color = "purple", size = 4) +
+  
+      stat_function(fun=MC_market, geom="line", size=2, color="red")+
+  annotate(geom = "label", x = 70, y = MC_market(70) , label = "MC(q)=AC(q)",color = "red", size = 4) +
+
+  geom_segment(x=60,xend=60,y=0,yend=2,linetype="dotted", size =1)+
+  geom_segment(x=0,xend=60,y=2,yend=2,linetype="dotted", size =1)+
+
+    geom_point(x=60,y=2,size=5,color="purple")+
+  annotate(geom = "label", x = 80, y = 2 , label = "Cournot-Nash Equilibrium",color = "purple", size = 4)+
+  annotate(geom = "label", x = 60, y = 2.75 , label = "Collusion/Monopoly",color = "orange", size = 4)+
+  geom_segment(x=45,xend=45,y=0,yend=2.75,linetype="dotted", size =1)+
+  geom_segment(x=0,xend=45,y=2.75,yend=2.75,linetype="dotted", size =1)+
+    geom_point(x=45,y=2.75,size=5,color="orange")+
+  scale_x_continuous(breaks = seq(0,100,10),
+                     limits = c(0,100),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = seq(0,5,1),
+                     labels = scales::dollar,
+                     limits = c(0,5),
+                     expand=c(0,0))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
+  labs(x = "Industry Output, Q",
+       y = "Market Price, p",
+       title = "Cola Industry")
+```
+
+---
+
+# Cournot Competition, You Try
+
+.content-box-green[.hi-green[Example]:
+Suppose Firm 1 and Firm 2 have a constant $MC=AC=8$. The market (inverse) demand curve is given by:
+
+$$\begin{align*}
+P&=200-2Q\\
+Q&=q_1+q_2\\
+\end{align*}$$
+]
+
+1. Find the Cournot-Nash equilibrium output and profit for each firm.
+
+2. Find the output and profit for each firm if the two were to collude.
+
+---
+
+# Cournot Equilibrium
+
+- In general, for:
+  - Linear (inverse) demand curve: $P = a-bQ \quad (Q=q_1+q_2)$
+  - Constant costs $C(q)=c$
+
+--
+
+- .hi-turquoise[Cournot competition]:
+  - $q_1^* = q_2^* = \frac{a-c}{3b}$
+  - $Q= 2 \left(\frac{a-c}{3b}\right)$
+  - $P= \frac{a+2c}{3}$
+  - $\pi_1 = \pi_2 = \frac{(a-c)^2}{9b}$
+  
+--
+
+- .hi-purple[Monopoly (collusion)]
+  - $Q= \frac{a-c}{2b}$
+  - $P = \frac{a+c}{2}$
+  - $\Pi = \frac{(a-c)^2}{4b}$
+
+---
+
+# Cournot Equilibrium
+
+$$\underbrace{\frac{P(q_1^*,q_2^*)-MC}{P(q_1^*,q_2^*)}}_{\text{Lerner index}} = \frac{s_i}{\varepsilon}$$
+
+- Lefthand size is Lerner index (market power/markup share of price)
+- $s_i$ is the market share of firm $i$ $\left(\frac{q_i}{Q}\right)$
+- $\varepsilon$ is the price elasticity of market demand
+
+---
+
+# Cournot Equilibrium
+
+$$\underbrace{\frac{P(q_1^*,q_2^*)-MC}{P(q_1^*,q_2^*)}}_{\text{Lerner index}} = \frac{s_i}{\varepsilon}$$
+
+1. Cournot duopolists have market power $p>MC$
+2. Market power (left) is inversely related to price elasticity of demand
+3. Cournot markups will be less than monopoly since $s_i < 1$
+4. Endogenous relationship between $MC$ and market share $s_i$
+  - Firms with lower $MC$ will have higher $s_i$ (more efficient firms will have higher market share)
+5. The greater the number of firms, the less the market power
+  - as $\uparrow n, \downarrow s_i$ and so $\downarrow \frac{P-MC}{P}$
+  - elasticity of each firm $i$'s residual demand is $\frac{\varepsilon}{s_i}$
+  - $uparrow n$ raises each firm's $\varepsilon$, reducing its market power
+---
+
+# Oligopoly with $N$ Firms
+
+$$\frac{P(q_1^*,q_2^*)-MC}{P(q_1^*,q_2^*)} = \frac{s_i}{\varepsilon}$$
+- If we multiply both sides of the equation by $s_i$ and sum over all $N$ firms...
+
+---
+
+# Oligopoly with $N$ Firms
+
+$$\sum_{i=1}^Ns_i \left(\frac{P(q_1^*,q_2^*)-MC}{P(q_1^*,q_2^*)}\right) =\sum_{i=1}^Ns_i \frac{s_i}{\varepsilon}$$
+
+- If we multiply both sides of the equation by $s_i$ and sum over all $N$ firms...
+
+---
+
+# Oligopoly with $N$ Firms
+
+$$\sum_{i=1}^Ns_i \left(\frac{P(q_1^*,q_2^*)-MC}{P(q_1^*,q_2^*)}\right) =\frac{HHI}{\varepsilon}$$
+
+.smaller[
+- $HHI$ = Herfindahl-Hirschmann Index (sum of squared market shares); a famous measure of industry concentration (we'll explore later)<sup>.magenta[†]</sup>
+  - 0: perfect competition; 1: monopoly
+
+- The larger the $HHI$ (holding $\varepsilon$ constant), the greater the average weighted markup/industry-wide Lerner index (lefthand side)
+
+- Implication: if Cournot model is accurate, measuring the $HHI$ and $\epsilon$ provide good empirical evidence about firm conduct
+
+]
+
+.footnote[<sup>.magenta[†]</sup> In the U.S., HHI is often measured using market shares as *percentages*, making HHI between 0 and 10,000.]
+
+---
+
+# Cournot Competition
+
+.left-column[
+.center[
+![:scale 80%](../images/Cournot.jpg)
+
+.smaller[
+Antoine Augustin Cournot
+
+1801-1877
+]
+]
+]
+.right-column[
+- .hi[Cournot Theorem]: as the number of firms $(N)$ in the market increases, market output $Nq$ goes to the competitive level, and price converges to $c$.
+  - Assuming no fixed costs, and an identical constant marginal cost for firms
+
+- .hi-purple[More (fewer) firms reduce (increase) market distortions from market power]
+
+]
+
+---
+
+# Cournot Competition: Implications
+
+.left-column[
+.center[
+![:scale 80%](../images/Cournot.jpg)
+
+.smaller[
+Antoine Augustin Cournot
+
+1801-1877
+]
+]
+]
+.right-column[
+.smaller[
+- See some visualizations I made:
+  1. [Cournot: Symmetric Market Changes](https://ryansafner.shinyapps.io/Cournot_market_changes/)
+  2. [Cournot: Asymmetric Costs](https://ryansafner.shinyapps.io/cournot_asymmetric_costs/)
+  3. [Cournot: With n Firms](https://ryansafner.shinyapps.io/Cournot_n_firms/)
+
+Major implications from Cournot:
+
+1. As $\uparrow$ number of firms: $\uparrow Q$, $\downarrow p$, $\downarrow \pi$, $\uparrow CS$, $\downarrow DWL$ (closer to perfect competition)
+
+2. If a firm has lower costs than others, it earns greater profit. Firms will want to lower their own costs OR raise rivals' costs (same effect)
+]
+]

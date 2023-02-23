@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>2.2 — Cournot Competition</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ryan Safner" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/hygge.css" rel="stylesheet" />
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+class: title-slide
+
+# 2.2 — Cournot Competition
+
+## ECON 326 • Industrial Organization • Spring 2023
+
+### Ryan Safner&lt;br&gt; Associate Professor of Economics &lt;br&gt; &lt;a href="mailto:safner@hood.edu"&gt;&lt;i class="fa fa-paper-plane fa-fw"&gt;&lt;/i&gt;safner@hood.edu&lt;/a&gt; &lt;br&gt; &lt;a href="https://github.com/ryansafner/ioS23"&gt;&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;ryansafner/ioS23&lt;/a&gt;&lt;br&gt; &lt;a href="https://ioS23.classes.ryansafner.com"&gt; &lt;i class="fa fa-globe fa-fw"&gt;&lt;/i&gt;ioS23.classes.ryansafner.com&lt;/a&gt;&lt;br&gt;
+
+---
+
+# Models of Oligopoly
+
+.pull-left[
+Three canonical models of Oligopoly
+
+1. .hi[Bertrand competition]
+  - Firms **simultaneously** compete on **price**
+2. .hi[Cournot competition]
+  - Firms **simultaneously** compete on **quantity**
+3. .hi[Stackelberg competition]
+  - Firms **sequentially** compete on **quantity**
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/chessknights.jpg)
+]
+]
+
+---
+
+# Cournot Competition on Moblab
+
+.center[
+![:scale 80%](../images/cournotmoblab.png)
+]
+
+---
+
+# Cournot Competition on Moblab
+
+.pull-left[
+- Each of you is a firm selling identical scooters
+- Each season, each firm chooses its quantity to produce
+- You pay a cost for each you produce (identical across all firms)
+- Market price depends on *total* industry output
+    - More total output `\(\implies\)` lower market price
+    - Market price is revealed after all firms have chosen their output
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/cournotmoblab.png)
+]
+]
+
+---
+
+# Cournot Competition on Moblab
+
+.pull-left[
+- We will play 4 times:
+    1. You are the only firm (monopoly)
+    2. You will be matched with another firm (duopoly)
+    3. You will be matched with 2 other firms (triopoly)
+    4. The entire class is competing in the same market 
+- Each instance will have 3 rounds 
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/cournotmoblab.png)
+]
+]
+
+---
+
+class: inverse, center, middle
+
+# Cournot's Model
+
+---
+
+# Cournot
+
+.left-column[
+.center[
+![:scale 80%](../images/Cournot.jpg)
+
+.smaller[
+Antoine Augustin Cournot
+
+1801-1877
+]
+]
+]
+
+.right-column[
+.smallest[
+- 1838 *Researches on the Mathematical Principles of the Theory of Wealth*
+
+- First writer to:
+  - ✅ use and advocate mathematics for study of political economy
+  - ✅ relate demand and supply as functions of price and quantity
+  - ✅ draw a demand and supply graph
+  - ✅ use marginal analysis to find profit-maximizing output: where marginal revenue `\(=\)` marginal cost
+
+- Sadly, no influence in his lifetime, but enormous consequence on neoclassical economics
+
+]
+
+.source[Cournot, Antoine Augustin, 1838, *Researches on the Mathematical Principles of the Theory of Wealth*]
+
+]
+
+---
+# Cournot's Model
+
+.left-column[
+.center[
+![:scale 80%](../images/Cournot.jpg)
+
+.smaller[
+Antoine Augustin Cournot
+
+1801-1877
+]
+]
+]
+.right-column[
+- Chapter V “Of Monopoly”, studies a monopoly supplier of mineral water who prices to maximize profit
+  - `\(MR = MC\)`
+]
+
+---
+
+# Cournot's Model
+
+.left-column[
+.center[
+![:scale 80%](../images/Cournot.jpg)
+
+.smaller[
+Antoine Augustin Cournot
+
+1801-1877
+]
+]
+]
+.right-column[
+.smallest[
+&gt; “Let us now imagine two proprietors and two springs of which qualities are identical and which on account of their similar positions supply the same market in competition.”
+
+&gt; “In this case the price is necessarily the same for each proprietor.”
+
+&gt; “If `\(p\)` is the price, `\(D=F(p)\)` the total sales, `\(D_1\)` the sales from the spring (1), and `\(D_2\)` the sales from the spring (2), then `\(D_1+D_2=D\)`.”
+
+]
+
+- Chapter VII “Of Competition of Producers”
+]
+
+
+---
+
+# Cournot's Model
+
+.left-column[
+.center[
+![:scale 80%](../images/Cournot.jpg)
+
+.smaller[
+Antoine Augustin Cournot
+
+1801-1877
+]
+]
+]
+.right-column[
+.smallest[
+
+&gt; “If, to begin with, we neglect the cost of production, the respective incomes of the proprietors will be `\(pD_1\)` and `\(pD_2\)` and...each of them independently will seek to make this income as large as possible.”
+
+&gt; “[But] [p]roprietor (1) can have no direct influence on the determination of `\(D_2\)`.”
+
+&gt; “All that he can do when `\(D_2\)` has been determined by proprietor (2) is to choose for `\(D_1\)` the value which is best for him. This he will be able to accomplish by properly adjusting his price...except as proprietor (2), who seeing himself forced to accept his price and this value of `\(D_2\)`, may adopt a new value for `\(D_2\)` more favorable ot his interests than the preceding one.”
+
+]
+
+- Chapter VII “Of Competition of Producers”
+]
+
+---
+
+# Cournot Competition
+
+.left-column[
+.center[
+![:scale 80%](../images/Cournot.jpg)
+
+.smaller[
+Antoine Augustin Cournot
+
+1801-1877
+]
+]
+]
+.right-column[
+
+- We use modern game theory and Nash equilibrium to make Cournot’s model a **static game** (for now)
+
+- .hi[“Cournot competition”]: two (or more) firms compete on **quantity** to sell the **same good**
+
+- Firms set their quantities **simultaneously**
+
+- Firms' joint output determines the market price faced by all firms
+]
+
+---
+
+# Cournot Competition: Mechanics
+
+.pull-left[
+
+- Suppose two firms (.red[1] and .blue[2]), each have an identical constant cost `$$MC(q)=AC(q)=c$$`
+
+- .red[Firm 1] and .blue[Firm 2] simultaneously set quantities, `\(\color{red}{q_1}\)` and `\(\color{blue}{q_2}\)`
+
+- Total market demand is given by
+
+`$$\begin{align*}
+P&amp;=a-bQ\\
+Q&amp;=\color{red}{q_1}+\color{blue}{q_2}\\
+\end{align*}$$`
+]
+
+.pull-right[
+.center[
+![](../images/cokepepsi.jpg)
+]
+]
+
+---
+
+# Cournot Competition: Mechanics
+
+.pull-left[
+
+- .red[Firm 1's] profit is given by:
+
+`$$\begin{align*}
+\color{red}{\pi_1}&amp;=\color{red}{q_1}(P-c)\\
+\color{red}{\pi_1}&amp;=\color{red}{q_1}(a-b(\color{red}{q_1}+\color{blue}{q_2})-c)\\
+\end{align*}$$`
+
+- And, symmetrically same for .blue[firm 2]
+
+- **Note each firm's profits depend (in part) on the output of the other firm!** 
+]
+
+.pull-right[
+.center[
+![](../images/cokepepsi.jpg)
+]
+]
+
+---
+
+# Residual Demand
+
+- Consider the demand each firm faces to be a .hi-purple[residual demand]
+
+--
+
+- e.g. for .red[firm 1], it's (residual) demand is:
+
+--
+
+`$$\begin{align*}
+p&amp;=a-b(\color{red}{q_1}+\color{blue}{q_2})\\
+p&amp;=\underbrace{(a-b\color{blue}{q_2})}_{intercept}-\underbrace{b}_{slope}\color{red}{q_1}\\
+\end{align*}$$`
+
+--
+
+- .blue[Firm 2] will produce some amount, `\(\color{blue}{q_2}\)`. 
+
+--
+
+- .red[Firm 1] takes this as given, to find its own residual demand
+  - Intercept: `\(a-b\color{blue}{q_2}\)`
+  - Slope: `\(b\)` (coefficient in front of `\(\color{red}{q_1})\)`
+
+---
+
+# Residual Demand
+
+.pull-left[
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-1-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+.pull-right[
+- .blue[Firm 2] will produce some amount, `\(\color{blue}{q_2}\)`. 
+
+- .red[Firm 1] will take this as a given, a constant
+
+- .red[Firm 1]'s choice variable is `\(\color{red}{q_1}\)`, *given* `\(\color{blue}{q_2}\)`
+]
+
+---
+
+# Cournot Competition: Example
+
+.content-box-green[
+.hi-green[Example]: Assume Coke `\((c)\)` and Pepsi `\((p)\)` are the only two cola producers, each with a constant MC=AC=$0.50. The market (inverse) demand curve is given by:
+`$$\begin{align*}
+P&amp;=5-0.05Q\\
+Q&amp;=q_{c}+q_{p}\\
+\end{align*}$$`
+
+]
+
+--
+
+`$$P=5-0.05Q$$`
+
+--
+
+`$$P=5-0.05q_{c}-0.05q_{p}$$`
+
+---
+
+# Cournot Competition: Example 
+
+`$$P=5-0.05q_{c}-0.05q_{p}$$`
+
+--
+
+- Firms maximize profit (as always), by setting `\(q^*: MR(q)=MC(q)\)`
+
+---
+
+# Cournot Competition: Example 
+
+`$$P=\underbrace{5-0.05q_{p}}_{intercept}-\underbrace{0.05}_{slope}q_{c}$$`
+
+- Firms maximize profit (as always), by setting `\(q^*: MR(q)=MC(q)\)`
+
+- Solve for Coke’s MR(q) first:
+  - Take `\(q_{p}\)` as given, a constant
+  - Recall MR is twice the slope of demand
+  
+--
+
+`$$MR_{c}=5-0.05q_{p}-0.10q_{c}$$`
+
+---
+
+# Cournot Competition: Example 
+
+- Solve for `\(q^*\)` for each firm (where `\(MR(q)=MC(q))\)`, we derive each firm's .hi[reaction function] or .hi[best response function] to the other firm's output
+
+- Symmetric marginal costs and marginal revenues
+
+--
+
+`$$\begin{align*}
+q_{c}^*&amp;=45-0.5q_{p}\\
+q_{p}^*&amp;=45-0.5q_{c}\\
+\end{align*}$$`
+
+---
+
+# Coke's Reaction Curve
+
+.pull-left[
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-2-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+We can graph .hi-red[Coke]'s .hi-purple[reaction curve] to .hi-blue[Pepsi]'s output
+
+]
+
+---
+
+# Coke's Reaction Curve
+
+.pull-left[
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-3-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+We can graph .hi-red[Coke]'s .hi-purple[reaction curve] to .hi-blue[Pepsi]'s output
+
+- e.g. if .hi-blue[Pepsi] produces .hi-blue[40], .hi-red[Coke]'s best response is .hi-red[25]
+
+]
+
+---
+
+# Coke's Reaction Curve
+
+.pull-left[
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-4-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+We can graph .hi-red[Coke]'s .hi-purple[reaction curve] to .hi-blue[Pepsi]'s output
+
+- e.g. if .hi-blue[Pepsi] produces .hi-blue[40], .hi-red[Coke]'s best response is .hi-red[25]
+- e.g. if .hi-blue[Pepsi] produces .hi-blue[20], .hi-red[Coke]'s best response is .hi-red[35]
+
+]
+
+---
+
+# Pepsi's Reaction Curve
+
+.pull-left[
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-5-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+We can graph .hi-blue[Pepsi]'s .hi-purple[reaction curve] to .hi-red[Coke]'s output
+
+]
+
+---
+
+# Pepsi's Reaction Curve
+
+.pull-left[
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-6-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+We can graph .hi-blue[Pepsi]'s .hi-purple[reaction curve] to .hi-red[Coke]'s output
+
+- e.g. if .hi-red[Coke] produces .hi-red[40], .hi-blue[Pepsi]'s best response is .hi-blue[25]
+
+]
+
+---
+
+# Pepsi's Reaction Curve
+
+.pull-left[
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-7-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+We can graph .hi-blue[Pepsi]'s .hi-purple[reaction curve] to .hi-red[Coke]'s output
+
+- e.g. if .hi-red[Coke] produces .hi-red[40], .hi-blue[Pepsi]'s best response is .hi-blue[25]
+- e.g. if .hi-red[Coke] produces .hi-red[20], .hi-blue[Pepsi]'s best response is .hi-blue[35]
+
+]
+
+---
+
+# Cournot-Nash Equilibrium, Graphically
+
+.pull-left[
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-8-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+Combine both curves on the same graph
+
+- .hi-purple[Cournot-Nash Equilibrium]: `$$\big( \color{red}{20}, \color{blue}{20} \big)$$`
+    - Where both reaction curves intersect
+
+- Both are playing mutual best response to one another 
+
+]
+
+---
+
+# Cournot-Nash Equilibrium, Algebraically
+
+- .hi-purple[Cournot-Nash Equilibrium] algebraically: plug one firm's reaction function into the other's
+
+--
+
+`$$\begin{align*}
+q_{c}^*&amp;=30-0.5q_{p}\\
+q_{p}^*&amp;=30-0.5q_{c}\\
+\end{align*}$$`
+
+--
+
+- The market demand again was
+
+`$$P=200-3q_{c}-3q_{p}$$`
+
+---
+
+# Cournot-Nash Equilibrium, Algebraically
+
+- Both firms produce 20
+
+--
+
+`$$\begin{align*}
+P&amp;=200-3(20)-3(20)\\
+P&amp;=\$80\\
+\end{align*}$$`
+
+--
+
+- Find profit for each firm:
+
+--
+
+`$$\begin{align*}
+\pi_{c}&amp;=q_{c}(P-c)\\
+\pi_{c}&amp;=20(80-20)\\
+\pi_{c}&amp;=1,200\\
+\end{align*}$$`
+
+- Symmetrically for Pepsi, `\(\pi_{p}=1,200\)`
+
+---
+
+# Cournot-Nash Equilibrium, The Market
+
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-9-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Cournot Collusion
+
+- Suppose now both firms .hi-purple[collude] to act like a monopolist, who sets the entire market:
+
+`$$\begin{align*}
+MR&amp;=MC\\
+5-0.1Q&amp;=0.50\\
+45&amp;=Q^*\\
+\end{align*}$$`
+
+--
+
+- The monopoly price will then be:
+
+`$$\begin{align*}
+P&amp;=5-0.05(45)\\
+P&amp;=\$2.75\\
+\end{align*}$$`
+
+--
+
+- Total profit will then be:
+
+$$\Pi=45(\$2.75-\$0.50)=\$101.25$$
+
+with $50.625 going to each firm
+
+---
+
+# Cournot Collusion
+
+.pull-left[
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-10-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+- .hi-purple[Cournot Competition]: each firm produces 30 and earns $45.00
+
+- .hi-orange[Collusion/Monopoly]: each firm produces 22.5 and earns $50.63
+
+]
+
+---
+
+# Cournot Collusion
+
+.pull-left[
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-11-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+- .hi-purple[Cournot Competition]: each firm produces 30 and earns $45.00
+
+- .hi-orange[Collusion/Monopoly]: each firm produces 22.5 and earns $50.63 
+
+- .hi-turquoise[But is collusion a Nash equilibrium?]
+]
+
+---
+
+# Cournot Collusion
+
+.pull-left[
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-12-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+- Read either firm's reaction curve at the collusive outcome
+
+- Suppose .red[Coke] knows .blue[Pepsi] is producing .blue[22.5] (as per the cartel agreement)
+
+- .red[Coke]'s best response to .blue[Pepsi]'s .blue[22.5] is to produce .red[33.75]
+
+]
+
+---
+
+# Cournot Collusion
+
+- This (cheating the agreement) would bring market price to
+`$$\begin{align*}
+P&amp;=5-0.05(q_{c}+q_{p})\\
+P&amp;=5-0.05*(\color{red}{33.75}+\color{blue}{22.50})\\
+P&amp;=5-0.05*(56.25)\\
+P&amp;=\$2.1875\\
+\end{align*}$$`
+
+--
+
+.pull-left[
+- .red[Coke]'s profit would be:
+
+`$$\begin{align*}
+\pi_{c}&amp;=\color{red}{q_{c}}(P-c)\\
+\pi_{c}&amp;=\color{red}{33.75}(2.1875-0.50)\\
+\pi_{c}&amp;=\$56.95\\
+\end{align*}$$`
+
+]
+
+--
+
+.pull-right[
+- .blue[Pepsi]'s profit would be:
+
+`$$\begin{align*}
+\pi_{p}&amp;=\color{blue}{Pq_{p}}(P-c)\\
+\pi_{p}&amp;=\color{blue}{22.5}(2.1875-0.50)\\
+\pi_{p}&amp;=\$37.97\\
+\end{align*}$$`
+
+]
+
+---
+
+# Cournot Collusion, The Market
+
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-13-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Cournot Competition, You Try
+
+.content-box-green[.hi-green[Example]:
+Suppose Firm 1 and Firm 2 have a constant `\(MC=AC=8\)`. The market (inverse) demand curve is given by:
+
+`$$\begin{align*}
+P&amp;=200-2Q\\
+Q&amp;=q_1+q_2\\
+\end{align*}$$`
+]
+
+1. Find the Cournot-Nash equilibrium output and profit for each firm.
+
+2. Find the output and profit for each firm if the two were to collude.
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "ocean",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

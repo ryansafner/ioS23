@@ -501,7 +501,7 @@ We can graph .hi-blue[Pepsi]'s .hi-purple[reaction curve] to .hi-red[Coke]'s out
 
 Combine both curves on the same graph
 
-- .hi-purple[Cournot-Nash Equilibrium]: `$$\big( \color{red}{20}, \color{blue}{20} \big)$$`
+- .hi-purple[Cournot-Nash Equilibrium]: `$$\big( \color{red}{30}, \color{blue}{30} \big)$$`
     - Where both reaction curves intersect
 
 - Both are playing mutual best response to one another 
@@ -531,13 +531,13 @@ q_{p}^*&amp;=30-0.5q_{c}\\
 
 # Cournot-Nash Equilibrium, Algebraically
 
-- Both firms produce 20
+- Both firms produce 30
 
 --
 
 `$$\begin{align*}
-P&amp;=200-3(20)-3(20)\\
-P&amp;=\$80\\
+P&amp;=5-0.05(30+30)\\
+P&amp;=\$2.00\\
 \end{align*}$$`
 
 --
@@ -548,11 +548,11 @@ P&amp;=\$80\\
 
 `$$\begin{align*}
 \pi_{c}&amp;=q_{c}(P-c)\\
-\pi_{c}&amp;=20(80-20)\\
-\pi_{c}&amp;=1,200\\
+\pi_{c}&amp;=30(2.00-0.50)\\
+\pi_{c}&amp;=45\\
 \end{align*}$$`
 
-- Symmetrically for Pepsi, `\(\pi_{p}=1,200\)`
+- Symmetrically for Pepsi, `\(\pi_{p}=45\)`
 
 ---
 
@@ -591,19 +591,9 @@ with $50.625 going to each firm
 
 ---
 
-# Cournot Collusion
+# Cournot Collusion, The Market
 
-.pull-left[
 &lt;img src="2.2-slides_files/figure-html/unnamed-chunk-10-1.png" width="504" style="display: block; margin: auto;" /&gt;
-]
-
-.pull-right[
-
-- .hi-purple[Cournot Competition]: each firm produces 30 and earns $45.00
-
-- .hi-orange[Collusion/Monopoly]: each firm produces 22.5 and earns $50.63
-
-]
 
 ---
 
@@ -617,6 +607,22 @@ with $50.625 going to each firm
 
 - .hi-purple[Cournot Competition]: each firm produces 30 and earns $45.00
 
+- .hi-orange[Collusion/Monopoly]: each firm produces 22.5 and earns $50.63
+
+]
+
+---
+
+# Cournot Collusion: Stability
+
+.pull-left[
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-12-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+- .hi-purple[Cournot Competition]: each firm produces 30 and earns $45.00
+
 - .hi-orange[Collusion/Monopoly]: each firm produces 22.5 and earns $50.63 
 
 - .hi-turquoise[But is collusion a Nash equilibrium?]
@@ -624,10 +630,10 @@ with $50.625 going to each firm
 
 ---
 
-# Cournot Collusion
+# Cournot Collusion: Stability
 
 .pull-left[
-&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-12-1.png" width="504" style="display: block; margin: auto;" /&gt;
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-13-1.png" width="504" style="display: block; margin: auto;" /&gt;
 ]
 
 .pull-right[
@@ -642,11 +648,11 @@ with $50.625 going to each firm
 
 ---
 
-# Cournot Collusion
+# Cournot Collusion: Stability
 
 - This (cheating the agreement) would bring market price to
 `$$\begin{align*}
-P&amp;=5-0.05(q_{c}+q_{p})\\
+P&amp;=5-0.05(\color{red}{q_{c}}+\color{blue}{q_{p}})\\
 P&amp;=5-0.05*(\color{red}{33.75}+\color{blue}{22.50})\\
 P&amp;=5-0.05*(56.25)\\
 P&amp;=\$2.1875\\
@@ -671,7 +677,7 @@ P&amp;=\$2.1875\\
 - .blue[Pepsi]'s profit would be:
 
 `$$\begin{align*}
-\pi_{p}&amp;=\color{blue}{Pq_{p}}(P-c)\\
+\pi_{p}&amp;=\color{blue}{q_{p}}(P-c)\\
 \pi_{p}&amp;=\color{blue}{22.5}(2.1875-0.50)\\
 \pi_{p}&amp;=\$37.97\\
 \end{align*}$$`
@@ -680,9 +686,9 @@ P&amp;=\$2.1875\\
 
 ---
 
-# Cournot Collusion, The Market
+# Cournot Collusion (One Firm Cheating), The Market
 
-&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-13-1.png" width="504" style="display: block; margin: auto;" /&gt;
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-14-1.png" width="504" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -700,6 +706,603 @@ Q&amp;=q_1+q_2\\
 1. Find the Cournot-Nash equilibrium output and profit for each firm.
 
 2. Find the output and profit for each firm if the two were to collude.
+
+---
+
+# Cournot Equilibrium, In General
+
+.pull-left[
+.smallest[
+- Linear (inverse) demand curve: `\(P = a-bQ \quad (Q=q_1+q_2)\)`
+- Constant costs `\(C(q)=c\)`
+
+.pull-left[
+- .hi-turquoise[Cournot competition]:
+  - `\(q_1^* = q_2^* = \frac{a-c}{3b}\)`
+  - `\(Q= 2 \left(\frac{a-c}{3b}\right)\)`
+  - `\(P= \frac{a+2c}{3}\)`
+  - `\(\pi_1 = \pi_2 = \frac{(a-c)^2}{9b}\)`
+]
+
+.pull-right[
+- .hi-purple[Monopoly (collusion)]
+  - `\(Q= \frac{a-c}{2b}\)`
+  - `\(P = \frac{a+c}{2}\)`
+  - `\(\Pi = \frac{(a-c)^2}{4b}\)`
+]
+]
+]
+
+.pull-right[
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-15-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Comparative Statics
+
+.pull-left[
+- What if we relax some assumptions about the model?
+  - Same technology (same costs)
+  - Two firms only
+  - No fixed costs
+]
+
+.pull-right[
+.center[
+![](../images/cokepepsi.jpg)
+]
+]
+
+---
+
+# Comparative Statics: Decrease in MC
+
+.pull-left[
+- Suppose Coke's marginal cost decreases (such that `\(MC_c &lt; MC_p\)`)
+
+- Profit maximization requires `\(MC_c = MR_c\)`, so it will produce more (at `\(q_c^2\)`)
+]
+
+.pull-right[
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-16-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Comparative Statics: Increase in MR
+
+.pull-left[
+- Or equivalently, suppose Coke's marginal revenue increases (such that `\(MR_c &gt; MR_p\)`)
+  
+- Profit maximization requires `\(MC_c = MR_c\)`, so it will produce more (at `\(q_c^2\)`)
+]
+
+.pull-right[
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-17-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Comparative Statics: Increase in MR
+
+.pull-left[
+.smallest[
+- In either case, .hi-purple[Coke becomes more efficient than Pepsi] (lower cost/higher revenues)
+
+- Coke will produce more output
+  - A shift of its reaction function to the right
+
+- Pepsi will produce less output as a response
+
+- Overall industry output increases; price decreases
+
+- Profits to Coke increase; profits to Pepsi decrease
+]
+]
+
+.pull-right[
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-18-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Cournot Competition: Asymmetric Firms
+
+.center[
+
+[![](https://ryansafner.com/img/cournot_asymmetric_costs_shiny.png)Cournot Oligopoly with Asymmetric Costs](https://ryansafner.shinyapps.io/cournot_asymmetric_costs/)
+
+]
+
+---
+
+# Cournot Competition: Asymmetric Firms
+
+.pull-left[
+
+- If a firm has lower costs/higher revenues than others, it earns greater profit
+
+- Competing firms will want to:
+  1. lower their own costs/raise revenues
+  2. raise rivals' costs/lower their revenues
+
+]
+
+.pull-right[
+.center[
+![](../images/cokevspepsi.png)
+]
+]
+
+---
+
+class: inverse, center, middle
+
+# Endogenizing the Number of Firms
+
+---
+
+# Cournot Competition with `\(N\)` Firms
+
+.pull-left[
+
+- So far we've assumed the number of firms *exogenously*: two.
+
+- But as in any market, profits will attract entry
+
+- Let's make the number of firms *endogenous*, determined by the market conditions
+
+]
+
+.pull-right[
+
+.center[
+![](../images/sodabrands.jpg)
+]
+]
+
+---
+
+# Cournot Competition with `\(N\)` Firms
+
+.pull-left[
+
+- For tractability, return to our strict assumptions:
+  - identical technology, costs, revenues
+  - firms selling perfect substitutes
+
+]
+
+.pull-right[
+.center[
+![](../images/sodabrands.jpg)
+]
+]
+
+---
+
+# Cournot Competition with `\(N\)` Firms
+
+.pull-left[
+
+- Symmetrically, in equilibrium, each firm will be selling `\(\frac{1}{N}=s_i\)` of industry output
+  - `\(N\)` number of firms in equilibrium
+  - `\(s_i\)` is .hi-purple[market share] of firm `\(i\)`: `\(\left(\frac{q_i}{Q}\right)\)`
+
+- e.g. with 5 firms, each sells `\(\frac{1}{5}\)` of `\(Q\)`, market share of 20% each
+
+- Each firm earns profits `\(\pi_i(N)\)`
+]
+
+.pull-right[
+.center[
+![](../images/sodabrands.jpg)
+]
+]
+
+---
+
+# Cournot Competition with `\(N\)` Firms
+
+.pull-left[
+- Algebraically, with identical technology, each firm's marginal revenue is 
+
+`$$MR_i = \underbrace{\left[a-b\sum^N_{j \neq i}q_j\right]}_{intercept}-2bq_i$$`
+
+- So in symmetric equilibrium, `\(MR_i=MC_i\)` for each firm `\(i\)`:
+
+`$$a-b\sum^N_{j \neq i}q_j-2bq_i=c$$`
+
+]
+
+.pull-right[
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-19-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Cournot Competition with `\(N\)` Firms
+
+.quitesmall[
+
+- In equilibrium, each firm is maximizing profits `\((MR_i=MC_i)\)`:
+
+`$$a-b\sum^N_{j \neq i}q_j-2bq_i=c$$`
+]
+
+--
+
+.quitesmall[
+- Since each firm's equilibrium output `\(q_i, q_j, \cdots, q_N\)` will be symmetric:
+
+`$$a-b(N-1)q^*-2bq^*=c$$`
+]
+
+---
+
+# Cournot Competition with `\(N\)` Firms
+
+.quitesmall[
+`$$a-b(N-1)q^*-2bq^*=c$$`
+
+- Solving  for `\(q^*\)`:
+
+`$$q^* = \frac{a-c}{(N+1)b}$$`
+]
+
+--
+
+.quitesmall[
+- Total industry output `\(Q=Nq^*\)`, so:
+
+`$$Q^* = \frac{N(a-c)}{(N+1)b}$$`
+]
+
+--
+
+.quitesmall[
+`$$p^* = \frac{A+Nc}{N+1}$$`
+]
+
+--
+
+.quitesmall[
+`$$\pi_i = \left( \frac{a-c}{N+1} \right)^2 \left(\frac{1}{b}\right)$$`
+]
+
+.source[See pp.243-244 of the textbook for algebraic derivations.]
+
+---
+
+# Cournot Competition with `\(N\)` Firms
+
+.quitesmall[
+`$$a-b(N-1)q^*-2bq^*=c$$`
+
+- Solving  for `\(q^*\)`:
+
+`$$q^* = \frac{a-c}{(\color{#e64173}{N}+1)b}$$`
+
+- Total industry output `\(Q=\color{#e64173}{N}q^*\)`, so:
+
+`$$Q^* = \frac{\color{#e64173}{N}(a-c)}{(\color{#e64173}{N+1})b}$$`
+
+`$$p^* = \frac{A+\color{#e64173}{N}c}{\color{#e64173}{N+1}}$$`
+
+`$$\pi_i = \left( \frac{a-c}{\color{#e64173}{N}+1} \right)^2 \left(\frac{1}{b}\right)$$`
+]
+
+
+.smallest[
+- Takeaways:
+  - .hi[As the number of firms], `\(\color{#e64173}{N} \uparrow\)`: `\(\downarrow q_i\)`; `\(\uparrow Q\)`; `\(\downarrow p\)`; `\(\downarrow \pi_i\)`
+  - .hi[We approach the perfectly competitive equilibrium!]
+
+]
+
+.source[See pp.243-244 of the textbook for algebraic derivations.]
+
+---
+
+# Cournot Competition with `\(N\)` Firms
+
+.pull-left[
+
+- Each firm `\(i\)`’s output, symmetrically, will be such that:
+
+`$$\frac{p-MC}{p}=\frac{1}{\varepsilon N}$$`
+- Again, each firm’s market power is limited by the price elasticity of demand `\((\varepsilon)\)`
+  - A monopolist, `\((N=1)\)`
+  - As `\(N\)` increases, markups &amp; market power diminish
+]
+
+.pull-right[
+.center[
+![](../images/sodabrands.jpg)
+]
+]
+
+---
+
+# Cournot Equilibrium with `\(N\)` Firms: Visualization
+
+.center[
+
+[![](https://ryansafner.com/img/cournot_n_firms_shiny.png)Cournot Oligopoly with `\(N\)` Firms](https://ryansafner.shinyapps.io/cournot_n_firms/)
+
+]
+
+---
+
+# Free Entry Equilibrium
+
+.pull-left[
+- So far we've assumed no formal .hi[barriers to entry], so firms are free to enter and exit
+
+- In Cournot equilibrium, how many firms will there be (i.e. what is `\(N)\)`?
+]
+
+.pull-right[
+.center[
+![](../images/sodabrands.jpg)
+]
+]
+---
+
+# Free-Entry Equilibrium
+
+.pull-left[
+
+- .hi[“Free entry equilibrium”]: equilibrium where no additional firms will enter (additional entry must not be profitable); **two conditions**
+  1. .hi-purple[Nash equilibrium in quantities] `\(MR(q)=MC(q)\)`; each firm is profit-maximizing given the number of firms
+  2. .hi-purple[Zero-profits]: At Cournot output and free-entry number of firms, firms in market earn no profits (no incentive for entry/exit on the margin)
+      - `\(p=AC(q)\)`
+]
+
+.pull-right[
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-20-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+
+---
+
+# Free-Entry Equilibrium (Constant Returns to Scale)
+
+.pull-left[
+.smaller[
+- .hi[Constant returns to scale] leads to a problem!
+  - `\(\color{red}{MC(q)}=\color{red}{AC(q)}\)` are constant and equal
+
+- Regardless of number of firms `\(N\)`, `\(\color{blue}{p^*}&gt;\color{red}{AC}\)` *always*!
+
+- .hi-turquoise[Nothing limits the entry of firms!] (Not a satisfactory theory)
+  - (Aside from a government-imposed barrier to entry), only as `\(N \rightarrow \color{#e64173}{\infty}\)` do firms stop entering `\((\pi=0)\)`
+]
+]
+.pull-right[
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-21-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Free-Entry Equilibrium with Economies of Scale
+
+.pull-left[
+
+- Consider instead a case with .hi[economies of scale] for each firm `\(i\)`
+`$$C_i(q_i)= cq_i + f$$`
+  - High fixed costs `\(f\)`
+  - constant variable (marginal) costs `\(c\)`
+  - `\(AC(q)=c+\frac{f}{q}\)`
+
+- Barrier to entry from cost-disadvantage to small-scale entry
+
+- Equilibrium where `\(p=AC(q^\star)\)`
+]
+
+.pull-right[
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-22-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Fixed Costs and Incentives to Enter
+
+.pull-left[
+.smallest[
+- Profits with `\(N\)` firms are again `$$\pi_i = \left( \frac{a-c}{N+1} \right)^2 \left(\frac{1}{b}\right)$$`
+  - These are gross profits, ignoring the fixed cost of entry `\(f\)`
+
+- Fixed costs don't change any incentives on the margin to produce
+  - `\(MR=MC\)`; `\(f\)` doesn't affect `\(MC\)`
+
+- Fixed costs only affect the incentive to enter
+  - Firms only enter an industry if they expect they can recover `\(f\)`, so `\(\pi \geq f\)` for entry
+]
+]
+
+.pull-right[
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-23-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# The Equilibrium Number of Firms
+
+.smaller[
+.content-box-green[
+For our Coke &amp; Pepsi example, suppose producing soda comes with a $10.00 fixed cost. How many firms would be in the industry in a free-entry equilibrium?
+]
+]
+
+--
+
+.smaller[
+- Set (gross) profits (ignoring fixed costs) equal to fixed costs
+
+`$$\begin{align*}\pi &amp;= f \\
+\left(\frac{a-c}{N+1}\right)^2 \left(\frac{1}{b}\right)&amp;=f \\
+\left(\frac{3-0.5}{N+1}\right)^2\frac{1}{0.05}&amp; =10.00 \\
+N^* &amp;= 5.36 \\ \end{align*}$$`
+]
+
+---
+
+# The Equilibrium Number of Firms
+
+- **5 firms**; a sixth firm could not profitably enter 
+
+- (If `\(N\)` is not a whole number, the last whole number is the answer)
+
+- In general, 
+
+`$$N^* = \frac{a-c}{\sqrt{bf}}-1$$`
+
+
+---
+
+
+
+# The Equilibrium Number of Firms
+
+- In our Coke &amp; Pepsi example: 
+
+| `\(N\)` | `\(q_i\)` | `\(Q\)` | `\(AC(q_i)\)`  | `\(p\)` | `\(\pi_i\)` |
+|----------------:|------:|----:|-----------:|----:|-------:|
+| 1 | 45.00 | 45.00 | $0.72 | $2.75 | $91.25 |
+| 2 | 30.00 | 60.00 | $0.83 | $2.00 | $35.00 |
+| 3 | 22.50 | 67.50 | $0.94 | $1.625 | $15.31 |
+| 4 | 18.00 | 72.00 | $1.06 | $1.40 | $6.20 |
+| 5 | 15.00 | 75.00 | $1.17 | $1.25 | $1.25 |
+| 6 | 12.86 | 77.14 | $1.28 | $1.14 | .red[-$1.73] | 
+
+- A potential sixth firm could not profitably enter (and the 5 other firms would suffer losses)
+
+
+
+---
+
+# The Role of Fixed Costs 
+
+
+.smaller[
+.content-box-green[
+For our Coke &amp; Pepsi example, suppose producing soda comes with a .hi[$75.00] fixed cost. How many firms would be in the industry in a free-entry equilibrium?
+]
+]
+
+--
+
+.smaller[
+- Set (gross) profits (ignoring fixed costs) equal to fixed costs
+
+`$$\begin{align*}\pi &amp;= f \\
+\left(\frac{a-c}{N+1}\right)^2 \left(\frac{1}{b}\right)&amp;=f \\
+\left(\frac{3-0.5}{N+1}\right)^2\frac{1}{0.05}&amp; =75.00 \\
+N^* &amp;= 1.32 \\ \end{align*}$$`
+]
+
+---
+
+# The Equilibrium Number of Firms
+
+
+
+- In our Coke &amp; Pepsi example: 
+
+| `\(N\)` | `\(q_i\)` | `\(Q\)` | `\(AC(q_i)\)`  | `\(p\)` | `\(\pi_i\)` |
+|----------------:|------:|----:|-----------:|----:|-------:|
+| 1 | 45.00 | 45.00 | $2.06 | $2.75 | $31.25 |
+| 2 | 30.00 | 60.00 | $2.83 | $2.00 | .red[-$25.00] | 
+
+- The Cournot duopoly is the same, but not profitable!
+- Second firm does not have incentives to enter; a natural monopoly with 1 firm
+
+---
+
+# Insufficient Entry
+
+.pull-left[
+- With high enough fixed costs, even a *single* firm (monopolist) would not enter!
+
+- Might make sense for government to subsidize a monopolist to break even
+  - If cost of the subsidy `\(&lt;\)` consumer surplus at monopoly price
+
+]
+
+.pull-right[
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-27-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+class: inverse, center, middle
+
+# Cournot Competition and Market Power
+
+---
+
+# Cournot Equilibrium and Market Power
+
+`$$\underbrace{\frac{P-MC}{P}}_{\text{Lerner index}} = \frac{s_i}{\varepsilon}$$`
+
+- Lefthand size is Lerner index (market power/markup share of price)
+- `\(s_i\)` is the market share of firm `\(i\)` `\(\left(\frac{q_i}{Q}\right)\)`
+- `\(\varepsilon\)` is the price elasticity of market demand
+
+---
+
+# Cournot Equilibrium and Market Power: Summary
+
+`$$\underbrace{\frac{P-MC}{P}}_{\text{Lerner index}} = \frac{s_i}{\varepsilon}$$`
+
+.smallest[
+1. Cournot duopolists have market power `\(p&gt;MC\)`
+2. Market power (left) is inversely related to price elasticity of demand
+3. Cournot markups will be less than monopoly since `\(s_i &lt; 1\)`
+4. Endogenous relationship between `\(MC\)` and market share `\(s_i\)`
+  - Firms with lower `\(MC\)` will have higher `\(s_i\)` (more efficient firms will have higher market share)
+5. The greater the number of firms, the less the market power
+  - as `\(\uparrow n, \downarrow s_i\)` and so `\(\downarrow \frac{P-MC}{P}\)`
+  - elasticity of each firm `\(i\)`'s residual demand is `\(\frac{\varepsilon}{s_i}\)`
+  - `\(\uparrow n\)` raises each firm's `\(\varepsilon\)`, reducing its market power
+
+]
+
+---
+
+# Measuring Market Power and Concentration
+
+`$$\frac{P-MC}{P} = \frac{s_i}{\varepsilon}$$`
+- If we multiply both sides of the equation by `\(s_i\)` and sum over all `\(N\)` firms...
+
+---
+
+# Measuring Market Power and Concentration
+
+`$$\sum_{i=1}^Ns_i \left(\frac{P-MC}{P}\right) =\sum_{i=1}^Ns_i \frac{s_i}{\varepsilon}$$`
+
+- If we multiply both sides of the equation by `\(s_i\)` and sum over all `\(N\)` firms...
+
+---
+
+# Measuring Market Power and Concentration
+
+`$$\sum_{i=1}^Ns_i \left(\frac{P-MC}{P}\right) =\frac{HHI}{\varepsilon}$$`
+
+.smallest[
+- `\(HHI\)` = .hi[Herfindahl-Hirschmann Index] (sum of squared market shares); a famous measure of industry concentration (we'll explore later)&lt;sup&gt;.magenta[†]&lt;/sup&gt;
+  - 0: perfect competition; 1: monopoly
+
+- The larger the `\(HHI\)` (holding `\(\varepsilon\)` constant), the greater the average weighted markup/industry-wide Lerner index (lefthand side)
+
+- Implication: .hi-turquoise[if Cournot model is accurate, measuring the `\(HHI\)` and `\(\epsilon\)` provide good empirical evidence about firm conduct]
+
+]
+
+.footnote[&lt;sup&gt;.magenta[†]&lt;/sup&gt; In the U.S., HHI is often measured using market shares as *percentages*, making HHI between 0 and 10,000.]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

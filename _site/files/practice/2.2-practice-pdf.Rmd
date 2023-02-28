@@ -1,0 +1,25 @@
+---
+title: "Cournot & Bertrand Competition — Practice Problems"
+author: "ECON 326 — Spring 2023"
+date: ""
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Suppose Firm 1 and Firm 2 have a constant $MC=AC=8$. The market (inverse) demand curve is given by:
+
+$$\begin{aligned}
+P&=200-2Q\\
+Q&=q_1+q_2\\
+\end{aligned}$$
+
+1. Find the Cournot-Nash equilibrium output and profit for each firm if they compete on quantity.
+
+2. Find the output and profit for each firm if the two were to collude.
+
+3. Find the Nash equilibrium price each firm charges if they compete on price. 
+
+4. Find the industry price, output, and profits under this equilibrium (in part 3).

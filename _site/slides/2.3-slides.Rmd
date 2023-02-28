@@ -1,5 +1,5 @@
 ---
-title: "2.2 — Cournot Competition"
+title: "2.3 — Bertrand Competition"
 author: 'Ryan Safner'
 output:
   xaringan::moon_reader:
@@ -45,7 +45,7 @@ set.seed(256)
 
 class: title-slide
 
-# 2.2 — Cournot Competition
+# 2.3 — Bertrand Competition
 
 ## ECON 326 • Industrial Organization • Spring 2023
 
@@ -53,231 +53,140 @@ class: title-slide
 
 ---
 
-# Models of Oligopoly
+# Bertrand Competition: Moblab
+
+.center[
+![:scale 80%](https://www.dropbox.com/s/kzv1hjt3cpf3emy/Bertrandmoblab.png?raw=1)
+]
+
+---
+
+# Bertrand Competition: Moblab
 
 .pull-left[
-Three canonical models of Oligopoly
+- Each of you selling identical Economics course notes
 
-1. .hi[Bertrand competition]
-  - Firms **simultaneously** compete on **price**
-2. .hi[Cournot competition]
-  - Firms **simultaneously** compete on **quantity**
-3. .hi[Stackelberg competition]
-  - Firms **sequentially** compete on **quantity**
+- You will be put into a market with one other player
+
+- Each term, both of you simultaneously choose your price
+
+- Firm(s) choosing the lowest price get **all** the customers
 
 ]
 
 .pull-right[
 .center[
-![:scale 100%](../images/chessknights.jpg)
+![](https://www.dropbox.com/s/kzv1hjt3cpf3emy/Bertrandmoblab.png?raw=1)
 ]
-]
 
----
-
-# Cournot Competition on Moblab
-
-.center[
-![:scale 80%](../images/cournotmoblab.png)
 ]
 
 ---
-
-# Cournot Competition on Moblab
+# Bertrand Competition: Moblab
 
 .pull-left[
-- Each of you is a firm selling identical scooters
-- Each season, each firm chooses its quantity to produce
-- You pay a cost for each you produce (identical across all firms)
-- Market price depends on *total* industry output
-    - More total output $\implies$ lower market price
-    - Market price is revealed after all firms have chosen their output
+
+- The lowest price $p_L$ determines the market demand
+$$q=3600-200p_L$$
+
+- Both firms have $2 cost per unit sold
+
+- $p=10$ maximizes total market profits
+
 ]
 
 .pull-right[
 .center[
-![:scale 100%](../images/cournotmoblab.png)
+![](https://www.dropbox.com/s/kzv1hjt3cpf3emy/Bertrandmoblab.png?raw=1)
 ]
+
 ]
 
 ---
 
-# Cournot Competition on Moblab
+# Bertrand Competition: Moblab
 
 .pull-left[
-- We will play 4 times:
-    1. You are the only firm (monopoly)
-    2. You will be matched with another firm (duopoly)
-    3. You will be matched with 2 other firms (triopoly)
-    4. The entire class is competing in the same market 
-- Each instance will have 3 rounds 
+$$q=3600-200p_L$$
+
+.hi-green[Example:]
+- Suppose Firm 1 sets $p=9$ and Firm 2 sets $p=10$
+
+- Firm 2 sells 0, makes $0
+
+- Firm 1 sells $q=3,600-200(9)=1,800$ and earns $1,800(9-2)=12,600$ profit
+
 ]
 
 .pull-right[
 .center[
-![:scale 100%](../images/cournotmoblab.png)
+![](https://www.dropbox.com/s/kzv1hjt3cpf3emy/Bertrandmoblab.png?raw=1)
 ]
+
 ]
 
 ---
 
-class: inverse, center, middle
-
-# Cournot's Model
-
----
-
-# Cournot
+# Bertrand Competition
 
 .left-column[
 .center[
-![:scale 80%](../images/Cournot.jpg)
+![:scale 80%](https://www.dropbox.com/s/difq3lgs9wwltru/Bertrand.jpg?raw=1)
 
 .smaller[
-Antoine Augustin Cournot
+Joseph Bertrand
 
-1801-1877
-]
-]
-]
-
-.right-column[
-.smallest[
-- 1838 *Researches on the Mathematical Principles of the Theory of Wealth*
-
-- First writer to:
-  - ✅ use and advocate mathematics for study of political economy
-  - ✅ relate demand and supply as functions of price and quantity
-  - ✅ draw a demand and supply graph
-  - ✅ use marginal analysis to find profit-maximizing output: where marginal revenue $=$ marginal cost
-
-- Sadly, no influence in his lifetime, but enormous consequence on neoclassical economics
-
-]
-
-.source[Cournot, Antoine Augustin, 1838, *Researches on the Mathematical Principles of the Theory of Wealth*]
-
-]
-
----
-# Cournot's Model
-
-.left-column[
-.center[
-![:scale 80%](../images/Cournot.jpg)
-
-.smaller[
-Antoine Augustin Cournot
-
-1801-1877
-]
-]
-]
-.right-column[
-- Chapter V “Of Monopoly”, studies a monopoly supplier of mineral water who prices to maximize profit
-  - $MR = MC$
-]
-
----
-
-# Cournot's Model
-
-.left-column[
-.center[
-![:scale 80%](../images/Cournot.jpg)
-
-.smaller[
-Antoine Augustin Cournot
-
-1801-1877
-]
-]
-]
-.right-column[
-.smallest[
-> “Let us now imagine two proprietors and two springs of which qualities are identical and which on account of their similar positions supply the same market in competition.”
-
-> “In this case the price is necessarily the same for each proprietor.”
-
-> “If $p$ is the price, $D=F(p)$ the total sales, $D_1$ the sales from the spring (1), and $D_2$ the sales from the spring (2), then $D_1+D_2=D$.”
-
-]
-
-- Chapter VII “Of Competition of Producers”
-]
-
-
----
-
-# Cournot's Model
-
-.left-column[
-.center[
-![:scale 80%](../images/Cournot.jpg)
-
-.smaller[
-Antoine Augustin Cournot
-
-1801-1877
-]
-]
-]
-.right-column[
-.smallest[
-
-> “If, to begin with, we neglect the cost of production, the respective incomes of the proprietors will be $pD_1$ and $pD_2$ and...each of them independently will seek to make this income as large as possible.”
-
-> “[But] [p]roprietor (1) can have no direct influence on the determination of $D_2$.”
-
-> “All that he can do when $D_2$ has been determined by proprietor (2) is to choose for $D_1$ the value which is best for him. This he will be able to accomplish by properly adjusting his price...except as proprietor (2), who seeing himself forced to accept his price and this value of $D_2$, may adopt a new value for $D_2$ more favorable ot his interests than the preceding one.”
-
-]
-
-- Chapter VII “Of Competition of Producers”
-]
-
----
-
-# Cournot Competition
-
-.left-column[
-.center[
-![:scale 80%](../images/Cournot.jpg)
-
-.smaller[
-Antoine Augustin Cournot
-
-1801-1877
+1822-1890
 ]
 ]
 ]
 .right-column[
 
-- We use modern game theory and Nash equilibrium to make Cournot’s model a **static game** (for now)
+.quitesmall[
+“Such is the study made in chapter VII of the rivalry between two proprietors, who without having to worry about any competition, manage two springs of identical quality. It would be in their mutual interest to associate [collude] or at least to set a common price so as to make the largest possible revenue from all the buyers, but this solution is rejected. Cournot assumes that one of the proprietors will reduce his prices to attract buyers to him and that the other will, in turn, reduce his prices even more to attract business back to him. They will only stop undercutting each other in this way when either proprietor, even if the other abandoned the struggle, has nothing more to gain from reducing his prices. One major objection to this is that there is no solution under this assumption, in that there is no limit in the downward movement. Indeed, whatever the common price adopted, if one of the proprietors, alone, reduces his price he will, ignoring any minor exceptions, attract all the buyers and thus double his revenue if his rival lets him do so. If Cournot’s formulation conceals this obvious result, it is because he most inadvertently introduces as $D$ $[q_1]$ and $D’$ $[q_2]$ the two proprietors’ respective outputs and by considering them as independent variables he assumes that should either proprietor change his output then the other proprietor’s output could remain constant. It quite obviously could not,” (503).
 
-- .hi[“Cournot competition”]: two (or more) firms compete on **quantity** to sell the **same good**
+]
 
-- Firms set their quantities **simultaneously**
+.source[Bertrand, Joseph, 1883, “Book review of theorie mathematique de la richesse sociale and of recherches sur les principles mathematiques de la theorie des richesses”, *Journal de Savants* 67: 499–508]
 
-- Firms' joint output determines the market price faced by all firms
 ]
 
 ---
 
-# Cournot Competition: Mechanics
+# Bertrand Competition
+
+.left-column[
+.center[
+![:scale 80%](https://www.dropbox.com/s/difq3lgs9wwltru/Bertrand.jpg?raw=1)
+
+.smaller[
+Joseph Bertrand
+
+1822-1890
+]
+]
+]
+.right-column[
+- .hi["Bertrand competition"]: two (or more) firms compete on **price** to sell the **same good**
+
+- Firms set their prices **simultaneously**
+
+- Consumers are indifferent between the brands and .hi-purple[always buy from the seller with the lowest price]
+
+]
+
+---
+
+# Bertrand Competition: Example
 
 .pull-left[
 
-- Suppose two firms (.red[1] and .blue[2]), each have an identical constant cost $$MC(q)=AC(q)=c$$
+- Consider .hi-red[Coke] and .hi-blue[Pepsi] again, with a constant marginal cost of $0.50
 
-- .red[Firm 1] and .blue[Firm 2] simultaneously set quantities, $\color{red}{q_1}$ and $\color{blue}{q_2}$
+- Let $Q$ be the *total* quantity purchased by consumers from the entire market (i.e. both firms)
+  - $Q=\color{red}{q_c}+\color{blue}{q_p}$
 
-- Total market demand is given by
-
-$$\begin{align*}
-P&=a-bQ\\
-Q&=\color{red}{q_1}+\color{blue}{q_2}\\
-\end{align*}$$
+- Denote .hi-red[Coke]'s price as .hi-red[`\\(p_c\\)`] and .hi-blue[Pepsi]'s price as .hi-blue[`\\(p_p\\)`]
 ]
 
 .pull-right[
@@ -288,156 +197,179 @@ Q&=\color{red}{q_1}+\color{blue}{q_2}\\
 
 ---
 
-# Cournot Competition: Mechanics
+# Bertrand Competition: Example
 
 .pull-left[
+- Demand for soda from .hi-red[Coke]:
 
-- .red[Firm 1's] profit is given by:
-
-$$\begin{align*}
-\color{red}{\pi_1}&=\color{red}{q_1}(P-c)\\
-\color{red}{\pi_1}&=\color{red}{q_1}(a-b(\color{red}{q_1}+\color{blue}{q_2})-c)\\
-\end{align*}$$
-
-- And, symmetrically same for .blue[firm 2]
-
-- **Note each firm's profits depend (in part) on the output of the other firm!** 
 ]
+
+---
+
+# Bertrand Competition: Example
+
+.pull-left[
+- Demand for soda from .hi-red[Coke]:
+  - $Q$ if .red[`\\(p_c\\)`] $<$ .blue[`\\(p_p\\)`]
+]
+
+---
+
+# Bertrand Competition: Example
+
+.pull-left[
+- Demand for soda from .hi-red[Coke]:
+  - $Q$ if .red[`\\(p_c\\)`] $<$ .blue[`\\(p_p\\)`]
+  - $\frac{Q}{2}$ if .red[`\\(p_c\\)`] $=$ .blue[`\\(p_p\\)`]
+]
+
+---
+
+# Bertrand Competition: Example
+
+.pull-left[
+- Demand for soda from .hi-red[Coke]:
+  - $Q$ if .red[`\\(p_c\\)`] $<$ .blue[`\\(p_p\\)`]
+  - $\frac{Q}{2}$ if .red[`\\(p_c\\)`] $=$ .blue[`\\(p_p\\)`]
+  - $0$ if .red[`\\(p_c\\)`] $>$ .blue[`\\(p_p\\)`]
+]
+
+--
 
 .pull-right[
-.center[
-![](../images/cokepepsi.jpg)
-]
-]
+```{r, fig.retina=3}
+Demand_b=function(x){10-x}
+MC=function(x){2}
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  
+  # curves 
+  stat_function(fun=Demand_b, geom="line", size=5, color="purple")+
+  
+  geom_segment(x=0.05,xend=0.05,y=10,yend=5, size =2, color = "red")+
+  geom_segment(x=0,xend=2.5,y=5,yend=5, size =2, color = "red")+
+  geom_segment(x=2.5,xend=5,y=5,yend=5, size =2, linetype="dotted", color = "red")+
+  geom_segment(x=5,xend=10,y=5,yend=0, size=2, color="red")+
+  annotate(geom = "label", x = 7, y = 3, label = "Coke's Demand",color = "red", size = 6) +
+  
+  stat_function(fun=MC, geom="line", size=2, color="orange")+
+  annotate(geom = "label", x = 2, y = Demand_b(2), label = "Market Demand",color = "purple", size = 6) +
+  annotate(geom = "label", x = 9, y = 2, label = "MC(q)", color="orange", size=6)+
+  
+  geom_segment(x=2.5,xend=2.5,y=0,yend=5, size=1, linetype="dotted")+
+  geom_segment(x=5,xend=5,y=0,yend=5, size=1, linetype="dotted")+
 
----
-
-# Residual Demand
-
-- Consider the demand each firm faces to be a .hi-purple[residual demand]
-
---
-
-- e.g. for .red[firm 1], it's (residual) demand is:
-
---
-
-$$\begin{align*}
-p&=a-b(\color{red}{q_1}+\color{blue}{q_2})\\
-p&=\underbrace{(a-b\color{blue}{q_2})}_{intercept}-\underbrace{b}_{slope}\color{red}{q_1}\\
-\end{align*}$$
-
---
-
-- .blue[Firm 2] will produce some amount, $\color{blue}{q_2}$. 
-
---
-
-- .red[Firm 1] takes this as given, to find its own residual demand
-  - Intercept: $a-b\color{blue}{q_2}$
-  - Slope: $b$ (coefficient in front of $\color{red}{q_1})$
-
----
-
-# Residual Demand
-
-.pull-left[
-```{r}
-Demand_fake<-function(x){10-x}
-Demand_residual<-function(x){8-x}
-
-ggplot(tibble(x=c(0,10)), aes(x=x))+
-  stat_function(fun=Demand_fake, geom="line", size=2, color="blue")+
-    stat_function(fun=Demand_residual, geom="line", size=2, color="darkblue", linetype = "dashed")+
-  annotate(geom = "label", x = 9, y = Demand_fake(9) , label = "Market Demand",color = "blue", size = 4) +
-    annotate(geom = "label", x = 5, y = Demand_residual(5) , label = "Demand for Firm 1",color = "darkblue", size = 4) +
-
-  annotate("segment", x = 5, xend = 3, y = 5, yend = 5, color = "purple", size=2, alpha=0.9, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))+
-    annotate(geom = "label", x = 4, y =5 , label = expression(q[2]), color = "purple", size = 4)+ 
-
-  scale_x_continuous(breaks = NULL,
-                     limits = c(0,10),
+  scale_x_continuous(breaks = c(0,2.5,5),
+                     labels = c(0,expression(Q/2),"Q"),
                      expand=c(0,0))+
-  scale_y_continuous(breaks = c(0,8,10),
-                     labels = c(0,expression(a-(b*q[2])), expression(a)),
+  scale_y_continuous(breaks = c(0,2,5),
+                     labels = c(0,"$0.50", expression(p[p])),
                      limits = c(0,10),
                      expand=c(0,0))+
   theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
-  labs(x = expression(paste("Firm 1's quantity, ", q[1])),
-       y = expression("Market Price, p"))
+  labs(x = expression(paste("Coke's Quantity, ", q[c]), sep=" "),
+       y = expression(paste("Coke's Price, ", p[c]), sep=" "))
 ```
+]
+
+---
+
+# Bertrand Competition: Example
+
+.pull-left[
+- Demand for soda from .hi-red[Coke]:
+  - $Q$ if .red[`\\(p_c\\)`] $<$ .blue[`\\(p_p\\)`]
+  - $\frac{Q}{2}$ if .red[`\\(p_c\\)`] $=$ .blue[`\\(p_p\\)`]
+  - $0$ if .red[`\\(p_c\\)`] $>$ .blue[`\\(p_p\\)`]
+]
+
+.pull-left[
+- Demand for soda from .hi-blue[Pepsi]:
+  - $0$ if .red[`\\(p_c\\)`] $<$ .blue[`\\(p_p\\)`]
+  - $\frac{Q}{2}$ if .red[`\\(p_c\\)`] $=$ .blue[`\\(p_p\\)`]
+  - $Q$ if .red[`\\(p_c\\)`] $>$ .blue[`\\(p_p\\)`]
+]
+
+---
+
+# Bertrand Competition: Example
+
+.pull-left[
+
+- The only way to sell soda is to match or beat your competitor's price 
 
 ]
 
 .pull-right[
-- .blue[Firm 2] will produce some amount, $\color{blue}{q_2}$. 
-
-- .red[Firm 1] will take this as a given, a constant
-
-- .red[Firm 1]'s choice variable is $\color{red}{q_1}$, *given* $\color{blue}{q_2}$
+.center[
+![](../images/cokepepsi.jpg)
+]
 ]
 
 ---
 
-# Cournot Competition: Example
+# Bertrand Competition: Example
 
-.content-box-green[
-.hi-green[Example]: Assume Coke $(c)$ and Pepsi $(p)$ are the only two cola producers, each with a constant MC=AC=$0.50. The market (inverse) demand curve is given by:
-$$\begin{align*}
-P&=5-0.05Q\\
-Q&=q_{c}+q_{p}\\
-\end{align*}$$
+.pull-left[
+
+- The only way to sell soda is to match or beat your competitor's price
+
+- Suppose you are .hi-red[Coke]
+
+For a known .hi-blue[`\\(p_p\\)`], setting your price 
+
+$$\color{red}{p_c}=\color{blue}{p_p}-\epsilon$$
+
+for any arbitrary $\epsilon > 0$ captures you the entire market $Q$
+
+- Same for .hi-blue[Pepsi] for $\color{red}{p_c}$
 
 ]
 
---
-
-$$P=5-0.05Q$$
-
---
-
-$$P=5-0.05q_{c}-0.05q_{p}$$
+.pull-right[
+.center[
+![](../images/cokepepsi.jpg)
+]
+]
 
 ---
 
-# Cournot Competition: Example 
+# Bertrand Competition: Example
 
-$$P=5-0.05q_{c}-0.05q_{p}$$
+.pull-left[
 
---
+- Won't charge $p<MC$, earn losses
 
-- Firms maximize profit (as always), by setting $q^*: MR(q)=MC(q)$
+- Firms continue undercutting one another until .hi-red[`\\(p_c\\)`] $=$ .hi-blue[`\\(p_p\\)`] $=MC$
 
----
+- .hi-purple[Nash Equilibrium]: $$\big( \color{red}{p_c = MC}, \color{blue}{p_p=MC} \big)$$
+  - Firms earn no profits! 
 
-# Cournot Competition: Example 
+]
 
-$$P=\underbrace{5-0.05q_{p}}_{intercept}-\underbrace{0.05}_{slope}q_{c}$$
-
-- Firms maximize profit (as always), by setting $q^*: MR(q)=MC(q)$
-
-- Solve for Coke’s MR(q) first:
-  - Take $q_{p}$ as given, a constant
-  - Recall MR is twice the slope of demand
-  
---
-
-$$MR_{c}=5-0.05q_{p}-0.10q_{c}$$
+.pull-right[
+.center[
+![](../images/cokepepsi.jpg)
+]
+]
 
 ---
 
-# Cournot Competition: Example 
+# Bertrand Paradox
 
-- Solve for $q^*$ for each firm (where $MR(q)=MC(q))$, we derive each firm's .hi[reaction function] or .hi[best response function] to the other firm's output
+.pull-left[
 
-- Symmetric marginal costs and marginal revenues
+- .hi[Bertrand Paradox]: when firms compete on price, .hi-turquoise[the perfectly competitive outcome can be achieved with just 2 firms!]
+  - $p=MC$
+  - $\pi=0$
+  - $L = \frac{p-MC}{p} = 0$! 
 
---
+]
 
-$$\begin{align*}
-q_{c}^*&=45-0.5q_{p}\\
-q_{p}^*&=45-0.5q_{c}\\
-\end{align*}$$
+.pull-right[
+.center[
+![](../images/cokepepsi.jpg)
+]
+]
 
 ---
 
@@ -445,27 +377,32 @@ q_{p}^*&=45-0.5q_{c}\\
 
 .pull-left[
 ```{r}
-Coke=function(x){45-0.5*x}
+rc<-ggplot(tibble(x=c(0,10)), aes(x=x))+
+  geom_segment(x=0, xend=2,y=0,yend=2, size=1, linetype="dashed")+
+  geom_segment(x=0,xend=0.55,y=0.5,yend=0.5, size=2, color="red")+
+  geom_segment(x=0.55,xend=2.05,y=0.5,yend=2, size=2, color="red")+
+  annotate(geom = "label", x = 1.75, y = 1.75 , label = "Coke's RC",color = "red", size = 4) +
 
-coke<-ggplot(tibble(x=c(0,10)), aes(x=x))+
-  stat_function(fun=Coke, geom="line", size=2, color="red")+
-    annotate(geom = "label", x = 65, y = Coke(65) , label = "Coke's RF",color = "red", size = 4) +
-  scale_x_continuous(breaks = seq(0,100,10),
-                     limits = c(0,100),
+  scale_x_continuous(breaks = seq(0,2,0.25),
+                     labels = scales::dollar,
+                     limits = c(0,2),
                      expand=c(0,0))+
-  scale_y_continuous(breaks = seq(0,100,10),
-                     limits = c(0,100),
+  scale_y_continuous(breaks = seq(0,2,0.25),
+                     labels = scales::dollar,
+                     limits = c(0,2),
                      expand=c(0,0))+
-  theme_light(base_family = "Fira Sans Condensed", base_size=20)+
-  labs(x = expression(paste("Pepsi's Output, ", q[P]), sep=" "),
-       y = expression(paste("Coke's Output, ", q[C]), sep=" "))
-coke
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
+  labs(x = "<span style = 'color:blue'>Pepsi's Price, p<sub>p</sub></span>",
+       y = "<span style = 'color:red'>Coke's Price, p<sub>p</sub></span>")+
+  theme(axis.title.x = element_markdown(),
+        axis.title.y = element_markdown())
+rc
 ```
 ]
 
 .pull-right[
 
-We can graph .hi-red[Coke]'s .hi-purple[reaction curve] to .hi-blue[Pepsi]'s output
+We can graph .hi-red[Coke]'s .hi-purple[reaction curve] to .hi-blue[Pepsi]'s price
 
 ]
 
@@ -475,18 +412,18 @@ We can graph .hi-red[Coke]'s .hi-purple[reaction curve] to .hi-blue[Pepsi]'s out
 
 .pull-left[
 ```{r}
-coke+
-  geom_segment(x=40,xend=40,y=0,yend=Coke(40), size=1, linetype="dotted", color="blue")+
-  geom_segment(x=0,xend=40,y=Coke(40),yend=Coke(40), size=1, linetype="dotted", color="red")
+rc+
+  geom_segment(x=1.00,xend=1.00,y=0,yend=0.95, size=1, linetype="dotted", color="blue")+
+  geom_segment(x=0,xend=1.00,y=0.95,yend=0.95, size=1, linetype="dotted", color="red")
 
 ```
 ]
 
 .pull-right[
 
-We can graph .hi-red[Coke]'s .hi-purple[reaction curve] to .hi-blue[Pepsi]'s output
+We can graph .hi-red[Coke]'s .hi-purple[reaction curve] to .hi-blue[Pepsi]'s price
 
-- e.g. if .hi-blue[Pepsi] produces .hi-blue[40], .hi-red[Coke]'s best response is .hi-red[25]
+- e.g. if .hi-blue[Pepsi] sets a price of .hi-blue[$1.00], .hi-red[Coke]'s best response is .hi-red[`\\($1.00-\epsilon\\)`]
 
 ]
 
@@ -496,21 +433,48 @@ We can graph .hi-red[Coke]'s .hi-purple[reaction curve] to .hi-blue[Pepsi]'s out
 
 .pull-left[
 ```{r}
-coke+
-  geom_segment(x=40,xend=40,y=0,yend=Coke(40), size=1, linetype="dotted", color="blue")+
-  geom_segment(x=0,xend=40,y=Coke(40),yend=Coke(40), size=1, linetype="dotted", color="red")+
-  geom_segment(x=20,xend=20,y=0,yend=Coke(20), size=1, linetype="dotted", color="blue")+
-  geom_segment(x=0,xend=20,y=Coke(20),yend=Coke(20), size=1, linetype="dotted", color="red")
+rc+
+  geom_segment(x=1.00,xend=1.00,y=0,yend=0.95, size=1, linetype="dotted", color="blue")+
+  geom_segment(x=0,xend=1.00,y=0.95,yend=0.95, size=1, linetype="dotted", color="red")+
+  geom_segment(x=1.5,xend=1.5,y=0,yend=1.45, size=1, linetype="dotted", color="blue")+
+  geom_segment(x=0,xend=1.5,y=1.45,yend=1.45, size=1, linetype="dotted", color="red")
 
 ```
 ]
 
 .pull-right[
 
-We can graph .hi-red[Coke]'s .hi-purple[reaction curve] to .hi-blue[Pepsi]'s output
+We can graph .hi-red[Coke]'s .hi-purple[reaction curve] to .hi-blue[Pepsi]'s price
 
-- e.g. if .hi-blue[Pepsi] produces .hi-blue[40], .hi-red[Coke]'s best response is .hi-red[25]
-- e.g. if .hi-blue[Pepsi] produces .hi-blue[20], .hi-red[Coke]'s best response is .hi-red[35]
+- e.g. if .hi-blue[Pepsi] sets a price of .hi-blue[$1.50], .hi-red[Coke]'s best response is .hi-red[`\\($1.50-\epsilon\\)`]
+- e.g. if .hi-blue[Pepsi] sets a price of .hi-blue[$1.50], .hi-red[Coke]'s best response is .hi-red[`\\($1.50-\epsilon\\)`]
+
+]
+
+---
+
+# Coke's Reaction Curve
+
+.pull-left[
+```{r}
+rc+
+  geom_segment(x=1.00,xend=1.00,y=0,yend=0.95, size=1, linetype="dotted", color="blue")+
+  geom_segment(x=0,xend=1.00,y=0.95,yend=0.95, size=1, linetype="dotted", color="red")+
+  geom_segment(x=1.5,xend=1.5,y=0,yend=1.45, size=1, linetype="dotted", color="blue")+
+  geom_segment(x=0,xend=1.5,y=1.45,yend=1.45, size=1, linetype="dotted", color="red")+
+  geom_segment(x=0.50,xend=0.50,y=0,yend=0.50, size=1, linetype="dotted", color="blue")+
+  geom_segment(x=0,xend=0.50,y=0.50,yend=0.50, size=1, linetype="dotted", color="red")
+
+```
+]
+
+.pull-right[
+
+We can graph .hi-red[Coke]'s .hi-purple[reaction curve] to .hi-blue[Pepsi]'s price
+
+- e.g. if .hi-blue[Pepsi] sets a price of .hi-blue[$1.50], .hi-red[Coke]'s best response is .hi-red[`\\($1.50-\epsilon\\)`]
+- e.g. if .hi-blue[Pepsi] sets a price of .hi-blue[$1.50], .hi-red[Coke]'s best response is .hi-red[`\\($1.50-\epsilon\\)`]
+- e.g. if .hi-blue[Pepsi] sets a price of .hi-blue[$0.50], (MC) .hi-red[Coke]'s best response is .hi-red[`\\($0.50\\)`] (MC)
 
 ]
 
@@ -520,27 +484,51 @@ We can graph .hi-red[Coke]'s .hi-purple[reaction curve] to .hi-blue[Pepsi]'s out
 
 .pull-left[
 ```{r}
-Pepsi=function(x){90-2*x}
-
-pepsi<-ggplot(tibble(x=c(0,10)), aes(x=x))+
-  stat_function(fun=Pepsi, geom="line", size=2, color="blue")+
-    annotate(geom = "label", x = 15, y = Pepsi(15) , label = "Pepsi's RF",color = "blue", size = 4) +
-  scale_x_continuous(breaks = seq(0,100,10),
-                     limits = c(0,100),
+rc_Pepsi<-ggplot(tibble(x=c(0,10)), aes(x=x))+
+  geom_segment(x=0, xend=2,y=0,yend=2, size=1, linetype="dashed")+
+  geom_segment(x=0.50,xend=0.50,y=0,yend=0.55, size=2, color="blue")+
+  geom_segment(x=0.50,xend=2,y=0.55,yend=2.05, size=2, color="blue")+
+  annotate(geom = "label", x = 900, y = 925 , label = "Pepsi's RC",color = "blue", size = 4) +
+  scale_x_continuous(breaks = seq(0,2,0.25),
+                     labels = scales::dollar,
+                     limits = c(0,2),
                      expand=c(0,0))+
-  scale_y_continuous(breaks = seq(0,100,10),
-                     limits = c(0,100),
+  scale_y_continuous(breaks = seq(0,2,0.25),
+                     labels = scales::dollar,
+                     limits = c(0,2),
                      expand=c(0,0))+
-  theme_light(base_family = "Fira Sans Condensed", base_size=20)+
-  labs(x = expression(paste("Pepsi's Output, ", q[P]), sep=" "),
-       y = expression(paste("Coke's Output, ", q[C]), sep=" "))
-pepsi
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
+  labs(x = "<span style = 'color:blue'>Pepsi's Price, p<sub>p</sub></span>",
+       y = "<span style = 'color:red'>Coke's Price, p<sub>p</sub></span>")+
+  theme(axis.title.x = element_markdown(),
+        axis.title.y = element_markdown())
+rc_Pepsi
 ```
 ]
 
 .pull-right[
 
-We can graph .hi-blue[Pepsi]'s .hi-purple[reaction curve] to .hi-red[Coke]'s output
+We can graph .hi-blue[Pepsi]'s .hi-purple[reaction curve] to .hi-red[Coke]'s price
+
+]
+---
+
+# Pepsi's Reaction Curve
+
+.pull-left[
+```{r}
+rc_Pepsi+
+  geom_segment(x=0.95,xend=0.95,y=0,yend=1, size=1, linetype="dotted", color="blue")+
+  geom_segment(x=0,xend=0.95,y=1,yend=1, size=1, linetype="dotted", color="red")
+
+```
+]
+
+.pull-right[
+
+We can graph .hi-blue[Pepsi]'s .hi-purple[reaction curve] to .hi-red[Coke]'s price
+
+- e.g. if .hi-red[Coke] sets a price of .hi-red[$1.00], .hi-blue[Pepsi]'s best response is .hi-blue[`\\($1.00-\epsilon\\)`]
 
 ]
 
@@ -550,18 +538,21 @@ We can graph .hi-blue[Pepsi]'s .hi-purple[reaction curve] to .hi-red[Coke]'s out
 
 .pull-left[
 ```{r}
-pepsi+
-  geom_segment(x=25,xend=25,y=0,yend=40, size=1, linetype="dotted", color="blue")+
-  geom_segment(x=0,xend=25,y=40,yend=40, size=1, linetype="dotted", color="red")
+rc_Pepsi+
+  geom_segment(x=0.95,xend=0.95,y=0,yend=1, size=1, linetype="dotted", color="blue")+
+  geom_segment(x=0,xend=0.95,y=1,yend=1, size=1, linetype="dotted", color="red")+
+  geom_segment(x=1.45,xend=1.45,y=0,yend=1.5, size=1, linetype="dotted", color="blue")+
+  geom_segment(x=0,xend=1.45,y=1.5,yend=1.5, size=1, linetype="dotted", color="red")
 
 ```
 ]
 
 .pull-right[
 
-We can graph .hi-blue[Pepsi]'s .hi-purple[reaction curve] to .hi-red[Coke]'s output
+We can graph .hi-blue[Pepsi]'s .hi-purple[reaction curve] to .hi-red[Coke]'s price
 
-- e.g. if .hi-red[Coke] produces .hi-red[40], .hi-blue[Pepsi]'s best response is .hi-blue[25]
+- e.g. if .hi-red[Coke] sets a price of .hi-red[$1.00], .hi-blue[Pepsi]'s best response is .hi-blue[`\\($1.00-\epsilon\\)`]
+- e.g. if .hi-red[Coke] sets a price of .hi-red[$1.50], .hi-blue[Pepsi]'s best response is .hi-blue[`\\($1.50-\epsilon\\)`]
 
 ]
 
@@ -571,37 +562,39 @@ We can graph .hi-blue[Pepsi]'s .hi-purple[reaction curve] to .hi-red[Coke]'s out
 
 .pull-left[
 ```{r}
-pepsi+
-  geom_segment(x=25,xend=25,y=0,yend=40, size=1, linetype="dotted", color="blue")+
-  geom_segment(x=0,xend=25,y=40,yend=40, size=1, linetype="dotted", color="red")+
-  geom_segment(x=35,xend=35,y=0,yend=20, size=1, linetype="dotted", color="blue")+
-  geom_segment(x=0,xend=35,y=20,yend=20, size=1, linetype="dotted", color="red")
+rc_Pepsi+
+  geom_segment(x=0.95,xend=0.95,y=0,yend=1, size=1, linetype="dotted", color="blue")+
+  geom_segment(x=0,xend=0.95,y=1,yend=1, size=1, linetype="dotted", color="red")+
+  geom_segment(x=1.45,xend=1.45,y=0,yend=1.5, size=1, linetype="dotted", color="blue")+
+  geom_segment(x=0,xend=1.45,y=1.5,yend=1.5, size=1, linetype="dotted", color="red")+
+  geom_segment(x=0.50,xend=0.50,y=0,yend=0.50, size=1, linetype="dotted", color="blue")+
+  geom_segment(x=0,xend=0.50,y=0.50,yend=0.50, size=1, linetype="dotted", color="red")
 
 ```
 ]
 
 .pull-right[
 
-We can graph .hi-blue[Pepsi]'s .hi-purple[reaction curve] to .hi-red[Coke]'s output
+We can graph .hi-blue[Pepsi]'s .hi-purple[reaction curve] to .hi-red[Coke]'s price
 
-- e.g. if .hi-red[Coke] produces .hi-red[40], .hi-blue[Pepsi]'s best response is .hi-blue[25]
-- e.g. if .hi-red[Coke] produces .hi-red[20], .hi-blue[Pepsi]'s best response is .hi-blue[35]
+- e.g. if .hi-red[Coke] sets a price of .hi-red[$1.00], .hi-blue[Pepsi]'s best response is .hi-blue[`\\($1.00-\epsilon\\)`]
+- e.g. if .hi-red[Coke] sets a price of .hi-red[$1.50], .hi-blue[Pepsi]'s best response is .hi-blue[`\\($1.50-\epsilon\\)`]
+- e.g. if .hi-red[Coke] sets a price of .hi-red[$0.50] (MC),  .hi-blue[Pepsi]'s best response is .hi-blue[`\\($0.50\\)`] (MC)
 
 ]
 
 ---
 
-# Cournot-Nash Equilibrium, Graphically
+# Nash Equilibrium with Reaction Curves
 
 .pull-left[
 ```{r}
-coke+
-  stat_function(fun=Pepsi, geom="line", size=2, color="blue")+
-    annotate(geom = "label", x = 15, y = Pepsi(15) , label = "Pepsi's RF",color = "blue", size = 4) +
-  geom_segment(x=30,xend=30,y=0,yend=30, size=1, linetype="dotted", color="blue")+
-  geom_segment(x=0,xend=30,y=30,yend=30, size=1, linetype="dotted", color="red")+
-  geom_point(x=30,y=30,size=5,color="purple")+
-  annotate(geom = "label", x = 40, y = 40 , label = "Cournot-Nash Equilibrium",color = "purple", size = 5)
+rc+ 
+  geom_segment(x=0.50,xend=0.50,y=0,yend=0.55, size=2, color="blue")+
+  geom_segment(x=0.50,xend=2,y=0.55,yend=2.05, size=2, color="blue")+
+  annotate(geom = "label", x = 900, y = 925 , label = "Pepsi's RC",color = "blue", size = 4) +
+  geom_point(x=200,y=200,size=5,color="purple")+
+  annotate(geom = "label", x = 0.85, y = 0.5 , label = "Nash Equilibrium",color = "purple", size = 5)
 ```
 ]
 
@@ -609,268 +602,41 @@ coke+
 
 Combine both curves on the same graph
 
-- .hi-purple[Cournot-Nash Equilibrium]: $$\big( \color{red}{20}, \color{blue}{20} \big)$$
+- .hi-purple[Nash Equilibrium]: $$\big( \color{red}{p_c = MC}, \color{blue}{p_p=MC} \big)$$
     - Where both reaction curves intersect
 
-- Both are playing mutual best response to one another 
+- No longer an incentive to undercut or change price 
 
 ]
 
 ---
 
-# Cournot-Nash Equilibrium, Algebraically
+# Bertrand Competition: The Market
 
-- .hi-purple[Cournot-Nash Equilibrium] algebraically: plug one firm's reaction function into the other's
+- We can find the industry price & quantity of output (and profits), like in the Cournot model
 
---
-
-$$\begin{align*}
-q_{c}^*&=30-0.5q_{p}\\
-q_{p}^*&=30-0.5q_{c}\\
-\end{align*}$$
+- Here, set $p=MC$
 
 --
 
-- The market demand again was
+$$5-0.05Q = 0.50$$
 
-$$P=200-3q_{c}-3q_{p}$$
+--
+
+$$Q^* = 90$$
+
+$$q^\star_1 = q^\star_2 = 45$$
+--
+
+$$P^* = c = \$0.50$$ 
+
+--
+
+$$\pi_1 = \pi_2 = \Pi = 0$$
 
 ---
 
-# Cournot-Nash Equilibrium, Algebraically
-
-- Both firms produce 20
-
---
-
-$$\begin{align*}
-P&=200-3(20)-3(20)\\
-P&=\$80\\
-\end{align*}$$
-
---
-
-- Find profit for each firm:
-
---
-
-$$\begin{align*}
-\pi_{c}&=q_{c}(P-c)\\
-\pi_{c}&=20(80-20)\\
-\pi_{c}&=1,200\\
-\end{align*}$$
-
-- Symmetrically for Pepsi, $\pi_{p}=1,200$
-
----
-
-# Cournot-Nash Equilibrium, The Market
-
-```{r}
-Demand_market<-function(x){5-0.05*x}
-MR_market<-function(x){5-0.10*x}
-MC_market<-function(x){0.50}
-
-CS_1<-tribble(
-  ~x, ~y,
-  0, 2,
-  0, 5,
-  60, 2
-)
-
-DWL_1<-tribble(
-  ~x, ~y,
-  60, 2,
-  60, 0.5,
-  90, 0.5
-)
-
-ggplot(tibble(x=c(0,10)), aes(x=x))+
-  geom_polygon(data=CS_1, aes(x=x,y=y), fill="blue",alpha=0.5)+ #cs
-  geom_rect(xmin=0, xmax=60, ymin=0.5, ymax=2, fill="green", alpha=0.5)+ # pi
-  geom_polygon(data=DWL_1, aes(x=x,y=y), fill="black",alpha=0.5)+ #dwl
-  stat_function(fun=Demand_market, geom="line", size=2, color="blue")+
-  annotate(geom = "label", x = 50, y = Demand_market(50) , label = "Market Demand",color = "blue", size = 4) +
-
-      stat_function(fun=MC_market, geom="line", size=2, color="red")+
-  annotate(geom = "label", x = 70, y = MC_market(70) , label = "MC(q)=AC(q)",color = "red", size = 4) +
-
-  geom_segment(x=60,xend=60,y=0,yend=2,linetype="dotted", size =1)+
-  geom_segment(x=0,xend=60,y=2,yend=2,linetype="dotted", size =1)+
-
-    geom_point(x=60,y=2,size=5,color="purple")+
-  annotate(geom = "label", x = 75, y = 2 , label = "Cournot-Nash Equilibrium",color = "purple", size = 4)+
-  
-  scale_x_continuous(breaks = seq(0,100,10),
-                     limits = c(0,100),
-                     expand=c(0,0))+
-  scale_y_continuous(breaks = seq(0,5,1),
-                     labels = scales::dollar,
-                     limits = c(0,5),
-                     expand=c(0,0))+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
-  labs(x = "Industry Output, Q",
-       y = "Market Price, p",
-       title = "Cola Industry")
-```
-
----
-
-# Cournot Collusion
-
-- Suppose now both firms .hi-purple[collude] to act like a monopolist, who sets the entire market:
-
-$$\begin{align*}
-MR&=MC\\
-5-0.1Q&=0.50\\
-45&=Q^*\\
-\end{align*}$$
-
---
-
-- The monopoly price will then be:
-
-$$\begin{align*}
-P&=5-0.05(45)\\
-P&=\$2.75\\
-\end{align*}$$
-
---
-
-- Total profit will then be:
-
-$$\Pi=45(\$2.75-\$0.50)=\$101.25$$
-
-with $50.625 going to each firm
-
----
-
-# Cournot Collusion
-
-.pull-left[
-```{r}
-coke+
-  stat_function(fun=Pepsi, geom="line", size=2, color="blue")+
-    annotate(geom = "label", x = 15, y = Pepsi(15) , label = "Pepsi",color = "blue", size = 4) +
-  geom_segment(x=30,xend=30,y=0,yend=30, size=1, linetype="dotted", color="blue")+
-  geom_segment(x=0,xend=30,y=30,yend=30, size=1, linetype="dotted", color="red")+
-  geom_point(x=30,y=30,size=5,color="purple")+
-  annotate(geom = "label", x = 40, y = 40 , label = "Cournot-Nash Equilibrium",color = "purple", size = 5)+
-  geom_point(x=22.5,y=22.5,size=5,color="orange")+
-  annotate(geom = "label", x = 15, y = 15 , label = "Collusion",color = "orange", size = 5)+
-    geom_segment(x=22.5,xend=22.5,y=0,yend=22.5, size=1, linetype="dotted", color="orange")+
-  geom_segment(x=0,xend=22.5,y=22.5,yend=22.5, size=1, linetype="dotted", color="orange")+
-  geom_segment(x = 0, xend = 45, y = 45, yend = 0, size = 1, linetype = "dashed")
-
-
-```
-]
-
-.pull-right[
-
-- .hi-purple[Cournot Competition]: each firm produces 30 and earns $45.00
-
-- .hi-orange[Collusion/Monopoly]: each firm produces 22.5 and earns $50.63
-
-]
-
----
-
-# Cournot Collusion
-
-.pull-left[
-```{r}
-coke+
-  stat_function(fun=Pepsi, geom="line", size=2, color="blue")+
-    annotate(geom = "label", x = 15, y = Pepsi(15) , label = "Pepsi",color = "blue", size = 4) +
-  geom_segment(x=30,xend=30,y=0,yend=30, size=1, linetype="dotted", color="blue")+
-  geom_segment(x=0,xend=30,y=30,yend=30, size=1, linetype="dotted", color="red")+
-  geom_point(x=30,y=30,size=5,color="purple")+
-  annotate(geom = "label", x = 40, y = 40 , label = "Cournot-Nash Equilibrium",color = "purple", size = 5)+
-  geom_point(x=22.5,y=22.5,size=5,color="orange")+
-  annotate(geom = "label", x = 15, y = 15 , label = "Collusion",color = "orange", size = 5)+
-    geom_segment(x=22.5,xend=22.5,y=0,yend=22.5, size=1, linetype="dotted", color="orange")+
-  geom_segment(x=0,xend=22.5,y=22.5,yend=22.5, size=1, linetype="dotted", color="orange")+
-  geom_segment(x = 0, xend = 45, y = 45, yend = 0, size = 1, linetype = "dashed")
-
-
-```
-]
-
-.pull-right[
-
-- .hi-purple[Cournot Competition]: each firm produces 30 and earns $45.00
-
-- .hi-orange[Collusion/Monopoly]: each firm produces 22.5 and earns $50.63 
-
-- .hi-turquoise[But is collusion a Nash equilibrium?]
-]
-
----
-
-# Cournot Collusion
-
-.pull-left[
-```{r}
-coke+
-  geom_point(x=22.5,y=22.5,size=5,color="orange")+
-  annotate(geom = "label", x = 15, y = 15 , label = "Collusion",color = "orange", size = 5)+
-    geom_segment(x=22.5,xend=22.5,y=0,yend=Coke(22.5), size=1, linetype="dotted", color="blue")+
-  geom_segment(x=0,xend=22.5,y=Coke(22.5),yend=Coke(22.5), size=1, linetype="dotted", color="red")
-```
-]
-
-.pull-right[
-
-- Read either firm's reaction curve at the collusive outcome
-
-- Suppose .red[Coke] knows .blue[Pepsi] is producing .blue[22.5] (as per the cartel agreement)
-
-- .red[Coke]'s best response to .blue[Pepsi]'s .blue[22.5] is to produce .red[33.75]
-
-]
-
----
-
-# Cournot Collusion
-
-- This (cheating the agreement) would bring market price to
-$$\begin{align*}
-P&=5-0.05(q_{c}+q_{p})\\
-P&=5-0.05*(\color{red}{33.75}+\color{blue}{22.50})\\
-P&=5-0.05*(56.25)\\
-P&=\$2.1875\\
-\end{align*}$$
-
---
-
-.pull-left[
-- .red[Coke]'s profit would be:
-
-$$\begin{align*}
-\pi_{c}&=\color{red}{q_{c}}(P-c)\\
-\pi_{c}&=\color{red}{33.75}(2.1875-0.50)\\
-\pi_{c}&=\$56.95\\
-\end{align*}$$
-
-]
-
---
-
-.pull-right[
-- .blue[Pepsi]'s profit would be:
-
-$$\begin{align*}
-\pi_{p}&=\color{blue}{Pq_{p}}(P-c)\\
-\pi_{p}&=\color{blue}{22.5}(2.1875-0.50)\\
-\pi_{p}&=\$37.97\\
-\end{align*}$$
-
-]
-
----
-
-# Cournot Collusion, The Market
+# Bertrand Competition: The Market
 
 ```{r}
 CS_2<-tribble(
@@ -905,6 +671,7 @@ ggplot(tibble(x=c(0,10)), aes(x=x))+
     geom_point(x=60,y=2,size=5,color="purple")+
   annotate(geom = "label", x = 80, y = 2 , label = "Cournot-Nash Equilibrium",color = "purple", size = 4)+
   annotate(geom = "label", x = 60, y = 2.75 , label = "Collusion/Monopoly",color = "orange", size = 4)+
+  annotate(geom = "label", x = 90, y = 1 , label = "Bertrand/PC",color = "green", size = 4)+
   geom_segment(x=45,xend=45,y=0,yend=2.75,linetype="dotted", size =1)+
   geom_segment(x=0,xend=45,y=2.75,yend=2.75,linetype="dotted", size =1)+
     geom_point(x=45,y=2.75,size=5,color="orange")+
@@ -923,151 +690,103 @@ ggplot(tibble(x=c(0,10)), aes(x=x))+
 
 ---
 
-# Cournot Competition, You Try
-
-.content-box-green[.hi-green[Example]:
-Suppose Firm 1 and Firm 2 have a constant $MC=AC=8$. The market (inverse) demand curve is given by:
-
-$$\begin{align*}
-P&=200-2Q\\
-Q&=q_1+q_2\\
-\end{align*}$$
-]
-
-1. Find the Cournot-Nash equilibrium output and profit for each firm.
-
-2. Find the output and profit for each firm if the two were to collude.
-
----
-
-# Cournot Equilibrium
-
-- In general, for:
-  - Linear (inverse) demand curve: $P = a-bQ \quad (Q=q_1+q_2)$
-  - Constant costs $C(q)=c$
-
---
-
-- .hi-turquoise[Cournot competition]:
-  - $q_1^* = q_2^* = \frac{a-c}{3b}$
-  - $Q= 2 \left(\frac{a-c}{3b}\right)$
-  - $P= \frac{a+2c}{3}$
-  - $\pi_1 = \pi_2 = \frac{(a-c)^2}{9b}$
-  
---
-
-- .hi-purple[Monopoly (collusion)]
-  - $Q= \frac{a-c}{2b}$
-  - $P = \frac{a+c}{2}$
-  - $\Pi = \frac{(a-c)^2}{4b}$
-
----
-
-# Cournot Equilibrium
-
-$$\underbrace{\frac{P(q_1^*,q_2^*)-MC}{P(q_1^*,q_2^*)}}_{\text{Lerner index}} = \frac{s_i}{\varepsilon}$$
-
-- Lefthand size is Lerner index (market power/markup share of price)
-- $s_i$ is the market share of firm $i$ $\left(\frac{q_i}{Q}\right)$
-- $\varepsilon$ is the price elasticity of market demand
-
----
-
-# Cournot Equilibrium
-
-$$\underbrace{\frac{P(q_1^*,q_2^*)-MC}{P(q_1^*,q_2^*)}}_{\text{Lerner index}} = \frac{s_i}{\varepsilon}$$
-
-1. Cournot duopolists have market power $p>MC$
-2. Market power (left) is inversely related to price elasticity of demand
-3. Cournot markups will be less than monopoly since $s_i < 1$
-4. Endogenous relationship between $MC$ and market share $s_i$
-  - Firms with lower $MC$ will have higher $s_i$ (more efficient firms will have higher market share)
-5. The greater the number of firms, the less the market power
-  - as $\uparrow n, \downarrow s_i$ and so $\downarrow \frac{P-MC}{P}$
-  - elasticity of each firm $i$'s residual demand is $\frac{\varepsilon}{s_i}$
-  - $uparrow n$ raises each firm's $\varepsilon$, reducing its market power
----
-
-# Oligopoly with $N$ Firms
-
-$$\frac{P(q_1^*,q_2^*)-MC}{P(q_1^*,q_2^*)} = \frac{s_i}{\varepsilon}$$
-- If we multiply both sides of the equation by $s_i$ and sum over all $N$ firms...
-
----
-
-# Oligopoly with $N$ Firms
-
-$$\sum_{i=1}^Ns_i \left(\frac{P(q_1^*,q_2^*)-MC}{P(q_1^*,q_2^*)}\right) =\sum_{i=1}^Ns_i \frac{s_i}{\varepsilon}$$
-
-- If we multiply both sides of the equation by $s_i$ and sum over all $N$ firms...
-
----
-
-# Oligopoly with $N$ Firms
-
-$$\sum_{i=1}^Ns_i \left(\frac{P(q_1^*,q_2^*)-MC}{P(q_1^*,q_2^*)}\right) =\frac{HHI}{\varepsilon}$$
-
-.smaller[
-- $HHI$ = Herfindahl-Hirschmann Index (sum of squared market shares); a famous measure of industry concentration (we'll explore later)<sup>.magenta[†]</sup>
-  - 0: perfect competition; 1: monopoly
-
-- The larger the $HHI$ (holding $\varepsilon$ constant), the greater the average weighted markup/industry-wide Lerner index (lefthand side)
-
-- Implication: if Cournot model is accurate, measuring the $HHI$ and $\epsilon$ provide good empirical evidence about firm conduct
-
-]
-
-.footnote[<sup>.magenta[†]</sup> In the U.S., HHI is often measured using market shares as *percentages*, making HHI between 0 and 10,000.]
-
----
-
-# Cournot Competition
+# Resolving the Bertrand Paradox
 
 .left-column[
 .center[
-![:scale 80%](../images/Cournot.jpg)
+![:scale 80%](../images/Bertrand.jpg)
 
 .smaller[
-Antoine Augustin Cournot
+Joseph Bertrand
 
-1801-1877
+1822-1890
 ]
 ]
 ]
+
 .right-column[
-- .hi[Cournot Theorem]: as the number of firms $(N)$ in the market increases, market output $Nq$ goes to the competitive level, and price converges to $c$.
-  - Assuming no fixed costs, and an identical constant marginal cost for firms
+- The paradox happens due to pretty strict assumptions about the model
+  - Homogeneous goods; consumers *only* buy from the lower-priced seller
+  - No capacity constraints
 
-- .hi-purple[More (fewer) firms reduce (increase) market distortions from market power]
+- We can extend the Bertrand model in a few ways and see the paradox resolved, we'll examine two:
+  1. Bertrand competition with differentiated products
+  2. Bertrand competition with capacity constraints
 
 ]
 
 ---
 
-# Cournot Competition: Implications
+class: inverse, center, middle
 
-.left-column[
+# Bertrand Competition with Product Differentiation
+
+---
+
+# Product Differentiation
+
+.pull-left[
+.smaller[
+- Now consider instead of homogenous goods, each seller is selling differentiated products (i.e. imperfect substitutes)
+  - Consumers have preferences between Coke and Pepsi
+
+- Same assumptions of Bertrand model:
+  - Firms set their own prices simultaneously
+
+- But now each firm faces its own downward-sloping demand curve
+]
+]
+.pull-right[
 .center[
-![:scale 80%](../images/Cournot.jpg)
-
-.smaller[
-Antoine Augustin Cournot
-
-1801-1877
+![](../images/cokepepsi.jpg)
 ]
 ]
-]
-.right-column[
-.smaller[
-- See some visualizations I made:
-  1. [Cournot: Symmetric Market Changes](https://ryansafner.shinyapps.io/Cournot_market_changes/)
-  2. [Cournot: Asymmetric Costs](https://ryansafner.shinyapps.io/cournot_asymmetric_costs/)
-  3. [Cournot: With n Firms](https://ryansafner.shinyapps.io/Cournot_n_firms/)
 
-Major implications from Cournot:
+---
 
-1. As $\uparrow$ number of firms: $\uparrow Q$, $\downarrow p$, $\downarrow \pi$, $\uparrow CS$, $\downarrow DWL$ (closer to perfect competition)
+# Product Differentiation
 
-2. If a firm has lower costs than others, it earns greater profit. Firms will want to lower their own costs OR raise rivals' costs (same effect)
+.pull-left[
+
+- Suppose the demand for Coke and for Pepsi, respectively, are:
+$$q_c = 1.00-0.25p_c+0.25p_p \\
+q_p = 1.00+0.25p_c-0.25p_p$$
+
+
+$$MR_c = 1.00-0.25p_c+0.25p_p$$
+
+]
+
+.pull-right[
+.center[
+![](../images/cokepepsi.jpg)
 ]
 ]
+
+---
+
+```{r}
+library(ggtext)
+Coke_b_RF=function(x){1+0.5*x}
+
+Pepsi_b_RF=function(x){-2+2*x}
+coke_bertrand<-ggplot(tibble(x=c(0,10)), aes(x=x))+
+  stat_function(fun=Coke_b_RF, geom="line", size=2, color="red")+
+    annotate(geom = "label", x = 4, y = Coke_b_RF(4) , label = "Coke's RF",color = "red", size = 4) +
+  stat_function(fun=Pepsi_b_RF, geom="line", size=2, color="blue")+
+    annotate(geom = "label", x = 2.5, y = Pepsi_b_RF(2.5) , label = "Pepsi's RF",color = "blue", size = 4) +
+  scale_x_continuous(breaks = seq(0,5,1),
+                     limits = c(0,5),
+                     labels = scales::dollar,
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = seq(0,5,1),
+                     limits = c(0,5),
+                     labels = scales::dollar,
+                     expand=c(0,0))+
+  theme_light(base_family = "Fira Sans Condensed", base_size=20)+
+  labs(x = "<span style = 'color:blue'>Pepsi's Price, p<sub>p</sub></span>",
+       y = "<span style = 'color:red'>Coke's Price, p<sub>p</sub></span>")+
+  theme(axis.title.x = element_markdown(),
+        axis.title.y = element_markdown())
+coke_bertrand
+```

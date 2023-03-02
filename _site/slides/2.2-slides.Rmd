@@ -1943,7 +1943,7 @@ $$\sum_{i=1}^Ns_i \left(\frac{P-MC}{P}\right) =\frac{HHI}{\varepsilon}$$
 
 - The larger the $HHI$ (holding $\varepsilon$ constant), the greater the average weighted markup/industry-wide Lerner index (lefthand side)
 
-- Implication: .hi-turquoise[if Cournot model is accurate, measuring the $HHI$ and $\epsilon$ provide good empirical evidence about firm conduct]
+- Implication: .hi-turquoise[if Cournot model is accurate, measuring the `\\(HHI\\)` and `\\(\varepsilon\\)` provide good empirical evidence about firm conduct]
 
 ]
 

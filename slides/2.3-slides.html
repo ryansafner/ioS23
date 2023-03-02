@@ -89,11 +89,11 @@ class: title-slide
 `$$q=3600-200p_L$$`
 
 .hi-green[Example:]
-- Suppose Firm 1 sets `\(p=9\)` and Firm 2 sets `\(p=10\)`
+- Suppose Firm 1 sets $p=\$9$ and Firm 2 sets $p=\$10$
 
 - Firm 2 sells 0, makes $0
 
-- Firm 1 sells `\(q=3,600-200(9)=1,800\)` and earns `\(1,800(9-2)=12,600\)` profit
+- Firm 1 sells $q=3,600-200(\$9)=1,800$ and earns $1,800(\$9-\$2)=\$12,600$ profit
 
 ]
 
@@ -146,7 +146,7 @@ Joseph Bertrand
 ]
 ]
 .right-column[
-- .hi["Bertrand competition"]: two (or more) firms compete on **price** to sell the **same good**
+- .hi["Bertrand competition"]: two (or more) firms compete on **price** to sell **identical goods**
 
 - Firms set their prices **simultaneously**
 
@@ -162,10 +162,10 @@ Joseph Bertrand
 
 - Consider .hi-red[Coke] and .hi-blue[Pepsi] again, with a constant marginal cost of $0.50
 
-- Let `\(Q\)` be the *total* quantity purchased by consumers from the entire market (i.e. both firms)
-  - `\(Q=\color{red}{q_c}+\color{blue}{q_p}\)`
-
 - Denote .hi-red[Coke]'s price as .hi-red[`\\(p_c\\)`] and .hi-blue[Pepsi]'s price as .hi-blue[`\\(p_p\\)`]
+
+- Let each firm’s sales `\(Q\)` `\(\color{red}{q_c}\)` and `\(\color{blue}{q_p}\)` be determined by the price each chose, `\(Q_D(\color{red}{p_c})\)` and `\(Q_D(\color{blue}{p_p})\)`
+
 ]
 
 .pull-right[
@@ -243,7 +243,7 @@ Joseph Bertrand
 
 .pull-left[
 
-- The only way to sell soda is to match or beat your competitor's price 
+- The only way to sell *any* soda is to .hi-turquoise[match or beat your competitor's price]
 
 ]
 
@@ -259,17 +259,15 @@ Joseph Bertrand
 
 .pull-left[
 
-- The only way to sell soda is to match or beat your competitor's price
+- The only way to sell *any* soda is to .hi-turquoise[match or beat your competitor's price]
 
 - Suppose you are .hi-red[Coke]
 
-For a known .hi-blue[`\\(p_p\\)`], setting your price 
-
+- For a given .hi-blue[`\\(p_p\\)`], setting your price 
 `$$\color{red}{p_c}=\color{blue}{p_p}-\epsilon$$`
-
 for any arbitrary `\(\epsilon &gt; 0\)` captures you the entire market `\(Q\)`
 
-- Same for .hi-blue[Pepsi] for `\(\color{red}{p_c}\)`
+- Same for .hi-blue[Pepsi] for `\(\color{blue}{p_c}\)`
 
 ]
 
@@ -288,6 +286,7 @@ for any arbitrary `\(\epsilon &gt; 0\)` captures you the entire market `\(Q\)`
 - Won't charge `\(p&lt;MC\)`, earn losses
 
 - Firms continue undercutting one another until .hi-red[`\\(p_c\\)`] `\(=\)` .hi-blue[`\\(p_p\\)`] `\(=MC\)`
+  - No incentive for either firm to raise or lower price, given other firm‘s price
 
 - .hi-purple[Nash Equilibrium]: `$$\big( \color{red}{p_c = MC}, \color{blue}{p_p=MC} \big)$$`
   - Firms earn no profits! 
@@ -308,6 +307,7 @@ for any arbitrary `\(\epsilon &gt; 0\)` captures you the entire market `\(Q\)`
 
 - .hi[Bertrand Paradox]: when firms compete on price, .hi-turquoise[the perfectly competitive outcome can be achieved with just 2 firms!]
   - `\(p=MC\)`
+  - `\(Q=Q_{(p=MC)}\)`
   - `\(\pi=0\)`
   - `\(L = \frac{p-MC}{p} = 0\)`! 
 
@@ -345,6 +345,7 @@ We can graph .hi-red[Coke]'s .hi-purple[reaction curve] to .hi-blue[Pepsi]'s pri
 
 We can graph .hi-red[Coke]'s .hi-purple[reaction curve] to .hi-blue[Pepsi]'s price
 
+`$$\color{red}{p_c} = \begin{cases} \color{blue}{p_p} - \epsilon &amp;&amp; \text{if } \color{blue}{p_p} &gt; c\\ \color{blue}{p_p} &amp;&amp; \text{if } \color{blue}{p_p} = c\\ \end{cases}$$`
 - e.g. if .hi-blue[Pepsi] sets a price of .hi-blue[$1.00], .hi-red[Coke]'s best response is .hi-red[`\\($1.00-\epsilon\\)`]
 
 ]
@@ -360,6 +361,7 @@ We can graph .hi-red[Coke]'s .hi-purple[reaction curve] to .hi-blue[Pepsi]'s pri
 .pull-right[
 
 We can graph .hi-red[Coke]'s .hi-purple[reaction curve] to .hi-blue[Pepsi]'s price
+`$$\color{red}{p_c} = \begin{cases} \color{blue}{p_p} - \epsilon &amp;&amp; \text{if } \color{blue}{p_p} &gt; c\\ \color{blue}{p_p} &amp;&amp; \text{if } \color{blue}{p_p} = c\\ \end{cases}$$`
 
 - e.g. if .hi-blue[Pepsi] sets a price of .hi-blue[$1.50], .hi-red[Coke]'s best response is .hi-red[`\\($1.50-\epsilon\\)`]
 - e.g. if .hi-blue[Pepsi] sets a price of .hi-blue[$1.50], .hi-red[Coke]'s best response is .hi-red[`\\($1.50-\epsilon\\)`]
@@ -377,6 +379,7 @@ We can graph .hi-red[Coke]'s .hi-purple[reaction curve] to .hi-blue[Pepsi]'s pri
 .pull-right[
 
 We can graph .hi-red[Coke]'s .hi-purple[reaction curve] to .hi-blue[Pepsi]'s price
+`$$\color{red}{p_c} = \begin{cases} \color{blue}{p_p} - \epsilon &amp;&amp; \text{if } \color{blue}{p_p} &gt; c\\ \color{blue}{p_p} &amp;&amp; \text{if } \color{blue}{p_p} = c\\ \end{cases}$$`
 
 - e.g. if .hi-blue[Pepsi] sets a price of .hi-blue[$1.50], .hi-red[Coke]'s best response is .hi-red[`\\($1.50-\epsilon\\)`]
 - e.g. if .hi-blue[Pepsi] sets a price of .hi-blue[$1.50], .hi-red[Coke]'s best response is .hi-red[`\\($1.50-\epsilon\\)`]
@@ -408,6 +411,7 @@ We can graph .hi-blue[Pepsi]'s .hi-purple[reaction curve] to .hi-red[Coke]'s pri
 .pull-right[
 
 We can graph .hi-blue[Pepsi]'s .hi-purple[reaction curve] to .hi-red[Coke]'s price
+`$$\color{blue}{p_p} = \begin{cases} \color{red}{p_c} - \epsilon &amp;&amp; \text{if } \color{red}{p_c} &gt; c\\ \color{red}{p_x} &amp;&amp; \text{if } \color{red}{p_c} = c\\ \end{cases}$$`
 
 - e.g. if .hi-red[Coke] sets a price of .hi-red[$1.00], .hi-blue[Pepsi]'s best response is .hi-blue[`\\($1.00-\epsilon\\)`]
 
@@ -424,6 +428,7 @@ We can graph .hi-blue[Pepsi]'s .hi-purple[reaction curve] to .hi-red[Coke]'s pri
 .pull-right[
 
 We can graph .hi-blue[Pepsi]'s .hi-purple[reaction curve] to .hi-red[Coke]'s price
+`$$\color{blue}{p_p} = \begin{cases} \color{red}{p_c} - \epsilon &amp;&amp; \text{if } \color{red}{p_c} &gt; c\\ \color{red}{p_x} &amp;&amp; \text{if } \color{red}{p_c} = c\\ \end{cases}$$`
 
 - e.g. if .hi-red[Coke] sets a price of .hi-red[$1.00], .hi-blue[Pepsi]'s best response is .hi-blue[`\\($1.00-\epsilon\\)`]
 - e.g. if .hi-red[Coke] sets a price of .hi-red[$1.50], .hi-blue[Pepsi]'s best response is .hi-blue[`\\($1.50-\epsilon\\)`]
@@ -441,6 +446,7 @@ We can graph .hi-blue[Pepsi]'s .hi-purple[reaction curve] to .hi-red[Coke]'s pri
 .pull-right[
 
 We can graph .hi-blue[Pepsi]'s .hi-purple[reaction curve] to .hi-red[Coke]'s price
+`$$\color{blue}{p_p} = \begin{cases} \color{red}{p_c} - \epsilon &amp;&amp; \text{if } \color{red}{p_c} &gt; c\\ \color{red}{p_x} &amp;&amp; \text{if } \color{red}{p_c} = c\\ \end{cases}$$`
 
 - e.g. if .hi-red[Coke] sets a price of .hi-red[$1.00], .hi-blue[Pepsi]'s best response is .hi-blue[`\\($1.00-\epsilon\\)`]
 - e.g. if .hi-red[Coke] sets a price of .hi-red[$1.50], .hi-blue[Pepsi]'s best response is .hi-blue[`\\($1.50-\epsilon\\)`]
@@ -458,7 +464,7 @@ We can graph .hi-blue[Pepsi]'s .hi-purple[reaction curve] to .hi-red[Coke]'s pri
 
 .pull-right[
 
-Combine both curves on the same graph
+- Combine both curves on the same graph
 
 - .hi-purple[Nash Equilibrium]: `$$\big( \color{red}{p_c = MC}, \color{blue}{p_p=MC} \big)$$`
     - Where both reaction curves intersect
@@ -500,6 +506,22 @@ $$P^* = c = \$0.50$$
 
 ---
 
+# Cournot vs. Bertrand Competition
+
+| Competition | `\(q_i\)` | `\(Q\)` | `\(p\)` | `\(\pi_i\)` |
+|-------------|------:|----:|-----|--------:|
+| Collusion   | 22.5  | 45.0  | $2.75 | $50.63 |
+| Cournot     | 30.0  | 60.0  | $2.00 | $45.00 |
+| Bertrand    | 45.0  | 90.0  | $0.50 | $0.00 |
+
+- Output: `\(Q_m &lt; Q_c &lt; Q_b\)`
+- Market price: `\(P_b = c &lt; P_c &lt; P_m\)`
+- Profit: `\(\pi_b = 0 &lt; \pi_c &lt; \pi_m\)`
+
+Where subscripts `\(m\)` is monopoly (collusion), `\(c\)` is Cournot, `\(b\)` is Bertrand
+
+---
+
 # Resolving the Bertrand Paradox
 
 .left-column[
@@ -516,13 +538,182 @@ Joseph Bertrand
 
 .right-column[
 - The paradox happens due to pretty strict assumptions about the model
+  - No capacity constraints 
   - Homogeneous goods; consumers *only* buy from the lower-priced seller
-  - No capacity constraints
 
 - We can extend the Bertrand model in a few ways and see the paradox resolved, we'll examine two:
-  1. Bertrand competition with differentiated products
-  2. Bertrand competition with capacity constraints
+  1. Bertrand competition with capacity constraints
+  2. Bertrand competition with differentiated products
 
+]
+
+---
+
+class: inverse, center, middle
+
+# Bertrand Competition with Capacity Constraints
+
+---
+
+# Capacity Constraints
+
+.pull-left[
+
+- One way to resolve the paradox is to assume that each firm has .hi-purple[limited capacity] to produce, and cannot supply the entire market
+  - certainly can't “flood” the market in a price war to drive price to `\(MC\)`
+
+- Consider in the short run we assume capital is fixed
+
+- Many goods/services are constrained by capacity: hotels, movie theaters, restaurants, etc.
+
+]
+
+.pull-right[
+.center[
+![](../images/capacity_limit_gauge.jpg)
+]
+]
+
+---
+
+# Capacity Constraints
+
+.pull-left[
+- Suppose each firm can only supply, at most:
+
+`$$\begin{align*}q_1 &amp;\leq k_1 \\
+q_2 &amp;\leq k_2 \\
+k_1 + k_2 &amp;&lt; Q_D(c)\\
+\end{align*}$$`
+
+- Neither firm, nor both of them combined, can supply the entire market at marginal cost
+
+- Cost per unit for firm `\(i\)` is `\(c\)` up for `\(q_i &lt;k_i\)`, then increases rapidly (if not `\(\infty)\)`
+]
+
+.pull-right[
+&lt;img src="2.3-slides_files/figure-html/unnamed-chunk-12-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Capacity Constraints Change the Game
+ 
+.pull-left[
+
+- Suppose .blue[Pepsi] charges a price `\(\color{blue}{p_p} &gt; c\)`. 
+
+- .red[Coke] would simply have to charge `\(\color{red}{p_c} = \color{blue}{p_p} - \epsilon\)` to capture the market
+  - But .red[Coke] does not have the capacity to serve the whole market!
+  - Some customers would still buy .blue[Pepsi]!
+  - So .blue[Pepsi] can charge a price above marginal cost
+
+- `\(\color{red}{p_c} = \color{blue}{p_p} = c\)` is **not** a Nash equilibrium any more
+
+]
+
+.pull-right[
+.center[
+![](../images/capacity_limit_gauge.jpg)
+]
+]
+
+---
+
+# Capacity Constraints
+
+.pull-left[
+- Suppose .red[Coke] charges a price lower than .blue[Pepsi] `\(\color{red}{p_c} &lt; \color{blue}{p_p}\)`.
+  - But .red[Coke] does not have the capacity to serve the whole market, `\(\color{red}{k_c} &lt; Q_D(\color{red}{p_c})\)`!
+  - Some customers will still buy .blue[Pepsi]!
+
+- Since neither firm can serve the whole market, we assume that they .hi[ration efficiently], that is, .red[Coke] only serve the customers with highest willingness to pay (first)
+
+- .blue[Pepsi]'s residual demand is thus subtracting `\(\color{red}{k_c}\)` from the market demand
+  - Note: the same as Cournot model residual demand, assuming `\(q_c = q_k\)`, i.e. Coke sells at capacity
+
+]
+
+.pull-right[
+&lt;img src="2.3-slides_files/figure-html/unnamed-chunk-13-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Capacity Constraints
+
+.smallest[
+- Consider the perspective of .red[Coke]: 
+
+- If it charges `\(\color{red}{p_c}&lt;\color{blue}{p_p}\)`, then it will sell `\(\min \left\{Q_D(\color{red}{p_c}), \color{red}{k_c} \right\}\)`
+  - Either fulfills entire market demand (if its capacity `\(\color{red}{k_c}\)` exceeds demand); or its capacity (if `\(\color{red}{k_c}\)` is less than demand)
+  - `\(Q_D\)` is quantity demanded at that price
+
+- If it charges `\(\color{red}{p_c}&gt;\color{blue}{p_p}\)`, then it will sell `\(\min \left\{\color{red}{k_c}, Q_D(\color{red}{p_c})-\color{blue}{k_p} \right\}\)`
+  - .blue[Pepsi] sells its full capacity; .red[Coke] meets whatever demand is left (either sells its full capacity) or the remaining demand (if less than its capacity)
+
+- If `\(\color{red}{p_c}=\color{blue}{p_p}\)` then we assume demand is allocated according to relative capacities, .red[Coke] sells `\(\min \left\{\color{red}{k_c}, \frac{\color{red}{k_c}}{(\color{red}{k_c}+\color{blue}{k_c})D(p)}\right\}\)`
+  - e.g. if .red[Coke] has 45% of total industry capacity, it takes 45% of industry demand
+
+]
+
+---
+
+# Nash Equilibrium Under Capacity Constraints
+
+.pull-left[
+
+- .hi-purple[Case 1 (small capacities)]: Suppose each firm’s capacity is no larger than its Cournot best response to its competitor producing at capacity
+`$$\begin{align*}k_c &amp;\leq 30-0.5k_p \\
+k_p &amp;\leq 30-0.5k_c \\ \end{align*}$$`
+
+
+]
+
+.pull-right[
+&lt;img src="2.3-slides_files/figure-html/unnamed-chunk-14-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Nash Equilibrium Under Capacity Constraints
+
+.pull-left[
+.smallest[
+- .hi-purple[Nash equilibrium]: `$$p_c = p_ p = P(k_1+k_2)$$`
+  - Each firm charges the same price, produces at capacity, and the price is the market demand at their combined capacities
+
+- No incentive to lower price, can't produce more output (each at capacity)!
+  
+- No incentive to raise price either
+  - Best response to other firm producing at `\(k\)` is your **Cournot best response**; but not possible (beyond your capacity); raising price makes you worse off (in fact you'd like to sell more and lower your price, but you can't!)
+
+]
+]
+
+.pull-right[
+&lt;img src="2.3-slides_files/figure-html/unnamed-chunk-15-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+
+---
+
+# Nash Equilibrium Where Not Capacity Constrained
+
+.pull-left[
+
+- .hi-orange[Case 2 (no capacity constraints)]: Suppose *each* firm’s capacity is sufficient to meet the entire market demand at marginal cost pricing
+
+- **Nash equilibrium**: `\(p_c = p_p = c\)`
+
+- Both firms flood the market, charging marginal cost (back to classic Bertrand game)
+]
+
+.pull-right[
+&lt;img src="2.3-slides_files/figure-html/unnamed-chunk-16-1.png" width="504" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -562,8 +753,7 @@ class: inverse, center, middle
 `$$q_c = 1.00-0.25p_c+0.25p_p \\
 q_p = 1.00+0.25p_c-0.25p_p$$`
 
-
-`$$MR_c = 1.00-0.25p_c+0.25p_p$$`
+- Notice the positive relationship between `\(p_p\)` and `\(q_c\)` (and `\(p_c\)` and `\(q_p\)`): imperfect substitutes
 
 ]
 
@@ -575,7 +765,280 @@ q_p = 1.00+0.25p_c-0.25p_p$$`
 
 ---
 
-&lt;img src="2.3-slides_files/figure-html/unnamed-chunk-12-1.png" width="504" style="display: block; margin: auto;" /&gt;
+# Product Differentiation
+
+.pull-left[
+
+- Suppose the demand for Coke and for Pepsi, respectively, are:
+`$$q_c = 1.00-0.25p_c+0.25p_p \\
+q_p = 1.00+0.25p_c-0.25p_p$$`
+
+- Notice the positive relationship between `\(p_p\)` and `\(q_c\)` (and `\(p_c\)` and `\(q_p\)`): imperfect substitutes
+
+- Solving for Coke:
+
+`$$MR_c = 1.00+0.25p_p-0.50p_c$$`
+
+]
+
+.pull-right[
+.center[
+![](../images/cokepepsi.jpg)
+]
+]
+
+---
+
+# Product Differentiation
+
+.pull-left[
+
+- Solving for Coke:
+
+`$$\begin{align*}
+MR_c &amp;= MC_c \\
+1.00+0.25p_p-0.50p_c &amp; = 0.50 \\ 
+p_c &amp; = 1.00 + 0.5p_p\end{align*}$$`
+
+- Coke's reaction function to Pepsi's price
+]
+
+.pull-right[
+.center[
+![](../images/cokepepsi.jpg)
+]
+]
+
+---
+
+# Product Differentiation
+
+.pull-left[
+
+- Solving for Coke:
+
+`$$\begin{align*}
+MR_c &amp;= MC_c \\
+1.00+0.25p_p-0.50p_c &amp; = 0.50 \\ 
+p_c &amp; = 1.00 + 0.5p_p\end{align*}$$`
+
+- Coke's reaction function to Pepsi's price
+
+- Eqivalently for Pepsi:
+
+`$$p_p = 1.00 + 0.5 p_c$$`
+]
+
+.pull-right[
+.center[
+![](../images/cokepepsi.jpg)
+]
+]
+
+---
+
+# Reaction Functions and Nash Equilibrium
+
+&lt;img src="2.3-slides_files/figure-html/unnamed-chunk-17-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Reaction Functions and Nash Equilibrium: Algebraically
+
+- .hi-purple[Nash Equilibrium] algebraically: plug one firm's reaction function into the other's
+
+`$$\begin{align*}
+p_{c}^*&amp;=1.00+0.5p_{p}\\
+p_{p}^*&amp;=1.00+0.5p_{c}\\
+\end{align*}$$`
+
+--
+
+`$$p_p^* = p_c^* = 2.00$$`
+
+---
+
+class: inverse, center, middle
+
+# Conjectural Variations
+
+---
+
+# Cournot vs Bertrand
+
+.left-column[
+.center[
+![:scale 50%](../images/cournot.jpg)
+
+![:scale 50%](../images/bertrand.jpg)
+]
+]
+  
+.right-column[
+
+- Outcomes are *very* different between Cournot and Bertrand competition (with homogeneous products and no capacity constraints)
+  - Market power &amp; profits with Cournot; decreases with competitors and `\(\varepsilon\)`
+  - Perfect competition with Bertrand
+
+- Why? In Bertrand, firm anticipates that if it undercuts rival, can drive its sales to zero; but in Cournot it believes its rival will not change its output
+]
+
+---
+
+# Cournot vs Bertrand
+
+.left-column[
+.center[
+![:scale 50%](../images/cournot.jpg)
+
+![:scale 50%](../images/bertrand.jpg)
+]
+]
+  
+.right-column[
+
+.smallest[
+- One interpretation: consider a two-stage game between firms with homogeneous products:
+  1. Firms invest in capacity (setting `\(k_i\)`)
+  2. Firms compete over price
+
+- We can consider this once we learn more game theory
+
+- Nash equilibrium: each firm invests in capacity `\(k_i = q_i^c\)`, equal to it's Cournot quantity; then prices equal to producing capacity
+  - Limit capacity to reduce price competition in second stage! (Larger capacity `\(\implies\)` more aggressive price cutting)
+  - In this case, Cournot model is a “shorthand” or reduced form of this 2 stage game
+]
+]
+
+---
+
+# Conjectural Variations
+
+- Cournot's best response function is traditionally called a reaction function - from his discussion about how firms respond to another's output, *assuming the other firm does not change its output*
+
+--
+
+- Bowley (1924) calls this a .hi-purple[conjecture]: firm's belief about how its rivals will react to changes in its output
+
+--
+
+- Consider Cournot competition with homogenous goods, identical costs. Firm 1's marginal revenue is:
+
+`$$MR_1 = P + \frac{\Delta P}{\Delta Q} \frac{\Delta Q}{\Delta q_1}q_1$$`
+
+---
+
+# Conjectural Variations
+
+`$$MR_1(Q) = P + \frac{\Delta P}{\Delta Q} \color{#e64173}{\frac{\Delta Q}{\Delta q_1}}q_1$$`
+- `\(\color{#e64173}{\frac{\Delta Q}{\Delta q_1}}\)` is the rate of change in *industry* output that firm 1 expects when it increases its output
+  - `\(\Delta Q = \Delta q_1 + \color{#6A5ACD}{\frac{\Delta q_2}{\Delta q_1}} \Delta q_1\)`
+  - where `\(\color{#6A5ACD}{\frac{\Delta q_2}{\Delta q_1}}\)` is Firm 1’s .hi-purple[conjecture] about **how Firm 2 will respond to Firm 1's output change**
+
+--
+
+  - Divide everything by `\(\Delta q_1\)`:
+
+`$$\frac{\Delta Q}{\Delta q_1} = 1 + \color{#6A5ACD}{\nu_1}$$`
+
+- where `\(\color{#6A5ACD}{\nu_1 = \frac{\Delta q_2}{\Delta q_1}}\)`, Firm 1's conjecture
+
+---
+
+# Conjectural Variations
+
+- Substituting this back in, we get
+
+`$$MR_1(Q) = P(Q) + \frac{\Delta P(Q)}{\Delta Q} (1+ \color{#6A5ACD}{\nu_1})q_1$$`
+- Equilibrium: each firm is profit-maximizing, given .hi-purple[its conjecture about its rival]
+
+`$$P + \frac{\Delta P}{\Delta Q} (1+ \color{#6A5ACD}{\nu_1})q_1 = MC(q_1)$$`
+
+And likewise for firm 2
+
+--
+
+`$$P + \frac{\Delta P}{\Delta Q} (1+ \color{#6A5ACD}{\nu_2})q_2 = MC(q_2)$$`
+
+---
+
+# Conjectural Variations
+
+`$$P + \frac{\Delta P}{\Delta Q} (1+ \color{#6A5ACD}{\nu_1})q_1 = MC(q_1)$$`
+
+- We can characterize effects of different conjectures on equilibrium output
+
+- Larger values of `\(\color{#6A5ACD}{\nu}\)` (more aggressive response by other firm) reduce firm's `\(MR(q)\)` and therefore its output
+
+---
+
+# Conjectural Variations
+
+.smaller[
+`$$P + \frac{\Delta P}{\Delta Q} (1+ \color{#6A5ACD}{\nu})q_1 = MC(q_1)$$`
+
+- Assume a common conjecture between firms `\(\color{#6A5ACD}{\nu}=\nu_1=\nu_2\)`
+
+]
+
+--
+
+.smaller[
+- `\(\nu = 0\)`: the .hi-purple[Cournot conjecture]&lt;sup&gt;.magenta[†]&lt;/sup&gt; (reduces to the simple Cournot model)
+  - rival does not change their output when you increase yours
+]
+
+.footnote[&lt;sup&gt;.magenta[†]&lt;/sup&gt; Recall the definition of `\\(MR(q)= p + \frac{\Delta p}{\Delta q}q\\)`; or double the slope as demand.]
+
+--
+
+.smaller[
+- `\(\nu = -1\)`: the .hi-purple[Bertrand conjecture]; firm is a price-taker, setting `\(p=MC\)`
+  - rival reduces their output to offset each increase in yours (leaving price unchanged)
+
+]
+
+
+---
+
+# Conjectural Variations
+
+.smaller[
+`$$P + \frac{\Delta P}{\Delta Q} (1+ \color{#6A5ACD}{\nu})q_1 = MC(q_1)$$`
+
+- Assume a common conjecture between firms `\(\color{#6A5ACD}{\nu}=\nu_1=\nu_2\)`
+
+
+- `\(\nu = 1\)`: the .hi-purple[Collusive/monopoly conjecture], firm(s) acts like a monopolist over the industry (since `\(2q_1\)` is the total industry output)
+  - rival changes their output exactly same as yours (collusive)
+  - you can affect total industry output but not your market share (it will always remain constant)
+  - one firm can't increase its profits at the expense of the other (i.e. cheating cartel is counterproductive)
+
+`$$P + \frac{\Delta P}{\Delta Q} 2q_1 = MC(q_1)$$`
+
+]
+
+---
+
+# Conjectural Variations: Flaws &amp; Benefits
+
+.pull-left[
+.smallest[
+- Logical flaw in the conjectural variations model: **assumes firms make decisions simultaneously**, not “reacting” to each other in real time!
+  - We’ll deal with dynamic responses later
+
+- But a useful empirical framework to explore market power and competitiveness
+  - interpret and estimate `\(\nu\)` as a conduct parameter to see if industry performing closer to Cournot/Bertrand/Collusion
+  - in general, the greater `\(\nu\)` is, the greater market power and markups are
+]
+]
+
+.pull-right[
+.center[
+![](../images/thinker.png)
+]
+]
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

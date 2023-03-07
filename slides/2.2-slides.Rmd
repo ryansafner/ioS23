@@ -638,7 +638,7 @@ q_{p}^*&=30-0.5q_{c}\\
 
 - The market demand again was
 
-$$P=200-3q_{c}-3q_{p}$$
+$$P=5-0.05q_{c}-0.05q_{p}$$
 
 ---
 
@@ -1702,7 +1702,7 @@ For our Coke & Pepsi example, suppose producing soda comes with a $10.00 fixed c
 
 $$\begin{align*}\pi &= f \\
 \left(\frac{a-c}{N+1}\right)^2 \left(\frac{1}{b}\right)&=f \\
-\left(\frac{3-0.5}{N+1}\right)^2\frac{1}{0.05}& =10.00 \\
+\left(\frac{5-0.5}{N+1}\right)^2\frac{1}{0.05}& =10.00 \\
 N^* &= 5.36 \\ \end{align*}$$
 ]
 
@@ -1809,7 +1809,7 @@ For our Coke & Pepsi example, suppose producing soda comes with a .hi[$75.00] fi
 
 $$\begin{align*}\pi &= f \\
 \left(\frac{a-c}{N+1}\right)^2 \left(\frac{1}{b}\right)&=f \\
-\left(\frac{3-0.5}{N+1}\right)^2\frac{1}{0.05}& =75.00 \\
+\left(\frac{5-0.5}{N+1}\right)^2\frac{1}{0.05}& =75.00 \\
 N^* &= 1.32 \\ \end{align*}$$
 ]
 

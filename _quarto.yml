@@ -60,6 +60,12 @@ website:
               href: content/2.1-content.qmd
             - text: "2.2 — Cournot Competition"
               href: content/2.2-content.qmd
+            - text: "2.3 — Bertrand Competition"
+              href: content/2.3-content.qmd
+        - section: "III. Strategic Behavior & Dynamic Games"
+          contents: 
+            - text: "3.1 — Dynamic Games & Collusion"
+              href: content/3.1-content.qmd
     - title: "Assignments"
       style: "docked"
       search: false

@@ -1,0 +1,1648 @@
+---
+title: "3.1 — Dynamic Games & Collusion"
+author: 'Ryan Safner'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    seal: false
+    css: [custom.css, "hygge"] #, metropolis, metropolis-fonts
+    nature:
+      beforeInit: ["macros.js", "https://platform.twitter.com/widgets.js"] # first is for rescaling images , second is for embedding tweets, https://github.com/yihui/xaringan/issues/100
+      highlightStyle: ocean #rainbow #monokai rainbow solarized-light #tomorrow-night -blue -eighties zenburn
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+    includes:
+      in_header: header.html # for font awesome, used in title  
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo=F,
+                      message=F,
+                      warning=F,
+                      fig.retina = 3,
+                      fig.align = "center")
+library("tidyverse")
+library("mosaic")
+library("ggrepel")
+library("fontawesome")
+library("ggtext")
+xaringanExtra::use_tile_view()
+xaringanExtra::use_tachyons()
+xaringanExtra::use_freezeframe()
+
+update_geom_defaults("label", list(family = "Fira Sans Condensed"))
+update_geom_defaults("text", list(family = "Fira Sans Condensed"))
+
+set.seed(256)
+```
+
+
+class: title-slide
+
+# 3.1 — Repeated Games & Collusion
+
+## ECON 326 • Industrial Organization • Spring 2023
+
+### Ryan Safner<br> Associate Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/ioS23"><i class="fa fa-github fa-fw"></i>ryansafner/ioS23</a><br> <a href="https://ioS23.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>ioS23.classes.ryansafner.com</a><br>
+
+---
+
+# Outline
+
+### [Reframing Oligopoly Theory](#3)
+### [More Game Theory](#13)
+### [Introduction to Sequential Games](#26)
+### [Repeated Games](#39)
+### [Finitely Repeated Games](#43)
+### [Infinitely Repeated Games](#49)
+---
+
+class: inverse, center, middle
+
+# Reframing Oligopoly Theory
+
+---
+
+# Reframing Oligopoly Theory
+
+.left-column[
+.center[
+![:scale 50%](../images/cournot.jpg)
+
+![:scale 50%](../images/bertrand.jpg)
+]
+]
+
+.right-column[
+- The “classic” models of oligopoly (Cournot & Bertrand) have significant flaws
+  - Primarily: *static* games where players only interact once
+  - In reality, players *continue* interacting and .hi-turquoise[change behavior in response to previous observed behavior]!
+
+- Cournot *ignored* the possibility of collusion (we considered it alongside Cournot's model)
+  - Introduced by Edward Chamberlin (1933) — *The Theory of Monopolistic Competition*
+  - .hi-turquoise[It's in the interest of the firms to find a way to collude!]
+
+]
+
+---
+
+# Reaching a Collusive Bargain
+
+.pull-left[
+.smaller[
+- Consider a .hi[profit possibilities frontier] between Coke and Pepsi should they collude
+  - Using our conditions from Cournot (2.2)
+
+- Point C: Cournot-Nash equilibrium
+  - Each firm produces 30, gets $45 in profit
+
+- Points $M_c$, $M_p$, if Coke or Pepsi were a monopolist, respectively
+  - One firm produces 45 (other 0), gets $101.25 in profit
+]
+]
+.pull-right[
+```{r, fig.retina=3, fig.align="center", fig.width=6}
+ppf <- function(x){101.25-x}
+
+points_ppf<-tribble(
+  ~x, ~y, ~lab,
+  0, 101.25, "Mp",
+  101.25, 0, "Mc",
+  50.625,50.625, "F",
+  45, 45, "C",
+  45, 56.15, "D",
+  56.15, 45, "E"
+)
+
+fill <- tribble(
+  ~x, ~y,
+  0, 101.25,
+  101.25,0,
+  0,0
+)
+
+fill_2 <- tribble(
+  ~x, ~y,
+  45, 45,
+  45, 56.15,
+  56.15, 45
+)
+
+ggplot(data.frame(x=c(010)), aes(x=x))+
+  geom_polygon(data=fill, aes(x=x, y=y),fill="green", alpha=0.4)+
+  stat_function(fun=ppf, geom="line", size=2, color = "green")+
+  annotate("label", x = 80, y = ppf(80), label = "PPF", color="green")+
+  geom_label(x = 30, y = 30, color = "green", label = "Profit Allocation Set")+
+  geom_point(data = points_ppf, aes(x = x, y = y), size = 3)+
+  geom_text_repel(data = points_ppf, aes(x = x, y = y, label = lab), size = 4, box.padding = 0.5, nudge_y = 0.5)+
+  geom_segment(x = 0, y = 45, xend = 56.15, yend = 45, linetype = "dashed", size = 1)+
+  geom_segment(x = 45, y = 0, xend = 45, yend = 56.15, linetype = "dashed", size = 1)+
+  scale_x_continuous(breaks = seq(0,110,10),
+                     labels = scales::dollar,
+                     expand=expand_scale(mult=c(0,0.0)))+
+  scale_y_continuous(breaks = seq(0,110,10),
+                     labels = scales::dollar,
+                     expand=expand_scale(mult=c(0,0.0)))+
+  labs(x = "<span style = 'color:red'>Coke's Profits, π<sub>c</sub></span>",
+       y = "<span style = 'color:blue'>Pepsi's Profits, π<sub>p</sub></span>")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=16)+
+  theme(axis.title.x = element_markdown(),
+        axis.title.y = element_markdown())
+```
+
+]
+
+---
+
+# Reaching a Collusive Bargain
+
+.pull-left[
+
+- Anything northeast of C is a Pareto improvement (for the firms)
+
+- A bargaining problem between .red[Coke] and .blue[Pepsi]
+
+- Coke would prefer point E, Pepsi point D, point F is a 50:50 split
+
+- But in any case, a lot of room for a mutually-beneficial agreement to cooperate instead of (Cournot) competing
+]
+
+.pull-right[
+```{r, fig.retina=3, fig.align="center", fig.width=6}
+ppf <- function(x){101.25-x}
+
+points_ppf<-tribble(
+  ~x, ~y, ~lab,
+  0, 101.25, "Mp",
+  101.25, 0, "Mc",
+  50.625,50.625, "F",
+  45, 45, "C",
+  45, 56.15, "D",
+  56.15, 45, "E"
+)
+
+fill <- tribble(
+  ~x, ~y,
+  0, 101.25,
+  101.25,0,
+  0,0
+)
+
+fill_2 <- tribble(
+  ~x, ~y,
+  45, 45,
+  45, 56.15,
+  56.15, 45
+)
+
+ggplot(data.frame(x=c(010)), aes(x=x))+
+  geom_polygon(data=fill, aes(x=x, y=y),fill="green", alpha=0.4)+
+  stat_function(fun=ppf, geom="line", size=2, color = "green")+
+  geom_polygon(data=fill_2, aes(x=x, y=y),fill="blue", alpha=0.4)+
+  annotate("label", x = 80, y = ppf(80), label = "PPF", color="green")+
+  geom_label(x = 30, y = 30, color = "green", label = "Profit Allocation Set")+
+  geom_point(data = points_ppf, aes(x = x, y = y), size = 3)+
+  geom_text_repel(data = points_ppf, aes(x = x, y = y, label = lab), size = 4, box.padding = 0.5, nudge_y = 0.5)+
+  geom_segment(x = 0, y = 45, xend = 56.15, yend = 45, linetype = "dashed", size = 1)+
+  geom_segment(x = 45, y = 0, xend = 45, yend = 56.15, linetype = "dashed", size = 1)+
+  scale_x_continuous(breaks = seq(0,110,10),
+                     labels = scales::dollar,
+                     expand=expand_scale(mult=c(0,0.0)))+
+  scale_y_continuous(breaks = seq(0,110,10),
+                     labels = scales::dollar,
+                     expand=expand_scale(mult=c(0,0.0)))+
+  labs(x = "<span style = 'color:red'>Coke's Profits, π<sub>c</sub></span>",
+       y = "<span style = 'color:blue'>Pepsi's Profits, π<sub>p</sub></span>")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=16)+
+  theme(axis.title.x = element_markdown(),
+        axis.title.y = element_markdown())
+```
+
+]
+
+---
+
+# Reframing Oligopoly Theory
+
+.left-column[
+.center[
+![:scale 80%](../images/Stigler.png)
+
+.smaller[
+George Stigler
+
+1911—1991
+
+Economics Nobel 1982
+]
+]
+]
+
+.right-column[
+
+.smaller[
+> “The present paper accepts the hypothesis that oligopolists wish to collude to maximize joint profits. It seeks to reconcile this wish with the facts, such as that collusion is impossible for many firms and collusion is much more effective in some circumstances than in others. The reconciliation is found in the problem of policing a collusive agreement, which proves to be a problem in the theory of information,” (44).
+
+]
+
+.source[Stigler, George J, 1964, “A Theory of Oligopoly,” *Journal of Political Economy* 72(1): 44-61]
+]
+
+---
+
+# Reframing Oligopoly Theory
+
+.left-column[
+.center[
+![:scale 80%](../images/Stigler.png)
+
+.smaller[
+George Stigler
+
+1911—1991
+
+Economics Nobel 1982
+]
+]
+]
+
+.right-column[
+.smaller[
+> “We shall show that collusion normally involves much more than ‘the’ price...The colluding firms must agree upon the price structure appropriate to the transaction classes which they are prepared to recognize. A complete profit-maximizing price structure may have almost infinitely numerous price classes: the firms will have to decide upon the number of price classes in the light of the costs and returns from tailoring prices to the diversity of transactions,” (44-46).
+
+
+]
+.source[Stigler, George J, 1964, “A Theory of Oligopoly,” *Journal of Political Economy* 72(1): 44-61]
+]
+
+---
+
+# Reframing Oligopoly Theory
+
+.left-column[
+.center[
+![:scale 80%](../images/Stigler.png)
+
+.smaller[
+George Stigler
+
+1911—1991
+
+Economics Nobel 1982
+]
+]
+]
+
+.right-column[
+
+.smallest[
+
+
+> “Let us assume that the collusion has been effected, and a price structure agreed upon. It is a well-established proposition that if any member of the agreement can secretly violate it, he will gain larger profits than by conforming to it. It is, moreover, surely one of the axioms of human behavior that all agreements whose violation would be profitable to the violator must be enforced. The literature of collusive agreements...is replete with instances of the collapse of conspiracies because of ‘secret’ price-cutting. This literature is biased: conspiracies that are successful in avoiding an amount of price-cutting which leads to collapse of the agreement are less likely to be reported or detected. But no conspiracy can neglect the problem of enforcement,” (46)
+
+]
+.source[Stigler, George J, 1964, “A Theory of Oligopoly,” *Journal of Political Economy* 72(1): 44-61]
+]
+
+---
+
+# Reframing Oligopoly Theory
+
+.left-column[
+.center[
+![:scale 80%](../images/Stigler.png)
+
+.smaller[
+George Stigler
+
+1911—1991
+
+Economics Nobel 1982
+]
+]
+]
+
+.right-column[
+
+.smallest[
+> “Enforcement consists basically of detecting significant deviations from the agreed-upon prices. Once detected, the deviations will tend to disappear because they are no longer secret and will be matched by fellow conspirators if they are not withdrawn. If the enforcement is weak, however — if price-cutting is detected only slowly and incompetently — the conspiracy must recognize its weakness: it must set prices not much above the competitive level so the inducements to price-cutting are small...” (46).
+
+]
+.source[Stigler, George J, 1964, “A Theory of Oligopoly,” *Journal of Political Economy* 72(1): 44-61]
+]
+
+---
+
+# Reframing Oligopoly Theory
+
+.left-column[
+.center[
+![:scale 80%](../images/Stigler.png)
+
+.smaller[
+George Stigler
+
+1911—1991
+
+Economics Nobel 1982
+]
+]
+]
+
+.right-column[
+
+.smallest[
+> “Policing the collusion sounds very much like the subtle and complex problem presented in a good detective story. [But] there is a difference: In our case the man who murders the collusive price will recieve the bequest of patronage. The basic method of detection of a price-cutter must be the fact that he is getting business he would not otherwise obtain,” (47).
+
+]
+.source[Stigler, George J, 1964, “A Theory of Oligopoly,” *Journal of Political Economy* 72(1): 44-61]
+
+]
+
+
+---
+
+# Reframing Oligopoly Theory
+
+.left-column[
+.center[
+![:scale 80%](../images/Stigler.png)
+
+.smaller[
+George Stigler
+
+1911—1991
+
+Economics Nobel 1982
+]
+]
+]
+
+.right-column[
+
+- We should focus oligopoly theory less on static models of Cournot/Bertrand/etc competition
+
+- Focus more on examining the types of conditions where firms can effectively form and maintain collusive agreements, and conditions where agreements break down into competition
+  - Stigler (1964) specifically focused on the problem of a cartel policing against “secret price cutting”
+
+- Consider more of a .hi-purple[dynamic game] of cooperation and/or competition between firms
+]
+
+---
+
+class: inverse, center, middle
+
+# More Game Theory
+
+---
+
+# Game Theory: Some Generalizations
+
+.pull-left[
+.center[
+![:scale 80%](../images/game_hex.png)
+
+.smallest[
+See my [game theory course](https://gamef21.classes.ryansafner.com) for more
+]
+]
+]
+
+.pull-right[
+
+There's a *lot* more to game theory than a one-shot prisoners' dilemma:
+
+- one shot vs. repeated game
+
+- discrete vs. continuous strategies
+
+- perfect vs. imperfect vs. incomplete/asymmetric information
+
+- simultaneous vs. sequential games
+
+]
+
+---
+
+# Solution Concepts
+
+.pull-left[
+.center[
+![:scale 100%](../images/equilibriumbalance.png)
+]
+]
+
+.pull-right[
+
+.smallest[
+- We use various .hi-purple[“solution concepts”] to allow us to predict an .hi-purple[equilibrium] of a game
+
+- .hi[Nash Equilibrium] is the primary solution concept
+  - Note it has *many* variants depending on type of game!
+
+- Recall, .hi[Nash Equilibrium]: no players want to change their strategy given what everyone else is playing
+  - All players are playing a best response to each other
+]
+]
+
+---
+
+# Solution Concepts: Nash Equilibrium
+
+.pull-left[
+.center[
+![:scale 100%](../images/equilibriumbalance.png)
+]
+]
+
+.pull-right[
+
+- Important about Nash equilibrium:
+
+1. N.E. $\neq$ the “*best*” or *optimal* outcome
+  - Recall the Prisoners' Dilemma!
+
+2. Game may have *multiple* N.E.
+
+3. Game may have *no* N.E. (in “pure” strategies)
+
+]
+
+---
+
+# Example: Coordination Game
+
+.pull-left[
+.center[
+![:scale 100%](../images/standards_game.png)
+]
+]
+
+.pull-right[
+
+- A .hi-purple[Coordination Game]
+  - No dominant strategies
+
+]
+
+---
+
+# Example: Coordination Game
+
+.pull-left[
+.center[
+![:scale 100%](../images/standards_game_Nashes.png)
+]
+]
+
+.pull-right[
+
+- .hi-purple[Two Nash equilibria]: (.red[A],.blue[A]) and (.red[B],.blue[B])
+  - Either just as good
+  - Coordination is most important
+
+]
+
+---
+
+# Example: Coordination Game
+
+.pull-left[
+.center[
+![:scale 100%](../images/standards_game_Nashes.png)
+]
+]
+
+.pull-right[
+
+- Two general methods to solve for Nash equilibria:
+
+.hi-purple[1) Cell-by-Cell Inspection]: look in each cell, does either player want to deviate?
+  - .hi-purple[If no: a Nash equilibrium]
+  - If yes: *not a Nash equilibrium*
+
+]
+
+---
+
+# Example: Coordination Game
+
+.pull-left[
+.center[
+![:scale 100%](../images/standards_game.png)
+]
+]
+
+.pull-right[
+
+- Two general methods to solve for Nash equilibria:
+
+.hi-purple[2) Best-Response Analysis]: take the perspective of each player. If the other player plays a particular strategy, what is your strategy(s) that gets you the highest payoff?
+  - Ties are allowed
+  - .hi-purple[Any cell where both players are playing a best response is a Nash Equilibrium]
+
+]
+
+---
+
+# Example: Coordination Game
+
+.pull-left[
+.center[
+![:scale 100%](../images/standards_game_1br.png)
+
+.red[Player 1's] best responses
+]
+]
+
+.pull-right[
+
+- Two general methods to solve for Nash equilibria:
+
+.hi-purple[2) Best-Response Analysis]: take the perspective of each player. If the other player plays a particular strategy, what is your strategy(s) that gets you the highest payoff?
+  - Ties are allowed
+  - .hi-purple[Any cell where both players are playing a best response is a Nash Equilibrium]
+
+]
+
+---
+
+# Example: Coordination Game
+
+.pull-left[
+.center[
+![:scale 100%](../images/standards_game_2br.png)
+
+.blue[Player 2's] best responses
+]
+]
+
+.pull-right[
+
+- Two general methods to solve for Nash equilibria:
+
+.hi-purple[2) Best-Response Analysis]: take the perspective of each player. If the other player plays a particular strategy, what is your strategy(s) that gets you the highest payoff?
+  - Ties are allowed
+  - .hi-purple[Any cell where both players are playing a best response is a Nash Equilibrium]
+
+]
+
+---
+
+# Example: Coordination Game
+
+.pull-left[
+.center[
+![:scale 100%](../images/standards_game_brnashes.png)
+
+.hi-purple[N.E.]: each player is playing a best response
+]
+]
+
+.pull-right[
+
+- Two general methods to solve for Nash equilibria:
+
+.hi-purple[2) Best-Response Analysis]: take the perspective of each player. If the other player plays a particular strategy, what is your strategy(s) that gets you the highest payoff?
+  - Ties are allowed
+  - .hi-purple[Any cell where both players are playing a best response is a Nash Equilibrium]
+
+]
+
+---
+
+# A Change in the Game
+
+.pull-left[
+.center[
+![](../images/standards_game_lockin.png)
+]
+]
+
+.pull-right[
+
+- Two Nash equilibria again: (.red[A],.blue[A]) and (.red[B],.blue[B])
+
+- But here (.red[A],.blue[A]) $\succ$ (.red[B],.blue[B])!
+
+]
+
+---
+
+# A Change in the Game
+
+.pull-left[
+.center[
+![](../images/standards_game_lockin.png)
+]
+]
+
+.pull-right[
+- .hi-purple[Path Dependence]: early choices may affect later ability to choose or switch
+
+- .hi-purple[Lock-in]: the switching cost of moving from one equilibrium to another becomes prohibitive
+
+- Suppose we are currently in equilibrium (B,B)
+
+- .hi-purple[Inefficient lock-in]:
+  - Standard A is superior to B
+  - But too costly to switch from B to A
+
+]
+
+---
+
+class: inverse, center, middle
+
+# Introduction to Sequential Games
+
+---
+
+# Sequential Games
+
+.pull-left[
+
+- Consider a sequential game of Cournot competition between .red[Coke] and .blue[Pepsi]
+
+- .red[Coke] moves first, then .blue[Pepsi], then the game ends
+
+- Each player can:
+  - **Cooperate**: produce cartel quantity (22.5)
+  - **Defect**: produce Cournot quantity (30)
+]
+
+.pull-right[
+![](../images/sequential_coke_pepsi.png)
+]
+
+---
+
+# Sequential Games
+
+.pull-left[
+- Designing a game tree:
+
+- .hi-purple[Decision nodes]: decision point for each player
+  - Solid nodes, I've labeled and color-coded by player (.red[C.1], .blue[P.1, P.2])
+
+- .hi-purple[Terminal nodes]: outcome of game, with payoff for each player (profits)
+  - Hollow nodes, no further choices
+]
+
+.pull-right[
+![](../images/sequential_coke_pepsi.png)
+]
+
+---
+
+# Sequential Games
+
+.pull-left[
+- Four possible outcomes:
+
+1. (.red[Cooperate], .blue[Cooperate]): .red[50], .blue[50]
+2. (.red[Cooperate], .blue[Defect]): .red[38], .blue[57] 
+3. (.red[Defect], .blue[Cooperate]): .red[57], .blue[38]
+4. (.red[Defect], .blue[Defect]): .red[45], .blue[45]
+]
+
+.pull-right[
+![](../images/sequential_coke_pepsi.png)
+]
+
+---
+
+# Strategies
+
+.pull-left[
+- .hi[(“Pure”) strategy]<sup>.magenta[†]</sup>: a player’s **complete** plan of action for every possible contingency
+  - i.e. what player will choose at **every possible decision node**, _even if it’s never reached_
+
+- Think of a strategy like an .hi-turquoise[algorithm]:
+
+> If we reach node 1, then I will play X; if we reach node 2, then I will play Y; if...
+]
+
+.pull-right[
+![](../images/sequential_coke_pepsi.png)
+
+.tiny[<sup>.magenta[†]</sup> “Pure” is meant to contrast against **“mixed” strategies**, where players take a range of actions according to a probability distribution. That's beyond the scope of this class.]
+]
+
+---
+
+# Strategies
+
+.pull-left[
+- .hi-red[Coke] has $2^1=2$ possible strategies:
+  1. .red[Cooperate] at .red[C.1]
+  2. .red[Defect] at .red[C.1]
+]
+
+.pull-right[
+![](../images/sequential_coke_pepsi.png)
+]
+
+---
+
+# Strategies
+
+.pull-left[
+- .hi-red[Coke] has $2^1=2$ possible strategies:
+  1. .red[Cooperate] at .red[C.1]
+  2. .red[Defect] at .red[C.1]
+
+- .hi-blue[Pepsi] has $2^2=4$ possible strategies:
+  1. (.blue[Cooperate] at .blue[P.1], .blue[Cooperate] at .blue[P.2])
+  2. (.blue[Cooperate] at .blue[P.1], .blue[Defect] at .blue[P.2])
+  3. (.blue[Defect] at .blue[P.1], .blue[Cooperate] at .blue[P.2])
+  4. (.blue[Defect] at .blue[P.1], .blue[Defect] at .blue[P.2])
+
+]
+
+.pull-right[
+![](../images/sequential_coke_pepsi.png)
+]
+
+---
+
+# Solving the Game: Backward Induction
+
+.pull-left[
+.smallest[
+- Solve a sequential game by .hi[“backward induction”] or .hi[“rollback”]
+
+- To determine the outcome of the game, start with the *last-mover* (i.e. decision nodes just before terminal nodes) and work to the beginning
+
+- A process of considering .hi-purple[“sequential rationality”]:
+
+> “If I play X, my opponent will respond with Y; given their response, do I really want to play X?”
+
+- What is that mover's best choice to maximize their payoff?
+]
+
+]
+
+.pull-right[
+.center[
+![](../images/sequential_coke_pepsi.png)
+]
+]
+
+---
+
+# Solving the Game: Backward Induction
+
+.pull-left[
+
+- We start at .blue[P.1] where .hi-blue[Pepsi] can:
+  - .blue[Cooperate] to yield outcome (.red[50], .blue[50])
+  - .blue[Defect] to yield outcome (.red[38], .blue[57])
+
+- And .blue[P.2] where .hi-blue[Pepsi] can:
+  - .blue[Cooperate] to yield outcome (.red[57], .blue[38])
+  - .blue[Defect] to yield outcome (.red[45], .blue[45])
+]
+
+.pull-right[
+.center[
+![](../images/sequential_coke_pepsi_backwards_induction_1.png)
+]
+]
+
+---
+
+# Solving the Game: Backward Induction
+
+.pull-left[
+
+- .hi-blue[Pepsi] will .blue[Defect] if the game reaches node .blue[P.1] and .blue[Defect] if the game reaches node .blue[P.2]
+
+- Recognizing this, what will .hi-red[Coke] do?
+]
+
+.pull-right[
+.center[
+![](../images/sequential_coke_pepsi_backwards_induction_1.png)
+]
+]
+
+---
+
+# Solving the Game: Backward Induction
+
+.pull-left[
+
+- Work our way up to .red[C.1] where .hi-red[Coke] can:
+  - .red[Cooperate], knowing .hi-blue[Pepsi] will .blue[Defect], to yield outcome (.red[38], .blue[57])
+  - .red[Defect], knowing .hi-blue[Pepsi] will .blue[Defect], to yield outcome (.red[45], .blue[45])
+
+]
+
+.pull-right[
+.center[
+![](../images/sequential_coke_pepsi_rollback.png)
+]
+]
+
+---
+
+# Solving the Game: Backward Induction
+
+.pull-left[
+
+- .hi.purple[Nash Equilibrium]: 
+
+(.red[Defect], .blue[(Defect, Defect)])
+
+]
+
+.pull-right[
+.center[
+![](../images/sequential_coke_pepsi_rollback.png)
+]
+]
+
+---
+
+# Solving the Game: Pruning the Tree
+
+.pull-left[
+
+- As we work backwards, we can .hi-turquoise[prune] the branches of the game tree
+  - Highlight branches that players **will** choose
+  - Cross out branches that players will **not** choose
+
+- .hi-purple[Equilibrium path of play] is highlighted from the root to one terminal node
+  - All other paths are not taken
+
+]
+
+.pull-right[
+.center[
+![](../images/sequential_coke_pepsi_pruned.png)
+]
+]
+
+---
+
+class: inverse, center, middle
+
+# Repeated Games
+
+---
+
+# Prisoners' Dilemma, Reprise
+
+.pull-left[
+.smallest[
+- A true prisoners' dilemma: 
+$$a>b>c>d$$
+
+- Each player's preferences: 
+    - 1<sup>st</sup> best: you Defect, they Coop. ("temptation payoff")
+    - 2<sup>nd</sup> best: you both Coop.
+    - 3<sup>rd</sup> best: you both Defect
+    - 4<sup>th</sup> best: you Coop., they Defect ("sucker's payoff")
+
+- Nash equilibrium: (.red[Defect], .blue[Defect])
+  - (.red[Coop.], .blue[Coop.]) an unstable Pareto improvement
+
+]
+]
+
+.pull-right[
+.center[
+![](../images/pdpayoffs4.png)
+]
+]
+
+---
+
+# Prisoners' Dilemma: How to Sustain Cooperation?
+
+.pull-left[
+- We'll stick with these specific payoffs for this lesson
+
+- .hi-purple[How can we sustain cooperation in Prisoners' Dilemma?]
+
+]
+
+.pull-right[
+.center[
+![](../images/coke_pepsi_pd.png)
+]
+]
+
+---
+
+# Repeated Games: Finite and Infinite
+
+.pull-left[
+.smallest[
+- Analysis of games can change when players encounter each other *more than once*
+
+- .hi[Repeated games]: the same players play the same game multiple times, two types:
+
+- Players know the *history* of the game with each other
+
+- .hi-purple[Finitely-repeated game]: has a known final round
+
+- .hi-purple[Infinitely-repeated game]: has no (or an unknown) final round
+
+]
+]
+.pull-right[
+.center[
+![](../images/infinitelyrepeated.JPG)
+]
+]
+
+---
+
+class: inverse, center, middle
+
+# Finitely-Repeated Games
+
+---
+
+# Finitely-Repeated Prisoners' Dilemma
+
+.pull-left[
+.smaller[
+- Suppose a prisoners' dilemma is played for 2 rounds
+
+- Apply .hi-purple[backwards induction:]
+    - What should each player do in the final round?
+]
+]
+.pull-right[
+.center[
+![](../images/coke_pepsi_pd.png)
+]
+]
+
+---
+
+# Finitely-Repeated Prisoners' Dilemma
+
+.pull-left[
+.smaller[
+- Suppose a prisoners' dilemma is played for 2 rounds
+
+- Apply .hi-purple[backwards induction:]
+    - What should each player do in the final round?
+    - Play dominant strategy: **Defect**
+    - Knowing each player will Defect in round 2/2, what should they do in round 1?
+]
+]
+.pull-right[
+.center[
+![](../images/coke_pepsi_pd.png)
+]
+]
+
+---
+
+# Finitely-Repeated Prisoners' Dilemma
+
+.pull-left[
+.smaller[
+- Suppose a prisoners' dilemma is played for 2 rounds
+
+- Apply .hi-purple[backwards induction:]
+    - What should each player do in the final round?
+    - Play dominant strategy: **Defect**
+    - Knowing each player will Defect in round 2/2, what should they do in round 1?
+        - No benefit to playing Cooperate
+        - No threat punish Defection!
+]
+]
+
+.pull-right[
+.center[
+![](../images/coke_pepsi_pd.png)
+]
+]
+
+---
+
+# Finitely-Repeated Prisoners' Dilemma
+
+.pull-left[
+.smaller[
+- Suppose a prisoners' dilemma is played for 2 rounds
+
+- Apply .hi-purple[backwards induction:]
+
+- Both **Defect** in round 1 (and round 2)
+
+- No value in cooperation over time!
+]
+]
+
+.pull-right[
+.center[
+![](../images/coke_pepsi_pd.png)
+]
+]
+
+---
+
+# Finitely-Repeated Prisoners' Dilemma
+
+.pull-left[
+.smaller[
+- .hi-purple[Paradox of repeated games]: for any game with a unique Nash equilibrium (in pure strategies) in a one-shot game, as long as there is a known, finite end, Nash equilibrium is the same
+
+- Sometimes called Selten’s “chain-store paradox” from a famous paper by Reinhard Selten (1978)
+
+- In experimental settings, we tend to see people cooperate in early rounds, but close to the final round (if not the actual final round), defect on each other
+
+]
+
+.source[Selten, Reinhard, (1978), “The chain store paradox,” *Theory and Decision* 9(2): 127–159]
+]
+
+.pull-right[
+.center[
+![](../images/coke_pepsi_pd.png)
+]
+]
+
+---
+
+class: inverse, center, middle
+
+# Infinitely-Repeated Games
+
+---
+
+# “Infinitely”-Repeated Games
+
+.pull-left[
+.smaller[
+- Finitely-repeated games are interesting, but rare
+  - How often do we know for certain when a game/relationship we are in will end? 
+
+- Some predictions for finitely-repeated games don't hold up well in reality
+
+- We often play games or are in relationships that are .hi[indefinitely repeated] (have no *known* end), we call them .hi[infinitely-repeated games]
+
+]]
+
+.pull-right[
+.center[
+![](../images/infinitelyrepeated.JPG)
+]
+]
+
+---
+
+# Infinitely-Repeated Games
+
+.pull-left[
+
+- There are two nearly identical interpretations of infinitely repeated games:
+  1. Players play *forever*, but discount (payoffs in) the future by a constant factor
+  2. Each round the game might end with some constant probability
+]
+
+.pull-right[
+.center[
+![](../images/infinitelyrepeated.JPG)
+]
+]
+
+---
+
+# First Intepretation: Discounting the Future
+
+.pull-left[
+
+- Since we are dealing with payoffs in the future, we have to consider players' .hi[time preferences]
+
+- Easiest to consider with monetary payoffs and the .hi[time value of money] that underlies finance
+
+$$PV=\frac{FV}{(1+r)^t}$$
+
+$$FV = PV(1+r)^t$$
+
+]
+
+.pull-right[
+.center[
+![](../images/timeandmoney.jpg)
+]
+]
+
+---
+
+# Present vs. Future Goods
+
+.pull-left[
+
+- .hi-green[Example]: what is the present value of getting $1,000 one year from now at 5% interest?
+
+$$\begin{align*}
+PV &= \frac{FV}{(1+r)^n}\\
+PV &= \frac{1000}{(1+0.05)^1}\\
+PV &= \frac{1000}{1.05}\\
+PV &= \$952.38\\ 
+\end{align*}$$
+
+]
+
+.pull-right[
+```{r}
+ggplot(data = tibble(x=1:10), aes(x=x))+
+    annotate("segment", x = 1, xend = 0.08, y = 1000, yend = 952.38, colour = "purple", size=2, alpha=1, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))+
+  geom_label(x=0.04,y=952.38,label="V(0)", color = "purple")+
+  geom_label(x=1,y=1000,label="V(1)", color = "purple")+
+  scale_x_continuous(breaks=seq(0,1,1),
+                     limits = c(0,1.5),
+                     expand = c(0,0))+
+  scale_y_continuous(breaks=seq(0,1200,50),
+                     labels = scales::dollar,
+                     limits=c(900,1200))+
+  coord_cartesian(clip = "off")+
+  labs(x = "Time",
+       y = "Value",
+       title = "Discounting the Future")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size =16)
+
+```
+]
+
+---
+
+# Present vs. Future Goods
+
+.pull-left[
+
+- .hi-green[Example]: what is the *future* value of $1,000 lent for one year at 5% interest?
+
+$$\begin{align*}
+FV &= PV(1+r)^n\\
+FV &= 1000(1+0.05)^1\\
+FV &= 1000(1.05)\\
+FV &= \$1,050\\
+\end{align*}$$
+
+]
+
+.pull-right[
+```{r}
+ggplot(data = tibble(x=1:10), aes(x=x))+
+    annotate("segment", x = 0, xend = 0.95, y = 1000, yend = 1050, colour = "purple", size=2, alpha=1, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))+
+  geom_label(x=0.04,y=1000,label="V(0)", color = "purple")+
+  geom_label(x=1,y=1050,label="V(1)", color = "purple")+
+  scale_x_continuous(breaks=seq(0,1,1),
+                     limits = c(0,1.5),
+                     expand = c(0,0))+
+  scale_y_continuous(breaks=seq(0,1200,50),
+                     labels = scales::dollar,
+                     limits=c(900,1200))+
+  coord_cartesian(clip = "off")+
+  labs(x = "Time",
+       y = "Value",
+       title = "Earning Interest")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size =16)
+
+```
+]
+
+---
+
+# Discounting the Future
+
+.pull-left[
+- Suppose a player values $1 now as being equivalent to some amount with interest $1(1+r)$ *one period later*
+  - i.e. $1 with an r% interest rate over that period
+
+- The .hi-purple[“discount factor”] is $\delta=\frac{1}{1+r}$, the ratio that future value must be multiplied to equal present value
+
+]
+
+.pull-right[
+.center[
+![](../images/timeandmoney.jpg)
+]
+]
+
+---
+
+# Discounting the Future
+
+.pull-left[
+$$\$1 \text{ now} = \delta \, \$1 \text{ later}$$
+
+.smallest[
+- If $\delta$ is low $(r$ is high)
+  - Players regard future money as worth much less than present money, **very impatient**
+  - .hi-green[Example]: $\delta = 0.20$, future money is worth 20% of present money
+
+- If $\delta$ is high $(r$ is low)
+  - Players regard future money almost the same as present money, **more patient**
+  - .hi-green[Example]: $\delta = 0.80$, future money is worth 80% of present money
+]
+]
+
+.pull-right[
+.center[
+![](../images/timeandmoney.jpg)
+]
+]
+
+---
+
+# Discounting the Future
+
+.smallest[
+.content-box-green[
+.hi-green[Example]: Suppose you are indifferent between having $1 today and $1.10 next period
+]
+]
+
+--
+
+.smallest[
+$$\begin{align*}
+\$1 \text{ today} &= \delta \$1.10 \text{ next period}\\
+\frac{\$1}{\$1.10} & = \delta\\
+0.91 &\approx \delta\\
+\end{align*}$$
+
+]
+
+--
+
+.smallest[
+- There is an implied interest rate of $r=0.10$
+
+- $1 at 10% interest yields $1.10 next period
+
+$$\begin{align*}
+\delta &= \frac{1}{1+r}\\
+\delta &= \frac{1}{1.10}\ \approx 0.91\\
+\end{align*}$$
+
+]
+
+---
+
+# Discounting the Future
+
+- Now consider an infinitely repeated game
+
+--
+  - If a player receives payoff $p$ in every future round, the **present value** of this infinite payoff stream is
+    
+$$p(\delta^1+\delta^2+\delta^3+ \cdots + \delta^T)$$
+  - This is due to compounding interest over time
+--
+
+- This infinite sum converges to:
+
+$$\sum_{t=1}^\infty=\frac{p}{1-\delta}$$
+- Thus, the present discounted value of receiving $p$ forever is $\left(\frac{p}{1-\delta}\right)$
+
+---
+
+# Prisoners' Dilemma, Infinitely Repeated
+
+.pull-left[
+- With these payoffs, the present value of both **cooperating** forever is $\left(\frac{50}{1-\delta}\right)$
+- Present value of both **defecting** forever is $\left(\frac{45}{1-\delta}\right)$
+
+]
+
+.pull-right[
+.center[
+![](../images/coke_pepsi_pd.png)
+]
+]
+
+---
+
+# Alternatively: Game Continues Probabilistically
+
+.pull-left[
+- **Alternate interpretation**: game continues with some (commonly known among the players) probability $\theta$ each round
+
+- Assume this probability is independent between rounds (i.e. one round continuing has no influence on the probability of the *next* round continuing, etc)
+
+]
+
+.pull-right[
+.center[
+![](../images/infinitelyrepeated.JPG)
+]
+]
+
+---
+
+# Alternatively: Game Continues Probabilistically
+
+.pull-left[
+.smallest[
+
+- Then the probability the game is played $T$ rounds from now is $\theta^T$
+
+- A payoff of $p$ in every future round has a present value of
+$$p(\theta^1+\theta^2+\theta^3+\cdots)= \left(\frac{p}{1-\theta}\right)$$
+
+- Note this is similar to discounting of future payoffs (at a constant rate); equivalent if $\theta=\delta$
+]
+]
+
+.pull-right[
+.center[
+![](../images/infinitelyrepeated.JPG)
+]
+]
+
+---
+# Strategies in Infinitely Repeated Games
+
+.pull-left[
+
+.smallest[
+- Recall, a .hi[strategy] is a complete plan of action that describes how you will react under all possible circumstances (i.e. moves by other players)
+  - i.e. “if other player plays $x$, I'll play $a$, if they play $y$, I'll play $b$, if, ..., etc”
+  - think about it as a(n infinitely-branching) game tree, .hi-turquoise[“what will I do at each node where it is my turn?”]
+    
+- For an infinitely-repeated game, .hi-turquoise[an infinite number of possible strategies exist!]
+
+- We will examine a specific set of .hi[contingent] or .hi[trigger strategies]
+]
+]
+
+.pull-right[
+.center[
+![](../images/thinker2.jpg)
+
+![](../images/iftt.png)
+]
+]
+
+---
+
+# Trigger Strategies
+
+.pull-left[
+.smallest[
+- Consider one (the most important) trigger strategy for an infinitely-repeated prisoners' dilemma, the .hi[“Grim Trigger” strategy]:
+  - **On round 1**: Cooperate
+  - **Every future round:** so long as the history of play has been (Coop, Coop) in every round, play Cooperate. Otherwise, play Defect *forever.*
+    
+- “**Grim**” trigger strategy leaves no room for forgiveness: one deviation triggers *infinite punishment*, like the sword of Damocles
+
+]
+]
+
+.pull-right[
+.center[
+![:scale 50%](../images/swordofdamocles.jpg)
+]
+]
+
+---
+
+# Payoffs in Grim Trigger Strategy
+
+.pull-left[
+- If you are playing the **Grim Trigger strategy**, consider your opponent's incentives:
+    - If you both *Cooperate* forever, you receive an infinite payoff stream of 50 per round
+
+$$50+50\delta^1+50\delta^2+50\delta^3+\cdots+50\delta^{\infty}=\frac{50}{1-\delta}$$
+
+]
+
+.pull-right[
+.center[
+![](../images/coke_pepsi_pd.png)
+]
+]
+
+---
+
+# Payoffs in Grim Trigger Strategy
+
+.pull-left[
+- This strategy is a Nash equilibrium as long there's no incentive to deviate: 
+
+.smallest[
+$$\begin{align*}
+\text{Payoff to cooperation} & > \text{Payoff to one-time defection}\\
+\frac{50}{1-\delta} & >  57+\frac{45\delta}{1-\delta}\\
+\delta & > 0.583\
+\end{align*}$$
+
+]
+
+- If `\\(\delta > 0.583\\)`, then player will cooperate and a one-time defection is not profitable
+
+]
+
+.pull-right[
+.center[
+![](../images/coke_pepsi_pd.png)
+]
+]
+
+---
+
+# Payoffs in Grim Trigger Strategy
+
+.pull-left[
+- $\delta > 0.583$ is sufficient to sustain cooperation under the grim trigger strategy
+    - This is the most extreme strategy with the strongest threat
+
+]
+
+.pull-right[
+.center[
+![](../images/coke_pepsi_pd.png)
+]
+]
+
+---
+
+# Payoffs in Grim Trigger Strategy
+
+.pull-left[
+- Two interpretations of $\delta > 0.583$ as a sufficient condition for cooperation:
+
+1.  $\delta$ as .hi-purple[sufficiently high discount rate]
+    - Players are patient enough and care about the future (reputation, etc), will not defect
+2.  $\delta$ as .hi-purple[sufficiently high probability of repeat interaction]
+    - Players expect to encounter each other again and play future games together
+
+]
+
+.pull-right[
+.center[
+![](../images/coke_pepsi_pd.png)
+]
+]
+
+---
+
+# Cooperation with the Grim Trigger Strategy, In General
+
+.pull-left[
+
+- In general, can sustain cooperation (under grim trigger strategy) when $\delta > \frac{b-a}{c-a}$
+
+- Thus, cooperation breaks down (or is strengthened) when:
+  1. $a$ (the temptation payoff) increases (decreases)
+  2. $b$ (the cooperative payoff) decreases (increases)
+  3. $c$ (the defection payoff) increases (decreases)
+
+]
+.pull-right[
+.center[
+![](../images/pdpayoffs4.png)
+]
+]
+
+---
+
+
+
+
+# Other Trigger Strategies
+
+.pull-left[
+.smallest[
+- **“Grim Trigger”** strategy is, well, grim: a single defection causes infinite punishment with no hope of redemption
+  - *Very useful* in game theory for understanding the “worst case scenario” or the *bare minimum* needed to sustain cooperation!
+  - Empirically, most people aren't playing this strategy in life
+  - Social cooperation hangs on by a thread: what if the other player makes a *mistake*? Or *you* mistakenly think they Defected?
+- There are “nicer” trigger strategies
+]
+]
+
+.pull-right[
+.center[
+![:scale 50%](../images/swordofdamocles.jpg)
+]
+]
+
+---
+
+# "Nicer" Strategies
+
+.pull-left[
+- Consider the .hi["Tit for Tat" strategy]:
+    - On round 1: Cooperate
+    - Every future round: Play the strategy that the other player played last round
+        - .hi-green[Example]: if they Cooperated, play Cooperate; if they Defected, play Defect
+]
+
+.pull-right[
+.center[
+![](../images/coke_pepsi_pd.png)
+]
+]
+
+---
+
+# *The Evolution of Cooperation*
+
+.left-column[
+.center[
+![:scale 80%](../images/axelrod2.jpg)
+
+.smallest[
+Robert Axelrod
+
+1943—
+]
+]
+]
+
+.right-column[
+.smallest[
+- Research in explaining the **evolution of cooperation**
+- Use prisoners' dilemma to describe human societies and evolutionary biology of animal behaviors
+- Hosted a series of famous tournaments for experts to submit a strategy to play in an infinitely<sup>.magenta[1]</sup> repeated prisoners' dilemma 
+
+]
+
+.quitesmall[
+> “The contestants ranged from a 10-year-old computer hobbyist to professors of computer science, economics, psychology, mathematics, sociology, political science, and evolutionary biology.”
+
+]
+
+.smallest[
+- *The Evolution of Cooperation* (1984)
+- Among the most cited works in all of political science 
+]
+
+.source[<sup>.magenta[1]</sup> Each round had a 0.00346 probability of ending the game, ensuring on average 200 rounds of play
+
+Axelrod, Robert, 1984, *The Evolution of Cooperation]
+
+]
+
+---
+
+# *The Evolution of Cooperation*
+
+.left-column[
+.center[
+![:scale 80%](../images/axelrod2.jpg)
+
+.smallest[
+Robert Axelrod
+
+1943—
+]
+]
+]
+
+.right-column[
+.smallest[
+- Axelrod's discussion of successful strategies based on four properties:
+  1. **Niceness**: cooperate, never be the first to defect
+  2. **Be Provocable**: don't be suckered by being too nice, return defection with defection
+  3. **Don't be envious**: focus on maximizing your own score, rather than ensuring your score is higher than your "partner's"
+  4. **Don't be too clever**: clarity is essential for others to cooperate with you
+
+- The winning strategy was, famously, **TIT FOR TAT**, submitted by Anatol Rapoport
+
+]
+.source[Axelrod, Robert, 1984, *The Evolution of Cooperation]
+]
+
+---
+
+# Folk Theorem: Simply Put
+
+.pull-left[
+.smallest[
+- .hi[Folk theorem (simplified)]: Many strategies can sustain long-run cooperation if:
+    - Each player can observe history
+    - The value of future interactions must be sufficiently important to players
+        - sufficiently high discount rate $\delta$
+        - sufficiently high probability of game continuing $\theta$
+- If this is true, *many* strategies can sustain long-run cooperation
+    - Any in the teal set in the diagram before
+    - *Grim trigger* is simply the bare minimum/worst case scenario (and, importantly, easiest to model!)
+]
+]
+
+.pull-right[
+.center[
+![](../images/backstab.jpg)
+]
+]

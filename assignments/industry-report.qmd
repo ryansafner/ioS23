@@ -1,0 +1,103 @@
+---
+title: "Industry Report"
+execute: 
+  freeze: auto
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+```
+
+::: {.callout-warning appearance="minimal"}
+Due by 11:59 PM Thursday February 23 via by Blackboard Assignments
+:::
+
+# Overview 
+
+Over the semester, you will write and briefly present a report on an industry that you choose that describes the market for the product: the geographic, vertical, and horizontal boundaries, the nature of competition, costs, demand, and regulatory environment. 
+
+Please **email me** with the country you would like to choose. I will remove countries from this list in the order that I recieve emails claiming them. You may decide to change your country at any time, at which point, I will re-release the country into the pool for others to select, and update the list below:
+
+**Last Update: 9:00 PM Wed Nov 11**
+
+ You can choose any country *except* for the following that have been claimed:
+
+- United States
+- Vietnam
+- Switzerland
+- Chad
+- Germany
+- Singapore
+- United Kingdom
+- Egypt
+- South Africa
+- Greece
+
+# Assignment
+
+I want you to compile statistics on your country (described below). You will give a presentation on your country during the last week of class.
+
+## Country at a Glance
+
+Get data from a reputable source (United Nations, World Bank, International Monetary Fund, OECD, etc.) on the following statistics.^[You might want to look at the [last slide](https://devf19.classes.ryansafner.com/slides/02-slides#114) of our lesson on measuring development for some data sources!] You may write down just the number or descriptor for each of the following on your report.^[You might wish to make a table to organize it.] **For each, please indicate both the source of your data, and the year for the data (try to get the latest possible)**. Note that some countries may not have data available on all statistics (and be sure to not if none is available).
+
+Your presentation should include:
+
+### Macroeconomic Data
+
+1. Real Gross Domestic Product (and growth rate)
+2. Real GDP/capita (and growth rate)
+3. Unemployment rate
+4. Labor force participation rate
+5. Inflation rate
+6. Budget deficit/surplus as percent of GDP
+7. Debt as percent of GDP
+8. Currency, and exchange rate for 1 U.S. Dollar
+
+### Demographic, Equality, and Health Data
+
+1. Population
+2. Population growth rate
+3. Human development index 
+4. Gini coefficient
+5. Life expectancy at birth
+6. Infant mortality rate
+7. % of population living in extreme poverty (under $\approx$ $2 per day)
+8. [Happiness index](https://worldhappiness.report/) score 
+
+### Trade and Economy Data
+
+1. What are the top 5 exports by value?
+2. Who are the top 5 trading partners?
+3. Trade (imports + exports) as percent of GDP
+4. [Doing Business Index](https://www.doingbusiness.org/) score
+5. Amount of Foreign Aid recieved
+
+### Institutions
+
+1. [Polity IV](http://www.systemicpeace.org/polity/polity4.htm) score
+2. [Freedom house](https://freedomhouse.org/report/freedom-world/freedom-world-2018) freedom score
+3. [Economic freedom](https://www.fraserinstitute.org/economic-freedom/map) score
+4. [Corruption Perceptions Index](https://www.transparency.org/research/cpi/overview) score
+5. [Rule of law index](https://worldjusticeproject.org/our-work/research-and-data/wjp-rule-law-index-2019) score
+
+Be sure to include citations, or a short bibliography of the sources which you used to compile your overview. I do not care about the formatting, just be consistent, and use reputable sources (again, e.g. World Bank, IMF, OECD, UN, CIA World Factbook).
+
+# Presentation
+
+- [<i class="fas fa-file-powerpoint"></i> Example Powerpoint](/profile/usa_example.pptx)
+- [<i class="fab fa-markdown"></i> Using R to Download World Bank Data (`rmd`)](/profile/usa_country_profile_data.Rmd)
+- [<i class="fas fa-external-link-square-alt"></i> Using R to Download World Bank Data (`html`)](/profile/usa_country_profile_data.html)
+
+On the last week of class, each student will have 5 minutes to present their country. I expect each of you to have slides to describe your country.
+
+# Good Data Sources
+
+- [IMF](https://www.imf.org/en/Data)
+- [World Bank World Development Indicators](https://datacatalog.worldbank.org/dataset/world-development-indicators)
+- [gapminder.org/tools](http://gapminder.org/tools/)
+- [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/)
+- [Quality of Government](https://qog.pol.gu.se/data/datadownloads/qogstandarddata)
+- [Polity IV](https://www.systemicpeace.org/polity/polity4.htm)
+- [Fraser Institute: Economic Freedom](https://www.fraserinstitute.org/economic-freedom/map)
+- [Freedom House: Freedom in the World](https://freedomhouse.org/report/freedom-world/freedom-world-2018)

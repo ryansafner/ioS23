@@ -21,6 +21,10 @@ Today we extend our understanding of game theory to talk about how collusion can
 
 - <i class="fas fas fa-book"></i> Ch. 7, 9, 10 in [Church & Ware, 2000](https://works.bepress.com/jeffrey_church/23/)
 
+### Recommended/Referenced Readings
+
+- [<i class="fas fa-file-pdf"></i> Stigler, 1964, “A Theory of Oligopoly”](/files/readings/Stigler-1964.pdf)
+
 Chapter 7 is a good overview of static game theory - read it if you have not yet, or want some more of the basics. We will focus simply on Nash equilibrium and the possibility of multiple Nash equilibria.
 
 Chapter 9 is a good overview of sequential games and repeated games, which we will introduce today.

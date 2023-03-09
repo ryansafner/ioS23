@@ -1,0 +1,28 @@
+---
+title: "Stackelberg Competition — Practice Problems"
+author: "ECON 326 — Spring 2023"
+date: ""
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Return to the example from lessons 2.2 and 2.3: Firm 1 and Firm 2 have a constant $MC=AC=8$. The market (inverse) demand curve is given by:
+
+$$\begin{aligned}
+P&=200-2Q\\
+Q&=q_1+q_2\\
+\end{aligned}$$
+
+1. Suppose Firm 1 is the Leader and Firm 2 is the follower. Find the Stackelberg Nash Equilibrium quantity for each firm. Hint, the Cournot reaction functions you found before were:
+
+$$\begin{aligned}
+q_1^\star & = 48 - 0.5 * q_2\\
+q_2^\star & = 48 - 0.5 * q_1\\
+\end{aligned}$$
+
+2. Find the market price.
+
+3. Find the profit for each firm. Compare their profits under Stackelberg competition to their profits under Cournot competition (from lesson 2.2). 

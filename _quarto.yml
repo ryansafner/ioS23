@@ -66,6 +66,8 @@ website:
           contents: 
             - text: "3.1 — Dynamic Games & Collusion"
               href: content/3.1-content.qmd
+            - text: "3.2 — Stackelberg Competition"
+              href: content/3.2-content.qmd
     - title: "Assignments"
       style: "docked"
       search: false

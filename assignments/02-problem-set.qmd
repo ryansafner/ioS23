@@ -14,13 +14,13 @@ Due by 11:59 PM Tuesday March 28 via by Blackboard Assignments
 
 Please read the [instructions](https://ios23.classes.ryansafner.com/assignments/problem-sets) for completing homeworks.
 
-<p style="text-align:center;"><a class="btn btn-primary btn-lg" target="_blank" href="/files/assignment/01-problem-set-pdf.pdf"><i class="fas fa-file-pdf"></i> Download as PDF</a> <a class="btn btn-primary btn-lg" target="_blank" href="/files/assignment/01-problem-set-docx.docx"><i class="fa-regular fa-file-word"></i> Download as .docx</a></p>
+<p style="text-align:center;"><a class="btn btn-primary btn-lg" target="_blank" href="/files/assignment/02-problem-set-pdf.pdf"><i class="fas fa-file-pdf"></i> Download as PDF</a> <a class="btn btn-primary btn-lg" target="_blank" href="/files/assignment/02-problem-set-docx.docx"><i class="fa-regular fa-file-word"></i> Download as .docx</a></p>
 
 <!--## Answers
 
 <p style="text-align:center"><a target="_blank" href="/files/assignment/01-problem-set-answers.html"><span class="btn btn-primary btn-lg"><i class="far fa-life-ring"></i> Answers</a> <a target="_blank" href="/files/assignment/01-problem-set-answers-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> Answers (PDF)</a> </p>-->
 
-# Competitive Markets
+# Concepts and Critical Thinking
 
 ## Question 1
 
@@ -45,6 +45,8 @@ If a prisoners’ dilemma is played repeatedly, how does the outcome of the game
 ## Question 6
 
 What makes a threat or a promise credible? In your answer, use the concept of subgame perfection.
+
+# Problems
 
 ## Question 7
 
@@ -92,7 +94,7 @@ Solve for the "rollback equilibrium" using backwards induction.
 
 ## Part D
 
-Draw this game in normal form. Find all Nash equilibria.^[Hint: think carefully about the players' strategies, as you listed out in Part A.] Which is subgame perfect, and why?
+Draw this game in normal form. Find all Nash equilibria. (Hint: think carefully about the players' strategies, as you listed out in Part A.) Which is subgame perfect, and why?
 
 ## Part E
 

@@ -26,6 +26,13 @@ Today we cover our first, and perhaps the most famous and "base" model of Oligop
 
 - <i class="fas fas fa-book"></i> Ch. 8.1-8.2, 7 in [Church & Ware, 2000](https://works.bepress.com/jeffrey_church/23/)
 
+## <i class="fas fa-dumbbell"></i> Practice
+
+Today you will be working on practice problems:
+
+- [<i class="fas fa-file-pdf"></i> Practice Problems](../files/practice/2.2-practice-pdf.pdf)
+- [<i class="fas fa-file-pdf"></i> Answer Key](../files/practice/2.2-practice-answers.html)
+
 ## <i class="fas fa-chalkboard-teacher"></i> Slides
 
 Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides. 

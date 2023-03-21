@@ -459,7 +459,7 @@ coke<-ggplot(tibble(x=c(0,10)), aes(x=x))+
                      expand=c(0,0))+
   theme_light(base_family = "Fira Sans Condensed", base_size=20)+
   labs(x = "<span style = 'color:blue'>Pepsi's Output, q<sub>p</sub></span>",
-       y = "<span style = 'color:red'>Coke's Output, q<sub>p</sub></span>")+
+       y = "<span style = 'color:red'>Coke's Output, q<sub>c</sub></span>")+
   theme(axis.title.x = element_markdown(),
         axis.title.y = element_markdown())
 coke
@@ -536,7 +536,7 @@ pepsi<-ggplot(tibble(x=c(0,10)), aes(x=x))+
                      expand=c(0,0))+
   theme_light(base_family = "Fira Sans Condensed", base_size=20)+
   labs(x = "<span style = 'color:blue'>Pepsi's Output, q<sub>p</sub></span>",
-       y = "<span style = 'color:red'>Coke's Output, q<sub>p</sub></span>")+
+       y = "<span style = 'color:red'>Coke's Output, q<sub>c</sub></span>")+
   theme(axis.title.x = element_markdown(),
         axis.title.y = element_markdown())
 pepsi

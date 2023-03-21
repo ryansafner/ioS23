@@ -68,6 +68,8 @@ website:
               href: content/3.1-content.qmd
             - text: "3.2 — Stackelberg Competition"
               href: content/3.2-content.qmd
+            - text: "3.3 — Entry Deterrence and Commitment"
+              href: content/3.3-content.qmd
     - title: "Assignments"
       style: "docked"
       search: false
@@ -81,6 +83,8 @@ website:
               href: assignments/problem-sets.qmd
             - text: "Problem Set 1"
               href: assignments/01-problem-set.qmd
+            - text: "Problem Set 2"
+              href: assignments/02-problem-set.qmd
         - section: "Exams"
           contents:
 

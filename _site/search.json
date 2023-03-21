@@ -63,6 +63,118 @@
     "text": "Question 8\nCarl’s Coal Mining operates in a remote area. Because of its location, it has monopsony power in the local labor market for miners. Its marginal revenue product of labor is \\[MRP_L = 400-5L\\] where \\(L\\) is the total number of miners. The labor supply curve of local miners is \\[w = 5L-50\\] where \\(w\\) is the wage (in $1000’s per miner).\n\nPart A\nWrite a function for the marginal cost of labor.\n\n\nPart B\nWhat quantity of workers will the mine hire, and what wage will it pay its workers?\n\n\nPart C\nWhat would the quantity of workers be, and what would the wage be, if there was competition among other local mines for labor?\n\n\nPart D\nSketch a graph of this market, and be sure to label all of your findings (and show the Deadweight Loss) from Parts A-C."
   },
   {
+    "objectID": "assignments/02-problem-set.html",
+    "href": "assignments/02-problem-set.html",
+    "title": "Problem Set 2",
+    "section": "",
+    "text": "Due by 11:59 PM Tuesday March 28 via by Blackboard Assignments\nPlease read the instructions for completing homeworks.\nDownload as PDF  Download as .docx"
+  },
+  {
+    "objectID": "assignments/02-problem-set.html#question-1",
+    "href": "assignments/02-problem-set.html#question-1",
+    "title": "Problem Set 2",
+    "section": "Question 1",
+    "text": "Question 1\nExplain what cartels are, the economic problems that they face, and some methods by which these problems might be overcome."
+  },
+  {
+    "objectID": "assignments/02-problem-set.html#question-2",
+    "href": "assignments/02-problem-set.html#question-2",
+    "title": "Problem Set 2",
+    "section": "Question 2",
+    "text": "Question 2\nDescribe the major differences between Bertrand competition, Cournot competition, and Stackelberg competition. How do firms compete, and what are the results in terms of market price, industry output, and profits for firms?"
+  },
+  {
+    "objectID": "assignments/02-problem-set.html#question-3",
+    "href": "assignments/02-problem-set.html#question-3",
+    "title": "Problem Set 2",
+    "section": "Question 3",
+    "text": "Question 3\nExplain what the Bertrand paradox is, and two ways/model extensions that the paradox can be resolved."
+  },
+  {
+    "objectID": "assignments/02-problem-set.html#question-4",
+    "href": "assignments/02-problem-set.html#question-4",
+    "title": "Problem Set 2",
+    "section": "Question 4",
+    "text": "Question 4\nHow are fixed costs (sunk or otherwise) a barrier to entry? How do they alter the outcomes of Cournot competition, and of entry games?"
+  },
+  {
+    "objectID": "assignments/02-problem-set.html#question-5",
+    "href": "assignments/02-problem-set.html#question-5",
+    "title": "Problem Set 2",
+    "section": "Question 5",
+    "text": "Question 5\nIf a prisoners’ dilemma is played repeatedly, how does the outcome of the game change? What if it is repeated a finite number of times? What if it is repeated an infinite number of times?"
+  },
+  {
+    "objectID": "assignments/02-problem-set.html#question-6",
+    "href": "assignments/02-problem-set.html#question-6",
+    "title": "Problem Set 2",
+    "section": "Question 6",
+    "text": "Question 6\nWhat makes a threat or a promise credible? In your answer, use the concept of subgame perfection."
+  },
+  {
+    "objectID": "assignments/02-problem-set.html#question-7",
+    "href": "assignments/02-problem-set.html#question-7",
+    "title": "Problem Set 2",
+    "section": "Question 7",
+    "text": "Question 7\nSuppose Comcast \\((C)\\) and Verizon \\((V)\\) have a constant \\(MC=AC=\\$20\\) per customer connected to their internet network. The market (inverse) demand curve for basic internet service is given by: \\[\\begin{align*}\nP&=80-2Q\\\\\nQ&=q_C+q_V\\\\\n\\end{align*}\\]\n\nPart A\nFind the Cournot-Nash equilibrium output, price, and profit for each firm.\n\n\nPart B\nFind the output, price, and profit for each firm if the two were to collude.\n\n\nPart C\nSuppose now Comcast is a Stackelberg leader. Find each firm’s output, price, and profit.\n\n\nPart D\nFind the output, price, and profit for each firm they were to compete on price instead of quantity."
+  },
+  {
+    "objectID": "assignments/02-problem-set.html#question-8",
+    "href": "assignments/02-problem-set.html#question-8",
+    "title": "Problem Set 2",
+    "section": "Question 8",
+    "text": "Question 8\nBoeing (a U.S. company), and Airbus (a European company) are fierce competitors that together, about evenly dominate the market for aircraft. Airbus decides whether it is going to launch a new plane, or keep its old planes. Boeing must then respond and determine if it is also going to launch a new plane or keep its old planes.\n\nDeveloping a new plane is very expensive. If both companies produce new planes, they will have spent a lot on producing the new plane, but neither will gain any market share. If only one company releases a new plane, they will capture more of the market, making the extra cost of development worthwhile. This game is depicted in extensive form below:"
+  },
+  {
+    "objectID": "assignments/02-problem-set.html#part-a-1",
+    "href": "assignments/02-problem-set.html#part-a-1",
+    "title": "Problem Set 2",
+    "section": "Part A",
+    "text": "Part A\nList all of Airbus’ possible strategies and list all of Boeing’s possible strategies."
+  },
+  {
+    "objectID": "assignments/02-problem-set.html#part-b-1",
+    "href": "assignments/02-problem-set.html#part-b-1",
+    "title": "Problem Set 2",
+    "section": "Part B",
+    "text": "Part B\nCircle (or describe) all of the subgames of this game."
+  },
+  {
+    "objectID": "assignments/02-problem-set.html#part-c-1",
+    "href": "assignments/02-problem-set.html#part-c-1",
+    "title": "Problem Set 2",
+    "section": "Part C",
+    "text": "Part C\nSolve for the “rollback equilibrium” using backwards induction."
+  },
+  {
+    "objectID": "assignments/02-problem-set.html#part-d-1",
+    "href": "assignments/02-problem-set.html#part-d-1",
+    "title": "Problem Set 2",
+    "section": "Part D",
+    "text": "Part D\nDraw this game in normal form. Find all Nash equilibria.1 Which is subgame perfect, and why?"
+  },
+  {
+    "objectID": "assignments/02-problem-set.html#part-e",
+    "href": "assignments/02-problem-set.html#part-e",
+    "title": "Problem Set 2",
+    "section": "Part E",
+    "text": "Part E\nSuppose Boeing, who has to move second, announces the following threat to Airbus makes its initial decision: if Airbus produces a new plane, Boeing will respond by also producing a new plane. Is this threat credible? Why or why not?"
+  },
+  {
+    "objectID": "assignments/02-problem-set.html#part-f",
+    "href": "assignments/02-problem-set.html#part-f",
+    "title": "Problem Set 2",
+    "section": "Part F",
+    "text": "Part F\nThe U.S. government considers the aircraft industry to be of strategic importance. Suppose Boeing lobbies the government to gain a subsidy to produce the plane. Boeing’s payoff increases by \\(s\\) only when it chooses to produce the new plane. How big must \\(s\\) need to be in order to make Boeing’s threat in Part E credible?"
+  },
+  {
+    "objectID": "assignments/02-problem-set.html#optional-bonus-question-9-10-points",
+    "href": "assignments/02-problem-set.html#optional-bonus-question-9-10-points",
+    "title": "Problem Set 2",
+    "section": "Optional Bonus Question 9 (10 points)",
+    "text": "Optional Bonus Question 9 (10 points)\nThis question will show what happens as we relax some of the assumptions of Cournot competition. Crude oil is transported across the globe in enormous tanker ships called Very Large Crude Carriers (VLCCs). By 2001, more than 92% of all new VLCCs were built in South Korea and Japan. Assume that the price of new VLCCs (in millions of dollars) is determined by the inverse demand function between the duopoly of Korea and Japan:\n\\[\\begin{align*}p&=180-Q\\\\\nQ&=q_{Korea}+q_{Japan}\\\\\n\\end{align*}\\]\nAssume the marginal cost of building each ship is $30 (million) in both Korea and Japan.\n\nPart A\nFind each country’s best response function, the Nash equilibrium quantity produced by each country, the market price, and the profit for each country.\n\n\nPart B\nLabor costs in Korean shipyards are actually lower than in Japan. Assume now the marginal cost per ship in Japan is $40 (million) and only $20 (million) in Korea. Find the new best response functions, the Nash equilibrium quantity produced by each country, the market price, and the profit for each country.\n\n\nPart C\nSuppose China decides to enter the VLCC construction market. The duopoly now becomes a triopoly, so that the market inverse demand function is:\n\\[\\begin{align*}\np&=180-Q\\\\\nQ&=q_{Korea}+q_{Japan}+q_{China}\\\\\n\\end{align*}\\]\nAssume for simplicity that all countries face the same marginal cost of $30 (million) per ship. Find the new best response functions, the Nash equilibrium quantity produced by each country, the market price, and the profit for each country. Hint: proceed as before, such that you get three reaction functions with three unknowns.\n\n\nPart D\nCompare the quantity, price, and profits between parts A, B, and C"
+  },
+  {
     "objectID": "assignments/index.html",
     "href": "assignments/index.html",
     "title": "Assignment Details",
@@ -385,6 +497,13 @@
     "text": "Readings\n\n Ch. 8.1-8.2, 7 in Church & Ware, 2000"
   },
   {
+    "objectID": "content/2.2-content.html#practice",
+    "href": "content/2.2-content.html#practice",
+    "title": "2.2 — Cournot Competition — Class Content",
+    "section": " Practice",
+    "text": "Practice\nToday you will be working on practice problems:\n\n Practice Problems\n Answer Key"
+  },
+  {
     "objectID": "content/2.2-content.html#slides",
     "href": "content/2.2-content.html#slides",
     "title": "2.2 — Cournot Competition — Class Content",
@@ -411,6 +530,13 @@
     "title": "2.3 — Bertrand Competition — Class Content",
     "section": " Readings",
     "text": "Readings\n\n Ch. 8.1-8.2, 7 in Church & Ware, 2000"
+  },
+  {
+    "objectID": "content/2.3-content.html#practice",
+    "href": "content/2.3-content.html#practice",
+    "title": "2.3 — Bertrand Competition — Class Content",
+    "section": " Practice",
+    "text": "Practice\nToday you will be working on practice problems:\n\n Practice Problems\n Answer Key"
   },
   {
     "objectID": "content/2.3-content.html#slides",
@@ -455,9 +581,37 @@
     "text": "Readings\n\n Ch. 7, 9, 10 in Church & Ware, 2000\n\n\nRecommended/Referenced Readings\n\n Stigler, 1964, “A Theory of Oligopoly”\n\nChapter 7 is a good overview of static game theory - read it if you have not yet, or want some more of the basics. We will focus simply on Nash equilibrium and the possibility of multiple Nash equilibria.\nChapter 9 is a good overview of sequential games and repeated games, which we will introduce today.\nChapter 10 discusses oligopoly in light of how collusion can be sustained in dynamic settings."
   },
   {
+    "objectID": "content/3.2-content.html#practice",
+    "href": "content/3.2-content.html#practice",
+    "title": "3.2 — Stackelberg Competition — Class Content",
+    "section": " Practice",
+    "text": "Practice\nToday you will be working on practice problems:\n\n Practice Problems\n Answer Key"
+  },
+  {
     "objectID": "content/3.2-content.html#slides",
     "href": "content/3.2-content.html#slides",
     "title": "3.2 — Stackelberg Competition — Class Content",
+    "section": " Slides",
+    "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
+  },
+  {
+    "objectID": "content/3.3-content.html#overview",
+    "href": "content/3.3-content.html#overview",
+    "title": "3.3 — Entry Deterrence and Commitment — Class Content",
+    "section": " Overview",
+    "text": "Overview\nToday we discuss entry deterrence, entry games, subgame perfection, and commitments in game theory."
+  },
+  {
+    "objectID": "content/3.3-content.html#readings",
+    "href": "content/3.3-content.html#readings",
+    "title": "3.3 — Entry Deterrence and Commitment — Class Content",
+    "section": " Readings",
+    "text": "Readings\n\n Ch. 9, 13, 14 in Church & Ware, 2000\n\nChapter 9 covers sequential games, games in extensive form, subgames, and subgame perfection.\nChapter 13 covers strategic behavior, limit output/pricing, and entry deterrence.\nChapter 14 gives more detailed models of entry deterrence and contestable markets."
+  },
+  {
+    "objectID": "content/3.3-content.html#slides",
+    "href": "content/3.3-content.html#slides",
+    "title": "3.3 — Entry Deterrence and Commitment — Class Content",
     "section": " Slides",
     "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
   },
@@ -641,7 +795,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "This page contains all of the following resources for each class meeting:\n\n Content materials contains suggested readings, more details about assignments, math appendices, and other helpful resources. I suggest you view these before each class.\n Slides are “Xaringan” presentations that can be opened in any browser (You can find a downloadable PDF in each content page)\n Assignments are listed with due dates\n\nPlease note that the lesson numbers, topics, and titles (e.g. 1.1) are my design, and do not match up with the textbook!\nRelevant materials, if applicable will be posted before class meets and become colored links.\n\n\n\n\n\n\n\n\n\n\n\n\n\nI. Models of Markets\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nTue Jan 24\n\n\n1.1 — Introduction to I.O.\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Jan 26\n\n\n1.2 — Technology and Costs\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Jan 31\n\n\n1.3 — Perfect Competition I\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Feb 02\n\n\n1.4 — Perfect Competition II\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Feb 07\n\n\n1.5 — Monopoly I\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Feb 09\n\n\n1.6 — Monopoly II\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Feb 14\n\n\n1.7 — Pricing Strategies\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Feb 16\n\n\n1.8 — Factor Markets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 1 due Thurs Feb 23\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nII. Oligopoly & Static Game Theory\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nTue Feb 21\n\n\n2.1 — Imperfect Competition & Collusion\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Feb 23\n\n\n2.2 — Cournot Competition\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Mar 02\n\n\n2.3 — Bertrand Competition\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIII. Strategic Behavior & Dynamic Games\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nTue Mar 07\n\n\n3.1 — Dynamic Games & Collusion\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Mar 09\n\n\n3.2 — Stackelberg Competition\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Mar 23\n\n\n3.3 — Entry Deterrence & Commitment\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMidterm Exam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIV. Theory of the Firm & Economic Organization\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nThu Mar 23\n\n\n3.1 — The Division of Labor\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Mar 28\n\n\n3.2 — The Firm as Nexus of Contracts\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Mar 30\n\n\n3.3 — Asset Specificity & Vertical Integration\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Apr 04\n\n\n3.4 — Contractual Restraints & Property Rights\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nV. Regulation & Applications\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nTue Apr 18\n\n\n4.1 — Theories of Regulation\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Apr 20\n\n\n4.2 — Measuring Market Power\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Apr 25\n\n\n4.3 — Antitrust I: The Law\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Apr 27\n\n\n4.4 — Antitrust II: The Paradox\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue May 02\n\n\n4.5 — Antitrust III: The Hipsters\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu May 04\n\n\n4.6 — Natural Monopoly Regulation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIndustry Report"
+    "text": "This page contains all of the following resources for each class meeting:\n\n Content materials contains suggested readings, more details about assignments, math appendices, and other helpful resources. I suggest you view these before each class.\n Slides are “Xaringan” presentations that can be opened in any browser (You can find a downloadable PDF in each content page)\n Assignments are listed with due dates\n\nPlease note that the lesson numbers, topics, and titles (e.g. 1.1) are my design, and do not match up with the textbook!\nRelevant materials, if applicable will be posted before class meets and become colored links.\n\n\n\n\n\n\n\n\n\n\n\n\n\nI. Models of Markets\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nTue Jan 24\n\n\n1.1 — Introduction to I.O.\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Jan 26\n\n\n1.2 — Technology and Costs\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Jan 31\n\n\n1.3 — Perfect Competition I\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Feb 02\n\n\n1.4 — Perfect Competition II\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Feb 07\n\n\n1.5 — Monopoly I\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Feb 09\n\n\n1.6 — Monopoly II\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Feb 14\n\n\n1.7 — Pricing Strategies\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Feb 16\n\n\n1.8 — Factor Markets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 1 due Thurs Feb 23\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nII. Oligopoly & Static Game Theory\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nTue Feb 21\n\n\n2.1 — Imperfect Competition & Collusion\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Feb 23\n\n\n2.2 — Cournot Competition\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Mar 02\n\n\n2.3 — Bertrand Competition\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIII. Strategic Behavior & Dynamic Games\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nTue Mar 07\n\n\n3.1 — Dynamic Games & Collusion\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Mar 09\n\n\n3.2 — Stackelberg Competition\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Mar 21\n\n\n3.3 — Entry Deterrence & Commitment\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 2 due Tues Mar 28\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMidterm Exam Mar 28-31\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIV. Theory of the Firm & Economic Organization\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nThu Mar 23\n\n\n3.1 — The Division of Labor\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Mar 30\n\n\n3.2 — The Firm as Nexus of Contracts\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Apr 04\n\n\n3.3 — Asset Specificity & Vertical Integration\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Apr 06\n\n\n3.4 — Contractual Restraints & Property Rights\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nV. Regulation & Applications\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nTue Apr 11\n\n\n4.1 — Theories of Regulation\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Apr 13\n\n\n4.2 — Measuring Market Power\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Apr 18\n\n\n4.3 — Antitrust I: The Law\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Apr 20\n\n\n4.4 — Antitrust II: The Paradox\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Apr 25\n\n\n4.5 — Antitrust III: The Hipsters\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Apr 27\n\n\n4.6 — Natural Monopoly Regulation\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue May 02\n\n\n4.6 — TBD\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu May 04\n\n\n4.6 — Presentations & Review\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIndustry Report"
   },
   {
     "objectID": "syllabus.html",

@@ -242,7 +242,7 @@ coke<-ggplot(tibble(x=c(0,10)), aes(x=x))+
                      expand=c(0,0))+
   theme_light(base_family = "Fira Sans Condensed", base_size=20)+
   labs(x = "<span style = 'color:blue'>Pepsi's Output, q<sub>p</sub></span>",
-       y = "<span style = 'color:red'>Coke's Output, q<sub>p</sub></span>")+
+       y = "<span style = 'color:red'>Coke's Output, q<sub>c</sub></span>")+
   theme(axis.title.x = element_markdown(),
         axis.title.y = element_markdown())
 coke+
@@ -434,7 +434,7 @@ coke<-ggplot(tibble(x=c(0,10)), aes(x=x))+
                      expand=c(0,0))+
   theme_light(base_family = "Fira Sans Condensed", base_size=20)+
   labs(x = "<span style = 'color:blue'>Pepsi's Output, q<sub>p</sub></span>",
-       y = "<span style = 'color:red'>Coke's Output, q<sub>p</sub></span>")+
+       y = "<span style = 'color:red'>Coke's Output, q<sub>c</sub></span>")+
   theme(axis.title.x = element_markdown(),
         axis.title.y = element_markdown())
 coke+
@@ -512,7 +512,7 @@ sketch = htmltools::withTags(table(
       th(colspan = 2, 'Bertrand (p = $0.50)'),
       th(colspan = 2, 'Cournot (p = $2.00)'),
       th(colspan = 2, 'Stackelberg (p = $1.63)'),
-      th(colspan = 2, 'Collusion (p = $1.75)')
+      th(colspan = 2, 'Collusion (p = $2.75)')
     ),
     tr(
       lapply(rep(c('output', 'profit'), 4), th)

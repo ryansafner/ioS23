@@ -1,0 +1,49 @@
+---
+title: "3.3 — Entry Deterrence and Commitment — Class Content"
+execute:
+  freeze: auto
+---
+
+```{r, echo = F}
+source(here::here("slides", "slide-links.R"))
+```
+
+::: {.callout-note appearance=minimal}
+# Meeting Date
+*Tuesday, March 21, 2023*
+:::
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+Today we start looking at what is known in economics as "the theory of the firm." We begin with asking the question, "if markets are so great, why are there firms?" We look at Adam Smith's idea of the division of labor, and when specialization makes sense. Then we look at Coase's key contribution - that firms exist because there are transaction costs of using markets. We wrap up with Stigler's relation of the division of labor to the life cycle of industries.
+
+For the next few classes, we will look at other aspects of the theory of the firm, and address why firms look and behave the way they do, by understanding the economic problems that organizations try to solve.
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+- [<i class="fas fa-file-pdf"></i> Coase (1937), "The Nature of the Firm"](/files/readings/Coase-1937.pdf)
+- [<i class="fas fa-external-link-square-alt"></i> Munger (2007), "I'll Stick With These: Some Sharp Observations on the Division of Labor"](https://www.econlib.org/library/Columns/y2007/Mungerpins.html)
+- [<i class="fas fa-external-link-square-alt"></i> Smith (1776), *Wealth of Nations*, Book I, Chs. 1-3](https://www.econlib.org/library/Smith/smWN.html)
+- [<i class="fas fa-file-pdf"></i> Stigler (1951), "The Division of Labor is Limited by the Extent of the Market"](/files/readings/Stigler-1951.pdf)
+
+The free IO textbook does a good job covering the theory of the firm in Chapter 3:
+
+- <i class="fas fas fa-book"></i> Ch. 3.2 in @Church^[Again, there is [a free PDF](https://works.bepress.com/jeffrey_church/23/) from the authors.]
+
+Much of the rest of their discussion in Chapter 3 we will cover over the next few classes (asset specificity theory, vertical integration, etc.)
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides. 
+
+::: callout-tip
+You can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+:::
+
+I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+```{r}
+#| echo: false
+#| output: asis
+
+slide_links("4.1-slides")
+```

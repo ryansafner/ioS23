@@ -53,6 +53,18 @@ class: title-slide
 
 ---
 
+class: inverse
+
+# Outline
+
+### [Where are the Firms in Economic Theory?](#3)
+### [Why Are There Firms?](#11)
+### [The Division of Labor](#14)
+### [The Division of Labor and Firms](#35)
+### [The Division of Labor and Life Cycle of Industries](#56)
+
+---
+
 class: inverse, center, middle
 
 # Where are the Firms in Economic Theory?
@@ -110,14 +122,14 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
        caption = expression(paste(C(q)==15*q^2+8*q+45)))+
   theme_classic(base_family = "Fira Sans Condensed", base_size=20)
 ```
-]
+
 
 ---
 
 # Firms in Economics
 
 .center[
-![](../images/farmer_profit_maximization.png)
+![:scale 70%](../images/farmer_profit_maximization.png)
 ]
 
 ---
@@ -212,7 +224,7 @@ Adam Smith
 
 .right-column[
 
-> "The greatest improvement in the productive powers of labour, and the greater part of the skill, dexterity, and judgment with which it is any where directed, or applied, seem to have been the effects of the **division of labour**," (Book I, Chapter 1).
+> "The greatest improvement in the productive powers of labour, and the greater part of the skill, dexterity, and judgment with which it is any where directed, or applied, seem to have been the effects of the .hi[division of labour]," (Book I, Chapter 1).
 ]
 
 .source[Smith, Adam, 1776, [*An Enquiry into the Nature and Causes of the Wealth of Nations*](https://www.econlib.org/library/Smith/smWN.html)]
@@ -273,7 +285,7 @@ Adam Smith
 
 .right-column[
 .smallest[
-> "To take an example...from a very trifling manufacture...the trade of the **pin-maker**. [I]n the way in which this business is now carried on, not only the whole work is a peculiar trade, but it is divided into a number of branches, of which the greater part are likewise peculiar trades. One man draws out the wire, another straights it, a third cuts it, a fourth points it, a fifth grinds it at the top for receiving the head...and **the important business of making a pin is, in this manner, divided into about eighteen distinct operations**...**Ten men only were employed [and they] could make among them upwards of forty-eight thousand pins in a day...But if they had all wrought separately and independently [they] certainly could not each of them have made twenty, perhaps not one pin in a day...**" (Book I, Chapter 1).
+> "To take an example...from a very trifling manufacture...the trade of the .hi[pin-maker]. [I]n the way in which this business is now carried on, not only the whole work is a peculiar trade, but it is divided into a number of branches, of which the greater part are likewise peculiar trades. One man draws out the wire, another straights it, a third cuts it, a fourth points it, a fifth grinds it at the top for receiving the head...and .hi[the important business of making a pin is, in this manner, divided into about eighteen distinct operations]....hi[Ten men only were employed [and they] could make among them upwards of forty-eight thousand pins in a day...But if they had all wrought separately and independently [they] certainly could not each of them have made twenty, perhaps not one pin in a day...]" (Book I, Chapter 1).
 
 ]
 ]
@@ -305,14 +317,14 @@ Adam Smith
 
 .right-column[
 
-> "This **division of labour**, from which so many advantages are derived, **is not originally the effect of any human wisdom**, which foresees and intends that general opulence to which it gives occasion. It is the necessary, though very slow and gradual, **consequence of a certain propensity in human nature** which has in view no such extensive utility; **the propensity to truck, barter, and exchange one thing for another,**" (Book I, Chapter 2).
+> "This .hi[division of labour], from which so many advantages are derived, .hi[is not originally the effect of any human wisdom], which foresees and intends that general opulence to which it gives occasion. It is the necessary, though very slow and gradual, .hi[consequence of a certain propensity in human nature] which has in view no such extensive utility; .hi[the propensity to truck, barter, and exchange one thing for another,]" (Book I, Chapter 2).
 ]
 
 .source[Smith, Adam, 1776, [*An Enquiry into the Nature and Causes of the Wealth of Nations*](https://www.econlib.org/library/Smith/smWN.html)]
 
 ---
 
-# The Division of Labor Is Limited By the Extent of the Market
+# DOL Is Limited By the Extent of the Market
 
 .left-column[
 .center[
@@ -326,7 +338,7 @@ Adam Smith
 
 .right-column[
 
-> "As it is the power of exchanging that gives occasion to the division of labour, so **the extent of this division must always be limited by...the extent of the market.** When the market is very small, no person can have any encouragement to dedicate himself entirely to one employment, for want of the power to exchange all that surplus part of the produce of his own labour, which is over and above his own consumption, for such parts of the produce of other men's labour as he has occasion for," (Book I, Chapter 3).
+> "As it is the power of exchanging that gives occasion to the division of labour, so .hi[the extent of this division must always be limited by...the extent of the market.] When the market is very small, no person can have any encouragement to dedicate himself entirely to one employment, for want of the power to exchange all that surplus part of the produce of his own labour, which is over and above his own consumption, for such parts of the produce of other men's labour as he has occasion for," (Book I, Chapter 3).
 ]
 
 .source[Smith, Adam, 1776, [*An Enquiry into the Nature and Causes of the Wealth of Nations*](https://www.econlib.org/library/Smith/smWN.html)]
@@ -373,7 +385,7 @@ Allyn Young
 
 .smaller[
 
-> "The important thing, of course, is that **with the division of labour a group of complex processes is transformed into a succession of simpler processes, some of which, at least, lend themselves to the use of machinery**. In the use of machinery and the adoption of indirect processes there is a further division of labour, the economies of which are again **limited by the extent of the market**. **It would be wasteful to make a hammer to drive a single nail; it would be better to use whatever awkward implement lies conveniently at hand**," (p.530).
+> "The important thing, of course, is that .hi[with the division of labour a group of complex processes is transformed into a succession of simpler processes, some of which, at least, lend themselves to the use of machinery]. In the use of machinery and the adoption of indirect processes there is a further division of labour, the economies of which are again .hi[limited by the extent of the market]. .hi[It would be wasteful to make a hammer to drive a single nail; it would be better to use whatever awkward implement lies conveniently at hand]," (p.530).
 
 ]
 ]
@@ -397,7 +409,7 @@ Allyn Young
 
 .smaller[
 
-> "It would be wasteful to furnish a factory with an elaborate equipment of specially constructed jigs, gauges, lathes, drills, presses and conveyors to build a hundred automobiles; it would be better to rely mostly upon tools and machines of standard types, so as to make a relatively larger use of directly applied and a relatively smaller use of indirectly-applied labour. **[Henry] Ford's methods would be absurdly uneconomical if his output were very small**, and would be unprofitable even if his output were what many other manufacturers of automobiles would call large.," (p.530).
+> "It would be wasteful to furnish a factory with an elaborate equipment of specially constructed jigs, gauges, lathes, drills, presses and conveyors to build a hundred automobiles; it would be better to rely mostly upon tools and machines of standard types, so as to make a relatively larger use of directly applied and a relatively smaller use of indirectly-applied labour. .hi[[Henry] Ford's methods would be absurdly uneconomical if his output were very small], and would be unprofitable even if his output were what many other manufacturers of automobiles would call large.," (p.530).
 
 ]
 ]
@@ -449,7 +461,7 @@ Allyn Young
 
 ---
 
-# Division of Labor, Productivity, & Employment
+# DOL, Productivity, & Employment
 
 .left-column[
 .center[
@@ -470,7 +482,7 @@ Michael Munger
 
 ---
 
-# Division of Labor, Productivity, & Employment: Example
+# DOL, Productivity, & Employment: Example
 
 .center[
 ![:scale 60%](https://www.dropbox.com/s/5mnrzbexpo7qa5w/ditchsticks.jpg?raw=1)
@@ -481,7 +493,7 @@ Michael Munger
 
 ---
 
-# Division of Labor, Productivity, & Employment: Example
+# DOL, Productivity, & Employment: Example
 
 .center[
 ![:scale 55%](https://www.dropbox.com/s/71rgix88kstke7u/ditcheshovels.jpg?raw=1)
@@ -492,7 +504,7 @@ Michael Munger
 
 ---
 
-# Division of Labor, Productivity, & Employment: Example
+# DOL, Productivity, & Employment: Example
 
 .center[
 ![:scale 60%](https://www.dropbox.com/s/444dszwtburrud1/backhoe.jpg?raw=1)
@@ -503,7 +515,7 @@ Michael Munger
 
 ---
 
-# Division of Labor, Productivity, & Employment: A Framework
+# DOL, Productivity, & Employment: A Framework
 
 .pull-left[
 .center[
@@ -521,7 +533,7 @@ Michael Munger
 
 ---
 
-# Division of Labor, Productivity, & Employment
+# DOL, Productivity, & Employment
 
 .left-column[
 .center[
@@ -533,7 +545,7 @@ Michael Munger
 
 .right-column[
 .smaller[
-> "Today, most pin manufacture has moved to Asia. Your first impulse might be to nod and think, ``Sure, cheap labor.'' But that is not an important part of the story. Pin manufacturing is highly capital intensive. Smith's insight on the division of labor, and Howe's idea of making the process continuous and making labor more productive, have combined to expand the market for Chinese pins to the whole world. The number of workers engaged in pin manufacture in China has \emph{fallen}, not risen, as pin output has expanded. And wages have increased more than ten-fold, as productivity has exploded"
+> "Today, most pin manufacture has moved to Asia. Your first impulse might be to nod and think, ``Sure, cheap labor.'' But that is not an important part of the story. Pin manufacturing is highly capital intensive. Smith's insight on the division of labor, and Howe's idea of making the process continuous and making labor more productive, have combined to expand the market for Chinese pins to the whole world. The number of workers engaged in pin manufacture in China has *fallen*, not risen, as pin output has expanded. And wages have increased more than ten-fold, as productivity has exploded"
 
 ]
 ]
@@ -544,18 +556,8 @@ Michael Munger
 
 # Division of Labor, Productivity, & Employment
 
-
 .center[
-![:scale 60%](https://www.dropbox.com/s/v3x5wf0xsb7f190/chinalayoffs.png?raw=1)
-]
-
----
-
-# Division of Labor, Productivity, & Employment
-
-
-.center[
-![:scale 60%](https://www.dropbox.com/s/fnr6leus3nf8r7p/manufacturinghistory.jpg?raw=1)
+![:scale 60%](../images/manufacturing.png)
 ]
 
 ---
@@ -995,12 +997,13 @@ Economics Nobel 1991]
 
 .right-column[
 
-- Coase's answer to why there are firms is very general, almost tautological, what about the details?
+- Coase’s answer to why there are firms is very general, almost tautological, what about the details?
 
 1. Stigler (1951) theory of the division of labor
-2. Nexus of Contract Theory (Alchian and Demsetz)
+2. Nexus of contract theory (Alchian, Demsetz)
 3. Asset specificity theory (Williamson)
-4. Agency Costs Theory (Jensen)
+4. Agency costs theory (Jensen)
+5. Property rights view (Hart, Grossman)
 ]
 
 ---

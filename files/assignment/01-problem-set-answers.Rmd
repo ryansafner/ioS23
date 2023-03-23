@@ -1,0 +1,1029 @@
+---
+title: "Problem Set 1"
+author: "ECON 326 - Industrial Organization - Spring 2023"
+date: "Answer Key"
+output:
+  html_document:
+    df_print: paged
+    toc: true 
+    toc_depth: 3
+    toc_float: true
+    code_folding: show
+    highlight: tango
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE)
+```
+
+# Competitive Markets
+
+## Question 1
+
+In a competitive industry, why are economic profits normal (zero) in the long run? What about if firms are not identical, and have different costs?
+
+---
+
+Profits are zero in the long run because entry and exit are free in competitive markets. Any firms earning positive (supernormal) profits in an industry will attract entrants, who want profits of their own. This will increase the supply and will continue until all profits are squeezed to zero (and then no more firms enter). Conversely, firms earning negative profits (loses) will exit the industry over the long run, decreasing the supply, and firms will continue to do this until losses fall back to zero. Thus, the stable equilibrium condition is that an industry tends to earn profits of zero, as any deviation would cause entry and exit until profits/losses get competed back to zero.
+
+Firms that have rent-generating inputs see lower costs, and therefore higher profits. The problem is, these rent-generating inputs can be "poached" and enticed to work for other firms. This competition between firms pushes up prices for those rent-generating inputs. This raises the costs for those firms employing those inputs, in the form of higher salaries, higher lease prices, etc., whatever it takes to keep the input working for the firm and not a different firm. In equilibrium, rents rise until they push costs to equal revenues, and hence, profits to equal 0.
+
+---
+
+## Question 2
+
+Assume that consumers view tax preparation services as undifferentiated among producers, and that there are hundreds of companies offering tax preparation. The current market equilibrium price is $120. Amy's Audits is a local tax preparation firm that has a daily short-run cost structure given by:
+
+$$\begin{align*}
+C(q)&=100+4q^2\\
+MC(q)&=8q\\
+\end{align*}$$
+
+### Part A
+How many tax returns should Amy prepare each day if her goal is to maximize profits?
+
+---
+
+Amy is in a perfectly competitive market, so she will prepare up to the quantity where $p=MR(q)=MC(q)$.
+
+$$\begin{aligned}
+	p&=MC(q)\\
+	120&=8q\\
+	15&=q^*\\
+	\end{aligned}$$
+
+She will prepare 15 tax returns per day to maximize profits.
+	
+The following graph will help visualize all the parts of this question:
+
+```{r, fig.height=4}
+mc_joe=function(x){8*x}
+ac_joe=function(x){100/x+4*x}
+avc_joe=function(x){4*x}
+price=function(x){120}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_rect(xmin=0,xmax=15,ymin=66.67,ymax=120, fill="green", alpha=0.3)+
+  stat_function(fun=price, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=18,y=price(18)), color = "blue", label=expression(MR(q)), size = 3)+
+  stat_function(fun=mc_joe, geom="line", size=2, color = "red")+
+    geom_label(aes(x=18,y=mc_joe(18)), color = "red", label=expression(MC(q)), size = 3)+
+  stat_function(fun=avc_joe, geom="line", size=2, color = "brown")+
+    geom_label(aes(x=18,y=avc_joe(18)), color = "brown", label=expression(AVC(q)), size = 3)+
+  stat_function(fun=ac_joe, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=18,y=ac_joe(18)), color = "orange", label=expression(AC(q)), size = 3)+
+  geom_hline(yintercept=40, size=1, linetype="dashed")+
+  geom_label(x=17,y=40, label="Break Even Price= $40.00", size =3, color="orange")+
+  geom_segment(x=15,xend=15,y=0,yend=120, size=1, linetype="dotted")+
+  geom_segment(x=0,xend=15,y=66.67,yend=66.67, size=1, linetype="dotted")+
+  geom_hline(yintercept=0, size=1, linetype="dashed")+
+  geom_label(x=17,y=3, label="Shutdown Price= $0.00", size =3, color="brown")+
+    scale_x_continuous(breaks=seq(0,20,2),
+                       limits=c(0,20),
+                       expand=c(0,0))+
+  scale_y_continuous(breaks=seq(0,140,20),
+                     limits=c(0,140),
+                     expand=c(0,0))+
+  
+  #geom_segment(x=0,xend=0,y=0,yend=23, color="red", size=5)+
+  #geom_segment(x=0,xend=5,y=23,yend=23, color="red", size=3.5)+
+  #stat_function(fun=mc, xlim=c(5,10), geom="line", size=3.5, color = "red")+
+   # geom_label(aes(x=2,y=23), color = "red", label="SUPPLY", size = 5)+
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+  labs(x = "Output, q",
+       y = "Per-Unit Costs ($)")+
+  theme_light(base_size=14)
+```
+
+---
+
+### Part B
+How much profit will she earn each day?
+
+---
+
+Profit is total revenues minus total costs:
+
+$$\begin{aligned}
+	\pi &= pq-C(q)\\
+	\pi &=(120)(15)-(100+4q^2)\\
+	\pi &= 1800-(100+4(15)^2)\\
+	\pi &= 1800-1000\\
+	\pi &= \$800\\
+	\end{aligned}$$
+
+Her profits are $800 (per day).
+	
+Alternatively, we could calculate profits as price minus average costs times quantity. First we would need to find average costs at $q^*=15$:
+
+$$\begin{aligned}
+	AC(q)&=\frac{100}{q}+4q\\
+	AC(15)&=\frac{100}{15}+4(15)\\
+	AC(15)&\approx 6.67+60\\
+	AC(15)&\approx 66.67\\
+	\end{aligned}$$
+
+Knowing this, we plug it into the formula for profits using price and average costs:
+
+$$\begin{aligned}
+	\pi &=(p-AC(q^*))q^*\\
+	\pi &\approx(120-66.67)15\\
+	\pi &\approx(53.33)15\\
+	\pi &\approx \$800\\
+	\end{aligned}$$
+
+---
+
+### Part C
+At what market price would she break even?
+
+---
+
+A firm breaks even where its Average cost equals its marginal cost. We aren't given average cost, so we first need to find it by taking total cost and dividing by quantity:
+
+$$\begin{aligned}
+	AC(q)&=\frac{C(q)}{q}\\
+	AC(q)&=\frac{100+4q^2}{q}\\
+	AC(q)&=\frac{100}{q}+4q\\
+	\end{aligned}$$
+
+Now we know that average cost is minimized where:
+
+$$\begin{aligned}
+	AC(q)&=MC(q)\\
+	\frac{100}{q}+4q&=8q	\\
+	\frac{100}{q}&=4q\\
+	100&=4q^2	\\
+	25&=q^2	\\
+	5&=q^*\\
+	\end{aligned}$$
+
+We know the quantity but we need to find the _price_ where the firm breaks even, so plugging this back into average cost:
+
+$$\begin{aligned}
+	AC(q)&=\frac{100}{q}+4q\\
+	AC(5)&=\frac{100}{(5)}+4(5)\\
+	AC(5)&=20+20\\
+	AC(5)&=40\\
+	\end{aligned}$$
+
+Amy will break even, and earn normal profits of 0 if the market price were \$40 per tax return.
+
+---
+
+### Part D
+Below what hypothetical price would she shut down in the short run?
+
+---
+
+A firm shuts down in the short run when it can no longer cover its average variable costs. We know the minimum average variable cost happens when it is equal to marginal cost. Since we are not given it, we first need to find average variable costs.
+
+$$\begin{aligned}
+	AVC(q)&=\frac{VC(q)}{q}\\
+	AVC(q)&=\frac{4q^2}{q}\\
+	AVC(q)&=4q\\	
+	\end{aligned}$$
+
+Now we know $AVC$ is minimized where:
+
+$$\begin{aligned}
+	AVC(q) &= MC(q)\\	
+	4q &= 8q \\
+	q&=0	\\
+	\end{aligned}$$
+
+Average variable cost is minimized when Amy produces no output.
+	
+Let's check and see what price has an output of 0, by using either the $AVC(q)$ or $MC(q)$ curves:
+
+$$\begin{aligned}
+	AVC(q)&=4q\\
+	AVC(0)&=4(0)\\
+	AVC(0)&=\$0\\	
+	\end{aligned}$$
+	
+So she would shut down only when the price is less than $0 (which can't happen). This happens when the AVC function is not a curve, but a straight line starting at the origin.
+
+---
+
+### Part E
+Sketch a graph and be sure to label everything you found in parts A-D. 
+
+---
+
+See graph above.
+
+---
+
+### Part F
+What is Amy's supply curve in the *short run*? Write a function or describe it via the graph in E.
+
+---
+
+Her short run supply curve is her marginal cost curve above her shut down price (minimum of AVC, or $0).
+
+---
+
+### Part G
+What is Amy's supply curve in the *long run*? Write a function or describe it via the graph in E.
+
+---
+
+Her long run supply curve is her marginal cost curve above her break even price (minimum of AC, or \$40)
+
+---
+
+# Monopoly
+
+## Question 3
+
+What is the difference between allocative (in)efficiency, productive (in)efficiency, rent-seeking, and X-inefficiency?
+
+---
+
+_Allocative efficiency_ describes the efficiency of how resources are allocated: resources should be allocated to their highest-valued uses. The practical way to measure this is economic surplus, consumer surplus [The difference between the maximum prices buyers are willing to pay, and the market price they actually pay, i.e. the triangular area between the Demand curve and the market price to the left of equilibrium quantity.] plus producer surplus [The difference between the minimum prices sellers are willing to accept, and the market price they actually receive, i.e. the triangular area between the Supply curve and the market price to the left of equilibrium quantity.] In equilibrium in competitive markets, firms are all charging $p=MC$, goods are being produced to the point where the marginal benefit to society (Demand) is equal to the marginal cost to society. At this point, total economic surplus is maximized.
+
+A monopolist, which produces less output at a higher price reduces consumer surplus (it transfers some of it into profit) and creates deadweight loss.
+
+_Productive efficiency_ is maximized when a firm is producing at the least-cost technology. In graphical terms, firms are producing at the minimum of their average cost curves (minimum efficient scale). In competitive markets, this is achieved in long run equilibrium, since competitive firms always charge $p=MC$, and long run equilibrium requires firms to earn no profits (so no entry or exit occurs), which implies $p=AC$. Since $MC=p=AC$, by the mathematical relationship between marginal cost and average cost, average cost must be at its minimum where it is equal to marginal cost.
+
+_Rent-seeking_ is all the costly investments that firms will make to attain economic rents — returns above opportunity cost. In a market power context, this often refers to investing resources into creating barriers to entry, often by appealing to political authorities to eliminate competition.
+
+_X-efficiency_, or more to the point, X-inefficiency occurs where firms with market power get complacent or lazy, from lack of competition. This raises the firm's costs compared to what they otherwise would be where everyone is working at full capacity. As a monopoly, this will _further_ decrease output and raise the price (reducing consumer surplus and creating deadweight loss), reducing allocative efficiency.
+
+---
+
+## Question 4
+
+Sketch a graph of a monopoly with no fixed costs, and constant equivalent average & marginal costs. Label all of the following:
+
+- The equilibrium quantity and price if the market were competitive
+- The profit-maximizing quantity and price for the monopoly
+- The consumer surplus, profit, and deadweight loss under monopoly
+
+---
+
+```{r, fig.height=4}
+demand<-function(x){10-x}
+mr<-function(x){10-2*x}
+mc<-function(x){4}
+
+cs_1<-tribble(
+  ~x, ~y,
+  0,10,
+  0,4,
+  6,4
+)
+
+cs_2<-tribble(
+  ~x, ~y,
+  0,10,
+  0,7,
+  3,7
+)
+
+dwl<-tribble(
+  ~x, ~y,
+  3,7,
+  3,4,
+  6,4
+)
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_polygon(data=cs_2, aes(x=x,y=y), fill="blue", alpha=0.5)+
+  geom_polygon(data=dwl, aes(x=x,y=y), fill="black", alpha=0.5)+
+  geom_rect(xmin=0,xmax=3,ymin=4,ymax=7, fill="green",alpha=0.4)+
+  stat_function(fun=demand, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=9,y=demand(9)), color = "blue", label="Demand", size = 5)+
+  stat_function(fun=mr, geom="line", size=2, color = "purple")+
+    geom_label(aes(x=4,y=mr(4)), color = "purple", label="MR(q)", size = 5)+
+  stat_function(fun=mc, geom="line", size=2, color = "red")+
+    geom_label(aes(x=8,y=mc(8)), color = "red", label="MC(q)=AC(q)", size = 5)+
+  
+  geom_label(x=1,y=5,label="Profit", color="green")+
+  geom_label(x=1,y=8,label="CS", color="blue")+
+  geom_label(x=4,y=5,label="DWL", color="black")+
+  
+  geom_segment(x=6, xend=6, y=0, yend=4, size=1, linetype="dotted")+
+  geom_segment(x=0, xend=3, y=7, yend=7, size=1, linetype="dashed")+
+  geom_segment(x=3, xend=3, y=0, yend=7, size=1, linetype="dashed")+
+    scale_x_continuous(breaks=c(0,3,6),
+                       labels=c(0,expression(q[m]),expression(q[c])),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=c(0,4,7),
+                    labels=c(0,expression(q[c]),expression(q[m])),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(fill=F)+
+  labs(x = "Quantity",
+       y = "Price")+
+  theme_classic(base_size=14)
+```
+
+---
+
+## Question 5
+
+Explain what the goal of price discrimination is for a firm — *how* does price discrimination assist in maximizing profits? What are the conditions required for a firm to engage in price discrimination? What are the different types of price discrimination, and how does each work (briefly)?
+
+---
+
+The goal of price discrimination is for a firm to convert more of the consumer surplus it creates to profit for itself. Firms must meet the following two conditions in order to price discriminate:
+
+1. The firm must have market power.
+2. The firm must be able to prevent arbitrage or resale.
+
+Depending on the information it has about its customers, it can engage in three types of price discrimination:
+
+- 1st-Degree, where it charges each individual customer his or her maximum willingness to pay. This requires the firm to have enough information to determine each customer's demand before buying the product. This is called "perfect" price discrimination, because the firm successfully converts _all_ consumer surplus into profit.
+
+- 2nd-Degree, where the firm has no information about consumers before they buy, and so offers different options (often price-quantity bundles) for consumers to self-select.
+
+- 3rd-Degree, where the firm has some information about its customers, sufficient enough to separate customers into different segments of the market (based on their demand elasticity) and charge each segment a different price. More elastic segments will be charged lower prices, less elastic segments will be charged higher prices.
+
+---
+
+## Question 6
+You are a monopoly producer of tablets. You have a cost structure: 
+
+$$\begin{align*}
+C(q)&=10q^2+200q+1000\\
+MC(q)&=20q+200\\
+\end{align*}$$
+
+You estimate the demand for your tablets to be: 
+$$q=100-0.2p$$
+where $q$ is millions of tablets. 
+
+### Part A
+Find the function for your marginal revenues.
+
+---
+
+We first need to rearrange the demand function into a function of price $p$ in terms of quantity $q$.
+
+$$\begin{aligned}
+	q&=100-0.2p\\
+	q-100&=-0.2p\\
+	500-5q&=p\\
+	\end{aligned}$$
+
+Now that we have the inverse demand in the form of $p=a-bq$, we know that marginal revenue is just $MR(q)=a-2bq$, so:
+
+$$MR(q)=500-10q$$
+
+---
+
+### Part B
+How many tablets should you produce, and at what price, to maximize your profit?
+
+---
+
+We know to find the profit maximizing quantity, we must find $q^*: MR(q)=MC(q)$.
+
+$$\begin{aligned}
+	MR(q)&=MC(q)\\	
+	500-10q&=20q+200	\\
+	500&=30q+200\\
+	30&0=30q\\
+	10&=q^*\\
+	\end{aligned}$$
+
+The profit-maximizing output is 10 million smartphones.
+
+We plug the quantity into the firm's demand curve, as that tells us the most people are willing to pay for 10 units:
+
+$$\begin{aligned}
+	p&=500-5q\\
+ 	p&=500-5(10)\\
+ 	p^*&=\$450\\
+ 	\end{aligned}$$
+ 
+The profit-maximizing price is $450/smartphone.
+
+---
+
+### Part C
+What is the cost per tablets at the quantity you are producing?
+
+---
+
+First, we need to find the *average* cost function from the total cost function, by dividing it by quantity:
+
+$$\begin{aligned}
+	AC(q)&=\frac{C(q)}{q}\\
+	AC(q)&=\frac{10q^2+200q+1000}{q}\\
+	AC(q)&=10q+200+\frac{1000}{q}\\
+	\end{aligned}$$
+
+Now we plug in our quantity:
+
+$$\begin{aligned}
+	AC(q)&=10q+200+\frac{1000}{q}\\
+	AC(10)&=	10(10)+200+\frac{1000}{(10)}\\
+	AC(10)&=100+200+100\\
+	AC(10)&=\$400\\
+	\end{aligned}$$
+
+It costs $400 per smartphone, when we are producing 10 million smartphones.
+
+---
+
+### Part D
+What is your total profit?
+
+---
+
+Now we take the difference between price (average revenue) and average cost (which gives us profit per unit), and then multiply by quantity:
+
+$$\begin{aligned}
+		\pi &=[q-AC(q)]q\\
+		\pi&=[450-400]10\\
+		\pi&=[50]10\\
+		\pi&=\$500\\
+		\end{aligned}$$
+
+Our profit is $500 million.
+
+---
+
+### Part E
+What would be the lowest possible price you would need to charge to break even?
+
+---
+
+Recall to find the break-even price, we need to find the minimum of the firm's average cost curve. This happens when the marginal cost equals the average cost:
+
+$$\begin{aligned}
+		MC(q)&=AC(q) && \text{The minimum of AC intersects MC}\\
+		20q+200&=10q+200+\frac{1000}{q} && \text{Plug in the equations for MC and AC}\\
+		20q&=10q+\frac{1000}{q} && \text{Subtracting } 200 \text{ from both sides}\\
+		20q^2&=10q^2+1000 && \text{Multiplying both sides by }q\\
+		10q^2&=1000 && \text{Subtracting } 10q^2 \text{ from both sides}\\
+		q^2&=100 && \text{Dividing by } 10	\\
+		q&=10&&	\text{Square rooting}\\
+		\end{aligned}$$
+
+The minimum of the average cost curve is at 10 units. Plug this into either the original equations for $MC(q)$ or $AC(q)$ to find the price:
+
+$$\begin{aligned}
+		MC(q)&=20q+200\\
+		MC(10)&=20(10)+200\\
+		MC(10)&=200+200\\
+		MC(10)&=\$400\\	
+		\end{aligned}$$
+
+We've already seen that the average cost at 10 units is $400. In any case, $400 is the lowest price the firm could charge and break even.
+
+---
+
+### Part F
+How much of your price is markup over marginal cost?
+
+---
+
+The profit maximizing quantity was $q^*=10$, and price $p^*=\$450$, with a marginal cost $MC(10)=\$400$. (We saw that $MC(10)=AC(10)$ at 10 units, and the AC was \$400, so therefore, MC is also \$400). Recall the firm's markup rule and Lerner Index is:
+
+$$\begin{aligned}
+	\frac{p-MC}{p}&=L=-\frac{1}{\epsilon}\\
+	\frac{450-400}{400}&=L\\
+	0.125&=L	\\
+	\end{aligned}$$
+
+The markup is 12.5% of the price. This should be logical, as 12.5% is of $400 is $50, and the firm is charging $50 above marginal cost.
+
+---
+
+### Part G
+Calculate the elasticity of demand at your profit-maximizing price. 
+
+---
+
+Using our answer from part f, we can solve the Lerner index equation for $\epsilon$ to get the elasticity of demand at our price of $450:
+
+$$\begin{aligned}
+	0.125&=-\frac{1}{\epsilon}	\\
+	\epsilon &=-\frac{1}{0.125}\\
+	\epsilon &=-8\\
+	\end{aligned}$$
+
+Demand is elastic. Raising (lowering) the price by 1% would result in consumers buying 8% less (more).
+
+
+```{r}
+demand_rest<-function(x){500-5*x}
+mr_rest<-function(x){500-10*x}
+mc_rest<-function(x){20*x+200}
+ac_rest<-function(x){10*x+200+1000/x}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_rect(xmin=0,xmax=10,ymin=400,ymax=450, fill="green", alpha=0.4)+
+  stat_function(fun=demand_rest, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=20,y=demand_rest(20)), color = "blue", label="Demand", size = 4)+
+  stat_function(fun=mr_rest, geom="line", size=2, color = "purple")+
+    geom_label(aes(x=20,y=mr_rest(20)), color = "purple", label="MR(q)", size = 4)+
+  stat_function(fun=mc_rest, geom="line", size=2, color = "red")+
+    geom_label(aes(x=16,y=mc_rest(16)), color = "red", label="MC(q)", size = 4)+
+  stat_function(fun=ac_rest, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=20,y=ac_rest(20)), color = "orange", label="AC(q)", size = 4)+
+  geom_segment(x=0, xend=10, y=450, yend=450, size=1, linetype="dashed")+
+  geom_segment(x=10, xend=10, y=0, yend=450, size=1, linetype="dashed")+
+  geom_segment(x=0, xend=10, y=400, yend=400, size=1, linetype="dashed")+
+    scale_x_continuous(breaks=seq(0,22,2),
+                     limits=c(0,22),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,550,50),
+                     limits=c(0,550),
+                     labels=scales::dollar,
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(fill=F)+
+  labs(x = "Quantity",
+       y = "Price")+
+  theme_classic(base_size=14)
+```
+
+---
+
+## Question 7
+
+Consider a boat rental firm on a popular beach that has a constant average and marginal cost of $30 per boat hire. It has estimated that demand from Locals $(L)$ and demand from Tourists $(T)$ are:
+$$\begin{align*}
+q_L&=40-0.4p\\
+q_T&=25-0.1p\\
+\end{align*}$$
+
+### Part A
+
+Suppose it must charge a single price to all customers. Find the profit-maximizing quantity, price, and the total profits.
+
+---
+
+First, solve for total market demand, $Q$, by adding the individual market demands:
+
+$$\begin{aligned}
+Q&=q_L+q_T\\
+Q&=(40-0.4p)+(25-0.1p)\\
+Q&=65-0.5p\\
+\end{aligned}$$
+
+This is a demand function for the whole market, we need to find the _inverse_ demand function for the whole market, so solve this for $p$.
+
+$$\begin{aligned}
+Q&=65-0.5p\\
+Q+0.5p&=65\\
+0.5p&=65-Q\\
+p&=130-2Q\\
+\end{aligned}$$
+
+Now that we have inverse demand of this form, double the slope to derive the marginal revenue function:
+
+$$MR(q)=130-4Q$$
+
+Now, we can find the profit-maximizing quantity by setting:
+
+$$\begin{aligned}
+MR(q)&=MC(q)\\
+130-4Q&=30\\
+-4Q&=-100\\
+Q^*&=25\\
+\end{aligned}$$
+
+Plug this quantity into the inverse demand function to find the maximum price consumers are willing to pay:
+
+$$\begin{aligned}
+p&=130-2Q\\
+p&=130-2(25)\\
+p&=130-50\\
+p^*&=80\\
+\end{aligned}$$
+
+Finally, calculate profit:
+
+$$\begin{aligned}
+\pi&=(p^*-c)Q^*\\
+\pi&=(80-30)25\\
+\pi&=(50)25\\
+\pi&=1,250\\
+\end{aligned}$$
+
+See this on the graph below:
+
+```{r}
+pd_total_demand<-function(x){130-2*x}
+pd_total_mr<-function(x){130-4*x}
+pd_mc<-function(x){30}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_rect(xmin=0,xmax=25,ymin=30,ymax=80, fill="green",alpha=0.4)+
+  stat_function(fun=pd_total_demand, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=27,y=pd_total_demand(27)), color = "blue", label="Demand", size = 5)+
+  stat_function(fun=pd_total_mr, geom="line", size=2, color = "purple")+
+    geom_label(aes(x=27,y=pd_total_mr(27)), color = "purple", label="MR(q)", size = 5)+
+  stat_function(fun=pd_mc, geom="line", size=2, color = "red")+
+    geom_label(aes(x=8,y=pd_mc(8)), color = "red", label="MC(q)=AC(q)", size = 5)+
+  
+  geom_label(x=12,y=50,label="Profit", color="green")+
+
+  geom_segment(x=25, xend=25, y=0, yend=80, size=1, linetype="dotted")+
+  geom_segment(x=0, xend=25, y=80, yend=80, size=1, linetype="dashed")+
+    scale_x_continuous(breaks=seq(0,30,5),
+                     limits=c(0,30),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,140,20),
+                    labels=scales::dollar,
+                     limits=c(0,140),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(fill=F)+
+  labs(x = "Quantity",
+       y = "Price")+
+  theme_classic(base_size=14)
+```
+
+---
+
+### Part B
+
+How much of the price is markup?
+
+---
+
+Use the Lerner index to calculate markup:
+
+$$\begin{aligned}
+L&=\frac{p^*-MC}{p^*}\\
+L&=\frac{(80)-(30)}{(80)}\\
+L&=\frac{50}{80}\\
+L&=0.625\\
+\end{aligned}$$
+
+62.5% of the price is markup above cost.
+
+---
+
+### Part C
+
+What is the price elasticity of demand at this price?
+
+---
+
+Use the Lerner index to calculate markup:
+
+$$\begin{aligned}
+\frac{p^*-MC}{p^*}&=-\frac{1}{\epsilon}\\
+0.625&=-\frac{1}{\epsilon}\\
+0.625 \epsilon &=-1\\
+\epsilon & = -1.6\\
+\end{aligned}$$
+
+The demand is elastic, for every 1% the price changes, consumers will buy 1.6% more/less.
+
+---
+
+### Part D
+
+Now suppose the firm is able to segment the market and charge different prices to Tourists and Locals. Find the profit-maximizing quantity, price, and the total profits.
+
+---
+
+We need to follow nearly identical procedures as part A, just for each market individually now.
+
+#### LOCALS
+
+First, we are given the a demand function for locals, we need to find the _inverse_ demand function for locals, so solve this for $p$. For clarity, I will omit the subscript $L$ from quantity $q_L$.
+
+$$\begin{aligned}
+q&=40-0.4p\\
+q+0.4p&=40\\
+0.4p&=40-q\\
+p&=100-2.5q\\
+\end{aligned}$$
+
+Now that we have inverse demand of this form, double the slope to derive the marginal revenue function:
+
+$$MR(q)=100-5q$$
+
+Now, we can find the profit-maximizing quantity by setting:
+
+$$\begin{aligned}
+MR(q)&=MC(q)\\
+100-5q&=30\\
+-5q&=-70\\
+q^*&=14\\
+\end{aligned}$$
+
+Plug this quantity into the inverse demand function to find the maximum price locals are willing to pay:
+
+$$\begin{aligned}
+p&=100-2.5q\\
+p&=100-2.5(14)\\
+p&=100-35\\
+p^*&=65\\
+\end{aligned}$$
+
+Finally, calculate profit:
+
+$$\begin{aligned}
+\pi&=(p^*-c)Q^*\\
+\pi&=(65-30)14\\
+\pi&=(35)14\\
+\pi&=490\\
+\end{aligned}$$
+
+#### TOURISTS
+
+First, we are given the a demand function for tourists, we need to find the _inverse_ demand function for tourists, so solve this for $p$. For clarity, I will omit the subscript $T$ from quantity $q_T$.
+
+$$\begin{aligned}
+q&=25-0.1p\\
+q+0.1p&=25\\
+0.1p&=25-q\\
+p&=250-10q\\
+\end{aligned}$$
+
+Now that we have inverse demand of this form, double the slope to derive the marginal revenue function:
+
+$$MR(q)=250-20q$$
+
+Now, we can find the profit-maximizing quantity by setting:
+
+$$\begin{aligned}
+MR(q)&=MC(q)\\
+250-10q&=30\\
+-10q&=-220\\
+q^*&=11\\
+\end{aligned}$$
+
+Plug this quantity into the inverse demand function to find the maximum price tourists are willing to pay:
+
+$$\begin{aligned}
+p&=250-10q\\
+p&=250-10(11)\\
+p&=250-110\\
+p^*&=140\\
+\end{aligned}$$
+
+Finally, calculate profit:
+
+$$\begin{aligned}
+\pi&=(p^*-c)Q^*\\
+\pi&=(140-30)11\\
+\pi&=(110)11\\
+\pi&=1,210\\
+\end{aligned}$$
+
+Now, add the profit from locals to the profit from tourists to get the total profit with price discrimination:
+
+$$\begin{aligned}
+\Pi &= \pi_L+\pi_T\\
+\Pi &= 490+1210\\
+\Pi &= 1,700
+\end{aligned}$$
+
+As expected, price discrimination generates more profit than charging a single price to all customers.
+
+---
+
+### Part E
+
+For each segment of the market: how much of the price is markup, and what is the price elasticity of demand at the optimal price? How did the price for each segment change from the single price (Part A), and why?
+
+---
+
+#### LOCALS
+
+Use the Lerner index to calculate markup:
+
+$$\begin{aligned}
+L&=\frac{p^*-MC}{p^*}\\
+L&=\frac{(65)-(30)}{(65)}\\
+L&=\frac{35}{65}\\
+L& \approx 0.54\\
+\end{aligned}$$
+
+54% of the price is markup above cost. We can use thius to calculate Locals' price elasticity of demand:
+
+$$\begin{aligned}
+\frac{p^*-MC}{p^*}&=-\frac{1}{\epsilon}\\
+0.54&=-\frac{1}{\epsilon}\\
+0.54 \epsilon &=-1\\
+\epsilon & \approx -1.85\\
+\end{aligned}$$
+
+Locals' demand is elastic, for every 1% the price changes, locals will buy 1.85% more/less.
+
+#### TOURISTS
+
+Use the Lerner index to calculate markup:
+
+$$\begin{aligned}
+L&=\frac{p^*-MC}{p^*}\\
+L&=\frac{(140)-(30)}{(140)}\\
+L&=\frac{110}{140}\\
+L& \approx 0.79\\
+\end{aligned}$$
+
+79% of the price is markup above cost. We can use thius to calculate Tourists' price elasticity of demand:
+
+$$\begin{aligned}
+\frac{p^*-MC}{p^*}&=-\frac{1}{\epsilon}\\
+0.79&=-\frac{1}{\epsilon}\\
+0.79 \epsilon &=-1\\
+\epsilon & \approx -1.27\\
+\end{aligned}$$
+
+Tourists' demand is also elastic, but *less* elastic than locals' demand. For every 1% the price changes, tourists will buy 1.27% more/less.
+
+Compared to part A, where all customers were charged a uniform price of $80 (and the price elasticity at this price was $-1.60)$, we _lowered_ the price to $65 for _locals_ (who have a _higher_ price elasticity of $-1.85)$, and _raised_ the price to $140 for _tourists_ (who have a _lower_ price elasticity of $-1.27)$.
+
+See also the graphs below:
+
+```{r}
+library(patchwork)
+pd_local_demand<-function(x){100-2.5*x}
+pd_local_mr<-function(x){100-5*x}
+
+locals<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_rect(xmin=0,xmax=14,ymin=30,ymax=65, fill="green",alpha=0.4)+
+  stat_function(fun=pd_local_demand, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=17,y=pd_local_demand(17)), color = "blue", label="Demand", size = 3)+
+  stat_function(fun=pd_local_mr, geom="line", size=2, color = "purple")+
+    geom_label(aes(x=8.5,y=pd_local_mr(8.5)), color = "purple", label="MR(q)", size = 3)+
+  stat_function(fun=pd_mc, geom="line", size=2, color = "red")+
+    geom_label(aes(x=8,y=pd_mc(8)), color = "red", label="MC(q)=AC(q)", size = 3)+
+
+  geom_segment(x=0, xend=14, y=65, yend=65, size=1, linetype="dotted")+
+    geom_segment(x=14, xend=14, y=0, yend=65, size=1, linetype="dotted")+
+
+    scale_x_continuous(breaks=seq(0,30,5),
+                     limits=c(0,30),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,250,25),
+                    labels=scales::dollar,
+                     limits=c(0,250),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(fill=F)+
+  labs(x = "Quantity",
+       y = "Price",
+       title = "Locals")+
+  theme_classic(base_size=14)
+
+pd_tourist_demand<-function(x){250-10*x}
+pd_tourist_mr<-function(x){250-20*x}
+
+tourists<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_rect(xmin=0,xmax=11,ymin=30,ymax=140, fill="green",alpha=0.4)+
+  stat_function(fun=pd_tourist_demand, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=17,y=pd_tourist_demand(17)), color = "blue", label="Demand", size = 3)+
+  stat_function(fun=pd_tourist_mr, geom="line", size=2, color = "purple")+
+    geom_label(aes(x=8.5,y=pd_tourist_mr(8.5)), color = "purple", label="MR(q)", size = 3)+
+  stat_function(fun=pd_mc, geom="line", size=2, color = "red")+
+    geom_label(aes(x=8,y=pd_mc(8)), color = "red", label="MC(q)=AC(q)", size = 3)+
+  
+  geom_segment(x=11, xend=11, y=0, yend=140, size=1, linetype="dotted")+
+  geom_segment(x=0, xend=11, y=140, yend=140, size=1, linetype="dotted")+
+    scale_x_continuous(breaks=seq(0,30,5),
+                     limits=c(0,30),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,250,25),
+                    labels=scales::dollar,
+                     limits=c(0,250),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(fill=F)+
+  labs(x = "Quantity",
+       y = "Price",
+       title = "Tourists")+
+  theme_classic(base_size=14)
+
+locals + tourists
+```
+
+---
+
+# Factor Markets & Monopsony
+
+## Question 8 
+
+Carl's Coal Mining operates in a remote area. Because of its location, it has monopsony power in the local labor market for miners. Its marginal revenue product of labor is
+$$MRP_L = 400-5L$$
+where $L$ is the total number of miners. The labor supply curve of local miners is
+$$w = 5L-50$$
+where $w$ is the wage (in $1000's per miner).
+
+### Part A
+
+Write a function for the marginal cost of labor.
+
+---
+
+If we know the (inverse) labor supply function (which we are given), we can simply double the slope to find the marginal cost of labor:
+
+$$MC(L)=10L-50$$
+
+---
+
+### Part B
+
+What quantity of workers will the mine hire, and what wage will it pay its workers?
+
+---
+
+The optimal quantity of labor to hire for a firm is where its marginal revenue product is equal to the marginal cost of labor:
+
+$$\begin{aligned}
+MRP_L&=MC(L)\\
+400-5L&=10L-50\\
+400&=15L-50\\
+450&=15L\\
+30&=L^*\\
+\end{aligned}$$
+
+The firm has monopsony power, so it faces the entire market supply of labor. For $L^*$ number of workers, it can pay the lowest wages workers are willing to accept for that quantity, i.e. the labor supply function.
+
+$$\begin{aligned}
+w&=5L-50\\
+w&=5(30)-50\\
+w^*&=100\\
+\end{aligned}$$
+
+---
+
+### Part C
+
+What would the quantity of workers be, and what would the wage be, if there was competition among other local mines for labor?
+
+---
+
+If this was a competitive labor market, with no monopsony power, the firm would be a price-taker of labor, i.e. the supply of labor it faces would be perfectly elastic at the market-determined wage. It would set its marginal revenue product equal to the market wage and hire the quantity of workers for which those values are equal.
+
+$$\begin{aligned}
+MRP_L &= w\\
+400-5L &= 5L-50\\
+400&=10L-50\\
+450&=10L\\
+45&=L_c\\
+\end{aligned}$$
+
+Plug this quantity into the (inverse) labor supply function to the find the market wage:
+
+$$\begin{aligned}
+w&=5L-50\\
+w&=5(45)-50\\
+w&=225-50\\
+w_C&=175\\
+\end{aligned}$$
+
+---
+
+### Part D
+
+Sketch a graph of this market, and be sure to label all of your findings (and show the Deadweight Loss) from Parts A-C.
+
+---
+
+```{r}
+mrp_l=function(q){400-5*q}
+supply_l=function(q){5*q-50}
+MC_l=function(q){10*q-50}
+dwl_l<-tribble(
+  ~x, ~y,
+  30, 250,
+  30, 100,
+  45, 175
+)
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_polygon(data=dwl_l, aes(x=x,y=y), fill="black", alpha=0.5)+
+    stat_function(fun=MC_l, geom="line", size=2, color = "darkred")+
+  geom_label(aes(x=35,y=MC_l(35)), color = "darkred", label="MC(L)", size = 4)+
+    stat_function(fun=supply_l, geom="line", size=2, color = "red")+
+  geom_label(aes(x=35,y=supply_l(35)), color = "red", label="Supply(L)", size = 4)+
+  stat_function(fun=mrp_l, geom="line", size=2, color = "blue")+
+  geom_label(aes(x=15,y=mrp_l(15)), color = "blue", label=expression(MRP[L]), size = 4)+
+  
+  geom_segment(aes(x = 0, xend = 30, y = 100, yend=100), linetype="dotted", size=1)+
+  geom_segment(aes(x = 30, xend = 30, y = 250, yend=0), linetype="dotted", size=1)+
+
+  geom_segment(aes(x = 0, xend = 45, y = 175, yend=175), linetype="dotted", size=1)+
+  geom_segment(aes(x = 45, xend = 45, y = 175, yend=0), linetype="dotted", size=1)+
+
+    geom_label(aes(x=5,y=100), label=expression(w[m]), size = 4)+
+    geom_label(aes(x=5,y=175), label=expression(w[C]), size = 4)+
+
+      geom_label(aes(x=30,y=50), label=expression(L[m]), size = 4)+
+    geom_label(aes(x=45,y=50), label=expression(L[C]), size = 4)+
+
+    scale_x_continuous(breaks=seq(0,50,5),
+                     limits=c(0,50),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,400,50),
+                     limits=c(0,400),
+                     labels=scales::dollar,
+                     expand=expand_scale(mult=c(0,0.1)))+
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+  labs(y = "Wage (w)",
+       x = "Quantity of Labor (L)")+
+  theme_classic(base_size=14)
+```

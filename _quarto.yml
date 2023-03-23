@@ -70,6 +70,10 @@ website:
               href: content/3.2-content.qmd
             - text: "3.3 — Entry Deterrence and Commitment"
               href: content/3.3-content.qmd
+        - section: "IV. Theory of the Firm & Economic Organization"
+          contents:
+            - text: "4.1 — Why Are There Firms?"
+              href: content/4.1-content.qmd
     - title: "Assignments"
       style: "docked"
       search: false

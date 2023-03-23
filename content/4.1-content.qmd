@@ -28,9 +28,16 @@ For the next few classes, we will look at other aspects of the theory of the fir
 
 The free IO textbook does a good job covering the theory of the firm in Chapter 3:
 
-- <i class="fas fas fa-book"></i> Ch. 3.2 in @Church^[Again, there is [a free PDF](https://works.bepress.com/jeffrey_church/23/) from the authors.]
+- <i class="fas fas fa-book"></i> Ch. 3.2 in [Church and Ware](https://works.bepress.com/jeffrey_church/23/), 2000
 
 Much of the rest of their discussion in Chapter 3 we will cover over the next few classes (asset specificity theory, vertical integration, etc.)
+
+### Discussion Board 
+
+Starting next week, we will occasionally have a weekly discussion board open on Blackboard. (Not every week. I will let you know when we have one open at the beginning of each week.) You will be expected to contribute to the discussion board at least twice by Sunday night. Your weekly contribution will be graded out of 5 points. At the end of the semester, I will apply the average of your weekly participation grades to apply (20%) towards your final course grade.
+
+I am interested in your thoughts, reactions, comments, and questions about any of the material (lectures and/or readings). You do not need to write more than a paragraph. Anything more than that, including continuing to reply to each others’ thoughts, questions, or comments, (which I strongly hope you do!) is solely based on your own interest and curiosity. I will jump in to answer questions the group is stuck on, give my two cents, and stir the pot as needed. I strontly hope we still keep a conversation going and can learn from each other, that was always my goal, not to lecture at you!
+
 ## <i class="fas fa-chalkboard-teacher"></i> Slides
 
 Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides. 

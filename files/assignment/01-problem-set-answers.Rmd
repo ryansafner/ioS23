@@ -17,6 +17,7 @@ output:
 knitr::opts_chunk$set(echo = FALSE,
                       warning = FALSE,
                       message = FALSE)
+library(tidyverse)
 ```
 
 # Competitive Markets
@@ -490,11 +491,11 @@ The profit maximizing quantity was $q^*=10$, and price $p^*=\$450$, with a margi
 
 $$\begin{aligned}
 	\frac{p-MC}{p}&=L=-\frac{1}{\epsilon}\\
-	\frac{450-400}{400}&=L\\
-	0.125&=L	\\
+	\frac{450-400}{450}&=L\\
+	0.111&=L	\\
 	\end{aligned}$$
 
-The markup is 12.5% of the price. This should be logical, as 12.5% is of $400 is $50, and the firm is charging $50 above marginal cost.
+The markup is 11.1% of the price.
 
 ---
 
@@ -506,12 +507,12 @@ Calculate the elasticity of demand at your profit-maximizing price.
 Using our answer from part f, we can solve the Lerner index equation for $\epsilon$ to get the elasticity of demand at our price of $450:
 
 $$\begin{aligned}
-	0.125&=-\frac{1}{\epsilon}	\\
-	\epsilon &=-\frac{1}{0.125}\\
-	\epsilon &=-8\\
+	0.111&=-\frac{1}{\epsilon}	\\
+	\epsilon &=-\frac{1}{0.111}\\
+	\epsilon &=-9\\
 	\end{aligned}$$
 
-Demand is elastic. Raising (lowering) the price by 1% would result in consumers buying 8% less (more).
+Demand is elastic. Raising (lowering) the price by 1% would result in consumers buying 9% less (more).
 
 
 ```{r}

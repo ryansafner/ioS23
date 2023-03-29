@@ -74,6 +74,8 @@ website:
           contents:
             - text: "4.1 — Why Are There Firms?"
               href: content/4.1-content.qmd
+            - text: "4.2 — The Firm as Nexus of Contracts"
+              href: content/4.2-content.qmd
     - title: "Assignments"
       style: "docked"
       search: false
@@ -93,7 +95,8 @@ website:
           contents:
             - text: "Midterm Exam"
               href: assignments/midterm.qmd
-
+        - text: "Industry Report"
+          href: assignments/industry-report.qmd
     - title: "Resources"
       style: "docked"
       search: true

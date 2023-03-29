@@ -91,6 +91,8 @@ website:
               href: assignments/02-problem-set.qmd
         - section: "Exams"
           contents:
+            - text: "Midterm Exam"
+              href: assignments/midterm.qmd
 
     - title: "Resources"
       style: "docked"

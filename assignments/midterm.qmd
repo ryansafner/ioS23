@@ -1,0 +1,84 @@
+---
+title: "Midterm"
+execute: 
+  freeze: auto
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+knitr::opts_chunk$set(message = F, warning = F, echo = F)
+library(tidyverse)
+library(ggrepel)
+```
+
+::: {.callout-warning appearance="minimal"}
+This exam is due by email to me by 11:59 PM Friday March 31. Starting at 12:01, you will lose 2 points for every hour it is late.
+:::
+
+</p>
+
+# Instructions
+
+Choose **any five (5)** of the following questions to answer. **Do not answer all the questions**.
+
+Questions draw only from material discussed in class. You do not need any additional knowledge or material beyond what we discussed in class.
+
+**Each question is worth 20 points.** Your answers, given the time and resources at your disposal, should be complete yet concise (e.g. 2-3 well-reasoned paragraphs, with minimal filler). If applicable, show all work and fully label all graphs. Showing more of your thought process increases your chances of getting partial credit.
+
+# Questions 
+
+## Question 1
+
+Suppose I announce beforehand that I will curve your exams by adding to everyone’s scores as many points as are necessary to bring the highest grade to a 100. (For example, if the highest score is an 85, everyone gets additional 15 points.) One outcome of this game would be that everyone independently chooses how much to study and earns a grade proportional to their knowledge and amount they studied. There is, at least one more possible outcome of this game. Describe it, comment on its stability, and explain how this example is a metaphor for oligopoly.
+
+## Question 2
+
+Explain why, in Stackelberg competition, it would not be *rational* for the Leader to act like a pure monopolist would.
+
+## Question 3
+
+Suppose two firms, *Leader* and *Follower*, produce sequentially in a market with inverse demand:
+
+$$\begin{align*}
+p&=12-Q\\
+Q&=q_L+q_F\\
+\end{align*}$$
+
+Each firm has constant marginal costs of 0. 
+
+*Leader* produces first and then *Follower,* who can observe *Leader*’s output (and *Leader* knows this). Suppose before the game, *Follower* threatens that if *Leader* does not produce the Cournot-Nash equilibrium (“Cournot”) amount, *Follower* will produce the Cournot amount during its turn. 
+
+Is this a credible threat?
+
+Hint: make this a sequential game with discrete strategies by letting each firm have a choice to produce (a) the Cournot equilibrium amount or (b) the Stackelberg equilibrium amount of output. If *Leader* produces the Cournot amount, *Follower*’s *only* available strategy is to produce the Cournot amount. If *Leader* produces the Stackelberg amount, *Follower* can choose to produce either the Cournot or Stackelberg amount.
+
+## Question 4
+
+Any student that has understood principles of microeconomics recognizes that perfectly competitive markets (very many firms, perfect substitutes, price-taking behavior, etc) maximize economic efficiency. Explain how you would respond to the claim that the *only* way to attain this outcome is to have perfect competition.
+
+## Question 5
+
+Explain what game theorists mean by the phrase “talk is cheap.” Use the concept of *subgame perfect Nash equilibrium* in your answer.
+
+## Question 6
+
+Briefly describe four (where collusion is one of them) different models of oligopoly, and rank them according to which model yields the highest-to lowest (i) industry price, (ii) quantity of industry output, and (iii) profits.
+
+## Question 7
+
+Explain the “structure-conduct-performance paradigm” of industrial organization. One implication, considering the four major types/models of industries we have considered (perfect competition, monopolistic competition, oligopoly, monopoly) is that the *number of firms* in an industry is perhaps *the most important* determinant of the industry’s economic performance (in terms of e.g. economic efficiency). Explain why this approach may be misleading, given what we have learned in Unit II and Unit III. Hint: this is related to Question 4.
+
+## Question 8
+
+Explain how and why market power, both as a buyer, and as a seller, is determined by (the relevant) price elasticity. Provide some examples of each.
+
+# Bonus
+
+## Question 9 (5 points)
+
+We are all going to play the following game during this exam. You must choose a number between 0 and 100 (inclusive). I will calculate the average of all of these chosen numbers. The person whose number is closest to *half of the average* will earn 5 bonus points. In the case of a tie, all equally-close guesses get 5 points.
+
+Write the number of your choice.
+
+## Question 10 (3 points)
+
+Describe the optimal strategy for picking your number in question 9.

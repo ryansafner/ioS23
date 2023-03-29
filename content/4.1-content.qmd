@@ -1,5 +1,5 @@
 ---
-title: "3.3 — Entry Deterrence and Commitment — Class Content"
+title: "4.1 — Why Are There Firms? — Class Content"
 execute:
   freeze: auto
 ---

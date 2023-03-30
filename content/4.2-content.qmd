@@ -26,9 +26,9 @@ We extend this view by discussing **agency costs**, which often (but not exclusi
 - [<i class="fas fa-file-pdf"></i> Alchian and Demsetz, 1972, "Production, Information Costs, and Economic Organization"](/files/readings/Alchian-Demsetz-1972.pdf)
 - [<i class="fas fa-file-pdf"></i> Jensen and Meckling, 1976, "Theory of the Firm: Managerial Behavior, Agency Costs and Ownership Structure"](/files/readings/Jensen-Meckling-1976.pdf)
 - [<i class="fas fa-file-pdf"></i> Jensen and Murphy, 1990, "CEO Incentives - It's Not How Much You Pay, But How"](/files/readings/Shleifer-Vishny-1997.pdf)
+- [<i class="fas fa-file-pdf"></i> Manne, 1965, "Mergers and The Market for Corporate Control"](/files/readings/Manne-1965.pdf)
 - [<i class="fas fa-file-pdf"></i> Murphy, 2012, "Executive Compensation: Where We Are, and How We Got There"](/files/readings/Murphy-2012.pdf)
 - [<i class="fas fa-file-pdf"></i> Shleifer and Vishney, 1997, "A Survey of Corporate Governance"](/files/readings/Shleifer-Vishny-1997.pdf)
-- [<i class="fas fa-file-pdf"></i> Manne, 1960, "Mergers and The Market for Corporate Control"](/files/readings/Manne-1965.pdf)
 
 Alchian and Demsetz (1972) is the most important to read (and the shortest and most readable), followed by Jensen and Meckling (1976), which, after the first section, gets too lengthy and technical.
 

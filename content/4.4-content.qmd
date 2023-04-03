@@ -1,0 +1,53 @@
+---
+title: "4.4 — Contractual Restraints & Property Rights — Class Content"
+execute:
+  freeze: auto
+---
+
+```{r, echo = F}
+source(here::here("slides", "slide-links.R"))
+```
+
+::: {.callout-note appearance=minimal}
+# Meeting Date
+*Thursday, April 6, 2023*
+:::
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+Today we look at the other major solution to post-contractual opportunism caused by asset specificity: writing restrictive long-term contracts. We look at examples such as franchising, exclusivity agreements, territorial restraints, and resale price maintenance. All of these will be important once we start considering antitrust concerns.
+
+Finally, we discuss a fourth perspective on the firm, the ["property rights approach"](https://en.wikipedia.org/wiki/Property_rights_(economics)#Property_rights_approach_to_the_theory_of_the_firm), largely affiliated with 2016 Nobel Laureate Oliver Hart. This view argues that firms are defined by their ownership of assets, and the key aspect of ownership is *residual control rights*: that owners can make decisions for all cases not clearly specified in contracts. The key takeaway is that who owns assets matters for efficiency.
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+### Recommended Readings:
+
+- [<i class="fas fa-file-pdf"></i> Grossman and Hart, 1986, "The Costs and Benefits of Ownership: A Theory of Vertical and Lateral Integration"](/files/files/readings/Grossman-Hart-1986.pdf)
+- [<i class="fas fa-file-pdf"></i> Hart, 2016, "Incomplete Contracts and Control" (Nobel Prize Lecture)](https://www.nobelprize.org/prizes/economic-sciences/2016/hart/lecture/)
+- [<i class="fas fa-file-pdf"></i> Klein, Crawford, and Alchian, 1978, "Vertical Integration, Appropriable Rents, and the Competitive Contracting Process"](/files/readings/Alchian-Demsetz-1972.pdf)
+- [<i class="fas fa-file-pdf"></i> Klein and Leffler, 1981, "The Role of Market Forces in Assuring Contractual Performance"](/files/readings/Klein-Leffler-1981.pdf)
+- [<i class="fas fa-file-pdf"></i> Telser, 1960, "Why Should Manufacturers Want Fair Trade?"](/files/readings/Telser-1960.pdf)
+
+### Discussion Board 
+
+Starting this week, we will occasionally have a weekly discussion board open on Blackboard. (Not every week. I will let you know when we have one open at the beginning of each week.) You will be expected to contribute to the discussion board at least twice by Sunday night. Your weekly contribution will be graded out of 5 points. At the end of the semester, I will apply the average of your weekly participation grades to apply (20%) towards your final course grade.
+
+I am interested in your thoughts, reactions, comments, and questions about any of the material (lectures and/or readings). You do not need to write more than a paragraph. Anything more than that, including continuing to reply to each others’ thoughts, questions, or comments, (which I strongly hope you do!) is solely based on your own interest and curiosity. I will jump in to answer questions the group is stuck on, give my two cents, and stir the pot as needed. I strontly hope we still keep a conversation going and can learn from each other, that was always my goal, not to lecture at you!
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides. 
+
+::: callout-tip
+You can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+:::
+
+I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+```{r}
+#| echo: false
+#| output: asis
+
+slide_links("4.4-slides")
+```

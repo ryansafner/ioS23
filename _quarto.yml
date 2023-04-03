@@ -76,6 +76,10 @@ website:
               href: content/4.1-content.qmd
             - text: "4.2 — The Firm as Nexus of Contracts"
               href: content/4.2-content.qmd
+            - text: "4.3 — Asset Specificity & Vertical Integration"
+              href: content/4.3-content.qmd
+            - text: "4.4 — Contractual Restraints & Property Rights"
+              href: content/4.4-content.qmd
     - title: "Assignments"
       style: "docked"
       search: false

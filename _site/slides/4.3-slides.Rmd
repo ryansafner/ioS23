@@ -59,9 +59,9 @@ class: inverse
 
 ### [Transaction Costs & The Economics of Governance](#4)
 ### [Asset Specificity](#16)
-### [A Game-Theoretic Hold-Up Model](#26)
-### [The Double-Marginalization Problem](#34)
-### [Vertical Integration](#47)
+### [A Game-Theoretic Hold-Up Model](#30)
+### [The Double-Marginalization Problem](#38)
+### [Vertical Integration](#51)
 
 ---
 
@@ -126,32 +126,6 @@ John R. Commons
 ]
 ]
 .source[Commons, John R, 1932, "The Problem of Correlating Law, Economics, and Ethics," *Wisconsin Law Review* 8(1):3-26]
-
----
-
-# Transaction Costs and the Economics of Governance
-
-.left-column[
-.center[
-![:scale 80%](../images/marshall.png)
-
-.smallest[
-Alfred Marshall
-
-1842-1924
-
-]
-]
-]
-.right-column[
-
-.quitesmall[
-
-> “Indeed, .hi[in some cases and for some purposes, nearly the whole income of a business may be regarded as a quasi-rent], that is an income determined for the time by the state of the market for its wares, .hi[with but little reference to the cost of preparing for their work] the various things and persons engaged in it. In other words it is a .hi[composite quasi-rent divisible among the different persons in the business by bargaining], supplemented by custom and by notions of fairness...Thus the head clerk in a business has an acquaintance with men and things, the use of which he could in some cases sell at a high price to rival firms. But in other cases .hi[it is of a kind to be of no value save to the business in which he already is; and then his departure would perhaps injure it by several times the value of his salary], while probably he could not get half that salary elsewhere,”  (VI.viii.35).
-
-]
-]
-.source[Marshall, Alfred, 1870, *Principles of Economics*]
 
 ---
 
@@ -274,7 +248,7 @@ Economics Nobel 2009
 ![:scale 75%](../images/williamson.png)
 
 .smallest[
-Olvier Williamson
+Olvier E Williamson
 
 1932-
 
@@ -318,6 +292,32 @@ Economics Nobel 2009
 
 .left-column[
 .center[
+![:scale 80%](../images/marshall.png)
+
+.smallest[
+Alfred Marshall
+
+1842-1924
+
+]
+]
+]
+.right-column[
+
+.quitesmall[
+
+> “Indeed, .hi[in some cases and for some purposes, nearly the whole income of a business may be regarded as a quasi-rent], that is an income determined for the time by the state of the market for its wares, .hi[with but little reference to the cost of preparing for their work] the various things and persons engaged in it. In other words it is a .hi[composite quasi-rent divisible among the different persons in the business by bargaining], supplemented by custom and by notions of fairness...Thus the head clerk in a business has an acquaintance with men and things, the use of which he could in some cases sell at a high price to rival firms. But in other cases .hi[it is of a kind to be of no value save to the business in which he already is; and then his departure would perhaps injure it by several times the value of his salary], while probably he could not get half that salary elsewhere,”  (VI.viii.35).
+
+]
+]
+.source[Marshall, Alfred, 1870, *Principles of Economics*]
+
+---
+
+# Appropriable Quasi-Rents
+
+.left-column[
+.center[
 ![:scale 80%](../images/benklein.jpg)
 
 .smallest[
@@ -331,9 +331,9 @@ Benjamin Klein
 .right-column[
 
 .smallest[
-> “Coase's fundamental insight [was] that transaction, coordination, and contracting costs must be considered explicitly in explaining the extent of vertical integration...[We] explore one particular cost of using the market system-the possibility of postcontractual opportunistic behavior,” (p.297)
+> “Coase's fundamental insight [was] that transaction, coordination, and contracting costs must be considered explicitly in explaining the extent of vertical integration...[We] explore one particular cost of using the market system-.hi[the possibility of postcontractual opportunistic behavior],” (p.297)
 
-> “The particular circumstance we emphasize as likely to produce a serious threat of this type of reneging on contracts is the presence of appropriable specialized quasi rents. After a specific investment is made and such quasi rents are created, the possibility of opportunistic behavior is very real. Following Coase's framework, this problem can be solved in two possible ways: vertical integration or contracts,” (p.298)
+> “The particular circumstance we emphasize as likely to .hi[produce a serious threat of this type of reneging on contracts is the presence of appropriable specialized quasi rents. After a specific investment is made and such quasi rents are created, the possibility of opportunistic behavior is very real]. Following Coase's framework, .hi[this problem can be solved in two possible ways: vertical integration or contracts],” (p.298)
 
 ]
 .source[Klein, Benjamin, Robert G Crawford, and Armen A Alchian, 1978, "Vertical Integration, Appropriable Rents, and the Competitive Contracting Process," *Journal of Law and Economics* 21(2): 297-326]
@@ -454,7 +454,7 @@ Economics Nobel 2009
 ]
 .right-column[
 
-.smallest[
+.quitesmall[
 
 > “Four types of asset specificity are usefully distinguished: 
 
@@ -472,10 +472,219 @@ Economics Nobel 2009
 
 ---
 
+# Asset Specificity
 
-As a condition of asset specificity becomes more important, however,
-exchange relations take on a progressively stronger bilateral trading character. The reason is that parties to such trades have a stake in preserving the continuity of the relationship. 
-367
+.left-column[
+.center[
+![:scale 75%](../images/williamson.png)
+
+.smallest[
+Olvier E Williamson
+
+1932-
+
+Economics Nobel 2009
+]
+]
+]
+
+.right-column[
+
+.smaller[
+> “Transaction cost economics maintains that the principal factor that is responsible for transaction cost differences among transactions is variations in asset specificity. Transactions that are supported by non-specific (redeployable) investments are ones for which neoclassical analysis is well-suited to deal. As a condition of asset specificity becomes more important, however, exchange relations take on a progressively stronger bilateral trading character. The reason is that parties to such trades have a stake in preserving the continuity of the relationship,” (p. 367).
+
+]
+
+.source[Riordan, Michael H and Oliver E Williamson, 1985, “Asset Specificity and Economic Organization,” *International Journal of Industrial Organization* 3: 365-378.]
+
+]
+
+---
+
+# Asset Specificity: Simple Heuristic Model
+
+.pull-left[
+.quitesmall[
+- $\color{red}{\Delta G}$: difference in governance cost of organization (firm) vs. market
+  - $\Delta G(0)$: advantages of markets $>$ costs of asset specificity
+  - declines as assets are more specific (market contracts become disadvantageous beyond $k_1)$
+]
+]
+.pull-right[
+```{r}
+dg <- function(x){2.5-x^{1.5}}
+dc <- function(x){2/x}
+
+total <- function(x){dg(x) + dc(x)}
+
+ggplot(data = tibble(x = c(1,2)))+
+  aes(x = x)+
+  stat_function(fun = dg, color = "red")+
+  geom_label(x = 2.75, y = dg(2.75), color = "red", label = expression(Delta*G))+
+  geom_vline(xintercept = 0, size = 0.5)+
+  geom_hline(yintercept = 0, size = 0.5)+
+  scale_x_continuous(breaks = c(0, 1.85),
+                     labels = c(0, expression(k[1])),
+                     limits = c(0,3),
+                     expand = c(0,0))+
+  scale_y_continuous(breaks = c(0, 2.5),
+                     labels = c(0, expression(Delta*G[0])),
+                     limits = c(-3,3),
+                     expand = c(0,0))+
+  labs(x = "Asset Specificity",
+       y = "Cost")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size = 16)
+```
+.source[Based on Riordan and Williamson, 1985]
+
+]
+
+---
+
+# Asset Specificity: Simple Heuristic Model
+
+.pull-left[
+.quitesmall[
+- $\color{red}{\Delta G}$: difference in governance cost of organization (firm) vs. market
+  - $\Delta G(0)$: advantages of markets $>$ costs of asset specificity
+  - declines as assets are more specific (market contracts become disadvantageous beyond $k_1)$
+
+- $\color{blue}{\Delta C}$: difference in production costs of organization (firm) vs. market
+  - advantages of markets $>$ organization (firm)
+  - declines as assets get more specific, but never fully reduced to zero (same as market)
+  - since $\color{red}{\Delta C} > 0$, firm will never internalize for production cost reasons alone
+]
+]
+
+.pull-right[
+```{r}
+ggplot(data = tibble(x = c(1,2)))+
+  aes(x = x)+
+  stat_function(fun = dg, color = "red")+
+  geom_label(x = 2.75, y = dg(2.75), color = "red", label = expression(Delta*G))+
+  stat_function(fun = dc, color = "blue")+
+  geom_label(x = 2.75, y = dc(2.75), color = "blue", label = expression(Delta*C))+
+  geom_vline(xintercept = 0, size = 0.5)+
+  geom_hline(yintercept = 0, size = 0.5)+
+  scale_x_continuous(breaks = c(0, 1.85),
+                     labels = c(0, expression(k[1])),
+                     limits = c(0,3),
+                     expand = c(0,0))+
+  scale_y_continuous(breaks = c(0, 2.5),
+                     labels = c(0, expression(Delta*G[0])),
+                     limits = c(-3,3),
+                     expand = c(0,0))+
+  labs(x = "Asset Specificity",
+       y = "Cost")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size = 16)
+```
+.source[Based on Riordan and Williamson, 1985]
+
+]
+
+---
+
+# Asset Specificity: Simple Heuristic Model
+
+.pull-left[
+.quitesmall[
+- $\color{red}{\Delta G}$: difference in governance cost of organization (firm) vs. market
+  - $\Delta G(0)$: advantages of markets $>$ costs of asset specificity
+  - declines as assets are more specific (market contracts become disadvantageous beyond $k_1)$
+
+- $\color{blue}{\Delta C}$: difference in production costs of organization (firm) vs. market
+  - advantages of markets $>$ organization (firm)
+  - declines as assets get more specific, but never fully reduced to zero (same as market)
+  - since $\color{red}{\Delta C} > 0$, firm will never internalize for production cost reasons alone
+
+
+- $\color{purple}{\Delta C + \Delta G}$: total cost difference between organization and market
+]
+]
+
+.pull-right[
+```{r}
+dg <- function(x){2.5-x^{1.5}}
+dc <- function(x){2/x}
+
+total <- function(x){dg(x) + dc(x)}
+
+ggplot(data = tibble(x = c(1,2)))+
+  aes(x = x)+
+  stat_function(fun = dg, color = "red")+
+  geom_label(x = 2.75, y = dg(2.75), color = "red", label = expression(Delta*G))+
+  stat_function(fun = dc, color = "blue")+
+  geom_label(x = 2.75, y = dc(2.75), color = "blue", label = expression(Delta*C))+
+  stat_function(fun = total, color = "purple")+
+  geom_label(x = 2.75, y = total(2.75), color = "purple", label = expression(Delta*G+Delta*C))+
+  geom_vline(xintercept = 0, size = 0.5)+
+  geom_hline(yintercept = 0, size = 0.5)+
+  scale_x_continuous(breaks = c(0, 1.85, 2.25),
+                     labels = c(0, expression(k[1]), expression(k[2])),
+                     limits = c(0,3),
+                     expand = c(0,0))+
+  scale_y_continuous(breaks = c(0, 2.5),
+                     labels = c(0, expression(Delta*G[0])),
+                     limits = c(-3,3),
+                     expand = c(0,0))+
+  labs(x = "Asset Specificity",
+       y = "Cost")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size = 16)
+```
+.source[Based on Riordan and Williamson, 1985]
+
+]
+
+---
+
+# Asset Specificity: Simple Heuristic Model
+
+.pull-left[
+.smallest[
+- At low levels of asset specificity $(k < k_2)$, market transactions are lower cost than organization
+  - contract & buy most things
+  - since $\color{red}{\Delta C} > 0$, firm will never internalize for production cost reasons alone
+
+- At higher levels of asset specificity $(k > k_2)$, organization is lower cost than market
+  - produce most things internally
+
+- At modest levels of asset specificity $k_2$, no clear superior mode, may be a combination
+  - make some things, buy some things
+]
+]
+
+.pull-right[
+```{r}
+dg <- function(x){2.5-x^{1.5}}
+dc <- function(x){2/x}
+
+total <- function(x){dg(x) + dc(x)}
+
+ggplot(data = tibble(x = c(1,2)))+
+  aes(x = x)+
+  stat_function(fun = dg, color = "red")+
+  geom_label(x = 2.75, y = dg(2.75), color = "red", label = expression(Delta*G))+
+  stat_function(fun = dc, color = "blue")+
+  geom_label(x = 2.75, y = dc(2.75), color = "blue", label = expression(Delta*C))+
+  stat_function(fun = total, color = "purple")+
+  geom_label(x = 2.75, y = total(2.75), color = "purple", label = expression(Delta*G+Delta*C))+
+  geom_vline(xintercept = 0, size = 0.5)+
+  geom_hline(yintercept = 0, size = 0.5)+
+  scale_x_continuous(breaks = c(0, 1.85, 2.25),
+                     labels = c(0, expression(k[1]), expression(k[2])),
+                     limits = c(0,3),
+                     expand = c(0,0))+
+  scale_y_continuous(breaks = c(0, 2.5),
+                     labels = c(0, expression(Delta*G[0])),
+                     limits = c(-3,3),
+                     expand = c(0,0))+
+  labs(x = "Asset Specificity",
+       y = "Cost")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size = 16)
+```
+
+.source[Based on Riordan and Williamson, 1985]
+]
 
 ---
 

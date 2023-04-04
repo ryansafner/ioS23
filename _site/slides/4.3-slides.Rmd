@@ -57,10 +57,11 @@ class: inverse
 
 # Outline
 
-### [The Firm as Nexus of Contracts](#5)
-### [Agency Theory: The Separation of Ownership and Control](#18)
-### [Corporate Governance: Reducing Agency Costs](#34)
-### [The Market for Corporate Control](#41)
+### [Transaction Costs & The Economics of Governance](#4)
+### [Asset Specificity](#16)
+### [A Game-Theoretic Hold-Up Model](#26)
+### [The Double-Marginalization Problem](#34)
+### [Vertical Integration](#47)
 
 ---
 
@@ -98,7 +99,7 @@ Economics Nobel 1991]
 
 class: inverse, center, middle
 
-# Asset Specificity Theory
+# Transaction Costs & The Economics of Governance
 
 ---
 
@@ -106,7 +107,7 @@ class: inverse, center, middle
 
 .left-column[
 .center[
-![:scale 80%](https://www.dropbox.com/s/q0jf3fptqww0er5/johnrcommons.jpg?raw=1)
+![:scale 80%](../images/johnrcommons.jpg)
 
 .smallest[
 John R. Commons
@@ -120,7 +121,7 @@ John R. Commons
 
 .smallest[
 
-> "[T]he ultimate unit of activity ... must contain in itself the three principles of conflict, mutuality, and order. This unit is a transaction" (p.4).
+> “[T]he ultimate unit of activity ... must contain in itself the three principles of conflict, mutuality, and order. This unit is a transaction,” (p.4).
 
 ]
 ]
@@ -132,7 +133,33 @@ John R. Commons
 
 .left-column[
 .center[
-![:scale 75%](https://www.dropbox.com/s/53tap4gbgntemc7/williamson.png?raw=1)
+![:scale 80%](../images/marshall.png)
+
+.smallest[
+Alfred Marshall
+
+1842-1924
+
+]
+]
+]
+.right-column[
+
+.quitesmall[
+
+> “Indeed, .hi[in some cases and for some purposes, nearly the whole income of a business may be regarded as a quasi-rent], that is an income determined for the time by the state of the market for its wares, .hi[with but little reference to the cost of preparing for their work] the various things and persons engaged in it. In other words it is a .hi[composite quasi-rent divisible among the different persons in the business by bargaining], supplemented by custom and by notions of fairness...Thus the head clerk in a business has an acquaintance with men and things, the use of which he could in some cases sell at a high price to rival firms. But in other cases .hi[it is of a kind to be of no value save to the business in which he already is; and then his departure would perhaps injure it by several times the value of his salary], while probably he could not get half that salary elsewhere,”  (VI.viii.35).
+
+]
+]
+.source[Marshall, Alfred, 1870, *Principles of Economics*]
+
+---
+
+# Transaction Costs and the Economics of Governance
+
+.left-column[
+.center[
+![:scale 75%](../images/williamson.png)
 
 .smallest[
 Olvier E Williamson
@@ -147,7 +174,7 @@ Economics Nobel 2009
 
 .smallest[
 
-> "As the term suggests, transaction cost economics adopts a microanalytic approach to the study of economic organization. The focus is on transactions and the economizing efforts that attend the organization thereof...With a well-working interface, as with a well-working machine, these transfers occur smoothly. In mechanical systems we look for frictions: Do the gears mesh, are the parts lubricated, is there needless slippage or other loss of energy?" (p.1).
+> “As the term suggests, transaction cost economics adopts a microanalytic approach to the study of economic organization. The focus is on transactions and the economizing efforts that attend the organization thereof...With a well-working interface, as with a well-working machine, these transfers occur smoothly. In mechanical systems we look for frictions: Do the gears mesh, are the parts lubricated, is there needless slippage or other loss of energy?” (p.1).
 
 ]
 ]
@@ -159,7 +186,7 @@ Economics Nobel 2009
 
 .left-column[
 .center[
-![:scale 75%](https://www.dropbox.com/s/53tap4gbgntemc7/williamson.png?raw=1)
+![:scale 75%](../images/williamson.png)
 
 .smallest[
 Olvier E Williamson
@@ -174,7 +201,7 @@ Economics Nobel 2009
 
 .smallest[
 
-> "The economic counterpart of friction is transaction cost: Do the parties to the exchange operate harmoniously, or are there frequent misunderstandings and conflicts that lead to delays, breakdowns, and other malfunctions? Transaction cost analysis supplants the usual preoccupation with technology and steady-state production (or distribution) expenses with an examination of the comparative costs of planning, adapting, and monitoring task completion under alternative governance structures." (pp.1-2).
+> “The economic counterpart of friction is transaction cost: Do the parties to the exchange operate harmoniously, or are there frequent misunderstandings and conflicts that lead to delays, breakdowns, and other malfunctions? Transaction cost analysis supplants the usual preoccupation with technology and steady-state production (or distribution) expenses with an examination of the comparative costs of planning, adapting, and monitoring task completion under alternative governance structures.“ (pp.1-2).
 
 ]
 ]
@@ -186,7 +213,7 @@ Economics Nobel 2009
 
 .left-column[
 .center[
-![:scale 75%](https://www.dropbox.com/s/53tap4gbgntemc7/williamson.png?raw=1)
+![:scale 75%](../images/williamson.png)
 
 .smallest[
 Olvier E Williamson
@@ -201,9 +228,9 @@ Economics Nobel 2009
 
 .smallest[
 
-> "Rather than characterize the firm as a production function, transaction cost economics maintains that the firm is (for many purposes at least) more usefully regarded as a governance structure." (p.13)
+> “Rather than characterize the firm as a production function, transaction cost economics maintains that the firm is (for many purposes at least) more usefully regarded as a governance structure.” (p.13)
 
-> "Contrary to earlier conceptions–where the economic institutions of capitalism are explained by reference to class interests, technology, and/or monopoly power–the transactions cost approach maintains that these institutions have the main purpose and effect of economizing on transaction costs," (p.1).
+> “Contrary to earlier conceptions–where the economic institutions of capitalism are explained by reference to class interests, technology, and/or monopoly power–the transactions cost approach maintains that these institutions have the main purpose and effect of economizing on transaction costs,” (p.1).
 
 ]
 
@@ -216,7 +243,7 @@ Economics Nobel 2009
 
 .left-column[
 .center[
-![:scale 75%](https://www.dropbox.com/s/53tap4gbgntemc7/williamson.png?raw=1)
+![:scale 75%](../images/williamson.png)
 
 .smallest[
 Olvier E Williamson
@@ -231,7 +258,7 @@ Economics Nobel 2009
 
 .smallest[
 
-> "Governance...is the means by which to infuse *order*, thereby to mitigate *conflict* and realize *mutual gain*...Furthermore, the transaction is made the basic unit of analysis," (p.2).
+> “Governance...is the means by which to infuse *order*, thereby to mitigate *conflict* and realize *mutual gain*...Furthermore, the transaction is made the basic unit of analysis,” (p.2).
 
 ]
 
@@ -244,7 +271,7 @@ Economics Nobel 2009
 
 .left-column[
 .center[
-![:scale 75%](https://www.dropbox.com/s/53tap4gbgntemc7/williamson.png?raw=1)
+![:scale 75%](../images/williamson.png)
 
 .smallest[
 Olvier Williamson
@@ -257,8 +284,8 @@ Economics Nobel 2009
 ]
 .right-column[
 
-- A contract between two parties constitutes a .hi["fundamental transformation"] from *ex ante* competitive market to an *ex post* bilateral monopoly
-  - Two parties depend on one another's performance to jointly capture the gains from exchange
+- A contract between two parties constitutes a .hi[“fundamental transformation”] from *ex ante* competitive market to an *ex post* bilateral monopoly
+  - Two parties depend on one another’s performance to jointly capture the gains from exchange (“quasi-rents” of cooperation)
   - Committing a factor of production into such a relationship is a .hi-purple[specific investment], possibly .hi-purple[sunk cost]
 
 - Creates the possibility of .hi-purple[post-contractual opportunism] by the parties
@@ -271,13 +298,13 @@ Economics Nobel 2009
 
 .pull-left[
 .center[
-![](https://www.dropbox.com/s/16wfblrws419v3d/backstab.jpg?raw=1)
+![](../images/backstab.jpg)
 ]
 ]
 
 .pull-right[
 
-- This .puple[bilateral dependency] creates .hi-purple["quasi rents"] from cooperation that might be **appropriated** by a party 
+- This .puple[bilateral dependency] creates .hi-purple[“quasi rents”] from cooperation that might be **appropriated** by a party 
 
 - Need to contract *ex ante* to protect *ex post* possibility of someone threatening to appropriate the rents
 
@@ -291,7 +318,7 @@ Economics Nobel 2009
 
 .left-column[
 .center[
-![:scale 80%](https://www.dropbox.com/s/nr6ae1yqvq57pf3/benklein.jpg?raw=1)
+![:scale 80%](../images/benklein.jpg)
 
 .smallest[
 Benjamin Klein
@@ -304,9 +331,9 @@ Benjamin Klein
 .right-column[
 
 .smallest[
-> "Coase's fundamental insight [was] that transaction, coordination, and contracting costs must be considered explicitly in explaining the extent of vertical integration...[We] explore one particular cost of using the market system-the possibility of postcontractual opportunistic behavior," (p.297)
+> “Coase's fundamental insight [was] that transaction, coordination, and contracting costs must be considered explicitly in explaining the extent of vertical integration...[We] explore one particular cost of using the market system-the possibility of postcontractual opportunistic behavior,” (p.297)
 
-> "The particular circumstance we emphasize as likely to produce a serious threat of this type of reneging on contracts is the presence of appropriable specialized quasi rents. After a specific investment is made and such quasi rents are created, the possibility of opportunistic behavior is very real. Following Coase's framework, this problem can be solved in two possible ways: vertical integration or contracts," (p.298)
+> “The particular circumstance we emphasize as likely to produce a serious threat of this type of reneging on contracts is the presence of appropriable specialized quasi rents. After a specific investment is made and such quasi rents are created, the possibility of opportunistic behavior is very real. Following Coase's framework, this problem can be solved in two possible ways: vertical integration or contracts,” (p.298)
 
 ]
 .source[Klein, Benjamin, Robert G Crawford, and Armen A Alchian, 1978, "Vertical Integration, Appropriable Rents, and the Competitive Contracting Process," *Journal of Law and Economics* 21(2): 297-326]
@@ -318,7 +345,7 @@ Benjamin Klein
 
 .left-column[
 .center[
-![:scale 80%](https://www.dropbox.com/s/nr6ae1yqvq57pf3/benklein.jpg?raw=1)
+![:scale 80%](../images/benklein.jpg)
 
 .smallest[
 Benjamin Klein
@@ -331,10 +358,10 @@ Benjamin Klein
 .right-column[
 
 .smallest[
-> "An appropriable quasi rent is not a monopoly rent in the usual sense, that is, the increased value of an asset protected from market entry over the value it would have in an open market. [It] can occur with no market closure or restrictions placed on rival assets. Once install, an asset may be so expensive to remove or so specialized to a particular user that if the price paid to the owner was somehow reduced the asset's services to that user would not be reduced," (p.299).
+> “An appropriable quasi rent is not a monopoly rent in the usual sense, that is, the increased value of an asset protected from market entry over the value it would have in an open market. [It] can occur with no market closure or restrictions placed on rival assets. Once install, an asset may be so expensive to remove or so specialized to a particular user that if the price paid to the owner was somehow reduced the asset's services to that user would not be reduced,” (p.299).
 
 ]
-.source[Klein, Benjamin, Robert G Crawford, and Armen A Alchian, 1978, "Vertical Integration, Appropriable Rents, and the Competitive Contracting Process," *Journal of Law and Economics* 21(2): 297-326]
+.source[Klein, Benjamin, Robert G Crawford, and Armen A Alchian, 1978, “Vertical Integration, Appropriable Rents, and the Competitive Contracting Process,” *Journal of Law and Economics* 21(2): 297-326]
 
 ]
 
@@ -344,7 +371,7 @@ Benjamin Klein
 
 .left-column[
 .center[
-![:scale 80%](https://www.dropbox.com/s/nr6ae1yqvq57pf3/benklein.jpg?raw=1)
+![:scale 80%](../images/benklein.jpg)
 
 .smallest[
 Benjamin Klein
@@ -357,7 +384,7 @@ Benjamin Klein
 .right-column[
 
 .smaller[
-> "Because of transaction and mobility costs, 'market power' will exist in many situations not commonly called monopolies. There may be many potential suppliers of a particular asset to a particular user but once the investment in the asset is made, the asset may be so specialized to a particular user that monopoly or monopsony power, or both, is created," (p.299).
+> “Because of transaction and mobility costs, ‘market power’ will exist in many situations not commonly called monopolies. There may be many potential suppliers of a particular asset to a particular user but once the investment in the asset is made, the asset may be so specialized to a particular user that monopoly or monopsony power, or both, is created,” (p.299).
 
 ]
 
@@ -377,13 +404,13 @@ class: inverse, center, middle
 
 .left-column[
 .center[
-![](https://www.dropbox.com/s/hajeu5uducpwa1y/specific.jpg?raw=1)
+![](../images/specific.jpg)
 ]
 ]
 
 .right-column[
 
-- .hi["Asset specificity"]: degree to which an asset has alternative valuable uses outside a particular use
+- .hi[“Asset specificity”]: degree to which an asset has alternative valuable uses outside a specific use
   - Or degree to which it loses value for other uses
 
 - .hi-purple[General assets] can easily be diverted to other productive uses for most or all of their value
@@ -398,7 +425,7 @@ class: inverse, center, middle
 
 .left-column[
 .center[
-![](https://www.dropbox.com/s/hajeu5uducpwa1y/specific.jpg?raw=1)
+![](../images/specific.jpg)
 ]
 ]
 
@@ -414,7 +441,7 @@ class: inverse, center, middle
 
 .left-column[
 .center[
-![:scale 75%](https://www.dropbox.com/s/53tap4gbgntemc7/williamson.png?raw=1)
+![:scale 75%](../images/williamson.png)
 
 .smallest[
 Olvier E Williamson
@@ -429,7 +456,7 @@ Economics Nobel 2009
 
 .smallest[
 
-> "Four types of asset specificity are usefully distinguished: 
+> “Four types of asset specificity are usefully distinguished: 
 
 > [1.] site specificity - e.g. successive stations that are located in a cheek-by-jowl relation to each other so as to economize on inventory and transportation expenses; 
 
@@ -437,13 +464,21 @@ Economics Nobel 2009
 
 > [3.] human asset specificity that arises in a learning-by-doing fashion; and
 
-> [4.] dedicated assets, which represent a discrete investment in generalized...production capacity that would not be made but for the prospect of selling a significant amount of product to a specific consumer," (p. 95).
+> [4.] dedicated assets, which represent a discrete investment in generalized...production capacity that would not be made but for the prospect of selling a significant amount of product to a specific consumer,” (p. 95).
 
 ]
 ]
 .source[Williamson, Oliver E, 1985, *The Economic Institutions of Capitalism*]
 
 ---
+
+
+As a condition of asset specificity becomes more important, however,
+exchange relations take on a progressively stronger bilateral trading character. The reason is that parties to such trades have a stake in preserving the continuity of the relationship. 
+367
+
+---
+
 
 # Asset Specificity: Example
 
@@ -490,7 +525,7 @@ Economics Nobel 2009
 
 .center[
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qd8hy032uLc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="980" height="550" src="https://www.youtube.com/embed/qd8hy032uLc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ]
 
@@ -499,7 +534,7 @@ Economics Nobel 2009
 # ...Pray They Don't Alter it Any Futher
 
 .center[
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OXyH1XkQo44" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="980" height="550" src="https://www.youtube.com/embed/OXyH1XkQo44" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ]
 
 ---
@@ -684,8 +719,8 @@ class: inverse, center, middle
 .pull-right[
 .smallest[
 - Consider a simple model of two-stage production:
-  1. Manufacturing ("upstream")
-  2. Retailing ("downstream")
+  1. Manufacturing (“upstream”)
+  2. Retailing (“downstream”)
 
 - Assume each unit of final product (sold by retailer to consumers) requires 1 unit of input (sold by manufacturer to retailer)
   - e.g. 1 engine for 1 car
@@ -693,6 +728,7 @@ class: inverse, center, middle
 - Each stage is a separate market, which could be competitive or monopolistic
 ]
 ]
+
 ---
 
 # Double Marginalization Problem
@@ -716,15 +752,15 @@ q_PC<-(a-c)/(b)
 base<-ggplot(data.frame(x=c(0,q_choke)), aes(x=x))+
   
   # curves 
-  stat_function(fun=Demand, geom="line", size=1, color="blue")+
-  stat_function(fun=MR, geom="line", size=1, color="purple")+
-  stat_function(fun=MC, geom="line", size=1, color="red")+
+  stat_function(fun=Demand, geom="line", size=2, color="blue")+
+  stat_function(fun=MR, geom="line", size=2, color="purple")+
+  stat_function(fun=MC, geom="line", size=2, color="red")+
   # surpluses
 
   # labels 
   geom_segment(x=0,y=Demand(4),xend=4,yend=Demand(4),linetype="dotted", size=1)+
   geom_segment(x=4,y=0,xend=4,yend=Demand(4),linetype="dotted", size=1)+
-
+  geom_segment(x=q_PC,y=0,xend=q_PC,yend=c,linetype="dotted", size=1)+
   #geom_point(x=q_PC,y=c, color="black", size=3)+ 
   #geom_text(x=q_PC,y=c+0.5,label="N.E.",color="black")+
   annotate(geom = "label", x = 5, y = Demand(5), label = expression(Demand[R]),
@@ -743,18 +779,19 @@ base<-ggplot(data.frame(x=c(0,q_choke)), aes(x=x))+
   guides(color = F, fill = F)+
   labs(x = "Quantity (q)",
        y = "Price (p)",
-       title = "Retailer")+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=18)
+       title = "(Downstream) Retailer's Market")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=16)
 base
 ```
 ]
 
 .pull-right[
-- .red[MC] for **Retailer** = price for **Manufacturer**'s output $(MC_R=p_M)$
+- $\color{red}{MC_R}$ for **Retailer** = price for **Manufacturer**’s output $(MC_R=p_M)$
 
 - **Retailer** sets $MR=MC$ at $q_R$ and marks up $p_R>MC_R$ to consumers
 
 ]
+
 ---
 
 # Double Marginalization Problem
@@ -782,7 +819,7 @@ base+
 ]
 
 .pull-right[
-- .red[MC] for **Retailer** = price for **Manufacturer**'s output $(MC_R=p_M)$
+- $\color{red}{MC_R}$ for **Retailer** = price for **Manufacturer**’s output $(MC_R=p_M)$
 
 - **Retailer** sets $MR=MC$ at $q_R$ and marks up $p_R>MC_R$ to consumers
 
@@ -801,18 +838,17 @@ base+
 c_2<-4
 MC_2=function(x){c_2}
 
-c_3<-1
+c_3<-0.5
 MC_3=function(x){c_3}
 
 ggplot(data.frame(x=c(0,q_choke)), aes(x=x))+
   
   # curves 
-  stat_function(fun=Demand, geom="line", size=1, color="blue")+
-  stat_function(fun=MR, geom="line", size=1, color="purple")+
-  stat_function(fun=MC, geom="line", size=1, color="red")+
+  stat_function(fun=Demand, geom="line", size=2, color="blue")+
+  stat_function(fun=MR, geom="line", size=2, color="purple")+
+  stat_function(fun=MC, geom="line", size=2, color="red")+
   
-  stat_function(fun=MC_2, geom="line", size=1, color="darkred")+
-  stat_function(fun=MC_3, geom="line", size=1, color="pink")+
+  stat_function(fun=MC_2, geom="line", size=2, color="darkred")+
 
   # surpluses
 
@@ -823,8 +859,70 @@ ggplot(data.frame(x=c(0,q_choke)), aes(x=x))+
     geom_segment(x=0,y=Demand(3),xend=3,yend=Demand(3),linetype="dotted", size=0.5)+
   geom_segment(x=3,y=0,xend=3,yend=Demand(3),linetype="dotted", size=0.5)+
 
-      geom_segment(x=0,y=Demand(4.5),xend=4.5,yend=Demand(4.5),linetype="dotted", size=0.5)+
-  geom_segment(x=4.5,y=0,xend=4.5,yend=Demand(4.5),linetype="dotted", size=0.5)+
+  #geom_point(x=q_PC,y=c, color="black", size=3)+ 
+  #geom_text(x=q_PC,y=c+0.5,label="N.E.",color="black")+
+  annotate(geom = "label", x = 5, y = Demand(5), label = expression(Demand[R]),
+           color = "blue") +
+  annotate(geom = "label", x = 2.5, y = MR(2.5), label = expression(MR[R]),
+           color = "purple") +
+  annotate(geom = "label", x = 7, y = c, label = expression(MC^{R}[1]),
+           color = "red") +
+  
+  annotate(geom = "label", x = 7, y = c_2, label = expression(MC^{R}[2]),
+           color = "darkred") +
+
+  scale_x_continuous(breaks = c(0,3,4,q_PC),
+                     labels = c(0,expression(q[2]^{R}), expression(q[1]^{R}),expression(q[PC])),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,c,c_2, Demand(4), Demand(3), a),
+                     labels = c(0, expression(MC[1]^{R}==p[1]^{M}), expression(MC[2]^{R}==p[2]^{M}), expression(p[1]^{R}), expression(p[2]^R), expression(a)),
+                     limits = c(0,a),
+                     expand=c(0,0))+
+  guides(color = F, fill = F)+
+  labs(x = "Quantity (q)",
+       y = "Price (p)",
+       title = "(Downstream) Retailer's Market")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=16)  
+```
+]
+
+.pull-right[
+.smaller[
+- Note that .purple[**Retailer**'s MR] curve is the demand curve for the **Manufacturer**
+
+- If **Manufacturer** were to raise/lower price, **Retailer** would buy $q^R$ where $MR_R=MC_R$
+  - Recall **Retailer**'s $MC_R$ is **Manufacturer**'s $P_M$!
+]
+]
+
+---
+
+
+# Double Marginalization Problem
+
+.pull-left[
+```{r}
+ggplot(data.frame(x=c(0,q_choke)), aes(x=x))+
+  
+  # curves 
+  stat_function(fun=Demand, geom="line", size=2, color="blue")+
+  stat_function(fun=MR, geom="line", size=2, color="purple")+
+  stat_function(fun=MC, geom="line", size=2, color="red")+
+  
+  stat_function(fun=MC_2, geom="line", size=2, color="darkred")+
+  stat_function(fun=MC_3, geom="line", size=2, color="pink")+
+
+  # surpluses
+
+  # labels 
+  geom_segment(x=0,y=Demand(4),xend=4,yend=Demand(4),linetype="dotted", size=1)+
+  geom_segment(x=4,y=0,xend=4,yend=Demand(4),linetype="dotted", size=1)+
+
+    geom_segment(x=0,y=Demand(3),xend=3,yend=Demand(3),linetype="dotted", size=0.5)+
+  geom_segment(x=3,y=0,xend=3,yend=Demand(3),linetype="dotted", size=0.5)+
+
+      geom_segment(x=0,y=Demand(4.75),xend=4.75,yend=Demand(4.75),linetype="dotted", size=0.5)+
+  geom_segment(x=4.75,y=0,xend=4.75,yend=Demand(4.75),linetype="dotted", size=0.5)+
 
   #geom_point(x=q_PC,y=c, color="black", size=3)+ 
   #geom_text(x=q_PC,y=c+0.5,label="N.E.",color="black")+
@@ -841,18 +939,87 @@ ggplot(data.frame(x=c(0,q_choke)), aes(x=x))+
     annotate(geom = "label", x = 7, y = c_3, label = expression(MC^{R}[3]),
            color = "pink") +
 
-  scale_x_continuous(breaks = c(0,3,4,4.5,q_PC),
+  scale_x_continuous(breaks = c(0,3,4,4.75,q_PC),
                      labels = c(0,expression(q[2]^{R}), expression(q[1]^{R}), expression(q[3]^{R}), expression(q[PC])),
                      expand=c(0,0))+
-  scale_y_continuous(breaks = c(0,c_3, c,c_2, Demand(4), a),
-                     labels = c(0,expression(MC[3]^{R}==p[3]^{M}), expression(MC[1]^{R}==p[1]^{M}), expression(MC[2]^{R}==p[2]^{M}), expression(p[1]^{R}), expression(a)),
+  scale_y_continuous(breaks = c(0,c_3, c,c_2, Demand(4.75), Demand(4), Demand(3), a),
+                     labels = c(0,expression(MC[3]^{R}==p[3]^{M}), expression(MC[1]^{R}==p[1]^{M}), expression(MC[2]^{R}==p[2]^{M}), expression(p[3]^{R}), expression(p[1]^{R}), expression(p[2]^{R}), expression(a)),
                      limits = c(0,a),
                      expand=c(0,0))+
   guides(color = F, fill = F)+
   labs(x = "Quantity (q)",
        y = "Price (p)",
-       title = "Retailer")+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=18)  
+       title = "(Downstream) Retailer's Market")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=16)  
+```
+]
+
+.pull-right[
+.smaller[
+- Note that .purple[**Retailer**'s MR] curve is the demand curve for the **Manufacturer**
+
+- If **Manufacturer** were to raise/lower price, **Retailer** would buy $q^R$ where $MR_R=MC_R$
+  - Recall **Retailer**'s $MC_R$ is **Manufacturer**'s $P_M$!
+
+]
+]
+
+---
+
+
+# Double Marginalization Problem
+
+.pull-left[
+```{r}
+ggplot(data.frame(x=c(0,q_choke)), aes(x=x))+
+  
+  # curves 
+  stat_function(fun=Demand, geom="line", size=2, color="blue")+
+  stat_function(fun=MR, geom="line", size=2, color="purple")+
+  stat_function(fun=MC, geom="line", size=2, color="red")+
+  
+  stat_function(fun=MC_2, geom="line", size=2, color="darkred")+
+  stat_function(fun=MC_3, geom="line", size=2, color="pink")+
+
+  # surpluses
+
+  # labels 
+  geom_segment(x=0,y=Demand(4),xend=4,yend=Demand(4),linetype="dotted", size=1)+
+  geom_segment(x=4,y=0,xend=4,yend=Demand(4),linetype="dotted", size=1)+
+
+    geom_segment(x=0,y=Demand(3),xend=3,yend=Demand(3),linetype="dotted", size=0.5)+
+  geom_segment(x=3,y=0,xend=3,yend=Demand(3),linetype="dotted", size=0.5)+
+
+      geom_segment(x=0,y=Demand(4.75),xend=4.75,yend=Demand(4.75),linetype="dotted", size=0.5)+
+  geom_segment(x=4.75,y=0,xend=4.75,yend=Demand(4.75),linetype="dotted", size=0.5)+
+
+  #geom_point(x=q_PC,y=c, color="black", size=3)+ 
+  #geom_text(x=q_PC,y=c+0.5,label="N.E.",color="black")+
+  annotate(geom = "label", x = 5, y = Demand(5), label = expression(Demand[R]),
+           color = "blue") +
+  annotate(geom = "label", x = 2.5, y = MR(2.5), label = expression(MR[R]),
+           color = "purple") +
+  annotate(geom = "label", x = 7, y = c, label = expression(MC^{R}[1]),
+           color = "red") +
+  
+  annotate(geom = "label", x = 7, y = c_2, label = expression(MC^{R}[2]),
+           color = "darkred") +
+
+    annotate(geom = "label", x = 7, y = c_3, label = expression(MC^{R}[3]),
+           color = "pink") +
+
+  scale_x_continuous(breaks = c(0,3,4,4.75,q_PC),
+                     labels = c(0,expression(q[2]^{R}), expression(q[1]^{R}), expression(q[3]^{R}), expression(q[PC])),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,c_3, c,c_2, Demand(4.75), Demand(4), Demand(3), a),
+                     labels = c(0,expression(MC[3]^{R}==p[3]^{M}), expression(MC[1]^{R}==p[1]^{M}), expression(MC[2]^{R}==p[2]^{M}), expression(p[3]^{R}), expression(p[1]^{R}), expression(p[2]^{R}), expression(a)),
+                     limits = c(0,a),
+                     expand=c(0,0))+
+  guides(color = F, fill = F)+
+  labs(x = "Quantity (q)",
+       y = "Price (p)",
+       title = "(Downstream) Retailer's Market")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=16)  
 ```
 ]
 
@@ -879,11 +1046,11 @@ MR_M=function(x){a-4*b*x}
 double<-ggplot(data.frame(x=c(0,q_choke)), aes(x=x))+
   
   # curves 
-  stat_function(fun=Demand, geom="line", size=1, color="blue")+
-  stat_function(fun=MR, geom="line", size=1, color="purple")+
-  stat_function(fun=MC, geom="line", size=1, color="darkred")+
+  stat_function(fun=Demand, geom="line", size=2, color="blue", alpha = 0.4)+
+  stat_function(fun=MR, geom="line", size=2, color="purple")+
+  stat_function(fun=MC, geom="line", size=2, color="darkred")+
   
-  stat_function(fun=MR_M, geom="line", size=1, color="darkblue")+
+  stat_function(fun=MR_M, geom="line", size=2, color="darkblue")+
 
   # surpluses
 
@@ -909,17 +1076,17 @@ double<-ggplot(data.frame(x=c(0,q_choke)), aes(x=x))+
   guides(color = F, fill = F)+
   labs(x = "Quantity (q)",
        y = "Price (p)",
-       title = "Manufacturer")+
+       title = "(Upstream) Manufacturer's Market")+
   theme_classic(base_family = "Fira Sans Condensed", base_size=18)
 double
 ```
 ]
 
 .pull-right[
-- Since **Manufacturer**'s $\color{purple}{MR_M}$ curve is $\color{purple}{\text{Retailer's Demand curve}}$, consider  **Retailer**'s $\color{darkblue}{MR_R}$ curve
+- Since **Manufacturer**'s $\color{purple}{MR_M}$ curve is **Retailer's** Demand curve, consider  **Retailer**'s $\color{darkblue}{MR_R}$ curve
   - Starting at $a$, with twice the slope of $\color{purple}{MR_M}$!
 
-- It will set its own $\color{darkred}{MC_M}=\color{darkblue}{MR_M}$
+- It will set its *own* $\color{darkred}{MC_M}=\color{darkblue}{MR_M}$
 
 - Then markup the price to $p_M$ (most **Retailer** is willing to pay!)
 ]
@@ -933,11 +1100,11 @@ double
 ggplot(data.frame(x=c(0,q_choke)), aes(x=x))+
   
   # curves 
-  stat_function(fun=Demand, geom="line", size=1, color="blue")+
-  stat_function(fun=MR, geom="line", size=1, color="purple")+
-  stat_function(fun=MC, geom="line", size=1, color="darkred")+
-  geom_hline(yintercept=MR(2), size=1, color="red")+
-  stat_function(fun=MR_M, geom="line", size=1, color="darkblue")+
+  stat_function(fun=Demand, geom="line", size=2, color="blue")+
+  stat_function(fun=MR, geom="line", size=2, color="purple")+
+  stat_function(fun=MC, geom="line", size=2, color="darkred")+
+  geom_hline(yintercept=MR(2), size=2, color="red")+
+  stat_function(fun=MR_M, geom="line", size=2, color="darkblue")+
 
   # surpluses
 
@@ -966,16 +1133,16 @@ ggplot(data.frame(x=c(0,q_choke)), aes(x=x))+
   guides(color = F, fill = F)+
   labs(x = "Quantity (q)",
        y = "Price (p)",
-       title = "Retailer")+
+       title = "(Downstream) Retailer's Market")+
   theme_classic(base_family = "Fira Sans Condensed", base_size=18)
 ```
 ]
 
 .pull-right[
-- Since **Manufacturer**'s $\color{purple}{MR_M}$ curve is $\color{purple}{\text{Retailer's Demand curve}}$, consider  **Retailer**'s $\color{darkblue}{MR_R}$ curve
+- Since **Manufacturer**'s $\color{purple}{MR_M}$ curve is **Retailer's** Demand curve, consider  **Retailer**'s $\color{darkblue}{MR_R}$ curve
   - Starting at $a$, with twice the slope of $\color{purple}{MR_M}$!
 
-- It will set its own $\color{darkred}{MC_M}=\color{darkblue}{MR_M}$
+- It will set its *own* $\color{darkred}{MC_M}=\color{darkblue}{MR_M}$
 
 - Then markup the price to $p_M$ (most **Retailer** is willing to pay!)
 
@@ -991,11 +1158,11 @@ ggplot(data.frame(x=c(0,q_choke)), aes(x=x))+
 double_m<-ggplot(data.frame(x=c(0,q_choke)), aes(x=x))+
   
   # curves 
-  stat_function(fun=Demand, geom="line", size=1, color="blue")+
-  stat_function(fun=MR, geom="line", size=1, color="purple")+
-  stat_function(fun=MC, geom="line", size=1, color="darkred")+
-  geom_hline(yintercept=MR(2), size=1, color="red")+
-  stat_function(fun=MR_M, geom="line", size=1, color="darkblue")+
+  stat_function(fun=Demand, geom="line", size=2, color="blue")+
+  stat_function(fun=MR, geom="line", size=2, color="purple")+
+  stat_function(fun=MC, geom="line", size=2, color="darkred")+
+  geom_hline(yintercept=MR(2), size=2, color="red")+
+  stat_function(fun=MR_M, geom="line", size=2, color="darkblue")+
 
   # surpluses
 
@@ -1025,7 +1192,7 @@ double_m<-ggplot(data.frame(x=c(0,q_choke)), aes(x=x))+
   guides(color = F, fill = F)+
   labs(x = "Quantity (q)",
        y = "Price (p)",
-       title = "Retailer")+
+       title = "(Downstream) Retailer's Market")+
   theme_classic(base_family = "Fira Sans Condensed", base_size=18)
 double_m
 ```
@@ -1059,19 +1226,22 @@ double_m+
   geom_polygon(data=CS_2, aes(x=x,y=y), fill="blue", alpha=0.4)+
   geom_polygon(data=DWL_2, aes(x=x,y=y), fill="black", alpha=0.4)+
   geom_rect(xmin=0,xmax=2,ymin=c,ymax=MR(2), fill="darkgreen", alpha=0.4)+
-  geom_rect(xmin=0,xmax=2,ymin=MR(2),ymax=Demand(2), fill="green", alpha=0.4)
+  geom_rect(xmin=0,xmax=2,ymin=MR(2),ymax=Demand(2), fill="green", alpha=0.4)+
+  geom_label(x = 1, y = 4, label = "Manuf. Profit", color = "darkgreen")+
+  geom_label(x = 1, y = 7, label = "Retail Profit", color = "green")
   
 ```
 ]
 
 .pull-right[
-- **Retailer** extracts some .hi-green[profit (darker)]
 
 - **Manufacturer** earns some .hi-green[profit]
 
+- **Retailer** extracts some of this .hi-green[profit (darker)]
+
 - Less .hi-blue[Consumer Surplus]
 
-- More **DWL**
+- Much greater **DWL** from *double markup*
 ]
 
 ---
@@ -1103,8 +1273,9 @@ With bilateral monopoly, a .hi[double-markup] causing:
 
 - Much more **DWL**
 
-- Less total .hi-green[profit] (and split by Manufacturer and Retailer)
+- Less total .hi-green[profit] (and it's split between Manufacturer & Retailer)
 ]
+
 ---
 
 class: inverse, center, middle
@@ -1117,7 +1288,9 @@ class: inverse, center, middle
 
 .pull-left[
 .center[
-![](https://www.dropbox.com/s/2bqf35kihsabox4/productionprocess2.png?raw=1)
+![](../images/productionprocess2.png)
+
+![](../images/productionprocess1.png)
 ]
 ]
 
@@ -1151,7 +1324,7 @@ class: inverse, center, middle
 
 .left-column[
 .center[
-![:scale 80%](https://www.dropbox.com/s/nr6ae1yqvq57pf3/benklein.jpg?raw=1)
+![:scale 80%](../images/benklein.jpg)
 
 .smallest[
 Benjamin Klein
@@ -1164,7 +1337,7 @@ Benjamin Klein
 .right-column[
 
 .smaller[
-> "[A]s assets become more specific and more appropriable quasi rents are created (and therefore the gains from opportunistic behavior increases), the costs of contracting will generally increase more than the costs of vertical integration. Hence, *ceterus paribus*, we are more likely to observe vertical integration," (p.298).
+> “[A]s assets become more specific and more appropriable quasi rents are created (and therefore the gains from opportunistic behavior increases), the costs of contracting will generally increase more than the costs of vertical integration. Hence, *ceterus paribus*, we are more likely to observe vertical integration,” (p.298).
 
 ]
 .source[Klein, Benjamin, Robert G Crawford, and Armen A Alchian, 1978, "Vertical Integration, Appropriable Rents, and the Competitive Contracting Process," *Journal of Law and Economics* 21(2): 297-326]
@@ -1178,7 +1351,7 @@ Benjamin Klein
 
 .left-column[
 .center[
-![:scale 80%](https://www.dropbox.com/s/nr6ae1yqvq57pf3/benklein.jpg?raw=1)
+![:scale 80%](../images/benklein.jpg)
 
 .smallest[
 Benjamin Klein
@@ -1190,7 +1363,7 @@ Benjamin Klein
 
 .right-column[
 
-> "We maintain that if an asset has a substantial portion of quasi rent which is strongly dependent upon some other particular asset, both assets will tend to be owned by one party," (p.300).
+> “We maintain that if an asset has a substantial portion of quasi rent which is strongly dependent upon some other particular asset, both assets will tend to be owned by one party,” (p.300).
 
 .source[Klein, Benjamin, Robert G Crawford, and Armen A Alchian, 1978, "Vertical Integration, Appropriable Rents, and the Competitive Contracting Process," *Journal of Law and Economics* 21(2): 297-326]
 
@@ -1202,7 +1375,7 @@ Benjamin Klein
 
 .left-column[
 .center[
-![:scale 80%](https://www.dropbox.com/s/nr6ae1yqvq57pf3/benklein.jpg?raw=1)
+![:scale 80%](../images/benklein.jpg)
 
 .smallest[
 Benjamin Klein
@@ -1214,7 +1387,7 @@ Benjamin Klein
 
 .right-column[
 .smallest[
-> "The primary alternative to vertical integration as a solution to the general problem of opportunistic behavior is some form of economically enforceable long-term contract," (p. 302).
+> “The primary alternative to vertical integration as a solution to the general problem of opportunistic behavior is some form of economically enforceable long-term contract,” (p. 302).
 
 ]
 .source[Klein, Benjamin, Robert G Crawford, and Armen A Alchian, 1978, "Vertical Integration, Appropriable Rents, and the Competitive Contracting Process," *Journal of Law and Economics* 21(2): 297-326]
@@ -1227,7 +1400,7 @@ Benjamin Klein
 
 .left-column[
 .center[
-![:scale 80%](https://www.dropbox.com/s/nr6ae1yqvq57pf3/benklein.jpg?raw=1)
+![:scale 80%](../images/benklein.jpg)
 
 .smallest[
 Benjamin Klein
@@ -1239,7 +1412,7 @@ Benjamin Klein
 
 .right-column[
 .smallest[
-> "Long-term contracts used as alternatives to vertical integration can be assumed to take two forms: (1) an explicitly stated contractual guarantee legally enforced by the government or some other outside institution, or (2) an implicit contractual guarantee enforced by the market mechanism of withdrawing future business if opportunistic behavior occurs...[However, they are] often very costly solutions. They entail costs of specifying possible contingencies and the policing and litigation costs of detecting violations and enforcing the contract in the courts..every contingency cannot be cheaply specified in a contract or even known and because legal redress is expensive..." (p.303)
+> “Long-term contracts used as alternatives to vertical integration can be assumed to take two forms: (1) an explicitly stated contractual guarantee legally enforced by the government or some other outside institution, or (2) an implicit contractual guarantee enforced by the market mechanism of withdrawing future business if opportunistic behavior occurs...[However, they are] often very costly solutions. They entail costs of specifying possible contingencies and the policing and litigation costs of detecting violations and enforcing the contract in the courts..every contingency cannot be cheaply specified in a contract or even known and because legal redress is expensive...” (p.303).
 
 ]
 .source[Klein, Benjamin, Robert G Crawford, and Armen A Alchian, 1978, "Vertical Integration, Appropriable Rents, and the Competitive Contracting Process," *Journal of Law and Economics* 21(2): 297-326]
@@ -1268,7 +1441,7 @@ Benjamin Klein
 
 .left-column[
 .center[
-![:scale 80%](https://www.dropbox.com/s/nr6ae1yqvq57pf3/benklein.jpg?raw=1)
+![:scale 80%](../images/benklein.jpg)
 
 .smallest[
 Benjamin Klein
@@ -1280,7 +1453,7 @@ Benjamin Klein
 
 .right-column[
 .smallest[
-"The manufacture of dies for stamping parts in accordance with the above specifications [for a Mustang or Ford model] gives a value to these dies specialized to Ford, which implies an appropriable quasi rent in those dies...once the large sunk fixed cost of the specific investment in the dies is made, the incentive for Ford to opportunistically renegotiate a lower price at which it will accept body parts from the independent die owner may be large. Similarly, if there is a large cost to Ford from the production delay of obtaining an alternative supplier of the specific body parts, the independent die owner may be able to capture quasi rents by demanding a revised higher price for the parts. Since the opportunity to lose the specialized quasi rent of assets is a debilitating prospect, neither party would invest in such equipment. Joint ownership of designs and dies removes this incentive to attempt appropriation," (p.308).
+“The manufacture of dies for stamping parts in accordance with the above specifications [for a Mustang or Ford model] gives a value to these dies specialized to Ford, which implies an appropriable quasi rent in those dies...once the large sunk fixed cost of the specific investment in the dies is made, the incentive for Ford to opportunistically renegotiate a lower price at which it will accept body parts from the independent die owner may be large. Similarly, if there is a large cost to Ford from the production delay of obtaining an alternative supplier of the specific body parts, the independent die owner may be able to capture quasi rents by demanding a revised higher price for the parts. Since the opportunity to lose the specialized quasi rent of assets is a debilitating prospect, neither party would invest in such equipment. Joint ownership of designs and dies removes this incentive to attempt appropriation,” (p.308).
 
 ]
 .source[Klein, Benjamin, Robert G Crawford, and Armen A Alchian, 1978, "Vertical Integration, Appropriable Rents, and the Competitive Contracting Process," *Journal of Law and Economics* 21(2): 297-326]
@@ -1293,7 +1466,7 @@ Benjamin Klein
 
 .left-column[
 .center[
-![:scale 80%](https://www.dropbox.com/s/nr6ae1yqvq57pf3/benklein.jpg?raw=1)
+![:scale 80%](../images/benklein.jpg)
 
 .smallest[
 Benjamin Klein
@@ -1305,7 +1478,7 @@ Benjamin Klein
 
 .right-column[
 .smallest[
-> "[I]n 1919 General Motors entered a ten-year contractual agreement with Fisher Body for the supply of closed auto bodies. In order to encourage Fisher Body to make the required specific investment, this contract had an exclusive dealing clause whereby General Motors agreed to buy substantially all its closed bodies from Fisher. This exclusive dealing arrangement significantly reduced the possibility of General Motors acting opportunistically by demanding a lower price for the bodies after Fisher made the specific investment in production capacity,"
+> “[I]n 1919 General Motors entered a ten-year contractual agreement with Fisher Body for the supply of closed auto bodies. In order to encourage Fisher Body to make the required specific investment, this contract had an exclusive dealing clause whereby General Motors agreed to buy substantially all its closed bodies from Fisher. This exclusive dealing arrangement significantly reduced the possibility of General Motors acting opportunistically by demanding a lower price for the bodies after Fisher made the specific investment in production capacity,”
 
 
 ]
@@ -1319,7 +1492,7 @@ Benjamin Klein
 
 .left-column[
 .center[
-![:scale 80%](https://www.dropbox.com/s/nr6ae1yqvq57pf3/benklein.jpg?raw=1)
+![:scale 80%](../images/benklein.jpg)
 
 .smallest[
 Benjamin Klein
@@ -1331,7 +1504,7 @@ Benjamin Klein
 
 .right-column[
 .smallest[
-> "But large opportunities were created by this exclusive dealing clause for Fisher to take advantage of General Motors, namely to demand a monopoly price for the bodies. Therefore, the contract attempted to fix the price which Fisher could charge for the bodies supplied to General Motors...The price was set on a cost plus 17.6 per cent basis [and had other provisions to protect GM]." 
+> “But large opportunities were created by this exclusive dealing clause for Fisher to take advantage of General Motors, namely to demand a monopoly price for the bodies. Therefore, the contract attempted to fix the price which Fisher could charge for the bodies supplied to General Motors...The price was set on a cost plus 17.6 per cent basis [and had other provisions to protect GM].”
 
 ]
 .source[Klein, Benjamin, Robert G Crawford, and Armen A Alchian, 1978, "Vertical Integration, Appropriable Rents, and the Competitive Contracting Process," *Journal of Law and Economics* 21(2): 297-326]
@@ -1344,7 +1517,7 @@ Benjamin Klein
 
 .left-column[
 .center[
-![:scale 80%](https://www.dropbox.com/s/nr6ae1yqvq57pf3/benklein.jpg?raw=1)
+![:scale 80%](../images/benklein.jpg)
 
 .smallest[
 Benjamin Klein
@@ -1357,7 +1530,7 @@ Benjamin Klein
 .right-column[
 
 .smallest[
-> "Unfortunately, however, these complex contractual pricing provisions did not work out in practice. The demand conditions facing General Motors and Fisher Body changed dramatically over the next few years. There was a large increase in the demand for automobiles and a significant shift away from open bodies to the closed body styles supplied by Fisher. Meanwhile, General Motors was very unhappy with the price it was being charged by its now very important supplier, Fisher...By 1924, General Motors had found the Fisher contractual relationship intolerable and began negotiations for purchase of the remaining stock in Fisher Body, culminating in a final merger agreement in 1926," (pp.309-310). 
+> “Unfortunately, however, these complex contractual pricing provisions did not work out in practice. The demand conditions facing General Motors and Fisher Body changed dramatically over the next few years. There was a large increase in the demand for automobiles and a significant shift away from open bodies to the closed body styles supplied by Fisher. Meanwhile, General Motors was very unhappy with the price it was being charged by its now very important supplier, Fisher...By 1924, General Motors had found the Fisher contractual relationship intolerable and began negotiations for purchase of the remaining stock in Fisher Body, culminating in a final merger agreement in 1926,” (pp.309-310). 
 
 ]
 

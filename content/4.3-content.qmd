@@ -27,7 +27,7 @@ The free IO textbook pretty extensively covers asset specificity theory, appropr
 
 ### Recommended Readings:
 
-- [<i class="fas fa-file-pdf"></i> Klein, Crawford, and Alchian, 1978, "Vertical Integration, Appropriable Rents, and the Competitive Contracting Process"](/files/readings/Alchian-Demsetz-1972.pdf)
+- [<i class="fas fa-file-pdf"></i> Klein, Crawford, and Alchian, 1978, "Vertical Integration, Appropriable Rents, and the Competitive Contracting Process"](/files/readings/Klein-Crawford-Alchian-1978.pdf)
 - [<i class="fas fa-file-pdf"></i> Williamson, 1983, "Credible Commitments: Using Hostages to Support Exchange"](/files/readings/Williamson-1983.pdf)
 - [<i class="fas fa-file-pdf"></i> Williamson, 1998, "The Institutions of Governance"](/files/readings/Williamson-1998.pdf)
 - [<i class="fas fa-file-pdf"></i> Williamson, 2009, "Transaction Cost Economics: The Natural Progression" (Nobel Prize Lecture)](https://www.nobelprize.org/prizes/economic-sciences/2009/williamson/lecture/)

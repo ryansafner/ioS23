@@ -23,9 +23,9 @@ Finally, we discuss a fourth perspective on the firm, the ["property rights appr
 
 ### Recommended Readings:
 
-- [<i class="fas fa-file-pdf"></i> Grossman and Hart, 1986, "The Costs and Benefits of Ownership: A Theory of Vertical and Lateral Integration"](/files/files/readings/Grossman-Hart-1986.pdf)
+- [<i class="fas fa-file-pdf"></i> Grossman and Hart, 1986, "The Costs and Benefits of Ownership: A Theory of Vertical and Lateral Integration"](/files/readings/Grossman-Hart-1986.pdf)
 - [<i class="fas fa-file-pdf"></i> Hart, 2016, "Incomplete Contracts and Control" (Nobel Prize Lecture)](https://www.nobelprize.org/prizes/economic-sciences/2016/hart/lecture/)
-- [<i class="fas fa-file-pdf"></i> Klein, Crawford, and Alchian, 1978, "Vertical Integration, Appropriable Rents, and the Competitive Contracting Process"](/files/readings/Alchian-Demsetz-1972.pdf)
+- [<i class="fas fa-file-pdf"></i> Klein, Crawford, and Alchian, 1978, "Vertical Integration, Appropriable Rents, and the Competitive Contracting Process"](/files/readings/Klein-Crawford-Alchian-1978.pdf)
 - [<i class="fas fa-file-pdf"></i> Klein and Leffler, 1981, "The Role of Market Forces in Assuring Contractual Performance"](/files/readings/Klein-Leffler-1981.pdf)
 - [<i class="fas fa-file-pdf"></i> Telser, 1960, "Why Should Manufacturers Want Fair Trade?"](/files/readings/Telser-1960.pdf)
 

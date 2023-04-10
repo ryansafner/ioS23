@@ -1,0 +1,14 @@
+{
+  "hash": "63646d2ca8183bf79d9afd76b734de71",
+  "result": {
+    "markdown": "---\ntitle: \"5.1 — Measuring Market Power — Class Content\"\nexecute:\n  freeze: auto\n---\n\n::: {.cell}\n\n:::\n\n\n::: {.callout-note appearance=minimal}\n# Meeting Date\n*Thursday, April 13, 2023*\n:::\n\n## <i class=\"fas fa-info-circle fa-lg\"></i> Overview\n\nToday we begin looking at regulation and antitrust to achieve more competitive markets. We begin with the extremely thorny problems of actually identifying relevant markets and measuring market power.\n\n## <i class=\"fas fa-book-reader fa-lg\"></i> Readings\n\n- <i class=\"fas fas fa-book\"></i> Ch. 8.2.2, 12.1.1, 19 in [Churcha nd Ware, 2000](https://works.bepress.com/jeffrey_church/23/)\n\n### Recommended Readings:\n\n- [<i class=\"fas fa-file-pdf\"></i> Bresnahan, 1982, \"The Oligopoly Solution Concept is Identified\"](/files/readings/Bresnahan-1982.pdf)\n- [<i class=\"fas fa-external-link-square-alt\"></i> U.S. Department of Justice, 2010, \"Horizontal Merger Guidelines\"](https://www.justice.gov/atr/horizontal-merger-guidelines-08192010)\n- [<i class=\"fas fa-external-link-square-alt\"></i> U.S. Department of Justice, 2017, \"Herfindal Hirschman Index\"](https://www.justice.gov/atr/herfindahl-hirschman-index)\n\n## <i class=\"fas fa-chalkboard-teacher\"></i> Slides\n\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides. \n\n::: callout-tip\nYou can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.\n:::\n\nI suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!\n\n\n<p style=\"text-align:center;\"><a target=\"_blank\" href=\"/slides/5.1-slides.html\"><img src =\"/slides/5.1-slides.png\" alt = \"5.1-slides\"></a></p>\n<p style=\"text-align:center;\"><a class=\"btn btn-primary btn-lg\" target=\"_blank\" href=\"/slides/5.1-slides.pdf\"><i class=\"fas fa-file-pdf\"></i> Download as PDF</a></p>",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

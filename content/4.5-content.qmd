@@ -17,10 +17,11 @@ source(here::here("slides", "slide-links.R"))
 
 Today we wrap up Unit 4 and try to accomplish several things before we move into empirically trying to measure and regulate market power in our final Unit.
 
-We consider the role of entrepreneurship in the theory of the firm.
+First, we consider the role of entrepreneurship in the theory of the firm.
 
-then a more literary-inspired discussion of the shortcomings of "perfect competition" as a realistic, policy-relevant model.
+Second, we consider the role of uncertainty in our models of markets. 
 
+The combination of these ideas leads to some stark realizations about the way we model the real world, and its implications for understanding things like what “competition” actually means, and how to attain it, and such, what regulation should be. 
 
 All too often, people learn the models of basic economics (i.e. utility & profit maximization, market equilibrium, perfect competition) and make one of the following mistakes:
 
@@ -28,9 +29,7 @@ All too often, people learn the models of basic economics (i.e. utility & profit
 2. They see the real world looking nothing like the model, and conclude the real world is *wrong* and must be *fixed* to work like the model works.
 3. They believe the model to be a 100% *accurate* description of the real world.
 
-
-
-The essence of this lecture is very subtle, but very important. Hence, I have tried to give you some well-known readings
+The essence of this lecture is very subtle, but very important. Hence, I have tried to give you some well-known readings.
 
 Knight’s (1920) book is the most famous discussion of the perfect competition model, and how real world competition differs from the model because of uncertainty, which gives rise to the possibility of positive profit in the real world.
 
@@ -42,7 +41,6 @@ The video lecture by Gerd Gigerenzer provides a more modern approach to understa
 
 Similarly, Smith’s (2003) Nobel Prize article discusses this.
 
-
 ## <i class="fas fa-book-reader fa-lg"></i> Readings
 
 ### Recommended Readings:
@@ -53,12 +51,6 @@ Similarly, Smith’s (2003) Nobel Prize article discusses this.
 - <i class="fas fas fa-book"></i> Kirzner, Israel M, 1973, [*Competition and Entrepreneurship*](http://www.sjsu.edu/people/john.estill/courses/158-s15/Israel%20Kirzner%20-%20Competition%20And%20Entrepreneurship.pdf)
 - <i class="fas fas fa-book"></i> Knight, Frank H, 1921, [*Risk, Uncertainty, and Profit*](https://oll.libertyfund.org/titles/knight-risk-uncertainty-and-profit)
 - <i class="fab fa-youtube"></i> Smith, Vernon, L, 2003, ["Constructivist and Ecological Rationality in Economics (Nobel Prize Lecture)](https://www.nobelprize.org/prizes/economic-sciences/2002/smith/lecture/)
-
-### Discussion Board 
-
-Starting this week, we will occasionally have a weekly discussion board open on Blackboard. (Not every week. I will let you know when we have one open at the beginning of each week.) You will be expected to contribute to the discussion board at least twice by Sunday night. Your weekly contribution will be graded out of 5 points. At the end of the semester, I will apply the average of your weekly participation grades to apply (20%) towards your final course grade.
-
-I am interested in your thoughts, reactions, comments, and questions about any of the material (lectures and/or readings). You do not need to write more than a paragraph. Anything more than that, including continuing to reply to each others’ thoughts, questions, or comments, (which I strongly hope you do!) is solely based on your own interest and curiosity. I will jump in to answer questions the group is stuck on, give my two cents, and stir the pot as needed. I strontly hope we still keep a conversation going and can learn from each other, that was always my goal, not to lecture at you!
 
 ## <i class="fas fa-chalkboard-teacher"></i> Slides
 

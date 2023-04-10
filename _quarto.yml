@@ -80,6 +80,12 @@ website:
               href: content/4.3-content.qmd
             - text: "4.4 — Contractual Restraints & Property Rights"
               href: content/4.4-content.qmd
+            - text: "4.5 — Entrepreneurship, Uncertainty, & Market Process"
+              href: content/4.5-content.qmd
+        - section: "V. Regulation & Applications"
+          contents:
+            - text: "5.1 — Measuring Market Power"
+              href: content/5.1-content.qmd
     - title: "Assignments"
       style: "docked"
       search: false

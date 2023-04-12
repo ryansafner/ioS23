@@ -1,0 +1,1254 @@
+---
+title: "5.1 — Measuring Market Power"
+author: 'Ryan Safner'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    seal: false
+    css: [custom.css, "hygge"] #, metropolis, metropolis-fonts
+    nature:
+      beforeInit: ["macros.js", "https://platform.twitter.com/widgets.js"] # first is for rescaling images , second is for embedding tweets, https://github.com/yihui/xaringan/issues/100
+      highlightStyle: ocean #rainbow #monokai rainbow solarized-light #tomorrow-night -blue -eighties zenburn
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+    includes:
+      in_header: header.html # for font awesome, used in title  
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo=F,
+                      message=F,
+                      warning=F,
+                      fig.retina = 3,
+                      fig.align = "center")
+library("tidyverse")
+library("mosaic")
+library("ggrepel")
+library("fontawesome")
+xaringanExtra::use_tile_view()
+xaringanExtra::use_tachyons()
+xaringanExtra::use_freezeframe()
+
+update_geom_defaults("label", list(family = "Fira Sans Condensed"))
+update_geom_defaults("text", list(family = "Fira Sans Condensed"))
+
+set.seed(256)
+```
+
+
+class: title-slide
+
+# 5.1 — Measuring Market Power
+
+## ECON 326 • Industrial Organization • Spring 2023
+
+### Ryan Safner<br> Associate Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/ioS23"><i class="fa fa-github fa-fw"></i>ryansafner/ioS23</a><br> <a href="https://ioS23.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>ioS23.classes.ryansafner.com</a><br>
+
+---
+
+# Measuring Market Power
+
+.pull-left[
+.center[
+![](../images/marketpower.jpg)
+]
+]
+
+.pull-right[
+
+- Recall, .hi[market power] is the ability of a firm to raise $p>MC$
+
+- Measures of market concentration
+  - Concentration Ratios
+  - Herfindahl-Hirschman Index
+
+- Measures of markup pricing
+  - Lerner Index
+
+- The New Empirical Industrial Organization
+  - importance of econometrics
+
+]
+
+---
+
+# Market Concentration
+
+.pull-left[
+.center[
+![](../images/marketpower.jpg)
+]
+]
+
+.pull-right[
+.smaller[
+- Real world markets fall between the polar extremes of our models of .hi-purple[perfect competition] and .hi-purple[monopoly]
+
+- .hi[Concentration measures] allow us to gauge the proximity of a market to either extreme
+  - Easy to compare
+  - Assist in market regulation
+
+- Often $\in [0,1]$
+  - 0 $\implies$ perfect comepetition
+  - 1 $\implies$ monopoly
+]
+]
+
+---
+
+# Market Concentration Measures
+
+.pull-left[
+.center[
+![](../images/marketpower.jpg)
+]
+]
+
+.pull-right[
+.smallest[
+- Good measure of market concentration meets:
+
+1. .hi-purple[Principle of Transfer of Sales]: a transfer of sales from a small firm to a large firm should *increase* concentration
+
+2. .hi-purple[Entry condition]: *entry* (exit) of a small firm (holding constant the relative shares of existing firms) should *decrease* (increase) concentration
+
+3. .hi-purple[Merger condition]: merger of 2 or more firms should *increase* concentration
+  - Transfer of sales + exit of smallest firm (each raises concentration)
+]
+]
+
+---
+
+# Measuring Market Concentration: Concentration Ratio
+
+.pull-left[
+.center[
+![](../images/marketpower.jpg)
+]
+]
+
+.pull-right[
+
+- An industry's .hi-purple[concentration ratio (CR)] adds the market share of the largest $n$ firms, e.g.
+
+$$CR_n = \sum_{i=1}^n s_i$$
+  - where $s_i=\frac{q_i}{Q}$, that firm's fraction of total industry sales
+
+- Common concentration ratios: 
+  - $CR_4$
+  - $CR_8$
+]
+
+---
+
+# Market Concentration: The Film Industry
+
+| Rank | Studio | Releases | Tickets | Sales | Share | 
+|----|----------|----------|---------|-------|------:|
+| 1  | Walt Disney | 13 | 410,812,035 | $3,742,497,656 | 0.3315 |
+| 2  | Warner Bros. | 43 	| 172,395,261 | $1,570,520,862 | 0.1391 |
+| 3  | Sony Pictures | 24 | 150,913,744	| $1,374,824,330 |	0.1218 |
+| 4  | Universal | 26 | 143,128,035 | $1,303,896,396 | 0.1155 |
+| 5  | Lionsgate | 21 | 87,579,701 | $797,851,162 | 0.0707 |
+| 6  | Paramount | 11 | 61,899,898 | $563,908,126 | 0.0499 |
+| 7  | 20thC. Fox | 13 | 54,024,024 | $492,158,921 | 0.0436 |
+
+[Source](https://www.the-numbers.com/market/2019/distributors)
+
+---
+
+# Measuring Market Concentration: Concentration Ratio
+
+.pull-left[
+.smallest[
+
+| Rank | Studio | Share | 
+|----|----------|------:|
+| 1  | Walt Disney | 0.3315 |
+| 2  | Warner Bros. | 0.1391 |
+| 3  | Sony Pictures | 0.1218 |
+| 4  | Universal | 0.1155 |
+| 5  | Lionsgate | 0.0707 |
+| 6  | Paramount | 0.0499 |
+| 7  | 20thC. Fox | 0.0436 |
+
+[Source](https://www.the-numbers.com/market/2019/distributors)
+
+]
+]
+
+.pull-right[
+.smaller[
+
+$$CR_2 = \sum^2_{i=1} =0.4706$$
+
+$$CR_3 = \sum^3_{i=1} = 0.5924$$
+
+$$CR_4 = \sum^4_{i=1} = 0.7079$$
+
+$$CR_7 = \sum^7_{i=1} = 0.8721$$
+
+]
+]
+
+---
+
+# Measuring Market Concentration: Concentration Ratio
+
+.pull-left[
+.center[
+![](../images/marketpower.jpg)
+]
+]
+
+.pull-right[
+
+Problems with CR's:
+
+- $n$ is arbitrarily chosen (2? 4? 8?)
+
+- Does not follow transfer of sales principle
+  - e.g. Firm 1 gaining 0.20 and Firm 3 and 4 each losing 0.10 doesn't change $CR_4$!
+
+- No weighting by size
+
+]
+
+
+---
+
+# Measuring Market Concentration: Concentration Ratio
+
+.pull-left[
+.hi-green[Example]: Take industry A with
+
+| Firm | Market Share |
+|------|-------------:|
+| 1 | 0.60 |
+| 2 | 0.10 | 
+| 3 | 0.05 |
+| 4 | 0.05 |
+| 5 | 0.05 |
+
+$$CR_4 = 0.80$$
+]
+
+
+.pull-left[
+.hi-green[Example]: Take industry B with
+
+| Firm | Market Share |
+|------|-------------:|
+| 1 | 0.20 |
+| 2 | 0.20 | 
+| 3 | 0.20 |
+| 4 | 0.20 |
+| 5 | 0.20 |
+
+$$CR_4 = 0.80$$
+]
+
+
+
+---
+
+# Measuring Market Concentration: HHI
+
+.pull-left[
+.center[
+![](../images/marketpower.jpg)
+]
+]
+
+.pull-right[
+.smaller[
+- .hi-purple[Herfindahl-Hirschman Index (HHI)]: measures the *sum of the squares* of market share of all firms in an industry
+
+$$HHI=\sum^n_{i=1} s_i^2$$
+  - Where $s_i=\frac{q_i}{Q}$
+
+- Why squared? Gives *more weight* to firms with more market share (unlike CR)
+]
+]
+
+---
+
+# Measuring Market Concentration: HHI
+
+.pull-left[
+.center[
+![](../images/marketpower.jpg)
+]
+]
+
+.pull-right[
+
+$HHI \in[0,1]$
+
+- Monopoly $HHI = 1$
+
+- Perfect competition: $HHI = \frac{1}{n} \rightarrow 0$ 
+  - $n$ firms of equal size
+]
+
+
+---
+
+# Measuring Market Concentration: HHI
+
+.pull-left[
+.smallest[
+.hi-green[Example]: Take industry A with
+
+| Firm | Market Share |
+|------|-------------:|
+| 1 | 0.60 |
+| 2 | 0.10 | 
+| 3 | 0.05 |
+| 4 | 0.05 |
+| 5 | 0.05 |
+
+$$CR_4 = 0.80$$
+
+$$\begin{align*}HHI &= 0.60^2+0.10^2+0.05^2+0.05^2+0.05^2\\
+&= 0.385\\ \end{align*}$$
+
+]
+]
+
+
+.pull-right[
+.smallest[
+.hi-green[Example]: Take industry B with
+
+| Firm | Market Share |
+|------|-------------:|
+| 1 | 0.20 |
+| 2 | 0.20 | 
+| 3 | 0.20 |
+| 4 | 0.20 |
+| 5 | 0.20 |
+
+$$CR_4 = 0.80$$
+
+$$\begin{align*}
+HHI &= 0.20^2+0.20^2+0.20^2+0.20^2+0.20^2 \\
+ &= 0.20 = 1/5 \\ \end{align*}$$
+
+]
+]
+
+
+---
+
+# Measuring Market Concentration: HHI
+
+.pull-left[
+.center[
+![](../images/marketpower.jpg)
+]
+]
+
+.pull-right[
+- .hi-purple[Equivalent number] $n^*$, number of equal-sized firms in a hypothetical market that would give rise to the same HHI as observed
+
+$$n^* = \frac{1}{HHI}$$
+
+- $HHI=0.2 \implies \frac{1}{HHI} = 5$ equal sized firms
+
+- $HHI=0.8 \implies \frac{1}{HHI} = 1.25$ equal sized firms
+
+]
+
+---
+
+# Measuring Market Concentration: HHI
+
+.pull-left[
+.center[
+![](../images/marketpower.jpg)
+]
+]
+
+.pull-right[
+.smaller[
+$$HHI \text{ (in percentages)} = 10,000 \sum^n_{i=1} s_i^2$$
+
+- HHI is often measured in percentage form by U.S. antitrust authorities
+  - Market shares as *percentages* instead of *decimals*
+
+- Here, $HHI \in [0, 10,000]$
+  - Monopoly: HHI = 10,000, 1 firm with 100% market share $\implies 100^2 = 10,000$
+
+]
+]
+
+---
+
+# Measuring Market Concentration: HHI
+
+.pull-left[
+.smaller[
+.hi-green[Example]: Take industry A with
+
+| Firm | Market Share |
+|------|-------------:|
+| 1 | 60% |
+| 2 | 10% | 
+| 3 | 5% |
+| 4 | 5% |
+| 5 | 5% |
+
+$$\begin{align*}
+HHI &= 60^2+10^2+5^2+5^2+5^2\\
+&= 3,775\\ \end{align*}$$
+
+]
+]
+
+.pull-right[
+.smallest[
+.hi-green[Example]: Take industry B with
+
+| Firm | Market Share |
+|------|-------------:|
+| 1 | 20% |
+| 2 | 20% | 
+| 3 | 20% |
+| 4 | 20% |
+| 5 | 20% |
+
+$$\begin{align*}
+HHI &= 20^2+20^2+20^2+20^2+20^2 \\
+&= 2,000 \bigg(=\frac{10,000}{5} \bigg) \\ \end{align*}$$
+
+]
+]
+
+---
+
+# Measuring Market Concentration: HHI
+
+.pull-left[
+.center[
+![](../images/marketpower.jpg)
+]
+]
+
+.pull-right[
+
+- If two firms, with market share $s_1$ and $s_2$, merge, HHI increases by $(s_1+s_2)^2-s_1^2-s_2^2=2s_1s_2$
+
+]
+
+---
+
+# Measuring Market Concentration: HHI
+
+.pull-left[
+.smaller[
+Before Firms 1 and 2 Merge
+
+| Firm | Market Share |
+|------|-------------:|
+| 1 | 60% |
+| 2 | 10% | 
+| 3 | 5% |
+| 4 | 5% |
+| 5 | 5% |
+
+$$HHI_{pre} = 3,775$$
+]
+]
+
+.pull-right[
+.smaller[
+After Firms 1 and 2 Merge
+
+| Firm | Market Share |
+|------|-------------:|
+| 1 | 70% |
+| 2 | 5% |
+| 3 | 5% |
+| 4 | 5% |
+
+$$HHI_{post} = 4,975$$
+]
+]
+
+$$\Delta HHI = 1,200 = (2 \times 60 \times 10)$$
+
+---
+
+class: inverse, center, middle
+
+# Measuring Markups
+
+---
+
+# Recall: Lerner Index and Inverse Elasticity Rule 
+
+.pull-left[
+.center[
+![](../images/markup.jpg)
+]
+]
+
+.pull-right[
+.smaller[
+- .hi-purple[Lerner Index] measures market power as % of firm's price that is .hi-purple[markup] above $MC(q)$
+
+$$L=\frac{p-MC(q)}{p} = -\frac{1}{\epsilon_D}$$
+  - i.e. $L \times 100\%$ of firm's price is markup
+
+- $L=0 \implies$ perfect competition
+  - (since $P=MC)$
+- As $L\rightarrow 1 \implies$ more market power
+
+]
+
+]
+
+---
+
+# Recall: Lerner Index and Inverse Elasticity Rule
+
+.pull-left[
+.center[
+![](../images/markup.jpg)
+]
+]
+
+.pull-right[
+
+
+$$L = \frac{p-MC}{p} = -\frac{1}{\epsilon_D}$$
+
+This simple formula only works for a monopoly $(n=1)$!
+
+]
+
+---
+
+# Lerner Index and Cournot Theorem
+
+.pull-left[
+.center[
+![](../images/markup.jpg)
+]
+]
+
+.pull-right[
+- Consider Cournot competition between $n$ firms with identical costs $MC_i$, the Lerner index actually becomes:
+
+$$L = \frac{p-MC_i}{p} = -\frac{s_i}{\epsilon_D}$$
+
+Where $s_i = \frac{q_i}{Q}$
+
+- Note monopoly is special case where $\frac{q_i}{Q}=1$! 
+]
+
+---
+
+# Lerner Index and Cournot Theorem
+
+.pull-left[
+.center[
+![](../images/markup.jpg)
+]
+]
+
+.pull-right[
+
+$$L = \frac{p-MC_i}{p} = -\frac{s_i}{\epsilon_D}$$
+
+Alternatively, since $s_i=\frac{1}{n}$:
+
+$$L = \frac{p-MC_i}{p} = -\frac{1}{n\epsilon_D}$$
+]
+
+---
+
+# Lerner Index and Cournot Theorem
+
+.pull-left[
+.center[
+![](../images/markup.jpg)
+]
+]
+
+.pull-right[
+.smallest[
+$$L = \frac{p-MC_i}{p} = -\frac{s_i}{\epsilon_D} = -\frac{1}{n\epsilon_D}$$
+
+- .hi-purple[Market power is inversely related to price elasticity of demand]
+  - Larger (smaller) $\epsilon$, smaller (larger) markup $p-MC$
+
+- .hi-purple[Market power is inversely related to the number of competitors]
+  - Greater number of competitors $\uparrow n$, smaller $s_i$, and hence less market power
+
+]
+]
+---
+
+# Lerner Index and Cournot Theorem
+
+.pull-left[
+.center[
+![](../images/markup.jpg)
+]
+]
+
+.pull-right[
+
+$$\sum^n_{i=1} s_i\frac{p-MC_i}{p} = -\frac{\sum^n_{i=1}s_i^2}{\epsilon_D} = -\frac{HHI}{\epsilon_D}$$
+
+- Can add up all of the market-share-weighted markups
+
+- Equivalent to HHI divided by price elasticity
+
+- Recall we saw implication of [Cournot competition]/slides/2.2-slides.html#95)
+
+- Can use HHI to measure implications about firm conduct
+]
+
+---
+
+# Some Estimates
+
+.center[
+![:scale 70%](https://www.dropbox.com/s/3v5xzvru41fw21x/hhi_estimates.png?raw=1)
+]
+
+---
+
+# Some Estimates
+
+.center[
+![:scale 70%](https://www.dropbox.com/s/2f6smny2cfmtg84/lerner_estimates.png?raw=1)
+]
+
+---
+
+# DOJ on HHI
+
+.left-column[
+.center[
+![:scale 100%](https://www.dropbox.com/s/gg6kqeuurg4exjg/doj.png?raw=1)
+]
+]
+.right-column[
+.smallest[
+> "“he agencies generally consider markets in which the HHI is between 1,500 and 2,500 points to be moderately concentrated, and consider markets in which the HHI is in excess of 2,500 points to be highly concentrated.
+
+> “Transactions that increase the HHI by more than 200 points in highly concentrated markets are presumed likely to enhance market power under the Horizontal Merger Guidelines issued by the Department of Justice and the Federal Trade Commission.”
+
+]
+]
+
+.source[Department of Justice, 2017, [*HHI*](https://www.justice.gov/atr/herfindahl-hirschman-index)]
+
+---
+
+class: inverse, center, middle
+
+# Market Definition
+
+---
+
+# Shortcomings of Market Concentration Measures
+
+- Measures crucially rest on the definition of the industry or market
+
+- .hi-purple[Product dimension]: which products do consumers see as substitutes?
+
+- .hi-purple[Geographic dimension]: where are firms that produce similar products? (supply-side substitutes)
+
+- Differentiated products $\implies$ imperfect substitutes
+
+- Often include all products that have significant .hi-purple[cross-price elasticity of demand]
+
+---
+
+# Industry Classification
+
+.pull-left[
+.center[
+![:scale 80%](https://www.dropbox.com/s/cyg89bpljib6xoa/naics.png?raw=1)
+]
+]
+
+.pull-right[
+.smaller[
+- .hi-purple[NAICS] used by statistical agencies such as the U.S. Census to classify industries
+
+- Places production into one of 1,004 4-digit industries, defined nationally
+
+- Do not accurately correspond to economic markets
+  - May include some products clearly not substitutes, or leave out some products that clearly are substitutes
+  - Hence, should not be assumed to match properly with HHI measures
+]
+]
+
+---
+
+# Market Definition
+
+.left-column[
+.center[
+![:scale 100%](https://www.dropbox.com/s/gg6kqeuurg4exjg/doj.png?raw=1)
+]
+]
+.right-column[
+
+> “The Agencies employ the hypothetical monopolist test to evaluate whether groups of products in candidate markets are sufficiently broad to constitute relevant antitrust markets. The Agencies use the hypothetical monopolist test to identify a set of products that are reasonably interchangeable with a product sold by one of the merging firms.”
+
+]
+
+.source[Department of Justice, 2010, [*Horizontal Merger Guidlines*](https://www.justice.gov/atr/horizontal-merger-guidelines-08192010)]
+
+---
+
+# Market Definition
+
+.left-column[
+.center[
+![:scale 100%](https://www.dropbox.com/s/gg6kqeuurg4exjg/doj.png?raw=1)
+]
+]
+.right-column[
+.smallest[
+“The hypothetical monopolist test requires that a product market contain enough substitute products so that it could be subject to post-merger exercise of market power significantly exceeding that existing absent the merger. Specifically, the test requires that a hypothetical profit-maximizing firm, not subject to price regulation, that was the only present and future seller of those products (‘hypothetical monopolist’) likely would impose at least .hi[a small but significant and non-transitory increase in price ‘SSNIP’)] on at least one product in the market, including at least one product sold by one of the merging firms. For the purpose of analyzing this issue, the terms of sale of products outside the candidate market are held constant. The SSNIP is employed solely as a methodological tool for performing the hypothetical monopolist test; it is not a tolerance level for price increases resulting from a merger.”
+
+]
+]
+
+.source[Department of Justice, 2010, [*Horizontal Merger Guidlines*](https://www.justice.gov/atr/horizontal-merger-guidelines-08192010)]
+
+---
+
+# Market Definition
+
+- Starting in 1982, Department of Justice began defining an .hi[“antitrust market”] to solve some of these problems
+
+- Determined by a .hi-purple[“hypothetical monopolist test”]: a set of products and a geographic area where a single seller would be able to exert significant market power (raise price)
+
+- Specifically, a .hi-purple[“small but significant and nontransitory increase in price” (SSNIP)] of 5% for 1 year
+
+- Courts regularly talk about cross-price elasticities of demand in antitrust cases!
+
+---
+
+# The Courts on Cross-Price Elasticity of Demand
+
+.smallest[
+> “For every product substitutes exist. But a relevant market cannot meaningfully encompass that infinite a range. The circle must be drawn narrowly to exclude any other product to which, within reasonable variations in price, only a limited number of buyers will turn; in technical terms, products whose ‘cross-elasticities of demand’ are small,” *Times-Picayune Publishing v. United States*, 345 U.S. 594 at 621 n. 31 (1953)
+
+> “Every manufacturer is the sole producer of the particular commodity it makes but its control in the above sense of the relevant market depends on the availability of alternative commodities for buyers: i.e., whether there is a cross-elasticity of demand between cellophane and the other wrappings,” *U.S. v. E. I. du Pont de Nemours &. Co.*, 351 U.S. 377 (1956))
+
+> “Cross-price elasticity is a more useful tool than own-price elasticity in defining a relevant antitrust market. Cross-price elasticity estimates tell one where the lost sales will go when the price is raised, while own-price elasticity estimates simply tell one that a price increase would cause a decline in volume,” *New York v. Kraft General Foods*, 926 F. Supp. 321 (1995)
+
+]
+
+---
+
+class: inverse, center, middle
+
+# Can We Measure Market Power from Prices?
+
+---
+
+# Can We Measure Market Power from Prices?
+
+.pull-left[
+.center[
+![](../images/cartel.jpg)
+]
+]
+
+.pull-right[
+.smaller[
+- .hi-turquoise[Can we tell a collusive market from a competitive one?]
+
+$$L=\frac{p-MC}{p}=-\frac{1}{\epsilon_D}$$
+
+- We can only observe $p$'s and $q$'s
+
+- Could be Bertrand price competition, firms setting $p=MC$
+  - Or it could be a cartel splitting monopoly profits by fixing the price
+
+- .hi-purple[Data problems: we never know MC!]
+]
+]
+
+---
+
+# Empirical Challenge: Identifying Power from Prices
+
+.pull-left[
+
+```{r}
+demand_1=function(x){10-x}
+mr_1=function(x){10-2*x}
+
+demand_2=function(x){16-x}
+mr_2=function(x){16-2*x}
+
+mc_m=function(x){x+1}
+mc_c=function(x){2*x+1}
+
+base<-ggplot(data=tibble(x=1:10), aes(x=x))+
+  stat_function(fun=demand_1, geom="line", size=2, color="blue")+
+  stat_function(fun=mr_1, geom="line", size=2, color="darkblue")+
+  stat_function(fun=mc_m, geom="line", size=2, color="darkred")+
+  stat_function(fun=mc_c, geom="line", size=2, color="red")+
+
+  
+  geom_label(x=8,y=demand_1(8), color="blue", label="Demand")+
+  geom_label(x=4,y=mr_1(4), color="darkblue", label=expression(MR[m]))+
+  geom_label(x=8,y=mc_m(8), color="darkred", label=expression(MC[m]))+
+  geom_label(x=4,y=mc_c(4), color="red", label=expression(MC[c]))+
+  
+  geom_segment(x=3,xend=3, y=0, yend=7, size=1, linetype="dotted")+
+  geom_segment(x=0,xend=3, y=7, yend=7, size=1, linetype="dotted")+
+
+  scale_x_continuous(breaks = c(0,3),
+                     labels = c(0,expression(q)),
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,7),
+                     labels = c(0,expression(p)),
+                     limits = c(0,16),
+                     expand=c(0,0))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
+  labs(x = "Quantity",
+       y = "Price")
+base
+```
+
+]
+
+.pull-right[
+.smaller[
+$$L=\frac{p-MC}{p}$$
+
+- Imagine we observe a market with $n$ sellers all charging price $p$ and selling quantity $q$
+
+- Two possible explanations: 
+  1. The market is .red[competitive], and all firms are charging $p=MC$
+  2. The market is <span style="color:#8b0000">collusive</span>, and all firms are marking up $p>MC$
+]
+]
+
+---
+
+# Empirical Challenge: Identifying Power from Prices
+
+.pull-left[
+```{r}
+base
+```
+]
+
+.pull-right[
+
+- We can rationalize each explanation as follows:
+
+1. .red[Competitive firms] have (higher) $\color{red}{MC_c}$ and are setting it equal to demand to get $p$ at quantity $q$
+
+2. <span style="color:#8b0000">Cartel</span> has (lower) $\color{darkred}{MC_m}$ at quantity $q$, sets it equal to $MR_M=m$, marking price up to $p$
+]
+
+---
+
+# Empirical Challenge: Identifying Power from Prices
+
+.pull-left[
+```{r}
+ggplot(data=tibble(x=1:10), aes(x=x))+
+  stat_function(fun=demand_1, geom="line", size=2, color="blue", alpha=0.3)+
+  stat_function(fun=mr_1, geom="line", size=2, color="darkblue",alpha=0.3)+
+  stat_function(fun=mc_m, geom="line", size=2, color="darkred")+
+  stat_function(fun=mc_c, geom="line", size=2, color="red")+
+
+  stat_function(fun=demand_2, geom="line", size=2, color="blue")+
+  stat_function(fun=mr_2, geom="line", size=2, color="darkblue")+
+
+  
+  geom_label(x=8,y=demand_1(8), color="blue", label=expression(Demand[1]), alpha=0.3)+
+  geom_label(x=4,y=mr_1(4), color="darkblue", label=expression(MR[1]^{M}), alpha=0.3)+
+  geom_label(x=9,y=mc_m(9), color="darkred", label=expression(MC[m]))+
+  geom_label(x=4.5,y=mc_c(4.5), color="red", label=expression(MC[c]))+
+  
+  geom_label(x=4,y=demand_2(4), color="blue", label=expression(Demand[2]))+
+  geom_label(x=2,y=mr_2(2), color="darkblue", label=expression(MR[2]^{M}))+
+
+  
+  geom_segment(x=3,xend=3, y=0, yend=7, size=1, linetype="dotted")+
+  geom_segment(x=0,xend=3, y=7, yend=7, size=1, linetype="dotted")+
+
+  geom_segment(x=5,xend=5, y=0, yend=11, size=1, linetype="dotted")+
+  geom_segment(x=0,xend=5, y=11, yend=11, size=1, linetype="dotted")+
+
+  scale_x_continuous(breaks = c(0,3,5),
+                     labels = c(0,expression(q[1]), expression(q[2])),
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,7,11),
+                     labels = c(0,expression(p[1]), expression(p[2])),
+                     limits = c(0,16),
+                     expand=c(0,0))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
+  labs(x = "Quantity",
+       y = "Price")
+```
+]
+
+.pull-right[
+
+- What if .hi-purple[Demand shifts] to Demand $_2$? Same problem! 
+
+1. Competitive firms set $\color{red}{MC_c}$ equal to new demand 2 to get $p_2$ at $q_2$
+
+2. Cartel sets $\color{darkred}{MC_M}$ equal to new $MR_2^M$ at $q_2$, mark up to $p_2$ 
+
+- .hi-turquoise[Changes in demand aren’t sufficient to identify market power]
+
+]
+
+---
+
+# Empirical Challenge: Identifying Power from Prices
+
+.pull-left[
+```{r}
+
+demand_r=function(x){8.5-0.5*x}
+mr_r=function(x){8.5-1*x}
+
+ggplot(data=tibble(x=1:10), aes(x=x))+
+  stat_function(fun=demand_1, geom="line", size=2, color="blue",alpha=0.3)+
+  stat_function(fun=mr_1, geom="line", size=2, color="darkblue",alpha=0.3)+
+  stat_function(fun=mc_m, geom="line", size=2, color="darkred")+
+  stat_function(fun=mc_c, geom="line", size=2, color="red")+
+
+  stat_function(fun=demand_r, geom="line", size=2, color="blue")+
+  stat_function(fun=mr_r, geom="line", size=2, color="darkblue")+
+
+  
+  geom_label(x=8,y=demand_1(8), color="blue", label=expression(Demand[1]), alpha=0.3)+
+  geom_label(x=4,y=mr_1(4), color="darkblue", label=expression(MR[1]), alpha=0.3)+
+  geom_label(x=8,y=mc_m(8), color="darkred", label=expression(MC[m]))+
+  geom_label(x=4,y=mc_c(4), color="red", label=expression(MC[c]))+
+  
+  geom_label(x=8.5,y=demand_r(8.5), color="blue", label=expression(Demand[E]))+
+  geom_label(x=4.25,y=mr_r(4.25), color="darkblue", label=expression(MR[E]))+
+
+  
+  geom_segment(x=3,xend=3, y=0, yend=7, size=1, linetype="dotted")+
+  geom_segment(x=0,xend=3, y=7, yend=7, size=1, linetype="dotted")+
+
+  geom_segment(x=3.75,xend=3.75, y=0, yend=6.5, size=1, linetype="dotted")+
+  geom_segment(x=0,xend=3.75, y=6.5, yend=6.5, size=1, linetype="dotted")+
+
+  scale_x_continuous(breaks = c(0,3,3.75),
+                     labels = c(0,expression(q[c]), expression(q[m])),
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,6.5,7),
+                     labels = c(0,expression(p[m]), expression(p[c])),
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
+  labs(x = "Quantity",
+       y = "Price")
+```
+]
+
+.pull-right[
+
+.smallest[
+- Potential solution famously identified by Bresnahan (1982):
+
+- If .hi-purple[demand *rotates*] through a price (i.e. becomes more elastic without changing equilibrium price)
+
+1. Competitive firms don't change $p$ or $q$ $(MC_c$ still intersects Demand at same point!)
+
+2. Cartel changes to $p_m$ and $q_m$ since $MR$ will change (and hence, intersection of $MC_m=MR)$
+
+]
+
+.quitesmall[
+> "Translations [i.e. shifting] of the demand curve will always trace out a supply relation. Rotations of the demand curve around the equilibrium point will reveal the degree of market power," (Bresnahan 1982)
+
+]
+]
+---
+
+# Empirical Challenges: Estimating Demand & Elasticity
+
+.pull-left[
+
+```{r}
+points<-tribble(
+  ~x, ~y, ~label,
+  3, 5, "A",
+  4, 4, "B",
+  2, 6, "C",
+  2, 4, "D",
+  1, 5, "E",
+  3, 3, "F",
+  3, 7, "G",
+  4, 6, "H",
+  5, 5, "I",
+  5, 1, "J",
+  6, 2, "L",
+  7, 3, "K"
+)
+```
+ 
+```{r}
+eqs_plot<-ggplot(data = points)+
+  aes(x = x,
+      y = y)+
+  geom_point(size = 3)+
+  scale_x_continuous(breaks = seq(0,10,1),
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = seq(0,10,1),
+                     labels = scales::dollar,
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
+  labs(x = "Quantity",
+       y = "Price")
+eqs_plot
+```
+
+]
+
+.pull-right[
+
+- Suppose we have price and consumption data for an industry
+
+- Fairly easy to acquire
+
+]
+
+---
+
+# Empirical Challenges: Estimating Demand & Elasticity
+
+.pull-left[
+
+```{r}
+eqs_plot+
+  geom_smooth(method="lm", color="blue", size = 2)
+```
+]
+
+.pull-right[
+
+.smaller[
+- Suppose we have price and consumption data for an industry
+
+- Fairly easy to acquire
+
+- Why can't we estimate the demand curve with a simple regression here?
+
+$$\ln(Quantity_{it}) = \beta_0 + \beta_1 \ln(Price_{it}) + \varepsilon_{it}$$
+
+- With natural logs, $\beta_1$ is the .hi-purple[price elasticity of Demand]
+
+]
+]
+
+---
+
+# Empirical Challenges: Estimating Demand & Elasticity
+
+.pull-left[
+
+```{r}
+demand_a=function(x){8-x}
+supply_a=function(x){2+x}
+
+demand_b=function(x){6-x}
+demand_c=function(x){10-x}
+
+supply_b=function(x){0+x}
+supply_c=function(x){4+x}
+
+supply_d=function(x){-4+x}
+
+eqs_lines<-ggplot(data=tibble(x=1:10), aes(x=x))+
+  stat_function(fun=demand_a, geom="line", size=2, color="blue")+
+  stat_function(fun=supply_a, geom="line", size=2, color="red")+
+  geom_label(x=7,y=demand_a(7), color="blue", label=expression(Demand[A]))+
+  geom_label(x=6,y=supply_a(6), color="red", label=expression(Supply[A]))+
+  
+  stat_function(fun=demand_b, geom="line", size=2, color="blue")+
+  geom_label(x=7,y=demand_b(7), color="blue", label=expression(Demand[B]))+
+
+  stat_function(fun=demand_c, geom="line", size=2, color="blue")+
+  geom_label(x=3.5,y=demand_c(3.5), color="blue", label=expression(Demand[C]))+
+  
+  stat_function(fun=supply_b, geom="line", size=2, color="red")+
+  geom_label(x=8,y=supply_b(8), color="red", label=expression(Supply[B]))+
+
+    stat_function(fun=supply_c, geom="line", size=2, color="red")+
+  geom_label(x=4,y=supply_c(4), color="red", label=expression(Supply[C]))+
+
+  stat_function(fun=supply_d, geom="line", size=2, color="red")+
+  geom_label(x=8,y=supply_d(8), color="red", label=expression(Supply[D]))+
+
+  geom_point(data = points, aes(x=x,y=y), size=3)+
+  #geom_label_repel(data = points, aes(x=x,y=y,label=label), seed=256)+
+ # geom_segment(x=3,xend=3, y=0, yend=5, size=1, linetype="dotted")+
+  #geom_segment(x=0,xend=3, y=5, yend=5, size=1, linetype="dotted")+
+
+
+  scale_x_continuous(breaks = seq(0,10,1),
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = seq(0,10,1),
+                     labels = scales::dollar,
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
+  labs(x = "Quantity",
+       y = "Price")
+eqs_lines
+```
+]
+
+.pull-right[
+
+- What we are actually looking at are a series of equilibrium $(Q^*,P^*)$ points!
+
+- Result of many demand and supply curve shifts & intersections!
+]
+
+---
+
+# Empirical Challenges: Estimating Demand & Elasticity
+
+- .hi[Structural equation model] of .blue[demand] and of .red[supply]:
+
+$$\begin{align*}
+\color{blue}{Q_D} & \color{blue}{= \alpha_0 + \alpha_1 P + \alpha_2 M + u_D} \\
+\color{red}{Q_S} & \color{red}{= \beta_0 + \beta_1 P + \beta_2 C+ u_S} \\
+\end{align*}$$
+
+--
+
+- $\alpha$'s and $\beta$'s are parameters (to be estimated), $u$'s are unobserved error terms
+
+--
+
+- $P$ is price
+  - Notice $P$ simultaneously determines $\color{blue}{Q_D}$ *and* $\color{red}{Q_S}$!
+
+--
+
+- $\color{blue}{M}$ are variables that shift demand (i.e. income, prices of other goods, etc)
+- $\color{red}{C}$ are variables that shift supply (i.e. costs, etc)
+
+---
+
+# Empirical Challenges: Estimating Demand & Elasticity
+
+.pull-left[
+```{r}
+eqs_lines
+```
+]
+
+.pull-right[
+
+$$\color{blue}{Q_D = \alpha_0 + \alpha_1 P + \alpha_2 M + u_D}$$
+
+- Why can't we just estimate .blue[price elasticity of demand] $(\alpha_1)$ with the demand equation?
+
+- P is partially a function of .red[quantity supplied]!
+
+]
+
+---
+
+# Empirical Challenges: Estimating Demand & Elasticity
+
+.pull-left[
+
+```{r}
+ggplot(data=tibble(x=1:10), aes(x=x))+
+  stat_function(fun=demand_a, geom="line", size=2, color="blue")+
+  stat_function(fun=supply_a, geom="line", size=2, color="red")+
+  geom_label(x=7,y=demand_a(7), color="blue", label=expression(Demand[A]))+
+  geom_label(x=6,y=supply_a(6), color="red", label=expression(Supply[A]))+
+  
+  stat_function(fun=supply_b, geom="line", size=2, color="red")+
+  geom_label(x=8,y=supply_b(8), color="red", label=expression(Supply[B]))+
+
+    stat_function(fun=supply_c, geom="line", size=2, color="red")+
+  geom_label(x=4,y=supply_c(4), color="red", label=expression(Supply[C]))+
+
+  stat_function(fun=supply_d, geom="line", size=2, color="red")+
+  geom_label(x=8,y=supply_d(8), color="red", label=expression(Supply[D]))+
+
+  geom_point(data = points %>% filter(label %in% c("C","A","B","L")), aes(x=x,y=y), size=3)+
+  #geom_label_repel(data = points, aes(x=x,y=y,label=label), seed=256)+
+
+
+  scale_x_continuous(breaks = seq(0,10,1),
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = seq(0,10,1),
+                     labels = scales::dollar,
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
+  labs(x = "Quantity",
+       y = "Price")
+```
+
+]
+
+.pull-right[
+
+- .hi[Instrumental variables] and .hi[2-stage least squares] techniques to identify demand relationship
+
+- Often use some supply shifter (like cost changes, $C)$ correlated with price $\color{blue}{P}$, but not correlated with $\color{blue}{u_D}$
+
+- Essentially: traces out unique .blue[demand] relationship by allowing .red[supply] to vary & shift
+
+- Then, can estimate demand elasticity $\beta_1$
+]
+
+---
+
+# The New Empirial Industrial Organization
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/yw8t5xsa8dgei71/coding.jpeg?raw=1)
+]
+]
+
+.pull-right[
+
+- See [an example of this](https://metricsf22.classes.ryansafner.com/slides/5.3-slides.html#/demand-example) in my econometrics course
+
+- .hi-purple[“New Empirical Industrial Organization” (NEIO)]
+
+- Focus on data, econometrics, machine learning, merger simulations
+
+- Private businesses, law firms, consulting firms, and government agencies (FTC, DOJ) hire economists trained in econometrics and IO for antitrust research, expert testimony
+]

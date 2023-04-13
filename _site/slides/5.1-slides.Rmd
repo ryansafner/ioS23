@@ -318,7 +318,7 @@ $HHI \in[0,1]$
 $$CR_4 = 0.80$$
 
 $$\begin{align*}HHI &= 0.60^2+0.10^2+0.05^2+0.05^2+0.05^2\\
-&= 0.385\\ \end{align*}$$
+&= 0.3775\\ \end{align*}$$
 
 ]
 ]
@@ -614,7 +614,7 @@ $$\sum^n_{i=1} s_i\frac{p-MC_i}{p} = -\frac{\sum^n_{i=1}s_i^2}{\epsilon_D} = -\f
 
 - Equivalent to HHI divided by price elasticity
 
-- Recall we saw implication of [Cournot competition]/slides/2.2-slides.html#95)
+- Recall we saw implication of [Cournot competition](/slides/2.2-slides.html#95)
 
 - Can use HHI to measure implications about firm conduct
 ]
@@ -646,7 +646,7 @@ $$\sum^n_{i=1} s_i\frac{p-MC_i}{p} = -\frac{\sum^n_{i=1}s_i^2}{\epsilon_D} = -\f
 ]
 .right-column[
 .smallest[
-> "“he agencies generally consider markets in which the HHI is between 1,500 and 2,500 points to be moderately concentrated, and consider markets in which the HHI is in excess of 2,500 points to be highly concentrated.
+> “The agencies generally consider markets in which the HHI is between 1,500 and 2,500 points to be moderately concentrated, and consider markets in which the HHI is in excess of 2,500 points to be highly concentrated.
 
 > “Transactions that increase the HHI by more than 200 points in highly concentrated markets are presumed likely to enhance market power under the Horizontal Merger Guidelines issued by the Department of Justice and the Federal Trade Commission.”
 

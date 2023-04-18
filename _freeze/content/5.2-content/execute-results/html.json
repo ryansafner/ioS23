@@ -1,0 +1,14 @@
+{
+  "hash": "f68dc92beddf8df68bb23100bf71ea20",
+  "result": {
+    "markdown": "---\ntitle: \"5.1 — Measuring Market Power — Class Content\"\nexecute:\n  freeze: auto\n---\n\n::: {.cell}\n\n:::\n\n\n::: {.callout-note appearance=minimal}\n# Meeting Date\n*Tuesday, April 18, 2023*\n:::\n\n## <i class=\"fas fa-info-circle fa-lg\"></i> Overview\n\nToday we begin our look at the economics of antitrust, which will take several class periods. Today we cover the kinds of antitrust claims and their remedies today, the history of the major antitrust laws (their origins, evolution, interpretation, and some major court cases), as well as a broad history of economic thought on antitrust.\n\n## <i class=\"fas fa-book-reader fa-lg\"></i> Readings\n\n### Recommended Readings:\n\n- [<i class=\"fas fa-file-pdf\"></i> Crandall and Winston, 2003, \"Does Antitrust Policy Improve Consumer Welfare? Assessing the Evidence\"](/readings/Crandall-Winston-2003.pdf)\n- [<i class=\"fas fa-file-pdf\"></i> Kovacic and Shapiro, 2000, \"Antitrust Policy: A Century of Economic and Legal Thinking\"](/readings/Kovacic-Shapiro-2000.pdf)\n\n- [<i class=\"fas fa-podcast\"></i> *NPR Planet Money*: \"Antitrust 1: Standard Oil\"](https://www.npr.org/sections/money/2019/02/15/695131832/antitrust-1-standard-oil)\n- [<i class=\"fas fa-podcast\"></i> *NPR Planet Money*: \"Antitrust 2: The Paradox\"](https://www.npr.org/sections/money/2019/02/20/696342011/antitrust-2-the-paradox)\n- [<i class=\"fas fa-podcast\"></i> *NPR Planet Money*: \"Antitrust 3: Big Tech\"](https://www.npr.org/sections/money/2019/02/22/697170790/antitrust-3-big-tech)\n\n## <i class=\"fas fa-chalkboard-teacher\"></i> Slides\n\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides. \n\n::: callout-tip\nYou can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.\n:::\n\nI suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!\n\n\n<p style=\"text-align:center;\"><a target=\"_blank\" href=\"/slides/5.2-slides.html\"><img src =\"/slides/5.2-slides.png\" alt = \"5.2-slides\"></a></p>\n<p style=\"text-align:center;\"><a class=\"btn btn-primary btn-lg\" target=\"_blank\" href=\"/slides/5.2-slides.pdf\"><i class=\"fas fa-file-pdf\"></i> Download as PDF</a></p>",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

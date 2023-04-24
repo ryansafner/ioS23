@@ -86,6 +86,12 @@ website:
           contents:
             - text: "5.1 — Measuring Market Power"
               href: content/5.1-content.qmd
+            - text: "5.2 — Antitrust I: The Law"
+              href: content/5.2-content.qmd
+            - text: "5.3 — Antitrust II: The Paradox"
+              href: content/5.3-content.qmd
+            - text: "5.4 — Antitrust I: The Hipsters"
+              href: content/5.4-content.qmd
     - title: "Assignments"
       style: "docked"
       search: false

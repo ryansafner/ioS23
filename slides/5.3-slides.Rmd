@@ -1,5 +1,5 @@
 ---
-title: "5.2 — Antitrust II: The Paradox"
+title: "5.3 — Antitrust II: The Paradox"
 author: 'Ryan Safner'
 output:
   xaringan::moon_reader:
@@ -44,11 +44,25 @@ set.seed(256)
 
 class: title-slide
 
-# 5.2 — Antitrust I: Law
+# 5.3 — Antitrust II: The Paradox
 
 ## ECON 326 • Industrial Organization • Spring 2023
 
 ### Ryan Safner<br> Associate Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/ioS23"><i class="fa fa-github fa-fw"></i>ryansafner/ioS23</a><br> <a href="https://ioS23.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>ioS23.classes.ryansafner.com</a><br>
+
+---
+
+class: inverse
+
+# Outline
+
+### [Is Monopoly/Concentration Always Bad?](#4)
+
+### [The Paradox of Antitrust](#9)
+
+### [Historical Revisionism of the Gilded Age](#30)
+
+### [The Legislative History & Intent of Sherman Act](#57)
 
 ---
 
@@ -66,13 +80,119 @@ Last class: The Laws, and evolution of legal & economic thinking
 
 Today:
 
-- Major areas of antitrust enforcement
-  - Monopolization
-  - Anticompetitive Agreements
-  - Mergers
 - The Antitrust Paradox
   - Antitrust as small-business protectionism
-  - Revisionist history of antitrust
+
+- Revisionist history of antitrust
+  - Robber barons/progressive era
+
+- Legislative history/intent of Sherman Act
+
+- Rent-seeking and public policy
+]
+
+---
+
+class: inverse, center, middle
+
+# Is Monopoly/Concentration Always Bad?
+
+---
+
+# Monopoly/Concentration Through Efficiency?
+
+.left-column[
+.center[
+![:scale 80%](../images/demsetz.png)
+
+Harold Demsetz
+
+1930-2019
+]
+]
+
+.right-column[
+
+.smallest[
+> “This paper takes a critical view of contemporary doctrine in this area [of identifying monopolies and monopolization] and presents data which suggest that this doctrine offers a dangerous base upon which to build a policy toward business.” (p.1).
+
+> “Under the pressure of competitive rivalry, and in the apparent absence of effective barriers to entry, it would seem that the concentration of an industry's output in a few firms could only derive from their superiority in producing and marketing products or in the superiority of a structure of industry in which there are only a few firms,” (p.1).
+
+]
+
+.source[Demsetz, Harold, 1973, “Industry Structure, Market Rivalry, and Public Policy,” *Journal of Law & Economics* 16(1): 1-9]
+]
+
+---
+
+# Monopoly/Concentration Through Efficiency?
+
+.left-column[
+.center[
+![:scale 80%](../images/demsetz.png)
+
+Harold Demsetz
+
+1930-2019
+]
+]
+
+.right-column[
+
+.smallest[
+> “None of this is necessarily monopolistic (although monopoly may play some role). Profit does not arise because the firm creates ‘artificial scarcity’ through a reduction in its output. Nor does it arise because of collusion. Superior performance can be attributed to the combination of great uncertainty plus luck or atypical insight by the management of a firm. It is not until the experiments are actually tried that we learn which succeed and which fail. By the time the results are in, it is the shareholder that has captured (some of) the value, positive or negative, of past decisions. Even though the profits that arise from a firm's activities may be eroded by competitive imitation, since information is costly to obtain and techniques are difficult to duplicate, the firm may enjoy growth and a superior rate of return for some time,” (p.3).
+
+]
+
+.source[Demsetz, Harold, 1973, “Industry Structure, Market Rivalry, and Public Policy,” *Journal of Law & Economics* 16(1): 1-9]
+]
+
+---
+
+# Monopoly/Concentration Through Efficiency?
+
+.left-column[
+.center[
+![:scale 80%](../images/demsetz.png)
+
+Harold Demsetz
+
+1930-2019
+]
+]
+
+.right-column[
+
+.quitesmall[
+> “Superior ability also may be interpreted as a competitive basis for acquiring a measure of monopoly power. In a world in which information is costly and the future is uncertain, a firm that seizes an opportunity to better serve customers does so because it expects to enjoy some protection from rivals because of their ignorance of this opportunity or because of their inability timitate quickly. One possible source of some monopoly power is superior entrepreneurship. Our patent, copyright, and trademark laws explicitly provide as a reward for uncovering new methods (and for revealing these methods), legal protection against free imitation, and it may be true in some cases that an astute rival acquires the exclusive rights to some resource that later becomes valuable. There is no reason to suppose that competitive behavior never yields monopoly power, although in many cases such power may be exercised not by creating entry barriers, but through the natural frictions and ignorance that characterize any real economy. If rivals seek better ways to satisfy buyers or to produce a product, and if one or a few succeed in such endeavors, then the reward for their entrepreneurial efforts is likely to be some (short term) monopoly power and this may be associated with increased industrial concentration. To destroy such power when it arises may very well remove the incentive for progress,” (p.3)
+
+]
+
+.source[Demsetz, Harold, 1973, “Industry Structure, Market Rivalry, and Public Policy,” *Journal of Law & Economics* 16(1): 1-9]
+]
+
+---
+
+# Monopoly/Concentration Through Efficiency?
+
+.left-column[
+.center[
+![:scale 80%](../images/demsetz.png)
+
+Harold Demsetz
+
+1930-2019
+]
+]
+
+.right-column[
+
+.quitesmall[
+> “I have presented an explanation of industry structure and profitability based on competitive superiority. The problem faced by a deconcentration or anti-merger policy was posed on the basis of this explanation. Is there a danger that such a policy will produce more inefficiency than it eliminates? The data presented suggest that this danger should be taken seriously,” (p.9).
+
+]
+
+.source[Demsetz, Harold, 1973, “Industry Structure, Market Rivalry, and Public Policy,” *Journal of Law & Economics* 16(1): 1-9]
 
 ]
 
@@ -84,7 +204,7 @@ class: inverse, center, middle
 
 ---
 
-# Robert Bork and the Paradox of Antitrust
+# Robert Bork
 
 .left-column[
 .center[
@@ -98,14 +218,153 @@ Robert Bork
 ]
 
 .right-column[
-
+.smaller[
 - U.S. Solicitor General (1973-1977)
 
 - Judge on U.S. Court of Appeals for the D.C. Circuit (1982-1988)
 
-- 1987 nominee for U.S. Supreme Court (Senate voted down his nomination)
+- 1987 nominee for U.S. Supreme Court (Senate famously voted down his nomination)
 
-- Influenced by (second generation) Chicago School of economics
+- Influenced/by (second generation) Chicago School of economics
+
+- Makes two key (and influential) points:
+  1. What is the *goal* of antitrust?
+  2. How antitrust has been practiced is inconsistent, even paradoxical
+]
+]
+
+---
+
+# Robert Bork and the Goals of the Sherman Act
+
+.left-column[
+.center[
+![:scale 80%](../images/bork.jpg)
+.smaller[
+Robert Bork
+
+1927-2012
+]
+
+]
+]
+
+.right-column[
+
+.quitesmall[
+> “Despite the obvious importance of the question to a statute as vaguely phrased as the Sherman Act, the federal courts in all the years since 1890 have never arrived at a definitive statement of the values or policies which control the law's application and evolution. The question of values, therefore, remains central to the controversy about this basic law and its interpretation...Nevertheless, a starting point is the question of legislative intent. In this paper I propose to answer the question.. My conclusion, drawn from the evidence in the Congressional Record, is that Congress intended the courts to implement (that is, to take into account in the decision of cases) only that value we would today call consumer welfare. To put it another way, the policy the courts were intended to apply is the maximization of wealth or consumer want satisfaction. This requires courts to distinguish between agreements or activities that increase wealth through efficiency and those that decrease it through restriction of output,” (p.7).
+
+
+]
+
+.source[Bork, Robert H, 1966, “Legislative Intent and the Policy of the Sherman Act,” *Journal of Law & Economics* 9: 7-48]
+
+]
+---
+
+# Robert Bork and the Goals of the Sherman Act
+
+.left-column[
+.center[
+![:scale 80%](../images/bork.jpg)
+.smaller[
+Robert Bork
+
+1927-2012
+]
+
+]
+]
+
+.right-column[
+
+.smallest[
+
+> “Failure to settle the issue of values has led inevitably to a degree of irresponsibility in the judicial process...Often a court will announce a value in deciding a Sherman Act case without explaining either the selection of the value or the method of its application to the facts...One is tempted, and perhaps occasionally entitled, to suspect that such a suddenly appearing value is a *deus ex machina* by which the court rescues itself from the perplexing task of economic analysis and judgment that rigorous adherence to a consumer-welfare value premise would sometimes require,” (pp.7-8).
+
+]
+
+.source[Bork, Robert H, 1966, “Legislative Intent and the Policy of the Sherman Act,” *Journal of Law & Economics* 9: 7-48]
+
+]
+
+---
+
+
+# Robert Bork and the Goals of the Sherman Act
+
+.left-column[
+.center[
+![:scale 80%](../images/bork.jpg)
+.smaller[
+Robert Bork
+
+1927-2012
+]
+
+]
+]
+
+.right-column[
+
+.quitesmall[
+
+“Values other than consumer welfare apparently played large roles in [some famous cases]...In *Alcoa*, the Court of Appeals for the Second Circuit judged illegal Aluminum Company of America’s large market position in virgin aluminum ingot. In an assertion seemingly important to his argument, Judge Hand said:
+
+]
+
+.tiny[
+> ‘We have been speaking only of the economic reasons which forbid monopoly; but...there are others, based upon the belief that great industrial consolidations are inherently undesirable, *regardless of their economic results.* In the debates in Congress Senator Sherman himself...showed that among the purposes of Congress
+in 1890 was a desire to put an end to great aggregations of capital because of the helplessness of the individual before them.’ (Emphasis added).
+
+]
+
+.quitesmall[
+
+Without pausing to explain what the noneconomic helplessness of the individual might consist of, what category of individuals was involved, or how the concept applied to the facts of the case before him, Judge Hand moved on to another formulation of noneconomic values supposedly embedded in the statute:
+
+]
+
+.tiny[
+> ‘Throughout the history of the statutes [the antitrust laws, including the Sherman Act] it has been constantly assumed that one of their purposes was to perpetuate and preserve, for its own sake and *in spite of the possible cost*, an organization of industry in small units which can effectively compete with each other.’
+
+]
+
+.quitesmall[
+The passage was followed immediately by: ‘We hold ‘Alcoa’s’ monopoly of ingot was the kind covered by Sec. 2 [of the Sherman Act].’
+,” (pp.8-9).
+
+]
+
+.source[Bork, Robert H, 1966, “Legislative Intent and the Policy of the Sherman Act,” *Journal of Law & Economics* 9: 7-48]
+
+]
+
+---
+
+# Robert Bork and the Goals of the Sherman Act
+
+.left-column[
+.center[
+![:scale 80%](../images/bork.jpg)
+.smaller[
+Robert Bork
+
+1927-2012
+]
+
+]
+]
+
+.right-column[
+
+.smallest[
+
+> “The legislative history, in fact, contains no colorable support for application by courts of any value premise or policy other than the maximization of consumer welfare. The legislators did not, of course, speak of consumer welfare with the precision of a modern economist but their reasoning was unmistakeable...In short, since the legislative history of the Sherman Act shows consumer welfare to be the decisive value it should be treated by a court as the only value,” (pp.10-11).
+
+]
+
+.source[Bork, Robert H, 1966, “Legislative Intent and the Policy of the Sherman Act,” *Journal of Law & Economics* 9: 7-48]
 
 ]
 
@@ -120,8 +379,10 @@ Robert Bork
 ]
 
 .right-column[
-
+.smallest[
 - 1978 *Paradox of Antitrust*
+
+- Antitrust law (as it was practiced into the 1960s) is a paradox: it was being used to .hi[protect competitors] by making it .hi[illegal to compete], which hurts consumers
 
 - Antitrust law and enforcement consists of a conflict of interests:
   1. Consumer welfare
@@ -129,8 +390,8 @@ Robert Bork
 
 - Antitrust law protects some businesses by restraining competition
   - restraining largest businesses because they are "too big"
-  - might be that they are the most efficienct!
-
+  - might be that they are the most efficient!
+]
 ]
 
 ---
@@ -145,9 +406,144 @@ Robert Bork
 
 .right-column[
 
-> "Antitrust is valuable because in some cases it can achieve results more rapidly than can market forces. We need not suffer loses while waiting for the market to erode cartels and monopolistic mergers," (p.311)
+.smaller[
+> "What we all ‘know’ is wrong. We are working from an intellectual base that does not exist. What is true is that our ideas are old; they carry whatever credentials time alone can confer...we never really understood the sweeping implications of these ideas. But it is *not* true, as we trustingly assume, that these ideas were demonstrated theoretically or confirmed empirically..." (pp.11-12)
 
-> "The only goal that should guide the interpretation of the antitrust laws is the welfare of consumers," (p.405)
+]
+.source[Bork, Robert H, 1978, *The Antitrust Paradox*]
+]
+
+---
+
+# Robert Bork and the Paradox of Antitrust
+
+.left-column[
+.center[
+![:scale 70%](https://www.dropbox.com/s/v85wz30gn37z14v/antitrust_paradox.jpg?raw=1)
+]
+]
+
+.right-column[
+
+.quitesmall[
+> “The accepted view is well expressed by [a case opinion that says]: ‘The *per se* rule of prohibition...has been applied to price-fixing agreements, group boycotts, tying arrangements, and horizontal divisions of markets. As to each of these practicices, experience and analysis have established the utter lack of justification to excuse its inherent threat to competition’ ... [these statements] are clearly, though unintentionally, misleading...The point here is that the history cited does not exist. Never has ‘experience’ demonstrated the anticompetitive nature of any of these practices. Experience may demonstrate that a practice raises prices or that it injures a rival, but that is all, and many competitive practices do the same things. Only theory can separate the competitive from the anticompeteive, and as for that, these rules referred to were not estliabhed on a foundation of ‘analysis,’” (p.12)
+
+]
+.source[Bork, Robert H, 1978, *The Antitrust Paradox*]
+]
+
+---
+
+# Robert Bork and the Paradox of Antitrust
+
+.left-column[
+.center[
+![:scale 70%](https://www.dropbox.com/s/v85wz30gn37z14v/antitrust_paradox.jpg?raw=1)
+]
+]
+
+.right-column[
+
+.quitesmall[
+> “The lines along which the law should be reformed are clear...:”
+
+> “(1) The goal that should guide the interpretation of the antitrust laws is the welfare of consumers. Departures from that standard destroy the consistency and predictability of the law; run counter to the legislative intent...; and damage the integrity of the judicial process by involving the courts in grossly political choices for which neither the statutes nor any other acceptable source provide any guidance.”(p.421)
+
+> “(2) In judging consumer welfare, productive efficiency, the single most important factor contributing to that welfare, must be given due weight along with allocative efficiency. Failure to consider productive efficiency—or worse, the tendency to view it as pernicious by calling it a ‘barrier to entry’ or a ‘competitive advantage’—is probably the major reason for the deformation of antitrust’s doctrines.”
+]
+
+.source[Bork, Robert H, 1978, *The Antitrust Paradox*]
+
+]
+
+---
+
+
+# Robert Bork and the Paradox of Antitrust
+
+.left-column[
+.center[
+![:scale 70%](https://www.dropbox.com/s/v85wz30gn37z14v/antitrust_paradox.jpg?raw=1)
+]
+]
+
+.right-column[
+
+.smallest[
+> (3) The law should be reformed so that it strikes at three classes of behavior:
+> > (a) The suppression of competition by horizontal agreement, such as the nonancillary agreements of rivals or potential rivals to fix prices or divide markets.
+> > (b) Horizontal mergers creating very large market shares (those that have fewer than three significant rivals in any market).
+> > (c) Deliberate predation engaged in to drive rivals from a market, prevent or delay the entry of rivals, or discipline existing rivals. The kinds of predation that are likely to occur have been discussed, and care must be taken not to confuse hard competition with predation.
+
+]
+.source[Bork, Robert H, 1978, *The Antitrust Paradox*]
+]
+
+---
+
+
+# Robert Bork and the Paradox of Antitrust
+
+.left-column[
+.center[
+![:scale 70%](https://www.dropbox.com/s/v85wz30gn37z14v/antitrust_paradox.jpg?raw=1)
+]
+]
+
+.right-column[
+
+.smallest[
+> (4) The law should permit agreements on prices, territories, refusals to deal, and other suppressions of rivalry that are ancillary, i nthe ense discussed, to an integration of productive economic activity. It should abandon its concern with such beneficial practices as small horizontal mergers, all vertical or conglomerate mergers, vertical price maintenance and market division, tying arrangements, exclusive dealing and requirements contracts, ‘predatory’ price cutting, and the like. Antittrust should have no concern with any firm size or industry structure created by internal growth or by a merger more than ten years old. 
+
+> These are not prescriptions for the non-enforcement of the antitrust laws, but rather for their enforcement in a way that advances rather than retards competition and consumer welfare, (p.422)
+
+]
+.source[Bork, Robert H, 1978, *The Antitrust Paradox*]
+]
+
+---
+
+# Consumer Welfare Standard: Basic Idea
+
+.left-column[
+.center[
+![:scale 75%](../images/williamson.png)
+
+.smallest[
+Olvier E Williamson
+
+1932-
+
+Economics Nobel 2009
+]
+]
+]
+.right-column[
+
+
+> “The effects on resource allocation of a merger that yields economies [e.g. of scale, scope, etc] but extends market power can be investigated in a partial equilibrium context with the help of Figure 1,” (p.21).
+
+]
+.source[Williamson, Oliver E, 1968, “Economies as an Antitrust Defense: The Welfare Tradeoffs,” *American Economic Review* 58(1): 18-36]
+
+---
+
+# Consumer Welfare Standard: Basic Idea
+
+.left-column[
+.center[
+![](../images/economies_defense.png)
+]
+]
+
+.right-column[
+
+.quitesmall[
+> “The horizontal line labeled $AC_1$ represents the level of average costs of one of the two (or more) firms before the combination, while $AC_2$ shows the level of average costs after the merger. The price before the merger is given by $P_1$ and ... the price after the merger is given by $P_2$ and is assumed to exceed $P_1$ (if it were less than $P_1$ the economic effects of the merger would be strictly positive)...The net welfare effects of the merger are given (approximately) by the two shaded areas...The area designated $A_1$ is the familiar dead-weight loss that would result if price were increased from $P_1$ to $P_2$, assuming that costs remain costant. But since average costs are actually reduced by the merger, the area designated $A_2$, which represents cost savings, must also be taken into account. The net allocative effect is given by the difference $A_2-A_1$, of these two areas,” (pp.21-22).
+
+]
+
+.source[Williamson, Oliver E, 1968, “Economies as an Antitrust Defense: The Welfare Tradeoffs,” *American Economic Review* 58(1): 18-36]
 
 ]
 
@@ -248,7 +644,7 @@ mes_plot+
 
 - But many seemingly anti-competitive practices are pro-competitive and benefit consumers:
   - price discrimination, tying, bundling, vertical contractual restraints, etc.
-  - think of lectures 3.3, 3.4 for pro-competitive, efficiency reasons for these practices 
+  - think of lectures 4.3, 4.4, 4.5 for pro-competitive, efficiency reasons for these practices 
 
 ]
 
@@ -370,6 +766,25 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 ---
 
+# Consumer Welfare Standard
+
+.pull-left[
+.center[
+![:scale 100%](../images/court1.jpg)
+]
+]
+
+.pull-right[
+
+- One of the most influential arguments/books on antitrust law
+
+- Since 1977, courts and the agencies (FTC, DOJ) adopted the consumer welfare standard 
+
+- Practices that were originally *per se* illegal in the 1960s were reconsidered under a *rule of reason* based on whether they benefit or harm consumers
+]
+
+---
+
 class: inverse, center, middle
 
 # Historical Revisionism of the Gilded Age
@@ -397,11 +812,34 @@ Economics Nobel 1982
 > "For much too long a time students of the history of antitrust policy have been at least midly perplexed by the coolness with which American economists greeted the Sherman Act. Was not the nineteenth century the period in which the benevolent effects of competition were most widely extolled? Should not a profession praise a Congress which seeks to legislate its textbook assumptions into practice? And with even modest foresight, should not the economists have foreseen that the Sherman Act would put more into economists' purses than perhaps any other law ever passed?," (1).
 
 ]
-.source[Stigler, George J, (1982), "The Economists and the Problem of Monopoly," *American Economic Review* 72(2):1-11
+.source[Stigler, George J, 1982, "The Economists and the Problem of Monopoly," *American Economic Review* 72(2):1-11]
 
-Quoted in
+]
 
-DiLorenzo, Thomas J and Jack C High, 1988, "Antitrust and Competition, Historically Considered," *Economic Inquiry* 26(3):423-435]
+---
+
+# Stigler Was Famously A Fan of the Sherman Act
+
+.left-column[
+.center[
+![:scale 80%](https://www.dropbox.com/s/9s3qzw1m3rrl9sy/stigler.png?raw=1)
+.smallest[
+George Stigler
+
+1911-1991
+
+Economics Nobel 1982
+]
+]
+]
+.right-column[
+
+.smallest[
+
+> “I like the Sherman Act. So far as I can tell, it's a public interest law — in the same sense in which I think having private property, enforcement of contracts, and suppression of crime are public interest phenomena,” (1984, 46).
+
+]
+.source[Stigler, George J, 1984, "Reason Interview: George Stigler." *Reason*, January 1984, 41-8.]
 
 ]
 
@@ -410,11 +848,10 @@ DiLorenzo, Thomas J and Jack C High, 1988, "Antitrust and Competition, Historica
 # "New Learning" in Industrial Organization
 
 .smallest[
-> "A clue to a more satisfactory explanation may be found in the 'new learning' of industrial organization. Much of this learning doubts that antitrust law promotes competition. Brozen (1982, 14) for example, concludes that antitrust laws ' are themselves restraining output and the growth of productivty.' Harold Demsetz has said that if certain policies were continued, he would favor outright repeal of the Sherman Act...MsGee (1971,16) for example says, ' for a variety of reasons, it is simply *not* correct to assume that atomistic competition is the ultimate *policy* goal; or to regard departures from that kind of competition as necessarily bad."...Johnson (1983,3) writes '...the competitive model of economic theory not only offers littled guidance [for antitrust law], but actually points us in the wrong direction. The confusion arises because many economists fail to realize that the 'competitive model' is silent on the subject of competition,' (DiLorezno and High, 1988: 424)
+> "A clue to a more satisfactory explanation may be found in the 'new learning' of industrial organization. Much of this learning doubts that antitrust law promotes competition. Brozen (1982, 14) for example, concludes that antitrust laws 'are themselves restraining output and the growth of productivity.' Harold Demsetz has said that if certain policies were continued, he would favor outright repeal of the Sherman Act...McGee (1971,16) for example says, 'for a variety of reasons, it is simply *not* correct to assume that atomistic competition is the ultimate *policy* goal; or to regard departures from that kind of competition as necessarily bad.'...Johnson (1983,3) writes '...the competitive model of economic theory not only offers littled guidance [for antitrust law], but actually points us in the wrong direction. The confusion arises because many economists fail to realize that the 'competitive model' is silent on the subject of competition," (DiLorezno and High, 1988: 424)
 
 > "...the current empirical record of antitrust enforcement [in improving consumer welfare] is weak," (Crandall and Winston, 2003: 3)
 
-]
 .source[DiLorenzo, Thomas J and Jack C High, 1988, "Antitrust and Competition, Historically Considered," *Economic Inquiry* 26(3):423-435
 
 Crandall, Robert W and Clifford Winston, 2003, "Does Antitrust Policy Improve Consumer Welfare? Assessing the Evidence," *Journal of Economic Perspectives* 17(4): 3-26]
@@ -449,11 +886,26 @@ Crandall, Robert W and Clifford Winston, 2003, "Does Antitrust Policy Improve Co
 
 # The Standard Oil Case
 
+.left-column[
+.center[
+![](../images/johnsmcgee.jpg)
+
+John S. McGee
+]
+]
+
+.right-column[
+
+.smallest[
+
 > "The *Standard Oil* case of 1911 is a landmark in the development of antitrust law. But it is more than a famous law case: it created a legend. The firm whose history it relates to became the archetype of predatory monopoly," (p.137)
 
 > "According to most accounts, the Standard Oil Co. of New Jersey established an oil refining monopoly in the United States, in large part through the systematic use of predatory price discrimination. Standard struck down its competitors, in one market at a time, until it enjoyed a monopoly position everywhere. Similarly, it preserved its monopoly by cutting prices selectively wherever competitors dared enter...The main trouble with this 'history' is that it is logically deficient, and I can find little or no evidence to support it," (p.138).
 
+]
 .source[McGee, John S, 1958, "Predatory Price Cutting: The Standard Oil (N.J.) Case," *Journal of Law and Economics* 1: 137-169]
+
+]
 
 ---
 
@@ -505,6 +957,79 @@ ggplot(data = oil_prices %>% filter(Year<1914))+
        caption = "Source: BP Statistical Review of World Energy 2014")+
   theme_classic(base_family="Fira Sans", base_size=18)
 ```
+
+---
+
+# “Predatory Pricing” Doesn’t Make Much Sense
+
+.left-column[
+.center[
+![](../images/johnsmcgee.jpg)
+
+John S. McGee
+]
+]
+
+.right-column[
+
+.quitesmall[
+
+> "In the beginning, oil refining in the United States apparently was competitive...The number of refiners was evidently large, since the Standard interests bought out more than a hundred of them. Standard Oil was not born with monopoly power: as late as 1870 it had only 10 per cent of the refining business" (p.138-139).
+
+> “The usual argument that local price cutting is a monopolizing technique *begins* by assuming that the predator has important monopoly power, which is his ‘war chest’ for supporting the unprofitable raids and forays. Evidently the technique could not be used until the Standard interests achieved the necessary monopoly power...A simpler technique did exist, and Standard used it. Unless there are legal restraints, anyone can monopolize an industry through mergers and acquisitions, paying for the acquisitions by permitting participation of the former owners in the expected monopoly profits,” (p.139).
+
+]
+.source[McGee, John S, 1958, "Predatory Price Cutting: The Standard Oil (N.J.) Case," *Journal of Law and Economics* 1: 137-169]
+
+]
+
+---
+
+# “Predatory Pricing” Doesn’t Make Much Sense
+
+.left-column[
+.center[
+![](../images/johnsmcgee.jpg)
+
+John S. McGee
+]
+]
+
+.right-column[
+
+.smallest[
+
+> "To sum up: (1) Predatory price cutting does not explain how a seller acquires monopoly power that he must have before he could practice it. (2) Whereas it is *conceivable* that someone might embark on a predatory program, I cannot see that it would pay him to do so, since outright purchase is both cheaper and more reliable...(4) Actual variations in prices among markets may be accounted for in terms of variations in demand elasticities, but do not establish that anybody is preying on anybody else,” (p.143).
+
+]
+.source[McGee, John S, 1958, "Predatory Price Cutting: The Standard Oil (N.J.) Case," *Journal of Law and Economics* 1: 137-169]
+
+]
+
+---
+
+# Standard May Have Had A Monopoly, But Not From This
+
+.left-column[
+.center[
+![](../images/johnsmcgee.jpg)
+
+John S. McGee
+]
+]
+
+.right-column[
+
+.quitesmall[
+
+> “Judging from the Record, Standard Oil did not use predatory price discrimination to drive out competing refiners, nor did its pricing practice have that effect...To do so would have been foolish; and, whatever else has been said about them, the old Standard organization was seldom criticized for making less money when it could readily have made more...Anyone who has relied upon price discrimination to explain Standard’s dominance would do well to start looking for something else. The place to start is merger.” (p.143).
+
+> “It should be quite clear that this is not a verdict of acquittal for the Standard Oil company; the issue of monopoly remains. What this study says is that Standard did not achieve or maintain a monopoly position through price discrimination...what businessmen *do* to one another is much less significant to monopoly than what they find useful to do together to serve their common interest,” (pp.143-144).
+
+]
+.source[McGee, John S, 1958, "Predatory Price Cutting: The Standard Oil (N.J.) Case," *Journal of Law and Economics* 1: 137-169]
+
+]
 
 ---
 
@@ -663,7 +1188,7 @@ Economics Nobel 1982
 
 .right-column[
 
- "[B]ecause of their inability to maintain their cartels [prior to the ICC], railroads were big supporters of the [Interstate Commerce Act] because the newly-formed ICC could coordinate cartel prices...Using the new law as authority, the railroads revamped their freight classification, raised rates, eliminated passes and fare reductions, and revised less than carload rates on all types of goods, including groceries." 
+> "[B]ecause of their inability to maintain their cartels [prior to the ICC], railroads were big supporters of the [Interstate Commerce Act] because the newly-formed ICC could coordinate cartel prices...Using the new law as authority, the railroads revamped their freight classification, raised rates, eliminated passes and fare reductions, and revised less than carload rates on all types of goods, including groceries." 
 
 .source[Kolko, Gabriel, 1963, *The Triumph of Conservatism: A Reinterpretation of American History, 1900-1916*]
 ]
@@ -741,67 +1266,281 @@ Gabriel Kolko
 
 ---
 
+class: inverse, center, middle
+
 # The Legislative History & Intent of Sherman Act
 
-- Bork argues Sherman Act was deliberately created to promote economic efficiency
+---
 
-- Stigler: “I like the Sherman Act. So far as I can tell, it's a public interest law — in the same sense in which I think having private property, enforcement of contracts, and suppression of crime are public interest phenomena,” (1984, 46).
+# The Legislative History & Intent of Sherman Act
+
+.left-column[
+.center[
+![:scale 75%](../images/thomashazlett.jpg)
+.smallest[
+Thomas Hazlett
+
+1952-
+
+Former FCC Chief Economist
+]
+]
+]
+
+.right-column[
+
+.smallest[
+> “Economists have singled out the Sherman Antitrust Act as a uniquely proconsumer piece of legislation...This proconsumer view of antitrust is all the more ironic in light of recent dissatisfaction with anticonsumer consequences of antitrust policy generally...There is widespread concern that antitrust law has been employed against competitive market rivalry. Moreover, the central paradox of an 1890 antimonopoly law remains: Why should an economy rapidly expanding outputs in virtually all major industrial sectors move to quash restrictions of output...particularly when such output increases were intrinsically tied to the emergence of large corporate forms...? (263-264)
+
+]
+
+.source[Hazlett, Thomas, 1992, “The Legislative History of the Sherman Act Re-Examined,” *Economic Inquiry* 30: 263-276]
+]
+
+---
+
+# The Legislative History & Intent of Sherman Act
+
+.left-column[
+.center[
+![:scale 75%](../images/thomashazlett.jpg)
+.smallest[
+Thomas Hazlett
+
+1952-
+
+Former FCC Chief Economist
+]
+]
+]
+
+.right-column[
+
+.quitesmall[
+> “The proconsumer view of the Sherman Act has been most thoroughly elaborated by Robert Bork...The law, argues Bork, should be interpreted as wholly devoted to maximizing economic efficiency,” (p.264).
+
+> “The policy importance of this interpretation is vast. Antitrust courts have repeatedly found various "noneconomic" grounds for preserving particular firms or market forms, the classic being Justice Peckham's concern over the "small dealers and worthy men" (U.S. v. Trans Missouri, [1897]) who deserved a judicial reprieve from competitive extinction. This line of reasoning forms the basis of the protectionist thrust in antitrust law. In his famous Alcoa decision, Judge Learned Hand supplies the paradigmatic counter-efficiency hypothesis:
+
+]
+.tiny[
+> > ‘Throughout the history of these [antitrust] statutes, it has been constantly assumed that one of their purposes was to perpetuate and preserve, for its own sake and in spite of possible cost, an organization of industry of small units which can effectively compete with each other.’
+
+]
+
+.quitesmall[
+> “It is this interpretation which Bork finds everywhere in the courts, and nowhere in the Congress of 1890, and which has led antitrust to be "a policy at war with itself,” (p.264).
+
+]
+
+.source[Hazlett, Thomas, 1992, “The Legislative History of the Sherman Act Re-Examined,” *Economic Inquiry* 30: 263-276]
+]
+
+---
+
+# The Legislative History & Intent of Sherman Act
+
+.left-column[
+.center[
+![:scale 75%](../images/thomashazlett.jpg)
+.smallest[
+Thomas Hazlett
+
+1952-
+
+Former FCC Chief Economist
+]
+]
+]
+
+.right-column[
+
+.smallest[
+> “If Senator Sherman possessed any long-lived commitment to the alleged efficiency goals of his Act, he kept them to himself,” (p.266).
+
+> “Sherman's sentiments regarding the control of "one man" and the profits accumulated by trusts, concomitant with his rejection of cost-efficiencies being realized in the form of lower prices, belies an efficiency concern for the combination issue. This concern was ably articulated in his March 21 Senate speech, his major public address on the issue:”
 
 
-Economists have singled out the Sherman Antitrust Act as a uniquely proconsumer piece of legislation. (Hazlett 263)
+]
 
-This proconsumer view of antitrust is all the more ironic in light of recent dissatisfaction with anticonsumer consequences of antitrust policy generally. (See Gold- schmid et al. [1974]; Demsetz [1978]; Baxter [19801; Brozen 1982]; Armentano (1982]; Johnson [1983]; Baumol and Ordover [1985]; Hazlett 1986]; Bittlingmayer [1992]). There is widespread concern that antitrust law has been employed against competitive market rivalry. Moreover, the central paradox of an 1890 antimonopoly law remains: Why should an economy rapidly expanding outputs in virtually all major industrial sectors move to quash restrictions of output (Baxter [1980], DiLorenzo [1985]), particularly when such output increases were intrinsically tied to the emergence of large corporate forms (Chandler [1977])? 263-264
+.source[Hazlett, Thomas, 1992, “The Legislative History of the Sherman Act Re-Examined,” *Economic Inquiry* 30: 263-276]
+]
 
-The proconsumer view of the Sherman Act has been most thoroughly elaborated
-by Robert Bork, who writes: "The legislative history of the Sherman Act displays the clear and exclusive policy intention of promoting consumer welfare" [1978, 61].
-
-264
-
-"It is impossible to find even colorable language suggesting most of the other broad social or political purposes that have occasionally been suggested as relevant to the application of the Sherman Act" (Bork [1966,42]).
-
-The law, argues Bork, should be interpreted as wholly devoted to maximizing economic efficiency, for even though "The legislators did not, of course, speak of consumer welfare with the precision of a modern economist, their meaning was unmistakable" [1966, 10]. And, more inclusively: "Congress' position with respect to efficiency cannot be explained on any hypothesis other than that the consumer welfare was in all cases the controlling
-value under the Sherman Act" [1966, 26].
-
-The policy importance of this interpretation is vast. Antitrust courts have repeatedly found various "noneconomic" grounds for preserving particular firms or market forms, the classic being Justice Peckham's concern over the "small dealers and worthy men" (U.S. v. Trans Missouri, [1897]) who deserved a judicial reprieve from competitive extinction. This line of reasoning forms the basis of the protectionist thrust in antitrust law. In his famous Alcoa decision, Judge Learned Hand supplies the paradigmatic counter-efficiency hypothesis:
-> Throughout the history of these [antitrust] statutes, it has been constantly assumed that one of their purposes was to perpetuate and preserve, for its own sake and in spite of possible cost, an organization of industry of small units which can effectively compete with each other. (148 F.2d.
-416,429, 1945)
-
-It is this interpretation which Bork finds everywhere in the courts, and nowhere in the Congress of 1890, and which has led antitrust to be "a policy at war with itself."
-
-If Senator Sherman possessed any long-lived commitment to the alleged efficiency goals of his Act, he kept them to himself. 266
+---
 
 
-Sherman's sentiments regarding the control of "one man" and
-the profits accumulated by trusts, concomitant with his rejection of cost-efficiencies being realized in the form of lower prices, belies an efficiency concern for the combination issue. This concern was ably articulated in his March 21 Senate speech, his major public address on the issue:
+# The Legislative History & Intent of Sherman Act
 
-> If the concentrated powers of this combination are intrusted to a single man, it is a kingly prerogative in- consistent with our form of govern- ment, and should be subject to the strong resistance of the state and national authorities. If anything is wrong, this is wrong. If we will not endure a king as a political power we should not endure a king over the production, transportation, and sale of any of the necessaries of life. If we would not submit to an emperor, we should not submit to an autocrat of trade, with power to prevent competition, and to fix theprice of any commodity. (Burton [1906, 359])
+.left-column[
+.center[
+![:scale 80%](../images/johnsherman.jpg)
+.smallest[
+Sen. John Sherman
 
-One interpretation of this passage is that Sherman is concerned with "non- economic" (or nonefficiency) issues, such as the distribution of wealth and power. This is precisely the position Judge Leaned Hand took, in fact, in Alcoa. 
+1823-1900]
+]
+]
 
-... Yet it is not clear. In that the senator was not of the "Chicago School," his at- tack on price-fixing may have been motivated by distributional, and not efficiency, issues.
+.right-column[
 
-267
-
-"The most important measure adopted during this Congress," wrote Sherman in his autobiography, "was what was popularly known as the McKinley Tariff Law"... on October 1,1890, the tariff was "a matter of constant debate in both houses" between 1883 and 1890 (ibid., 1085), as op- posed to the monopoly law, which came and went with little discussion. Whatever cross-currents were evidenced in the analysis of the trust question, the tariff was
-then well understood as a restriction of output resulting in dead-weight losses.
-Most conveniently, the tariff appears on a neat continuum in our consumer welfare analysis. Compared toa free-market cartel which restricts output and still manages to sustain itself against potential competitors, a tariff, which enjoys state-enforcement of output restrictions, is bound to create a clearly more objectionable interference with "free and full competition." Certainly, this was the prevailing, "orthodox" view; according to mainstream economists of the day, monopoly problems "would arise only if such groups or classes were permitted to appropriate the political powers of the state...and create... 'artificial' monopolies by tariff and other class legislation" 267-268
-
-Contrary to the public interest hypothesis, not only was Senator John Sherman a Republican (high tariff) vote on Senate tax questions, he was one of the protectionist system's most vocal proponents. 268
-
-During the Sherman Act debate populists had charged that "Tariffs are the mother of trusts." "At all events," write Tarbell of the Sherman Act, "the measure was passed ahead of the tariff bill. Thus, an answer was ready for the critics. As Senator Morgan said, 'The bill was a good preface to an argument upon the protective tariff,'" 269
-
-267
+.smallest[
+> “If the concentrated powers of this combination are intrusted to a single man, it is a kingly prerogative inconsistent with our form of government, and should be subject to the strong resistance of the state and national authorities. If anything is wrong, this is wrong. If we will not endure a king as a political power we should not endure a king over the production, transportation, and sale of any of the necessaries of life. If we would not submit to an emperor, we should not submit to an autocrat of trade, with power to prevent competition, and to fix theprice of any commodity.”
 
 
+]
 
-The evidence reveals that the Sherman Act was not part of a generally proconsumer campaign to remedy market power problems in the U.S. economy. Rather, it emerged as a political compromise with the following characteristics: (1) It provided incumbent Republican legislators (and their prevailing distributional coalition) with a cosmetic defense on the trust question, in anticipation of the upcoming consumer-to-industry transfers in the McKinley Tariff. (2) It gave advocates of small, localized firms some prospect of a buffer against the waves of creative destruction. (3) It did not augur to be a particularly consequential measure, as only twenty-two government actions were brought through 1904...(4) Hence, the prevailing distributional coalition got its legislative priority-higher tariffs-at what it took to be a good price. Populist critics of big business found it difficult to oppose the Sher- man Act, while large scale corporate interests found it unnecessary, particularly as how it bought the GOP room to maneuver o n its tariff hike.
+.source[Hazlett, Thomas, 1992, “The Legislative History of the Sherman Act Re-Examined,” *Economic Inquiry* 30: 263-276]
+]
 
-p.273
- 
-Table on p273 on votes
+---
+
+# The Legislative History & Intent of Sherman Act
+
+.left-column[
+.center[
+![:scale 75%](../images/thomashazlett.jpg)
+.smallest[
+Thomas Hazlett
+
+1952-
+
+Former FCC Chief Economist
+]
+]
+]
+
+.right-column[
+
+.smallest[
+> “One interpretation of this passage is that Sherman is concerned with ‘non-economic’ (or nonefficiency) issues, such as the distribution of wealth and power. This is precisely the position Judge Leaned Hand took, in fact, in Alcoa...Yet it is not clear. In that the senator was not of the ‘Chicago School,’ his attack on price-fixing may have been motivated by distributional, and not efficiency, issues,’ (p.267).
 
 
-If the Sherman Act had been crafted in the spirit of minimizing allocative inefficiencies, it would have been a theoretical case of immaculate conception. There was not an economist eligible for paternity. As Stigler muses: "A careful student of the history of economics would have searched long and hard on July 2 of 1890, the day the Sherman Act was signed by President Harrison, for any economist who had ever recommended the policy of actively combating collusion or monopolization in the economy at large" (1982a, 3].
+]
 
-274
+.source[Hazlett, Thomas, 1992, “The Legislative History of the Sherman Act Re-Examined,” *Economic Inquiry* 30: 263-276]
+]
 
+---
+
+# The Legislative History & Intent of Sherman Act
+
+.left-column[
+.center[
+![:scale 75%](../images/thomashazlett.jpg)
+.smallest[
+Thomas Hazlett
+
+1952-
+
+Former FCC Chief Economist
+]
+]
+]
+
+.right-column[
+
+.quitesmall[
+> “‘The most important measure adopted during this Congress,’"wrote Sherman in his autobiography, ‘was what was popularly known as the McKinley Tariff Law’... on October 1,1890, the tariff was ’a matter of constant debate in both houses’ between 1883 and 1890...as opposed to the monopoly law, which came and went with little discussion. Whatever cross-currents were evidenced in the analysis of the trust question, the tariff was then well understood as a restriction of output resulting in dead-weight losses. Most conveniently, the tariff appears on a neat continuum in our consumer welfare analysis. Compared to a free-market cartel which restricts output and still manages to sustain itself against potential competitors, a tariff, which enjoys state-enforcement of output restrictions, is bound to create a clearly more objectionable interference with ‘free and full competition.’ Certainly, this was the prevailing, ‘orthodox’ view; according to mainstream economists of the day, monopoly problems ‘would arise only if such groups or classes were permitted to appropriate the political powers of the state...and create... ’artificial’ monopolies by tariff and other class legislation’” 267-268
+ (p.267).
+
+
+]
+
+.source[Hazlett, Thomas, 1992, “The Legislative History of the Sherman Act Re-Examined,” *Economic Inquiry* 30: 263-276]
+]
+
+---
+
+# The Legislative History & Intent of Sherman Act
+
+.left-column[
+.center[
+![:scale 75%](../images/thomashazlett.jpg)
+.smallest[
+Thomas Hazlett
+
+1952-
+
+Former FCC Chief Economist
+]
+]
+]
+
+.right-column[
+
+.quitesmall[
+> “Contrary to the public interest hypothesis, not only was Senator John Sherman a Republican (high tariff) vote on Senate tax questions, he was one of the protectionist system's most vocal proponents,” (p.268).
+
+> “During the Sherman Act debate populists had charged that ‘Tariffs are the mother of trusts.’ ‘At all events,’ write Tarbell of the Sherman Act, ‘the measure was passed ahead of the tariff bill. Thus, an answer was ready for the critics. As Senator Morgan said, ‘The bill was a good preface to an argument upon the protective tariff,’” (p.269).
+
+]
+
+.source[Hazlett, Thomas, 1992, “The Legislative History of the Sherman Act Re-Examined,” *Economic Inquiry* 30: 263-276]
+]
+
+---
+
+# The Legislative History & Intent of Sherman Act
+
+.center[
+![](../images/sherman_mckinley.png)
+]
+
+.source[Hazlett, Thomas, 1992, “The Legislative History of the Sherman Act Re-Examined,” *Economic Inquiry* 30: 263-276]
+
+
+---
+
+
+# The Legislative History & Intent of Sherman Act
+
+.left-column[
+.center[
+![:scale 75%](../images/thomashazlett.jpg)
+.smallest[
+Thomas Hazlett
+
+1952-
+
+Former FCC Chief Economist
+]
+]
+]
+
+.right-column[
+
+.quitesmall[
+> “The evidence reveals that the Sherman Act was not part of a generally proconsumer campaign to remedy market power problems in the U.S. economy. Rather, it emerged as a political compromise with the following characteristics: (1) It provided incumbent Republican legislators (and their prevailing distributional coalition) with a cosmetic defense on the trust question, in anticipation of the upcoming consumer-to-industry transfers in the McKinley Tariff. (2) It gave advocates of small, localized firms some prospect of a buffer against the waves of creative destruction. (3) It did not augur to be a particularly consequential measure, as only twenty-two government actions were brought through 1904...(4) Hence, the prevailing distributional coalition got its legislative priority-higher tariffs-at what it took to be a good price. Populist critics of big business found it difficult to oppose the Sher- man Act, while large scale corporate interests found it unnecessary, particularly as how it bought the GOP room to maneuver o n its tariff hike.” (p.273).
+
+]
+
+.source[Hazlett, Thomas, 1992, “The Legislative History of the Sherman Act Re-Examined,” *Economic Inquiry* 30: 263-276]
+]
+
+
+---
+
+
+# The Legislative History & Intent of Sherman Act
+
+.left-column[
+.center[
+![:scale 75%](../images/thomashazlett.jpg)
+.smallest[
+Thomas Hazlett
+
+1952-
+
+Former FCC Chief Economist
+]
+]
+]
+
+.right-column[
+
+.smaller[
+> “If the Sherman Act had been crafted in the spirit of minimizing allocative inefficiencies, it would have been a theoretical case of immaculate conception. There was not an economist eligible for paternity. As Stigler muses: "A careful student of the history of economics would have searched long and hard on July 2 of 1890, the day the Sherman Act was signed by President Harrison, for any economist who had ever recommended the policy of actively combating collusion or monopolization in the economy at large” (p.274).
+
+]
+
+.source[Hazlett, Thomas, 1992, “The Legislative History of the Sherman Act Re-Examined,” *Economic Inquiry* 30: 263-276]
+]

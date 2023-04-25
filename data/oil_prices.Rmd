@@ -1,0 +1,70 @@
+---
+title: "Oil Prices"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+```{r setup}
+knitr::opts_chunk$set(echo = F,
+                      warning = F,
+                      message = F,
+                      fig.retina = 3,
+                      fig.align = "center")
+library(tidyverse)
+```
+
+```{r, import-data}
+oil_prices<-read_csv("oil_prices.csv")
+```
+
+```{r}
+oil_prices
+```
+
+Notes: 
+    1861-1944 US Average.
+    1945-1983 Arabian Light posted at Ras Tanura.
+    1984-2009 Brent dated
+
+http://chartsbin.com/view/oau
+
+```{r}
+ggplot(data = oil_prices)+
+  aes(x = Year,
+      y = Real_price_2013_USD)+
+  geom_path(size = 1,
+            color = "red")+
+  scale_x_continuous(breaks=seq(1860,2020,10))+
+  scale_y_continuous(labels=scales::dollar)+
+  labs(x = "Year",
+       y = "Real Price per Barrel (2013 USD)",
+       title = "Real Oil Prices (2013 USD) per Barrel, 1863-2013",
+       caption = "Source: BP Statistical Review of World Energy 2014")+
+  theme_classic(base_family="Fira Sans")
+```
+
+```{r}
+ggplot(data = oil_prices %>% filter(Year<1914))+
+  aes(x = Year,
+      y = Real_price_2013_USD)+
+  geom_path(size = 1,
+            color = "red")+
+  
+  geom_vline(xintercept=1870, size=1, linetype="dashed")+
+  geom_label(x=1870, y=110, label="Standard Oil \n Founded")+
+  
+    geom_vline(xintercept=1911, size=1, linetype="dashed")+
+  geom_label(x=1911, y=110, label="Standard Oil \n Broken Up")+
+
+  scale_x_continuous(breaks=seq(1860,1920,10),
+                     limits=c(1860,1920))+
+  scale_y_continuous(labels=scales::dollar)+
+  labs(x = "Year",
+       y = "Real Price per Barrel (2013 USD)",
+       title = "Real Oil Prices (2013 USD) per Barrel, 1863-1913",
+       caption = "Source: BP Statistical Review of World Energy 2014")+
+  theme_classic(base_family="Fira Sans")
+```

@@ -1929,5 +1929,5 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 # Merger History and Merger Waves
 
 .center[
-![](https://www.dropbox.com/s/gwwjbrp6pqlkegi/merger_history.PNG?raw=1)
+![](../images/merger_waves.png)
 ]

@@ -10,7 +10,7 @@ source(here::here("slides", "slide-links.R"))
 
 ::: {.callout-note appearance=minimal}
 # Meeting Date
-*Tuesday, April 18, 2023*
+*Tuesday, April 25, 2023*
 :::
 
 ## <i class="fas fa-info-circle fa-lg"></i> Overview
@@ -26,14 +26,17 @@ Today we begin our look at the economics of antitrust, which will take several c
 - [<i class="fas fa-file-pdf"></i> DiLorenzo, 1985, "The Origins of Antitrust: An Interest-Group Perspective"](/files/readings/DiLorenzo-1985.pdf)
 - [<i class="fas fa-file-pdf"></i> DiLorenzo and High, 1988, "Antitrust and Competition, Historically Considered"](/files/readings/DiLorenzo-High-1988.pdf)
 - [<i class="fas fa-file-pdf"></i> McGee, 1958, "Predatory Price Cutting: The Standard Oil (N.J.) Case"](/files/readings/McGee-1958.pdf)
+- [<i class="fas fa-file-pdf"></i> Demsetz, 1973, "Industry Structure, Market Rivalry, and Public Policy"](/files/readings/Demsetz-1973.pdf)
+- [<i class="fas fa-file-pdf"></i> Bork, 1966, "Legislative Intent and the Policy of the Sherman Act"](/files/readings/Bork-1966.pdf)
 - [<i class="fas fa-file-pdf"></i> Hazlett, 1992, "The Legislative History of the Sherman Act Re-Examined"](/files/readings/Hazlett-1992.pdf)
 - [<i class="fas fa-file-pdf"></i> Stigler, 1971, "The Theory of Economic Regulation"](/files/readings/Stigler-1971.pdf)
 - [<i class="fas fa-file-pdf"></i> Stigler, 1982, "The Economists and the Problem of Monopoly"](/files/readings/Stigler-1982.pdf)
-
+- [<i class="fas fa-file-pdf"></i> Williamson, 1968, "Economies as an Antitrust Defense: The Welfare Tradeoffs"](/files/readings/Williamson-1968.pdf)
 
 - [<i class="fas fa-podcast"></i> *NPR Planet Money*: "Antitrust 1: Standard Oil"](https://www.npr.org/sections/money/2019/02/15/695131832/antitrust-1-standard-oil)
 - [<i class="fas fa-podcast"></i> *NPR Planet Money*: "Antitrust 2: The Paradox"](https://www.npr.org/sections/money/2019/02/20/696342011/antitrust-2-the-paradox)
 - [<i class="fas fa-podcast"></i> *NPR Planet Money*: "Antitrust 3: Big Tech"](https://www.npr.org/sections/money/2019/02/22/697170790/antitrust-3-big-tech)
+- [<i class="fas fa-podcast"></i> *Capitalisn't*: "Antitrust Pt 1: The Establishment"](https://www.capitalisnt.com/episodes/a2603962)
 
 ## <i class="fas fa-chalkboard-teacher"></i> Slides
 

@@ -21,10 +21,12 @@ Today we begin our look at the economics of antitrust, which will take several c
 
 ### Recommended Readings:
 
-- [<i class="fas fa-file-pdf"></i> David, 1985, "Clio and the Economics of QWERTY"](/readings/David-1985.pdf)
-- [<i class="fas fa-file-pdf"></i> Khan, 2017, "Amazon's Antitrust Paradox"](/readings/Khan-2017.pdf)
-- [<i class="fas fa-file-pdf"></i> Leibowitz and Margolis, 1990, "The Fable of the Keys"](/readings/Leibowitz-Margolis-1990.pdf)
+- [<i class="fas fa-file-pdf"></i> David, 1985, "Clio and the Economics of QWERTY"](/files/readings/David-1985.pdf)
+- [<i class="fas fa-file-pdf"></i> Khan, 2017, "Amazon's Antitrust Paradox"](/files/readings/Khan-2017.pdf)
+- [<i class="fas fa-file-pdf"></i> Leibowitz and Margolis, 1990, "The Fable of the Keys"](/files/readings/Leibowitz-Margolis-1990.pdf)
 - [<i class="fas fa-file-pdf"></i> Khan, 2017, "Amazon's Antitrust Paradox"](https://www.yalelawjournal.org/note/amazons-antitrust-paradox)
+- [<i class="fas fa-file-pdf"></i> Wright, Dorsey, Rybnicek, and Klick, 2018, "Requiem for a Paradox: The Dubious Rise and Inevitable Fall of Hipster Antitrust"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3249524)
+
 - [<i class="fas fa-external-link-square-alt"></i> WSJ (Apr 23, 2020): "Amazon Scooped Up Data From Its Own Sellers to Launch Competing Products"](https://www.wsj.com/articles/amazon-scooped-up-data-from-its-own-sellers-to-launch-competing-products-11587650015)
 - [<i class="fas fa-external-link-square-alt"></i> BBC: Why we can’t give up this odd way of typing](https://www.bbc.com/worklife/article/20180521-why-we-cant-give-up-this-odd-way-of-typing)
 - [<i class="fas fa-external-link-square-alt"></i> Snopes: Are U.S. Railroad Gauges Based on Roman Chariots?](https://www.snopes.com/fact-check/railroad-gauge-chariots/)

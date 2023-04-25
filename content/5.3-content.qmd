@@ -33,6 +33,7 @@ Today we begin our look at the economics of antitrust, which will take several c
 - [<i class="fas fa-file-pdf"></i> Stigler, 1982, "The Economists and the Problem of Monopoly"](/files/readings/Stigler-1982.pdf)
 - [<i class="fas fa-file-pdf"></i> Williamson, 1968, "Economies as an Antitrust Defense: The Welfare Tradeoffs"](/files/readings/Williamson-1968.pdf)
 
+- [<i class="fas fa-podcast"></i> *EconTalk*: "Michael Munger on Antitrust"](https://www.econtalk.org/michael-munger-on-antitrust/)
 - [<i class="fas fa-podcast"></i> *NPR Planet Money*: "Antitrust 1: Standard Oil"](https://www.npr.org/sections/money/2019/02/15/695131832/antitrust-1-standard-oil)
 - [<i class="fas fa-podcast"></i> *NPR Planet Money*: "Antitrust 2: The Paradox"](https://www.npr.org/sections/money/2019/02/20/696342011/antitrust-2-the-paradox)
 - [<i class="fas fa-podcast"></i> *NPR Planet Money*: "Antitrust 3: Big Tech"](https://www.npr.org/sections/money/2019/02/22/697170790/antitrust-3-big-tech)

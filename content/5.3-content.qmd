@@ -15,7 +15,12 @@ source(here::here("slides", "slide-links.R"))
 
 ## <i class="fas fa-info-circle fa-lg"></i> Overview
 
-Today we begin our look at the economics of antitrust, which will take several class periods. Today we cover the kinds of antitrust claims and their remedies today, the history of the major antitrust laws (their origins, evolution, interpretation, and some major court cases), as well as a broad history of economic thought on antitrust.
+Today we continue our examination of antitrust law by looking at how antitrust theory and practice have dramatically changed since the 1970s, largely as a result of Robert Bork’s book *The Antitrust Paradox*, and the adoption of the [“Consumer Welfare standard.”](https://en.wikipedia.org/wiki/Consumer_welfare_standard) 
+
+We also turn to take a more critical look at the history of the U.S. in the [Progressive Era](https://en.wikipedia.org/wiki/Progressive_Era) to address three questions:
+1. Why were most economists against (or at least, not in favor of) the Sherman Act?
+2. Did the industries accused of forming “trusts” and monopolies *actually* behave like monopolies?
+3. What was the original intent and purpose of the Sherman Act?
 
 ## <i class="fas fa-book-reader fa-lg"></i> Readings
 

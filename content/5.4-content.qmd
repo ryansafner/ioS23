@@ -15,17 +15,27 @@ source(here::here("slides", "slide-links.R"))
 
 ## <i class="fas fa-info-circle fa-lg"></i> Overview
 
-Today we begin our look at the economics of antitrust, which will take several class periods. Today we cover the kinds of antitrust claims and their remedies today, the history of the major antitrust laws (their origins, evolution, interpretation, and some major court cases), as well as a broad history of economic thought on antitrust.
+Today we finish our examination of antitrust by looking at the latest debates in antitrust theory and practice, specifically the rise of the [“Neo-Brandeisians”](https://en.wikipedia.org/wiki/New_Brandeis_movement) or (more pejoratively) “Hipster antitrust.” Much of the current discourse about potentially changing antitrust theory and practice revolve around platforms, or “two-sided markets” and the rise of big tech companies like Amazon, Google, and Facebook/Meta. Several antitrust cases are outstanding against these firms, and there are political debates and proposed legislation regarding fundamental changes to antitrust law and enforcement.
 
 ## <i class="fas fa-book-reader fa-lg"></i> Readings
 
 ### Recommended Readings:
 
+#### On Path Dependency
+
 - [<i class="fas fa-file-pdf"></i> David, 1985, "Clio and the Economics of QWERTY"](/files/readings/David-1985.pdf)
+
+#### On Neo-Brandeisian Antitrust
 - [<i class="fas fa-file-pdf"></i> Khan, 2017, "Amazon's Antitrust Paradox"](/files/readings/Khan-2017.pdf)
+- [<i class="fas fa-file-pdf"></i> Wright, Dorsey, Rybnicek, and Klick, 2018, "Requiem for a Paradox: The Dubious Rise and Inevitable Fall of Hipster Antitrust"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3249524)
+- [<i class="fas fa-file-pdf"></i> Elzinga and Webber, 2017, “Louis Brandeis and Contemporary Antitrust Enforcement”](https://digitalcommons.tourolaw.edu/cgi/viewcontent.cgi?article=2808&context=lawreview)
+- [<i class="fas fa-file-pdf"></i> Khan, 2018, “The New Brandeis Movement: America’s Antimonopoly Debate”](https://academic.oup.com/jeclap/article/9/3/131/4915966)
+
+#### On 
+
+
 - [<i class="fas fa-file-pdf"></i> Leibowitz and Margolis, 1990, "The Fable of the Keys"](/files/readings/Leibowitz-Margolis-1990.pdf)
 - [<i class="fas fa-file-pdf"></i> Khan, 2017, "Amazon's Antitrust Paradox"](https://www.yalelawjournal.org/note/amazons-antitrust-paradox)
-- [<i class="fas fa-file-pdf"></i> Wright, Dorsey, Rybnicek, and Klick, 2018, "Requiem for a Paradox: The Dubious Rise and Inevitable Fall of Hipster Antitrust"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3249524)
 
 - [<i class="fas fa-external-link-square-alt"></i> WSJ (Apr 23, 2020): "Amazon Scooped Up Data From Its Own Sellers to Launch Competing Products"](https://www.wsj.com/articles/amazon-scooped-up-data-from-its-own-sellers-to-launch-competing-products-11587650015)
 - [<i class="fas fa-external-link-square-alt"></i> BBC: Why we can’t give up this odd way of typing](https://www.bbc.com/worklife/article/20180521-why-we-cant-give-up-this-odd-way-of-typing)

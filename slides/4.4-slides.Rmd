@@ -35,10 +35,8 @@ library("fontawesome")
 xaringanExtra::use_tile_view()
 xaringanExtra::use_tachyons()
 xaringanExtra::use_freezeframe()
-
 update_geom_defaults("label", list(family = "Fira Sans Condensed"))
 update_geom_defaults("text", list(family = "Fira Sans Condensed"))
-
 set.seed(256)
 ```
 
@@ -71,9 +69,7 @@ Benjamin Klein
 
 .smallest[
 > “Coase's fundamental insight [was] that transaction, coordination, and contracting costs must be considered explicitly in explaining the extent of vertical integration...[We] explore one particular cost of using the market system-the possibility of postcontractual opportunistic behavior,” (p.297)
-
 > “The particular circumstance we emphasize as likely to produce a serious threat of this type of reneging on contracts is the presence of appropriable specialized quasi rents. .hi[After a specific investment is made and such quasi rents are created, the possibility of opportunistic behavior is very real. Following Coase's framework, this problem can be solved in two possible ways: vertical integration or contracts],” (p.298)
-
 ]
 .source[Klein, Benjamin, Robert G Crawford, and Armen A Alchian, 1978, "Vertical Integration, Appropriable Rents, and the Competitive Contracting Process," *Journal of Law and Economics* 21(2): 297-326]
 ]
@@ -209,7 +205,6 @@ Benjamin Klein
 .right-column[
 .smallest[
 > “The primary alternative to vertical integration as a solution to the general problem of opportunistic behavior is some form of economically enforceable long-term contract,” (p. 302).
-
 ]
 .source[Klein, Benjamin, Robert G Crawford, and Armen A Alchian, 1978, "Vertical Integration, Appropriable Rents, and the Competitive Contracting Process," *Journal of Law and Economics* 21(2): 297-326]
 
@@ -234,7 +229,6 @@ Benjamin Klein
 .right-column[
 .smallest[
 > “Long-term contracts used as alternatives to vertical integration can be assumed to take two forms: (1) an explicitly stated contractual guarantee legally enforced by the government or some other outside institution, or (2) an implicit contractual guarantee enforced by the market mechanism of withdrawing future business if opportunistic behavior occurs...[However, they are] often very costly solutions. They entail costs of specifying possible contingencies and the policing and litigation costs of detecting violations and enforcing the contract in the courts,” (p.303)
-
 ]
 .source[Klein, Benjamin, Robert G Crawford, and Armen A Alchian, 1978, "Vertical Integration, Appropriable Rents, and the Competitive Contracting Process," *Journal of Law and Economics* 21(2): 297-326]
 
@@ -510,7 +504,6 @@ Lester G Telser
 
 .smallest[
 > “If some retailers [provide extra] services [such as advertising, pre-sale demonstrations, etc] and ask for a corespondingly higher price whereas others do not provide the services and offer to sell the product to consumersat a lower price then an unstable situation emerges. Sales are diverted from the retailers who do provide the special services at the higher price to the retailers who do not provide the special services and offer to sell the product at the lower price....A customer,because of the special services provide by one retailer, is persuaded to buy the product. But he purchases the product from another paying the latter a lower price. In this way the retailers who do not provide the special services get a free ride at the expense of those who have convinced consumers to buy the product,” (pp. 91-92).
-
 ]
 .source[Telser, Lester G, 1960, "Why Should Manufacturers Want Fair Trade?" *Journal of Law and Economics* 3: 86-105]
 
@@ -534,7 +527,6 @@ Lester G Telser
 
 .smallest[
 > “[The manufacturer can prevent] this by establishing a minimum retail price that guarantees a minimum gross markup. Therefore retailers are forced to compete by providing special services with the product and not by reducing the retail price,” (pp. 91-92).
-
 ]
 ]
 .source[Telser, Lester G, 1960, "Why Should Manufacturers Want Fair Trade?" *Journal of Law and Economics* 3: 86-105]
@@ -558,7 +550,6 @@ Benjamin Klein
 .right-column[
 
 > “When specific human capital is involved, the opportunism problem is often more complex and, because of laws prohibiting slavery, the solution is generally some form of explicit or implicit contract rather than vertical integration,” (p.315)
-
 .source[Klein, Benjamin, Robert G Crawford, and Armen A Alchian, 1978, "Vertical Integration, Appropriable Rents, and the Competitive Contracting Process," *Journal of Law and Economics* 21(2): 297-326]
 ]
 
@@ -605,7 +596,6 @@ Benjamin Klein
 .right-column[
 
 > “Contractual provisions specifying compulsory arbitration or more directly imposing costs on the opportunistic party (for example, via bonding) are alternatives often employed to economize on litigation costs and to create flexibility without specifying every possible contingency and quality dimension of the transaction,” (p.303)
-
 .source[Klein, Benjamin, Robert G Crawford, and Armen A Alchian, 1978, "Vertical Integration, Appropriable Rents, and the Competitive Contracting Process," *Journal of Law and Economics* 21(2): 297-326]
 ]
 
@@ -634,7 +624,6 @@ Benjamin Klein
 .right-column[
 
 > “Since every contingency cannot be cheaply specified in a contract or even known and because legal redress is expensive, transactors will generally also rely on an implicit type of long-term contract that employs a market rather than legal enforcement mechanism, namely, the imposition of a capital loss by the withdrawal of expected future business. This goodwill market-enforcement mechanism undoubtedly is a major element of the contractual alternative to vertical integration,” (p.303)
-
 .source[Klein, Benjamin, Robert G Crawford, and Armen A Alchian, 1978, "Vertical Integration, Appropriable Rents, and the Competitive Contracting Process," *Journal of Law and Economics* 21(2): 297-326]
 ]
 
@@ -657,7 +646,6 @@ Benjamin Klein
 .right-column[
 .smaller[
 > “One way in which this market mechanism of contract enforcement may operate is by offering to the potential cheater a future ‘premium,’ more precisely, a price sufficiently greater than average variable (that is, avoidable) cost to assure a quasi-rent stream that will exceed the potential gain from cheating. The present-discounted value of this future premium stream must be greater than any increase in wealth that could be obtained by the potential cheater if he, in fact, cheated and were terminated. The offer of such a long-term relationship with the potential cheater will eliminate systematic opportunistic behavior,” (p.304).
-
 ]
 .source[Klein, Benjamin, Robert G Crawford, and Armen A Alchian, 1978, "Vertical Integration, Appropriable Rents, and the Competitive Contracting Process," *Journal of Law and Economics* 21(2): 297-326]
 ]
@@ -682,7 +670,6 @@ Benjamin Klein
 
 .smaller[
 > “The larger the potential one-time ‘theft’ by cheating (the longer and more costly to detect a violation, enforce the contract, switch suppliers, and so forth) and the shorter the expected continuing business relationship, the higher this premium will be in a nondeceiving equilibrium. This may therefore partially explain both the reliance by firms on long-term implicit contracts with particular suppliers and the existence of reciprocity agreements among firms...The threat of termination of this relationship mutually suppresses opportunistic behavior. The premium stream can be usefully thought of as insurance payments made by the firm to prevent cheating,” (pp.304-5)
-
 ]
 .source[Klein, Benjamin, Robert G Crawford, and Armen A Alchian, 1978, "Vertical Integration, Appropriable Rents, and the Competitive Contracting Process," *Journal of Law and Economics* 21(2): 297-326]
 ]
@@ -785,7 +772,6 @@ Benjamin Klein
 .smallest[
 
 > “We can generally say that .hi[the larger the appropriable specialized quasi rents] (and therefore .hi[the larger the potential short-run gain from opportunistic behavior]) and .hi[the larger the premium payments necessary to prevent contractual reneging, the more costly this implicit contractual solution will be]...the lower the appropriable specialized quasi rents, the more likely that transactors will rely on a contractual relationship rather than common ownership. And conversely, .hi[integration by common or joint ownership is more likely], the higher the appropriable specialized quasi rents of the assets involved,” (pp.306-307).
-
 ]
 
 .source[Klein, Benjamin, Robert G Crawford, and Armen A Alchian, 1978, "Vertical Integration, Appropriable Rents, and the Competitive Contracting Process," *Journal of Law and Economics* 21(2): 297-326]
@@ -887,7 +873,6 @@ Economics Nobel 2016
 .right-column[
 .smallest[
 > “Klein et al. (1978) and Williamson (1979) added further content by arguing that a contractual relationship between a separately owned buyer and seller will be plagued by opportunistic and inefficient behavior in situations in which there are large amounts of surplus to be divided ex post and in which, because of the impossibility of writing a complete, contingent contract, the ex ante contract does not specify a clear division of this surplus. Such situations in turn are likely to arise when either the buyer or seller must make investments that have a smaller value in a use outside their own relationship than within the relationship (i.e., there exist ‘asset specificities’),” (p.692).
-
 ]
 ]
 
@@ -913,7 +898,6 @@ Economics Nobel 2016
 .right-column[
 .smallest[
 > “While these statements help us understand when the costs of contracting between separately owned firms may be high, .hi[they do not elucidate what the benefits are of 'organizing the transaction within the firm.'] In particular, given that it is difficult to write a complete contract between a buyer and seller and this creates room for opportunistic behavior, .hi[the transactions cost-based arguments for integration do not explain how the scope for such behavior changes when one of the self-interested owners becomes an equally self-interested employee of the other owner],” (p.692).
-
 ]
 ]
 .source[Hart, Oliver and Sanford J Grossman, 1986, "The Costs and Benefits of Ownership: A Theory of Vertical and Lateral Integration," *Journal of Political Economy* 94(4): 691-719]
@@ -938,9 +922,7 @@ Economics Nobel 2016
 .right-column[
 .smallest[
 > “A second question raised by the transactions cost-based arguments concerns the .hi[definition of integration itself]. In particular, .hi[what does it mean for one firm to be more integrated than another? For example, is a firm that calls its retail force ‘employees’ more integrated than one that calls its retail force ‘independent but exclusive sales agents’?]”
-
 > “Existing theories cannot answer these questions because .hi[they do not give a sufficiently clear definition of integration for its costs and benefits to be assessed]....hi[We define integration in terms of the ownership of assets] and develop a model to explain when one firm will desire to acquire the assets of another firm,” (p.693).
-
 ]
 ]
 
@@ -951,7 +933,6 @@ Economics Nobel 2016
 # Ownership As a Response to Uncertainty
 
 > “[I]f I am quite sure what kinds of actions my neighbour contemplates, I might be indifferent between his owning the field at the bottom of my garden and my owning it but renting it out for him to graze his horse in. But once I take into account that he may discover some new use for the field that I haven’t yet thought of, but would find objectionable, it will be in my interest to own the field so as to put the use of it under my own control. More generally, ownership of a resource reduces exposure to unexpected events. .hi[Property rights are a means of reducing uncertainty without needing to know precisely what the source or nature of the future concern will be],” (Littlechild 1986, p. 35.)
-
 ---
 
 # Firm as Owner of Residual Control Rights
@@ -972,7 +953,6 @@ Economics Nobel 2016
 .right-column[
 .smaller[
 > “.hi[We define the firm as being composed of the assets (e.g., machines, inventories) that it owns.] We present a theory of .hi[costly contracts] that emphasizes that .hi[contractual rights can be of two types: specific rights and residual rights.] When it is too costly for one party to specify a long list of the particular rights it desires over another party's assets, .hi[it may be optimal for that party to purchase all the rights except those specifically mentioned in the contract. Ownership is the purchase of these residual rights of control.]” (p.692).
-
 ]
 ]
 
@@ -998,7 +978,6 @@ Economics Nobel 2016
 .right-column[
 .smaller[
 > “We show that .hi[there can be harmful effects associated with the wrong allocation of residual rights.] In particular, a firm that purchases its supplier, thereby removing residual rights of control from the manager of the supplying company, .hi[can distort the manager's incentives sufficiently to make common ownership harmful.] We develop a theory of integration based on the .hi[attempt of parties in writing a contract to allocate efficiently the residual rights of control between themselves.]” (p.692).
-
 ]
 ]
 
@@ -1024,7 +1003,6 @@ Economics Nobel 2016
 .right-column[
 .smaller[
 > “[W]hen it is too costly for one party to specify a long list of the particular rights it desires over another party's assets, then it may be optimal for the first party to purchase all rights except those specifically mentioned in the contract. Ownership is the purchase of these residual rights of control. .hi[Vertical integration is the purchase of the assets of a supplier (or of a purchaser) for the purpose of acquiring the residual rights of control.]” (p.716).
-
 ]
 ]
 

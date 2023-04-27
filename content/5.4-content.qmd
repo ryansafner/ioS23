@@ -21,6 +21,9 @@ Today we finish our examination of antitrust by looking at the latest debates in
 
 ### Recommended Readings:
 
+- [<i class="fas fa-file-pdf"></i> Munger, 2022, "Giants Among Us: Do We Need a New Antitrust Paradigm?"](/files/readings/Munger-2022.pdf)
+- [<i class="fas fa-podcast"></i> *EconTalk*: "Michael Munger on Antitrust"](https://www.econtalk.org/michael-munger-on-antitrust/)
+
 #### On Path Dependency/Network Economies
 
 - [<i class="fas fa-file-pdf"></i> David, 1985, "Clio and the Economics of QWERTY"](/files/readings/David-1985.pdf)

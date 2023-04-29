@@ -26,9 +26,13 @@ Please **email me** with an industry you would like to choose. I will remove ind
 - Beer
 - Wine
 - Paper
-- Tobacco
+- Tobacco/Cigarettes
+- Automobiles
+- Banking
+- Tractors
+- Airlines
 
-**Last Update: April 20, 2023**
+**Last Update: April 29, 2023**
 
 # Assignment
 

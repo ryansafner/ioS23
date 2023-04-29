@@ -1,5 +1,5 @@
 ---
-title: "5.3 — Antitrust III: The Hipsters — Class Content"
+title: "5.4 — Antitrust III: The Hipsters — Class Content"
 execute:
   freeze: auto
 ---

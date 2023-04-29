@@ -1,0 +1,42 @@
+---
+title: "5.5 — Reforming Online Data — Class Content"
+execute:
+  freeze: auto
+---
+
+```{r, echo = F}
+source(here::here("slides", "slide-links.R"))
+```
+
+::: {.callout-note appearance=minimal}
+# Meeting Date
+*Tuesday, May 2, 2023*
+:::
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+### Required Readings:
+
+- [<i class="fas fa-file-pdf"></i> Posner & Weyl, 2016, "Data as Labor", Chapter 5 in *Radical Markets*](/files/readings/Posner-Weyl-Ch5.pdf)
+- [<i class="fas fa-podcast"></i> *EconTalk*: "Glen Weyl on "](https://www.econtalk.org/michael-munger-on-antitrust/)
+
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides. 
+
+::: callout-tip
+You can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+:::
+
+I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+```{r}
+#| echo: false
+#| output: asis
+
+slide_links("5.5-slides")
+```

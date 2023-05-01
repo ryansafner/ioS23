@@ -15,14 +15,19 @@ source(here::here("slides", "slide-links.R"))
 
 ## <i class="fas fa-info-circle fa-lg"></i> Overview
 
+For this final topic, I want to discuss something I have been mulling over for a long time, but never have really explored sufficiently: how we might reform data management on the internet. This is in part a response to the rise of dominant platforms, privacy concerns, antitrust concerns, and the rise of blockchain/Web3 technology. 
+
+There's a lot worth exploring here, so I recommend you look at both the Weyl and the Munger readings - each comes both as a reading and a podcast option which covers relevant ideas contained in each reading. 
 
 ## <i class="fas fa-book-reader fa-lg"></i> Readings
 
 ### Required Readings:
 
 - [<i class="fas fa-file-pdf"></i> Posner & Weyl, 2016, "Data as Labor", Chapter 5 in *Radical Markets*](/files/readings/Posner-Weyl-Ch5.pdf)
-- [<i class="fas fa-podcast"></i> *EconTalk*: "Glen Weyl on "](https://www.econtalk.org/michael-munger-on-antitrust/)
+- [<i class="fas fa-podcast"></i> *Mercatus Center Hayek Program Podcast*: " Glen Weyl on the Myths and Benefits of Automation"](https://podcasts.apple.com/ca/podcast/hayek-program-podcast/id1069881407?i=1000456022970)
 
+- [<i class="fas fa-podcast"></i> *EconTalk*: "Michael Munger on Antitrust"](https://www.econtalk.org/michael-munger-on-antitrust/) (ending starting around 1 hr 6 min mark)
+- [<i class="fas fa-external-link-square-alt"></i>  Munger, 2022, “Three Topics for Young Political Economists”](https://www.aier.org/article/three-topics-for-young-political-economists/)
 
 ## <i class="fas fa-chalkboard-teacher"></i> Slides
 

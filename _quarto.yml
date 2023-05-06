@@ -111,6 +111,8 @@ website:
           contents:
             - text: "Midterm Exam"
               href: assignments/midterm.qmd
+            - text: "Final Exam"
+              href: assignments/final-exam.qmd
         - text: "Industry Report"
           href: assignments/industry-report.qmd
     - title: "Resources"

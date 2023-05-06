@@ -189,6 +189,69 @@
     "text": "Optional Bonus Question 9 (10 points)\nThis question will show what happens as we relax some of the assumptions of Cournot competition. Crude oil is transported across the globe in enormous tanker ships called Very Large Crude Carriers (VLCCs). By 2001, more than 92% of all new VLCCs were built in South Korea and Japan. Assume that the price of new VLCCs (in millions of dollars) is determined by the inverse demand function between the duopoly of Korea and Japan:\n\\[\\begin{align*}p&=180-Q\\\\\nQ&=q_{Korea}+q_{Japan}\\\\\n\\end{align*}\\]\nAssume the marginal cost of building each ship is $30 (million) in both Korea and Japan.\n\nPart A\nFind each country’s best response function, the Nash equilibrium quantity produced by each country, the market price, and the profit for each country.\n\n\nPart B\nLabor costs in Korean shipyards are actually lower than in Japan. Assume now the marginal cost per ship in Japan is $40 (million) and only $20 (million) in Korea. Find the new best response functions, the Nash equilibrium quantity produced by each country, the market price, and the profit for each country.\n\n\nPart C\nSuppose China decides to enter the VLCC construction market. The duopoly now becomes a triopoly, so that the market inverse demand function is:\n\\[\\begin{align*}\np&=180-Q\\\\\nQ&=q_{Korea}+q_{Japan}+q_{China}\\\\\n\\end{align*}\\]\nAssume for simplicity that all countries face the same marginal cost of $30 (million) per ship. Find the new best response functions, the Nash equilibrium quantity produced by each country, the market price, and the profit for each country. Hint: proceed as before, such that you get three reaction functions with three unknowns.\n\n\nPart D\nCompare the quantity, price, and profits between parts A, B, and C"
   },
   {
+    "objectID": "assignments/final-exam.html",
+    "href": "assignments/final-exam.html",
+    "title": "Final Exam",
+    "section": "",
+    "text": "This exam is due by email to me by 11:59 PM Friday May 12. Starting at 12:00, you will lose 2 points for every hour it is late."
+  },
+  {
+    "objectID": "assignments/final-exam.html#question-1",
+    "href": "assignments/final-exam.html#question-1",
+    "title": "Final Exam",
+    "section": "Question 1",
+    "text": "Question 1\nSuppose you observe all firms in an industry charging the same price. What kind(s) of market structure might this industry be? How could you potentially identify it (what data would you need)? Think carefully!"
+  },
+  {
+    "objectID": "assignments/final-exam.html#question-2",
+    "href": "assignments/final-exam.html#question-2",
+    "title": "Final Exam",
+    "section": "Question 2",
+    "text": "Question 2\nExplain the problems of “horizontal free riding” and “vertical free riding.” How do firms write contracts (for example, in franchise contracts) to overcome these problems?"
+  },
+  {
+    "objectID": "assignments/final-exam.html#question-3",
+    "href": "assignments/final-exam.html#question-3",
+    "title": "Final Exam",
+    "section": "Question 3",
+    "text": "Question 3\nCompare and contrast the rights and abilities of the “firm” according to the nexus of contracts view and the property rights view."
+  },
+  {
+    "objectID": "assignments/final-exam.html#question-4",
+    "href": "assignments/final-exam.html#question-4",
+    "title": "Final Exam",
+    "section": "Question 4",
+    "text": "Question 4\nExplain several conceptual reasons why vertical integration may not be anti-competitive. What economic problems may vertical integration be solving, and how?"
+  },
+  {
+    "objectID": "assignments/final-exam.html#question-5",
+    "href": "assignments/final-exam.html#question-5",
+    "title": "Final Exam",
+    "section": "Question 5",
+    "text": "Question 5\nGiven what we have discussed in class this semester, what types of business practices do you think should fall under the per se rule, and which should fall under the rule of reason in antitrust litigation?"
+  },
+  {
+    "objectID": "assignments/final-exam.html#question-6",
+    "href": "assignments/final-exam.html#question-6",
+    "title": "Final Exam",
+    "section": "Question 6",
+    "text": "Question 6\nAn industry consists of the following firms:\n\n\n\nFirm\nMarket Share (%)\n\n\n\n\nA\n40\n\n\nB\n20\n\n\nC\n10\n\n\nD\n10\n\n\nE\n5\n\n\nF\n5\n\n\nG\n2\n\n\nH\n2\n\n\nI\n2\n\n\nJ\n2\n\n\nK\n2\n\n\n\n\nPart A\nCalculate the \\(CR_4\\) and \\(CR_8\\).\n\n\nPart B\nCalculate the HHI for this industry.\n\n\nPart C\nUnder the current Horizontal Merger Guidelines (link), is this market not very concentrated, “moderately concentrated,” or “highly concentrated”?\n\n\nPart D\nCalculate the “equivalent number” of a hypothetical market of equal-sized firms for this HHI. [Hint: either convert to decimals, or multiply your answer by 10,000.]\n\n\nPart E\nSuppose firms D and E propose a merger. Calculate the new \\(CR_4\\), \\(CR_8\\), and HHI from the merger. Do you think is it likely that the FTC and DOJ would allow these two firms to merge?\n\n\nPart F\nSuppose instead of D and E, firms A and B propose a merger (i.e. ignore the proposed merger in Part E.). Calculate the new \\(CR_4\\), \\(CR_8\\), and HHI from the merger. Do you think is it likely that the FTC and DOJ would allow these two firms to merge?"
+  },
+  {
+    "objectID": "assignments/final-exam.html#question-7",
+    "href": "assignments/final-exam.html#question-7",
+    "title": "Final Exam",
+    "section": "Question 7",
+    "text": "Question 7\nExplain the Consumer Welfare Standard in antitrust. What does it mean? Where did it come from? What are some proposals to replace it, and why? What do you make of them?"
+  },
+  {
+    "objectID": "assignments/final-exam.html#question-8",
+    "href": "assignments/final-exam.html#question-8",
+    "title": "Final Exam",
+    "section": "Question 8",
+    "text": "Question 8\n\nPart A\nWhich topic or concept this semester was your favorite, or you found the most surprising or interesting, and why?\n\n\nPart B\nWhich topic or concept this semester did you find most confusing, or difficult, and why?"
+  },
+  {
     "objectID": "assignments/index.html",
     "href": "assignments/index.html",
     "title": "Assignment Details",
@@ -1089,7 +1152,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "This page contains all of the following resources for each class meeting:\n\n Content materials contains suggested readings, more details about assignments, math appendices, and other helpful resources. I suggest you view these before each class.\n Slides are “Xaringan” presentations that can be opened in any browser (You can find a downloadable PDF in each content page)\n Assignments are listed with due dates\n\nPlease note that the lesson numbers, topics, and titles (e.g. 1.1) are my design, and do not match up with the textbook!\nRelevant materials, if applicable will be posted before class meets and become colored links.\n\n\n\n\n\n\n\n\n\n\n\n\n\nI. Models of Markets\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nTue Jan 24\n\n\n1.1 — Introduction to I.O.\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Jan 26\n\n\n1.2 — Technology and Costs\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Jan 31\n\n\n1.3 — Perfect Competition I\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Feb 02\n\n\n1.4 — Perfect Competition II\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Feb 07\n\n\n1.5 — Monopoly I\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Feb 09\n\n\n1.6 — Monopoly II\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Feb 14\n\n\n1.7 — Pricing Strategies\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Feb 16\n\n\n1.8 — Factor Markets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 1 due Thurs Feb 23\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nII. Oligopoly & Static Game Theory\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nTue Feb 21\n\n\n2.1 — Imperfect Competition & Collusion\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Feb 23\n\n\n2.2 — Cournot Competition\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Mar 02\n\n\n2.3 — Bertrand Competition\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIII. Strategic Behavior & Dynamic Games\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nTue Mar 07\n\n\n3.1 — Dynamic Games & Collusion\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Mar 09\n\n\n3.2 — Stackelberg Competition\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Mar 21\n\n\n3.3 — Entry Deterrence & Commitment\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 2 due Tues Mar 28\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMidterm Exam Mar due Fri Mar 31\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIV. Theory of the Firm & Economic Organization\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nThu Mar 23\n\n\n4.1 — Why Are There Firms?\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Mar 30\n\n\n4.2 — The Firm as Nexus of Contracts\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Apr 04\n\n\n4.3 — Asset Specificity & Vertical Integration\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Apr 06\n\n\n4.4 — Contractual Restraints & Property Rights\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Apr 11\n\n\n4.5 — Entrepreneurship, Uncertainty, & Market Process\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nV. Regulation & Applications\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nThu Apr 13\n\n\n5.1 — Measuring Market Power\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Apr 18\n\n\n5.2 — Antitrust I: The Law\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Apr 25\n\n\n5.3 — Antitrust II: The Paradox\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Apr 27\n\n\n5.4 — Antitrust III: The Hipsters\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue May 02\n\n\n5.5 — Reforming Online Data\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu May 04\n\n\nPresentations & Review\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIndustry Report"
+    "text": "This page contains all of the following resources for each class meeting:\n\n Content materials contains suggested readings, more details about assignments, math appendices, and other helpful resources. I suggest you view these before each class.\n Slides are “Xaringan” presentations that can be opened in any browser (You can find a downloadable PDF in each content page)\n Assignments are listed with due dates\n\nPlease note that the lesson numbers, topics, and titles (e.g. 1.1) are my design, and do not match up with the textbook!\nRelevant materials, if applicable will be posted before class meets and become colored links.\n\n\n\n\n\n\n\n\n\n\n\n\n\nI. Models of Markets\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nTue Jan 24\n\n\n1.1 — Introduction to I.O.\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Jan 26\n\n\n1.2 — Technology and Costs\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Jan 31\n\n\n1.3 — Perfect Competition I\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Feb 02\n\n\n1.4 — Perfect Competition II\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Feb 07\n\n\n1.5 — Monopoly I\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Feb 09\n\n\n1.6 — Monopoly II\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Feb 14\n\n\n1.7 — Pricing Strategies\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Feb 16\n\n\n1.8 — Factor Markets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 1 due Thurs Feb 23\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nII. Oligopoly & Static Game Theory\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nTue Feb 21\n\n\n2.1 — Imperfect Competition & Collusion\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Feb 23\n\n\n2.2 — Cournot Competition\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Mar 02\n\n\n2.3 — Bertrand Competition\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIII. Strategic Behavior & Dynamic Games\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nTue Mar 07\n\n\n3.1 — Dynamic Games & Collusion\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Mar 09\n\n\n3.2 — Stackelberg Competition\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Mar 21\n\n\n3.3 — Entry Deterrence & Commitment\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 2 due Tues Mar 28\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMidterm Exam Mar due Fri Mar 31\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIV. Theory of the Firm & Economic Organization\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nThu Mar 23\n\n\n4.1 — Why Are There Firms?\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Mar 30\n\n\n4.2 — The Firm as Nexus of Contracts\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Apr 04\n\n\n4.3 — Asset Specificity & Vertical Integration\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Apr 06\n\n\n4.4 — Contractual Restraints & Property Rights\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Apr 11\n\n\n4.5 — Entrepreneurship, Uncertainty, & Market Process\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nV. Regulation & Applications\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nThu Apr 13\n\n\n5.1 — Measuring Market Power\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Apr 18\n\n\n5.2 — Antitrust I: The Law\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Apr 25\n\n\n5.3 — Antitrust II: The Paradox\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Apr 27\n\n\n5.4 — Antitrust III: The Hipsters\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue May 02\n\n\n5.5 — Reforming Online Data\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu May 04\n\n\nPresentations & Review\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIndustry Report\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFinal Exam due Fri May 12"
   },
   {
     "objectID": "syllabus.html",

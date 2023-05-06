@@ -1,0 +1,104 @@
+---
+title: "Final Exam"
+execute: 
+  freeze: auto
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+knitr::opts_chunk$set(message = F, warning = F, echo = F)
+library(tidyverse)
+library(ggrepel)
+```
+
+::: {.callout-warning appearance="minimal"}
+This exam is due by email to me by 11:59 PM Friday May 12. Starting at 12:00, you will lose 2 points for every hour it is late.
+:::
+
+</p>
+
+# Instructions
+
+Choose **any five (5)** of the following questions to answer. **Do not answer all the questions**.
+
+Questions draw only from material discussed in class. You do not need any additional knowledge or material beyond what we discussed in class.
+
+**Each question is worth 20 points.** Your answers, given the time and resources at your disposal, should be complete yet concise (e.g. 2-3 well-reasoned paragraphs, with minimal filler). If applicable, show all work and fully label all graphs. Showing more of your thought process increases your chances of getting partial credit.
+
+You may discuss the questions, but you must write your own responses and turn in your own work. Answers that are substantially similar, or indicate use of [ChatGPT or AI](https://ios23.classes.ryansafner.com/syllabus.html#chatgpt), will be interpreted as cheating and punished accordingly. I will not answer any questions about course content during while the exam is outstanding.
+
+# Questions 
+
+## Question 1
+
+Suppose you observe all firms in an industry charging the same price. What kind(s) of market structure might this industry be? How could you potentially identify it (what data would you need)? Think carefully!
+
+## Question 2
+
+Explain the problems of “horizontal free riding” and “vertical free riding.” How do firms write contracts (for example, in franchise contracts) to overcome these problems?
+
+## Question 3
+
+Compare and contrast the rights and abilities of the “firm” according to the nexus of contracts view and the property rights view.
+
+## Question 4
+
+Explain several conceptual reasons why vertical integration may not be anti-competitive. What economic problems may vertical integration be solving, and how?
+
+## Question 5
+
+Given what we have discussed in class this semester, what types of business practices do you think should fall under the *per se* rule, and which should fall under the *rule of reason* in antitrust litigation?
+
+## Question 6
+
+An industry consists of the following firms:
+
+| Firm | Market Share (%) |
+|------|------------------|
+| A | 40 |
+| B | 20 |
+| C | 10 |
+| D | 10 |
+| E | 5 |
+| F | 5 |
+| G | 2 |
+| H | 2 |
+| I | 2 |
+| J | 2 |
+| K | 2 |
+
+### Part A
+
+Calculate the $CR_4$ and $CR_8$.
+
+### Part B
+
+Calculate the HHI for this industry.
+
+### Part C
+
+Under the [current Horizontal Merger Guidelines (link)](https://ios20.classes.ryansafner.com/slides/4.1-slides#27), is this market not very concentrated, "moderately concentrated," or "highly concentrated"?
+
+### Part D
+
+Calculate the "equivalent number" of a hypothetical market of equal-sized firms for this HHI. [Hint: either convert to decimals, or multiply your answer by 10,000.]
+
+### Part E
+
+Suppose firms D and E propose a merger. Calculate the new $CR_4$, $CR_8$, and HHI from the merger. Do you think is it likely that the FTC and DOJ would allow these two firms to merge?
+
+### Part F
+
+Suppose *instead* of D and E, firms A and B propose a merger (i.e. ignore the proposed merger in Part E.). Calculate the new $CR_4$, $CR_8$, and HHI from the merger. Do you think is it likely that the FTC and DOJ would allow these two firms to merge?
+
+## Question 7
+
+Explain the Consumer Welfare Standard in antitrust. What does it mean? Where did it come from? What are some proposals to replace it, and why? What do you make of them?
+
+## Question 8
+
+### Part A
+Which topic or concept this semester was your favorite, or you found the most surprising or interesting, and why?
+
+### Part B
+
+Which topic or concept this semester did you find most confusing, or difficult, and why?

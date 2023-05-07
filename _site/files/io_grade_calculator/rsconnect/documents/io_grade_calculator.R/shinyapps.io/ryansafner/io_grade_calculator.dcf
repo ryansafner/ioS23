@@ -1,0 +1,13 @@
+name: io_grade_calculator
+title: io_grade_calculator
+username:
+account: ryansafner
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2184765
+bundleId: 7183730
+url: https://ryansafner.shinyapps.io/io_grade_calculator/
+when: 1683422585.89399
+lastSyncTime: 1683422585.894
+asMultiple: FALSE
+asStatic: FALSE

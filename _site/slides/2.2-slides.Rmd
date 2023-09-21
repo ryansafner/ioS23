@@ -1035,6 +1035,8 @@ Q&=q_1+q_2\\
 
 .pull-right[
 ```{r}
+Demand_c<-function(x){10-x}
+MR_c<-function(x){10-2*x}
 Demand<-function(x){10-x}
 MR<-function(x){10-2*x}
 

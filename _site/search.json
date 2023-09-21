@@ -378,6 +378,13 @@
     "text": "There will be several problem sets (typically 5-6) spaced throughout the semester. Typically, after we cover a major concept or set of tools, I will assign a problem set to practice this material."
   },
   {
+    "objectID": "assignments/problem-sets.html#overview",
+    "href": "assignments/problem-sets.html#overview",
+    "title": "Problem Sets",
+    "section": "",
+    "text": "There will be several problem sets (typically 5-6) spaced throughout the semester. Typically, after we cover a major concept or set of tools, I will assign a problem set to practice this material."
+  },
+  {
     "objectID": "assignments/problem-sets.html#logistics-submitting-on-blackboard",
     "href": "assignments/problem-sets.html#logistics-submitting-on-blackboard",
     "title": "Problem Sets",
@@ -390,6 +397,20 @@
     "title": "Problem Sets",
     "section": "Grading",
     "text": "Grading\nYour TA, under my supervision, will grade homeworks 70% for completion, and for the remaining 30%, and one question will be graded for accuracy - so it is best that you try every problem, even if you are unsure how to complete it accurately.\nFeel free to ask both me and your TA, or come to office hours, if you have any questions or need any help."
+  },
+  {
+    "objectID": "assignments/problem-sets.html#footnotes",
+    "href": "assignments/problem-sets.html#footnotes",
+    "title": "Problem Sets",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nIn MS Word, or Pages, or most word processing software, File -&gt; Save As -&gt; PDF, or File -&gt; Export -&gt; PDF.↩︎"
+  },
+  {
+    "objectID": "content/1.1-content.html",
+    "href": "content/1.1-content.html",
+    "title": "1.1 — Introduction to I.O. — Class Content",
+    "section": "",
+    "text": "Meeting Dates\n\n\n\nTuesday, January 25, 2023"
   },
   {
     "objectID": "content/1.1-content.html#overview",
@@ -413,6 +434,13 @@
     "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
   },
   {
+    "objectID": "content/1.2-content.html",
+    "href": "content/1.2-content.html",
+    "title": "1.2 — Technology and Cost — Class Content",
+    "section": "",
+    "text": "Meeting Date\n\n\n\nThursday, January 26, 2023"
+  },
+  {
     "objectID": "content/1.2-content.html#overview",
     "href": "content/1.2-content.html#overview",
     "title": "1.2 — Technology and Cost — Class Content",
@@ -434,6 +462,13 @@
     "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
   },
   {
+    "objectID": "content/1.3-content.html",
+    "href": "content/1.3-content.html",
+    "title": "1.3 — Perfect Competition I — Class Content",
+    "section": "",
+    "text": "Meeting Date\n\n\n\nTuesday, January 31, 2023"
+  },
+  {
     "objectID": "content/1.3-content.html#overview",
     "href": "content/1.3-content.html#overview",
     "title": "1.3 — Perfect Competition I — Class Content",
@@ -453,6 +488,13 @@
     "title": "1.3 — Perfect Competition I — Class Content",
     "section": " Slides",
     "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
+  },
+  {
+    "objectID": "content/1.4-content.html",
+    "href": "content/1.4-content.html",
+    "title": "1.4 — Perfect Competition II — Class Content",
+    "section": "",
+    "text": "Meeting Date\n\n\n\nThursday, February 2, 2023"
   },
   {
     "objectID": "content/1.4-content.html#overview",
@@ -481,6 +523,13 @@
     "title": "1.4 — Perfect Competition II — Class Content",
     "section": " Slides",
     "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
+  },
+  {
+    "objectID": "content/1.5-content.html",
+    "href": "content/1.5-content.html",
+    "title": "1.5 — Monopoly I — Class Content",
+    "section": "",
+    "text": "Meeting Date\n\n\n\nTuesday, February 7, 2023"
   },
   {
     "objectID": "content/1.5-content.html#overview",
@@ -515,7 +564,21 @@
     "href": "content/1.5-content.html#appendix",
     "title": "1.5 — Monopoly I — Class Content",
     "section": "Appendix",
-    "text": "Appendix\n\nPrice Elasticity of Demand Refresher\nPrice elasticity of demand measures how much (in %) quantity demanded changes in response to a (1%) change in price.\n\\[\\begin{align*}\n\\epsilon_{q,p} &= \\frac{\\% \\Delta q}{\\% \\Delta p}\\\\\n&= \\cfrac{\\left(\\frac{\\Delta q}{q}\\right)}{\\left(\\frac{\\Delta p}{p}\\right)}\\\\\n&= \\frac{\\Delta q}{\\Delta p} \\times \\frac{p}{q}\\\\\n&= \\frac{1}{slope} \\times \\frac{p}{q}\\\\\n\\end{align*}\\]\n\n\n\n\n\n\n\n\n\n\n“Elastic”\n“Unit Elastic”\n“Inelastic”\n\n\n\n\nIntuitively:\nLarge response\nProportionate response\nLittle response\n\n\nMathematically:\n\\(\\vert \\epsilon_{q_D,p}\\vert > 1\\)\n\\(\\vert \\epsilon_{q_D,p}\\vert = 1\\)\n\\(\\vert \\epsilon_{q_D,p} \\vert < 1\\)\n\n\n\nNumerator \\(>\\) Denominator\nNumerator \\(=\\) Denominator\nNumerator \\(<\\) Denominator\n\n\nA 1% change in \\(p\\)\nMore than 1% change in \\(q_D\\)\n1% change in \\(q_D\\)\nLess than 1% change in \\(q_D\\)\n\n\n\nPrice elasticity of demand changes along the demand curve:\n\n\n\n\n\n\nDeterminants of Price Elasticity\n\nWhat determines how responsive your buying behavior is to a price change?\n\n\nMore (fewer) substitutes \\(\\implies\\) more (less) elastic\n\nLarger categories of products (less elastic) vs. specific brand (more elastic)\nNecessities (less elastic) vs. luxuries (more elastic)\nLarge (more elastic) vs. small (less elastic) portion of budget\n\nMore (less) time to adjust \\(\\implies\\) more (less) elastic\n\n\n\n\nDerivation of the Lerner Index\nMarginal revenue is strongly related to the price elasticity of demand, which is \\(E_{D}=\\frac{\\Delta q}{\\Delta p} \\times \\frac{p}{q}\\)1\nWe derived marginal revenue (in the slides) as: \\[MR(q)=p+\\frac{\\Delta p}{\\Delta q}q\\]\nFirms will always maximize profits where:\n\\[\\begin{align*}\nMR(q)&=MC(q) && \\text{Profit-max output}\\\\\np+\\bigg(\\frac{\\Delta p}{\\Delta q}\\bigg)q&=MC(q) && \\text{Definition of } MR(q)\\\\\np+\\bigg(\\frac{\\Delta p}{\\Delta q}\\bigg) q \\times \\frac{p}{p}&=\\frac{MR(q)}{p} && \\text{Multiplying the left by } \\frac{p}{p} \\text{ (i.e. 1)}\\\\\np+\\underbrace{\\bigg(\\frac{\\Delta p}{\\Delta q}\\times \\frac{q}{p} \\bigg)}_{\\frac{1}{\\epsilon}} \\times p &=MC(q) && \\text{Rearranging the left}\\\\\np+\\frac{1}{\\epsilon} \\times p &=MC(q) && \\text{Recognize price elasticity } \\epsilon=\\frac{\\Delta q}{\\Delta p} \\times \\frac{p}{q}\\\\\np &=MC(q) - \\frac{1}{\\epsilon} p && \\text{Subtract  }\\frac{1}{\\epsilon}p \\text{ from both sides}\\\\\np-MC(q) &= -\\frac{1}{\\epsilon} p && \\text{Subtract  }MC(q) \\text{ from both sides}\\\\\n\\frac{p-MC(q)}{p} &= -\\frac{1}{\\epsilon} && \\text{Divide both sides by  }p\\\\\n        \\end{align*}\\]\nThe left side gives us the fraction of price that is markup \\(\\left(\\frac{p-MC(q)}{p}\\right)\\), and the right side shows this is inversely related to price elasticity of demand."
+    "text": "Appendix\n\nPrice Elasticity of Demand Refresher\nPrice elasticity of demand measures how much (in %) quantity demanded changes in response to a (1%) change in price.\n\\[\\begin{align*}\n\\epsilon_{q,p} &= \\frac{\\% \\Delta q}{\\% \\Delta p}\\\\\n&= \\cfrac{\\left(\\frac{\\Delta q}{q}\\right)}{\\left(\\frac{\\Delta p}{p}\\right)}\\\\\n&= \\frac{\\Delta q}{\\Delta p} \\times \\frac{p}{q}\\\\\n&= \\frac{1}{slope} \\times \\frac{p}{q}\\\\\n\\end{align*}\\]\n\n\n\n\n\n\n\n\n\n\n“Elastic”\n“Unit Elastic”\n“Inelastic”\n\n\n\n\nIntuitively:\nLarge response\nProportionate response\nLittle response\n\n\nMathematically:\n\\(\\vert \\epsilon_{q_D,p}\\vert &gt; 1\\)\n\\(\\vert \\epsilon_{q_D,p}\\vert = 1\\)\n\\(\\vert \\epsilon_{q_D,p} \\vert &lt; 1\\)\n\n\n\nNumerator \\(&gt;\\) Denominator\nNumerator \\(=\\) Denominator\nNumerator \\(&lt;\\) Denominator\n\n\nA 1% change in \\(p\\)\nMore than 1% change in \\(q_D\\)\n1% change in \\(q_D\\)\nLess than 1% change in \\(q_D\\)\n\n\n\nPrice elasticity of demand changes along the demand curve:\n\n\n\n\n\n\nDeterminants of Price Elasticity\n\nWhat determines how responsive your buying behavior is to a price change?\n\n\nMore (fewer) substitutes \\(\\implies\\) more (less) elastic\n\nLarger categories of products (less elastic) vs. specific brand (more elastic)\nNecessities (less elastic) vs. luxuries (more elastic)\nLarge (more elastic) vs. small (less elastic) portion of budget\n\nMore (less) time to adjust \\(\\implies\\) more (less) elastic\n\n\n\n\nDerivation of the Lerner Index\nMarginal revenue is strongly related to the price elasticity of demand, which is \\(E_{D}=\\frac{\\Delta q}{\\Delta p} \\times \\frac{p}{q}\\)1\nWe derived marginal revenue (in the slides) as: \\[MR(q)=p+\\frac{\\Delta p}{\\Delta q}q\\]\nFirms will always maximize profits where:\n\\[\\begin{align*}\nMR(q)&=MC(q) && \\text{Profit-max output}\\\\\np+\\bigg(\\frac{\\Delta p}{\\Delta q}\\bigg)q&=MC(q) && \\text{Definition of } MR(q)\\\\\np+\\bigg(\\frac{\\Delta p}{\\Delta q}\\bigg) q \\times \\frac{p}{p}&=\\frac{MR(q)}{p} && \\text{Multiplying the left by } \\frac{p}{p} \\text{ (i.e. 1)}\\\\\np+\\underbrace{\\bigg(\\frac{\\Delta p}{\\Delta q}\\times \\frac{q}{p} \\bigg)}_{\\frac{1}{\\epsilon}} \\times p &=MC(q) && \\text{Rearranging the left}\\\\\np+\\frac{1}{\\epsilon} \\times p &=MC(q) && \\text{Recognize price elasticity } \\epsilon=\\frac{\\Delta q}{\\Delta p} \\times \\frac{p}{q}\\\\\np &=MC(q) - \\frac{1}{\\epsilon} p && \\text{Subtract  }\\frac{1}{\\epsilon}p \\text{ from both sides}\\\\\np-MC(q) &= -\\frac{1}{\\epsilon} p && \\text{Subtract  }MC(q) \\text{ from both sides}\\\\\n\\frac{p-MC(q)}{p} &= -\\frac{1}{\\epsilon} && \\text{Divide both sides by  }p\\\\\n        \\end{align*}\\]\nThe left side gives us the fraction of price that is markup \\(\\left(\\frac{p-MC(q)}{p}\\right)\\), and the right side shows this is inversely related to price elasticity of demand."
+  },
+  {
+    "objectID": "content/1.5-content.html#footnotes",
+    "href": "content/1.5-content.html#footnotes",
+    "title": "1.5 — Monopoly I — Class Content",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nI sometimes simplify it as \\(E_{D}=\\frac{1}{slope} \\times \\frac{p}{q}\\), where “slope” is the slope of the inverse demand curve (graph), since the slope is \\(\\frac{\\Delta p}{\\Delta q} = \\frac{rise}{run}\\).↩︎"
+  },
+  {
+    "objectID": "content/1.6-content.html",
+    "href": "content/1.6-content.html",
+    "title": "1.6 — Monopoly II — Class Content",
+    "section": "",
+    "text": "Meeting Date\n\n\n\nThursday, February 9, 2023"
   },
   {
     "objectID": "content/1.6-content.html#overview",
@@ -537,6 +600,13 @@
     "title": "1.6 — Monopoly II — Class Content",
     "section": " Slides",
     "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
+  },
+  {
+    "objectID": "content/1.7-content.html",
+    "href": "content/1.7-content.html",
+    "title": "1.7 — Pricing Strategies — Class Content",
+    "section": "",
+    "text": "Meeting Date\n\n\n\nTuesday, February 14, 2023"
   },
   {
     "objectID": "content/1.7-content.html#overview",
@@ -565,6 +635,13 @@
     "title": "1.7 — Pricing Strategies — Class Content",
     "section": " Slides",
     "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
+  },
+  {
+    "objectID": "content/1.8-content.html",
+    "href": "content/1.8-content.html",
+    "title": "1.8 — Factor Markets — Class Content",
+    "section": "",
+    "text": "Meeting Date\n\n\n\nThursday, February 16, 2023"
   },
   {
     "objectID": "content/1.8-content.html#overview",
@@ -602,6 +679,13 @@
     "text": "Assignments\n\nProblem Set 1 Due Thursday February 23\nProblem Set 1 (1.1-1.8) is due by 11:59 PM Thursday February 23 on Blackboard Assignments."
   },
   {
+    "objectID": "content/2.1-content.html",
+    "href": "content/2.1-content.html",
+    "title": "2.1 — Imperfect Competition & Collusion — Class Content",
+    "section": "",
+    "text": "Meeting Date\n\n\n\nTuesday, February 21, 2023"
+  },
+  {
     "objectID": "content/2.1-content.html#overview",
     "href": "content/2.1-content.html#overview",
     "title": "2.1 — Imperfect Competition & Collusion — Class Content",
@@ -628,6 +712,13 @@
     "title": "2.1 — Imperfect Competition & Collusion — Class Content",
     "section": " Assignments",
     "text": "Assignments\n\nProblem Set 1 Due Thursday February 23\nProblem Set 1 (1.1-1.8) is due by 11:59 PM Thursday February 23 on Blackboard Assignments."
+  },
+  {
+    "objectID": "content/2.2-content.html",
+    "href": "content/2.2-content.html",
+    "title": "2.2 — Cournot Competition — Class Content",
+    "section": "",
+    "text": "Meeting Date\n\n\n\nThursday, February 23, 2023"
   },
   {
     "objectID": "content/2.2-content.html#overview",
@@ -665,6 +756,13 @@
     "text": "Assignments\n\nProblem Set 1 Due Thursday February 23\nProblem Set 1 (1.1-1.8) is due by 11:59 PM Thursday February 23 on Blackboard Assignments."
   },
   {
+    "objectID": "content/2.3-content.html",
+    "href": "content/2.3-content.html",
+    "title": "2.3 — Bertrand Competition — Class Content",
+    "section": "",
+    "text": "Meeting Date\n\n\n\nThursday, March 2, 2023"
+  },
+  {
     "objectID": "content/2.3-content.html#overview",
     "href": "content/2.3-content.html#overview",
     "title": "2.3 — Bertrand Competition — Class Content",
@@ -693,6 +791,13 @@
     "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
   },
   {
+    "objectID": "content/3.1-content.html",
+    "href": "content/3.1-content.html",
+    "title": "3.1 — Dynamic Games and Collusion — Class Content",
+    "section": "",
+    "text": "Meeting Date\n\n\n\nTuesday, March 7, 2023"
+  },
+  {
     "objectID": "content/3.1-content.html#overview",
     "href": "content/3.1-content.html#overview",
     "title": "3.1 — Dynamic Games and Collusion — Class Content",
@@ -712,6 +817,13 @@
     "title": "3.1 — Dynamic Games and Collusion — Class Content",
     "section": " Slides",
     "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
+  },
+  {
+    "objectID": "content/3.2-content.html",
+    "href": "content/3.2-content.html",
+    "title": "3.2 — Stackelberg Competition — Class Content",
+    "section": "",
+    "text": "Meeting Date\n\n\n\nTuesday, March 7, 2023"
   },
   {
     "objectID": "content/3.2-content.html#overview",
@@ -742,6 +854,13 @@
     "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
   },
   {
+    "objectID": "content/3.3-content.html",
+    "href": "content/3.3-content.html",
+    "title": "3.3 — Entry Deterrence and Commitment — Class Content",
+    "section": "",
+    "text": "Meeting Date\n\n\n\nTuesday, March 21, 2023"
+  },
+  {
     "objectID": "content/3.3-content.html#overview",
     "href": "content/3.3-content.html#overview",
     "title": "3.3 — Entry Deterrence and Commitment — Class Content",
@@ -761,6 +880,13 @@
     "title": "3.3 — Entry Deterrence and Commitment — Class Content",
     "section": " Slides",
     "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
+  },
+  {
+    "objectID": "content/4.1-content.html",
+    "href": "content/4.1-content.html",
+    "title": "4.1 — Why Are There Firms? — Class Content",
+    "section": "",
+    "text": "Meeting Date\n\n\n\nTuesday, March 21, 2023"
   },
   {
     "objectID": "content/4.1-content.html#overview",
@@ -784,6 +910,13 @@
     "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
   },
   {
+    "objectID": "content/4.2-content.html",
+    "href": "content/4.2-content.html",
+    "title": "4.2 — The Firm as Nexus of Contracts — Class Content",
+    "section": "",
+    "text": "Meeting Date\n\n\n\nThursday, March 30, 2023"
+  },
+  {
     "objectID": "content/4.2-content.html#overview",
     "href": "content/4.2-content.html#overview",
     "title": "4.2 — The Firm as Nexus of Contracts — Class Content",
@@ -803,6 +936,13 @@
     "title": "4.2 — The Firm as Nexus of Contracts — Class Content",
     "section": " Slides",
     "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
+  },
+  {
+    "objectID": "content/4.3-content.html",
+    "href": "content/4.3-content.html",
+    "title": "4.3 — Asset Specificity & Vertical Integration — Class Content",
+    "section": "",
+    "text": "Meeting Date\n\n\n\nTuesday, April 4, 2023"
   },
   {
     "objectID": "content/4.3-content.html#overview",
@@ -826,6 +966,13 @@
     "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
   },
   {
+    "objectID": "content/4.4-content.html",
+    "href": "content/4.4-content.html",
+    "title": "4.4 — Contractual Restraints & Property Rights — Class Content",
+    "section": "",
+    "text": "Meeting Date\n\n\n\nThursday, April 6, 2023"
+  },
+  {
     "objectID": "content/4.4-content.html#overview",
     "href": "content/4.4-content.html#overview",
     "title": "4.4 — Contractual Restraints & Property Rights — Class Content",
@@ -845,6 +992,13 @@
     "title": "4.4 — Contractual Restraints & Property Rights — Class Content",
     "section": " Slides",
     "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
+  },
+  {
+    "objectID": "content/4.5-content.html",
+    "href": "content/4.5-content.html",
+    "title": "4.5 — Entrepreneurship, Uncertainty, and Market Process — Class Content",
+    "section": "",
+    "text": "Meeting Date\n\n\n\nTuesday, April 11, 2023"
   },
   {
     "objectID": "content/4.5-content.html#overview",
@@ -868,6 +1022,13 @@
     "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
   },
   {
+    "objectID": "content/5.1-content.html",
+    "href": "content/5.1-content.html",
+    "title": "5.1 — Measuring Market Power — Class Content",
+    "section": "",
+    "text": "Meeting Date\n\n\n\nThursday, April 13, 2023"
+  },
+  {
     "objectID": "content/5.1-content.html#overview",
     "href": "content/5.1-content.html#overview",
     "title": "5.1 — Measuring Market Power — Class Content",
@@ -887,6 +1048,13 @@
     "title": "5.1 — Measuring Market Power — Class Content",
     "section": " Slides",
     "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
+  },
+  {
+    "objectID": "content/5.2-content.html",
+    "href": "content/5.2-content.html",
+    "title": "5.2 — Antitrust I: The Law — Class Content",
+    "section": "",
+    "text": "Meeting Date\n\n\n\nTuesday, April 18, 2023"
   },
   {
     "objectID": "content/5.2-content.html#overview",
@@ -910,6 +1078,13 @@
     "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
   },
   {
+    "objectID": "content/5.3-content.html",
+    "href": "content/5.3-content.html",
+    "title": "5.3 — Antitrust II: The Paradox — Class Content",
+    "section": "",
+    "text": "Meeting Date\n\n\n\nTuesday, April 25, 2023"
+  },
+  {
     "objectID": "content/5.3-content.html#overview",
     "href": "content/5.3-content.html#overview",
     "title": "5.3 — Antitrust II: The Paradox — Class Content",
@@ -931,6 +1106,13 @@
     "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
   },
   {
+    "objectID": "content/5.4-content.html",
+    "href": "content/5.4-content.html",
+    "title": "5.4 — Antitrust III: The Hipsters — Class Content",
+    "section": "",
+    "text": "Meeting Date\n\n\n\nThursday, April 27, 2023"
+  },
+  {
     "objectID": "content/5.4-content.html#overview",
     "href": "content/5.4-content.html#overview",
     "title": "5.4 — Antitrust III: The Hipsters — Class Content",
@@ -950,6 +1132,13 @@
     "title": "5.4 — Antitrust III: The Hipsters — Class Content",
     "section": " Slides",
     "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
+  },
+  {
+    "objectID": "content/5.5-content.html",
+    "href": "content/5.5-content.html",
+    "title": "5.5 — Reforming Online Data — Class Content",
+    "section": "",
+    "text": "Meeting Date\n\n\n\nTuesday, May 2, 2023"
   },
   {
     "objectID": "content/5.5-content.html#overview",
@@ -989,14 +1178,14 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "ECON 326 — Industrial Organization",
+    "title": "\n            Industrial Organization\n        ",
     "section": "",
     "text": "Industrial Organization\n        \n        \n            ECON 326 • Spring 2023 • Hood College\n        \n        \n            Learn the key models and tools to understand how different industries are organized, perform, and are regulatedBy the end of this course, you will:\n\n\nApply key economic models of markets: perfect competition, monopoly, monopolistic competition, oligopoly (Bertrand, Cournot, and Stackelberg competition), and contestable markets\n\n\nIdentify key concepts and legal regimes in antitrust and regulation\n\n\nSimulate strategic and game theoretic interactions and apply them to industry behavior\n\n\n        \n    \n    \n      \n        \n        \n        \n      \n    \n\n\n\n\n\nInstructor\n\n   Dr. Ryan Safner\n   114 Rosenstock\n   Office Hours: MW 1:30-2:30PM\n   safner@hood.edu\n\n\n\nCourse details\n\n   2:00—3:25 PM\n   Rosenstock 101\n   Jan 24—May 8, 2023\n   Slack"
   },
   {
     "objectID": "resources/appendices/index.html",
     "href": "resources/appendices/index.html",
-    "title": "ECON 326 — Industrial Organization",
+    "title": "List of Appendices",
     "section": "",
     "text": "List of Appendices\n1.1 Appendix"
   },
@@ -1057,11 +1246,18 @@
     "text": "Exponents are defined as:\n\n\\(b^n=\\underbrace{b \\times b \\times ... \\times b}_{n}\\), where base \\(b\\) is multiplied by itself \\(n\\) times\n\\(b^0=1\\) (for \\(b \\neq 0\\))\n\nThere are some common rules for exponents, assuming \\(x\\) and \\(y\\) are real numbers, \\(m\\) and \\(n\\) are integers, and \\(a\\) and \\(b\\) are rational:\n\n\\(x^{-n}=\\frac{1}{x^n}\\)\n\ne.g. \\(x^{-3} = \\frac{1}{x^3}\\)\n\n\\(x^{\\frac{1}{n}}=\\sqrt[n]{x}\\)\n\ne.g. \\(x^{\\frac{1}{2}} = \\sqrt{x}\\)\n\n\\(x^{(\\frac{m}{n})}=(x^{\\frac{1}{n}})^m\\)\n\ne.g. \\(8^{\\frac{4}{3}} = (8^\\frac{1}{3})^4=2^4=16\\)\n\n\\(x^{a}x^b=x^{a+b}\\)\n\ne.g. \\(x^2x^3=x^5\\)\n\n\\(\\frac{x^a}{x^b}=x^{a-b}\\)\n\ne.g. \\(\\frac{x^2}{x^3}=x^{-1}=\\frac{1}{x}\\)\n\n\\((\\frac{x}{y})^a=\\frac{x^a}{y^a}\\)\n\ne.g. \\((\\frac{x}{y})^2=\\frac{x^2}{y^2}\\)\n\n\\((xy)^a=x^ay^a\\)\n\ne.g. \\((xy)^2=x^2y^2\\)\n\n\nLogarithms are the exponents in the expressions above, the inverse of exponentiation\n\nIf \\(b^y=x\\), then \\(log_b(x)= y\\)\n\n\\(y\\) is the number you must raise \\(b\\) to in order to get \\(x\\)\ne.g. \\(2^6=64 = \\underbrace{(2*2*2*2*2*2)}_{\\text{6 times}}\\) so \\(log_2(64)=6\\)\n\n\nWe often use the natural logarithm (ln) with base \\(e=2.718...\\) in many math, statistics, and economic applications\n\nIf \\(e^y=x\\), then \\(\\ln(x) = y\\)\n\nThere are a number of highly useful rules for natural logs:\n\n\\(\\ln(xy)=\\ln(x)+\\ln(y)\\)\n\ne.g. \\(\\ln(2*3)=\\ln(2)+\\ln(3)\\)\n\n\\(\\ln(\\frac{x}{y})=\\ln(x)-\\ln(y)\\)\n\ne.g. \\(\\ln(\\frac{2}{3})=\\ln(2)-\\ln(3)\\)\n\n\\(\\ln(x^a)=a*\\ln(x)\\)\n\ne.g. \\(\\ln(x^2)=2\\ln(x)\\)"
   },
   {
+    "objectID": "resources/math/functions.html",
+    "href": "resources/math/functions.html",
+    "title": "Functions",
+    "section": "",
+    "text": "A function is simply a rule that assigns a unique value of a dependent variable (e.g. \\(f(x)\\)) to each value of an independent variable (e.g. \\(x\\)): \\(x \\rightarrow f(x)\\)\n\nSomething is not a function if it assigns multiple values of \\(y\\) for the same value of \\(x\\) (e.g. on a graph, a vertical line)\nWe can relate any independent variable (e.g. \\(x\\)) to any dependent variable (e.g. \\(y\\)) so get comfortable using variables other than \\(x\\) and \\(y\\)!\n\nIn its general form a function can be written as:\n\\[q = q(p)\\]\n\n“Quantity (\\(q\\)) is a function of price (\\(p\\))”\nThis expresses that there is a relationship between \\(q\\) and \\(p\\), it doesn’t tell us the specific form of that relationship\n\n\\(q\\) is the dependent or “endogenous” variable, its value is determined by \\(p\\)\n\\(p\\) is the independent or “exogenous” variable, its value is given and not dependent on other variables\nThe specific form of this function might be:\n\n\n\\[q = 100-6p\\]\n\nThe numbers 100 and 6 are known as parameters, they are parts of the quantitative relationship between quantity and price (the variables) that do not change\nIf we have values of \\(p\\), we can find the value of \\(q(p)\\):\n\nWhen \\(p=10\\) \\[\\begin{align*}\n  q(p)&=100-6p\\\\\n  q(10)&=100-6(10)\\\\\n  q(10)&=100-60\\\\\n  q(10)&=40\\\\\n\\end{align*}\\]\nWhen \\(p=5\\): \\[\\begin{align*}\n  q(p)&=100-6p\\\\\n  q(5)&=100-6(5)\\\\\n  q(5)&=100-30\\\\\n  q(5)&=70\\\\  \n\\end{align*}\\]\n\n\nMultivariate functions have multiple independent variables, such as:\n\\[q=f(k,l)\\]\n\n“Output (\\(q\\)) is a function of both capital (\\(k\\)) and labor (\\(l\\))”\nIn economics, we often restrict the domain and range of functions to positive real numbers, \\(\\mathbb{R}_+\\), since prices and quantities are never negative in the real world\n\nDomain: the set of \\(x\\)-values\nRange: the set of \\(y\\)-values determined by the function"
+  },
+  {
     "objectID": "resources/math/functions.html#functions",
     "href": "resources/math/functions.html#functions",
     "title": "Functions",
-    "section": "Functions",
-    "text": "Functions\nA function is simply a rule that assigns a unique value of a dependent variable (e.g. \\(f(x)\\)) to each value of an independent variable (e.g. \\(x\\)): \\(x \\rightarrow f(x)\\)\n\nSomething is not a function if it assigns multiple values of \\(y\\) for the same value of \\(x\\) (e.g. on a graph, a vertical line)\nWe can relate any independent variable (e.g. \\(x\\)) to any dependent variable (e.g. \\(y\\)) so get comfortable using variables other than \\(x\\) and \\(y\\)!\n\nIn its general form a function can be written as:\n\\[q = q(p)\\]\n\n“Quantity (\\(q\\)) is a function of price (\\(p\\))”\nThis expresses that there is a relationship between \\(q\\) and \\(p\\), it doesn’t tell us the specific form of that relationship\n\n\\(q\\) is the dependent or “endogenous” variable, its value is determined by \\(p\\)\n\\(p\\) is the independent or “exogenous” variable, its value is given and not dependent on other variables\nThe specific form of this function might be:\n\n\n\\[q = 100-6p\\]\n\nThe numbers 100 and 6 are known as parameters, they are parts of the quantitative relationship between quantity and price (the variables) that do not change\nIf we have values of \\(p\\), we can find the value of \\(q(p)\\):\n\nWhen \\(p=10\\) \\[\\begin{align*}\n  q(p)&=100-6p\\\\\n  q(10)&=100-6(10)\\\\\n  q(10)&=100-60\\\\\n  q(10)&=40\\\\\n\\end{align*}\\]\nWhen \\(p=5\\): \\[\\begin{align*}\n  q(p)&=100-6p\\\\\n  q(5)&=100-6(5)\\\\\n  q(5)&=100-30\\\\\n  q(5)&=70\\\\  \n\\end{align*}\\]\n\n\nMultivariate functions have multiple independent variables, such as:\n\\[q=f(k,l)\\]\n\n“Output (\\(q\\)) is a function of both capital (\\(k\\)) and labor (\\(l\\))”\nIn economics, we often restrict the domain and range of functions to positive real numbers, \\(\\mathbb{R}_+\\), since prices and quantities are never negative in the real world\n\nDomain: the set of \\(x\\)-values\nRange: the set of \\(y\\)-values determined by the function"
+    "section": "",
+    "text": "A function is simply a rule that assigns a unique value of a dependent variable (e.g. \\(f(x)\\)) to each value of an independent variable (e.g. \\(x\\)): \\(x \\rightarrow f(x)\\)\n\nSomething is not a function if it assigns multiple values of \\(y\\) for the same value of \\(x\\) (e.g. on a graph, a vertical line)\nWe can relate any independent variable (e.g. \\(x\\)) to any dependent variable (e.g. \\(y\\)) so get comfortable using variables other than \\(x\\) and \\(y\\)!\n\nIn its general form a function can be written as:\n\\[q = q(p)\\]\n\n“Quantity (\\(q\\)) is a function of price (\\(p\\))”\nThis expresses that there is a relationship between \\(q\\) and \\(p\\), it doesn’t tell us the specific form of that relationship\n\n\\(q\\) is the dependent or “endogenous” variable, its value is determined by \\(p\\)\n\\(p\\) is the independent or “exogenous” variable, its value is given and not dependent on other variables\nThe specific form of this function might be:\n\n\n\\[q = 100-6p\\]\n\nThe numbers 100 and 6 are known as parameters, they are parts of the quantitative relationship between quantity and price (the variables) that do not change\nIf we have values of \\(p\\), we can find the value of \\(q(p)\\):\n\nWhen \\(p=10\\) \\[\\begin{align*}\n  q(p)&=100-6p\\\\\n  q(10)&=100-6(10)\\\\\n  q(10)&=100-60\\\\\n  q(10)&=40\\\\\n\\end{align*}\\]\nWhen \\(p=5\\): \\[\\begin{align*}\n  q(p)&=100-6p\\\\\n  q(5)&=100-6(5)\\\\\n  q(5)&=100-30\\\\\n  q(5)&=70\\\\  \n\\end{align*}\\]\n\n\nMultivariate functions have multiple independent variables, such as:\n\\[q=f(k,l)\\]\n\n“Output (\\(q\\)) is a function of both capital (\\(k\\)) and labor (\\(l\\))”\nIn economics, we often restrict the domain and range of functions to positive real numbers, \\(\\mathbb{R}_+\\), since prices and quantities are never negative in the real world\n\nDomain: the set of \\(x\\)-values\nRange: the set of \\(y\\)-values determined by the function"
   },
   {
     "objectID": "resources/math/functions.html#inverse-functions",
@@ -1078,11 +1274,18 @@
     "text": "Functions with Fractions\n\nMany people are rusty on a few useful algebra rules we will need, one being how to deal with fractions in equations\nTo get rid of a fraction, multiply both sides of the equation by the fraction’s reciprocal (swap the numerator and denominator), which will yield just 1\n\n\\[\\begin{align*}\n        100&=\\frac{1}{4}x & & \\text{The equation to be solved for} x\\\\\n        \\frac{4}{1} \\big(\\frac{100}{1}\\big) &=\\frac{4}{1}\\bigg(\\frac{1}{4}x\\bigg) && \\text{Multiplying by the reciprocal of } \\frac{1}{4} \\text{, which is } \\frac{4}{1} \\\\\n        \\frac{400}{1}&=\\frac{4}{4}x & & \\text{Cross multiplying fractions}\\\\\n        400 & = x & & \\text{Simplifying}\\\\  \n        \\end{align*}\\]\n\nAlternatively (if possible), re-imagining the fraction as a decimal may help:\n\n\\[\\begin{align*}\n        100&=\\frac{1}{4}x && \\text{The original equation}\\\\\n        100&=0.25x && \\text{Converting to a decimal}\\\\\n        400 & = x && \\text{Dividing both sides by }0.25\\\\   \n        \\end{align*}\\]\n\nAdd fractions by finding a common denominator:\n\n\\[\\begin{align*}\n    \\frac{4}{3} &+ \\frac{2}{5}\\\\\n    \\bigg(\\frac{4 \\times 5}{3 \\times 5}\\bigg) &+ \\bigg(\\frac{2 \\times 3}{5 \\times 3}\\bigg)\\\\\n     \\frac{20}{15}&+\\frac{6}{15}\\\\\n    &= \\frac{26}{15}\\\\\n    \\end{align*}\\]\n\nMultiply fractions straight across the numerator and denominator \\[\n\\frac{4}{3} \\times \\frac{2}{5}=\\frac{4 \\times 2}{3 \\times 5}=\\frac{8}{15}\n\\]"
   },
   {
+    "objectID": "resources/math/graphing.html",
+    "href": "resources/math/graphing.html",
+    "title": "Graphing Linear Equations",
+    "section": "",
+    "text": "A linear function of two variables can be written in slope-intercept form: \\[y=ax+b\\]\n\n\\(y\\) is the dependent variable (on the vertical axis)\n\\(x\\) is the independent variable (on the horizontal axis)\n\\(a\\) is the slope of the line\n\n\\(a = \\frac{\\text{rise}}{\\text{run}} = \\frac{\\text{change in }y}{\\text{change in }x} = \\frac{\\Delta x}{\\Delta y}\\)\nyou may have been taught the slope as “\\(m\\)”, this is just personal taste, but again, get used to using different letters!\n\n\\(b\\) is the vertical-intercept, a constant number where the line crosses the vertical axis\n\nif \\(y\\) is the dependent variable, this is the “\\(y\\)-intercept”, \\(y\\) where \\(x=0\\)\n\n\nAny point on the line has an \\(x\\)-coordinate and \\(y\\)-coordinate \\((x_i,y_i)\\)"
+  },
+  {
     "objectID": "resources/math/graphing.html#slope-intercept-form",
     "href": "resources/math/graphing.html#slope-intercept-form",
     "title": "Graphing Linear Equations",
-    "section": "Slope-Intercept Form",
-    "text": "Slope-Intercept Form\n\n\n\n\n\n\nA linear function of two variables can be written in slope-intercept form: \\[y=ax+b\\]\n\n\\(y\\) is the dependent variable (on the vertical axis)\n\\(x\\) is the independent variable (on the horizontal axis)\n\\(a\\) is the slope of the line\n\n\\(a = \\frac{\\text{rise}}{\\text{run}} = \\frac{\\text{change in }y}{\\text{change in }x} = \\frac{\\Delta x}{\\Delta y}\\)\nyou may have been taught the slope as “\\(m\\)”, this is just personal taste, but again, get used to using different letters!\n\n\\(b\\) is the vertical-intercept, a constant number where the line crosses the vertical axis\n\nif \\(y\\) is the dependent variable, this is the “\\(y\\)-intercept”, \\(y\\) where \\(x=0\\)\n\n\nAny point on the line has an \\(x\\)-coordinate and \\(y\\)-coordinate \\((x_i,y_i)\\)"
+    "section": "",
+    "text": "A linear function of two variables can be written in slope-intercept form: \\[y=ax+b\\]\n\n\\(y\\) is the dependent variable (on the vertical axis)\n\\(x\\) is the independent variable (on the horizontal axis)\n\\(a\\) is the slope of the line\n\n\\(a = \\frac{\\text{rise}}{\\text{run}} = \\frac{\\text{change in }y}{\\text{change in }x} = \\frac{\\Delta x}{\\Delta y}\\)\nyou may have been taught the slope as “\\(m\\)”, this is just personal taste, but again, get used to using different letters!\n\n\\(b\\) is the vertical-intercept, a constant number where the line crosses the vertical axis\n\nif \\(y\\) is the dependent variable, this is the “\\(y\\)-intercept”, \\(y\\) where \\(x=0\\)\n\n\nAny point on the line has an \\(x\\)-coordinate and \\(y\\)-coordinate \\((x_i,y_i)\\)"
   },
   {
     "objectID": "resources/math/graphing.html#other-forms",
@@ -1110,18 +1313,25 @@
     "href": "resources/math/nonlinear.html",
     "title": "Nonlinear Functions & Optimization",
     "section": "",
-    "text": "A function is non-linear if it is curved, i.e. not a straight line. Nonlinear functions’ slopes may be different for different values of the independent variable.\nThe slope at any particular point of the function is is its first derivative, the rate of instantaneous change.\nMost applications in economics pertain to marginal magnitudes\nWe can describe a curved function as being either convex or concave with respect to the origin (0,0)\nIn simplest terms, a function is concave between two points \\(a, b\\) if a straight line connecting \\(a\\) and \\(b\\) lies beneath the function itself \\[\\color{red}{f[(t a)+(1-t)b]} > t f(a) + (1-t) f(b)\\text{ for }0 < t < 1\\]\nIn simplest terms, a function is convex between two points \\(a, b\\) if a straight line connecting \\(a\\) and \\(b\\) lies above the function itself \\[\\color{blue}{f[(w a)+(1-w)b]} < w f(a) + (1-w) f(b) \\quad \\text{ for }0 < w < 1\\] - The weighted average (dotted line) of \\(a\\) and \\(b\\) is above the function - A function is also convex at a point if its second derivative is positive\nA function switches between convex and concave at an inflection point (point C in the example above) - Here, the second derivative (in addition to the first) is equal to 0"
+    "text": "A function is non-linear if it is curved, i.e. not a straight line. Nonlinear functions’ slopes may be different for different values of the independent variable.\nThe slope at any particular point of the function is is its first derivative, the rate of instantaneous change.\nMost applications in economics pertain to marginal magnitudes\nWe can describe a curved function as being either convex or concave with respect to the origin (0,0)\nIn simplest terms, a function is concave between two points \\(a, b\\) if a straight line connecting \\(a\\) and \\(b\\) lies beneath the function itself \\[\\color{red}{f[(t a)+(1-t)b]} &gt; t f(a) + (1-t) f(b)\\text{ for }0 &lt; t &lt; 1\\]\nIn simplest terms, a function is convex between two points \\(a, b\\) if a straight line connecting \\(a\\) and \\(b\\) lies above the function itself \\[\\color{blue}{f[(w a)+(1-w)b]} &lt; w f(a) + (1-w) f(b) \\quad \\text{ for }0 &lt; w &lt; 1\\] - The weighted average (dotted line) of \\(a\\) and \\(b\\) is above the function - A function is also convex at a point if its second derivative is positive\nA function switches between convex and concave at an inflection point (point C in the example above) - Here, the second derivative (in addition to the first) is equal to 0"
   },
   {
     "objectID": "resources/math/nonlinear.html#optimization",
     "href": "resources/math/nonlinear.html#optimization",
     "title": "Nonlinear Functions & Optimization",
     "section": "Optimization",
-    "text": "Optimization\nFor most curves, we often want to find the value where the function reaches its maximum or minimum (in general, these are types of “extrema”) along some interval\n\n\n\n\n\nFormally, a function reaches a maximum at \\(x^*\\) if \\(f(x^*) \\geq f(x)\\) for all \\(x\\); or a minimum at \\(x^*\\) if \\(f(x^*) \\leq f(x)\\) for all \\(x\\) - In the graph above, the function reaches a maximum at \\(x_1\\) and a minimum at \\(x_2\\)\nThe maximum or minimum of a function occurs where the slope (first derivative) is zero, known in calculus as the “first-order condition” \\[\\frac{df(x^*)}{dx} = 0\\]\n\nTo distinguish between maxima and minima, we have the “second-order condition”\n\nA minimum occurs when the second derivative of the function is positive, and the curve is convex \\[\\frac{d^2f(x^*)}{dx^2} > 0\\]\nA maximum occurs when the second derivative of the function is negative, and the curve is concave \\[\\frac{d^2f(x^*)}{dx^2} < 0\\]\nAn inflection point occurs where the second derivative of the function is zero\nAll three are known as “critical points”\n\n\nThis is often useful for unconstrained optimization, e.g. finding the quantity of output that maximizes profits\nNote, if we have a multivariate function \\(y=f(x_1, x_2)\\) and want to find the maximum or minimum (\\(x_1^\\star, x_2^\\star\\)), the first order conditions (FOC, plural) are where all the partial derivatives (derivative with respect to \\(x_1\\) and derivative with respect to \\(x_2\\)) are zero \\[\\begin{align*}\n\\frac{\\partial f(x_1^*, x_2^*)}{\\partial x_1} &= 0 \\\\\n\\frac{\\partial f(x_1^*, x_2^*)}{\\partial x_2} &= 0 \\\\\n\\end{align*}\\] There are second order conditions as well, to demonstrate whether an extremum is a maximum or minimum, but they are too complex to discuss here.\nOften we want to find the maximum or minimum of a function over some restricted values of \\((x_1, x_2)\\), known as constrained optimization. This is one of the most important modeling tools in microeconomics, and will show up in many contexts.\n\nWe want to find the maximum of some function:\n\n\\[\\begin{align*}\n\\max_{x_1, x_2} f(x_1, x_2)\\\\\n\\text{subject to } g(x_1, x_2)=c \\\\\n\\end{align*}\\]\n\n\\(f(x_1, x_2)\\) is the “objective function” we wish to maximize (or minimize)\n\\(g(x_1, x_2)=c\\) is the “constraint” that limits us within some specified set of \\(x_1\\) and \\(x_2\\) values\n\nMuch of microeconomic modeling is about figuring out what an agent’s objective is (e.g. maximize profits, maximize utility, minimize costs) and what their constraints are (e.g. budget, time, output).\nThere are several ways to solve a constrained optimization problem (see Appendix to Ch. 5 in textbook), the most frequent (but requiring calculus) is Lagrangian multiplier method.\nGraphically, the solution to a constrained optimization problem is the point where a curve (objective function) and a line (constraint) are tangent to one another: they just touch, but do not intersect (e.g. at point A below).\n\n\n\n\n\nAt the point of tangency (A), the slope of the curve (objective function) is equal to the slope of the line (constraint)\n\nThis is extremely useful and is always the solution to simple constrained optimization problems, e.g.\n\ne.g. maximizing utility subject to income\ne.g. minimizing cost subject to a certain level of output\n\nWe can find the equation of the tangent line using point slope form \\[y-y_1=m(x-x_1)\\]\nWe need to know the slope \\(m\\), which we would know from the slope of the function at that point\nWe know \\((x_1, y_1\\)) is the point of tangency"
+    "text": "Optimization\nFor most curves, we often want to find the value where the function reaches its maximum or minimum (in general, these are types of “extrema”) along some interval\n\n\n\n\n\nFormally, a function reaches a maximum at \\(x^*\\) if \\(f(x^*) \\geq f(x)\\) for all \\(x\\); or a minimum at \\(x^*\\) if \\(f(x^*) \\leq f(x)\\) for all \\(x\\) - In the graph above, the function reaches a maximum at \\(x_1\\) and a minimum at \\(x_2\\)\nThe maximum or minimum of a function occurs where the slope (first derivative) is zero, known in calculus as the “first-order condition” \\[\\frac{df(x^*)}{dx} = 0\\]\n\nTo distinguish between maxima and minima, we have the “second-order condition”\n\nA minimum occurs when the second derivative of the function is positive, and the curve is convex \\[\\frac{d^2f(x^*)}{dx^2} &gt; 0\\]\nA maximum occurs when the second derivative of the function is negative, and the curve is concave \\[\\frac{d^2f(x^*)}{dx^2} &lt; 0\\]\nAn inflection point occurs where the second derivative of the function is zero\nAll three are known as “critical points”\n\n\nThis is often useful for unconstrained optimization, e.g. finding the quantity of output that maximizes profits\nNote, if we have a multivariate function \\(y=f(x_1, x_2)\\) and want to find the maximum or minimum (\\(x_1^\\star, x_2^\\star\\)), the first order conditions (FOC, plural) are where all the partial derivatives (derivative with respect to \\(x_1\\) and derivative with respect to \\(x_2\\)) are zero \\[\\begin{align*}\n\\frac{\\partial f(x_1^*, x_2^*)}{\\partial x_1} &= 0 \\\\\n\\frac{\\partial f(x_1^*, x_2^*)}{\\partial x_2} &= 0 \\\\\n\\end{align*}\\] There are second order conditions as well, to demonstrate whether an extremum is a maximum or minimum, but they are too complex to discuss here.\nOften we want to find the maximum or minimum of a function over some restricted values of \\((x_1, x_2)\\), known as constrained optimization. This is one of the most important modeling tools in microeconomics, and will show up in many contexts.\n\nWe want to find the maximum of some function:\n\n\\[\\begin{align*}\n\\max_{x_1, x_2} f(x_1, x_2)\\\\\n\\text{subject to } g(x_1, x_2)=c \\\\\n\\end{align*}\\]\n\n\\(f(x_1, x_2)\\) is the “objective function” we wish to maximize (or minimize)\n\\(g(x_1, x_2)=c\\) is the “constraint” that limits us within some specified set of \\(x_1\\) and \\(x_2\\) values\n\nMuch of microeconomic modeling is about figuring out what an agent’s objective is (e.g. maximize profits, maximize utility, minimize costs) and what their constraints are (e.g. budget, time, output).\nThere are several ways to solve a constrained optimization problem (see Appendix to Ch. 5 in textbook), the most frequent (but requiring calculus) is Lagrangian multiplier method.\nGraphically, the solution to a constrained optimization problem is the point where a curve (objective function) and a line (constraint) are tangent to one another: they just touch, but do not intersect (e.g. at point A below).\n\n\n\n\n\nAt the point of tangency (A), the slope of the curve (objective function) is equal to the slope of the line (constraint)\n\nThis is extremely useful and is always the solution to simple constrained optimization problems, e.g.\n\ne.g. maximizing utility subject to income\ne.g. minimizing cost subject to a certain level of output\n\nWe can find the equation of the tangent line using point slope form \\[y-y_1=m(x-x_1)\\]\nWe need to know the slope \\(m\\), which we would know from the slope of the function at that point\nWe know \\((x_1, y_1\\)) is the point of tangency"
   },
   {
     "objectID": "resources/pdfs.html",
     "href": "resources/pdfs.html",
+    "title": "How to Make a PDF",
+    "section": "",
+    "text": "There are many good apps out there that will allow you to take photos and convert them to PDFs. This is actually a better method than using your computer (described below), since theses apps optimize your photos for PDFs (using your computer to convert will often result in very large PDF file sizes!). Here are a few apps you can use:\n\nScannable 1\nTurboscan \nImage to PDF Converter Free \nPDF Converter Pro \nSimple Scan \n\nPersonally, I use Scannable — primarily because of its association with Evernote, if you wanted a recommendation. But note it does not exist on Android. I also have successfully used Turboscan in the past.\nAdditionally, as Hood students, you all have Onedrive, you can use the app on your phone to scan documents with photos and convert them to PDFs."
+  },
+  {
+    "objectID": "resources/pdfs.html#using-an-app-on-your-phone",
+    "href": "resources/pdfs.html#using-an-app-on-your-phone",
     "title": "How to Make a PDF",
     "section": "",
     "text": "There are many good apps out there that will allow you to take photos and convert them to PDFs. This is actually a better method than using your computer (described below), since theses apps optimize your photos for PDFs (using your computer to convert will often result in very large PDF file sizes!). Here are a few apps you can use:\n\nScannable 1\nTurboscan \nImage to PDF Converter Free \nPDF Converter Pro \nSimple Scan \n\nPersonally, I use Scannable — primarily because of its association with Evernote, if you wanted a recommendation. But note it does not exist on Android. I also have successfully used Turboscan in the past.\nAdditionally, as Hood students, you all have Onedrive, you can use the app on your phone to scan documents with photos and convert them to PDFs."
@@ -1132,6 +1342,13 @@
     "title": "How to Make a PDF",
     "section": "Using Images Sent to Your Computer",
     "text": "Using Images Sent to Your Computer\nMost modern versions of operating system have a built-in tool in the File Viewer (or Finder) menus, after clicking on one or multiple files, to create a PDF from the files.\nSo first take photos on your smartphone of your written work (one photo per page). Please try to frame your photos properly! Put your paper flat on a solid surface (table, desk, the floor, etc). Get the whole page within the borders of the photo, and not too much background. I don’t need to see half of your desk or bed as you are taking the photo! Take a look at it and make sure it is legible.\nNext, get the photos onto your computer (whether by Airdrop, email to yourself, Dropbox, etc.). Finally, depending on your OS, convert the files to a PDF:\n1. On a Windows PC\nOpen the folder where your photos are currently, in the File Explorer. Select all of the photos, and right click, and select Print. In the dialog box that pops up, select Microsoft Print to PDF in the Printer box, and then click Print. This will save it as a .pdf file in that folder. See more information.\n2. On a Mac\nAs I use a Mac, I will show you how Mac OS has a neat feature built into Finder, which allows converting multiple files into a single PDF file as a Quick Action. I have written two pages in a notebook and taken two separate pictures of them, and airdropped them onto my computer.\n\n\n\nHere is the  example PDF.\n3. On Linux\nIf you use Linux, I assume you know your way around a computer well enough to make a PDF! 🤖"
+  },
+  {
+    "objectID": "resources/pdfs.html#footnotes",
+    "href": "resources/pdfs.html#footnotes",
+    "title": "How to Make a PDF",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nIf you use Evernote for notes (I do, it’s amazing), this can sync up and store your PDFs in Evernote↩︎"
   },
   {
     "objectID": "resources/quotes.html",
@@ -1145,21 +1362,28 @@
     "href": "resources/tips.html",
     "title": "Tips for Success in This Course",
     "section": "",
-    "text": "Take notes. On paper. Yes. Studies show that using pen and paper trump taking notes on a device. The main reason is because you cannot possibly write down everything I am saying by hand. This forces you to selectively filter my lecture to its most essential and important components – an integral part of the learning and retention process. If you are taking notes on a laptop, you become a court stenographer, thoughtlessly transcribing everything I am saying. At the other extreme, do not assume everything is written in my lecture slides. My lecture slides are visuals and cues to organize the content both for me and for you. I try hard to make sure that I have few words on slides, and even fewer answers to problems.\n\nMy suggestion: print out my lecture slides in advance (or follow along on your device) and take additional notes by hand.\n\nAt least skim all of the readings. I give out readings for a reason, and that reason is not to bore you or waste your time. The truth is, as a beginner, you can’t rely on heuristics or memory to “fill in the blanks.” You need the readings to provide context to what I am saying in class. I cannot help you if you are not going to try. Any professor also will lose patience at short notice when it’s discovered you haven’t done the reading.\nDo the homeworks (if there are any). You might be surprised that I need to say this, but I do. Students that do not do the homeworks do poorly on exams, which often are similar to homework questions. Homeworks are the best practice for exams, they give you a sense of the relevant content areas that might come up, the type and style of questions that I ask, and you often get answer keys to help you “get inside my head” and study from. There is no good reason why you should have a low homework grade.\nWork on assignments together and study together. Recognize that you are not in this alone, and other students are just as anxious or uncertain as you are. More surprisingly, other students probably have some answers you are looking for, and you may have answers for some of their problems! You will learn better when you collaborate with others similar to you. More importantly, you don’t truly understand something unless you can explain it to others.1 As a wise woman once told me “whomever is doing the talking is doing the learning.”\nLearn how to learn. The most important skill you learn in college is how to learn. Taking a course on a subject will not make you an expert on that subject. It a) helps you recognize that you do not know everything on that subject, and this prevents you from actively saying stupid things; and b) gives you enough context and skills to figure out how to actually fill those gaps. This is the actual skill that’s relevant in the real world.2\n\n\n\n\n\nFootnotes\n\n\nYes, that means I am doing a ton of learning every time I teach!↩︎\nYes, Google is your best friend. But you do not yet know how to ask the right questions, or understand what constitutes good answers.↩︎"
+    "text": "Take notes. On paper. Yes. Studies show that using pen and paper trump taking notes on a device. The main reason is because you cannot possibly write down everything I am saying by hand. This forces you to selectively filter my lecture to its most essential and important components – an integral part of the learning and retention process. If you are taking notes on a laptop, you become a court stenographer, thoughtlessly transcribing everything I am saying. At the other extreme, do not assume everything is written in my lecture slides. My lecture slides are visuals and cues to organize the content both for me and for you. I try hard to make sure that I have few words on slides, and even fewer answers to problems.\n\nMy suggestion: print out my lecture slides in advance (or follow along on your device) and take additional notes by hand.\n\nAt least skim all of the readings. I give out readings for a reason, and that reason is not to bore you or waste your time. The truth is, as a beginner, you can’t rely on heuristics or memory to “fill in the blanks.” You need the readings to provide context to what I am saying in class. I cannot help you if you are not going to try. Any professor also will lose patience at short notice when it’s discovered you haven’t done the reading.\nDo the homeworks (if there are any). You might be surprised that I need to say this, but I do. Students that do not do the homeworks do poorly on exams, which often are similar to homework questions. Homeworks are the best practice for exams, they give you a sense of the relevant content areas that might come up, the type and style of questions that I ask, and you often get answer keys to help you “get inside my head” and study from. There is no good reason why you should have a low homework grade.\nWork on assignments together and study together. Recognize that you are not in this alone, and other students are just as anxious or uncertain as you are. More surprisingly, other students probably have some answers you are looking for, and you may have answers for some of their problems! You will learn better when you collaborate with others similar to you. More importantly, you don’t truly understand something unless you can explain it to others.1 As a wise woman once told me “whomever is doing the talking is doing the learning.”\nLearn how to learn. The most important skill you learn in college is how to learn. Taking a course on a subject will not make you an expert on that subject. It a) helps you recognize that you do not know everything on that subject, and this prevents you from actively saying stupid things; and b) gives you enough context and skills to figure out how to actually fill those gaps. This is the actual skill that’s relevant in the real world.2"
+  },
+  {
+    "objectID": "resources/tips.html#footnotes",
+    "href": "resources/tips.html#footnotes",
+    "title": "Tips for Success in This Course",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nYes, that means I am doing a ton of learning every time I teach!↩︎\nYes, Google is your best friend. But you do not yet know how to ask the right questions, or understand what constitutes good answers.↩︎"
   },
   {
     "objectID": "schedule.html",
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "This page contains all of the following resources for each class meeting:\n\n Content materials contains suggested readings, more details about assignments, math appendices, and other helpful resources. I suggest you view these before each class.\n Slides are “Xaringan” presentations that can be opened in any browser (You can find a downloadable PDF in each content page)\n Assignments are listed with due dates\n\nPlease note that the lesson numbers, topics, and titles (e.g. 1.1) are my design, and do not match up with the textbook!\nRelevant materials, if applicable will be posted before class meets and become colored links.\n\n\n\n\n\n\n\n\n\n\n\n\n\nI. Models of Markets\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nTue Jan 24\n\n\n1.1 — Introduction to I.O.\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Jan 26\n\n\n1.2 — Technology and Costs\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Jan 31\n\n\n1.3 — Perfect Competition I\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Feb 02\n\n\n1.4 — Perfect Competition II\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Feb 07\n\n\n1.5 — Monopoly I\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Feb 09\n\n\n1.6 — Monopoly II\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Feb 14\n\n\n1.7 — Pricing Strategies\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Feb 16\n\n\n1.8 — Factor Markets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 1 due Thurs Feb 23\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nII. Oligopoly & Static Game Theory\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nTue Feb 21\n\n\n2.1 — Imperfect Competition & Collusion\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Feb 23\n\n\n2.2 — Cournot Competition\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Mar 02\n\n\n2.3 — Bertrand Competition\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIII. Strategic Behavior & Dynamic Games\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nTue Mar 07\n\n\n3.1 — Dynamic Games & Collusion\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Mar 09\n\n\n3.2 — Stackelberg Competition\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Mar 21\n\n\n3.3 — Entry Deterrence & Commitment\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 2 due Tues Mar 28\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMidterm Exam Mar due Fri Mar 31\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIV. Theory of the Firm & Economic Organization\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nThu Mar 23\n\n\n4.1 — Why Are There Firms?\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Mar 30\n\n\n4.2 — The Firm as Nexus of Contracts\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Apr 04\n\n\n4.3 — Asset Specificity & Vertical Integration\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Apr 06\n\n\n4.4 — Contractual Restraints & Property Rights\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Apr 11\n\n\n4.5 — Entrepreneurship, Uncertainty, & Market Process\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nV. Regulation & Applications\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nThu Apr 13\n\n\n5.1 — Measuring Market Power\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Apr 18\n\n\n5.2 — Antitrust I: The Law\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Apr 25\n\n\n5.3 — Antitrust II: The Paradox\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Apr 27\n\n\n5.4 — Antitrust III: The Hipsters\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue May 02\n\n\n5.5 — Reforming Online Data\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu May 04\n\n\nPresentations & Review\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIndustry Report\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFinal Exam due Fri May 12"
+    "text": "This page contains all of the following resources for each class meeting:\n\n Content materials contains suggested readings, more details about assignments, math appendices, and other helpful resources. I suggest you view these before each class.\n Slides are “Xaringan” presentations that can be opened in any browser (You can find a downloadable PDF in each content page)\n Assignments are listed with due dates\n\nPlease note that the lesson numbers, topics, and titles (e.g. 1.1) are my design, and do not match up with the textbook!\nRelevant materials, if applicable will be posted before class meets and become colored links.\n\nI. Models of Markets\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nTue Jan 24\n\n\n1.1 — Introduction to I.O.\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Jan 26\n\n\n1.2 — Technology and Costs\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Jan 31\n\n\n1.3 — Perfect Competition I\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Feb 02\n\n\n1.4 — Perfect Competition II\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Feb 07\n\n\n1.5 — Monopoly I\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Feb 09\n\n\n1.6 — Monopoly II\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Feb 14\n\n\n1.7 — Pricing Strategies\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Feb 16\n\n\n1.8 — Factor Markets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 1 due Thurs Feb 23\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nII. Oligopoly & Static Game Theory\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nTue Feb 21\n\n\n2.1 — Imperfect Competition & Collusion\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Feb 23\n\n\n2.2 — Cournot Competition\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Mar 02\n\n\n2.3 — Bertrand Competition\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIII. Strategic Behavior & Dynamic Games\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nTue Mar 07\n\n\n3.1 — Dynamic Games & Collusion\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Mar 09\n\n\n3.2 — Stackelberg Competition\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Mar 21\n\n\n3.3 — Entry Deterrence & Commitment\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 2 due Tues Mar 28\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMidterm Exam Mar due Fri Mar 31\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIV. Theory of the Firm & Economic Organization\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nThu Mar 23\n\n\n4.1 — Why Are There Firms?\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Mar 30\n\n\n4.2 — The Firm as Nexus of Contracts\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Apr 04\n\n\n4.3 — Asset Specificity & Vertical Integration\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Apr 06\n\n\n4.4 — Contractual Restraints & Property Rights\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Apr 11\n\n\n4.5 — Entrepreneurship, Uncertainty, & Market Process\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nV. Regulation & Applications\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nAssignment\n\n\n\n\n\n\nThu Apr 13\n\n\n5.1 — Measuring Market Power\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Apr 18\n\n\n5.2 — Antitrust I: The Law\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue Apr 25\n\n\n5.3 — Antitrust II: The Paradox\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu Apr 27\n\n\n5.4 — Antitrust III: The Hipsters\n\n\n\n\n\n\n\n\n\n\n\n\n\nTue May 02\n\n\n5.5 — Reforming Online Data\n\n\n\n\n\n\n\n\n\n\n\n\n\nThu May 04\n\n\nPresentations & Review\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIndustry Report\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFinal Exam due Fri May 12"
   },
   {
     "objectID": "syllabus.html",
     "href": "syllabus.html",
     "title": "Syllabus",
     "section": "",
-    "text": "Dr. Ryan Safner\n   114 Rosenstock\n   Office Hours: MW 1:30-2:30PM\n   safner@hood.edu\n\n\n\n\n\n   2:00—3:25 PM\n   Rosenstock 101\n   Jan 24—May 8, 2023\nDownload PDF\n<!–> “The curious task of economics is to demonstrate to men how little they really know about what they imagine they can design.”  — F.A. Hayek (1974 Economics Nobel Laureate)–>\nIndustrial Organization is one of the most common fields of applied microeconomics. It traditionally studies business firms and their relationship to the market—how they make economic decisions, how they are affected by government regulation, how they strategically interact with one another—and how these change in markets that are more or less competitive—monopoly, oligopoly, monopolistic competition, or perfect competition, often with a close connection to antitrust law. Industrial organization is a direct extension of microeconomics, and as such, the prerequisite for this course is ECON 206.\nThis course will be a hybrid of formal lecture, hands-on activities/games, and readings-based class discussions, with exams and a writing assignment serving as the prime means of evaluation.\nI reserve the right to change any part of this syllabus and course, at my discretion, with proper advance warning."
+    "text": "Dr. Ryan Safner\n   114 Rosenstock\n   Office Hours: MW 1:30-2:30PM\n   safner@hood.edu\n\n\n\n\n\n   2:00—3:25 PM\n   Rosenstock 101\n   Jan 24—May 8, 2023\nDownload PDF\n&lt;!–&gt; “The curious task of economics is to demonstrate to men how little they really know about what they imagine they can design.”  — F.A. Hayek (1974 Economics Nobel Laureate)–&gt;\nIndustrial Organization is one of the most common fields of applied microeconomics. It traditionally studies business firms and their relationship to the market—how they make economic decisions, how they are affected by government regulation, how they strategically interact with one another—and how these change in markets that are more or less competitive—monopoly, oligopoly, monopolistic competition, or perfect competition, often with a close connection to antitrust law. Industrial organization is a direct extension of microeconomics, and as such, the prerequisite for this course is ECON 206.\nThis course will be a hybrid of formal lecture, hands-on activities/games, and readings-based class discussions, with exams and a writing assignment serving as the prime means of evaluation.\nI reserve the right to change any part of this syllabus and course, at my discretion, with proper advance warning."
   },
   {
     "objectID": "syllabus.html#books",
